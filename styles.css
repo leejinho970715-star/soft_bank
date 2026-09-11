@@ -74,3 +74,14 @@
 @media(max-width:700px){.footer-logo{width:295px;height:72px;transform:translateX(-13px)}}
 
 .company .title p{font-weight:500;white-space:pre-line}
+
+/* Keep connector lines neutral while animated blue light travels along them */
+.custom-grid:before{border-top-color:#CCCCCC;filter:none}
+.custom-grid:after{background-color:#CCCCCC;background-image:linear-gradient(to bottom,transparent 0,#70c8ff 42%,#fff 50%,#1686ff 58%,transparent 100%);background-repeat:no-repeat;background-size:100% 70px;box-shadow:none;animation:stem-flow 1.8s linear infinite}
+.custom-grid li:before{background-color:#CCCCCC;background-image:linear-gradient(to bottom,transparent 0,#70c8ff 42%,#fff 50%,#1686ff 58%,transparent 100%);background-repeat:no-repeat;background-size:100% 70px;box-shadow:none}
+
+/* Reserve a clear lower band for the support-section watermark */
+.support{min-height:1080px;padding-bottom:190px}
+.watermark{bottom:0}
+@media(max-width:700px){.support{min-height:auto;padding-bottom:150px}.watermark{bottom:0}}
+@media(prefers-reduced-motion:reduce){.custom-grid:after,.custom-grid li:before{animation:none}}
