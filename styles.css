@@ -137,8 +137,8 @@ footer>nav button{padding:0;border:0;background:none;color:inherit;font:inherit;
 
 /* Match the Figma left quick menu and reveal the compact menu upward */
 .quick-left{left:0;top:34%;width:138px}
-.quick-left .quick-toggle{height:34px;border-radius:0;background:#3266d7;font-size:14px;font-weight:500}
-.quick-left .quick-toggle span{display:none}
+.quick-left .quick-toggle{height:34px;border-radius:0;background:#3266d7;font-size:14px;font-weight:500;display:flex;align-items:center;justify-content:space-between;padding:0 12px;cursor:pointer}
+.quick-left .quick-toggle span{display:inline-block;font-size:16px;line-height:1}
 .quick-left .quick-menu{border:1px solid #d7d7d7;border-top:0;border-radius:0;background:#fff}
 .quick-left .quick-menu a{height:163px;border-bottom:1px solid #d7d7d7;border-radius:0;background:#fff;color:#555;font-size:16px;line-height:1.35}
 .quick-left .quick-menu a:last-child{border-bottom:0}
