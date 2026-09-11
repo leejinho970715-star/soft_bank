@@ -2,6 +2,8 @@
 
 아이원소프트뱅크 메인 웹사이트입니다. Figma 디자인을 기반으로 반응형 레이아웃, GSAP 스크롤 모션, 인터랙티브 퀵메뉴와 질문 선택형 챗봇을 구현했습니다.
 
+파비콘과 Open Graph 공유 이미지를 포함하며, 공유 이미지는 `assets/og-image.jpg`에서 관리합니다.
+
 ## 배포
 
 - GitHub Pages: https://leejinho970715-star.github.io/soft_bank/
