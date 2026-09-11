@@ -134,3 +134,19 @@ footer>nav button{padding:0;border:0;background:none;color:inherit;font:inherit;
 /* Keep the root-card neon orbit fully visible on all four edges */
 .root{overflow:visible}
 .root:before{inset:0;padding:2px;border-radius:12px;background:conic-gradient(from var(--neon-angle),transparent 0 56%,#7ed8ff 68%,#fff 76%,#1686ff 84%,transparent 96%)}
+
+/* Match the Figma left quick menu and reveal the compact menu upward */
+.quick-left{left:0;top:34%;width:146px}
+.quick-left .quick-toggle{height:38px;border-radius:0;background:#3266d7;font-size:15px;font-weight:500}
+.quick-left .quick-toggle span{display:none}
+.quick-left .quick-menu{border:1px solid #d7d7d7;border-top:0;background:#fff}
+.quick-left .quick-menu a{height:175px;border-bottom:1px solid #d7d7d7;background:#fff;color:#555;font-size:17px;line-height:1.35}
+.quick-left .quick-menu a:last-child{border-bottom:0}
+.quick-left .quick-menu img{width:82px;height:82px;margin-bottom:8px}
+.quick-popover{position:fixed;right:24px;bottom:195px;z-index:31;width:210px;padding:10px;border:1px solid rgba(75,144,226,.25);border-radius:22px;background:rgba(255,255,255,.94);box-shadow:0 16px 44px rgba(34,83,150,.22);backdrop-filter:blur(15px);opacity:0;visibility:hidden;transform:translateY(14px) scale(.96);transition:.25s}
+.quick-popover.open{opacity:1;visibility:visible;transform:none}
+.quick-popover a{display:flex;align-items:center;gap:12px;min-height:76px;padding:8px 10px;border-radius:15px;color:#34415a;font-size:14px;line-height:1.35}
+.quick-popover a:hover{background:#edf8ff}
+.quick-popover img{width:58px;height:58px;object-fit:contain;flex:0 0 58px}
+@media(max-width:1100px){.quick-left{top:auto;bottom:96px}}
+@media(max-width:700px){.quick-left{left:8px;top:auto;bottom:112px;width:112px}.quick-left .quick-toggle{height:34px;font-size:12px}.quick-left .quick-menu a{height:112px;font-size:13px}.quick-left .quick-menu img{width:54px;height:54px;margin-bottom:4px}.quick-popover{right:12px;bottom:159px;width:190px}.quick-popover a{min-height:68px}.quick-popover img{width:50px;height:50px;flex-basis:50px}}
