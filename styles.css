@@ -72,3 +72,5 @@
 /* Align the visible footer logo edge with the footer copy */
 .footer-logo{width:360px;height:82px;max-width:none;object-fit:cover;object-position:center;transform:translateX(-16px)}
 @media(max-width:700px){.footer-logo{width:295px;height:72px;transform:translateX(-13px)}}
+
+.company .title p{font-weight:500;white-space:pre-line}
