@@ -68,3 +68,7 @@
 .news-slider .swiper-slide-active{box-shadow:0 18px 45px rgba(43,97,214,.18)}
 @media(max-width:1100px){.news-slider{padding-top:20px}}
 @media(max-width:700px){.news-slider{padding-left:0;padding-right:20px}.news-slider .news-card{width:300px;height:365px}.news-slider .swiper-scrollbar{left:0;right:20px}}
+
+/* Align the visible footer logo edge with the footer copy */
+.footer-logo{width:360px;height:82px;max-width:none;object-fit:cover;object-position:center;transform:translateX(-16px)}
+@media(max-width:700px){.footer-logo{width:295px;height:72px;transform:translateX(-13px)}}
