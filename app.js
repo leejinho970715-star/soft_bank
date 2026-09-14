@@ -1,35 +1,346 @@
-const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];const mt=$('.menu-toggle'),gnb=$('.gnb');mt.addEventListener('click',()=>{const o=gnb.classList.toggle('open');mt.textContent=o?'×':'☰';mt.setAttribute('aria-expanded',o)});const quick=$('.quick-left'),quickToggle=$('.quick-toggle'),quickFab=$('.quick-fab'),setQuick=o=>{quick.classList.toggle('closed',!o);quickToggle.querySelector('span').textContent=o?'×':'+';quickFab.setAttribute('aria-expanded',o)};quickToggle.addEventListener('click',()=>setQuick(quick.classList.contains('closed')));quickFab.addEventListener('click',()=>setQuick(quick.classList.contains('closed')));if(matchMedia('(max-width:700px)').matches)setQuick(false);const chat=$('.chat'),setChat=o=>{chat.classList.toggle('open',o);chat.setAttribute('aria-hidden',!o)};$('.chat-launch').addEventListener('click',()=>setChat(!chat.classList.contains('open')));$('.chat header button').addEventListener('click',()=>setChat(false));$$('.questions button').forEach(b=>b.addEventListener('click',()=>{const p=document.createElement('p');p.textContent=b.dataset.answer;$('.answer').replaceChildren(p)}));if(window.gsap&&window.ScrollTrigger&&!matchMedia('(prefers-reduced-motion: reduce)').matches){gsap.registerPlugin(ScrollTrigger);$$('.reveal').forEach(e=>gsap.from(e,{scrollTrigger:{trigger:e,start:'top 88%',once:true},y:70,opacity:0,duration:1,ease:'power3.out'}));$$('.shake').forEach(e=>gsap.from(e,{scrollTrigger:{trigger:e,start:'top 90%',once:true},x:-20,opacity:0,duration:.9,ease:'elastic.out(1,.2)'}));const company=$('.company'),typeItems=$$('.type-text',company),companyButton=$('.type-cta',company),typing=gsap.timeline({scrollTrigger:{trigger:company,start:'top 72%',once:true}});typeItems.forEach((el,index)=>{const text=el.dataset.typeText||el.textContent.trim().replace(/\s+/g,' ');typing.set(el,{opacity:1,onComplete:()=>{el.textContent='';el.classList.add('typing')}}).to({count:0},{count:text.length,duration:Math.max(.45,text.length*.035),ease:'none',onUpdate:function(){el.textContent=text.slice(0,Math.ceil(this.targets()[0].count))},onComplete:()=>el.classList.remove('typing')},index?'>+.12':0)});typing.set(companyButton,{opacity:0}).to(companyButton,{opacity:1,duration:.18}).to(companyButton,{x:-16,duration:.1}).to(companyButton,{x:14,duration:.1}).to(companyButton,{x:-10,duration:.1}).to(companyButton,{x:7,duration:.1}).to(companyButton,{x:0,duration:.14,ease:'power2.out'});gsap.to('.hero-asset',{yPercent:10,scrollTrigger:{trigger:'.hero',scrub:1}})}
+(() => {
+  const root = document.getElementById('soft-bank-renewal');
+  if (!root) return;
 
-const newsData={
-  notice:{more:'https://www.duzon119.co.kr/customer/notice.asp',items:[['[Amaranth10 Cloud] 더존 메일 스팸 차단 관련 안내','2026-04-30'],['[Amaranth10] PC메신저 서비스 전환 및 기술지원 안내','2026-03-26'],['[Bizbox Alpha] 보안 취약점 업데이트 권고 안내','2026-02-25'],['더존 솔루션 최신 업데이트 및 고객 안내','2025-12-15'],['서비스 점검 및 이용 안내','2025-11-28']]},
-  amaranth:{more:'https://www.duzon119.co.kr/amaranth10/pds.asp',items:[['인사 담당자를 위한 교대근무 활용 프로세스 & TIP','2024-11-25'],['유연근무 관리 활용 프로세스 & TIP','2024-11-25'],['ONE AI 데이터 분석 활용 프로세스 & TIP','2024-11-25'],['ERP 관리자 모듈 환경설정 활용 TIP','2024-07-17'],['신규 입사자 관리 활용 프로세스','2024-07-17']]},
-  bizbox:{more:'https://www.duzon119.co.kr/bizbox/pds.asp',items:[['Bizbox Alpha 메신저 설치 가이드','2024-07-07'],['전자결재 프로그램 설치 안내','2025-12-09'],['Bizbox Alpha 최신 버전 재배포 안내','2025-11-28'],['PC 메신저 보안 업데이트 안내','2025-10-20'],['모바일 앱 사용 가이드','2025-09-12']]},
-  icube:{more:'https://www.duzon119.co.kr/icube/pds.asp',items:[['iCUBE 재설치 바로가기','2024-07-01'],['iCUBE G20 재설치 바로가기','2024-07-01'],['iCUBE 업데이트 설치 안내','2024-06-18'],['회계 모듈 활용 가이드','2024-05-22'],['인사·급여 모듈 활용 가이드','2024-04-11']]}
-};
-let newsSwiper;
-function renderNews(category){const data=newsData[category],wrapper=$('.news-slider .swiper-wrapper');if(newsSwiper)newsSwiper.destroy(true,true);wrapper.replaceChildren(...data.items.map(([title,date])=>{const card=document.createElement('a');card.className='news-card glass swiper-slide';card.href=data.more;card.target='_blank';card.rel='noopener noreferrer';const img=document.createElement('img');img.src='assets/notice-thumb.png';img.alt=title;const badge=document.createElement('b');badge.textContent='NEW';const copy=document.createElement('p');copy.textContent=title;const time=document.createElement('time');time.textContent=date;card.append(img,badge,copy,time);return card}));$('.news-more').href=data.more;newsSwiper=new Swiper('.news-slider',{slidesPerView:'auto',spaceBetween:24,loop:true,speed:650,grabCursor:true,autoplay:{delay:2000,disableOnInteraction:false,pauseOnMouseEnter:true},navigation:{nextEl:'.news-next',prevEl:'.news-prev'},scrollbar:{el:'.news-slider .swiper-scrollbar',draggable:true,snapOnRelease:true},keyboard:{enabled:true}})}
-if(window.Swiper){renderNews('notice');$$('.news-tabs button').forEach(button=>button.addEventListener('click',()=>{$$('.news-tabs button').forEach(tab=>tab.classList.toggle('active',tab===button));renderNews(button.dataset.category)}))}
+  const $ = (selector, scope = root) => scope.querySelector(selector);
+  const $$ = (selector, scope = root) => Array.from(scope.querySelectorAll(selector));
 
-$$('a').forEach(link=>{link.target='_blank';link.rel='noopener noreferrer'});
+  const menuToggle = $('.menu-toggle');
+  const gnb = $('.gnb');
+  if (menuToggle && gnb) {
+    menuToggle.addEventListener('click', () => {
+      const open = gnb.classList.toggle('open');
+      menuToggle.textContent = open ? '×' : '☰';
+      menuToggle.setAttribute('aria-expanded', String(open));
+    });
+  }
 
-const modalTriggers=$$('[data-modal]'),modals=$$('.legal-modal');
-function closeModal(modal){modal.classList.remove('open');modal.setAttribute('aria-hidden','true');if(!$('.legal-modal.open'))document.body.classList.remove('modal-open')}
-function openModal(name){const modal=$(`#${name}-modal`);if(!modal)return;modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.classList.add('modal-open');modal.querySelector('.modal-close').focus()}
-modalTriggers.forEach(trigger=>trigger.addEventListener('click',()=>openModal(trigger.dataset.modal)));
-modals.forEach(modal=>{modal.querySelector('.modal-close').addEventListener('click',()=>closeModal(modal));modal.addEventListener('click',event=>{if(event.target===modal)closeModal(modal)})});
-document.addEventListener('keydown',event=>{if(event.key==='Escape')modals.filter(modal=>modal.classList.contains('open')).forEach(closeModal)});
+  const chat = $('.chat');
+  const chatLaunch = $('.chat-launch');
+  const chatClose = $('.chat header button');
+  const setChat = (open) => {
+    if (!chat) return;
+    chat.classList.toggle('open', open);
+    chat.setAttribute('aria-hidden', String(!open));
+  };
 
-const quickPopover=$('.quick-popover');
-quickFab.addEventListener('click',event=>{event.stopImmediatePropagation();const open=quickPopover.classList.toggle('open');quickPopover.setAttribute('aria-hidden',String(!open));quickFab.setAttribute('aria-expanded',String(open));quickFab.querySelector('b').textContent=open?'×':'+'},true);
-document.addEventListener('click',event=>{if(!quickPopover.contains(event.target)&&!quickFab.contains(event.target)){quickPopover.classList.remove('open');quickPopover.setAttribute('aria-hidden','true');quickFab.setAttribute('aria-expanded','false');quickFab.querySelector('b').textContent='+'}});
+  if (chatLaunch) {
+    chatLaunch.addEventListener('click', () => {
+      setChat(!chat.classList.contains('open'));
+    });
+  }
 
-const legalContent={
-privacy:`<p><b>아이원소프트뱅크㈜ 개인정보 처리방침</b></p><p>아이원소프트뱅크㈜(이하 “회사”)는 개인정보 보호법 등 관계 법령을 준수하며 이용자의 개인정보를 안전하게 관리합니다.</p><h3>제1조 개인정보의 처리 목적</h3><p>회사는 제품 도입·구매 상담, 고객 문의와 기술지원, 계약 이행과 요금 정산, 민원 처리, 서비스 품질 개선 및 법령상 의무 이행을 위해 개인정보를 처리합니다.</p><h3>제2조 처리하는 개인정보 항목</h3><p>상담 및 문의 과정에서 회사명, 담당자명, 연락처, 이메일, 문의 내용이 수집될 수 있습니다. 서비스 이용 과정에서 접속 기록, IP 주소, 쿠키, 기기 정보가 자동으로 생성될 수 있습니다.</p><h3>제3조 개인정보의 처리 및 보유기간</h3><p>개인정보는 수집·이용 목적이 달성될 때까지 보유합니다. 관계 법령에 보존 의무가 있는 계약·결제 기록, 소비자 불만 및 분쟁 처리 기록, 접속 기록은 해당 법정기간 동안 별도로 보관한 뒤 파기합니다.</p><h3>제4조 개인정보의 제3자 제공</h3><p>회사는 이용자의 동의가 있거나 법률에 특별한 규정이 있는 경우를 제외하고 개인정보를 제3자에게 제공하지 않습니다. 제공이 필요한 경우 대상, 목적, 항목 및 보유기간을 사전에 안내하고 동의를 받습니다.</p><h3>제5조 개인정보 처리업무의 위탁</h3><p>서비스 운영을 위해 개인정보 처리업무를 위탁할 수 있으며, 위탁계약을 통해 개인정보 보호 관련 법령 준수, 목적 외 처리 금지, 안전성 확보조치와 재위탁 제한을 관리·감독합니다.</p><h3>제6조 이용자의 권리와 행사방법</h3><p>이용자는 개인정보 열람, 정정, 삭제, 처리정지 및 동의 철회를 요청할 수 있습니다. 본인 또는 적법한 대리인을 통해 요청할 수 있으며 회사는 관계 법령에 따라 지체 없이 조치합니다.</p><h3>제7조 개인정보의 파기</h3><p>보유기간 경과 또는 처리 목적 달성으로 불필요해진 개인정보는 지체 없이 파기합니다. 전자 파일은 복구할 수 없는 방법으로 삭제하고 종이 문서는 분쇄하거나 소각합니다.</p><h3>제8조 안전성 확보조치</h3><p>회사는 개인정보 접근권한 관리, 내부관리계획 수립, 보안 프로그램 운영, 접속기록 보관, 개인정보 암호화와 물리적 접근 통제 등 필요한 기술적·관리적·물리적 조치를 시행합니다.</p><h3>제9조 쿠키의 이용</h3><p>회사는 편리한 서비스 제공과 이용 현황 분석을 위해 쿠키를 사용할 수 있습니다. 이용자는 브라우저 설정에서 쿠키 저장을 허용하거나 거부할 수 있으며, 거부 시 일부 기능 이용이 제한될 수 있습니다.</p><h3>제10조 개인정보 보호 문의</h3><p>개인정보 처리와 관련한 문의, 불만 및 피해구제 요청은 고객센터 1877-1859를 통해 접수할 수 있습니다. 회사는 문의를 신속하게 확인하고 답변합니다.</p><h3>제11조 방침의 변경</h3><p>법령 또는 서비스 변경에 따라 본 방침이 수정될 경우 시행일과 변경 내용을 웹사이트를 통해 공지합니다.</p>`,
-terms:`<p><b>아이원소프트뱅크㈜ 웹서비스 이용약관</b></p><p>현행 시행 일자: 2022년 10월 7일</p><h3>제1조 목적 및 효력</h3><p>이 약관은 회사가 제공하는 인터넷 관련 서비스를 이용함에 있어 회사와 이용자의 권리·의무 및 책임사항을 정합니다. 약관은 서비스 화면을 통해 공지함으로써 효력이 발생하며, 이용자가 정해진 절차를 거쳐 서비스를 이용하면 약관에 동의한 것으로 봅니다.</p><h3>제2조 이용자의 정의 및 인증</h3><p>이용자란 웹사이트에 접속해 정보를 입력하거나 인증을 받은 후 회사의 서비스를 이용하는 사람을 말합니다. 타인의 명의 사용, 허위 정보 기재 또는 기술상 지장이 있는 경우 이용 승낙이 제한될 수 있습니다.</p><h3>제3조 콘텐츠와 회원정보</h3><p>웹사이트의 문자, 파일, 그래픽 및 소프트웨어 등 콘텐츠의 권리는 회사 또는 표시된 제공처에 있습니다. 이용자는 등록 정보가 변경된 경우 이를 즉시 수정해야 하며, 미수정으로 발생한 문제에 책임을 집니다.</p><h3>제4조 서비스의 중단</h3><p>회사는 정보통신설비의 보수·점검·교체, 고장, 통신 두절, 국가비상사태 또는 이용 폭주 등의 사유로 서비스의 전부 또는 일부를 일시적으로 제한하거나 중단할 수 있습니다. 가능한 경우 웹사이트를 통해 이를 공지합니다.</p><h3>제5조 이용중지 및 자격 상실</h3><p>허위 정보 등록, 다른 이용자의 서비스 이용 방해, 정보 도용, 법령과 미풍양속에 반하는 행위 또는 약관상 의무 위반이 확인되면 회사는 이용자 자격을 제한·정지하거나 상실시킬 수 있습니다.</p><h3>제6조 개인정보 보호</h3><p>회사는 관계 법령과 개인정보 처리방침에 따라 이용자의 등록정보와 개인정보를 보호하며, 안전성 확보에 필요한 기술적·관리적 조치를 시행합니다.</p><h3>제7조 회사의 의무</h3><p>회사는 관계 법령과 약관을 준수하고 지속적이며 안정적인 서비스 제공을 위해 노력합니다. 이용자의 사전 동의 없이 서비스 관련 업무 이외의 목적으로 개인정보를 사용하거나 제3자에게 제공하지 않습니다. 다만 법령상 근거가 있는 경우는 예외로 합니다.</p><h3>제8조 계정 및 비밀번호 관리</h3><p>계정과 비밀번호의 관리 책임은 이용자에게 있습니다. 이용자는 이를 제3자에게 이용하게 해서는 안 되며, 도난이나 무단 사용을 인지한 경우 즉시 회사에 알리고 안내에 따라야 합니다.</p><h3>제9조 이용자의 의무</h3><p>이용자는 약관과 관계 법령을 준수해야 합니다. 타인의 권리 침해, 계정 도용, 불법 정보 전송, 악성 프로그램 유포, 스팸 전송, 서비스 운영 방해, 개인정보 무단 수집, 회사 또는 제3자의 지식재산권 침해 행위를 해서는 안 됩니다.</p><h3>제10조 공개게시물의 관리</h3><p>다른 사람을 비방하거나 명예를 훼손하는 내용, 미풍양속 또는 관계 법령에 위배되는 내용, 개인정보를 침해하거나 타인의 권리를 침해하는 게시물은 사전 통지 없이 삭제될 수 있으며 이용 자격이 제한될 수 있습니다.</p><h3>제11조 면책</h3><p>회사는 이용자의 귀책사유로 발생한 서비스 장애, 이용자가 게시·전송한 자료, 이용자 상호 간 또는 제3자와의 거래로 발생한 손해에 대해 회사의 고의 또는 중대한 과실이 없는 한 책임을 지지 않습니다.</p><h3>부칙</h3><p>이 약관은 2018년 6월 15일부터 시행하며, 제정 전에 가입한 회원에게도 적용됩니다. 약관에 명시되지 않은 사항은 관계 법령에 따릅니다.</p>`
-};
-$('#privacy-modal .legal-scroll').textContent='문서를 불러오는 중입니다.';
-$('#terms-modal .legal-scroll').textContent='문서를 불러오는 중입니다.';
-// Use the captured original documents in full, rather than the fallback copy above.
-for(const [key,id] of [['privacy','privacy-modal'],['terms','terms-modal']]){
- fetch(`renewal/${key}.html`).then(r=>{if(!r.ok)throw new Error('Document unavailable');return r.text();}).then(html=>{$(`#${id} .legal-scroll`).innerHTML=html;}).catch(()=>{$(`#${id} .legal-scroll`).textContent='문서를 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.';});
+  if (chatClose) {
+    chatClose.addEventListener('click', () => setChat(false));
+  }
+
+  const answerButtons = $$('.questions button');
+  const chatAnswer = $('.answer');
+  answerButtons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      if (!chatAnswer) return;
+      const answer = document.createElement('p');
+      answer.textContent = button.dataset.answer || '';
+      chatAnswer.replaceChildren(answer);
+      setChat(true);
+    });
+  });
+
+  const chatLink = $('.questions a');
+  if (chatLink) {
+    chatLink.addEventListener('click', (event) => {
+      event.stopPropagation();
+    });
+  }
+
+  const quick = $('.quick-left');
+  const quickToggle = $('.quick-toggle');
+  const quickFab = $('.quick-fab');
+  const quickPopover = $('.quick-popover');
+  let quickOpen = true;
+
+  const setQuick = (open) => {
+    quickOpen = open;
+    if (quick) quick.classList.toggle('closed', !open);
+    if (quickToggle) {
+      quickToggle.innerHTML = 'DOUZONE <span>' + (open ? '×' : '+') + '</span>';
+      quickToggle.setAttribute('aria-expanded', String(open));
+      quickToggle.setAttribute('aria-label', open ? '왼쪽 퀵메뉴 접기' : '왼쪽 퀵메뉴 열기');
+    }
+    if (quickFab) {
+      quickFab.setAttribute('aria-expanded', String(open));
+      const sign = quickFab.querySelector('b');
+      if (sign) sign.textContent = open ? '×' : '+';
+    }
+  };
+
+  const closeOutsidePanels = (event) => {
+    const target = event.target;
+    const clickedInsideQuick = quick && quick.contains(target);
+    const clickedInsideQuickToggle = quickToggle && quickToggle.contains(target);
+    const clickedInsideQuickFab = quickFab && quickFab.contains(target);
+    const clickedInsideQuickPopover = quickPopover && quickPopover.contains(target);
+    const clickedInsideChat = chat && chat.contains(target);
+    const clickedInsideChatLaunch = chatLaunch && chatLaunch.contains(target);
+
+    if (!clickedInsideQuick && !clickedInsideQuickToggle && !clickedInsideQuickFab && !clickedInsideQuickPopover) {
+      if (quickPopover) {
+        quickPopover.classList.remove('open');
+        quickPopover.setAttribute('aria-hidden', 'true');
+      }
+      if (quickFab) {
+        quickFab.setAttribute('aria-expanded', 'false');
+        const sign = quickFab.querySelector('b');
+        if (sign) sign.textContent = '+';
+      }
+    }
+
+    if (!clickedInsideChat && !clickedInsideChatLaunch) {
+      setChat(false);
+    }
+
+    if (!clickedInsideQuick && !clickedInsideQuickToggle) {
+      setQuick(false);
+    }
+  };
+
+  if (quickToggle) {
+    quickToggle.addEventListener('click', () => setQuick(!quickOpen));
+  }
+
+  if (quickFab) {
+    quickFab.addEventListener('click', (event) => {
+      event.stopPropagation();
+      if (quickPopover) {
+        const open = quickPopover.classList.toggle('open');
+        quickPopover.setAttribute('aria-hidden', String(!open));
+        quickFab.setAttribute('aria-expanded', String(open));
+        const sign = quickFab.querySelector('b');
+        if (sign) sign.textContent = open ? '×' : '+';
+      }
+    });
+  }
+
+  document.addEventListener('click', closeOutsidePanels);
+
+  const modalTriggers = $$('[data-modal]');
+  const modals = $$('.legal-modal');
+
+  function closeModal(modal) {
+    if (!modal) return;
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    if (!$('.legal-modal.open')) {
+      document.body.classList.remove('modal-open');
+    }
+  }
+
+  function openModal(name) {
+    const modal = document.getElementById(name + '-modal');
+    if (!modal) return;
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+    const closeButton = modal.querySelector('.modal-close');
+    if (closeButton) closeButton.focus();
+  }
+
+  modalTriggers.forEach((trigger) => {
+    trigger.addEventListener('click', () => openModal(trigger.dataset.modal));
+  });
+
+  modals.forEach((modal) => {
+    const closeButton = modal.querySelector('.modal-close');
+    if (closeButton) {
+      closeButton.addEventListener('click', () => closeModal(modal));
+    }
+    modal.addEventListener('click', (event) => {
+      if (event.target === modal) closeModal(modal);
+    });
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      modals.forEach((modal) => closeModal(modal));
+    }
+  });
+
+  if (window.Swiper) {
+    const newsData = {
+      notice: {
+        href: 'https://www.duzon119.co.kr/customer/notice.asp',
+        items: [
+          ['Amaranth10 클라우드 기반 ERP 통합 지원', '2026-04-30'],
+          ['Amaranth10 PC 기본 환경 개선', '2026-03-26'],
+          ['Bizbox Alpha 도입 가이드 공개', '2026-02-25'],
+          ['ERP 환경 개선 및 보안 가이드', '2025-12-15'],
+          ['통합 업무 플랫폼 업데이트', '2025-11-28']
+        ]
+      },
+      amaranth: {
+        href: 'https://www.duzon119.co.kr/product/amaranth10/brand.asp',
+        items: [
+          ['Amaranth 10 활용 가이드', '2024-11-25'],
+          ['ERP 업무 효율화 팁', '2024-11-15'],
+          ['AI 기반 업무 협업 자료', '2024-10-17'],
+          ['업무 자동화 전략', '2024-09-30'],
+          ['업무 복잡도 개선 사례', '2024-08-11']
+        ]
+      },
+      bizbox: {
+        href: 'https://www.duzon119.co.kr/product/bizbox/brand.asp',
+        items: [
+          ['Bizbox Alpha 도입 사례', '2025-12-09'],
+          ['업무 프로세스 정리 가이드', '2025-11-28'],
+          ['ERP 협업 사례', '2025-10-20'],
+          ['기획 문서 표준화', '2025-09-12'],
+          ['자동화 시스템 운영', '2025-08-07']
+        ]
+      },
+      icube: {
+        href: 'https://www.duzon119.co.kr/company/about.asp',
+        items: [
+          ['iCUBE 최신 가이드', '2024-07-01'],
+          ['iCUBE G20 소개 자료', '2024-06-18'],
+          ['운영 환경 최적화', '2024-05-22'],
+          ['업무 계열별 대응 전략', '2024-04-11'],
+          ['시스템 현대화 사례', '2024-03-20']
+        ]
+      }
+    };
+
+    let newsSwiper = null;
+
+    function renderNews(category) {
+      const data = newsData[category] || newsData.notice;
+      const wrapper = $('.news-slider .swiper-wrapper');
+      const newsLink = $('.news-more');
+      if (!wrapper) return;
+
+      if (newsSwiper) {
+        newsSwiper.destroy(true, true);
+      }
+
+      wrapper.replaceChildren(
+        ...data.items.map(([title, date]) => {
+          const card = document.createElement('a');
+          card.className = 'news-card glass swiper-slide';
+          card.href = data.href;
+          card.target = '_blank';
+          card.rel = 'noopener noreferrer';
+
+          const img = document.createElement('img');
+          img.src = 'assets/notice-thumb.png';
+          img.alt = title;
+
+          const badge = document.createElement('b');
+          badge.textContent = 'NEW';
+
+          const copy = document.createElement('p');
+          copy.textContent = title;
+
+          const time = document.createElement('time');
+          time.textContent = date;
+
+          card.append(img, badge, copy, time);
+          return card;
+        })
+      );
+
+      if (newsLink) newsLink.href = data.href;
+
+      newsSwiper = new Swiper('.news-slider', {
+        slidesPerView: 'auto',
+        spaceBetween: 24,
+        loop: true,
+        speed: 650,
+        grabCursor: true,
+        autoplay: { delay: 2200, disableOnInteraction: false, pauseOnMouseEnter: true },
+        navigation: { nextEl: '.news-next', prevEl: '.news-prev' },
+        scrollbar: { el: '.news-slider .swiper-scrollbar', draggable: true, snapOnRelease: true },
+        keyboard: { enabled: true }
+      });
+    }
+
+    const newsTabs = $$('.news-tabs button');
+    newsTabs.forEach((button) => {
+      button.addEventListener('click', () => {
+        newsTabs.forEach((tab) => tab.classList.toggle('active', tab === button));
+        renderNews(button.dataset.category || 'notice');
+      });
+    });
+
+    renderNews('notice');
+  }
+
+  if (window.gsap && window.ScrollTrigger && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    gsap.registerPlugin(ScrollTrigger);
+
+    $$('.reveal').forEach((el) => {
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 88%', once: true },
+        y: 70,
+        opacity: 0,
+        duration: 1,
+        ease: 'power3.out'
+      });
+    });
+
+    $$('.shake').forEach((el) => {
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 90%', once: true },
+        x: -20,
+        opacity: 0,
+        duration: 0.9,
+        ease: 'elastic.out(1,.2)'
+      });
+    });
+
+    const company = $('.company');
+    const typeItems = company ? $$('.type-text', company) : [];
+    const companyButton = company ? $('.type-cta', company) : null;
+
+    if (company && typeItems.length) {
+      const typing = gsap.timeline({
+        scrollTrigger: { trigger: company, start: 'top 72%', once: true }
+      });
+
+      typeItems.forEach((el, index) => {
+        const text = el.dataset.typeText || el.textContent.trim().replace(/\s+/g, ' ');
+        typing.set(el, { opacity: 1, onComplete: () => {
+          el.textContent = '';
+          el.classList.add('typing');
+        }}).to({ count: 0 }, {
+          count: text.length,
+          duration: Math.max(0.45, text.length * 0.035),
+          ease: 'none',
+          onUpdate: function () {
+            const value = Math.ceil(this.targets()[0].count);
+            el.textContent = text.slice(0, value);
+          },
+          onComplete: () => el.classList.remove('typing')
+        }, index ? '>+0.12' : 0);
+      });
+
+      if (companyButton) {
+        typing.set(companyButton, { opacity: 0 })
+          .to(companyButton, { opacity: 1, duration: 0.18 })
+          .to(companyButton, { x: -16, duration: 0.1 })
+          .to(companyButton, { x: 14, duration: 0.1 })
+          .to(companyButton, { x: -10, duration: 0.1 })
+          .to(companyButton, { x: 7, duration: 0.1 })
+          .to(companyButton, { x: 0, duration: 0.14, ease: 'power2.out' });
+      }
+    }
+  }
+})();
+
+// Display the captured original legal documents in full.
+for (const [key, id] of [['privacy', 'privacy-modal'], ['terms', 'terms-modal']]) {
+  const panel = document.querySelector('#' + id + ' .legal-scroll');
+  if (!panel) continue;
+  panel.textContent = '문서를 불러오는 중입니다.';
+  fetch('renewal/' + key + '.html').then(r => { if (!r.ok) throw new Error('Document unavailable'); return r.text(); }).then(html => { panel.innerHTML = html; }).catch(() => { panel.textContent = '문서를 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.'; });
 }

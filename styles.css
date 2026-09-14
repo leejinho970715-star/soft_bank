@@ -1,168 +1,156 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-:root{--blue:#4b90e2;--deep:#2b61d6;--ink:#1d1d1f;--muted:#555;--max:1500px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Pretendard,Arial,sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}button{font:inherit}.site-header{height:80px;display:flex;align-items:center;gap:40px;padding:0 max(24px,calc((100vw - var(--max))/2));position:relative;z-index:20;background:#fff}.brand{display:flex;align-items:center;width:322px}.brand img:first-child{width:148px;height:50px;object-fit:contain}.brand img:last-child{width:174px;height:63px;object-fit:contain}.gnb{display:flex;gap:30px;margin:auto}.gnb a{font-size:18px;white-space:nowrap}.gnb a:hover{color:var(--deep)}.header-actions{display:flex;gap:16px}.pill,.cta{display:inline-flex;justify-content:center;align-items:center;background:var(--deep);color:#fff;border-radius:999px;min-height:40px;padding:0 30px}.pill.light,.cta{background:var(--blue)}.menu-toggle{display:none;border:0;background:none;font-size:28px}.section{padding:120px max(24px,calc((100vw - var(--max))/2));position:relative;overflow:hidden}.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}.faint{opacity:.1}.hero{height:min(1133px,calc(100vh - 80px));min-height:740px;position:relative;overflow:hidden;text-align:center}.hero>.bg{opacity:.3}.hero-asset{position:absolute;width:min(39vw,749px);top:7%;left:50%;translate:-50% 0}.hero-copy{position:absolute;z-index:2;top:59%;width:100%;padding:0 24px}.hero h1{font-size:clamp(38px,4.16vw,80px);margin:0}.hero h1 span{color:var(--blue)}.hero h1 strong{color:var(--deep)}.hero p{font-size:clamp(17px,1.35vw,26px);line-height:1.4}.hero p b,.title span,.support-copy span,.news-side>span{color:var(--deep)}.actions{display:flex;justify-content:center;gap:16px;margin-top:55px}.cta{min-height:60px;padding:0 44px;font-size:18px;font-weight:600}.cta.dark{background:var(--deep)}.title{text-align:center;position:relative;z-index:2}.title h2,.support-copy h2,.news-side h2{font-size:clamp(32px,2.1vw,40px);margin:12px 0}.title p,.support-copy p,.news-side p{font-size:18px;line-height:1.5;color:var(--muted)}.title em{font-style:normal;color:var(--blue)}.custom{min-height:1179px;text-align:center}.root{width:270px;margin:50px auto 80px}.glass{border:1px solid #cfd9e5;border-radius:12px;background:#fffc;box-shadow:0 8px 25px #3f77be14;transition:.35s;backdrop-filter:blur(8px)}.glass:hover{background:linear-gradient(135deg,#ffffffd9,#bbe0ff55);box-shadow:0 18px 50px #2b61d633,inset 0 1px #fff;transform:translateY(-8px);border-color:#4b90e299}.root img{width:160px;margin:auto}.custom-grid{list-style:none;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:40px;position:relative;z-index:2}.custom-grid:before{content:"";position:absolute;top:-52px;left:8%;right:8%;height:50px;border:1px solid #bbb;border-bottom:0}.custom-grid li{padding:20px 14px}.custom-grid img{height:145px;width:100%;object-fit:contain}.custom>.cta,.company>.cta{margin-top:60px;position:relative;z-index:2}.products{padding-top:150px;padding-bottom:180px;min-height:2050px}.product{position:relative;z-index:2;text-align:center;margin-bottom:130px}.product-img{width:min(850px,75vw);height:640px;object-fit:contain;margin:20px auto}.support{min-height:930px}.support-copy{max-width:900px}.support-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9%;list-style:none;padding:90px 0 0;text-align:center;position:relative;z-index:2}.support-grid small{display:block;color:var(--deep);font-size:16px}.support-grid h3{font-size:38px;margin:10px}.support-grid p{color:var(--muted)}.sprite{display:block;width:330px;height:330px;max-width:100%;margin:auto;background:url('assets/support-assets.png') no-repeat;background-size:300% 100%;animation:float 5s ease-in-out infinite}.s1{background-position:0}.s2{background-position:50%;animation-delay:-1.5s}.s3{background-position:100%;animation-delay:-3s}.watermark{position:absolute;right:2%;bottom:-8%;width:48%;opacity:.14}.company{min-height:519px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center}.news{display:grid;grid-template-columns:260px 1fr;gap:60px;min-height:850px}.news-side .cta{margin:25px 0}.news-side nav{display:flex;flex-direction:column}.news-side nav a{padding:22px 10px;border-bottom:1px solid #555}.news-side nav a:first-child{color:var(--blue);border-color:var(--blue)}.news-list{display:flex;gap:24px;overflow-x:auto;padding:170px 20px 30px}.news-card{flex:0 0 346px;height:385px;padding:23px}.news-card img{width:300px;height:200px;object-fit:cover;border-radius:5px}.news-card b{display:inline-block;background:var(--deep);color:#fff;border-radius:10px;padding:5px 10px;font-size:12px;margin-top:22px}.news-card time{color:#888}.clients{background:#fafafa;min-height:589px}.client-logos{max-width:900px;margin:70px auto 0;display:flex;justify-content:center;flex-wrap:wrap;gap:28px}.client-logos img{width:180px;height:70px;object-fit:cover;border:1px solid #ccc;border-radius:5px}.quick{position:fixed;right:28px;top:36%;z-index:30;width:104px}.quick-toggle{width:100%;height:35px;border:0;border-radius:10px 10px 0 0;background:var(--blue);color:#fff;font-size:13px}.quick-toggle span{float:right}.quick-menu{background:#fff;border:1px solid #ccc;border-radius:0 0 10px 10px;overflow:hidden;max-height:370px;transition:.35s}.quick-menu a{height:116px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-size:13px;border-bottom:1px solid #ddd}.quick-menu img{width:62px;height:62px;object-fit:contain}.quick.closed .quick-menu{max-height:0;border:0}.chat-launch{position:fixed;right:24px;bottom:24px;z-index:30;border:0;background:transparent;color:var(--blue);font-weight:700}.chat-launch img{width:105px;height:95px;object-fit:contain}.chat{position:fixed;right:28px;bottom:145px;z-index:40;width:min(380px,calc(100vw - 32px));background:#fffffff2;border:1px solid #4b90e266;border-radius:20px;box-shadow:0 20px 70px #17437c40;backdrop-filter:blur(18px);overflow:hidden;transform:translateY(25px) scale(.94);opacity:0;pointer-events:none;transition:.3s}.chat.open{transform:none;opacity:1;pointer-events:auto}.chat header{padding:18px 20px;background:linear-gradient(120deg,var(--blue),var(--deep));color:#fff;display:flex;justify-content:space-between}.chat header button{border:0;background:none;color:#fff;font-size:22px}.chat-body{padding:18px}.chat-body p,.answer p{padding:12px;border-radius:14px;background:#eef6ff;line-height:1.5}.answer p{background:var(--deep);color:#fff}.questions{padding:0 18px 18px;display:grid;gap:8px}.questions button,.questions a{border:1px solid #cfe1f7;background:#fff;padding:11px;border-radius:11px;text-align:left;color:var(--ink)}footer{padding:100px max(24px,calc((100vw - var(--max))/2));min-height:600px}.footer-top{display:flex;justify-content:space-between}.footer-logo{width:330px;height:82px;object-fit:contain}footer p{color:var(--muted);line-height:1.5}.socials{display:flex;gap:15px}.socials img{width:50px;height:50px;object-fit:contain}footer>nav{display:flex;gap:25px;border-top:1px solid #ddd;margin-top:35px;padding-top:35px;color:var(--deep);font-weight:600}@keyframes float{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-18px) rotate(1deg)}}.float{animation:float 5s ease-in-out infinite}.reveal{will-change:transform,opacity}
+:root {--blue:#4b90e2;--deep:#2b61d6;--ink:#1d1d1f;--muted:#555;--max:1500px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Pretendard,Arial,sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}button{font:inherit}.site-header{height:80px;display:flex;align-items:center;gap:40px;padding:0 max(24px,calc((100vw - var(--max))/2));position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);box-shadow:0 1px 0 rgba(30,52,94,.08)}.brand{display:flex;align-items:center;width:322px}.brand img:first-child{width:148px;height:50px;object-fit:contain}.brand img:last-child{width:174px;height:63px;object-fit:contain}.gnb{display:flex;gap:30px;margin:auto}.gnb a{font-size:18px;white-space:nowrap}.gnb a:hover{color:var(--deep)}.header-actions{display:flex;gap:16px}.pill,.cta{display:inline-flex;justify-content:center;align-items:center;background:var(--deep);color:#fff;border-radius:999px;min-height:50px;padding:0 30px}.pill.light,.cta{background:var(--blue)}.header-actions .pill{min-width:160px;width:160px}.icon-pill{gap:10px;padding-inline:18px;height:50px}.icon-pill img{width:28px;height:28px;object-fit:contain;flex:0 0 28px}.icon-pill span{display:inline-block;line-height:1}.menu-toggle{display:none;border:0;background:none;font-size:28px}.section{padding:120px max(24px,calc((100vw - var(--max))/2));position:relative;overflow:hidden}.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}.faint{opacity:.1}.hero{height:min(1133px,calc(100vh - 80px));min-height:740px;position:relative;overflow:hidden;text-align:center}.hero>.bg{opacity:.3}.hero-asset{position:absolute;width:min(39vw,749px);top:7%;left:50%;translate:-50% 0}.hero-copy{position:absolute;z-index:2;top:59%;width:100%;padding:0 24px}.hero h1{font-size:clamp(38px,4.16vw,80px);margin:0}.hero h1 span{color:var(--blue)}.hero h1 strong{color:var(--deep)}.hero p{font-size:clamp(17px,1.35vw,26px);line-height:1.4}.hero p b,.title span,.support-copy span,.news-side>span{color:var(--deep)}.actions{display:flex;justify-content:center;gap:16px;margin-top:55px}.cta{min-height:60px;padding:0 44px;font-size:18px;font-weight:600}.cta.dark{background:var(--deep)}.title{text-align:center;position:relative;z-index:2}.title h2,.support-copy h2,.news-side h2{font-size:clamp(32px,2.1vw,40px);margin:12px 0}.title p,.support-copy p,.news-side p{font-size:18px;line-height:1.5;color:var(--muted)}.title em{font-style:normal;color:var(--blue)}.custom{min-height:1179px;text-align:center}.root{width:270px;margin:50px auto 80px}.glass{border:1px solid #cfd9e5;border-radius:12px;background:#fffc;box-shadow:0 8px 25px #3f77be14;transition:.35s;backdrop-filter:blur(8px)}.glass:hover{background:linear-gradient(135deg,#ffffffd9,#bbe0ff55);box-shadow:0 18px 50px #2b61d633,inset 0 1px #fff;transform:translateY(-8px);border-color:#4b90e299}.root img{width:160px;margin:auto}.custom-grid{list-style:none;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:40px;position:relative;z-index:2}.custom-grid:before{content:"";position:absolute;top:-52px;left:8%;right:8%;height:50px;border:1px solid #bbb;border-bottom:0}.custom-grid li{padding:20px 14px}.custom-grid img{height:145px;width:100%;object-fit:contain}.custom>.cta,.company>.cta{margin-top:60px;position:relative;z-index:2}.products{padding-top:150px;padding-bottom:180px;min-height:2050px}.product{position:relative;z-index:2;text-align:center;margin-bottom:130px}.product-img{width:min(850px,75vw);height:640px;object-fit:contain;margin:20px auto}.support{min-height:930px}.support-copy{max-width:900px}.support-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9%;list-style:none;padding:90px 0 0;text-align:center;position:relative;z-index:2}.support-grid small{display:block;color:var(--deep);font-size:16px}.support-grid h3{font-size:38px;margin:10px}.support-grid p{color:var(--muted)}.sprite{display:block;width:330px;height:330px;max-width:100%;margin:auto;background:url('assets/support-assets.png') no-repeat;background-size:300% 100%;animation:float 5s ease-in-out infinite}.s1{background-position:0}.s2{background-position:50%;animation-delay:-1.5s}.s3{background-position:100%;animation-delay:-3s}.watermark{position:absolute;right:2%;bottom:-8%;width:48%;opacity:.14}.company{min-height:519px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center}.news{display:grid;grid-template-columns:260px 1fr;gap:60px;min-height:850px}.news-side .cta{margin:25px 0}.news-side nav{display:flex;flex-direction:column}.news-side nav a{padding:22px 10px;border-bottom:1px solid #555}.news-side nav a:first-child{color:var(--blue);border-color:var(--blue)}.news-list{display:flex;gap:24px;overflow-x:auto;padding:170px 20px 30px}.news-card{flex:0 0 346px;height:385px;padding:23px}.news-card img{width:300px;height:200px;object-fit:cover;border-radius:5px}.news-card b{display:inline-block;background:var(--deep);color:#fff;border-radius:10px;padding:5px 10px;font-size:12px;margin-top:22px}.news-card time{color:#888}.clients{background:#fafafa;min-height:589px}.client-logos{max-width:900px;margin:70px auto 0;display:flex;justify-content:center;flex-wrap:wrap;gap:28px}.client-logos img{width:180px;height:70px;object-fit:cover;border:1px solid #ccc;border-radius:5px}.quick{position:fixed;right:28px;top:36%;z-index:30;width:104px}.quick-toggle{width:100%;height:35px;border:0;border-radius:10px 10px 0 0;background:var(--blue);color:#fff;font-size:13px}.quick-toggle span{float:right}.quick-menu{background:#fff;border:1px solid #ccc;border-radius:0 0 10px 10px;overflow:hidden;max-height:370px;transition:.35s}.quick-menu a{height:116px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-size:13px;border-bottom:1px solid #ddd}.quick-menu img{width:62px;height:62px;object-fit:contain}.quick.closed .quick-menu{max-height:0;border:0}.chat-launch{position:fixed;right:24px;bottom:24px;z-index:30;border:0;background:transparent;color:var(--blue);font-weight:700}.chat-launch img{width:105px;height:95px;object-fit:contain}.chat{position:fixed;right:28px;bottom:145px;z-index:40;width:min(380px,calc(100vw - 32px));background:#fffffff2;border:1px solid #4b90e266;border-radius:20px;box-shadow:0 20px 70px #17437c40;backdrop-filter:blur(18px);overflow:hidden;transform:translateY(25px) scale(.94);opacity:0;pointer-events:none;transition:.3s}.chat.open{transform:none;opacity:1;pointer-events:auto}.chat header{padding:18px 20px;background:linear-gradient(120deg,var(--blue),var(--deep));color:#fff;display:flex;justify-content:space-between}.chat header button{border:0;background:none;color:#fff;font-size:22px}.chat-body{padding:18px}.chat-body p,.answer p{padding:12px;border-radius:14px;background:#eef6ff;line-height:1.5}.answer p{background:var(--deep);color:#fff}.questions{padding:0 18px 18px;display:grid;gap:8px}.questions button,.questions a{border:1px solid #cfe1f7;background:#fff;padding:11px;border-radius:11px;text-align:left;color:var(--ink)}footer{padding:100px max(24px,calc((100vw - var(--max))/2));min-height:600px}.footer-top{display:flex;justify-content:space-between}.footer-logo{width:330px;height:82px;object-fit:contain}footer p{color:var(--muted);line-height:1.5}.socials{display:flex;gap:15px}.socials img{width:50px;height:50px;object-fit:contain}footer>nav{display:flex;gap:25px;border-top:1px solid #ddd;margin-top:35px;padding-top:35px;color:var(--deep);font-weight:600}@keyframes float{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-18px) rotate(1deg)}}.float{animation:float 5s ease-in-out infinite}.reveal{will-change:transform,opacity}
 @media(max-width:1100px){.site-header{padding:0 20px}.brand{width:260px}.brand img:first-child{width:110px}.brand img:last-child{width:150px}.gnb{position:absolute;display:none;top:80px;left:0;right:0;padding:25px;background:#fff;box-shadow:0 10px 20px #0001;flex-wrap:wrap;justify-content:center}.gnb.open{display:flex}.menu-toggle{display:block;margin-left:auto}.header-actions{display:none}.hero-asset{width:min(680px,80vw)}.hero-copy{top:55%}.custom-grid{grid-template-columns:repeat(2,1fr)}.custom-grid:before{display:none}.custom-grid li:last-child{grid-column:1/-1;max-width:340px;justify-self:center}.products{min-height:auto}.support-grid{gap:3%}.news{grid-template-columns:1fr}.news-list{padding-top:20px}}
 @media(max-width:700px){.site-header{height:68px}.brand{width:220px}.brand img:first-child{width:90px}.brand img:last-child{width:130px}.gnb{top:68px;flex-direction:column;align-items:center}.hero{min-height:720px}.hero-asset{width:120vw;max-width:none;top:3%}.hero-copy{top:47%}.hero p br,.title p br{display:none}.actions{flex-direction:column;align-items:center;margin-top:35px}.cta{width:min(100%,320px);padding:0 20px}.section{padding:85px 20px}.custom-grid{grid-template-columns:1fr;gap:18px}.custom-grid li:last-child{grid-column:auto}.product{padding:0 10px}.product-img{width:110vw;height:390px;max-width:none;margin-left:-10vw}.support-grid{grid-template-columns:1fr;padding-top:45px}.support-grid li{margin-bottom:45px}.sprite{width:260px;height:260px}.company{min-height:520px}.news{padding-right:0}.news-card{flex-basis:300px;height:365px}.news-card img{width:100%;height:180px}.client-logos{gap:12px}.client-logos img{width:145px;height:57px}.quick{right:8px;top:auto;bottom:125px;width:80px}.quick-menu a{height:90px;font-size:11px}.quick-menu img{width:48px;height:48px}.chat-launch img{width:80px;height:70px}.chat-launch span{display:none}.footer-top{flex-direction:column;gap:30px}.footer-logo{width:270px}.socials{flex-wrap:wrap}.socials img{width:42px;height:42px}footer>nav{flex-wrap:wrap}}
 @media(prefers-reduced-motion:reduce){.float,.sprite{animation:none}.reveal{opacity:1!important;transform:none!important}}
-
-/* Customizing relationship line and floating-asset containment */
-.custom-grid:before{border-color:#61adff;border-width:2px;filter:drop-shadow(0 0 3px #1b84ff) drop-shadow(0 0 8px #55b8ff);z-index:0}
-.custom-grid:after{content:"";position:absolute;left:50%;top:-80px;width:2px;height:30px;translate:-50% 0;background:#61adff;box-shadow:0 0 4px #1686ff,0 0 11px #55b8ff;z-index:0}
-.custom-grid li{position:relative;z-index:2;overflow:hidden}
-.root{position:relative;overflow:hidden;isolation:isolate}
-.custom-grid li img,.root img{max-width:100%;max-height:100%;transform-origin:center}
+#soft-bank-renewal /* Customizing relationship line and floating-asset containment */
+.custom-grid:before {border-color:#61adff;border-width:2px;filter:drop-shadow(0 0 3px #1b84ff) drop-shadow(0 0 8px #55b8ff);z-index:0}
+#soft-bank-renewal .custom-grid:after {content:"";position:absolute;left:50%;top:-80px;width:2px;height:30px;translate:-50% 0;background:#61adff;box-shadow:0 0 4px #1686ff,0 0 11px #55b8ff;z-index:0}
+#soft-bank-renewal .custom-grid li {position:relative;z-index:2;overflow:hidden}
+#soft-bank-renewal .root {position:relative;overflow:hidden;isolation:isolate}
+#soft-bank-renewal .custom-grid li img, #soft-bank-renewal .root img {max-width:100%;max-height:100%;transform-origin:center}
 @media(max-width:1100px){.custom-grid:before,.custom-grid:after{display:none}}
-
-/* Main visual proportions */
-.hero{height:1133px;min-height:1133px}
-.hero-asset{left:0;right:0;top:12.3%;translate:none;margin-inline:auto;object-position:center}
+#soft-bank-renewal /* Main visual proportions */
+.hero {height:1133px;min-height:1133px}
+#soft-bank-renewal .hero-asset {left:0;right:0;top:12.3%;translate:none;margin-inline:auto;object-position:center}
 @media(max-width:700px){.hero{height:820px;min-height:820px}.hero-asset{top:5%}}
-
-/* Complete customizing-card connector tree */
-.root{min-height:240px;padding:24px 18px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}
-.root img{height:155px;object-fit:contain;flex:0 0 auto}
-.custom-grid{padding-top:52px;background-image:linear-gradient(#61adff,#61adff),linear-gradient(#61adff,#61adff),linear-gradient(#61adff,#61adff),linear-gradient(#61adff,#61adff),linear-gradient(#61adff,#61adff);background-repeat:no-repeat;background-size:2px 52px;background-position:9% 0,29.5% 0,50% 0,70.5% 0,91% 0}
-.custom-grid:before{top:0;left:9%;right:9%;height:0;border:0;border-top:2px solid #61adff}
-.custom-grid:after{top:-80px;height:80px}
-.custom-grid li{min-height:320px;padding:35px 14px 24px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px}
-.custom-grid img{height:175px;flex:0 0 175px}
-.custom-grid p{margin:8px 0 0}
+#soft-bank-renewal /* Complete customizing-card connector tree */
+.root {min-height:240px;padding:24px 18px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}
+#soft-bank-renewal .root img {height:155px;object-fit:contain;flex:0 0 auto}
+#soft-bank-renewal .custom-grid {padding-top:52px;background-image:linear-gradient(#61adff,#61adff),linear-gradient(#61adff,#61adff),linear-gradient(#61adff,#61adff),linear-gradient(#61adff,#61adff),linear-gradient(#61adff,#61adff);background-repeat:no-repeat;background-size:2px 52px;background-position:9% 0,29.5% 0,50% 0,70.5% 0,91% 0}
+#soft-bank-renewal .custom-grid:before {top:0;left:9%;right:9%;height:0;border:0;border-top:2px solid #61adff}
+#soft-bank-renewal .custom-grid:after {top:-80px;height:80px}
+#soft-bank-renewal .custom-grid li {min-height:320px;padding:35px 14px 24px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px}
+#soft-bank-renewal .custom-grid img {height:175px;flex:0 0 175px}
+#soft-bank-renewal .custom-grid p {margin:8px 0 0}
 @media(max-width:1100px){.custom-grid{padding-top:0;background-image:none}.custom-grid li{min-height:300px}}
-
-/* Animated neon border and connector flow */
-@property --neon-angle{syntax:"<angle>";initial-value:0deg;inherits:false}
-.asset-window{width:100%;height:195px;display:grid;place-items:center;overflow:hidden;border-radius:9px}
-.root .asset-window{height:170px}
-.custom-grid li{overflow:visible}
-.custom-grid li img,.root img{margin:auto}
-.custom-grid{background-image:none}
-.custom-grid:before{background-image:linear-gradient(90deg,transparent 0,#bdf4ff 45%,#fff 50%,#36a8ff 55%,transparent 100%);background-repeat:no-repeat;background-size:180px 5px;animation:line-travel 3.8s linear infinite}
-.custom-grid li:before{content:"";position:absolute;left:50%;top:-52px;width:2px;height:52px;translate:-50% 0;background:linear-gradient(to bottom,#61adff 0 35%,#fff 50%,#198cff 65% 100%);background-size:100% 220%;box-shadow:0 0 4px #1686ff,0 0 10px #55b8ff;animation:stem-flow 1.8s linear infinite;z-index:-1}
-.custom-grid li:after,.root:before{content:"";position:absolute;inset:-2px;padding:2px;border-radius:13px;background:conic-gradient(from var(--neon-angle),transparent 0 62%,#70c8ff 72%,#fff 79%,#1686ff 86%,transparent 96%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;z-index:4;animation:border-orbit 3.2s linear infinite}
-.custom-grid li:nth-child(2):after{animation-delay:-.6s}.custom-grid li:nth-child(3):after{animation-delay:-1.2s}.custom-grid li:nth-child(4):after{animation-delay:-1.8s}.custom-grid li:nth-child(5):after{animation-delay:-2.4s}
+#soft-bank-renewal /* Animated neon border and connector flow */
+@property --neon-angle {syntax:"<angle>";initial-value:0deg;inherits:false}
+#soft-bank-renewal .asset-window {width:100%;height:195px;display:grid;place-items:center;overflow:hidden;border-radius:9px}
+#soft-bank-renewal .root .asset-window {height:170px}
+#soft-bank-renewal .custom-grid li {overflow:visible}
+#soft-bank-renewal .custom-grid li img, #soft-bank-renewal .root img {margin:auto}
+#soft-bank-renewal .custom-grid {background-image:none}
+#soft-bank-renewal .custom-grid:before {background-image:linear-gradient(90deg,transparent 0,#bdf4ff 45%,#fff 50%,#36a8ff 55%,transparent 100%);background-repeat:no-repeat;background-size:180px 5px;animation:line-travel 3.8s linear infinite}
+#soft-bank-renewal .custom-grid li:before {content:"";position:absolute;left:50%;top:-52px;width:2px;height:52px;translate:-50% 0;background:linear-gradient(to bottom,#61adff 0 35%,#fff 50%,#198cff 65% 100%);background-size:100% 220%;box-shadow:0 0 4px #1686ff,0 0 10px #55b8ff;animation:stem-flow 1.8s linear infinite;z-index:-1}
+#soft-bank-renewal .custom-grid li:after, #soft-bank-renewal .root:before {content:"";position:absolute;inset:-2px;padding:2px;border-radius:13px;background:conic-gradient(from var(--neon-angle),transparent 0 62%,#70c8ff 72%,#fff 79%,#1686ff 86%,transparent 96%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;z-index:4;animation:border-orbit 3.2s linear infinite}
+#soft-bank-renewal .custom-grid li:nth-child(2):after {animation-delay:-.6s}.custom-grid li:nth-child(3):after{animation-delay:-1.2s}.custom-grid li:nth-child(4):after{animation-delay:-1.8s}.custom-grid li:nth-child(5):after{animation-delay:-2.4s}
 @keyframes border-orbit{to{--neon-angle:360deg}}
 @keyframes line-travel{from{background-position:-180px -2px}to{background-position:calc(100% + 180px) -2px}}
 @keyframes stem-flow{from{background-position:0 -70px}to{background-position:0 70px}}
 @media(max-width:1100px){.custom-grid li:before,.custom-grid:before,.custom-grid:after{display:none}}
 @media(prefers-reduced-motion:reduce){.custom-grid li:after,.root:before,.custom-grid:before,.custom-grid li:before{animation:none}}
-
-/* Support watermark placement and company typing cursor */
-.support{padding-bottom:0}
-.watermark{bottom:-14%;right:1.5%;width:48%;z-index:1}
-.company{margin-top:0}
-.company .title,.company .cta{z-index:2}
-.type-text.typing:after{content:"";display:inline-block;width:2px;height:.95em;margin-left:5px;vertical-align:-.08em;background:#2b61d6;animation:cursor-blink .65s steps(1) infinite}
+#soft-bank-renewal /* Support watermark placement and company typing cursor */
+.support {padding-bottom:0}
+#soft-bank-renewal .watermark {bottom:-14%;right:1.5%;width:48%;z-index:1}
+#soft-bank-renewal .company {margin-top:0}
+#soft-bank-renewal .company .title, #soft-bank-renewal .company .cta {z-index:2}
+#soft-bank-renewal .type-text.typing:after {content:"";display:inline-block;width:2px;height:.95em;margin-left:5px;vertical-align:-.08em;background:#2b61d6;animation:cursor-blink .65s steps(1) infinite}
 @keyframes cursor-blink{50%{opacity:0}}
 @media(max-width:700px){.watermark{bottom:-6%;width:82%}}
-
-/* Customer-center Swiper */
-.news-tabs{display:flex;flex-direction:column}
-.news-side .news-tabs button{padding:22px 10px;border:0;border-bottom:1px solid #555;background:transparent;color:#444;text-align:left;font-size:18px;cursor:pointer;transition:color .25s,border-color .25s,transform .25s}
-.news-side .news-tabs button:hover,.news-side .news-tabs button.active{color:var(--blue);border-color:var(--blue);transform:translateX(5px)}
-.news-slider{width:100%;min-width:0;padding:170px 20px 58px;cursor:grab}
-.news-slider:active{cursor:grabbing}
-.news-slider .swiper-wrapper{align-items:stretch}
-.news-slider .news-card{width:346px;height:385px;display:block;flex:none}
-.news-slider .swiper-scrollbar{left:20px;right:20px;bottom:18px;width:auto;height:10px;background:#d5d5d5}
-.news-slider .swiper-scrollbar-drag{background:#555;border-radius:20px;cursor:grab}
-.news-slider .swiper-slide{transition:transform .35s,box-shadow .35s}
-.news-slider .swiper-slide-active{box-shadow:none}
+#soft-bank-renewal /* Customer-center Swiper */
+.news-tabs {display:flex;flex-direction:column}
+#soft-bank-renewal .news-side .news-tabs button {padding:22px 10px;border:0;border-bottom:1px solid #555;background:transparent;color:#444;text-align:left;font-size:18px;cursor:pointer;transition:color .25s,border-color .25s,transform .25s}
+#soft-bank-renewal .news-side .news-tabs button:hover, #soft-bank-renewal .news-side .news-tabs button.active {color:var(--blue);border-color:var(--blue);transform:translateX(5px)}
+#soft-bank-renewal .news-slider {width:100%;min-width:0;padding:170px 20px 58px;cursor:grab}
+#soft-bank-renewal .news-slider:active {cursor:grabbing}
+#soft-bank-renewal .news-slider .swiper-wrapper {align-items:stretch}
+#soft-bank-renewal .news-slider .news-card {width:346px;height:385px;display:block;flex:none}
+#soft-bank-renewal .news-slider .swiper-scrollbar {left:20px;right:20px;bottom:18px;width:auto;height:5px;background:#d5d5d5;border-radius:999px}
+#soft-bank-renewal .news-slider .swiper-scrollbar-drag {background:#555;border-radius:999px;cursor:grab;height:5px}
+#soft-bank-renewal .news-slider .swiper-slide {transition:transform .35s,box-shadow .35s}
+#soft-bank-renewal .news-slider .swiper-slide-active {box-shadow:none}
 @media(max-width:1100px){.news-slider{padding-top:20px}}
 @media(max-width:700px){.news-slider{padding-left:0;padding-right:20px}.news-slider .news-card{width:300px;height:365px}.news-slider .swiper-scrollbar{left:0;right:20px}}
-
-/* Align the visible footer logo edge with the footer copy */
-.footer-logo{width:360px;height:82px;max-width:none;object-fit:cover;object-position:center;transform:translateX(-16px)}
+#soft-bank-renewal /* Align the visible footer logo edge with the footer copy */
+.footer-logo {width:360px;height:82px;max-width:none;object-fit:cover;object-position:center;transform:translateX(-16px)}
 @media(max-width:700px){.footer-logo{width:295px;height:72px;transform:translateX(-13px)}}
-
-.company .title p{font-weight:500;white-space:pre-line}
-
-/* Keep connector lines neutral while animated blue light travels along them */
-.custom-grid:before{border-top-color:#CCCCCC;filter:none}
-.custom-grid:after{background-color:#CCCCCC;background-image:linear-gradient(to bottom,transparent 0,#70c8ff 42%,#fff 50%,#1686ff 58%,transparent 100%);background-repeat:no-repeat;background-size:100% 70px;box-shadow:none;animation:stem-flow 1.8s linear infinite}
-.custom-grid li:before{background-color:#CCCCCC;background-image:linear-gradient(to bottom,transparent 0,#70c8ff 42%,#fff 50%,#1686ff 58%,transparent 100%);background-repeat:no-repeat;background-size:100% 70px;box-shadow:none}
-
-/* Reserve a clear lower band for the support-section watermark */
-.support{min-height:1080px;padding-bottom:190px}
-.watermark{bottom:0;transform:translateY(31%)}
+#soft-bank-renewal .company .title p {font-weight:500;white-space:pre-line}
+#soft-bank-renewal /* Keep connector lines neutral while animated blue light travels along them */
+.custom-grid:before {border-top-color:#CCCCCC;filter:none}
+#soft-bank-renewal .custom-grid:after {background-color:#CCCCCC;background-image:linear-gradient(to bottom,transparent 0,#70c8ff 42%,#fff 50%,#1686ff 58%,transparent 100%);background-repeat:no-repeat;background-size:100% 70px;box-shadow:none;animation:stem-flow 1.8s linear infinite}
+#soft-bank-renewal .custom-grid li:before {background-color:#CCCCCC;background-image:linear-gradient(to bottom,transparent 0,#70c8ff 42%,#fff 50%,#1686ff 58%,transparent 100%);background-repeat:no-repeat;background-size:100% 70px;box-shadow:none}
+#soft-bank-renewal /* Reserve a clear lower band for the support-section watermark */
+.support {min-height:1080px;padding-bottom:190px}
+#soft-bank-renewal .watermark {bottom:0;transform:translateY(31%)}
 @media(max-width:700px){.support{min-height:auto;padding-bottom:150px}.watermark{bottom:0;transform:translateY(31%)}}
 @media(prefers-reduced-motion:reduce){.custom-grid:after,.custom-grid li:before{animation:none}}
-
-/* Final connector treatment: 5px sky-blue to blue gradient with moving highlight */
-.custom-grid:before{height:5px;border:0;background-image:linear-gradient(90deg,transparent 0,#fff 47%,#52bfff 50%,transparent 53%),linear-gradient(90deg,#bfeeff 0%,#75caff 35%,#2b61d6 50%,#75caff 65%,#bfeeff 100%);background-size:180px 5px,100% 5px;background-position:-180px 0,0 0}
-.custom-grid:after,.custom-grid li:before{width:5px;background-color:transparent;background-image:linear-gradient(to bottom,transparent 0,#fff 46%,#2388f5 50%,transparent 54%),linear-gradient(to bottom,#bfeeff,#2b61d6,#8edbff);background-size:5px 70px,5px 100%;background-position:0 -70px,0 0}
+#soft-bank-renewal /* Final connector treatment: 5px sky-blue to blue gradient with moving highlight */
+.custom-grid:before {height:5px;border:0;background-image:linear-gradient(90deg,transparent 0,#fff 47%,#52bfff 50%,transparent 53%),linear-gradient(90deg,#bfeeff 0%,#75caff 35%,#2b61d6 50%,#75caff 65%,#bfeeff 100%);background-size:180px 5px,100% 5px;background-position:-180px 0,0 0}
+#soft-bank-renewal .custom-grid:after, #soft-bank-renewal .custom-grid li:before {width:5px;background-color:transparent;background-image:linear-gradient(to bottom,transparent 0,#fff 46%,#2388f5 50%,transparent 54%),linear-gradient(to bottom,#bfeeff,#2b61d6,#8edbff);background-size:5px 70px,5px 100%;background-position:0 -70px,0 0}
 @keyframes line-travel{from{background-position:-180px 0,0 0}to{background-position:calc(100% + 180px) 0,0 0}}
 @keyframes stem-flow{from{background-position:0 -70px,0 0}to{background-position:0 70px,0 0}}
-
-/* Left reference quick menu and compact control above the chatbot */
-.quick-left{position:fixed;left:0;top:32%;z-index:30;width:182px;transition:transform .3s ease}
-.quick-left .quick-toggle{height:44px;border-radius:0;background:linear-gradient(120deg,#68c8f1,#2b61d6);font-size:16px}
-.quick-left .quick-menu{border-radius:0;max-height:650px}
-.quick-left .quick-menu a{height:215px;font-size:20px;line-height:1.35;background:#fff}
-.quick-left .quick-menu img{width:100px;height:100px;margin-bottom:10px}
-.quick-left.closed{transform:translateX(calc(-100% - 10px))}
-.quick-left.closed .quick-menu{max-height:650px;border:1px solid #ccc}
-.quick-fab{position:fixed;right:24px;bottom:135px;z-index:31;display:flex;align-items:center;gap:9px;min-width:112px;height:50px;padding:0 17px;border:0;border-radius:28px;background:linear-gradient(120deg,#75d5ef,#3b91e6);color:#fff;font-weight:800;line-height:1.05;box-shadow:0 8px 24px rgba(43,97,214,.2);cursor:pointer}
-.quick-fab b{display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:#fff;color:#369bdc;font-size:20px}
-.quick-fab span{font-size:12px;text-align:left}
-.chat-launch{cursor:pointer}
-
-/* News carousel controls */
-.news-controls{display:flex;gap:10px;margin-top:28px}
-.news-controls button{width:48px;height:48px;border:0;border-radius:50%;background:linear-gradient(135deg,#63bdf1,#2b61d6);color:#fff;font-size:22px;cursor:pointer;box-shadow:0 8px 20px rgba(43,97,214,.2)}
-.news-controls button:hover{transform:translateY(-2px)}
-.news-controls button:disabled{opacity:.45;cursor:default}
-
-/* Scrollable legal modals */
-body.modal-open{overflow:hidden}
-.legal-modal{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(12,28,52,.58);opacity:0;visibility:hidden;transition:.25s}
-.legal-modal.open{opacity:1;visibility:visible}
-.legal-dialog{position:relative;width:min(760px,100%);max-height:min(82vh,780px);padding:36px;background:#fff;border-radius:20px;box-shadow:0 24px 80px rgba(0,31,79,.3);overflow:hidden}
-.legal-dialog h2{margin:0 48px 22px 0;font-size:30px}
-.legal-scroll{max-height:calc(82vh - 120px);padding-right:14px;overflow-y:auto;overscroll-behavior:contain;line-height:1.75;color:#444}
-.legal-scroll h3{margin:28px 0 8px;color:#1d1d1f}
-.legal-scroll a{display:inline-flex;margin-top:24px;color:var(--deep);font-weight:700}
-.modal-close{position:absolute;right:22px;top:18px;width:42px;height:42px;border:0;border-radius:50%;background:#eef6ff;color:var(--deep);font-size:26px;cursor:pointer}
-footer>nav button{padding:0;border:0;background:none;color:inherit;font:inherit;font-weight:600;cursor:pointer}
-
-/* Consistent card geometry and overflow-safe responsive layout */
-.root,.custom-grid li{min-height:320px;padding:35px 14px 24px}
-.root .asset-window,.custom-grid .asset-window{height:195px}
-.custom p,.product p,.support p,.company p,.news-card p,footer p{overflow-wrap:anywhere;word-break:keep-all}
+#soft-bank-renewal /* Left reference quick menu and compact control above the chatbot */
+.quick-left {position:fixed;left:0;top:32%;z-index:30;width:182px;transition:transform .3s ease}
+#soft-bank-renewal .quick-left .quick-toggle {height:44px;border-radius:0;background:linear-gradient(120deg,#68c8f1,#2b61d6);font-size:16px;cursor:pointer}
+#soft-bank-renewal .quick-left .quick-menu {border-radius:0;max-height:650px;transition:opacity .2s ease,transform .25s ease,visibility .2s ease}
+#soft-bank-renewal .quick-left .quick-menu a {height:215px;font-size:20px;line-height:1.35;background:#fff}
+#soft-bank-renewal .quick-left .quick-menu img {width:100px;height:100px;margin-bottom:10px}
+#soft-bank-renewal .quick-left.closed {transform:translateX(calc(-100% + 42px))}
+#soft-bank-renewal .quick-left.closed .quick-menu {opacity:0;visibility:hidden;pointer-events:none;transform:translateX(-8px)}
+#soft-bank-renewal .quick-fab {position:fixed;right:24px;bottom:135px;z-index:120;display:flex;align-items:center;gap:9px;min-width:112px;height:50px;padding:0 17px;border:0;border-radius:28px;background:linear-gradient(120deg,#75d5ef,#3b91e6);color:#fff;font-weight:800;line-height:1.05;box-shadow:0 8px 24px rgba(43,97,214,.2);cursor:pointer}
+#soft-bank-renewal .quick-fab b {display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:#fff;color:#369bdc;font-size:20px}
+#soft-bank-renewal .quick-fab span {font-size:12px;text-align:left}
+#soft-bank-renewal .chat-launch {position:fixed;right:24px;bottom:24px;z-index:110;cursor:pointer}
+#soft-bank-renewal .chat {position:fixed;right:150px;bottom:120px;z-index:90;width:min(380px,calc(100vw - 32px));background:#fffffff2;border:1px solid #4b90e266;border-radius:20px;box-shadow:0 20px 70px #17437c40;backdrop-filter:blur(18px);overflow:hidden;transform:translateY(25px) scale(.94);opacity:0;pointer-events:none;transition:.3s}
+#soft-bank-renewal .chat.open {transform:none;opacity:1;pointer-events:auto}
+#soft-bank-renewal .chat .questions {position:relative;z-index:2;pointer-events:auto}
+#soft-bank-renewal .chat .questions button, #soft-bank-renewal .chat .questions a {position:relative;z-index:2}
+#soft-bank-renewal footer {position:relative;z-index:1}
+#soft-bank-renewal /* News carousel controls */
+.news-controls {display:flex;gap:10px;margin-top:28px}
+#soft-bank-renewal .news-controls button, #soft-bank-renewal .swiper-button-prev, #soft-bank-renewal .swiper-button-next {width:48px;height:48px;border:1px solid #2b61d6;border-radius:50%;background:#2b61d6;color:#fff;font-size:22px;cursor:pointer;box-shadow:none;display:grid;place-items:center}
+#soft-bank-renewal .news-controls button:hover, #soft-bank-renewal .swiper-button-prev:hover, #soft-bank-renewal .swiper-button-next:hover {background:#1f57d0;border-color:#1f57d0;transform:none}
+#soft-bank-renewal .news-controls button:disabled, #soft-bank-renewal .swiper-button-prev.swiper-button-disabled, #soft-bank-renewal .swiper-button-next.swiper-button-disabled {opacity:.45;cursor:default}
+#soft-bank-renewal .swiper-button-prev:after, #soft-bank-renewal .swiper-button-next:after {font-size:20px;color:#fff}
+#soft-bank-renewal /* Scrollable legal modals */
+body.modal-open {overflow:hidden}
+#soft-bank-renewal .legal-modal {position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(12,28,52,.58);opacity:0;visibility:hidden;transition:.25s}
+#soft-bank-renewal .legal-modal.open {opacity:1;visibility:visible}
+#soft-bank-renewal .legal-dialog {position:relative;width:min(760px,100%);max-height:min(82vh,780px);padding:36px;background:#fff;border-radius:20px;box-shadow:0 24px 80px rgba(0,31,79,.3);overflow:hidden}
+#soft-bank-renewal .legal-dialog h2 {margin:0 48px 22px 0;font-size:30px}
+#soft-bank-renewal .legal-scroll {max-height:calc(82vh - 120px);padding-right:14px;overflow-y:auto;overscroll-behavior:contain;line-height:1.75;color:#444}
+#soft-bank-renewal .legal-scroll h3 {margin:28px 0 8px;color:#1d1d1f}
+#soft-bank-renewal .legal-scroll a {display:inline-flex;margin-top:24px;color:var(--deep);font-weight:700}
+#soft-bank-renewal .modal-close {position:absolute;right:22px;top:18px;width:42px;height:42px;border:0;border-radius:50%;background:#eef6ff;color:var(--deep);font-size:26px;cursor:pointer}
+#soft-bank-renewal footer>nav button {padding:0;border:0;background:none;color:inherit;font:inherit;font-weight:600;cursor:pointer}
+#soft-bank-renewal /* Consistent card geometry and overflow-safe responsive layout */
+.root, #soft-bank-renewal .custom-grid li {min-height:320px;padding:35px 14px 24px}
+#soft-bank-renewal .root .asset-window, #soft-bank-renewal .custom-grid .asset-window {height:195px}
+#soft-bank-renewal .custom p, #soft-bank-renewal .product p, #soft-bank-renewal .support p, #soft-bank-renewal .company p, #soft-bank-renewal .news-card p, #soft-bank-renewal footer p {overflow-wrap:anywhere;word-break:keep-all}
 @media(max-width:1500px){.quick-left{width:150px}.quick-left .quick-menu a{height:175px;font-size:17px}.quick-left .quick-menu img{width:82px;height:82px}}
 @media(max-width:1100px){.section{padding-left:32px;padding-right:32px}.custom-grid{gap:24px}.root{width:min(100%,340px);margin-bottom:52px}.product-img{max-width:100%}.support-grid h3{font-size:32px}.quick-left{top:auto;bottom:96px}}
 @media(max-width:700px){body{min-width:0}.site-header{padding:0 14px}.brand{width:190px}.brand img:first-child{width:76px}.brand img:last-child{width:114px}.section{padding:72px 18px}.hero{height:760px;min-height:760px}.hero-asset{width:112vw;top:7%}.hero-copy{top:45%;padding:0 18px}.hero h1{font-size:34px;line-height:1.22}.hero p{font-size:16px}.actions{gap:12px}.custom{min-height:auto}.root,.custom-grid li{width:100%;max-width:340px;min-height:300px;margin-left:auto;margin-right:auto;padding:28px 16px 22px}.root .asset-window,.custom-grid .asset-window{height:185px}.custom-grid{gap:22px}.products{padding-top:90px;padding-bottom:80px}.product{margin-bottom:80px}.product-img{width:100%;height:330px;max-width:100%;margin:15px auto}.support{padding-bottom:130px}.support-grid{gap:10px}.support-grid h3{font-size:30px}.watermark{width:96%;right:-8%}.company{min-height:560px}.company .title p{font-size:16px;line-height:1.7}.news{padding-right:18px;gap:28px}.news-controls{margin-top:20px}.news-slider{padding-right:0}.news-slider .news-card{width:min(300px,calc(100vw - 54px));height:365px}.clients{min-height:auto}.client-logos img{width:calc(50% - 6px);height:64px}.quick-left{left:8px;width:112px;bottom:112px;top:auto}.quick-left .quick-toggle{height:34px;font-size:12px}.quick-left .quick-menu a{height:112px;font-size:13px}.quick-left .quick-menu img{width:54px;height:54px;margin-bottom:4px}.quick-fab{right:12px;bottom:103px;min-width:100px;height:46px;padding:0 13px}.chat-launch{right:8px;bottom:15px}.chat{right:16px;bottom:105px;max-height:calc(100vh - 125px);overflow-y:auto}.legal-modal{padding:12px}.legal-dialog{padding:28px 20px;border-radius:16px}.legal-dialog h2{font-size:24px}.legal-scroll{max-height:calc(82vh - 100px)}footer{padding:72px 20px;min-height:auto}.footer-top{align-items:flex-start}.footer-logo{max-width:100%}footer>nav{gap:18px;font-size:14px}}
-
-/* Keep the root-card neon orbit fully visible on all four edges */
-.root{overflow:visible}
-.root:before{inset:0;padding:2px;border-radius:12px;background:conic-gradient(from var(--neon-angle),transparent 0 56%,#7ed8ff 68%,#fff 76%,#1686ff 84%,transparent 96%)}
-
-/* Match the Figma left quick menu and reveal the compact menu upward */
-.quick-left{left:0;top:34%;width:138px}
-.quick-left .quick-toggle{height:34px;border-radius:0;background:#3266d7;font-size:14px;font-weight:500}
-.quick-left .quick-toggle span{display:none}
-.quick-left .quick-menu{border:1px solid #d7d7d7;border-top:0;background:#fff}
-.quick-left .quick-menu a{height:163px;border-bottom:1px solid #d7d7d7;background:#fff;color:#555;font-size:16px;line-height:1.35}
-.quick-left .quick-menu a:last-child{border-bottom:0}
-.quick-left .quick-menu img{width:64px;height:64px;margin-bottom:10px;object-fit:contain}
-.quick-popover{position:fixed;right:24px;bottom:195px;z-index:31;width:210px;padding:10px;border:1px solid rgba(75,144,226,.25);border-radius:22px;background:rgba(255,255,255,.94);box-shadow:0 16px 44px rgba(34,83,150,.22);backdrop-filter:blur(15px);opacity:0;visibility:hidden;transform:translateY(14px) scale(.96);transition:.25s}
-.quick-popover.open{opacity:1;visibility:visible;transform:none}
-.quick-popover a{display:flex;align-items:center;gap:12px;min-height:76px;padding:8px 10px;border-radius:15px;color:#34415a;font-size:14px;line-height:1.35}
-.quick-popover a:hover{background:#edf8ff}
-.quick-popover img{width:58px;height:58px;object-fit:contain;flex:0 0 58px}
+#soft-bank-renewal /* Keep the root-card neon orbit fully visible on all four edges */
+.root {overflow:visible}
+#soft-bank-renewal .root:before {inset:0;padding:2px;border-radius:12px;background:conic-gradient(from var(--neon-angle),transparent 0 56%,#7ed8ff 68%,#fff 76%,#1686ff 84%,transparent 96%)}
+#soft-bank-renewal /* Match the Figma left quick menu and reveal the compact menu upward */
+.quick-left {left:0;top:34%;width:138px}
+#soft-bank-renewal .quick-left .quick-toggle {height:34px;border-radius:0;background:#3266d7;font-size:14px;font-weight:500;display:flex;align-items:center;justify-content:space-between;padding:0 12px;cursor:pointer}
+#soft-bank-renewal .quick-left .quick-toggle span {display:inline-block;font-size:16px;line-height:1}
+#soft-bank-renewal .quick-left .quick-menu {border:1px solid #d7d7d7;border-top:0;border-radius:0;background:#fff}
+#soft-bank-renewal .quick-left .quick-menu a {height:163px;border-bottom:1px solid #d7d7d7;border-radius:0;background:#fff;color:#555;font-size:16px;line-height:1.35}
+#soft-bank-renewal .quick-left .quick-menu a:last-child {border-bottom:0}
+#soft-bank-renewal .quick-left .quick-menu img {width:64px;height:64px;margin-bottom:10px;object-fit:contain}
+#soft-bank-renewal .quick-popover {position:fixed;right:24px;bottom:195px;z-index:31;width:210px;padding:10px;border:1px solid rgba(75,144,226,.25);border-radius:0;background:rgba(255,255,255,.94);box-shadow:0 16px 44px rgba(34,83,150,.22);backdrop-filter:blur(15px);opacity:0;visibility:hidden;transform:translateY(14px) scale(.96);transition:.25s}
+#soft-bank-renewal .quick-popover.open {opacity:1;visibility:visible;transform:none}
+#soft-bank-renewal .quick-popover a {display:flex;align-items:center;gap:12px;min-height:76px;padding:8px 10px;border-radius:0;color:#34415a;font-size:14px;line-height:1.35}
+#soft-bank-renewal .quick-popover a:hover {background:#edf8ff}
+#soft-bank-renewal .quick-popover img {width:58px;height:58px;object-fit:contain;flex:0 0 58px}
 @media(max-width:1100px){.quick-left{top:auto;bottom:96px}}
-@media(max-width:700px){.quick-left{left:8px;top:auto;bottom:112px;width:112px}.quick-left .quick-toggle{height:34px;font-size:12px}.quick-left .quick-menu a{height:112px;font-size:13px}.quick-left .quick-menu img{width:54px;height:54px;margin-bottom:4px}.quick-popover{right:12px;bottom:159px;width:190px}.quick-popover a{min-height:68px}.quick-popover img{width:50px;height:50px;flex-basis:50px}}
-
-/* Original right quick bar with hover details */
-.quick-popover{right:24px;bottom:195px;width:104px;padding:0;border:1px solid #d6d6d6;border-radius:0 0 10px 10px;background:#fff;box-shadow:0 14px 38px rgba(21,55,103,.16);overflow:visible}
-.quick-popover>strong{display:flex;align-items:center;height:34px;padding-left:18px;border-radius:0 9px 0 0;background:#4b90e2;color:#fff;font-size:13px;font-weight:500}
-.quick-popover .right-quick-item{position:relative;display:grid;place-items:center;width:100%;height:88px;min-height:88px;padding:0;border-radius:0;background:#fff}
-.quick-popover .right-quick-item:hover{background:#f8fbff}
-.quick-popover .right-quick-item img{width:64px;height:64px;object-fit:contain;flex:none}
-.quick-detail{position:absolute;right:calc(100% + 10px);top:50%;width:240px;padding:13px 20px;border-radius:32px;background:#202020;color:#fff;font-size:16px;font-style:normal;font-weight:600;line-height:1.25;text-align:left;white-space:nowrap;opacity:0;visibility:hidden;transform:translate(12px,-50%);transition:.22s;pointer-events:none}
-.right-quick-item:hover .quick-detail,.right-quick-item:focus-visible .quick-detail{opacity:1;visibility:visible;transform:translate(0,-50%)}
-.quick-detail b{font-weight:800}.quick-detail.multi{width:240px;padding:0;background:transparent;border-radius:0}
-.quick-detail.multi i{display:block;margin:5px 0;padding:12px 20px;border-radius:32px;background:#2f64db;color:#fff;font-style:normal}
-.right-quick-item.kakao .quick-detail{background:#ffe843;color:#252525}
-.right-quick-item.chat-link .quick-detail{background:#55c76a;color:#fff}
+@media(max-width:700px){.quick-left{left:8px;top:auto;bottom:112px;width:112px}.quick-left .quick-toggle{height:34px;font-size:12px}.quick-left .quick-menu a{height:112px;font-size:13px}.quick-left .quick-menu img{width:54px;height:54px;margin-bottom:4px}.quick-popover{right:12px;bottom:159px;width:190px}.quick-popover a{min-height:68px}.quick-popover img{width:50px;height:50px;flex-basis:50px}.chat{right:110px;bottom:98px}}
+#soft-bank-renewal /* Original right quick bar with hover details */
+.quick-popover {right:24px;bottom:195px;width:104px;padding:0;border:1px solid #d6d6d6;border-radius:0;background:#fff;box-shadow:0 14px 38px rgba(21,55,103,.16);overflow:visible}
+#soft-bank-renewal .quick-popover>strong {display:flex;align-items:center;height:34px;padding-left:18px;border-radius:0;background:#4b90e2;color:#fff;font-size:13px;font-weight:500}
+#soft-bank-renewal .quick-popover .right-quick-item {position:relative;display:grid;place-items:center;width:100%;height:88px;min-height:88px;padding:0;border-radius:0;background:#fff}
+#soft-bank-renewal .quick-popover .right-quick-item:hover {background:#f8fbff}
+#soft-bank-renewal .quick-popover .right-quick-item img {width:64px;height:64px;object-fit:contain;flex:none}
+#soft-bank-renewal .quick-detail {position:absolute;right:calc(100% + 10px);top:50%;width:240px;padding:13px 20px;border-radius:0;background:#202020;color:#fff;font-size:16px;font-style:normal;font-weight:600;line-height:1.25;text-align:left;white-space:nowrap;opacity:0;visibility:hidden;transform:translate(12px,-50%);transition:.22s;pointer-events:none}
+#soft-bank-renewal .right-quick-item:hover .quick-detail, #soft-bank-renewal .right-quick-item:focus-visible .quick-detail {opacity:1;visibility:visible;transform:translate(0,-50%)}
+#soft-bank-renewal .quick-detail b {font-weight:800}.quick-detail.multi{width:240px;padding:0;background:transparent;border-radius:0}
+#soft-bank-renewal .quick-detail.multi i {display:block;margin:5px 0;padding:12px 20px;border-radius:0;background:#2f64db;color:#fff;font-style:normal}
+#soft-bank-renewal .right-quick-item.kakao .quick-detail {background:#ffe843;color:#252525}
+#soft-bank-renewal .right-quick-item.chat-link .quick-detail {background:#55c76a;color:#fff}
 @media(max-width:700px){.quick-popover{right:12px;bottom:159px;width:90px}.quick-popover>strong{height:32px;padding-left:12px;font-size:12px}.quick-popover .right-quick-item{height:76px;min-height:76px}.quick-popover .right-quick-item img{width:56px;height:56px}.quick-detail{right:calc(100% + 7px);width:205px;padding:11px 16px;font-size:14px}.quick-detail.multi{width:205px}.quick-detail.multi i{padding:10px 16px}}
 
 /* Leave a clickable side tab when the left quick menu is folded */
