@@ -1,3 +1,4 @@
+@import url('v2.css');
 /* Load after legacy styles. All rules are scoped; no framework or dependency. */
 .sb-renewal{--sb-blue:#386bdf;--sb-sky:#77d6f4;--sb-ink:#192941;--sb-line:#d7e2ef;margin:0;color:var(--sb-ink);background:#fff;font-family:Arial,"Malgun Gothic",sans-serif;font-size:16px;line-height:1.75;word-break:keep-all;overflow-wrap:anywhere}
 .sb-renewal *{box-sizing:border-box;min-width:0}

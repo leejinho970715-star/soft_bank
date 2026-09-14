@@ -12,6 +12,8 @@
 
 CSS는 `.sb-renewal` 또는 `.sb-*` 이름으로 범위를 제한하며 전역 프레임워크를 추가하지 않습니다. 일부 레거시 페이지에 있는 기존 스타일과의 최종 조합은 실제 ASP 테스트 서버에서 확인해야 합니다.
 
+두 번째 디자인 버전은 body에 `sb-v2`와 페이지별 `sb-product`, `sb-consult`, `sb-support`, `sb-company`, `sb-member`, `sb-notice` 클래스를 사용합니다. `skin.css`가 `v2.css`를 로드합니다. 생성한 투명 PNG 5종은 `assets/subpages/v2/`에 있으며 히어로의 `sb-hero-asset`과 본문의 `sb-cutout`에 사용합니다. 제품의 원본 화면은 `details.sb-original`로 보존했습니다. 문의 페이지는 입력폼 중심, 제품과 기업소개는 교차 배치, 회원 페이지는 중앙 패널 구조를 사용합니다.
+
 `content-audit.json`에는 공개 경로, 미리보기 경로, 본문 대조 결과, 폼 필드 연결 정보가 있습니다. 47개 페이지는 메뉴·제품 탭의 공개 페이지와 게시판 첫 화면입니다. 게시글 개별 상세, 로그인 뒤 마이페이지, 등록 결과와 DB 작업은 수집·구현 범위에 포함되지 않습니다. 원본 마이페이지 경로 2개는 404로 확인되었습니다.
 
 로컬 확인: `npm ci` → `node tools/build-subpages.mjs` → `node tools/serve.mjs`. 수집 원문은 `reference/`에 보관되어 있고, 네트워크 수집 없이 재빌드할 수 있습니다.

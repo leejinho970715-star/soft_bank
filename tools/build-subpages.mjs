@@ -30,9 +30,9 @@ for(const page of pages){
  }
  const before=cleanText($);
  const code=original('body').attr('data-pgcode')||'';
- const entry=menu.find(m=>m.url===page.path)||menu.find(m=>m.code===code.slice(0,4));
+ const entry=menu.find(m=>m.url===page.path&&m.code.length===4)||menu.find(m=>m.code===code.slice(0,4));
  const activeTab=$('a').filter((i,e)=>{try{return new URL($(e).attr('href'),origin+page.path).pathname===page.path}catch{return false}}).first().text().trim();
- const title=activeTab||entry?.title||$('h1,h2,h3,h4,strong').first().text().trim()||page.path;
+ const title=entry?.title||(activeTab&&!/리플릿|리플릿|자세히/.test(activeTab)?activeTab:'')||$('h1,h2,h3,h4,strong').first().text().trim()||page.path;
  const group=menu.find(m=>m.code===code.slice(0,2))?.title||'고객센터';
  const out=destinations.get(page.path);
  const depth=out.split('/').length-1;
@@ -73,11 +73,32 @@ for(const page of pages){
  const after=cleanText($);
  if(before!==after)throw new Error('Content changed: '+page.path);
  const hash=crypto.createHash('sha256').update(before).digest('hex');
+ const family=page.path.startsWith('/product/')?'product':page.path.startsWith('/company/')?'company':page.path.startsWith('/purchase/')?'consult':page.path.startsWith('/member/')?'member':page.path.startsWith('/government/')||page.path.startsWith('/community/')?'notice':'support';
+ const asset=family==='product'?'platform':family==='member'?'support':family;
+ const cutout=root+'assets/subpages/v2/'+asset+'.png';
+ if(family==='company'&&page.path.endsWith('/about.asp')){
+  $('.about__list .img img').each((i,e)=>$(e).attr('src',root+'assets/subpages/v2/'+['platform','company','consult'][i]+'.png'));
+ }
+ if(family==='product'){
+  $('.contWrap>div:has(.cont_txt):has(.img)').addClass('sb-feature');
+  $('.contWrap .img').each((i,e)=>{
+   const img=$(e).find('img').first();if(!img.length)return;
+   const originalImage=img.toString();
+   const variants=['platform','notice','consult','support','company'];
+   const featureAsset=root+'assets/subpages/v2/'+variants[i%variants.length]+'.png';
+   $(e).html(`<img class="sb-cutout" src="${featureAsset}" alt=""><details class="sb-original"><summary>제품 화면·자료 보기</summary>${originalImage}</details>`);
+  });
+  $('img').not('.sb-cutout').each((i,e)=>{
+   const img=$(e);if(img.closest('.sb-original').length||/icon|logo|arr/i.test(img.attr('src')||''))return;
+   img.replaceWith(`<div class="sb-generated-panel"><img class="sb-cutout" src="${cutout}" alt=""><details class="sb-original"><summary>제품 화면·자료 보기</summary>${img.toString()}</details></div>`);
+  });
+ }
  const siblings=menu.filter(m=>m.code.length===4&&m.code.startsWith(code.slice(0,2))&&destinations.has(m.url));
  const nav=siblings.map(m=>`<a ${m.url===page.path?'aria-current="page"':''} href="${local(m.url)}" target="_blank" rel="noopener noreferrer">${escape(m.title)}</a>`).join('');
  const html=`<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escape(title)} | 아이원소프트뱅크</title><link rel="icon" href="${root}assets/favicon.png"><link rel="stylesheet" href="${root}renewal/skin.css"><script src="${root}renewal/skin.js" defer></script></head><body class="sb-renewal" data-preview="true"><header class="sb-header"><a href="${root}index.html" target="_blank" rel="noopener noreferrer"><img src="${root}assets/logo-footer.png" alt="아이원소프트뱅크"></a><a href="${'../'.repeat(depth)}index.html">서브페이지 전체보기 <span>↗</span></a></header><aside class="sb-preview">공개 페이지 기반 디자인 미리보기 · 등록·로그인·검색은 기존 사이트에서 이용할 수 있습니다. <a href="${origin+page.path}" target="_blank" rel="noopener noreferrer">기존 페이지 열기 ↗</a></aside><section class="sb-hero"><div><p>${escape(group)}</p><h1>${escape(title)}</h1><nav aria-label="관련 메뉴">${nav}</nav></div></section><main class="sb-content" id="main-content">${$.html()}</main><footer class="sb-footer"><img src="${root}assets/logo-footer.png" alt="아이원소프트뱅크"><div>${original('#footer .ft__05').html()||''}</div><a href="${local('/company/privacy.asp')}" target="_blank" rel="noopener noreferrer">개인정보취급방침</a><a href="${local('/company/clause.asp')}" target="_blank" rel="noopener noreferrer">이용약관</a></footer><dialog class="sb-preview-dialog"><p>공개 페이지 기반 미리보기입니다. 이 기능은 기존 사이트에서 이용할 수 있습니다.</p><a href="${origin+page.path}" target="_blank" rel="noopener noreferrer">기존 페이지 열기 ↗</a><button type="button">닫기</button></dialog></body></html>`;
  await fs.mkdir(path.dirname('subpages/'+out),{recursive:true});
- await fs.writeFile('subpages/'+out,html);
+ const rendered=html.replace('<body class="sb-renewal"',`<body class="sb-renewal sb-v2 sb-${family}"`).replace('<section class="sb-hero"><div>',`<section class="sb-hero"><div><img class="sb-hero-asset" src="${cutout}" alt="">`);
+ await fs.writeFile('subpages/'+out,rendered);
  report.push({path:page.path,preview:out,title,group,textHash:hash,textIdentical:before===after,images:$('img').length,forms});
 }
 await fs.writeFile('renewal/content-audit.json',JSON.stringify(report,null,2));
