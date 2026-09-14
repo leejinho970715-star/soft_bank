@@ -170,7 +170,7 @@
   if (window.Swiper) {
     const newsData = {
       notice: {
-        href: 'https://www.duzon119.co.kr/customer/notice.asp',
+        href: 'subpages/customer/notice.html',
         items: [
           ['Amaranth10 클라우드 기반 ERP 통합 지원', '2026-04-30'],
           ['Amaranth10 PC 기본 환경 개선', '2026-03-26'],
@@ -180,7 +180,7 @@
         ]
       },
       amaranth: {
-        href: 'https://www.duzon119.co.kr/product/amaranth10/brand.asp',
+        href: 'subpages/amaranth10/notice.html',
         items: [
           ['Amaranth 10 활용 가이드', '2024-11-25'],
           ['ERP 업무 효율화 팁', '2024-11-15'],
@@ -190,7 +190,7 @@
         ]
       },
       bizbox: {
-        href: 'https://www.duzon119.co.kr/product/bizbox/brand.asp',
+        href: 'subpages/bizbox/notice.html',
         items: [
           ['Bizbox Alpha 도입 사례', '2025-12-09'],
           ['업무 프로세스 정리 가이드', '2025-11-28'],
@@ -200,7 +200,7 @@
         ]
       },
       icube: {
-        href: 'https://www.duzon119.co.kr/company/about.asp',
+        href: 'subpages/icube/notice.html',
         items: [
           ['iCUBE 최신 가이드', '2024-07-01'],
           ['iCUBE G20 소개 자료', '2024-06-18'],
