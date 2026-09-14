@@ -1,0 +1,1145 @@
+
+<!DOCTYPE html>
+<html lang="ko" class="sub">
+<head>
+	
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+	<!-- <meta name="viewport" content="width=640,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes"> -->
+	<meta name="HandheldFriendly" content="true"><!-- // * true : 모바일용(화면 크기 조정 기능) * false : Desktop에 최적화된 html 사용 -->
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no, date=no" />
+	<meta name="naver-site-verification" content="567190b01310e71efefd0217e776de0cdf4abb6c" />
+	<meta name="google-site-verification" content="p6KsuwsxtTkDrsUf3hlUmxhnFnQefLdRsfsFkFiV48M" />
+
+	<!-- 2026-08-11 SEO 개선 (모바일 UI 컬러·iOS 홈 추가 최적화·리퍼러 정책) -->
+	<meta name="theme-color" content="#0369ec">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta name="apple-mobile-web-app-title" content="아이원소프트뱅크">
+	<meta name="referrer" content="strict-origin-when-cross-origin">
+
+	<!-- 2026-06-30 preconnect 최소화 — LCP 직결 호스트만, 나머지는 dns-prefetch로 강등 (PSI 권고) -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://www.youtube-nocookie.com">
+	<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+	<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+	<link rel="dns-prefetch" href="https://i.ytimg.com">
+	<link rel="dns-prefetch" href="https://www.youtube.com">
+	<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+	<link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="canonical" href="https://www.duzon119.co.kr/product/oneai.asp">
+
+	<!-- 2026-08-27 hreflang block removed: site is Korean-only.
+	     /en/ and /ja/ do not exist (dead alternates), and ko/x-default pointed
+	     every page at "/" instead of itself. Restore only when a real
+	     multilingual version ships, with per-page URLs. -->
+
+	<meta name="keywords" content="ONE AI,더존AI,프라이빗AI,기업AI,LLM,ChatGPT대안,데이터보안">
+	<meta name="description" content="ONE AI 도입 컨설팅 — 기업 내부 데이터로만 학습하는 프라이빗 AI. 외부 LLM 미사용, 데이터 유출 0. ChatGPT Enterprise 한국형 대안.">
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="ONE AI — 기업 전용 프라이빗 AI | 아이원소프트뱅크">
+	<meta property="og:site_name" content="아이원소프트뱅크(주)" />
+	<meta property="og:locale" content="ko_KR">
+	<meta property="og:url" content="https://www.duzon119.co.kr/product/oneai.asp">
+	<meta property="og:image" content="https://www.duzon119.co.kr/images/og_images.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:description" content="ONE AI 도입 컨설팅 — 기업 내부 데이터로만 학습하는 프라이빗 AI. 외부 LLM 미사용, 데이터 유출 0. ChatGPT Enterprise 한국형 대안.">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="ONE AI — 기업 전용 프라이빗 AI | 아이원소프트뱅크">
+	<meta name="twitter:url" content="https://www.duzon119.co.kr/product/oneai.asp">
+	<meta name="twitter:image" content="https://www.duzon119.co.kr/images/og_images.jpg">
+	<meta name="twitter:description" content="ONE AI 도입 컨설팅 — 기업 내부 데이터로만 학습하는 프라이빗 AI. 외부 LLM 미사용, 데이터 유출 0. ChatGPT Enterprise 한국형 대안.">
+
+	<title>ONE AI — 기업 전용 프라이빗 AI | 아이원소프트뱅크</title>
+
+	<!-- Organization schema — 구글 지식그래프 진입용. sameAs로 공식 SNS 연결해 외부 신호 통합 -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Organization",
+		"name": "아이원소프트뱅크㈜",
+		"alternateName": ["아이원소프트뱅크", "IONE Softbank", "더존119"],
+		"url": "https://duzon119.co.kr/",
+		"logo": "https://duzon119.co.kr/images/logo_2026_on.png",
+		"image": "https://duzon119.co.kr/images/og_images.jpg",
+		"description": "더존 ERP 공식 파트너 25년. Amaranth10·WEHAGO·iCUBE G20·OmniEsol 도입 컨설팅 및 사후관리.",
+		"foundingDate": "2001",
+		"taxID": "113-86-70956",
+		"telephone": "+82-1877-0256",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "디지털로 285 에이스트윈타워 1차 405호",
+			"addressLocality": "구로구",
+			"addressRegion": "서울특별시",
+			"addressCountry": "KR"
+		},
+		"contactPoint": [
+			{ "@type": "ContactPoint", "telephone": "+82-1877-0256", "contactType": "sales",            "areaServed": "KR", "availableLanguage": "Korean" },
+			{ "@type": "ContactPoint", "telephone": "+82-1877-1859", "contactType": "customer support", "areaServed": "KR", "availableLanguage": "Korean" },
+			{ "@type": "ContactPoint", "telephone": "+82-1877-0840", "contactType": "technical support","areaServed": "KR", "availableLanguage": "Korean" }
+		],
+		"sameAs": [
+			"https://cafe.naver.com/ionesoftbank",
+			"https://blog.naver.com/zhogksgjqm",
+			"https://www.instagram.com/ione130501",
+			"http://pf.kakao.com/_xnFVzK",
+			"https://youtube.com/@IONEsoftBK_official"
+		]
+	}
+	</script>
+	<!-- /Organization schema -->
+
+	<!-- WebSite schema + SearchAction — 구글 사이트링크 검색박스 노출 -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "WebSite",
+		"name": "아이원소프트뱅크㈜",
+		"alternateName": "더존119",
+		"url": "https://duzon119.co.kr/",
+		"inLanguage": "ko-KR",
+		"publisher": { "@type": "Organization", "name": "아이원소프트뱅크㈜" },
+		"potentialAction": {
+			"@type": "SearchAction",
+			"target": { "@type": "EntryPoint", "urlTemplate": "https://duzon119.co.kr/search.asp?keyword={search_term_string}" },
+			"query-input": "required name=search_term_string"
+		}
+	}
+	</script>
+	<!-- /WebSite schema -->
+
+	<!-- <link rel="stylesheet" type="text/css" href="/build/font-awesome/css/font-awesome.min.css" /> -->
+	<!-- 2026-07 FontAwesome: 죽은 kit(403 Forbidden) 제거 → 무료 CDN CSS로 교체(게시판·커뮤니티 등 아이콘 복구). 메인(홈)은 FA 미사용이라 로드 제외(속도) -->
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+	
+	<link rel="stylesheet" type="text/css" href="/common/font/SUIT-Variable.css" />
+    <!-- 2026-06-30 Montserrat weight 축소 — italic 미사용, 100/200 미사용 → 실제 쓰이는 300~900만 -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="/common/css/jquery.ui.lastest.css" />
+
+	<script type="text/javascript" src="/common/js/jquery.lastest.js" charset="utf-8"></script>
+	<script type="text/javascript" src="/common/js/jquery.ui.lastest.js" charset="utf-8"></script>
+	<script type="text/javascript" src="/common/js/jquery.throttledresize.js" charset="utf-8" defer></script>
+	<script type="text/javascript" src="/common/js/jquery.rwdImageMaps.min.js" charset="utf-8" defer></script>
+
+	<script type="text/javascript">
+		var langCode = "kor";
+		var langmode = "0";
+
+		$(function(){
+			$("#header .language>a").eq(langmode).addClass("active")
+		});
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="/common/css/layout.css?var=2026.9.14" />
+	<link rel="stylesheet" type="text/css" href="/common/css/contents.css?var=2026.9.14" />
+	<link rel="stylesheet" type="text/css" href="/common/css/front.css?var=2026.9.14" />
+
+	<script type="text/javascript" src="/common/js/publisher.js?var=2026.9.14" charset="utf-8"></script>
+	<script type="text/javascript" src="/common/js/link.js?var=2026.9.14" charset="utf-8" defer></script>
+	<script type="text/javascript" src="/common/js/menu.js?var=2026.9.14" charset="utf-8"></script>
+	<script type="text/javascript" src="/common/js/prefixfree.min.js" defer></script>
+
+	<!-- 2026-06-30 menu.js 중복 로드 블록 제거 (위 menu.js로 통합, 다국어 분기는 추후 필요 시 단일 분기로 재구성) -->
+
+	<link rel="stylesheet" type="text/css" href="/common/css/slick.css" />
+	<script type="text/javascript" src="/common/js/slick.js" charset="utf-8"></script>
+
+	
+	<link rel="stylesheet" href="/common/css/jquery.fancybox.css">
+	<script type="text/javascript" src="/common/js/jquery.fancybox.js" charset="utf-8" defer></script>
+	
+
+	<link rel="stylesheet" href="/common/css/aos.css">
+	<script type="text/javascript" src="/common/js/aos.js" charset="utf-8"></script>
+
+	<link rel="stylesheet" href="/build/ripple-click/ripple.min.css">
+	<script type="text/javascript" src="/build/ripple-click/ripple.min.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="/common/css/fullpage.css">
+	<script type="text/javascript" src="/common/js/fullpage.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://fastly.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  	<!-- 개발 Library -->
+	<script type="text/javascript">var langCode = "kor";</script>
+	
+	<script type="text/javascript" src="/_lib/js/plug-in/jquery.simplemodal/jquery.simplemodal.js"></script>
+	<link href="/_lib/css/editorContent.css" rel="stylesheet" type="text/css" />
+	
+	<script language="javascript" type="text/javascript" src="/_lib/functions.js"></script>
+	<script language="javascript" type="text/javascript" src="/_lib/boardcontrol.js"></script>
+	<script type="text/javascript" src="/_lib/js/plug-in/jquery.cookie/jquery.cookie.js"></script>
+	<link rel="stylesheet" href="/_lib/ckeditor5/content-styles.css" type="text/css">
+	<!-- 개발 Library -->
+
+	<!-- 2024-07-08 Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SLFWLP9QKE"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-SLFWLP9QKE');
+	</script>
+
+	<!-- Google Tag Manager 2026-02-12(목) -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-WKPK45TW');</script>
+	<!-- End Google Tag Manager 2026-02-12(목) -->
+
+	<!-- Talk Talk Banner Script start 2024-12-31 -->
+	<!-- <script type="text/javascript" src="https://partner.talk.naver.com/banners/script"></script>
+	<div class="talk_banner_div" data-id="155614"></div>
+	<style>
+	.talk_banner_div{position: fixed; right:13px; bottom:47px; z-index:7;}
+	.talk_banner_div .talk_banner_link{width:6.4rem; height:6.4rem; background:url("/images/main/q__cont04.png") no-repeat center; background-size:contain;}
+	.talk_banner_div .talk_banner_link .talk_banner_preview{display:none !important;}
+	@media only screen and (max-width: 840px){
+	.talk_banner_div{bottom:69px}
+	.talk_banner_div .talk_banner_link{width:50px; height:50px;}
+	}
+	</style> -->
+	<!-- Talk Talk Banner Script end 2024-12-31 -->
+
+	<!-- ONE AI (readdy.cc v2) externals -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		// Site uses html{font-size:10px}, which would shrink every rem-based Tailwind class
+		// (text-base→10px, max-w-6xl→720px). Override the theme with absolute px values so
+		// the ONE AI page renders at intended proportions regardless of root font-size.
+		tailwind.config = {
+			important: '.oneai-readdy',
+			corePlugins: { preflight: false },
+			theme: {
+				fontSize: {
+					'xs':   ['13px', '18px'],
+					'sm':   ['15px', '22px'],
+					'base': ['18px', '28px'],
+					'lg':   ['20px', '30px'],
+					'xl':   ['22px', '32px'],
+					'2xl':  ['28px', '38px'],
+					'3xl':  ['34px', '42px'],
+					'4xl':  ['40px', '48px'],
+				},
+				spacing: {
+					'0': '0px',  '0.5': '2px',  '1': '4px',  '1.5': '6px',  '2': '8px',
+					'2.5':'10px','3':'12px',   '3.5':'14px','4':'16px',   '5':'20px',
+					'6':'24px',  '7':'28px',  '8':'32px',  '9':'36px',  '10':'40px',
+					'11':'44px', '12':'48px', '14':'56px', '16':'64px', '20':'80px',
+					'24':'96px', '28':'112px','32':'128px','36':'144px','40':'160px',
+					'48':'192px','52':'208px','56':'224px','64':'256px','72':'288px',
+				},
+				maxWidth: {
+					'none':'none','0':'0px',
+					'xs':'320px','sm':'384px','md':'448px','lg':'512px','xl':'576px',
+					'2xl':'672px','3xl':'768px','4xl':'896px','5xl':'1024px',
+					'6xl':'1440px','7xl':'1600px',
+					'full':'100%','min':'min-content','max':'max-content','prose':'65ch',
+				},
+				borderRadius: {
+					'none':'0px','sm':'2px',DEFAULT:'4px','md':'6px','lg':'8px',
+					'xl':'12px','2xl':'16px','3xl':'24px','full':'9999px',
+				},
+				extend: {}
+			}
+		}
+	</script>
+	<style>
+		/* Scoped mini-reset so Tailwind utility classes render correctly inside .oneai-readdy
+		   without affecting the rest of the site (header/footer/menu). */
+		.oneai-readdy, .oneai-readdy *, .oneai-readdy *::before, .oneai-readdy *::after { box-sizing: border-box; }
+		.oneai-readdy { font-family: 'Noto Sans KR', sans-serif; line-height: 1.5; color: #111827; }
+		.oneai-readdy h1, .oneai-readdy h2, .oneai-readdy h3, .oneai-readdy h4, .oneai-readdy h5, .oneai-readdy h6 { margin: 0; font-weight: inherit; }
+		.oneai-readdy p, .oneai-readdy figure { margin: 0; }
+		.oneai-readdy ul, .oneai-readdy ol { margin: 0; padding: 0; list-style: none; }
+		.oneai-readdy a { color: inherit; text-decoration: none; }
+		.oneai-readdy button { border: 0; background: transparent; cursor: pointer; font-family: inherit; padding: 0; color: inherit; }
+		.oneai-readdy img, .oneai-readdy video { display: block; max-width: 100%; }
+		.oneai-readdy .whitespace-pre-line { white-space: pre-line; }
+		.oneai-readdy [hidden] { display: none !important; }
+		/* hide non-active tab content */
+		.oneai-readdy [data-panel]:not(.is-active) { display: none; }
+		/* Alternating section fade-in (IntersectionObserver) */
+		.oneai-readdy .alt-section { opacity: 0; transform: translateY(48px); transition: opacity .7s ease-out, transform .7s ease-out; }
+		.oneai-readdy .alt-section.alt-visible { opacity: 1; transform: translateY(0); }
+	</style>
+	<!-- BreadcrumbList -->
+	<script type="application/ld+json">
+	{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+		{"@type":"ListItem","position":1,"name":"홈","item":"https://duzon119.co.kr/"},
+		{"@type":"ListItem","position":2,"name":"제품/서비스","item":"https://duzon119.co.kr/product/"},
+		{"@type":"ListItem","position":3,"name":"ONE AI","item":"https://duzon119.co.kr/product/oneai.asp"}
+	]}
+	</script>
+	<!-- SoftwareApplication -->
+	<script type="application/ld+json">
+	{
+		"@context":"https://schema.org","@type":"SoftwareApplication",
+		"name":"ONE AI",
+		"applicationCategory":"BusinessApplication",
+		"applicationSubCategory":"Private AI / Enterprise LLM",
+		"operatingSystem":"Web, Private Cloud, On-Premise",
+		"description":"기업 내부 데이터로만 학습하는 프라이빗 AI. 외부 LLM 미사용, 데이터 유출 0. ChatGPT Enterprise 한국형 대안.",
+		"url":"https://duzon119.co.kr/product/oneai.asp",
+		"image":"https://duzon119.co.kr/images/og_images.jpg",
+		"inLanguage":"ko-KR",
+		"provider":{"@type":"Organization","name":"아이원소프트뱅크㈜","url":"https://duzon119.co.kr/"},
+		"featureList":["프라이빗 AI","기업 데이터 학습","외부 LLM 미사용","데이터 보안","한국어 최적화"]
+	}
+	</script>
+</head>
+
+<body data-pgCode="0107">
+
+<!--[s] Skip To Content -->
+<a href="#contents" class="skip">&raquo; 본문 바로가기</a>
+<!--[e] Skip To Content -->
+
+<div id="wrap">
+	<!-- Google Tag Manager (noscript) 2026-02-12(목) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WKPK45TW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) 2026-02-12(목) -->
+
+<div id="header" class="hh">
+	<div class="gnbBg"></div>
+	<div class="inConts">
+
+		<h1 class="logo-h">
+			<a href="/">
+				<img src="/images/logo_tagline_2026.png" class="logo-tagline" alt="Authentic innovation, AX and More" fetchpriority="high" decoding="async">
+				<img src="/images/logo.png" class="logo" alt="아이원소프트뱅크 - 더존 ERP 공식 파트너" decoding="async">
+				<img src="/images/logo_on.png" class="logo_on" alt="아이원소프트뱅크 - 더존 ERP 공식 파트너" fetchpriority="high" decoding="async">
+			</a>
+		</h1>
+
+		<div id="pcMenu">
+			<ul id="list">
+				<script type="text/javascript">globalNavigationBar();</script>
+			</ul>
+		</div>
+
+		<div class="right-utill">
+			<div class="language-area">
+				<div class="language">
+					<a href="/purchase/inquiry.asp">구매상담</a>
+				</div>
+			</div>
+			<div class="language-area">
+				<div class="language">
+					
+					<a href="/member/login.asp">로그인</a>
+					
+				</div>
+			</div>
+			<button type="button" class="mMenu"><span></span></button>
+
+		</div>
+	</div>
+</div>
+
+	<style>
+		.quickWrap{display:none;}
+		.quick-right{position: fixed; right:13px; bottom:130px; z-index:9; display:block;}
+		.quick-right .quick-right-re{border-radius:3.2rem; display: flex; justify-content: flex-end; position: relative;}
+		.quick-right .quick-right-re+.quick-right-re{margin-top: 1rem;}
+		.quick-right .quick-right-re>img{height:6.4rem; position: relative; z-index:2;}
+		.quick-right .quick-right-re .quick-right-list{width:6.4rem; height:6.4rem; position: absolute; right:0; top:0; overflow: hidden; border-radius:3.2rem; transition:all .3s linear;}
+		.quick-right .quick-right-re .quick-right-list>*{width:24rem; height:6.4rem; padding:0.3rem 0 0 6.5rem; background: #0863de url('/images/icon_tel.jpg') no-repeat 2.3rem center/2rem; font-weight: 500; font-size:1.6rem; line-height:1.3; color: #fff; display: flex; align-items: center; border-radius:999rem; position: relative; left:7rem; transition:all .3s linear; opacity: 0;}
+		.quick-right .quick-right-re .quick-right-list>*+*{margin-top:0.5rem;}
+		.quick-right .quick-right-re .quick-right-list>* strong{font-weight: 600; display:block;}
+
+		.quick-right .quick-right-re .quick-right-list>*:nth-of-type(2),
+		.quick-right .quick-right-re .quick-right-list>*:nth-of-type(3),
+		.quick-right .quick-right-re .quick-right-list>*:nth-of-type(4){transition-delay: 0s;}
+
+		.quick-right .quick-right-re .quick-right-list>*.black{background: #222 url('/images/icon_inq.jpg') no-repeat 1.6rem center/3.2rem;}
+		.quick-right .quick-right-re .quick-right-list>*.kaka{background: #fae100 url('/images/icon_kaka.jpg') no-repeat 1.1rem center/4.2rem; color: #381e1f;}
+		.quick-right .quick-right-re .quick-right-list>*.n-talk{background: #03c75a url('/images/icon_n_talk.jpg') no-repeat 1.7rem center/3rem; color: #fff;}
+
+		.quick-right .quick-right-re:is(:hover, .open) .quick-right-list{width:calc(24rem + 7.4rem); height:auto; padding-right:7.4rem;}
+		.quick-right .quick-right-re:is(:hover, .open) .quick-right-list>*{left:0; opacity: 1;}
+
+		.quick-right .quick-right-re:is(:hover, .open) .quick-right-list>*:nth-of-type(2){transition-delay: .2s;}
+		.quick-right .quick-right-re:is(:hover, .open) .quick-right-list>*:nth-of-type(3){transition-delay: .3s;}
+		.quick-right .quick-right-re:is(:hover, .open) .quick-right-list>*:nth-of-type(4){transition-delay: .4s;}
+
+		@media only screen and (max-width : 840px){
+			.quick-right .quick-right-re>img{height:50px;}
+			.quick-right .quick-right-re .quick-right-list{width:50px; border-radius:25px;}
+			.quick-right .quick-right-re .quick-right-list>*{width:24rem; height:50px;}
+			.quick-right .quick-right-re .quick-right-list>*{padding:0 0 0.3rem 6.5rem; font-size:1.8rem;}
+
+			.quick-right .quick-right-re:is(:hover, .open) .quick-right-list{width:calc(24rem + 60px); padding-right:60px;}
+
+			.quick-right .quick-right-re .quick-right-list>*.black,
+			.quick-right .quick-right-re .quick-right-list>*.kaka{display:none;}
+		}
+	</style>
+	<div class="quick-right">
+		<div class="quick-right-re"><img src="/images/main/q__cont01.png" alt="전화 상담" loading="lazy" decoding="async">
+			<div class="quick-right-list">
+				<a href="tel:1877-0256"><span><span>구입문의</span><strong>1877-0256</strong></span></a>
+				<a href="tel:1877-1859"><span><span>Amaranth10 문의</span><strong>1877-1859(1)</strong></span></a>
+				<a href="tel:1877-1859"><span><span>Bizbox Alpha 문의</span><strong>1877-1859(2)</strong></span></a>
+				<a href="tel:1877-0840"><span><span>iCUBE G20 문의</span><strong>1877-0840</strong></span></a>
+			</div>
+		</div>
+		<a href="/purchase/inquiry.asp" class="quick-right-re"><img src="/images/icon_inq.jpg" alt="온라인 구매 상담" loading="lazy" decoding="async" style="background:#222; border-radius:50%; padding:1.4rem; box-sizing:border-box; width:6.4rem;">
+			<div class="quick-right-list">
+				<p class="black"><span><span>온라인 구매상담</span><strong>평일 09:00~18:00</strong></span></p>
+			</div>
+		</a>
+		<a href="http://pf.kakao.com/_xnFVzK" target="_blank" rel="noopener noreferrer" class="quick-right-re"><img src="/images/main/q__cont03.png" alt="카카오톡 상담" loading="lazy" decoding="async">
+			<div class="quick-right-list">
+				<p class="kaka"><span><span>카카오톡 상담</span><strong>오픈채팅방</strong></span></p>
+			</div>
+		</a>
+		<a href="#" onclick="javascript:window.open('http://talk.naver.com/wil4im5?ref=https%3A%2F%2Fduzon119.co.kr%2F', 'talktalk', 'scrollbars=1, resizable=1, width=486, height=745');return false;" class="quick-right-re">
+            <img src="/images/main/q__cont04.png" alt="네이버 톡톡 문의" loading="lazy" decoding="async">
+			<div class="quick-right-list">
+				<p class="n-talk"><span><span>톡톡문의</span><strong>24시간 도입문의 상담</strong></span></p>
+			</div>
+		</a>
+	</div>
+
+
+
+<a href="javascript:void(0);" class="goTop">go top</a>
+
+<script>
+	$(document).ready(function () {
+		$("body").on("mouseenter", ".right", function() {
+			$(this).parent('.q__btn').addClass("open");
+		});
+
+		//$("body").on("mouseleave", ".q__btn.open .left", function() {
+		//		$(this).parent('.q__btn').removeClass("open");
+		//});
+
+		$("body").on("mouseleave", ".q__btn", function() {
+			$(this).removeClass("open");
+		});
+	});
+</script>
+
+<div id="menuArea" class="menuLayer">
+    <!-- <div class="language">
+        <a href="/" class="active"><span>KOR</span></a>
+        <a href="/index_en.asp"><span>ENG</span></a>
+    </div> -->
+    <ul id="menu" class="gnb">
+        <script type="text/javascript">globalNavigationBar();</script>
+    </ul>
+</div>		<div id="sVisual"><div class="inConts">
+			<!-- <p class="s-cate" data-aos="fade-up" data-aos-delay="300"></p> -->
+			<h2 data-aos="fade-up" data-aos-delay="200"></h2>
+			<p class="s-txt" data-aos="fade-up" data-aos-delay="300"></p>
+		</div></div>
+		<div id="snb"><!-- Side Navigation Bar -->
+			<ul id="nav"><!-- Navigation -->
+				<script type="text/javascript">
+					var pgCode = $("body").attr("data-pgCode");
+					if(pgCode){
+						leftMenuList(pgCode);
+					}
+				</script>
+			</ul>
+		</div>
+		<div id="pageTop"><h3>&nbsp;</h3></div>
+
+	<div class="inConts1720">
+		<!-- 기존 사이트 공통 중분류 메뉴 (다른 페이지와 통일) -->
+		<ul class="amaranth10__list">
+			<li><a href="#intro" class="active">ONE AI 소개</a></li>
+			<li><a href="#usage">활용 방법</a></li>
+			<li><a href="#features">주요 기능</a></li>
+			<li><a href="#downloads">자료 / FAQ</a></li>
+		</ul>
+
+		<!-- ONE AI page (readdy.cc design as-is) -->
+		<div class="oneai-readdy max-w-[1100px] mx-auto px-6 lg:px-12 py-10">
+
+			<!-- Hero Video -->
+			<section class="relative overflow-hidden rounded-xl mb-16 bg-black">
+				<video autoplay loop muted playsinline preload="auto" class="w-full h-auto block">
+					<source src="https://www.douzone.com/html/event/240610/data/oneai_trailer.mp4" type="video/mp4">
+				</video>
+			</section>
+
+			<!-- #intro -->
+			<section id="intro" class="bg-[#0d1117] text-white rounded-xl p-8 md:p-14 mb-16 text-center">
+				<h2 class="text-xl md:text-2xl font-bold leading-relaxed mb-6">
+					<span class="text-[#4aa8ff]">ONE AI</span>는 더존의 핵심 업무 솔루션에 내재화하여<br class="hidden md:block">
+					업무 생산성을 극대화한 <span class="text-[#a78bfa]">더존의 AI 브랜드</span>입니다.
+				</h2>
+				<p class="text-sm md:text-base text-gray-300 leading-relaxed max-w-4xl mx-auto">
+					ONE AI는 단순한 AI 기술의 도입을 넘어 <strong>ERP</strong>(회계, 세무, 인사 등), <strong>그룹웨어</strong>(이메일, 메신저, 전자결재 등),<strong>EDM</strong>(전자문서 생성, 저장, 관리 등) 등 <strong>핵심 주요 솔루션</strong>에 <strong>AI를 내재화한 더존의 AI 브랜드</strong>입니다. 더존비즈온이 자체 개발한 <strong>API 브릿지 기술</strong>과 <strong>할루시네이션(환각)의 최소화</strong>는 물론<strong>강력한 보안 기술을 기반</strong>으로 안전하게 실시간 데이터를 활용할 수 있게 지원하여 <strong>향상된 AX 경험을 제공</strong>합니다.
+				</p>
+			</section>
+
+			<!-- 3-values Alternating (정확성/사용성/보안성) -->
+			<section class="mb-20">
+				<!-- 01. 정확성 -->
+				<div class="alt-section mb-16">
+					<div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+						<div class="w-full lg:w-1/2">
+							<div class="relative rounded-xl overflow-hidden shadow-md bg-gray-50 w-fit mx-auto">
+								<img src="https://static.readdy.ai/image/b02e8da853090b15be7bd7c1fff6e6a7/118c8770a883a4698ca8c9e36966eaa6.png" alt="정확성" class="w-full h-auto max-h-[360px] max-w-[480px] object-contain mx-auto">
+							</div>
+						</div>
+						<div class="w-full lg:w-1/2">
+							<span class="inline-block text-xs font-bold text-[#1a3a6b] tracking-widest uppercase mb-3">01. 정확성</span>
+							<h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 leading-tight">우리 회사 맞춤형 답변 제공을 넘어,&nbsp; &nbsp;번거로운 업무까지 수행하는 AI</h3>
+							<p class="text-base md:text-lg text-gray-700 leading-relaxed mb-4">솔루션에 축적된 기업 내부 데이터와 문서를 기반으로, 기업에 최적화된 답변을 제공합니다.</p>
+							<p class="text-sm text-gray-500 leading-relaxed mb-6">일정 등록, 근태 신청서 등 솔루션 내 콘텐츠와 AI가 연계되어, 관련 메뉴를 자동으로 호출하고 간편하게 작성·등록할 수 있습니다.</p>
+							<ul class="space-y-3 mb-6">
+								<li class="flex items-start gap-3"><span class="w-5 h-5 flex items-center justify-center bg-[#1a3a6b] text-white rounded-full text-xs flex-shrink-0 mt-0.5"><i class="ri-check-line"></i></span><span class="text-sm text-gray-700 leading-relaxed">기업 내부 데이터 기반 맞춤형 답변</span></li>
+								<li class="flex items-start gap-3"><span class="w-5 h-5 flex items-center justify-center bg-[#1a3a6b] text-white rounded-full text-xs flex-shrink-0 mt-0.5"><i class="ri-check-line"></i></span><span class="text-sm text-gray-700 leading-relaxed">솔루션 메뉴 자동 호출 및 실행</span></li>
+								<li class="flex items-start gap-3"><span class="w-5 h-5 flex items-center justify-center bg-[#1a3a6b] text-white rounded-full text-xs flex-shrink-0 mt-0.5"><i class="ri-check-line"></i></span><span class="text-sm text-gray-700 leading-relaxed">첨부 파일 분석 및 오류 검증</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- 02. 사용성 (reverse) -->
+				<div class="alt-section mb-16">
+					<div class="flex flex-col lg:flex-row-reverse items-center gap-10 lg:gap-16">
+						<div class="w-full lg:w-1/2">
+							<div class="relative rounded-xl overflow-hidden shadow-md bg-gray-50 w-fit mx-auto">
+								<img src="https://static.readdy.ai/image/b02e8da853090b15be7bd7c1fff6e6a7/d461d5d8ec1018bf2a7915dc05091750.png" alt="사용성" class="w-full h-auto max-h-[360px] max-w-[480px] object-contain mx-auto">
+							</div>
+						</div>
+						<div class="w-full lg:w-1/2">
+							<span class="inline-block text-xs font-bold text-[#1a3a6b] tracking-widest uppercase mb-3">02. 사용성</span>
+							<h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 leading-tight">처음 사용하는 누구나 어디서나 대화하듯 쉽게 사용하는 AI</h3>
+							<p class="text-base md:text-lg text-gray-700 leading-relaxed mb-4">생성형 AI를 처음 사용하는 사용자도 별도의 학습 없이 쉽게 사용할 수 있습니다.</p>
+							<p class="text-sm text-gray-500 leading-relaxed mb-6">언제 어디서나 모바일에서 대화하듯 질문하고, 필요한 정보를 빠르게 얻어 업무를 효율적으로 진행할 수 있습니다.</p>
+							<ul class="space-y-3 mb-6">
+								<li class="flex items-start gap-3"><span class="w-5 h-5 flex items-center justify-center bg-[#1a3a6b] text-white rounded-full text-xs flex-shrink-0 mt-0.5"><i class="ri-check-line"></i></span><span class="text-sm text-gray-700 leading-relaxed">별도 학습 없이 즉시 사용 가능</span></li>
+								<li class="flex items-start gap-3"><span class="w-5 h-5 flex items-center justify-center bg-[#1a3a6b] text-white rounded-full text-xs flex-shrink-0 mt-0.5"><i class="ri-check-line"></i></span><span class="text-sm text-gray-700 leading-relaxed">모바일·PC 어디서나 동일한 경험</span></li>
+								<li class="flex items-start gap-3"><span class="w-5 h-5 flex items-center justify-center bg-[#1a3a6b] text-white rounded-full text-xs flex-shrink-0 mt-0.5"><i class="ri-check-line"></i></span><span class="text-sm text-gray-700 leading-relaxed">자연어 대화형 인터페이스</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- 03. 보안성 -->
+				<div class="alt-section mb-8">
+					<div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+						<div class="w-full lg:w-1/2">
+							<div class="relative rounded-xl overflow-hidden shadow-md bg-gray-50 w-fit mx-auto">
+								<img src="https://static.readdy.ai/image/b02e8da853090b15be7bd7c1fff6e6a7/eb89500e54c5ecfb0852318444d0f419.png" alt="보안성" class="w-full h-auto max-h-[360px] max-w-[480px] object-contain mx-auto">
+							</div>
+						</div>
+						<div class="w-full lg:w-1/2">
+							<span class="inline-block text-xs font-bold text-[#1a3a6b] tracking-widest uppercase mb-3">03. 보안성</span>
+							<h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 leading-tight">우리 회사 내 기밀 데이터를 안전하게&nbsp; 보호하는 AI</h3>
+							<p class="text-base md:text-lg text-gray-700 leading-relaxed mb-4">기업의 고유 데이터를 기반으로 기업에 최적화된 정보를 제공합니다.</p>
+							<p class="text-sm text-gray-500 leading-relaxed mb-6">RAG 기술을 활용해 필요한 최소한의 데이터만 활용하여, 기업 내부 데이터 유출을 최소화합니다.</p>
+							<ul class="space-y-3 mb-6">
+								<li class="flex items-start gap-3"><span class="w-5 h-5 flex items-center justify-center bg-[#1a3a6b] text-white rounded-full text-xs flex-shrink-0 mt-0.5"><i class="ri-check-line"></i></span><span class="text-sm text-gray-700 leading-relaxed">최소 데이터 접근 원칙 (RAG)</span></li>
+								<li class="flex items-start gap-3"><span class="w-5 h-5 flex items-center justify-center bg-[#1a3a6b] text-white rounded-full text-xs flex-shrink-0 mt-0.5"><i class="ri-check-line"></i></span><span class="text-sm text-gray-700 leading-relaxed">Azure 기반 엔터프라이즈급 보안</span></li>
+								<li class="flex items-start gap-3"><span class="w-5 h-5 flex items-center justify-center bg-[#1a3a6b] text-white rounded-full text-xs flex-shrink-0 mt-0.5"><i class="ri-check-line"></i></span><span class="text-sm text-gray-700 leading-relaxed">내부 데이터 유출 방지 설계</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<p class="text-xs text-gray-400 text-center mt-8 max-w-3xl mx-auto">
+					<strong>ⓘ RAG(검색증강생성, Retrieval Augmented Generation)</strong><br>
+					정확성과 신뢰성을 향상시키기 위해 외부에서 정보를 검색 후, 정보를 기반으로 사용자의 질문에 응답을 생성하는 기술
+				</p>
+			</section>
+
+			<!-- #usage : 실제 업무 활용 (tabs) -->
+			<section id="usage" class="mb-20">
+				<div class="text-center mb-8">
+					<h2 class="text-xl md:text-2xl font-bold text-gray-900">ONE AI는 <strong>실제 업무에서 이렇게 활용</strong>되고 있습니다.</h2>
+				</div>
+				<div class="flex flex-wrap justify-center gap-2 mb-8" data-tabset="usage" role="tablist">
+					<button type="button" data-tab-button data-tab="0" class="js-tab px-4 py-2 text-sm font-medium rounded-full transition-colors whitespace-nowrap cursor-pointer bg-[#1a3a6b] text-white">UC(그룹웨어)</button>
+					<button type="button" data-tab-button data-tab="1" class="js-tab px-4 py-2 text-sm font-medium rounded-full transition-colors whitespace-nowrap cursor-pointer bg-gray-100 text-gray-700 hover:bg-gray-200">EDM(문서관리)</button>
+					<button type="button" data-tab-button data-tab="2" class="js-tab px-4 py-2 text-sm font-medium rounded-full transition-colors whitespace-nowrap cursor-pointer bg-gray-100 text-gray-700 hover:bg-gray-200">회계관리</button>
+					<button type="button" data-tab-button data-tab="3" class="js-tab px-4 py-2 text-sm font-medium rounded-full transition-colors whitespace-nowrap cursor-pointer bg-gray-100 text-gray-700 hover:bg-gray-200">인사관리</button>
+					<button type="button" data-tab-button data-tab="4" class="js-tab px-4 py-2 text-sm font-medium rounded-full transition-colors whitespace-nowrap cursor-pointer bg-gray-100 text-gray-700 hover:bg-gray-200">물류·생산관리</button>
+				</div>
+
+				<!-- Panel 0: UC -->
+				<div data-tabset="usage" data-panel="0" class="is-active grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+					<div class="bg-white border border-gray-100 rounded-xl p-6 hover:shadow-md transition-shadow">
+						<span class="inline-block px-3 py-1 bg-[#1a3a6b]/10 text-[#1a3a6b] text-xs font-semibold rounded-full mb-3">전자결재 작성, 요약, 분석, 오류 검증</span>
+						<h3 class="text-base font-bold text-gray-900 whitespace-pre-line leading-relaxed mb-3">결재문서 초안 작성은 물론
+본문 내용과 첨부파일을 분석해 줘요</h3>
+						<p class="text-xs text-gray-500 italic mb-3 border-l-2 border-[#1a3a6b] pl-3">"본문과 전자결재 문서와 첨부 파일 비교 검토해서 오류 사항 확인해 줘"</p>
+						<p class="text-sm text-gray-600 leading-relaxed">전자결재 본문 내용과 첨부 문서를 신속하게 비교·검토하여 오류를 빠르게 식별할 수 있도록 지원합니다. 검토 시간을 단축하고 의사결정을 더욱 효율적으로 진행할 수 있습니다.</p>
+					</div>
+					<div class="bg-white border border-gray-100 rounded-xl p-6 hover:shadow-md transition-shadow">
+						<span class="inline-block px-3 py-1 bg-[#1a3a6b]/10 text-[#1a3a6b] text-xs font-semibold rounded-full mb-3">메일 요약, 답장, 번역</span>
+						<h3 class="text-base font-bold text-gray-900 whitespace-pre-line leading-relaxed mb-3">메일 내용과 첨부 문서를 분석하고
+답장 메일을 작성해 줘요</h3>
+						<p class="text-xs text-gray-500 italic mb-3 border-l-2 border-[#1a3a6b] pl-3">"본문과 첨부된 파일을 간략하게 요약해 주고, 답장 초안을 작성해줘"</p>
+						<p class="text-sm text-gray-600 leading-relaxed">받은 메일의 내용과 첨부파일까지 종합적으로 분석하여, 정확하게 메일 내용을 요약해 드립니다. 또한, 답장 초안뿐만 아니라 새로 작성해야 하는 메일 초안도 작성해 드립니다.</p>
+					</div>
+					<div class="bg-white border border-gray-100 rounded-xl p-6 hover:shadow-md transition-shadow">
+						<span class="inline-block px-3 py-1 bg-[#1a3a6b]/10 text-[#1a3a6b] text-xs font-semibold rounded-full mb-3">주요 일정 요약</span>
+						<h3 class="text-base font-bold text-gray-900 whitespace-pre-line leading-relaxed mb-3">주요한 일정을
+일목요연하게 정리해 줘요</h3>
+						<p class="text-xs text-gray-500 italic mb-3 border-l-2 border-[#1a3a6b] pl-3">"이번 주 주요 일정을 일시와 장소 기준으로 정리해 줘"</p>
+						<p class="text-sm text-gray-600 leading-relaxed">복잡한 일정도 원하는 기준을 포함하여 물어보면 일목요연하게 정리해 드립니다.</p>
+					</div>
+					<div class="bg-white border border-gray-100 rounded-xl p-6 hover:shadow-md transition-shadow">
+						<span class="inline-block px-3 py-1 bg-[#1a3a6b]/10 text-[#1a3a6b] text-xs font-semibold rounded-full mb-3">메신저 요약, 번역</span>
+						<h3 class="text-base font-bold text-gray-900 whitespace-pre-line leading-relaxed mb-3">쌓인 대화 내용을 요약정리하고
+실시간 통역을 지원해 줘요</h3>
+						<p class="text-xs text-gray-500 italic mb-3 border-l-2 border-[#1a3a6b] pl-3">"쪽지 내용을 분석해 주고, 유의해야 할 점을 알려줘"</p>
+						<p class="text-sm text-gray-600 leading-relaxed">메신저에서 실시간 번역과 대화 내용을 분석해 드립니다. 신속하게 정보를 확인할 수 있는 보고서 형태로 작성은 물론, 더욱 원활하고 효율적인 협업 환경을 지원합니다.</p>
+					</div>
+				</div>
+
+				<!-- Panel 1: EDM -->
+				<div data-tabset="usage" data-panel="1" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+					<div class="bg-white border border-gray-100 rounded-xl p-6 hover:shadow-md transition-shadow">
+						<span class="inline-block px-3 py-1 bg-[#1a3a6b]/10 text-[#1a3a6b] text-xs font-semibold rounded-full mb-3">문서작성 AI 템플릿</span>
+						<h3 class="text-base font-bold text-gray-900 whitespace-pre-line leading-relaxed mb-3">주요 키워드만 입력하면
+원하는 템플릿에 맞춰 문서를
+작성해 줘요</h3>
+						<p class="text-sm text-gray-600 leading-relaxed">문서 작성을 위한 주요 키워드만 입력해 주시면, 입사 지원자 분석/검증 등 다양한 템플릿에 맞춰 문서를 자동으로 작성해 드립니다. 문서 작성 시간을 획기적으로 절감할 수 있습니다.</p>
+					</div>
+					<div class="bg-white border border-gray-100 rounded-xl p-6 hover:shadow-md transition-shadow">
+						<span class="inline-block px-3 py-1 bg-[#1a3a6b]/10 text-[#1a3a6b] text-xs font-semibold rounded-full mb-3">다중 문서 분석 및 요약</span>
+						<h3 class="text-base font-bold text-gray-900 whitespace-pre-line leading-relaxed mb-3">다양한 문서를 빠르게 분석하고
+원하는 답변을 제공해 줘요</h3>
+						<p class="text-xs text-gray-500 italic mb-3 border-l-2 border-[#1a3a6b] pl-3">"이 문서를 보고 형식으로 5줄 이내로 요약해 줘"</p>
+						<p class="text-sm text-gray-600 leading-relaxed">첨부된 파일 및 링크를 동시에 분석하고 학습하고 다량의 문서의 정보를 빠르게 요약하여 분석자료 기반의 질의에 답변해 드립니다.</p>
+					</div>
+					<div class="bg-white border border-gray-100 rounded-xl p-6 hover:shadow-md transition-shadow">
+						<span class="inline-block px-3 py-1 bg-[#1a3a6b]/10 text-[#1a3a6b] text-xs font-semibold rounded-full mb-3">AI 법무서식 - 소장 작성</span>
+						<h3 class="text-base font-bold text-gray-900 whitespace-pre-line leading-relaxed mb-3">번거로운 소장 작성을
+자동으로 작성해 줘요</h3>
+						<p class="text-sm text-gray-600 leading-relaxed">AI 법무서식을 통해 신속하고 정확한 소송 준비를 위한 소장 작성을 지원합니다. 법무상담카드를 첨부 후, 소장 주제를 작성하면 ONE AI가 자동으로 작성해 드립니다.</p>
+					</div>
+				</div>
+
+				<!-- Panel 2: 회계관리 -->
+				<div data-tabset="usage" data-panel="2" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+					<div class="bg-white border border-gray-100 rounded-xl p-6 hover:shadow-md transition-shadow">
+						<span class="inline-block px-3 py-1 bg-[#1a3a6b]/10 text-[#1a3a6b] text-xs font-semibold rounded-full mb-3">데이터 분석 및 계산</span>
+						<h3 class="text-base font-bold text-gray-900 whitespace-pre-line leading-relaxed mb-3">특정 계정 과목의 변화 과정을
+분석하고, 다양한 재무 비율을
+계산해 줘요</h3>
+						<p class="text-xs text-gray-500 italic mb-3 border-l-2 border-[#1a3a6b] pl-3">"작년 재무제표와 올해 재무제표의 현금성 자산 과목의 증감 추이를 표로 산출해 주고, 비교 분석한 스크립트도 간략하게 작성해 줘"</p>
+						<p class="text-sm text-gray-600 leading-relaxed">전기 대비 각 계정 과목을 표로 정리하여 비교 분석 결과를 한눈에 제공합니다. 회계에 익숙하지 않은 분들도 재무 비율의 의미와 계산 과정을 쉽게 이해할 수 있습니다.</p>
+					</div>
+					<div class="bg-white border border-gray-100 rounded-xl p-6 hover:shadow-md transition-shadow">
+						<span class="inline-block px-3 py-1 bg-[#1a3a6b]/10 text-[#1a3a6b] text-xs font-semibold rounded-full mb-3">원천 데이터 검증 및 추적</span>
+						<h3 class="text-base font-bold text-gray-900 whitespace-pre-line leading-relaxed mb-3">항목별 상세 내역과 증빙 문서를
+바로 확인할 수 있어요</h3>
+						<p class="text-sm text-gray-600 leading-relaxed">원천 데이터를 추적하고 분석하여 더욱 정확한 답변을 제공해 드립니다. 또한 전체 데이터뿐만 아니라 회계 전표, 전자결재 등 관련된 자료를 바로 확인할 수 있는 '증빙 링크' 기능을 제공하여 빠른 검증이 가능합니다.</p>
+					</div>
+					<div class="bg-white border border-gray-100 rounded-xl p-6 hover:shadow-md transition-shadow">
+						<span class="inline-block px-3 py-1 bg-[#1a3a6b]/10 text-[#1a3a6b] text-xs font-semibold rounded-full mb-3">데이터 추출, 보고서 작성</span>
+						<h3 class="text-base font-bold text-gray-900 whitespace-pre-line leading-relaxed mb-3">정리된 데이터 분석 결과를
+다양한 형태의 문서로 제공해 줘요</h3>
+						<p class="text-sm text-gray-600 leading-relaxed">장부(계정별, 거래처)를 분석하여 도출된 결과는 보고서에 활용할 수 있는 여러 형태의 보고 자료로 만들어 드립니다.</p>
+					</div>
+				</div>
+
+				<!-- Panel 3: 인사관리 -->
+				<div data-tabset="usage" data-panel="3" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+					<div class="bg-white border border-gray-100 rounded-xl p-6 hover:shadow-md transition-shadow">
+						<span class="inline-block px-3 py-1 bg-[#1a3a6b]/10 text-[#1a3a6b] text-xs font-semibold rounded-full mb-3">인사 데이터 분석</span>
+						<h3 class="text-base font-bold text-gray-900 whitespace-pre-line leading-relaxed mb-3">원하는 인사·급여 데이터를
+추출해서 분석해 줘요</h3>
+						<p class="text-xs text-gray-500 italic mb-3 border-l-2 border-[#1a3a6b] pl-3">"사원별로 출장 국가별 횟수와 출장비 항목별로 금액과 사원명을 같이 표시해 줘."</p>
+						<p class="text-sm text-gray-600 leading-relaxed">인사정보 등록 메뉴의 인사정보현황에서 원하는 정보를 질문하시면, 입력한 조건에 부합하는 데이터를 추출하여 분석해 드립니다.</p>
+					</div>
+					<div class="bg-white border border-gray-100 rounded-xl p-6 hover:shadow-md transition-shadow">
+						<span class="inline-block px-3 py-1 bg-[#1a3a6b]/10 text-[#1a3a6b] text-xs font-semibold rounded-full mb-3">데이터 시각화 차트 생성</span>
+						<h3 class="text-base font-bold text-gray-900 whitespace-pre-line leading-relaxed mb-3">분석된 데이터를 시각화하여
+직관적인 자료로 제공해 줘요</h3>
+						<p class="text-xs text-gray-500 italic mb-3 border-l-2 border-[#1a3a6b] pl-3">"직종별 남, 여사원 수와 비율을 계산해 줘. 직종, 사원 수, 남성, 여성 비율을 표로 표시해 줘."</p>
+						<p class="text-sm text-gray-600 leading-relaxed">표로 정리하여 직관적인 데이터 분석이 가능합니다. 사업장별 고용 형태에 따른 인원 현황을 한눈에 파악할 수 있어, 인력 관리 및 운영 효율성을 극대화할 수 있습니다.</p>
+					</div>
+				</div>
+
+				<!-- Panel 4: 물류·생산관리 -->
+				<div data-tabset="usage" data-panel="4" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+					<div class="bg-white border border-gray-100 rounded-xl p-6 hover:shadow-md transition-shadow">
+						<span class="inline-block px-3 py-1 bg-[#1a3a6b]/10 text-[#1a3a6b] text-xs font-semibold rounded-full mb-3">데이터 분석 및 추출</span>
+						<h3 class="text-base font-bold text-gray-900 whitespace-pre-line leading-relaxed mb-3">출고 현황 등 각종 영업 관리
+현황 데이터를 분석해 줘요</h3>
+						<p class="text-xs text-gray-500 italic mb-3 border-l-2 border-[#1a3a6b] pl-3">"거래처별 월별 매출 합계액을 성수기와 비수기로 구분하여 거래처, 성수기, 비수기, 합계 순으로 나열해 줘"</p>
+						<p class="text-sm text-gray-600 leading-relaxed">ONE AI를 통해 재고, 주문, 출고 등 물류 데이터를 실시간으로 분석하여 고객사별 최적의 생산 프로세스를 구성할 수 있습니다.</p>
+					</div>
+					<div class="bg-white border border-gray-100 rounded-xl p-6 hover:shadow-md transition-shadow">
+						<span class="inline-block px-3 py-1 bg-[#1a3a6b]/10 text-[#1a3a6b] text-xs font-semibold rounded-full mb-3">데이터 시각화 차트 생성</span>
+						<h3 class="text-base font-bold text-gray-900 whitespace-pre-line leading-relaxed mb-3">분석한 현황 데이터를 한눈에
+보기 쉬운 차트로 제공해 줘요</h3>
+						<p class="text-xs text-gray-500 italic mb-3 border-l-2 border-[#1a3a6b] pl-3">"생산유형별 지시 수량과 실적 수량을 집계하고, 지시 수량이 많은 순으로 정렬하여 지시 수량 대비 완료 수량 비율을 조회해 줘"</p>
+						<p class="text-sm text-gray-600 leading-relaxed">각종 생산관리 현황 데이터를 차트로 시각화하여, 생산 프로세스의 병목 현상을 한눈에 파악하여 지연 가능성을 최소화할 수 있습니다. 정확한 의사결정을 신속하게 내릴 수 있는 환경을 구축할 수 있습니다.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- #features : 주요 기능 (Alternating image+text + video popup) -->
+			<section id="features" class="mb-20">
+				<div class="text-center mb-12">
+					<h2 class="text-xl md:text-2xl font-bold text-gray-900">ONE AI가 만들어낸<br class="md:hidden"><strong>AI 업무 혁신</strong>은 계속됩니다.</h2>
+				</div>
+
+				<!-- 세법도우미 -->
+				<div class="alt-section mb-16">
+					<div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+						<div class="w-full lg:w-1/2">
+							<div class="relative rounded-xl overflow-hidden shadow-md bg-gray-50 w-fit mx-auto">
+								<img src="https://static.readdy.ai/image/b02e8da853090b15be7bd7c1fff6e6a7/f34b36f308dd6311b2b9f00bf390dfdc.png" alt="세법도우미" class="w-full h-auto max-h-[360px] max-w-[480px] object-contain mx-auto">
+							</div>
+						</div>
+						<div class="w-full lg:w-1/2">
+							<h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 leading-tight">세법도우미</h3>
+							<p class="text-base md:text-lg text-gray-700 leading-relaxed mb-6">더존의 세법도우미는 실무자의 세법 질문에 실시간으로 답변하고 누락된 공제 항목을 찾아내거나 데이터 정합성을 검증하여 법령·예규·판례 등을 기반으로 사용자 질의에 대한 답변을 제공하고, 세법 해석과 업무 처리에 도움을 주는 AI 서비스입니다.</p>
+							<ul class="space-y-3 mb-6">
+								<li class="flex items-start gap-3"><span class="w-5 h-5 flex items-center justify-center bg-[#1a3a6b] text-white rounded-full text-xs flex-shrink-0 mt-0.5"><i class="ri-check-line"></i></span><span class="text-sm text-gray-700 leading-relaxed">실시간 세법 질의응답</span></li>
+								<li class="flex items-start gap-3"><span class="w-5 h-5 flex items-center justify-center bg-[#1a3a6b] text-white rounded-full text-xs flex-shrink-0 mt-0.5"><i class="ri-check-line"></i></span><span class="text-sm text-gray-700 leading-relaxed">공제 항목 자동 점검</span></li>
+								<li class="flex items-start gap-3"><span class="w-5 h-5 flex items-center justify-center bg-[#1a3a6b] text-white rounded-full text-xs flex-shrink-0 mt-0.5"><i class="ri-check-line"></i></span><span class="text-sm text-gray-700 leading-relaxed">법령·예규·판례 기반 답변</span></li>
+							</ul>
+							<div class="flex flex-col sm:flex-row gap-3">
+								<a href="https://expert1.douzone.com/promotion/entry" target="_blank" rel="nofollow noreferrer" class="inline-flex items-center justify-center px-6 py-3 bg-[#1a3a6b] text-white text-sm font-medium rounded-lg hover:bg-[#142d54] transition-colors whitespace-nowrap cursor-pointer">세법도우미 체험하기</a>
+								<button type="button" data-video="https://www.douzone.com/html/event/250417/data/taxexpert.mp4" class="js-video inline-flex items-center justify-center gap-2 px-6 py-3 border border-[#1a3a6b] text-[#1a3a6b] text-sm font-medium rounded-lg hover:bg-[#1a3a6b]/5 transition-colors whitespace-nowrap cursor-pointer"><span class="w-4 h-4 flex items-center justify-center"><i class="ri-play-circle-line"></i></span>소개 영상 보기</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- ONE News (reverse) -->
+				<div class="alt-section mb-16">
+					<div class="flex flex-col lg:flex-row-reverse items-center gap-10 lg:gap-16">
+						<div class="w-full lg:w-1/2">
+							<div class="relative rounded-xl overflow-hidden shadow-md bg-gray-50 w-fit mx-auto">
+								<img src="https://static.readdy.ai/image/b02e8da853090b15be7bd7c1fff6e6a7/e389017629a5ecf56ee751261dd6fe63.png" alt="ONE News" class="w-full h-auto max-h-[360px] max-w-[480px] object-contain mx-auto">
+							</div>
+						</div>
+						<div class="w-full lg:w-1/2">
+							<h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 leading-tight">ONE News</h3>
+							<p class="text-base md:text-lg text-gray-700 leading-relaxed mb-6">ONE News는 ONEFFICE 기반의 AI 기사 편집기로, 기사문을 자동 작성하고, 송고 전 AI 탈고 도우미를 통해 최종 검토하여 품질 높은 기사 작성과 송고 환경을 제공합니다.</p>
+							<ul class="space-y-3 mb-6">
+								<li class="flex items-start gap-3"><span class="w-5 h-5 flex items-center justify-center bg-[#1a3a6b] text-white rounded-full text-xs flex-shrink-0 mt-0.5"><i class="ri-check-line"></i></span><span class="text-sm text-gray-700 leading-relaxed">AI 기사 자동 작성</span></li>
+								<li class="flex items-start gap-3"><span class="w-5 h-5 flex items-center justify-center bg-[#1a3a6b] text-white rounded-full text-xs flex-shrink-0 mt-0.5"><i class="ri-check-line"></i></span><span class="text-sm text-gray-700 leading-relaxed">송고 전 AI 탈고 검토</span></li>
+								<li class="flex items-start gap-3"><span class="w-5 h-5 flex items-center justify-center bg-[#1a3a6b] text-white rounded-full text-xs flex-shrink-0 mt-0.5"><i class="ri-check-line"></i></span><span class="text-sm text-gray-700 leading-relaxed">ONEFFICE 기반 원스톱 편집</span></li>
+							</ul>
+							<button type="button" data-video="https://www.douzone.com/html/event/250417/data/one_news.mp4" class="js-video inline-flex items-center justify-center gap-2 px-6 py-3 border border-[#1a3a6b] text-[#1a3a6b] text-sm font-medium rounded-lg hover:bg-[#1a3a6b]/5 transition-colors whitespace-nowrap cursor-pointer"><span class="w-4 h-4 flex items-center justify-center"><i class="ri-play-circle-line"></i></span>소개 영상 보기</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- ONE Studio -->
+				<div class="alt-section">
+					<div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+						<div class="w-full lg:w-1/2">
+							<div class="relative rounded-xl overflow-hidden shadow-md bg-gray-50 w-fit mx-auto">
+								<img src="https://static.readdy.ai/image/b02e8da853090b15be7bd7c1fff6e6a7/453c244f01556db18651b82d22c9aa44.png" alt="ONE Studio" class="w-full h-auto max-h-[360px] max-w-[480px] object-contain mx-auto">
+							</div>
+						</div>
+						<div class="w-full lg:w-1/2">
+							<h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 leading-tight">ONE Studio</h3>
+							<p class="text-base md:text-lg text-gray-700 leading-relaxed mb-6">ONE Studio는 ONEFFICE 기반의 AI 영상 제작 도구로 대본부터 자막, 아바타, 자료화면까지 전 과정을 자동화하여 콘텐츠의 '스토리'를 완성하는 새로운 영상 제작 경험을 제공합니다.</p>
+							<ul class="space-y-3 mb-6">
+								<li class="flex items-start gap-3"><span class="w-5 h-5 flex items-center justify-center bg-[#1a3a6b] text-white rounded-full text-xs flex-shrink-0 mt-0.5"><i class="ri-check-line"></i></span><span class="text-sm text-gray-700 leading-relaxed">AI 대본 자동 생성</span></li>
+								<li class="flex items-start gap-3"><span class="w-5 h-5 flex items-center justify-center bg-[#1a3a6b] text-white rounded-full text-xs flex-shrink-0 mt-0.5"><i class="ri-check-line"></i></span><span class="text-sm text-gray-700 leading-relaxed">아바타·자막·자료화면 자동 구성</span></li>
+								<li class="flex items-start gap-3"><span class="w-5 h-5 flex items-center justify-center bg-[#1a3a6b] text-white rounded-full text-xs flex-shrink-0 mt-0.5"><i class="ri-check-line"></i></span><span class="text-sm text-gray-700 leading-relaxed">전 과정 ONEFFICE 기반 원스톱 제작</span></li>
+							</ul>
+							<button type="button" data-video="https://www.douzone.com/html/event/250417/data/one_studio.mp4" class="js-video inline-flex items-center justify-center gap-2 px-6 py-3 border border-[#1a3a6b] text-[#1a3a6b] text-sm font-medium rounded-lg hover:bg-[#1a3a6b]/5 transition-colors whitespace-nowrap cursor-pointer"><span class="w-4 h-4 flex items-center justify-center"><i class="ri-play-circle-line"></i></span>소개 영상 보기</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Video popup modal -->
+			<div id="videoPopup" class="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm hidden">
+				<div class="relative w-full max-w-4xl mx-4 rounded-xl overflow-hidden bg-black shadow-2xl" data-stop>
+					<button type="button" id="videoClose" aria-label="영상 닫기" class="absolute top-3 right-3 z-10 w-10 h-10 flex items-center justify-center bg-black/50 text-white rounded-full hover:bg-black/70 transition-colors cursor-pointer"><i class="ri-close-line text-xl"></i></button>
+					<video id="videoPlayer" controls playsinline class="w-full aspect-video"></video>
+				</div>
+			</div>
+
+			<!-- #mobile -->
+			<section id="mobile" class="mb-20">
+				<div class="text-center mb-8">
+					<h2 class="text-xl md:text-2xl font-bold text-gray-900">언제 어디서든 <strong>모바일에서도 편리하게</strong><br class="hidden md:block">사용할 수 있습니다</h2>
+				</div>
+				<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+					<div class="bg-white border border-gray-100 rounded-xl p-6 text-center hover:shadow-md transition-shadow">
+						<span class="w-12 h-12 mx-auto mb-3 flex items-center justify-center bg-[#1a3a6b]/10 text-[#1a3a6b] rounded-full text-2xl"><i class="ri-mic-line"></i></span>
+						<h3 class="text-base font-bold text-gray-900 mb-2">AI 보이스</h3>
+						<p class="text-sm text-gray-600 whitespace-pre-line leading-relaxed">실시간으로 녹음하거나 음성 파일을
+텍스트로 변환하여 내용을 요약해 드립니다.</p>
+					</div>
+					<div class="bg-white border border-gray-100 rounded-xl p-6 text-center hover:shadow-md transition-shadow">
+						<span class="w-12 h-12 mx-auto mb-3 flex items-center justify-center bg-[#1a3a6b]/10 text-[#1a3a6b] rounded-full text-2xl"><i class="ri-camera-line"></i></span>
+						<h3 class="text-base font-bold text-gray-900 mb-2">AI 렌즈</h3>
+						<p class="text-sm text-gray-600 whitespace-pre-line leading-relaxed">말로 표현하기 어려운 정보는 카메라나 이미지를
+사용해 물어보세요. 원하는 정보를 전달해 드립니다.</p>
+					</div>
+					<div class="bg-white border border-gray-100 rounded-xl p-6 text-center hover:shadow-md transition-shadow">
+						<span class="w-12 h-12 mx-auto mb-3 flex items-center justify-center bg-[#1a3a6b]/10 text-[#1a3a6b] rounded-full text-2xl"><i class="ri-calendar-line"></i></span>
+						<h3 class="text-base font-bold text-gray-900 mb-2">일정</h3>
+						<p class="text-sm text-gray-600 whitespace-pre-line leading-relaxed">일정 관리와 자원 예약 등 번거로운
+반복 업무를 자동화해 드립니다.</p>
+					</div>
+					<div class="bg-white border border-gray-100 rounded-xl p-6 text-center hover:shadow-md transition-shadow">
+						<span class="w-12 h-12 mx-auto mb-3 flex items-center justify-center bg-[#1a3a6b]/10 text-[#1a3a6b] rounded-full text-2xl"><i class="ri-message-3-line"></i></span>
+						<h3 class="text-base font-bold text-gray-900 mb-2">메신저</h3>
+						<p class="text-sm text-gray-600 whitespace-pre-line leading-relaxed">쌓인 대화 내용을 빠르게 분석하여
+한눈에 확인할 수 있도록 요약해 드립니다.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- #downloads -->
+			<section id="downloads" class="mb-20">
+				<div class="text-center mb-8">
+					<h2 class="text-xl md:text-2xl font-bold text-gray-900"><strong>소개자료</strong>부터 <strong>ONE AI를 잘 활용하는 방법</strong>까지<br class="hidden md:block">필요한 자료를 지금 확인해 보세요!</h2>
+				</div>
+				<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+					<div class="bg-white border border-gray-100 rounded-xl overflow-hidden hover:shadow-md transition-shadow flex flex-col">
+						<div class="w-full h-36 bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center">
+							<span class="w-16 h-16 flex items-center justify-center text-white/90 text-4xl"><i class="ri-chat-quote-line"></i></span>
+						</div>
+						<div class="p-5 flex flex-col flex-1">
+							<h3 class="text-sm font-bold text-gray-900 whitespace-pre-line leading-relaxed mb-2">ONE AI 주요 프롬프트 모음집</h3>
+							<p class="text-xs text-gray-500 whitespace-pre-line leading-relaxed mb-5 flex-1">처음 사용하는 사용자도 더 최적화된 결과를
+도출할 수 있도록 이미 검증된 업무별 추천
+프롬프트(방법)를 제공합니다.</p>
+							<a href="https://storage.readdy-site.link/project_files/b5c7fc94-98e0-428e-85a4-3a09ef5d2141/b0380dc9-380f-4eb8-b64e-5ed42db320cf_Amaranth-10-ONE-AI-Prompt-Guide.pdf?v=0b9c0a9e4aa1840ac376fe9287c95b98" download="Amaranth-10-ONE-AI-Prompt-Guide.pdf" target="_blank" rel="nofollow noreferrer" class="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-[#1a3a6b] text-white text-xs font-medium rounded-lg hover:bg-[#142d54] transition-colors whitespace-nowrap cursor-pointer mt-auto">다운로드<span class="w-4 h-4 flex items-center justify-center"><i class="ri-download-line"></i></span></a>
+						</div>
+					</div>
+					<div class="bg-white border border-gray-100 rounded-xl overflow-hidden hover:shadow-md transition-shadow flex flex-col">
+						<div class="w-full h-36 bg-gradient-to-br from-rose-500 to-red-600 flex items-center justify-center">
+							<span class="w-16 h-16 flex items-center justify-center text-white/90 text-4xl"><i class="ri-file-ppt-line"></i></span>
+						</div>
+						<div class="p-5 flex flex-col flex-1">
+							<h3 class="text-sm font-bold text-gray-900 whitespace-pre-line leading-relaxed mb-2">Amaranth 10 ONE AI 제안서</h3>
+							<p class="text-xs text-gray-500 whitespace-pre-line leading-relaxed mb-5 flex-1">Amaranth 10에 융합된 ONE AI만의
+특장점부터 주요 활용 사례까지 자세히
+소개합니다.</p>
+							<a href="https://www.douzone.com/html/event/250417/data/Amaranth%2010%20ONE%20AI%20Proposal.pdf" target="_blank" rel="nofollow noreferrer" class="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-[#1a3a6b] text-white text-xs font-medium rounded-lg hover:bg-[#142d54] transition-colors whitespace-nowrap cursor-pointer mt-auto">다운로드<span class="w-4 h-4 flex items-center justify-center"><i class="ri-download-line"></i></span></a>
+						</div>
+					</div>
+					<div class="bg-white border border-gray-100 rounded-xl overflow-hidden hover:shadow-md transition-shadow flex flex-col">
+						<div class="w-full h-36 bg-gradient-to-br from-sky-500 to-blue-600 flex items-center justify-center">
+							<span class="w-16 h-16 flex items-center justify-center text-white/90 text-4xl"><i class="ri-booklet-line"></i></span>
+						</div>
+						<div class="p-5 flex flex-col flex-1">
+							<h3 class="text-sm font-bold text-gray-900 whitespace-pre-line leading-relaxed mb-2">Amaranth 10 브로슈어</h3>
+							<p class="text-xs text-gray-500 whitespace-pre-line leading-relaxed mb-5 flex-1">솔루션 그 이상의 가치를 담은 차세대
+디지털 비즈니스 플랫폼,
+Amaranth 10을 소개합니다.</p>
+							<a href="https://www.douzone.com/html/event/250417/data/Amaranth%2010%20Brochure.pdf" target="_blank" rel="nofollow noreferrer" class="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-[#1a3a6b] text-white text-xs font-medium rounded-lg hover:bg-[#142d54] transition-colors whitespace-nowrap cursor-pointer mt-auto">다운로드<span class="w-4 h-4 flex items-center justify-center"><i class="ri-download-line"></i></span></a>
+						</div>
+					</div>
+					<div class="bg-white border border-gray-100 rounded-xl overflow-hidden hover:shadow-md transition-shadow flex flex-col">
+						<div class="w-full h-36 bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center">
+							<span class="w-16 h-16 flex items-center justify-center text-white/90 text-4xl"><i class="ri-newspaper-line"></i></span>
+						</div>
+						<div class="p-5 flex flex-col flex-1">
+							<h3 class="text-sm font-bold text-gray-900 whitespace-pre-line leading-relaxed mb-2">Amaranth 10 ONE News &amp;
+ONE Studio 브로슈어</h3>
+							<p class="text-xs text-gray-500 whitespace-pre-line leading-relaxed mb-5 flex-1">하나의 이야기가 기사·영상·숏폼으로!
+원 소스 AI 멀티 포맷 서비스
+ONE News &amp; ONE Studio를 소개합니다.</p>
+							<a href="https://www.douzone.com/html/event/250417/data/ONE%20News%20ONE%20Studio%20Brochure.pdf" target="_blank" rel="nofollow noreferrer" class="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-[#1a3a6b] text-white text-xs font-medium rounded-lg hover:bg-[#142d54] transition-colors whitespace-nowrap cursor-pointer mt-auto">다운로드<span class="w-4 h-4 flex items-center justify-center"><i class="ri-download-line"></i></span></a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- #cases -->
+			<section id="cases" class="mb-20">
+				<div class="text-center mb-8">
+					<h2 class="text-xl md:text-2xl font-bold text-gray-900">지금도 <strong>다른 고객님들</strong>은<br class="md:hidden">AX(인공지능 전환)를 경험하고 있습니다</h2>
+				</div>
+				<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+					<div class="bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow">
+						<span class="inline-block px-3 py-1 bg-[#1a3a6b] text-white text-xs font-semibold rounded-full mb-3">마케팅팀</span>
+						<p class="text-sm text-gray-700 leading-relaxed">ONE AI가 받은 메일과 첨부 파일을 분석해 답장을 작성해 주니 시간도 절약되고, 표현 실수도 줄었습니다. 새로운 메일 초안도 ONE AI가 빠르게 작성해 줘서 업무 효율이 높아졌어요.</p>
+					</div>
+					<div class="bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow">
+						<span class="inline-block px-3 py-1 bg-[#1a3a6b] text-white text-xs font-semibold rounded-full mb-3">회계팀</span>
+						<p class="text-sm text-gray-700 leading-relaxed">손익계산서, 경비 청구 내역, 매출액 등 다양한 데이터를 분석해 정확한 정보를 제공하니 휴먼에러가 획기적으로 줄었습니다. 또한, 원하는 형식으로보내기가 가능해 데이터 공유도 더욱 편리해졌습니다.</p>
+					</div>
+					<div class="bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow">
+						<span class="inline-block px-3 py-1 bg-[#1a3a6b] text-white text-xs font-semibold rounded-full mb-3">인사팀</span>
+						<p class="text-sm text-gray-700 leading-relaxed">이전에는 복잡한 법령이나 규정을 일일히 확인해야 했지만, 이제 ONE AI가 중요한 내용을 요약해 줘서 빠르게 파악할 수 있어 시간을 절약할 수 있습니다.</p>
+					</div>
+					<div class="bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow">
+						<span class="inline-block px-3 py-1 bg-[#1a3a6b] text-white text-xs font-semibold rounded-full mb-3">영업·구매팀</span>
+						<p class="text-sm text-gray-700 leading-relaxed">ONE AI가 특정 시기의 매출 규모와 단가 변동 추이를 자동으로 분석하여 정리해 줘요. 반복 작업 없이 정확한 데이터를 확보할 수 있어 더욱 빠르고 정확한 의사결정이 가능해졌습니다.</p>
+					</div>
+					<div class="bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow">
+						<span class="inline-block px-3 py-1 bg-[#1a3a6b] text-white text-xs font-semibold rounded-full mb-3">고객지원팀</span>
+						<p class="text-sm text-gray-700 leading-relaxed">ONE AI가 통화 내용을 텍스트로 변환하고 핵심 정보를 추출해 줘서, 상담 보고서 작성 시간이 획기적으로 줄었어요. 덕분에 더욱 신속하게 고객을 응대할 수 있습니다.</p>
+					</div>
+					<div class="bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow">
+						<span class="inline-block px-3 py-1 bg-[#1a3a6b] text-white text-xs font-semibold rounded-full mb-3">법무팀</span>
+						<p class="text-sm text-gray-700 leading-relaxed">AI 템플릿 자동 생성과 법령·판례 검색 기능 덕분에 문서 작성과 검토 시간이 단축되었고, 주요 조항 검토 및 리스크 분석 자동화로 법무팀의 업무 정확도와 효율성이 크게 향상되었습니다.</p>
+					</div>
+					<div class="bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow">
+						<span class="inline-block px-3 py-1 bg-[#1a3a6b] text-white text-xs font-semibold rounded-full mb-3">홍보팀</span>
+						<p class="text-sm text-gray-700 leading-relaxed">ONE News는 주제와 키워드만으로 기사 초안을 작성하고, 맞춤형 문체와 교정 기능을 지원해 보도자료의 품질이 높아졌습니다. 또한, 반복적인 작성과 검수 과정이 자동화되면서 작성 시간이 크게 단축되고, 언론 대응 속도도 빨라져 홍보 전략 수립에 더 집중할 수 있게 되었습니다.</p>
+					</div>
+					<div class="bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow">
+						<span class="inline-block px-3 py-1 bg-[#1a3a6b] text-white text-xs font-semibold rounded-full mb-3">교육지원팀</span>
+						<p class="text-sm text-gray-700 leading-relaxed">ONE Studio가 문서를 분석해 대본을 자동 생성하고 템플릿으로 영상을 제작해 주니, 촬영·편집 과정 없이도 교육 콘텐츠를 빠르게 완성할 수 있었습니다. 덕분에 사내 교육부터 고객 교육까지 다양한 채널에 맞는 콘텐츠 제공이 가능해졌습니다.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- #faq -->
+			<section id="faq" class="mb-20">
+				<div class="text-center mb-8">
+					<h2 class="text-xl md:text-2xl font-bold text-gray-900">더 궁금한 점이 있나요?</h2>
+				</div>
+				<div class="max-w-3xl mx-auto space-y-2" data-accordion>
+					<details class="border border-gray-200 rounded-lg overflow-hidden group bg-white">
+						<summary class="w-full flex items-center justify-between px-5 py-4 text-left bg-white hover:bg-gray-50 transition-colors cursor-pointer list-none">
+							<h3 class="text-sm md:text-base font-semibold text-gray-900 pr-4">Q. ONE AI란?</h3>
+							<span class="w-5 h-5 flex items-center justify-center flex-shrink-0 text-gray-500"><i class="ri-add-line group-open:hidden"></i><i class="ri-subtract-line hidden group-open:inline"></i></span>
+						</summary>
+						<div class="px-5 pb-4 bg-white"><p class="text-sm text-gray-600 leading-relaxed">ONE AI는 더존의 기업용 솔루션(OmniEsol, Amaranth 10, WEHAGO, WEHAGO T)에 내재화한 생산성 혁신 AI 도구입니다. ERP, 그룹웨어, EDM 등 주요 솔루션에 AI를 통합해 업무 프로세스를 자동화하고, 업무 효율성과 편의성을 극대화합니다. 또한, 더존이 자체 개발한 API 브릿지 기술과 RAG 엔진을 통해 할루시네이션(환각)을 최소화하고, 강력한 보안 기술을 바탕으로 실시간 데이터를 안전하게 활용하도록 지원합니다.</p></div>
+					</details>
+					<details class="border border-gray-200 rounded-lg overflow-hidden group bg-white">
+						<summary class="w-full flex items-center justify-between px-5 py-4 text-left bg-white hover:bg-gray-50 transition-colors cursor-pointer list-none">
+							<h3 class="text-sm md:text-base font-semibold text-gray-900 pr-4">Q. ONE AI는 어떻게 사용할 수 있나요?</h3>
+							<span class="w-5 h-5 flex items-center justify-center flex-shrink-0 text-gray-500"><i class="ri-add-line group-open:hidden"></i><i class="ri-subtract-line hidden group-open:inline"></i></span>
+						</summary>
+						<div class="px-5 pb-4 bg-white"><p class="text-sm text-gray-600 leading-relaxed">[도입문의]를 통해 내용을 작성해 주시면, 담당 컨설턴트가 최대한 신속하게 연락드려 ONE AI 도입에 필요한 안내를 도와드리겠습니다.</p></div>
+					</details>
+					<details class="border border-gray-200 rounded-lg overflow-hidden group bg-white">
+						<summary class="w-full flex items-center justify-between px-5 py-4 text-left bg-white hover:bg-gray-50 transition-colors cursor-pointer list-none">
+							<h3 class="text-sm md:text-base font-semibold text-gray-900 pr-4">Q. 누가 ONE AI를 이용할 수 있나요?</h3>
+							<span class="w-5 h-5 flex items-center justify-center flex-shrink-0 text-gray-500"><i class="ri-add-line group-open:hidden"></i><i class="ri-subtract-line hidden group-open:inline"></i></span>
+						</summary>
+						<div class="px-5 pb-4 bg-white"><p class="text-sm text-gray-600 leading-relaxed">ONE AI는 더존의 기업용 솔루션(OmniEsol, Amaranth 10, WEHAGO, WEHAGO T)을 사용하는 기업의 모든 임직원이 사용할 수 있도록 설계된 AI 비서입니다.</p></div>
+					</details>
+					<details class="border border-gray-200 rounded-lg overflow-hidden group bg-white">
+						<summary class="w-full flex items-center justify-between px-5 py-4 text-left bg-white hover:bg-gray-50 transition-colors cursor-pointer list-none">
+							<h3 class="text-sm md:text-base font-semibold text-gray-900 pr-4">Q. ONE AI는 어떤 기능들을 제공하나요?</h3>
+							<span class="w-5 h-5 flex items-center justify-center flex-shrink-0 text-gray-500"><i class="ri-add-line group-open:hidden"></i><i class="ri-subtract-line hidden group-open:inline"></i></span>
+						</summary>
+						<div class="px-5 pb-4 bg-white"><p class="text-sm text-gray-600 leading-relaxed">ONE AI는 다음과 같은 업무를 자동화하여 반복적인 업무를 줄이고, 업무 효율을 향상시킵니다. 회계 전표 및 증빙자료 역추적, 화상회의 자동 정리, 메시지 요약과 일정 자동 등록, 음성 명령 실행 등</p></div>
+					</details>
+					<details class="border border-gray-200 rounded-lg overflow-hidden group bg-white">
+						<summary class="w-full flex items-center justify-between px-5 py-4 text-left bg-white hover:bg-gray-50 transition-colors cursor-pointer list-none">
+							<h3 class="text-sm md:text-base font-semibold text-gray-900 pr-4">Q. ONE AI의 기업 데이터는 어떻게 수집되고, 수집된 데이터는 어떻게 보호되나요?</h3>
+							<span class="w-5 h-5 flex items-center justify-center flex-shrink-0 text-gray-500"><i class="ri-add-line group-open:hidden"></i><i class="ri-subtract-line hidden group-open:inline"></i></span>
+						</summary>
+						<div class="px-5 pb-4 bg-white"><p class="text-sm text-gray-600 leading-relaxed">ONE AI는 Microsoft Azure 기반의 클라우드 환경에서 운영되어 신뢰성 있는 보안 인프라를 바탕으로 데이터를 안전하게 보호합니다. 또한, 업무용 솔루션(ERP, 그룹웨어, EDM 등)과 결합하여 개인정보 보호와 보안성 면에서 더욱 강력한 안정성을 갖추고 있습니다.</p></div>
+					</details>
+					<details class="border border-gray-200 rounded-lg overflow-hidden group bg-white">
+						<summary class="w-full flex items-center justify-between px-5 py-4 text-left bg-white hover:bg-gray-50 transition-colors cursor-pointer list-none">
+							<h3 class="text-sm md:text-base font-semibold text-gray-900 pr-4">Q. ONE AI의 답변은 얼마나 정확한가요?</h3>
+							<span class="w-5 h-5 flex items-center justify-center flex-shrink-0 text-gray-500"><i class="ri-add-line group-open:hidden"></i><i class="ri-subtract-line hidden group-open:inline"></i></span>
+						</summary>
+						<div class="px-5 pb-4 bg-white"><p class="text-sm text-gray-600 leading-relaxed">ONE AI는 기업 내부 데이터, 업무 흐름, ERP 정보를 함께 반영해 답변을 생성하므로, 일반적인 생성형 AI 모델보다 높은 정확도를 제공합니다. 또한, 생성된 답변은 필요에 따라 재검토 및 수정이 가능합니다.</p></div>
+					</details>
+					<details class="border border-gray-200 rounded-lg overflow-hidden group bg-white">
+						<summary class="w-full flex items-center justify-between px-5 py-4 text-left bg-white hover:bg-gray-50 transition-colors cursor-pointer list-none">
+							<h3 class="text-sm md:text-base font-semibold text-gray-900 pr-4">Q. ONE AI는 어떤 방식으로 ERP 데이터를 분석하나요?</h3>
+							<span class="w-5 h-5 flex items-center justify-center flex-shrink-0 text-gray-500"><i class="ri-add-line group-open:hidden"></i><i class="ri-subtract-line hidden group-open:inline"></i></span>
+						</summary>
+						<div class="px-5 pb-4 bg-white"><p class="text-sm text-gray-600 leading-relaxed">ONE AI는 사용자의 프롬프트를 분석해 ERP DB에서 필요한 데이터를 추출하고, 그 결과를 기반으로 응답을 생성합니다. 추출된 데이터는 차트나 문서 형태로 재가공할 수 있으며, 추출한 데이터는 즐겨찾기를 통해 저장 후 재활용도 가능합니다.</p></div>
+					</details>
+					<details class="border border-gray-200 rounded-lg overflow-hidden group bg-white">
+						<summary class="w-full flex items-center justify-between px-5 py-4 text-left bg-white hover:bg-gray-50 transition-colors cursor-pointer list-none">
+							<h3 class="text-sm md:text-base font-semibold text-gray-900 pr-4">Q. ONE AI는 어떤 생성형 AI 모델을 어떻게 사용하나요?</h3>
+							<span class="w-5 h-5 flex items-center justify-center flex-shrink-0 text-gray-500"><i class="ri-add-line group-open:hidden"></i><i class="ri-subtract-line hidden group-open:inline"></i></span>
+						</summary>
+						<div class="px-5 pb-4 bg-white"><p class="text-sm text-gray-600 leading-relaxed">ONE AI는 GPT-4와 같이 고성능 생성형 AI 모델을 기반으로 더존 자체 학습 데이터를 결합하여 문서 요약, 번역, 음성 인식, 질의응답, 이미지 분석 등 다양한 업무에 최적화된 답변을 제공합니다.</p></div>
+					</details>
+				</div>
+			</section>
+
+			<!-- ATEC CTA -->
+			<section class="bg-[#1a3a6b] text-white rounded-xl p-8 md:p-14 text-center mb-10">
+				<h2 class="text-xl md:text-2xl font-bold mb-3">더존 ATEC에서 <span class="text-[#4aa8ff]">ONE AI</span>를<br class="md:hidden"> 직접 확인하고 체험하세요.</h2>
+				<p class="text-sm md:text-base text-white/80 leading-relaxed mb-6"><strong>서울, 부산, 대구, 광주, 창원 등 전국에서 운영 중인</strong><br>종합 전시 체험 공간 더존ATEC에서 ONE AI를 만나보세요.</p>
+				<a href="https://www.douzone.com/event/seminar-oneai.jsp?target=oneai" target="_blank" rel="nofollow noreferrer" class="inline-flex items-center justify-center px-6 py-3 bg-white text-[#1a3a6b] text-sm font-bold rounded-lg hover:bg-gray-100 transition-colors whitespace-nowrap cursor-pointer"><strong>ONE AI 세미나 자세히 알아보기</strong></a>
+				<p class="text-xs text-white/60 mt-4">* ATEC : 다양한 업무용 솔루션과 서비스를 디지털화 하고자 하는 기업의 니즈를 해결해드리는 신개념 종합 전시 체험 공간 입니다.<br>(AI Transformation Experience Center)</p>
+			</section>
+
+		</div>
+	</div>
+
+	<div id="footer">
+	<div class="inConts">
+		<div class="top">
+			<ul>
+				<li><a href="/company/privacy.asp">개인정보취급방침 </a></li>
+				<li><a href="/company/clause.asp">이용약관</a></li>
+				<li><a href="/company/location.asp">오시는 길</a></li>
+				<!-- <li><a href="#">이메일 집단수신거부</a></li> -->
+			</ul>
+		</div>
+
+		<div class="bottom">
+
+			<div class="ft__01">
+				<strong><img src="/images/logo_2026_on.png" alt="아이원소프트뱅크 - 더존 ERP 공식 파트너" style="width: 20rem;" loading="lazy" decoding="async"></strong>
+				<address>COPYRIGHT &copy; 2024 DOUZONE BIZON.<br />All rights reserved.</address>
+			</div>
+
+			<div class="ft__05 text">
+				<p><span>아이원소프트뱅크㈜</span>    <span>대표 : 황명희</span>    <span>사업자등록번호 : 113-86-70956</span>    <span>통신판매신고번호 : 2017-서울구로-0617</span></p>
+				<p><span>주소 : 서울특별시 구로구 디지털로 285 에이스트윈타워 1차 405호 </span></p>
+				<!-- <p><span>더존강촌캠퍼스 : 강원도 춘천시 남산면 수동리 749 ( 도로명 : 춘천시 남산면 버들1길 130)</span></p> -->
+				<p><span>구매상담문의 : 1877-0256</span>    <span>고객센터 : 1877-1859</span>    <span>iCUBE / G20 : 1877-0840</span>    <span>블루멤버십 : 1600-4208</span></p>
+                <p><span>테스트 계정 신청 : 070-4497-3388</span></p>
+			</div>
+			<!-- <div class="ft__03">
+				<ul>
+					<li>
+						<b>대표자</b>
+						<p>황명희</p>
+					</li>
+					<li>
+						<b>사업자등록번호</b>
+						<p>113-86-70956</p>
+					</li>
+					<li>
+						<b>대표전화</b>
+						<p>1600-4208</p>
+					</li>
+					<li>
+						<b>팩    스</b>
+						<p>02-3432-4623</p>
+					</li>
+				</ul>
+			</div> -->
+			<div class="ft__04">
+				<div class="link">
+					<a href="https://cafe.naver.com/ionesoftbank" target="_blank" rel="noopener noreferrer"><img src="/images/main/cafe.png" alt="아이원소프트뱅크 네이버 카페" loading="lazy" decoding="async"></a>
+					<a href="https://blog.naver.com/zhogksgjqm" target="_blank" rel="noopener noreferrer"><img src="/images/main/blog.png" alt="아이원소프트뱅크 네이버 블로그" loading="lazy" decoding="async"></a>
+					<a href="https://www.instagram.com/ione130501?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank" rel="noopener noreferrer"><img src="/images/main/insta.png" alt="아이원소프트뱅크 인스타그램" loading="lazy" decoding="async"></a>
+					<a href="http://pf.kakao.com/_xnFVzK" target="_blank" rel="noopener noreferrer"><img src="/images/main/Kakao.png" alt="아이원소프트뱅크 카카오톡 채널" loading="lazy" decoding="async"></a>
+					<a href="https://youtube.com/@IONEsoftBK_official?si=r5_CIRHiMzhLeADq" target="_blank" rel="noopener noreferrer"><img src="/images/icon_social_youtobe_c.png" alt="아이원소프트뱅크 유튜브" loading="lazy" decoding="async"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	AOS.init({
+		once: true,
+		//delay: 0,
+		duration: 700,
+		easing: 'ease-out'
+	});
+
+	$.ripple(".board_btn .click, .btn-ripple", {
+		opacity: 0.4,
+		color: "auto",
+		multi: false,
+		duration: 0.7,
+		rate: function(pxPerSecond) {
+		return pxPerSecond; // animation speed
+	},
+		easing: 'linear'
+	});
+</script>
+</div>
+
+<script>
+(function(){
+	function activateTab(tabset, idx){
+		// buttons
+		document.querySelectorAll('[data-tabset="'+tabset+'"][data-tab-button]').forEach(function(btn){
+			var on = (String(btn.dataset.tab) === String(idx));
+			btn.classList.toggle('bg-[#1a3a6b]', on);
+			btn.classList.toggle('text-white', on);
+			btn.classList.toggle('bg-gray-100', !on);
+			btn.classList.toggle('text-gray-700', !on);
+			btn.classList.toggle('hover:bg-gray-200', !on);
+		});
+		// panels
+		document.querySelectorAll('[data-tabset="'+tabset+'"][data-panel]').forEach(function(p){
+			p.classList.toggle('is-active', String(p.dataset.panel) === String(idx));
+		});
+	}
+	document.querySelectorAll('[data-tab-button]').forEach(function(btn){
+		btn.addEventListener('click', function(){
+			activateTab(btn.dataset.tabset || btn.closest('[data-tabset]').dataset.tabset, btn.dataset.tab);
+		});
+	});
+	// FAQ: single-open behavior (close others when one opens)
+	document.querySelectorAll('[data-accordion] details').forEach(function(d){
+		d.addEventListener('toggle', function(){
+			if (!d.open) return;
+			d.parentNode.querySelectorAll('details').forEach(function(o){ if (o !== d) o.open = false; });
+		});
+	});
+
+	// Video popup modal
+	var popup = document.getElementById('videoPopup');
+	var player = document.getElementById('videoPlayer');
+	var closeBtn = document.getElementById('videoClose');
+	function openVideo(url){
+		if (!popup || !player) return;
+		player.src = url;
+		popup.classList.remove('hidden');
+		popup.classList.add('flex');
+		document.body.style.overflow = 'hidden';
+		var p = player.play(); if (p && p.catch) p.catch(function(){});
+	}
+	function closeVideo(){
+		if (!popup || !player) return;
+		try { player.pause(); } catch(e){}
+		player.removeAttribute('src');
+		player.load();
+		popup.classList.add('hidden');
+		popup.classList.remove('flex');
+		document.body.style.overflow = '';
+	}
+	document.querySelectorAll('.js-video').forEach(function(btn){
+		btn.addEventListener('click', function(){ openVideo(btn.dataset.video); });
+	});
+	if (closeBtn) closeBtn.addEventListener('click', closeVideo);
+	if (popup) popup.addEventListener('click', function(e){
+		if (e.target === popup) closeVideo();
+	});
+	document.addEventListener('keydown', function(e){
+		if (e.key === 'Escape' && popup && !popup.classList.contains('hidden')) closeVideo();
+	});
+
+	// IntersectionObserver: fade-in for alternating sections
+	if ('IntersectionObserver' in window) {
+		var io = new IntersectionObserver(function(entries){
+			entries.forEach(function(en){
+				if (en.isIntersecting){ en.target.classList.add('alt-visible'); io.unobserve(en.target); }
+			});
+		}, { threshold: 0.12 });
+		document.querySelectorAll('.alt-section').forEach(function(el){ io.observe(el); });
+	} else {
+		document.querySelectorAll('.alt-section').forEach(function(el){ el.classList.add('alt-visible'); });
+	}
+})();
+</script>
+</body>
+</html>

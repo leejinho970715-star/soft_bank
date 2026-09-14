@@ -1,0 +1,345 @@
+[
+  {
+    "path": "/product/amaranth10/brand.asp",
+    "file": "product__amaranth10__brand.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/product/amaranth10/brand.asp",
+    "bytes": 32935
+  },
+  {
+    "path": "/product/wehago/smart_A10.asp",
+    "file": "product__wehago__smart_A10.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/product/wehago/smart_A10.asp",
+    "bytes": 50999
+  },
+  {
+    "path": "/product/omniesol.asp",
+    "file": "product__omniesol.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/product/omniesol.asp",
+    "bytes": 6974598
+  },
+  {
+    "path": "/product/oneai.asp",
+    "file": "product__oneai.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/product/oneai.asp",
+    "bytes": 74865
+  },
+  {
+    "path": "/product/nonprofit/intro.asp",
+    "file": "product__nonprofit__intro.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/product/nonprofit/intro.asp",
+    "bytes": 45232
+  },
+  {
+    "path": "/product/pms.asp",
+    "file": "product__pms.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/product/pms.asp",
+    "bytes": 35488
+  },
+  {
+    "path": "/government/notice.asp",
+    "file": "government__notice.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/government/notice.asp",
+    "bytes": 28427
+  },
+  {
+    "path": "/government/promotion.asp",
+    "file": "government__promotion.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/government/promotion.asp",
+    "bytes": 26098
+  },
+  {
+    "path": "/purchase/inquiry.asp",
+    "file": "purchase__inquiry.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/purchase/inquiry.asp",
+    "bytes": 42941
+  },
+  {
+    "path": "/purchase/seminar.asp",
+    "file": "purchase__seminar.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/purchase/seminar.asp",
+    "bytes": 27979
+  },
+  {
+    "path": "/purchase/service.asp",
+    "file": "purchase__service.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/purchase/service.asp",
+    "bytes": 25146
+  },
+  {
+    "path": "/purchase/bsnss_inquiry.asp",
+    "file": "purchase__bsnss_inquiry.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/purchase/bsnss_inquiry.asp",
+    "bytes": 39161
+  },
+  {
+    "path": "/amaranth10/inquiry.asp",
+    "file": "amaranth10__inquiry.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/amaranth10/inquiry.asp",
+    "bytes": 30288
+  },
+  {
+    "path": "/icube/inquiry.asp",
+    "file": "icube__inquiry.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/icube/inquiry.asp",
+    "bytes": 30380
+  },
+  {
+    "path": "/bizbox/inquiry.asp",
+    "file": "bizbox__inquiry.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/bizbox/inquiry.asp",
+    "bytes": 30416
+  },
+  {
+    "path": "/pms/inquiry.asp",
+    "file": "pms__inquiry.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/pms/inquiry.asp",
+    "bytes": 24566
+  },
+  {
+    "path": "/omniesol/inquiry.asp",
+    "file": "omniesol__inquiry.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/omniesol/inquiry.asp",
+    "bytes": 24562
+  },
+  {
+    "path": "/customer/customer_etc.asp",
+    "file": "customer__customer_etc.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/customer/customer_etc.asp",
+    "bytes": 29633
+  },
+  {
+    "path": "/company/about.asp",
+    "file": "company__about.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/company/about.asp",
+    "bytes": 24271
+  },
+  {
+    "path": "/company/privacy.asp",
+    "file": "company__privacy.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/company/privacy.asp",
+    "bytes": 32027
+  },
+  {
+    "path": "/company/location.asp",
+    "file": "company__location.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/company/location.asp",
+    "bytes": 24158
+  },
+  {
+    "path": "/company/headquarters.asp",
+    "file": "company__headquarters.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/company/headquarters.asp",
+    "bytes": 27850
+  },
+  {
+    "path": "/community/conmment.asp",
+    "file": "community__conmment.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/community/conmment.asp",
+    "bytes": 25074
+  },
+  {
+    "path": "/community/recruit.asp",
+    "file": "community__recruit.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/community/recruit.asp",
+    "bytes": 23863
+  },
+  {
+    "path": "/member/login.asp",
+    "file": "member__login.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/member/login.asp",
+    "bytes": 23541
+  },
+  {
+    "path": "/member/find.asp",
+    "file": "member__find.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/member/find.asp",
+    "bytes": 24986
+  },
+  {
+    "path": "/member/yak.asp",
+    "file": "member__yak.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/member/yak.asp",
+    "bytes": 44903
+  },
+  {
+    "path": "/mypage/info.asp",
+    "file": "mypage__info.asp.html",
+    "status": 404,
+    "url": "https://www.duzon119.co.kr/mypage/info.asp",
+    "bytes": 4411
+  },
+  {
+    "path": "/mypage/out.asp",
+    "file": "mypage__out.asp.html",
+    "status": 404,
+    "url": "https://www.duzon119.co.kr/mypage/out.asp",
+    "bytes": 4409
+  },
+  {
+    "path": "/company/clause.asp",
+    "file": "company__clause.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/company/clause.asp",
+    "bytes": 33411
+  },
+  {
+    "path": "/purchase/amavideo.asp",
+    "file": "purchase__amavideo.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/purchase/amavideo.asp",
+    "bytes": 29022
+  },
+  {
+    "path": "/customer/notice.asp",
+    "file": "customer__notice.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/customer/notice.asp",
+    "bytes": 29650
+  },
+  {
+    "path": "/customer/faq.asp",
+    "file": "customer__faq.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/customer/faq.asp",
+    "bytes": 45370
+  },
+  {
+    "path": "/product/amaranth10/overview.asp",
+    "file": "product__amaranth10__overview.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/product/amaranth10/overview.asp",
+    "bytes": 30205
+  },
+  {
+    "path": "/product/amaranth10/hr.asp",
+    "file": "product__amaranth10__hr.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/product/amaranth10/hr.asp",
+    "bytes": 27112
+  },
+  {
+    "path": "/product/amaranth10/lm.asp",
+    "file": "product__amaranth10__lm.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/product/amaranth10/lm.asp",
+    "bytes": 30034
+  },
+  {
+    "path": "/product/wehago/cooperation.asp",
+    "file": "product__wehago__cooperation.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/product/wehago/cooperation.asp",
+    "bytes": 59057
+  },
+  {
+    "path": "/product/wehago/extraservice.asp",
+    "file": "product__wehago__extraservice.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/product/wehago/extraservice.asp",
+    "bytes": 41706
+  },
+  {
+    "path": "/product/wehago/linkedservice.asp",
+    "file": "product__wehago__linkedservice.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/product/wehago/linkedservice.asp",
+    "bytes": 40925
+  },
+  {
+    "path": "/amaranth10/notice.asp",
+    "file": "amaranth10__notice.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/amaranth10/notice.asp",
+    "bytes": 35063
+  },
+  {
+    "path": "/amaranth10/pds.asp",
+    "file": "amaranth10__pds.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/amaranth10/pds.asp",
+    "bytes": 29295
+  },
+  {
+    "path": "/icube/notice.asp",
+    "file": "icube__notice.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/icube/notice.asp",
+    "bytes": 31880
+  },
+  {
+    "path": "/icube/pds.asp",
+    "file": "icube__pds.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/icube/pds.asp",
+    "bytes": 25325
+  },
+  {
+    "path": "/bizbox/update.asp",
+    "file": "bizbox__update.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/bizbox/update.asp",
+    "bytes": 29726
+  },
+  {
+    "path": "/bizbox/notice.asp",
+    "file": "bizbox__notice.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/bizbox/notice.asp",
+    "bytes": 32292
+  },
+  {
+    "path": "/bizbox/pds.asp",
+    "file": "bizbox__pds.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/bizbox/pds.asp",
+    "bytes": 24744
+  },
+  {
+    "path": "/pms/pds.asp",
+    "file": "pms__pds.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/pms/pds.asp",
+    "bytes": 24075
+  },
+  {
+    "path": "/omniesol/pds.asp",
+    "file": "omniesol__pds.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/omniesol/pds.asp",
+    "bytes": 24483
+  },
+  {
+    "path": "/community/hit.asp",
+    "file": "community__hit.asp.html",
+    "status": 200,
+    "url": "https://www.duzon119.co.kr/community/hit.asp",
+    "bytes": 23384
+  }
+]

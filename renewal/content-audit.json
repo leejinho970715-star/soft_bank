@@ -1,0 +1,1205 @@
+[
+  {
+    "path": "/product/amaranth10/brand.asp",
+    "preview": "product/amaranth10/brand.html",
+    "title": "그룹웨어",
+    "group": "제품/서비스",
+    "textHash": "6815d3b6349ae8c517373002657b2805d5242f3541c6d151a227a64af10d9822",
+    "textIdentical": true,
+    "images": 17,
+    "forms": []
+  },
+  {
+    "path": "/product/wehago/smart_A10.asp",
+    "preview": "product/wehago/smart_A10.html",
+    "title": "리플릿 자세히 보기",
+    "group": "제품/서비스",
+    "textHash": "6c724e71a6386a39b92d7b58c598d70e3fdd8c662007a5c85ea9ffa022b7514b",
+    "textIdentical": true,
+    "images": 62,
+    "forms": []
+  },
+  {
+    "path": "/product/omniesol.asp",
+    "preview": "product/omniesol.html",
+    "title": "OmniEsol",
+    "group": "제품/서비스",
+    "textHash": "20b712a0edf8e5ace4959ff282b307ed99f75932ad5836af84fb6c6b3a9e8b73",
+    "textIdentical": true,
+    "images": 16,
+    "forms": []
+  },
+  {
+    "path": "/product/oneai.asp",
+    "preview": "product/oneai.html",
+    "title": "ONE AI 소개",
+    "group": "제품/서비스",
+    "textHash": "5c8098b623304fcfad5f22883a169998f01e72e51541d8aadc33a9ec587bb3d9",
+    "textIdentical": true,
+    "images": 6,
+    "forms": []
+  },
+  {
+    "path": "/product/nonprofit/intro.asp",
+    "preview": "product/nonprofit/intro.html",
+    "title": "주요기능",
+    "group": "제품/서비스",
+    "textHash": "fdc9d2ac84f74d56248aea3d2c1ecb6eea1cb34b539ef0c68b533b376b4cb8cf",
+    "textIdentical": true,
+    "images": 4,
+    "forms": []
+  },
+  {
+    "path": "/product/pms.asp",
+    "preview": "product/pms.html",
+    "title": "PMS",
+    "group": "제품/서비스",
+    "textHash": "66f16870535872b5fe2e47d4b40ef6f01ac6950d956ab7ed0e44db12d5ab246d",
+    "textIdentical": true,
+    "images": 17,
+    "forms": []
+  },
+  {
+    "path": "/government/notice.asp",
+    "preview": "government/notice.html",
+    "title": "2026 클라우드 정부지원 사업",
+    "group": "공지사항",
+    "textHash": "bb8c6fd7513615c27e9411e0087e29bd070dcb7c8fc1987e4c4527264c7e00e7",
+    "textIdentical": true,
+    "images": 9,
+    "forms": [
+      {
+        "name": "searchfrm",
+        "method": "get",
+        "fields": [
+          "serboardsort",
+          "search",
+          "searchStr",
+          ""
+        ]
+      },
+      {
+        "name": "boardActfrm",
+        "action": "",
+        "method": "get",
+        "fields": [
+          "mode",
+          "sort",
+          "idx",
+          "Page",
+          "BBSCode",
+          "serboardsort",
+          "searchStr",
+          "pageSize"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/government/promotion.asp",
+    "preview": "government/promotion.html",
+    "title": "더존프로모션 게시글",
+    "group": "공지사항",
+    "textHash": "12f9595efa5c732aeb1b4bf69d72db77d4f4df352b003e022e8e8c1ed942fc80",
+    "textIdentical": true,
+    "images": 4,
+    "forms": [
+      {
+        "name": "searchfrm",
+        "method": "get",
+        "fields": [
+          "serboardsort",
+          "search",
+          "searchStr",
+          ""
+        ]
+      },
+      {
+        "name": "boardActfrm",
+        "action": "",
+        "method": "get",
+        "fields": [
+          "mode",
+          "sort",
+          "idx",
+          "Page",
+          "BBSCode",
+          "serboardsort",
+          "searchStr",
+          "pageSize"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/purchase/inquiry.asp",
+    "preview": "purchase/inquiry.html",
+    "title": "구입문의",
+    "group": "구입문의",
+    "textHash": "583d004af061eb5c4f58a96e8f91691db52afbce33e54e53a3ae796293a24182",
+    "textIdentical": true,
+    "images": 0,
+    "forms": [
+      {
+        "name": "inqFrm1",
+        "action": "/board/ok_bbswrite.asp",
+        "method": "post",
+        "fields": [
+          "editorYN",
+          "bbscode",
+          "boardsort",
+          "company",
+          "note1",
+          "tel",
+          "note2",
+          "writer",
+          "note3",
+          "phone",
+          "phone",
+          "phone",
+          "email",
+          "email",
+          "note4",
+          "note4",
+          "note4",
+          "note4",
+          "note5",
+          "note5",
+          "note6",
+          "note7",
+          "content",
+          "files",
+          "privacy_check"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/purchase/seminar.asp",
+    "preview": "purchase/seminar.html",
+    "title": "view\n\t\t\n\t\t\n\t\t\t[더존] 25년 1분기 세미나 일정 \n\t\t\t세미나 참가하기",
+    "group": "구입문의",
+    "textHash": "5081701e58cc14c0cf3dd0334cd34c94f1ba59602c914eb791c1933a4fd60441",
+    "textIdentical": true,
+    "images": 8,
+    "forms": [
+      {
+        "name": "searchfrm",
+        "method": "get",
+        "fields": [
+          "serboardsort",
+          "search",
+          "searchStr",
+          ""
+        ]
+      },
+      {
+        "name": "boardActfrm",
+        "action": "",
+        "method": "get",
+        "fields": [
+          "mode",
+          "sort",
+          "idx",
+          "Page",
+          "BBSCode",
+          "serboardsort",
+          "search",
+          "searchStr",
+          "pageSize",
+          "seritemidx"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/purchase/service.asp",
+    "preview": "purchase/service.html",
+    "title": "view\n\t\t\n\t\t\n\t\t\t[더존] WEHAGO 솔루션 제안서 (세무신고특화형 ERP 솔루션)",
+    "group": "구입문의",
+    "textHash": "14e3db0b2e638f9decdf363365c68ee10d25699fac8b3a98bea7b9eb1b1c2852",
+    "textIdentical": true,
+    "images": 2,
+    "forms": [
+      {
+        "name": "searchfrm",
+        "method": "get",
+        "fields": [
+          "serboardsort",
+          "search",
+          "searchStr",
+          ""
+        ]
+      },
+      {
+        "name": "boardActfrm",
+        "action": "",
+        "method": "get",
+        "fields": [
+          "mode",
+          "sort",
+          "idx",
+          "Page",
+          "BBSCode",
+          "serboardsort",
+          "search",
+          "searchStr",
+          "pageSize",
+          "seritemidx"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/purchase/bsnss_inquiry.asp",
+    "preview": "purchase/bsnss_inquiry.html",
+    "title": "비즈니스 제휴문의",
+    "group": "구입문의",
+    "textHash": "fc6f5fa74603f5fe9b4f80a1de73adb1983dd8cd48d8f8c7aca56f8ec3dfe2e3",
+    "textIdentical": true,
+    "images": 1,
+    "forms": [
+      {
+        "name": "inqFrm1",
+        "action": "/board/ok_bbswrite.asp",
+        "method": "post",
+        "fields": [
+          "editorYN",
+          "bbscode",
+          "boardsort",
+          "company",
+          "note1",
+          "writer",
+          "phone",
+          "phone",
+          "phone",
+          "email",
+          "email",
+          "note2",
+          "note3",
+          "note4",
+          "note5",
+          "privacy_check"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/amaranth10/inquiry.asp",
+    "preview": "amaranth10/inquiry.html",
+    "title": "1:1 사용문의",
+    "group": "고객센터",
+    "textHash": "793ece6d11658d8c3512dcfd1af502594dbf4dfabf59cf99a74b32d613d6b203",
+    "textIdentical": true,
+    "images": 10,
+    "forms": [
+      {
+        "name": "searchfrm",
+        "method": "get",
+        "fields": [
+          "serboardsort",
+          "search",
+          "searchStr",
+          ""
+        ]
+      },
+      {
+        "name": "boardActfrm",
+        "action": "",
+        "method": "get",
+        "fields": [
+          "mode",
+          "sort",
+          "idx",
+          "Page",
+          "BBSCode",
+          "serboardsort",
+          "searchStr",
+          "pageSize"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/icube/inquiry.asp",
+    "preview": "icube/inquiry.html",
+    "title": "1:1 사용문의",
+    "group": "고객센터",
+    "textHash": "5a78454437b44b2b41457ed1e7a92260654e8eaf4fe41ea8cf7b20a808992bc6",
+    "textIdentical": true,
+    "images": 10,
+    "forms": [
+      {
+        "name": "searchfrm",
+        "method": "get",
+        "fields": [
+          "serboardsort",
+          "search",
+          "searchStr",
+          ""
+        ]
+      },
+      {
+        "name": "boardActfrm",
+        "action": "",
+        "method": "get",
+        "fields": [
+          "mode",
+          "sort",
+          "idx",
+          "Page",
+          "BBSCode",
+          "serboardsort",
+          "searchStr",
+          "pageSize"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/bizbox/inquiry.asp",
+    "preview": "bizbox/inquiry.html",
+    "title": "1:1 사용문의",
+    "group": "고객센터",
+    "textHash": "7fcea96d09c247da98ec9edd5b2c3a41ed0811819440683d4cd8942c2b74576d",
+    "textIdentical": true,
+    "images": 10,
+    "forms": [
+      {
+        "name": "searchfrm",
+        "method": "get",
+        "fields": [
+          "serboardsort",
+          "search",
+          "searchStr",
+          ""
+        ]
+      },
+      {
+        "name": "boardActfrm",
+        "action": "",
+        "method": "get",
+        "fields": [
+          "mode",
+          "sort",
+          "idx",
+          "Page",
+          "BBSCode",
+          "serboardsort",
+          "searchStr",
+          "pageSize"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/pms/inquiry.asp",
+    "preview": "pms/inquiry.html",
+    "title": "사용문의",
+    "group": "고객센터",
+    "textHash": "01a4d8c88dbcb98d08314a40c34b178adc4f2d64d0ec19c19f203b12bca5478b",
+    "textIdentical": true,
+    "images": 1,
+    "forms": [
+      {
+        "name": "searchfrm",
+        "method": "get",
+        "fields": [
+          "serboardsort",
+          "search",
+          "searchStr",
+          ""
+        ]
+      },
+      {
+        "name": "boardActfrm",
+        "action": "",
+        "method": "get",
+        "fields": [
+          "mode",
+          "sort",
+          "idx",
+          "Page",
+          "BBSCode",
+          "serboardsort",
+          "searchStr",
+          "pageSize"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/omniesol/inquiry.asp",
+    "preview": "omniesol/inquiry.html",
+    "title": "사용문의",
+    "group": "고객센터",
+    "textHash": "697ad2774aef96efc3a604107e8eeca1f21bdaeb80f34987048f9e41320750a9",
+    "textIdentical": true,
+    "images": 0,
+    "forms": [
+      {
+        "name": "searchfrm",
+        "method": "get",
+        "fields": [
+          "serboardsort",
+          "search",
+          "searchStr",
+          ""
+        ]
+      },
+      {
+        "name": "boardActfrm",
+        "action": "",
+        "method": "get",
+        "fields": [
+          "mode",
+          "sort",
+          "idx",
+          "Page",
+          "BBSCode",
+          "serboardsort",
+          "searchStr",
+          "pageSize"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/customer/customer_etc.asp",
+    "preview": "customer/customer_etc.html",
+    "title": "그룹웨어 일정 > 자원관리 > 자원캘린더에서 자원예약 관련 문의",
+    "group": "고객센터",
+    "textHash": "13481a3a992d1f8e75bc294d0d010e29eed2b021aebe22affc04090a055b5c10",
+    "textIdentical": true,
+    "images": 10,
+    "forms": [
+      {
+        "name": "searchfrm",
+        "method": "get",
+        "fields": [
+          "serboardsort",
+          "search",
+          "searchStr",
+          ""
+        ]
+      },
+      {
+        "name": "boardActfrm",
+        "action": "",
+        "method": "get",
+        "fields": [
+          "mode",
+          "sort",
+          "idx",
+          "Page",
+          "BBSCode",
+          "serboardsort",
+          "searchStr",
+          "pageSize"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/company/about.asp",
+    "preview": "company/about.html",
+    "title": "기업소개",
+    "group": "기업소개",
+    "textHash": "20808273202da990a7c022c530b14d59c875e7ba3c1de92720278560991e6079",
+    "textIdentical": true,
+    "images": 3,
+    "forms": []
+  },
+  {
+    "path": "/company/privacy.asp",
+    "preview": "company/privacy.html",
+    "title": "개인정보취급방침",
+    "group": "기업소개",
+    "textHash": "5ea4ecfc1d90b0e7f2ea3e8d7be6b28f97b0686123113705bda7af7709091640",
+    "textIdentical": true,
+    "images": 0,
+    "forms": []
+  },
+  {
+    "path": "/company/location.asp",
+    "preview": "company/location.html",
+    "title": "오시는 길",
+    "group": "기업소개",
+    "textHash": "0757f8ea1f818d7544bd469060a9c6bc17b11053cac2c962b57917118e206639",
+    "textIdentical": true,
+    "images": 4,
+    "forms": []
+  },
+  {
+    "path": "/company/headquarters.asp",
+    "preview": "company/headquarters.html",
+    "title": "본사 협력사 소개",
+    "group": "기업소개",
+    "textHash": "91e5fea23903cd509748e7862e3ad72bf8642e405b06f1be60bc0326bd9e8969",
+    "textIdentical": true,
+    "images": 7,
+    "forms": []
+  },
+  {
+    "path": "/community/conmment.asp",
+    "preview": "community/conmment.html",
+    "title": "전체글보기",
+    "group": "커뮤니티",
+    "textHash": "a17883985400985fbfd7a3d4ea13410624777b166794f52b95fb59834a3325de",
+    "textIdentical": true,
+    "images": 0,
+    "forms": [
+      {
+        "name": "searchfrm",
+        "method": "get",
+        "fields": [
+          "serboardsort",
+          "search",
+          "searchStr",
+          ""
+        ]
+      },
+      {
+        "name": "boardActfrm",
+        "action": "",
+        "method": "get",
+        "fields": [
+          "mode",
+          "sort",
+          "idx",
+          "Page",
+          "BBSCode",
+          "serboardsort",
+          "searchStr",
+          "pageSize"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/community/recruit.asp",
+    "preview": "community/recruit.html",
+    "title": "구인/구직",
+    "group": "커뮤니티",
+    "textHash": "d3421d2646e30c1620fd93ca57624266a9666299320cecab3af49fbaf44ccec3",
+    "textIdentical": true,
+    "images": 0,
+    "forms": [
+      {
+        "name": "searchfrm",
+        "method": "get",
+        "fields": [
+          "serboardsort",
+          "search",
+          "searchStr",
+          ""
+        ]
+      },
+      {
+        "name": "boardActfrm",
+        "action": "",
+        "method": "get",
+        "fields": [
+          "mode",
+          "sort",
+          "idx",
+          "Page",
+          "BBSCode",
+          "serboardsort",
+          "searchStr",
+          "pageSize"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/member/login.asp",
+    "preview": "member/login.html",
+    "title": "Member",
+    "group": "Member",
+    "textHash": "748829a688aeb23b46b9be86dd9f77696484a5ad0be877df717e05a7f92cdf4c",
+    "textIdentical": true,
+    "images": 1,
+    "forms": [
+      {
+        "name": "loginfrm",
+        "action": "login_ok.asp",
+        "method": "post",
+        "fields": [
+          "returnURL",
+          "guestCHK",
+          "userid",
+          "passwd"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/member/find.asp",
+    "preview": "member/find.html",
+    "title": "아이디/비번찾기",
+    "group": "Member",
+    "textHash": "0068beb8c99722b827f58e002d61f2a0e1ead584fa11e51d53eb0fb1c87c84e0",
+    "textIdentical": true,
+    "images": 0,
+    "forms": [
+      {
+        "name": "idForm",
+        "action": "/_proc/findID_OK.asp",
+        "method": "Post",
+        "fields": [
+          "mode",
+          "username",
+          "email"
+        ]
+      },
+      {
+        "name": "pwdForm",
+        "action": "/_proc/findPwd_OK.asp",
+        "method": "Post",
+        "fields": [
+          "userid",
+          "username",
+          "email"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/member/yak.asp",
+    "preview": "member/yak.html",
+    "title": "회원가입",
+    "group": "Member",
+    "textHash": "c680ec19b47bbb975ace20923fc7a439fff73a697dbc0cd1c7d6d2d51ec685d6",
+    "textIdentical": true,
+    "images": 0,
+    "forms": [
+      {
+        "name": "joinFrm",
+        "method": "post",
+        "fields": []
+      }
+    ]
+  },
+  {
+    "path": "/company/clause.asp",
+    "preview": "company/clause.html",
+    "title": "기업소개",
+    "group": "기업소개",
+    "textHash": "ff2c31ec70790a66024b46443feb238e0a4ba558ed3b221225e9bc8554319722",
+    "textIdentical": true,
+    "images": 1,
+    "forms": []
+  },
+  {
+    "path": "/purchase/amavideo.asp",
+    "preview": "purchase/amavideo.html",
+    "title": "소개",
+    "group": "구입문의",
+    "textHash": "c35aca8e2030612eb4e81e35ebe8b96ad7a977649c70972c7b8382517a2959ed",
+    "textIdentical": true,
+    "images": 8,
+    "forms": [
+      {
+        "name": "searchfrm",
+        "method": "get",
+        "fields": [
+          "serboardsort",
+          "search",
+          "searchStr",
+          ""
+        ]
+      },
+      {
+        "name": "boardActfrm",
+        "action": "",
+        "method": "get",
+        "fields": [
+          "mode",
+          "sort",
+          "idx",
+          "Page",
+          "BBSCode",
+          "serboardsort",
+          "search",
+          "searchStr",
+          "pageSize",
+          "seritemidx"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/customer/notice.asp",
+    "preview": "customer/notice.html",
+    "title": "중요[Bizbox Alpha] 보안 취약점 업데이트 권고 안내 (V1.2.262_7)",
+    "group": "고객센터",
+    "textHash": "7eb89d331267daf7100920e2f568cf82cd99db3dd1a1ac9d4e473f374ab819ae",
+    "textIdentical": true,
+    "images": 2,
+    "forms": [
+      {
+        "name": "searchfrm",
+        "method": "get",
+        "fields": [
+          "serboardsort",
+          "search",
+          "searchStr",
+          ""
+        ]
+      },
+      {
+        "name": "boardActfrm",
+        "action": "",
+        "method": "get",
+        "fields": [
+          "mode",
+          "sort",
+          "idx",
+          "Page",
+          "BBSCode",
+          "serboardsort",
+          "searchStr",
+          "pageSize"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/customer/faq.asp",
+    "preview": "customer/faq.html",
+    "title": "자주 묻는 질문(FAQ)",
+    "group": "고객센터",
+    "textHash": "3870201737424862af9a90e5e1a6854697105acca84d79c9986ff26853cecb5b",
+    "textIdentical": true,
+    "images": 0,
+    "forms": [
+      {
+        "name": "searchfrm",
+        "method": "get",
+        "fields": [
+          "searchStr"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/product/amaranth10/overview.asp",
+    "preview": "product/amaranth10/overview.html",
+    "title": "ERP(회계관리)",
+    "group": "제품/서비스",
+    "textHash": "60fca2f9be46278f97b7d2db38f4a59eb69d898ca7055b48343803f3d8d1a9b1",
+    "textIdentical": true,
+    "images": 12,
+    "forms": []
+  },
+  {
+    "path": "/product/amaranth10/hr.asp",
+    "preview": "product/amaranth10/hr.html",
+    "title": "ERP(인사관리)",
+    "group": "제품/서비스",
+    "textHash": "d344052cb08a7bfe57af0fa1b5726e7c9f00a1e3a2d2647d365079edd3231b87",
+    "textIdentical": true,
+    "images": 7,
+    "forms": []
+  },
+  {
+    "path": "/product/amaranth10/lm.asp",
+    "preview": "product/amaranth10/lm.html",
+    "title": "ERP(물류관리)",
+    "group": "제품/서비스",
+    "textHash": "1f853ef0187e90081d2783bb7e014d939aed777d3fe4cb08024e30d0dae41205",
+    "textIdentical": true,
+    "images": 9,
+    "forms": []
+  },
+  {
+    "path": "/product/wehago/cooperation.asp",
+    "preview": "product/wehago/cooperation.html",
+    "title": "리플릿 자세히 보기",
+    "group": "제품/서비스",
+    "textHash": "72acae54af787f629f2b731d61d8ef6fc72382f9de6c4676d5efd55a4f997f2b",
+    "textIdentical": true,
+    "images": 57,
+    "forms": []
+  },
+  {
+    "path": "/product/wehago/extraservice.asp",
+    "preview": "product/wehago/extraservice.html",
+    "title": "리플릿 자세히 보기",
+    "group": "제품/서비스",
+    "textHash": "de01680fad4346b688c78a9a771558a3b00772d60b0cfd4002e43b7e13371b9e",
+    "textIdentical": true,
+    "images": 34,
+    "forms": []
+  },
+  {
+    "path": "/product/wehago/linkedservice.asp",
+    "preview": "product/wehago/linkedservice.html",
+    "title": "리플릿 자세히 보기",
+    "group": "제품/서비스",
+    "textHash": "090921c8bc40a76332a04a14cec3e61d3f82860927a278c97153f13af807c4f3",
+    "textIdentical": true,
+    "images": 38,
+    "forms": []
+  },
+  {
+    "path": "/amaranth10/notice.asp",
+    "preview": "amaranth10/notice.html",
+    "title": "동영상강의",
+    "group": "고객센터",
+    "textHash": "3b0c0c740e101d94195ae38746ce7958b64384cca773e04b745635364d04afbc",
+    "textIdentical": true,
+    "images": 12,
+    "forms": [
+      {
+        "name": "searchfrm",
+        "method": "get",
+        "fields": [
+          "serboardsort",
+          "sercate1",
+          "search",
+          "searchStr",
+          ""
+        ]
+      },
+      {
+        "name": "boardActfrm",
+        "action": "",
+        "method": "get",
+        "fields": [
+          "mode",
+          "sort",
+          "idx",
+          "Page",
+          "BBSCode",
+          "serboardsort",
+          "search",
+          "searchStr",
+          "pageSize",
+          "seritemidx"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/amaranth10/pds.asp",
+    "preview": "amaranth10/pds.html",
+    "title": "자료실",
+    "group": "고객센터",
+    "textHash": "800ac2d0e1a2fe3b8f46fd1e02d5d35b828ca22bf6f66c470317552e71b6fa69",
+    "textIdentical": true,
+    "images": 10,
+    "forms": [
+      {
+        "name": "searchfrm",
+        "method": "get",
+        "fields": [
+          "serboardsort",
+          "search",
+          "searchStr",
+          ""
+        ]
+      },
+      {
+        "name": "boardActfrm",
+        "action": "",
+        "method": "get",
+        "fields": [
+          "mode",
+          "sort",
+          "idx",
+          "Page",
+          "BBSCode",
+          "serboardsort",
+          "searchStr",
+          "pageSize"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/icube/notice.asp",
+    "preview": "icube/notice.html",
+    "title": "동영상강의",
+    "group": "고객센터",
+    "textHash": "36b5a91e3f5da85c111f9acb5d8ba1d87fe892cfeffa32bc596bfa5710dc97de",
+    "textIdentical": true,
+    "images": 12,
+    "forms": [
+      {
+        "name": "searchfrm",
+        "method": "get",
+        "fields": [
+          "serboardsort",
+          "sercate1",
+          "search",
+          "searchStr",
+          ""
+        ]
+      },
+      {
+        "name": "boardActfrm",
+        "action": "",
+        "method": "get",
+        "fields": [
+          "mode",
+          "sort",
+          "idx",
+          "Page",
+          "BBSCode",
+          "serboardsort",
+          "search",
+          "searchStr",
+          "pageSize",
+          "seritemidx"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/icube/pds.asp",
+    "preview": "icube/pds.html",
+    "title": "자료실",
+    "group": "고객센터",
+    "textHash": "469c78b43d87980d6b6ba4e441ccda46cdb97f5651934e86526b65361e8f5bc7",
+    "textIdentical": true,
+    "images": 2,
+    "forms": [
+      {
+        "name": "searchfrm",
+        "method": "get",
+        "fields": [
+          "serboardsort",
+          "search",
+          "searchStr",
+          ""
+        ]
+      },
+      {
+        "name": "boardActfrm",
+        "action": "",
+        "method": "get",
+        "fields": [
+          "mode",
+          "sort",
+          "idx",
+          "Page",
+          "BBSCode",
+          "serboardsort",
+          "searchStr",
+          "pageSize"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/bizbox/update.asp",
+    "preview": "bizbox/update.html",
+    "title": "업데이트 내역",
+    "group": "고객센터",
+    "textHash": "85823207486d0476b538a53e091b449594f9cbb6d7adbedfbbba60b8338e12dc",
+    "textIdentical": true,
+    "images": 10,
+    "forms": [
+      {
+        "name": "searchfrm",
+        "method": "get",
+        "fields": [
+          "serboardsort",
+          "search",
+          "searchStr",
+          ""
+        ]
+      },
+      {
+        "name": "boardActfrm",
+        "action": "",
+        "method": "get",
+        "fields": [
+          "mode",
+          "sort",
+          "idx",
+          "Page",
+          "BBSCode",
+          "serboardsort",
+          "searchStr",
+          "pageSize"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/bizbox/notice.asp",
+    "preview": "bizbox/notice.html",
+    "title": "동영상강의",
+    "group": "고객센터",
+    "textHash": "237ca83c2a342ee6abbdbe8fc7441ffbddc412365ad6672a4b2c789bc66b2eff",
+    "textIdentical": true,
+    "images": 12,
+    "forms": [
+      {
+        "name": "searchfrm",
+        "method": "get",
+        "fields": [
+          "serboardsort",
+          "sercate1",
+          "search",
+          "searchStr",
+          ""
+        ]
+      },
+      {
+        "name": "boardActfrm",
+        "action": "",
+        "method": "get",
+        "fields": [
+          "mode",
+          "sort",
+          "idx",
+          "Page",
+          "BBSCode",
+          "serboardsort",
+          "search",
+          "searchStr",
+          "pageSize",
+          "seritemidx"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/bizbox/pds.asp",
+    "preview": "bizbox/pds.html",
+    "title": "자료실",
+    "group": "고객센터",
+    "textHash": "1c0f45f853add953d4b189411c947be3a5cb4df0e0c5aeb5863a9d5805748532",
+    "textIdentical": true,
+    "images": 0,
+    "forms": [
+      {
+        "name": "searchfrm",
+        "method": "get",
+        "fields": [
+          "serboardsort",
+          "search",
+          "searchStr",
+          ""
+        ]
+      },
+      {
+        "name": "boardActfrm",
+        "action": "",
+        "method": "get",
+        "fields": [
+          "mode",
+          "sort",
+          "idx",
+          "Page",
+          "BBSCode",
+          "serboardsort",
+          "searchStr",
+          "pageSize"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/pms/pds.asp",
+    "preview": "pms/pds.html",
+    "title": "자료실",
+    "group": "고객센터",
+    "textHash": "1f71d7a801e9b66bdd199a349a1318b87cc5f5146fe87a7e148207862f9de4c7",
+    "textIdentical": true,
+    "images": 0,
+    "forms": [
+      {
+        "name": "searchfrm",
+        "method": "get",
+        "fields": [
+          "serboardsort",
+          "search",
+          "searchStr",
+          ""
+        ]
+      },
+      {
+        "name": "boardActfrm",
+        "action": "",
+        "method": "get",
+        "fields": [
+          "mode",
+          "sort",
+          "idx",
+          "Page",
+          "BBSCode",
+          "serboardsort",
+          "searchStr",
+          "pageSize"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/omniesol/pds.asp",
+    "preview": "omniesol/pds.html",
+    "title": "자료실",
+    "group": "고객센터",
+    "textHash": "259eb4d345cea4674085a70e5992942995e6eca3b3e27ea0150a8b580134c698",
+    "textIdentical": true,
+    "images": 1,
+    "forms": [
+      {
+        "name": "searchfrm",
+        "method": "get",
+        "fields": [
+          "serboardsort",
+          "search",
+          "searchStr",
+          ""
+        ]
+      },
+      {
+        "name": "boardActfrm",
+        "action": "",
+        "method": "get",
+        "fields": [
+          "mode",
+          "sort",
+          "idx",
+          "Page",
+          "BBSCode",
+          "serboardsort",
+          "searchStr",
+          "pageSize"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/community/hit.asp",
+    "preview": "community/hit.html",
+    "title": "인기글보기",
+    "group": "커뮤니티",
+    "textHash": "7429f240d93bf9a78bee7f03a8ae2f58f026f60fd37caba36667251165734541",
+    "textIdentical": true,
+    "images": 0,
+    "forms": [
+      {
+        "name": "boardActfrm",
+        "action": "",
+        "method": "get",
+        "fields": [
+          "mode",
+          "sort",
+          "idx",
+          "Page",
+          "BBSCode",
+          "serboardsort",
+          "searchStr",
+          "pageSize"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,865 @@
+
+<!DOCTYPE html>
+<html lang="ko" class="sub">
+<head>
+	
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+	<!-- <meta name="viewport" content="width=640,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes"> -->
+	<meta name="HandheldFriendly" content="true"><!-- // * true : 모바일용(화면 크기 조정 기능) * false : Desktop에 최적화된 html 사용 -->
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no, date=no" />
+	<meta name="naver-site-verification" content="567190b01310e71efefd0217e776de0cdf4abb6c" />
+	<meta name="google-site-verification" content="p6KsuwsxtTkDrsUf3hlUmxhnFnQefLdRsfsFkFiV48M" />
+
+	<!-- 2026-08-11 SEO 개선 (모바일 UI 컬러·iOS 홈 추가 최적화·리퍼러 정책) -->
+	<meta name="theme-color" content="#0369ec">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta name="apple-mobile-web-app-title" content="아이원소프트뱅크">
+	<meta name="referrer" content="strict-origin-when-cross-origin">
+
+	<!-- 2026-06-30 preconnect 최소화 — LCP 직결 호스트만, 나머지는 dns-prefetch로 강등 (PSI 권고) -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://www.youtube-nocookie.com">
+	<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+	<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+	<link rel="dns-prefetch" href="https://i.ytimg.com">
+	<link rel="dns-prefetch" href="https://www.youtube.com">
+	<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+	<link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="canonical" href="https://www.duzon119.co.kr/customer/faq.asp">
+
+	<!-- 2026-08-27 hreflang block removed: site is Korean-only.
+	     /en/ and /ja/ do not exist (dead alternates), and ko/x-default pointed
+	     every page at "/" instead of itself. Restore only when a real
+	     multilingual version ships, with per-page URLs. -->
+
+	<meta name="keywords" content="FAQ,자주묻는질문,Amaranth10,WEHAGO,더존ERP,고객지원,부가세신고,견적문의">
+	<meta name="description" content="Amaranth10·WEHAGO 등 아이원소프트뱅크 제품 관련 자주 묻는 질문을 검색·카테고리로 빠르게 확인하세요.">
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="자주 묻는 질문(FAQ) — 아이원소프트뱅크 고객지원">
+	<meta property="og:site_name" content="아이원소프트뱅크(주)" />
+	<meta property="og:locale" content="ko_KR">
+	<meta property="og:url" content="https://www.duzon119.co.kr/customer/faq.asp">
+	<meta property="og:image" content="https://www.duzon119.co.kr/images/og_images.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:description" content="Amaranth10·WEHAGO 등 아이원소프트뱅크 제품 관련 자주 묻는 질문을 검색·카테고리로 빠르게 확인하세요.">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="자주 묻는 질문(FAQ) — 아이원소프트뱅크 고객지원">
+	<meta name="twitter:url" content="https://www.duzon119.co.kr/customer/faq.asp">
+	<meta name="twitter:image" content="https://www.duzon119.co.kr/images/og_images.jpg">
+	<meta name="twitter:description" content="Amaranth10·WEHAGO 등 아이원소프트뱅크 제품 관련 자주 묻는 질문을 검색·카테고리로 빠르게 확인하세요.">
+
+	<title>자주 묻는 질문(FAQ) — 아이원소프트뱅크 고객지원</title>
+
+	<!-- Organization schema — 구글 지식그래프 진입용. sameAs로 공식 SNS 연결해 외부 신호 통합 -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Organization",
+		"name": "아이원소프트뱅크㈜",
+		"alternateName": ["아이원소프트뱅크", "IONE Softbank", "더존119"],
+		"url": "https://duzon119.co.kr/",
+		"logo": "https://duzon119.co.kr/images/logo_2026_on.png",
+		"image": "https://duzon119.co.kr/images/og_images.jpg",
+		"description": "더존 ERP 공식 파트너 25년. Amaranth10·WEHAGO·iCUBE G20·OmniEsol 도입 컨설팅 및 사후관리.",
+		"foundingDate": "2001",
+		"taxID": "113-86-70956",
+		"telephone": "+82-1877-0256",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "디지털로 285 에이스트윈타워 1차 405호",
+			"addressLocality": "구로구",
+			"addressRegion": "서울특별시",
+			"addressCountry": "KR"
+		},
+		"contactPoint": [
+			{ "@type": "ContactPoint", "telephone": "+82-1877-0256", "contactType": "sales",            "areaServed": "KR", "availableLanguage": "Korean" },
+			{ "@type": "ContactPoint", "telephone": "+82-1877-1859", "contactType": "customer support", "areaServed": "KR", "availableLanguage": "Korean" },
+			{ "@type": "ContactPoint", "telephone": "+82-1877-0840", "contactType": "technical support","areaServed": "KR", "availableLanguage": "Korean" }
+		],
+		"sameAs": [
+			"https://cafe.naver.com/ionesoftbank",
+			"https://blog.naver.com/zhogksgjqm",
+			"https://www.instagram.com/ione130501",
+			"http://pf.kakao.com/_xnFVzK",
+			"https://youtube.com/@IONEsoftBK_official"
+		]
+	}
+	</script>
+	<!-- /Organization schema -->
+
+	<!-- WebSite schema + SearchAction — 구글 사이트링크 검색박스 노출 -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "WebSite",
+		"name": "아이원소프트뱅크㈜",
+		"alternateName": "더존119",
+		"url": "https://duzon119.co.kr/",
+		"inLanguage": "ko-KR",
+		"publisher": { "@type": "Organization", "name": "아이원소프트뱅크㈜" },
+		"potentialAction": {
+			"@type": "SearchAction",
+			"target": { "@type": "EntryPoint", "urlTemplate": "https://duzon119.co.kr/search.asp?keyword={search_term_string}" },
+			"query-input": "required name=search_term_string"
+		}
+	}
+	</script>
+	<!-- /WebSite schema -->
+
+	<!-- <link rel="stylesheet" type="text/css" href="/build/font-awesome/css/font-awesome.min.css" /> -->
+	<!-- 2026-07 FontAwesome: 죽은 kit(403 Forbidden) 제거 → 무료 CDN CSS로 교체(게시판·커뮤니티 등 아이콘 복구). 메인(홈)은 FA 미사용이라 로드 제외(속도) -->
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+	
+	<link rel="stylesheet" type="text/css" href="/common/font/SUIT-Variable.css" />
+    <!-- 2026-06-30 Montserrat weight 축소 — italic 미사용, 100/200 미사용 → 실제 쓰이는 300~900만 -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="/common/css/jquery.ui.lastest.css" />
+
+	<script type="text/javascript" src="/common/js/jquery.lastest.js" charset="utf-8"></script>
+	<script type="text/javascript" src="/common/js/jquery.ui.lastest.js" charset="utf-8"></script>
+	<script type="text/javascript" src="/common/js/jquery.throttledresize.js" charset="utf-8" defer></script>
+	<script type="text/javascript" src="/common/js/jquery.rwdImageMaps.min.js" charset="utf-8" defer></script>
+
+	<script type="text/javascript">
+		var langCode = "kor";
+		var langmode = "0";
+
+		$(function(){
+			$("#header .language>a").eq(langmode).addClass("active")
+		});
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="/common/css/layout.css?var=2026.9.14" />
+	<link rel="stylesheet" type="text/css" href="/common/css/contents.css?var=2026.9.14" />
+	<link rel="stylesheet" type="text/css" href="/common/css/front.css?var=2026.9.14" />
+
+	<script type="text/javascript" src="/common/js/publisher.js?var=2026.9.14" charset="utf-8"></script>
+	<script type="text/javascript" src="/common/js/link.js?var=2026.9.14" charset="utf-8" defer></script>
+	<script type="text/javascript" src="/common/js/menu.js?var=2026.9.14" charset="utf-8"></script>
+	<script type="text/javascript" src="/common/js/prefixfree.min.js" defer></script>
+
+	<!-- 2026-06-30 menu.js 중복 로드 블록 제거 (위 menu.js로 통합, 다국어 분기는 추후 필요 시 단일 분기로 재구성) -->
+
+	<link rel="stylesheet" type="text/css" href="/common/css/slick.css" />
+	<script type="text/javascript" src="/common/js/slick.js" charset="utf-8"></script>
+
+	
+	<link rel="stylesheet" href="/common/css/jquery.fancybox.css">
+	<script type="text/javascript" src="/common/js/jquery.fancybox.js" charset="utf-8" defer></script>
+	
+
+	<link rel="stylesheet" href="/common/css/aos.css">
+	<script type="text/javascript" src="/common/js/aos.js" charset="utf-8"></script>
+
+	<link rel="stylesheet" href="/build/ripple-click/ripple.min.css">
+	<script type="text/javascript" src="/build/ripple-click/ripple.min.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="/common/css/fullpage.css">
+	<script type="text/javascript" src="/common/js/fullpage.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://fastly.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  	<!-- 개발 Library -->
+	<script type="text/javascript">var langCode = "kor";</script>
+	
+	<script type="text/javascript" src="/_lib/js/plug-in/jquery.simplemodal/jquery.simplemodal.js"></script>
+	<link href="/_lib/css/editorContent.css" rel="stylesheet" type="text/css" />
+	
+	<script language="javascript" type="text/javascript" src="/_lib/functions.js"></script>
+	<script language="javascript" type="text/javascript" src="/_lib/boardcontrol.js"></script>
+	<script type="text/javascript" src="/_lib/js/plug-in/jquery.cookie/jquery.cookie.js"></script>
+	<link rel="stylesheet" href="/_lib/ckeditor5/content-styles.css" type="text/css">
+	<!-- 개발 Library -->
+
+	<!-- 2024-07-08 Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SLFWLP9QKE"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-SLFWLP9QKE');
+	</script>
+
+	<!-- Google Tag Manager 2026-02-12(목) -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-WKPK45TW');</script>
+	<!-- End Google Tag Manager 2026-02-12(목) -->
+
+	<!-- Talk Talk Banner Script start 2024-12-31 -->
+	<!-- <script type="text/javascript" src="https://partner.talk.naver.com/banners/script"></script>
+	<div class="talk_banner_div" data-id="155614"></div>
+	<style>
+	.talk_banner_div{position: fixed; right:13px; bottom:47px; z-index:7;}
+	.talk_banner_div .talk_banner_link{width:6.4rem; height:6.4rem; background:url("/images/main/q__cont04.png") no-repeat center; background-size:contain;}
+	.talk_banner_div .talk_banner_link .talk_banner_preview{display:none !important;}
+	@media only screen and (max-width: 840px){
+	.talk_banner_div{bottom:69px}
+	.talk_banner_div .talk_banner_link{width:50px; height:50px;}
+	}
+	</style> -->
+	<!-- Talk Talk Banner Script end 2024-12-31 -->
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"원격 지원을 받고 싶습니다.","acceptedAnswer":{"@type":"Answer","text":"고객센터 상담원과 통화 후 안내드리는 원격 지원 프로그램(TeamViewer 또는 AnyDesk)을 실행하시고, 화면에 표시되는 ID/PW를 알려주시면 됩니다.&nbsp;- 원격 지원 운영 시간: 평일 09:00 ~ 18:00&nbsp;- 대표번호: 1877-0840 긴급 장애의 경우 홈페이지 [1:1 문의]로 접수해 주시면 우선 대응해 드립니다."}},{"@type":"Question","name":"WEHAGO에서 세금계산서를 발행하려면 어떻게 하나요?","acceptedAnswer":{"@type":"Answer","text":"1. WEHAGO 로그인 후 [세무회계] &gt; [전자세금계산서] 메뉴 진입&nbsp;2. [발행] 버튼 클릭 후 공급받는자 정보 입력(사업자등록번호로 자동 조회 가능)&nbsp;3. 품목/공급가액/세액 입력&nbsp;4. [발행하기] 클릭 → 공동인증서로 서명&nbsp;5. 국세청 전송 완료 후 상대방 이메일로 자동 발송됩니다.&nbsp;※ 발행 즉시 국세청에 전송되므로 신중히 확인 후 발행해 주세요."}},{"@type":"Question","name":"WEHAGO 로그인 시 인증서 오류가 발생합니다.","acceptedAnswer":{"@type":"Answer","text":"1. 브라우저 캐시 및 쿠키를 삭제합니다.&nbsp;2. WEHAGO 전용 보안 프로그램(Veraport)이 최신 버전인지 확인합니다.&nbsp;3. 공동인증서(구 공인인증서)의 유효기간을 확인합니다.&nbsp;4. Chrome 시크릿 모드 또는 Edge에서 접속을 시도합니다.&nbsp;※ Internet Explorer는 더 이상 지원되지 않습니다."}},{"@type":"Question","name":"인사정보등록의 계약정보/휴직정보/퇴직연금을 일괄 업로드 할 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"[재직정보엑셀업로드] 메뉴를 통해 일괄 업로드가 가능합니다.&nbsp;1. 메뉴 경로: [인사관리] &gt; [인사관리] &gt; [인사정보] &gt; [재직정보엑셀업로드]&nbsp;2. [권한Role설정] 메뉴에서 해당 메뉴의 권한을 부여받아야 사용할 수 있습니다.&nbsp;3. 계약정보 · 휴직정보 · 퇴직연금 정보를 각각 엑셀 양식으로 다운로드 후 작성하여 업로드합니다.&nbsp;※ 업로드 전 필수 항목 및 코드값을 반드시 확인해 주세요."}},{"@type":"Question","name":"상여 지급내역이 급여 지급내역으로 집계되는 경우, 어떻게 처리하나요?","acceptedAnswer":{"@type":"Answer","text":"상여 항목의 코드 구분이 잘못되면 급여지급내역으로 집계됩니다.&nbsp;1. [기초코드설정] 등록 시 영문자와 숫자를 조합하여 3자리로 입력합니다.&nbsp;- P : 급여&nbsp;- PX : 근로소득 제외&nbsp;- V : 상여&nbsp;- ZY : 사업자부담금&nbsp;2. 상여 항목은 반드시 V코드로 등록해야 상여지급내역으로 집계됩니다.&nbsp;3. P코드로 지급된 상여는 급여지급내역으로 집계되므로 코드를 V로 정정한 후 재계산하시기 바랍니다.&nbsp;※ 퇴직연금 산정 시 상여 반영 방식에 따라 계산이 달라질 수 있으니 [퇴직연금 산정 기준] 설정도 함께 점검해 주세요."}},{"@type":"Question","name":"부가세 예정신고 누락분은 어떻게 반영하나요?","acceptedAnswer":{"@type":"Answer","text":"전표입력과 부가세신고서에서 순차적으로 반영합니다.&nbsp;1. [전표입력]에서 예정신고 누락 전표를 작성합니다.&nbsp;2. 작성 시 '예정신고누락일'에 신고기준일(확정신고 기간)의 일자를 입력합니다.&nbsp;3. [부가세신고서]에서 '새로 불러오기'를 실행하면 누락분이 자동 반영됩니다.&nbsp;4. 필요 시 [가산세] 항목에 금액과 세액을 직접 입력합니다.&nbsp;※ 가산세 판단이 필요한 경우 국세청 또는 관할 세무서에 확인하시기를 권장드립니다."}},{"@type":"Question","name":"Amaranth10 부가세신고 시 오류메시지 및 해결방안이 궁금합니다.","acceptedAnswer":{"@type":"Answer","text":"부가세신고서 검증 시 발생하는 대표 오류와 처리 방법입니다.&nbsp;1. 오류-1: 사업장관리 필수 항목 누락 → [기초정보관리] &gt; [사업장관리]에서 누락 항목을 채워 주세요.&nbsp;2. 오류-2, 3: 공제받지못할매입세액명세서 불일치 → 매입 전표의 세무구분과 명세서 금액을 재대사합니다.&nbsp;3. 오류-4, 5: 신용카드/기타 매출세액 오차 → [부가세신고서] 상 신용카드매출전표수취명세서와 매출 전표의 합계를 확인합니다.&nbsp;4. 오류-6: 의제매입세액 업종코드 미등록 → 거래처 원장에서 의제매입 대상 업종코드를 등록합니다.&nbsp;5. 오류-7, 8: 신용카드수취명세서 금액 불일치 → 카드/현금영수증 수취내역과 전표를 재정렬합니다.&nbsp;6. 오류-9, 10: 현금매출/사업장현황명세서 제출 필수 → 해당 부속서식을 작성합니다.&nbsp;7. 오류-11: 영세율 첨부서류 미작성 → 수출/영세율 관련 첨부서류를 등록합니다.&nbsp;※ 세법 판단이 필요한 경우 관할 세무서 또는 국세청 상담을 함께 참고해 주세요."}},{"@type":"Question","name":"세금계산서를 재발급받고 싶습니다.","acceptedAnswer":{"@type":"Answer","text":"결제 완료 시 등록된 담당자 이메일로 자동 발송되지만,&nbsp;재발급이 필요하시면 아래 방법으로 요청 주세요.&nbsp;- 고객센터 전화: 1877-0840&nbsp;- 이메일: bill@ionesoftbank.com&nbsp;요청 시 사업자등록번호, 결제일, 결제 금액을 함께 알려주시면 빠르게 처리해 드립니다."}},{"@type":"Question","name":"WEHAGO 유료 서비스 구독은 어떻게 변경하나요?","acceptedAnswer":{"@type":"Answer","text":"1. WEHAGO 로그인 후 우측 상단 프로필 → [내 정보] 클릭&nbsp;2. [구독 관리] 탭에서 현재 이용 중인 서비스 확인&nbsp;3. [플랜 변경] 또는 [해지 신청] 버튼으로 진행&nbsp;※ 월 단위 결제는 다음 결제일부터 변경 사항이 적용됩니다.&nbsp;※ 연 단위 결제 해지 시 잔여 기간에 대한 환불 정책은 담당자에게 문의해 주세요."}},{"@type":"Question","name":"WEHAGO 화면이 흰 화면으로만 표시됩니다.","acceptedAnswer":{"@type":"Answer","text":"브라우저 호환성 또는 캐시 문제일 가능성이 높습니다.&nbsp;1. Chrome, Edge 최신 버전으로 접속합니다.&nbsp;2. Ctrl+Shift+Del로 최근 1일 캐시/쿠키를 삭제합니다.&nbsp;3. 사용 중인 광고 차단/보안 확장 프로그램을 일시 중지합니다.&nbsp;4. 시크릿 모드에서 재접속하여 확장 프로그램 영향인지 확인합니다.&nbsp;지속되면 스크린샷과 함께 고객센터로 문의해 주세요."}},{"@type":"Question","name":"WEHAGO 모바일 앱은 어디서 다운로드하나요?","acceptedAnswer":{"@type":"Answer","text":"구글 플레이스토어 또는 애플 앱스토어에서 'WEHAGO'로 검색 후 설치하시면 됩니다.&nbsp;- Android: Play 스토어 → 'WEHAGO' - iOS: App Store → 'WEHAGO' 설치 후 PC에서 사용 중인 계정으로 로그인하시면 자동으로 데이터가 동기화됩니다."}},{"@type":"Question","name":"Amaranth10과 WEHAGO의 데이터를 연동할 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"네, 가능합니다.&nbsp;Amaranth10의 재무/회계 데이터를 WEHAGO 클라우드로 자동 백업 및 조회할 수 있습니다.&nbsp;1. Amaranth10 [환경설정] &gt; [WEHAGO 연동] 메뉴 접속&nbsp;2. WEHAGO 계정 정보(사업자번호/아이디) 입력&nbsp;3. 연동할 데이터 범위(회계/급여/재무제표 등) 선택&nbsp;4. [연동 시작] 클릭 연동 후에는 외부에서도 WEHAGO 모바일 앱으로 실시간 조회가 가능합니다."}},{"@type":"Question","name":"간이지급명세서 불러오기 시 1월 급여가 포함되지 않습니다.","acceptedAnswer":{"@type":"Answer","text":"간이지급명세서는 지급 기준으로 집계되기 때문에 발생하는 정상 동작입니다.&nbsp;1. 상반기 신고 집계 범위 : 지급월 1월 ~ 6월분 - 전년도 12월 귀속 · 당해연도 1월 지급분은 상반기 신고에 포함되지 않습니다.&nbsp;2. 하반기 신고 시 처리 방법 - 당해 귀속분을 다음 해 1월에 지급한 경우, 12월 지급분에 포함하여 하반기 신고로 반영합니다.&nbsp;※ 귀속 기준과 지급 기준을 혼동하지 않도록 주의해 주세요."}},{"@type":"Question","name":"지방소득세 특별징수 신고 시 납기일자 변환오류가 발생합니다.","acceptedAnswer":{"@type":"Answer","text":"전자신고 파일 변환 시 납기일자 오류가 발생하는 경우 처리 방법입니다.&nbsp;1. 오류 메시지의 '문서번호'를 클릭하여 '당초 납기일자'를 확인합니다.2. 정기신고 시 지급월 다음 달 10일이 자동으로 표시되지만, 대체공휴일이 포함된 경우 다음 영업일로 수정해야 합니다.&nbsp;3. 이미 잘못 입력되어 저장된 경우, 해당 신고서를 다시 추가 생성하여 재작성해야 합니다."}},{"@type":"Question","name":"건물 등 감가상각자산취득명세서는 어떻게 사용하나요?","acceptedAnswer":{"@type":"Answer","text":"고정자산 매입 관련 증빙 내역을 부가세 첨부서식으로 작성하는 메뉴입니다.&nbsp;1. 대상 증빙: 세금계산서, 신용카드매출전표, 현금영수증 등 고정자산 매입 관련 내역&nbsp;2. 조회 후 다음 항목을 필수로 입력합니다. - 증빙구분 - 자산구분 - 공급받은일자 - 공급가액 - 세액 - 건수&nbsp;3. 상세 데이터의 합계는 자동 계산되며 수동 수정이 불가합니다."}},{"@type":"Question","name":"지출결의 용도설정에서 불공처리하였으나 부가세가 표시되는 이유는?","acceptedAnswer":{"@type":"Answer","text":"정상적인 동작이며 처리 흐름은 다음과 같습니다.&nbsp;1. 공제구분을 '세금계산서불공제'로 설정한 경우&nbsp;- 지출결의서 상신 시에는 화면상 부가세가 반영되어 표시됩니다.&nbsp;- 이후 전표 처리 시에는 세무구분이 자동으로 \"24. 매입불공제\"로 생성되어 부가세 금액은 0원으로 처리됩니다.&nbsp;2. 작성 화면과 최종 전표의 세액 표시 방식이 다르므로 혼선이 있을 수 있으나 정상 작동입니다."}},{"@type":"Question","name":"통장수집데이터가 중복으로 인식되는 조건은 무엇인가요?","acceptedAnswer":{"@type":"Answer","text":"메뉴별로 중복 판단 기준이 다릅니다.&nbsp;1. 통장 메뉴 기준&nbsp;- 거래일자, 차대변 구분, 계정과목, 거래처, 입/출금 금액을 기준으로 중복 체크&nbsp;- 계정과목은 본계정만 체크하며 상대계정은 체크하지 않습니다.2. 전표 메뉴 기준&nbsp;- 승인일자를 기준으로 중복 체크&nbsp;※ [전표입력(미결)] → [통장수집] → [전표발행] 순서로 처리하는 경우 중복 체크가 작동하지 않을 수 있으니 처리 순서를 확인해 주세요."}}]}</script>
+	
+	<!-- BreadcrumbList (구글 지원 유지 스키마) -->
+	<script type="application/ld+json">
+	{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+		{"@type":"ListItem","position":1,"name":"홈","item":"https://duzon119.co.kr/"},
+		{"@type":"ListItem","position":2,"name":"고객센터","item":"https://duzon119.co.kr/customer/"},
+		{"@type":"ListItem","position":3,"name":"자주 묻는 질문(FAQ)","item":"https://duzon119.co.kr/customer/faq.asp"}
+	]}
+	</script>
+	<style>
+		/* ========================================
+		   FAQ 전용 스타일
+		   - 공지사항(customer/notice.asp)과 동일한 .board_search / .board_list 골격을 재사용
+		   - FAQ 고유(TOP5, 아코디언 확장 행)만 최소한으로 추가
+		   ======================================== */
+
+		/* [공지사항 검색바와 동일한 chip 스타일 재활용] */
+		.bbsimp{display:inline-block; padding:0.3rem 0.9rem; border:1px solid #ff6600; margin-right:0.6rem; border-radius:99px; font-weight:600; font-size:0.78em; line-height:1.2; color:#ff6600; vertical-align:middle}
+
+		/* [1] 추천 검색어 태그 (검색바 하단) */
+		.faq-tags{margin:14px 0 24px;text-align:right}
+		.faq-tags .tip{color:#999;font-size:12px;margin-right:6px}
+		.faq-tags .tag{display:inline-block;margin:3px;padding:5px 12px;border:1px solid #e0e0e0;border-radius:20px;background:#fafafa;color:#666;font-size:12px;cursor:pointer;transition:all .15s}
+		.faq-tags .tag:hover{border-color:#0799f0;color:#0799f0;background:#eaf5fe}
+
+		/* [2] TOP 5 (공지사항 페이지엔 없지만 FAQ 특성상 유지, 톤은 사이트에 맞춤) */
+		.faq-top{margin:0 0 30px;background:#fafbfc;border:1px solid #e5e7eb;border-radius:4px;padding:20px 24px}
+		.faq-top-head{display:flex;align-items:center;gap:8px;margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid #e5e7eb}
+		.faq-top-head .badge{background:#ff6600;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:2px;letter-spacing:.5px}
+		.faq-top-head h3{margin:0;font-size:15px;color:#333;font-weight:600}
+		.faq-top-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:4px 24px}
+		.faq-top-list li{display:flex;align-items:center;gap:10px;padding:6px 0;cursor:pointer;font-size:13px;color:#555}
+		.faq-top-list li:hover{color:#ff6600}
+		.faq-top-list .rank{flex-shrink:0;width:18px;height:18px;color:#ff6600;font-weight:700;font-size:13px;text-align:center}
+		.faq-top-list .txt{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+		/* [3] 목록 상단 툴바 (건수 표시) */
+		.faq-toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;padding:0 4px;font-size:13px;color:#666}
+		.faq-toolbar strong{color:#0799f0}
+
+		/* [4] 리스트 테이블 내부 확장 행 (아코디언 답변) */
+		.board_list table tbody tr.faq-row{cursor:pointer}
+		.board_list table tbody tr.faq-row:hover td{background:#f7fbff}
+		.board_list table tbody tr.faq-row td.td_subject a{cursor:pointer}
+		.board_list table tbody tr.faq-row td .q-arrow{float:right;color:#999;font-size:12px;transition:transform .25s;margin-left:8px}
+		.board_list table tbody tr.faq-row.open td .q-arrow{transform:rotate(180deg);color:#0799f0}
+		.board_list table tbody tr.faq-answer{display:none}
+		.board_list table tbody tr.faq-answer.show{display:table-row}
+		.board_list table tbody tr.faq-answer td{background:#fafbfc !important;padding:22px 28px 26px !important;border-top:1px dashed #ddd;text-align:left;color:#444;font-size:14px;line-height:1.75}
+		.board_list table tbody tr.faq-answer .a-inner{position:relative;padding-left:44px}
+		.board_list table tbody tr.faq-answer .a-inner::before{content:"A";position:absolute;left:0;top:0;width:30px;height:30px;background:#666;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px}
+		.board_list table tbody tr.faq-answer .a-inner p{margin:0 0 8px}
+		.board_list table tbody tr.faq-answer .a-inner ol{margin:8px 0;padding-left:22px}
+		.board_list table tbody tr.faq-answer .a-inner ol li{margin-bottom:4px}
+		.board_list table tbody tr.faq-answer .a-inner img{max-width:100%;height:auto;margin:10px 0}
+
+		/* [5] 페이지네이션 - 사이트 표준 .paging_all 스타일 흉내 */
+		.faq-paging{display:flex;justify-content:center;gap:4px;margin:30px 0 0}
+		.faq-paging a, .faq-paging strong{display:inline-flex;align-items:center;justify-content:center;min-width:32px;height:32px;padding:0 8px;border:1px solid #e0e0e0;background:#fff;color:#666;font-size:13px;cursor:pointer;text-decoration:none;font-weight:400}
+		.faq-paging strong.pg_current{background:#0799f0;color:#fff;border-color:#0799f0;font-weight:700}
+		.faq-paging a.disabled{opacity:.4;cursor:not-allowed;pointer-events:none}
+
+		/* [6] 검색 결과 없음 */
+		.faq-empty td{padding:80px 20px !important;text-align:center !important;color:#999;font-size:14px}
+
+		/* [7] 하단 CTA (사이트 톤에 맞춰 심플하게) */
+		.faq-cta{margin-top:40px;padding:24px 28px;background:#f5f7fa;border:1px solid #e5e7eb;border-radius:4px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+		.faq-cta .cta-txt strong{display:block;font-size:16px;color:#333;margin-bottom:4px;font-weight:600}
+		.faq-cta .cta-txt span{font-size:13px;color:#777}
+		.faq-cta .cta-btns{display:flex;gap:8px;flex-wrap:wrap}
+		.faq-cta .cta-btns a{display:inline-flex;align-items:center;padding:10px 20px;background:#0799f0;color:#fff;text-decoration:none;border-radius:2px;font-weight:600;font-size:13px}
+		.faq-cta .cta-btns a.line{background:#fff;color:#0799f0;border:1px solid #0799f0}
+
+		/* [8] 반응형 */
+		@media (max-width:768px){
+			.faq-top-list{grid-template-columns:1fr;gap:0}
+			.board_list table tbody tr.faq-answer td{padding:16px !important}
+			.board_list table tbody tr.faq-answer .a-inner{padding-left:0;padding-top:36px}
+			.board_list table tbody tr.faq-answer .a-inner::before{width:26px;height:26px;font-size:12px}
+			.faq-cta{flex-direction:column;text-align:center;padding:20px 16px}
+		}
+	</style>
+</head>
+
+<body data-pgCode="0409">
+
+<a href="#contents" class="skip">&raquo; 본문 바로가기</a>
+
+<div id="wrap">
+	<!-- Google Tag Manager (noscript) 2026-02-12(목) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WKPK45TW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) 2026-02-12(목) -->
+
+<div id="header" class="hh">
+	<div class="gnbBg"></div>
+	<div class="inConts">
+
+		<h1 class="logo-h">
+			<a href="/">
+				<img src="/images/logo_tagline_2026.png" class="logo-tagline" alt="Authentic innovation, AX and More" fetchpriority="high" decoding="async">
+				<img src="/images/logo.png" class="logo" alt="아이원소프트뱅크 - 더존 ERP 공식 파트너" decoding="async">
+				<img src="/images/logo_on.png" class="logo_on" alt="아이원소프트뱅크 - 더존 ERP 공식 파트너" fetchpriority="high" decoding="async">
+			</a>
+		</h1>
+
+		<div id="pcMenu">
+			<ul id="list">
+				<script type="text/javascript">globalNavigationBar();</script>
+			</ul>
+		</div>
+
+		<div class="right-utill">
+			<div class="language-area">
+				<div class="language">
+					<a href="/purchase/inquiry.asp">구매상담</a>
+				</div>
+			</div>
+			<div class="language-area">
+				<div class="language">
+					
+					<a href="/member/login.asp">로그인</a>
+					
+				</div>
+			</div>
+			<button type="button" class="mMenu"><span></span></button>
+
+		</div>
+	</div>
+</div>
+
+	<style>
+		.quickWrap{display:none;}
+		.quick-right{position: fixed; right:13px; bottom:130px; z-index:9; display:block;}
+		.quick-right .quick-right-re{border-radius:3.2rem; display: flex; justify-content: flex-end; position: relative;}
+		.quick-right .quick-right-re+.quick-right-re{margin-top: 1rem;}
+		.quick-right .quick-right-re>img{height:6.4rem; position: relative; z-index:2;}
+		.quick-right .quick-right-re .quick-right-list{width:6.4rem; height:6.4rem; position: absolute; right:0; top:0; overflow: hidden; border-radius:3.2rem; transition:all .3s linear;}
+		.quick-right .quick-right-re .quick-right-list>*{width:24rem; height:6.4rem; padding:0.3rem 0 0 6.5rem; background: #0863de url('/images/icon_tel.jpg') no-repeat 2.3rem center/2rem; font-weight: 500; font-size:1.6rem; line-height:1.3; color: #fff; display: flex; align-items: center; border-radius:999rem; position: relative; left:7rem; transition:all .3s linear; opacity: 0;}
+		.quick-right .quick-right-re .quick-right-list>*+*{margin-top:0.5rem;}
+		.quick-right .quick-right-re .quick-right-list>* strong{font-weight: 600; display:block;}
+
+		.quick-right .quick-right-re .quick-right-list>*:nth-of-type(2),
+		.quick-right .quick-right-re .quick-right-list>*:nth-of-type(3),
+		.quick-right .quick-right-re .quick-right-list>*:nth-of-type(4){transition-delay: 0s;}
+
+		.quick-right .quick-right-re .quick-right-list>*.black{background: #222 url('/images/icon_inq.jpg') no-repeat 1.6rem center/3.2rem;}
+		.quick-right .quick-right-re .quick-right-list>*.kaka{background: #fae100 url('/images/icon_kaka.jpg') no-repeat 1.1rem center/4.2rem; color: #381e1f;}
+		.quick-right .quick-right-re .quick-right-list>*.n-talk{background: #03c75a url('/images/icon_n_talk.jpg') no-repeat 1.7rem center/3rem; color: #fff;}
+
+		.quick-right .quick-right-re:is(:hover, .open) .quick-right-list{width:calc(24rem + 7.4rem); height:auto; padding-right:7.4rem;}
+		.quick-right .quick-right-re:is(:hover, .open) .quick-right-list>*{left:0; opacity: 1;}
+
+		.quick-right .quick-right-re:is(:hover, .open) .quick-right-list>*:nth-of-type(2){transition-delay: .2s;}
+		.quick-right .quick-right-re:is(:hover, .open) .quick-right-list>*:nth-of-type(3){transition-delay: .3s;}
+		.quick-right .quick-right-re:is(:hover, .open) .quick-right-list>*:nth-of-type(4){transition-delay: .4s;}
+
+		@media only screen and (max-width : 840px){
+			.quick-right .quick-right-re>img{height:50px;}
+			.quick-right .quick-right-re .quick-right-list{width:50px; border-radius:25px;}
+			.quick-right .quick-right-re .quick-right-list>*{width:24rem; height:50px;}
+			.quick-right .quick-right-re .quick-right-list>*{padding:0 0 0.3rem 6.5rem; font-size:1.8rem;}
+
+			.quick-right .quick-right-re:is(:hover, .open) .quick-right-list{width:calc(24rem + 60px); padding-right:60px;}
+
+			.quick-right .quick-right-re .quick-right-list>*.black,
+			.quick-right .quick-right-re .quick-right-list>*.kaka{display:none;}
+		}
+	</style>
+	<div class="quick-right">
+		<div class="quick-right-re"><img src="/images/main/q__cont01.png" alt="전화 상담" loading="lazy" decoding="async">
+			<div class="quick-right-list">
+				<a href="tel:1877-0256"><span><span>구입문의</span><strong>1877-0256</strong></span></a>
+				<a href="tel:1877-1859"><span><span>Amaranth10 문의</span><strong>1877-1859(1)</strong></span></a>
+				<a href="tel:1877-1859"><span><span>Bizbox Alpha 문의</span><strong>1877-1859(2)</strong></span></a>
+				<a href="tel:1877-0840"><span><span>iCUBE G20 문의</span><strong>1877-0840</strong></span></a>
+			</div>
+		</div>
+		<a href="/purchase/inquiry.asp" class="quick-right-re"><img src="/images/icon_inq.jpg" alt="온라인 구매 상담" loading="lazy" decoding="async" style="background:#222; border-radius:50%; padding:1.4rem; box-sizing:border-box; width:6.4rem;">
+			<div class="quick-right-list">
+				<p class="black"><span><span>온라인 구매상담</span><strong>평일 09:00~18:00</strong></span></p>
+			</div>
+		</a>
+		<a href="http://pf.kakao.com/_xnFVzK" target="_blank" rel="noopener noreferrer" class="quick-right-re"><img src="/images/main/q__cont03.png" alt="카카오톡 상담" loading="lazy" decoding="async">
+			<div class="quick-right-list">
+				<p class="kaka"><span><span>카카오톡 상담</span><strong>오픈채팅방</strong></span></p>
+			</div>
+		</a>
+		<a href="#" onclick="javascript:window.open('http://talk.naver.com/wil4im5?ref=https%3A%2F%2Fduzon119.co.kr%2F', 'talktalk', 'scrollbars=1, resizable=1, width=486, height=745');return false;" class="quick-right-re">
+            <img src="/images/main/q__cont04.png" alt="네이버 톡톡 문의" loading="lazy" decoding="async">
+			<div class="quick-right-list">
+				<p class="n-talk"><span><span>톡톡문의</span><strong>24시간 도입문의 상담</strong></span></p>
+			</div>
+		</a>
+	</div>
+
+
+
+<a href="javascript:void(0);" class="goTop">go top</a>
+
+<script>
+	$(document).ready(function () {
+		$("body").on("mouseenter", ".right", function() {
+			$(this).parent('.q__btn').addClass("open");
+		});
+
+		//$("body").on("mouseleave", ".q__btn.open .left", function() {
+		//		$(this).parent('.q__btn').removeClass("open");
+		//});
+
+		$("body").on("mouseleave", ".q__btn", function() {
+			$(this).removeClass("open");
+		});
+	});
+</script>
+
+<div id="menuArea" class="menuLayer">
+    <!-- <div class="language">
+        <a href="/" class="active"><span>KOR</span></a>
+        <a href="/index_en.asp"><span>ENG</span></a>
+    </div> -->
+    <ul id="menu" class="gnb">
+        <script type="text/javascript">globalNavigationBar();</script>
+    </ul>
+</div>		<div id="sVisual"><div class="inConts">
+			<!-- <p class="s-cate" data-aos="fade-up" data-aos-delay="300"></p> -->
+			<h2 data-aos="fade-up" data-aos-delay="200"></h2>
+			<p class="s-txt" data-aos="fade-up" data-aos-delay="300"></p>
+		</div></div>
+		<div id="snb"><!-- Side Navigation Bar -->
+			<ul id="nav"><!-- Navigation -->
+				<script type="text/javascript">
+					var pgCode = $("body").attr("data-pgCode");
+					if(pgCode){
+						leftMenuList(pgCode);
+					}
+				</script>
+			</ul>
+		</div>
+		<div id="pageTop"><h3>&nbsp;</h3></div>
+
+	<div id="container">
+
+		<!-- 공지사항과 동일한 검색 폼 구조 -->
+		<form name="searchfrm" method="get" style="margin:0" onsubmit="return false;">
+			<div class="board_search">
+				<select id="faqSerboardsort" class="type">
+					<option value="">- 구분 전체 -</option>
+					<option value="Amaranth10">Amaranth10</option>
+					<option value="WEHAGO">WEHAGO</option>
+					<option value="기타">기타</option>
+				</select>
+
+				<select id="faqSort">
+					<option value="popular" selected>인기순</option>
+					<option value="recent">최신순</option>
+				</select>
+
+				<input type="text" id="searchStr" name="searchStr" class="sch_input" value="" placeholder="검색어를 입력 하세요." />
+				<input type="button" id="faqSearchBtn" value="검색" />
+			</div>
+		</form>
+
+		<!-- 추천 검색어 (검색바 우측 하단) -->
+		<div class="faq-tags">
+			<span class="tip">자주 찾는 키워드 :</span>
+			<span class="tag" data-tag="부가세신고">#부가세신고</span>
+			<span class="tag" data-tag="견적문의">#견적문의</span>
+			<span class="tag" data-tag="로그인">#로그인</span>
+			<span class="tag" data-tag="바우처">#바우처</span>
+			<span class="tag" data-tag="원격지원">#원격지원</span>
+		</div>
+
+		<!-- TOP 5 (항상 고정 노출) -->
+		<div class="faq-top" id="faqTop" style="display:none">
+			<div class="faq-top-head">
+				<span class="badge">TOP 5</span>
+				<h3>자주 찾는 질문</h3>
+			</div>
+			<ol class="faq-top-list" id="faqTopList"></ol>
+		</div>
+
+		<!-- 툴바 (건수) -->
+		<div class="faq-toolbar">
+			<div>Total <strong id="faqCount">0</strong>건</div>
+			<div id="faqPageInfo"></div>
+		</div>
+
+		<!-- 리스트 (공지사항과 동일한 .board_list 테이블 골격) -->
+		<div class="board_list">
+			<table>
+				<colgroup>
+					<col width="80px">
+					<col width="12%">
+					<col width="*">
+					<col width="10%">
+					<col width="8%">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">No</th>
+						<th scope="col">구분</th>
+						<th scope="col">질문</th>
+						<th scope="col">등록일</th>
+						<th scope="col">조회수</th>
+					</tr>
+				</thead>
+				<tbody id="faqTbody"></tbody>
+			</table>
+		</div>
+
+		<!-- 페이지네이션 -->
+		<div class="faq-paging" id="faqPaging"></div>
+
+		<!-- 하단 CTA -->
+		<div class="faq-cta">
+			<div class="cta-txt">
+				<strong>원하는 답변을 찾지 못하셨나요?</strong>
+				<span>고객센터에서 친절하게 안내해 드립니다. (평일 09:00~18:00)</span>
+			</div>
+			<div class="cta-btns">
+				<a href="tel:1877-0840">전화 문의 1877-0840</a>
+				<a href="/board/bbs_inquiry.asp" class="line">1:1 문의하기</a>
+			</div>
+		</div>
+
+	</div>
+	<div id="footer">
+	<div class="inConts">
+		<div class="top">
+			<ul>
+				<li><a href="/company/privacy.asp">개인정보취급방침 </a></li>
+				<li><a href="/company/clause.asp">이용약관</a></li>
+				<li><a href="/company/location.asp">오시는 길</a></li>
+				<!-- <li><a href="#">이메일 집단수신거부</a></li> -->
+			</ul>
+		</div>
+
+		<div class="bottom">
+
+			<div class="ft__01">
+				<strong><img src="/images/logo_2026_on.png" alt="아이원소프트뱅크 - 더존 ERP 공식 파트너" style="width: 20rem;" loading="lazy" decoding="async"></strong>
+				<address>COPYRIGHT &copy; 2024 DOUZONE BIZON.<br />All rights reserved.</address>
+			</div>
+
+			<div class="ft__05 text">
+				<p><span>아이원소프트뱅크㈜</span>    <span>대표 : 황명희</span>    <span>사업자등록번호 : 113-86-70956</span>    <span>통신판매신고번호 : 2017-서울구로-0617</span></p>
+				<p><span>주소 : 서울특별시 구로구 디지털로 285 에이스트윈타워 1차 405호 </span></p>
+				<!-- <p><span>더존강촌캠퍼스 : 강원도 춘천시 남산면 수동리 749 ( 도로명 : 춘천시 남산면 버들1길 130)</span></p> -->
+				<p><span>구매상담문의 : 1877-0256</span>    <span>고객센터 : 1877-1859</span>    <span>iCUBE / G20 : 1877-0840</span>    <span>블루멤버십 : 1600-4208</span></p>
+                <p><span>테스트 계정 신청 : 070-4497-3388</span></p>
+			</div>
+			<!-- <div class="ft__03">
+				<ul>
+					<li>
+						<b>대표자</b>
+						<p>황명희</p>
+					</li>
+					<li>
+						<b>사업자등록번호</b>
+						<p>113-86-70956</p>
+					</li>
+					<li>
+						<b>대표전화</b>
+						<p>1600-4208</p>
+					</li>
+					<li>
+						<b>팩    스</b>
+						<p>02-3432-4623</p>
+					</li>
+				</ul>
+			</div> -->
+			<div class="ft__04">
+				<div class="link">
+					<a href="https://cafe.naver.com/ionesoftbank" target="_blank" rel="noopener noreferrer"><img src="/images/main/cafe.png" alt="아이원소프트뱅크 네이버 카페" loading="lazy" decoding="async"></a>
+					<a href="https://blog.naver.com/zhogksgjqm" target="_blank" rel="noopener noreferrer"><img src="/images/main/blog.png" alt="아이원소프트뱅크 네이버 블로그" loading="lazy" decoding="async"></a>
+					<a href="https://www.instagram.com/ione130501?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank" rel="noopener noreferrer"><img src="/images/main/insta.png" alt="아이원소프트뱅크 인스타그램" loading="lazy" decoding="async"></a>
+					<a href="http://pf.kakao.com/_xnFVzK" target="_blank" rel="noopener noreferrer"><img src="/images/main/Kakao.png" alt="아이원소프트뱅크 카카오톡 채널" loading="lazy" decoding="async"></a>
+					<a href="https://youtube.com/@IONEsoftBK_official?si=r5_CIRHiMzhLeADq" target="_blank" rel="noopener noreferrer"><img src="/images/icon_social_youtobe_c.png" alt="아이원소프트뱅크 유튜브" loading="lazy" decoding="async"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	AOS.init({
+		once: true,
+		//delay: 0,
+		duration: 700,
+		easing: 'ease-out'
+	});
+
+	$.ripple(".board_btn .click, .btn-ripple", {
+		opacity: 0.4,
+		color: "auto",
+		multi: false,
+		duration: 0.7,
+		rate: function(pxPerSecond) {
+		return pxPerSecond; // animation speed
+	},
+		easing: 'linear'
+	});
+</script>
+</div>
+
+<!-- subTop 타이틀·브레드크럼 강제 주입 (pgCode 매핑 등록 전 임시) -->
+<script>
+(function(){
+	function setText(sel, txt){ var el = document.querySelector(sel); if(el && !el.textContent.trim()) el.textContent = txt; }
+	document.addEventListener("DOMContentLoaded", function(){
+		setText("#sVisual .inConts h2", "자주 묻는 질문");
+		setText("#sVisual .inConts .s-txt", "궁금하신 사항을 FAQ에서 빠르게 확인하세요");
+		var pt = document.querySelector("#pageTop h3");
+		if(pt && (pt.textContent.trim() === "" || pt.innerHTML.indexOf("&nbsp;") !== -1)){
+			pt.innerHTML = '<a href="/">HOME</a> &gt; <a href="/customer/notice.asp">고객센터</a> &gt; <strong>자주 묻는 질문</strong>';
+		}
+	});
+})();
+</script>
+
+<!-- ============================================================
+     FAQ 컨트롤러
+     데이터: /customer/faq_data.asp
+     - 공지사항 리스트와 동일한 table 구조에 아코디언 확장 행 삽입
+     - 탭 대신 공지사항과 동일한 "구분" select로 제품 필터
+     - 정렬 select(인기/최신), 검색 실시간
+     - TOP5: isBest && views 상위 5 (고정 노출)
+     - 아코디언 open 시 views +1 (화면상 즉시 반영)
+     - answer의 \n → <br>, "1. 2. 3." 연속 라인 → <ol>
+     ============================================================ -->
+<script>
+(function(){
+	var STATE = {
+		data:[], filtered:[], keyword:"", category:"", sort:"popular", page:1, pageSize:10
+	};
+
+	var $tbody   = document.getElementById("faqTbody");
+	var $paging  = document.getElementById("faqPaging");
+	var $count   = document.getElementById("faqCount");
+	var $pageInfo= document.getElementById("faqPageInfo");
+	var $search  = document.getElementById("searchStr");
+	var $sortSel = document.getElementById("faqSort");
+	var $catSel  = document.getElementById("faqSerboardsort");
+	var $top     = document.getElementById("faqTop");
+	var $topList = document.getElementById("faqTopList");
+
+	fetch("/customer/faq_data.asp?v=" + Date.now())
+		.then(function(res){ return res.json(); })
+		.then(function(json){
+			STATE.data = json || [];
+			renderTop5();
+			applyFilter();
+			bindEvents();
+		})
+		.catch(function(err){
+			$tbody.innerHTML = '<tr class="faq-empty"><td colspan="5">FAQ 데이터를 불러오지 못했습니다.</td></tr>';
+			console.error(err);
+		});
+
+	function renderTop5(){
+		var top5 = STATE.data
+			.filter(function(x){ return x.isBest === true && x.isVisible !== false; })
+			.sort(function(a,b){ return (b.views||0) - (a.views||0); })
+			.slice(0, 5);
+		if(top5.length === 0){ $top.style.display = "none"; return; }
+		$top.style.display = "";
+		$topList.innerHTML = top5.map(function(item, i){
+			return '<li data-id="'+ item.id +'">'
+				+ '<span class="rank">'+ (i+1) +'</span>'
+				+ '<span class="txt">'+ escapeHtml(item.question) +'</span>'
+				+ '</li>';
+		}).join("");
+	}
+
+	function applyFilter(){
+		var kw = STATE.keyword.trim().toLowerCase();
+		STATE.filtered = STATE.data.filter(function(item){
+			if(item.isVisible === false) return false;
+			if(STATE.category && item.product !== STATE.category) return false;
+			if(kw){
+				var hay = (item.question + " " + item.answer + " " + item.category + " " + item.product).toLowerCase();
+				if(hay.indexOf(kw) === -1) return false;
+			}
+			return true;
+		});
+		if(STATE.sort === "popular"){
+			STATE.filtered.sort(function(a,b){ var an=a.isNotice?1:0, bn=b.isNotice?1:0; if(an!==bn) return bn-an; return (b.views||0) - (a.views||0); });
+		} else {
+			STATE.filtered.sort(function(a,b){ var an=a.isNotice?1:0, bn=b.isNotice?1:0; if(an!==bn) return bn-an; return (b.createdAt||"").localeCompare(a.createdAt||""); });
+		}
+		STATE.page = 1;
+		render();
+	}
+
+	function render(){
+		var total = STATE.filtered.length;
+		$count.textContent = total;
+
+		if(total === 0){
+			$tbody.innerHTML = '<tr class="faq-empty"><td colspan="5">검색 결과가 없습니다.</td></tr>';
+			$paging.innerHTML = "";
+			$pageInfo.textContent = "";
+			return;
+		}
+
+		var totalPages = Math.max(1, Math.ceil(total / STATE.pageSize));
+		var start = (STATE.page - 1) * STATE.pageSize;
+		var pageItems = STATE.filtered.slice(start, start + STATE.pageSize);
+
+		$tbody.innerHTML = pageItems.map(function(item, idx){
+			var no = total - (start + idx);
+			var bestChip = item.isBest ? '<span class="bbsimp">중요</span>' : '';
+			return ''
+				+ '<tr class="faq-row" data-id="'+ item.id +'">'
+				+   '<td class="td_num2">'+ (item.isNotice ? '<span style="color:#ff6600;font-weight:700">공지</span>' : no) +'</td>'
+				+   '<td class="btm">'+ escapeHtml(item.product) +'</td>'
+				+   '<td class="td_subject">'
+				+     '<a href="faq_view.asp?idx='+ item.id +'" class="title onlyLine1">'+ bestChip + escapeHtml(item.question) +'</a>'
+				+   '</td>'
+				+   '<td class="btm">'+ escapeHtml(item.createdAt || "") +'</td>'
+				+   '<td class="btm" data-views-for="'+ item.id +'">'+ formatNum(item.views) +'</td>'
+				+ '</tr>';
+		}).join("");
+
+		$pageInfo.textContent = "Page " + STATE.page + " / " + totalPages;
+		renderPaging(totalPages);
+	}
+
+	function renderPaging(totalPages){
+		if(totalPages <= 1){ $paging.innerHTML = ""; return; }
+		var html = '';
+		html += '<a href="javascript:void(0)" data-page="prev"'+ (STATE.page===1?' class="disabled"':'') +'>&laquo;</a>';
+		for(var i=1; i<=totalPages; i++){
+			if(i === STATE.page) html += '<strong class="pg_current">'+ i +'</strong>';
+			else html += '<a href="javascript:void(0)" data-page="'+ i +'">'+ i +'</a>';
+		}
+		html += '<a href="javascript:void(0)" data-page="next"'+ (STATE.page===totalPages?' class="disabled"':'') +'>&raquo;</a>';
+		$paging.innerHTML = html;
+	}
+
+	/* answer 포맷: \n → <br>, "1. 2. 3." 연속 라인 → <ol> */
+	function formatAnswer(text){
+		if(!text) return "";
+		var lines = String(text).split(/\r?\n/);
+		var html = "", buf = [], olBuf = [];
+		function flushBuf(){ if(buf.length){ html += '<p>' + buf.map(escapeHtml).join('<br>') + '</p>'; buf = []; } }
+		function flushOl(){ if(olBuf.length){ html += '<ol>' + olBuf.map(function(t){ return '<li>' + escapeHtml(t) + '</li>'; }).join('') + '</ol>'; olBuf = []; } }
+		for(var i=0; i<lines.length; i++){
+			var line = lines[i];
+			var m = line.match(/^\s*(\d+)\.\s+(.+)$/);
+			if(m){ flushBuf(); olBuf.push(m[2]); }
+			else if(line.trim() === ""){ flushBuf(); flushOl(); }
+			else { flushOl(); buf.push(line); }
+		}
+		flushBuf(); flushOl();
+		return html;
+	}
+
+	function bindEvents(){
+		// 실시간 검색
+		$search.addEventListener("input", function(e){ STATE.keyword = e.target.value; applyFilter(); });
+		document.getElementById("faqSearchBtn").addEventListener("click", function(){
+			STATE.keyword = $search.value; applyFilter();
+		});
+		$search.addEventListener("keydown", function(e){ if(e.key === "Enter"){ e.preventDefault(); STATE.keyword = $search.value; applyFilter(); } });
+
+		// 추천 태그
+		document.querySelectorAll(".faq-tags .tag").forEach(function(el){
+			el.addEventListener("click", function(){
+				var kw = el.getAttribute("data-tag");
+				$search.value = kw; STATE.keyword = kw; applyFilter();
+			});
+		});
+
+		// 구분(제품) select
+		$catSel.addEventListener("change", function(e){
+			STATE.category = e.target.value;
+			applyFilter();
+		});
+
+		// 정렬 select
+		$sortSel.addEventListener("change", function(e){
+			STATE.sort = e.target.value;
+			applyFilter();
+		});
+
+		// TOP 5 클릭 → 상세 페이지
+		$topList.addEventListener("click", function(e){
+			var li = e.target.closest("li[data-id]");
+			if(!li) return;
+			location.href = "faq_view.asp?idx=" + li.getAttribute("data-id");
+		});
+
+		// 페이지네이션
+		$paging.addEventListener("click", function(e){
+			var a = e.target.closest("a[data-page]");
+			if(!a || a.classList.contains("disabled")) return;
+			var p = a.getAttribute("data-page");
+			var totalPages = Math.ceil(STATE.filtered.length / STATE.pageSize);
+			if(p === "prev") STATE.page = Math.max(1, STATE.page - 1);
+			else if(p === "next") STATE.page = Math.min(totalPages, STATE.page + 1);
+			else STATE.page = parseInt(p, 10);
+			render();
+			document.querySelector(".board_list").scrollIntoView({ behavior:"smooth", block:"start" });
+		});
+	}
+
+	function incrementViews(id){
+		var target = STATE.data.find(function(x){ return x.id === id; });
+		if(!target) return;
+		target.views = (target.views || 0) + 1;
+		var el = document.querySelector('[data-views-for="'+ id +'"]');
+		if(el) el.textContent = formatNum(target.views);
+	}
+
+	function openFaqById(id){
+		var visible = STATE.filtered.some(function(x){ return x.id === id; });
+		if(!visible){
+			STATE.category = ""; STATE.keyword = "";
+			$search.value = ""; $catSel.value = "";
+			applyFilter();
+		}
+		var idx = STATE.filtered.findIndex(function(x){ return x.id === id; });
+		if(idx === -1) return;
+		STATE.page = Math.floor(idx / STATE.pageSize) + 1;
+		render();
+		setTimeout(function(){
+			var row = document.querySelector('.faq-row[data-id="'+ id +'"]');
+			var ans = document.querySelector('.faq-answer[data-answer-for="'+ id +'"]');
+			if(!row) return;
+			row.classList.add("open");
+			if(ans) ans.classList.add("show");
+			incrementViews(id);
+			row.scrollIntoView({ behavior:"smooth", block:"center" });
+		}, 60);
+	}
+
+	function escapeHtml(s){
+		if(s == null) return "";
+		return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;");
+	}
+	function formatNum(n){ return (n||0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); }
+})();
+</script>
+
+</body>
+</html>

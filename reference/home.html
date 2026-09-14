@@ -1,0 +1,1664 @@
+
+<!DOCTYPE html>
+<html lang="ko" class="main">
+
+    <head>
+        
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+	<!-- <meta name="viewport" content="width=640,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes"> -->
+	<meta name="HandheldFriendly" content="true"><!-- // * true : 모바일용(화면 크기 조정 기능) * false : Desktop에 최적화된 html 사용 -->
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no, date=no" />
+	<meta name="naver-site-verification" content="567190b01310e71efefd0217e776de0cdf4abb6c" />
+	<meta name="google-site-verification" content="p6KsuwsxtTkDrsUf3hlUmxhnFnQefLdRsfsFkFiV48M" />
+
+	<!-- 2026-08-11 SEO 개선 (모바일 UI 컬러·iOS 홈 추가 최적화·리퍼러 정책) -->
+	<meta name="theme-color" content="#0369ec">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta name="apple-mobile-web-app-title" content="아이원소프트뱅크">
+	<meta name="referrer" content="strict-origin-when-cross-origin">
+
+	<!-- 2026-06-30 preconnect 최소화 — LCP 직결 호스트만, 나머지는 dns-prefetch로 강등 (PSI 권고) -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://www.youtube-nocookie.com">
+	<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+	<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+	<link rel="dns-prefetch" href="https://i.ytimg.com">
+	<link rel="dns-prefetch" href="https://www.youtube.com">
+	<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+	<link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="canonical" href="https://www.duzon119.co.kr/Index.asp">
+
+	<!-- 2026-08-27 hreflang block removed: site is Korean-only.
+	     /en/ and /ja/ do not exist (dead alternates), and ko/x-default pointed
+	     every page at "/" instead of itself. Restore only when a real
+	     multilingual version ships, with per-page URLs. -->
+
+	<meta name="keywords" content="더존커스터마이징,더존ERP커스터마이징,더존커스텀,더존ERP커스텀,더존커스터마이징업체,더존,더존ERP,아이원소프트뱅크,Amaranth10,WEHAGO,위하고,iCUBE,Bizbox,OmniEsol,ONE AI,그룹웨어,회계ERP,인사ERP,물류ERP,ERP컨설팅">
+	<meta name="description" content="더존 ERP 커스터마이징 전문 업체 | Amaranth10·iCUBE·Bizbox 더존 커스텀 개발 및 맞춤 구축. 25년 경력 약 5,000개 기업 도입 노하우. 더존 커스터마이징 가능 업체 — 1877-0256 무료 상담.">
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="더존 ERP 커스터마이징 전문 | 더존 커스텀 개발 25년 공식 파트너 — 아이원소프트뱅크">
+	<meta property="og:site_name" content="아이원소프트뱅크(주)" />
+	<meta property="og:locale" content="ko_KR">
+	<meta property="og:url" content="https://www.duzon119.co.kr/Index.asp">
+	<meta property="og:image" content="https://www.duzon119.co.kr/images/og_images.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:description" content="더존 ERP 커스터마이징 전문 업체 | Amaranth10·iCUBE·Bizbox 더존 커스텀 개발 및 맞춤 구축. 25년 경력 약 5,000개 기업 도입 노하우. 더존 커스터마이징 가능 업체 — 1877-0256 무료 상담.">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="더존 ERP 커스터마이징 전문 | 더존 커스텀 개발 25년 공식 파트너 — 아이원소프트뱅크">
+	<meta name="twitter:url" content="https://www.duzon119.co.kr/Index.asp">
+	<meta name="twitter:image" content="https://www.duzon119.co.kr/images/og_images.jpg">
+	<meta name="twitter:description" content="더존 ERP 커스터마이징 전문 업체 | Amaranth10·iCUBE·Bizbox 더존 커스텀 개발 및 맞춤 구축. 25년 경력 약 5,000개 기업 도입 노하우. 더존 커스터마이징 가능 업체 — 1877-0256 무료 상담.">
+
+	<title>더존 ERP 커스터마이징 전문 | 더존 커스텀 개발 25년 공식 파트너 — 아이원소프트뱅크</title>
+
+	<!-- Organization schema — 구글 지식그래프 진입용. sameAs로 공식 SNS 연결해 외부 신호 통합 -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Organization",
+		"name": "아이원소프트뱅크㈜",
+		"alternateName": ["아이원소프트뱅크", "IONE Softbank", "더존119"],
+		"url": "https://duzon119.co.kr/",
+		"logo": "https://duzon119.co.kr/images/logo_2026_on.png",
+		"image": "https://duzon119.co.kr/images/og_images.jpg",
+		"description": "더존 ERP 공식 파트너 25년. Amaranth10·WEHAGO·iCUBE G20·OmniEsol 도입 컨설팅 및 사후관리.",
+		"foundingDate": "2001",
+		"taxID": "113-86-70956",
+		"telephone": "+82-1877-0256",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "디지털로 285 에이스트윈타워 1차 405호",
+			"addressLocality": "구로구",
+			"addressRegion": "서울특별시",
+			"addressCountry": "KR"
+		},
+		"contactPoint": [
+			{ "@type": "ContactPoint", "telephone": "+82-1877-0256", "contactType": "sales",            "areaServed": "KR", "availableLanguage": "Korean" },
+			{ "@type": "ContactPoint", "telephone": "+82-1877-1859", "contactType": "customer support", "areaServed": "KR", "availableLanguage": "Korean" },
+			{ "@type": "ContactPoint", "telephone": "+82-1877-0840", "contactType": "technical support","areaServed": "KR", "availableLanguage": "Korean" }
+		],
+		"sameAs": [
+			"https://cafe.naver.com/ionesoftbank",
+			"https://blog.naver.com/zhogksgjqm",
+			"https://www.instagram.com/ione130501",
+			"http://pf.kakao.com/_xnFVzK",
+			"https://youtube.com/@IONEsoftBK_official"
+		]
+	}
+	</script>
+	<!-- /Organization schema -->
+
+	<!-- WebSite schema + SearchAction — 구글 사이트링크 검색박스 노출 -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "WebSite",
+		"name": "아이원소프트뱅크㈜",
+		"alternateName": "더존119",
+		"url": "https://duzon119.co.kr/",
+		"inLanguage": "ko-KR",
+		"publisher": { "@type": "Organization", "name": "아이원소프트뱅크㈜" },
+		"potentialAction": {
+			"@type": "SearchAction",
+			"target": { "@type": "EntryPoint", "urlTemplate": "https://duzon119.co.kr/search.asp?keyword={search_term_string}" },
+			"query-input": "required name=search_term_string"
+		}
+	}
+	</script>
+	<!-- /WebSite schema -->
+
+	<!-- <link rel="stylesheet" type="text/css" href="/build/font-awesome/css/font-awesome.min.css" /> -->
+	<!-- 2026-07 FontAwesome: 죽은 kit(403 Forbidden) 제거 → 무료 CDN CSS로 교체(게시판·커뮤니티 등 아이콘 복구). 메인(홈)은 FA 미사용이라 로드 제외(속도) -->
+	
+	<link rel="stylesheet" type="text/css" href="/common/font/SUIT-Variable.css" />
+    <!-- 2026-06-30 Montserrat weight 축소 — italic 미사용, 100/200 미사용 → 실제 쓰이는 300~900만 -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	
+
+	<script type="text/javascript" src="/common/js/jquery.lastest.js" charset="utf-8"></script>
+	
+	<script type="text/javascript" src="/common/js/jquery.throttledresize.js" charset="utf-8" defer></script>
+	<script type="text/javascript" src="/common/js/jquery.rwdImageMaps.min.js" charset="utf-8" defer></script>
+
+	<script type="text/javascript">
+		var langCode = "kor";
+		var langmode = "0";
+
+		$(function(){
+			$("#header .language>a").eq(langmode).addClass("active")
+		});
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="/common/css/layout.css?var=2026.9.14" />
+	<link rel="stylesheet" type="text/css" href="/common/css/contents.css?var=2026.9.14" />
+	<link rel="stylesheet" type="text/css" href="/common/css/front.css?var=2026.9.14" />
+
+	<script type="text/javascript" src="/common/js/publisher.js?var=2026.9.14" charset="utf-8"></script>
+	<script type="text/javascript" src="/common/js/link.js?var=2026.9.14" charset="utf-8" defer></script>
+	<script type="text/javascript" src="/common/js/menu.js?var=2026.9.14" charset="utf-8"></script>
+	<script type="text/javascript" src="/common/js/prefixfree.min.js" defer></script>
+
+	<!-- 2026-06-30 menu.js 중복 로드 블록 제거 (위 menu.js로 통합, 다국어 분기는 추후 필요 시 단일 분기로 재구성) -->
+
+	<link rel="stylesheet" type="text/css" href="/common/css/slick.css" />
+	<script type="text/javascript" src="/common/js/slick.js" charset="utf-8"></script>
+
+	
+
+	<link rel="stylesheet" href="/common/css/aos.css">
+	<script type="text/javascript" src="/common/js/aos.js" charset="utf-8"></script>
+
+	<link rel="stylesheet" href="/build/ripple-click/ripple.min.css">
+	<script type="text/javascript" src="/build/ripple-click/ripple.min.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="/common/css/fullpage.css">
+	<script type="text/javascript" src="/common/js/fullpage.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://fastly.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  	<!-- 개발 Library -->
+	<script type="text/javascript">var langCode = "kor";</script>
+	
+	<script language="javascript" type="text/javascript" src="/_lib/functions.js"></script>
+	<script language="javascript" type="text/javascript" src="/_lib/boardcontrol.js"></script>
+	<script type="text/javascript" src="/_lib/js/plug-in/jquery.cookie/jquery.cookie.js"></script>
+	
+	<!-- 개발 Library -->
+
+	<!-- 2024-07-08 Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SLFWLP9QKE"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-SLFWLP9QKE');
+	</script>
+
+	<!-- Google Tag Manager 2026-02-12(목) -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-WKPK45TW');</script>
+	<!-- End Google Tag Manager 2026-02-12(목) -->
+
+	<!-- Talk Talk Banner Script start 2024-12-31 -->
+	<!-- <script type="text/javascript" src="https://partner.talk.naver.com/banners/script"></script>
+	<div class="talk_banner_div" data-id="155614"></div>
+	<style>
+	.talk_banner_div{position: fixed; right:13px; bottom:47px; z-index:7;}
+	.talk_banner_div .talk_banner_link{width:6.4rem; height:6.4rem; background:url("/images/main/q__cont04.png") no-repeat center; background-size:contain;}
+	.talk_banner_div .talk_banner_link .talk_banner_preview{display:none !important;}
+	@media only screen and (max-width: 840px){
+	.talk_banner_div{bottom:69px}
+	.talk_banner_div .talk_banner_link{width:50px; height:50px;}
+	}
+	</style> -->
+	<!-- Talk Talk Banner Script end 2024-12-31 -->
+    </head>
+
+    <body data-pgCode="0000">
+
+        <h1 class="hidden_for_a11y" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">더존 ERP 커스터마이징 전문 | 더존 커스텀 개발 — 아이원소프트뱅크㈜ 더존 공식 파트너 25년 · Amaranth 10·WEHAGO·iCUBE·Bizbox 도입 컨설팅</h1>
+
+        <section id="wrap">
+			<style>
+				#ribbon-banner{width:100%; font-size:0; line-height:0; overflow:hidden; position: fixed; top:0; left:0; z-index:9;}
+				#ribbon-banner.disNone{display:none !important;}
+				#ribbon-banner .ribbon-roll{}
+				#ribbon-banner .ribbon-roll .slider{width:100%;}
+				#ribbon-banner .ribbon-roll .slider img{width:100%; height:auto; display:block;}
+
+				#ribbon-banner .ribbon-close{width:100%; max-width:136rem; margin:0 auto; padding:0 3rem; text-align: right; position: relative; z-index:7;}
+				#ribbon-banner .ribbon-close .check-new{position: relative; margin-top:-22px; white-space: nowrap;}
+				#ribbon-banner .ribbon-close .check-new input[type=checkbox]+label{font-size:12px; color: #fff;}
+
+				#ribbon-banner .ribbon-close .check-new input[type=checkbox]+label>.graphic,
+				#ribbon-banner .ribbon-close .check-new input[type=checkbox]+label>.graphic:before{width:1.4rem; height: 1.4rem;}
+
+				#ribbon-banner .slick-dots{width:100%; padding:0; text-align: center; position: absolute; left:0; bottom:0.7rem; z-index:7;}
+				#ribbon-banner .slick-dots>li{margin:0 0.5rem; display:inline-block; vertical-align: top;}
+				#ribbon-banner .slick-dots>li+li{}
+				#ribbon-banner .slick-dots>li button{width:1rem; height:1rem; padding:0; background-color:#fff; border:none; font-size:0; line-height:0; opacity: 0.7; position: relative; cursor: pointer; border-radius:999px; overflow:hidden; transition: all .3s ease-out;}
+				#ribbon-banner .slick-dots>li.slick-active button{width:20px; opacity: 1;}
+
+				#ribbon-banner .ribbon-roll{opacity: 0; visibility: hidden; transition: opacity 1s ease;}
+				#ribbon-banner .ribbon-roll.open,
+				#ribbon-banner .ribbon-roll.slick-initialized{visibility: visible; opacity: 1;}
+
+				#ribbon-banner:not(.disNone) ~ #header{position: absolute; top:6.25vw;}
+				#ribbon-banner ~ #header.fixed{position: fixed; top:0;}
+
+
+				@media only screen and (max-width : 1024px){
+					#ribbon-banner{display:none !important;}
+					#header{position: fixed !important; top:0 !important;}
+				}
+				@media only screen and (max-width : 840px){
+				}
+			</style>
+			<!-- Google Tag Manager (noscript) 2026-02-12(목) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WKPK45TW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) 2026-02-12(목) -->
+
+<div id="header" class="hh">
+	<div class="gnbBg"></div>
+	<div class="inConts">
+
+		<p class="logo-h">
+			<a href="/">
+				<img src="/images/logo_tagline_2026.png" class="logo-tagline" alt="Authentic innovation, AX and More" fetchpriority="high" decoding="async">
+				<img src="/images/logo.png" class="logo" alt="아이원소프트뱅크 - 더존 ERP 공식 파트너" decoding="async">
+				<img src="/images/logo_on.png" class="logo_on" alt="아이원소프트뱅크 - 더존 ERP 공식 파트너" fetchpriority="high" decoding="async">
+			</a>
+		</p>
+
+		<div id="pcMenu">
+			<ul id="list">
+				<script type="text/javascript">globalNavigationBar();</script>
+			</ul>
+		</div>
+
+		<div class="right-utill">
+			<div class="language-area">
+				<div class="language">
+					<a href="/purchase/inquiry.asp">구매상담</a>
+				</div>
+			</div>
+			<div class="language-area">
+				<div class="language">
+					
+					<a href="/member/login.asp">로그인</a>
+					
+				</div>
+			</div>
+			<button type="button" class="mMenu"><span></span></button>
+
+		</div>
+	</div>
+</div>
+
+	<style>
+		.quickWrap{display:none;}
+		.quick-right{position: fixed; right:13px; bottom:130px; z-index:9; display:block;}
+		.quick-right .quick-right-re{border-radius:3.2rem; display: flex; justify-content: flex-end; position: relative;}
+		.quick-right .quick-right-re+.quick-right-re{margin-top: 1rem;}
+		.quick-right .quick-right-re>img{height:6.4rem; position: relative; z-index:2;}
+		.quick-right .quick-right-re .quick-right-list{width:6.4rem; height:6.4rem; position: absolute; right:0; top:0; overflow: hidden; border-radius:3.2rem; transition:all .3s linear;}
+		.quick-right .quick-right-re .quick-right-list>*{width:24rem; height:6.4rem; padding:0.3rem 0 0 6.5rem; background: #0863de url('/images/icon_tel.jpg') no-repeat 2.3rem center/2rem; font-weight: 500; font-size:1.6rem; line-height:1.3; color: #fff; display: flex; align-items: center; border-radius:999rem; position: relative; left:7rem; transition:all .3s linear; opacity: 0;}
+		.quick-right .quick-right-re .quick-right-list>*+*{margin-top:0.5rem;}
+		.quick-right .quick-right-re .quick-right-list>* strong{font-weight: 600; display:block;}
+
+		.quick-right .quick-right-re .quick-right-list>*:nth-of-type(2),
+		.quick-right .quick-right-re .quick-right-list>*:nth-of-type(3),
+		.quick-right .quick-right-re .quick-right-list>*:nth-of-type(4){transition-delay: 0s;}
+
+		.quick-right .quick-right-re .quick-right-list>*.black{background: #222 url('/images/icon_inq.jpg') no-repeat 1.6rem center/3.2rem;}
+		.quick-right .quick-right-re .quick-right-list>*.kaka{background: #fae100 url('/images/icon_kaka.jpg') no-repeat 1.1rem center/4.2rem; color: #381e1f;}
+		.quick-right .quick-right-re .quick-right-list>*.n-talk{background: #03c75a url('/images/icon_n_talk.jpg') no-repeat 1.7rem center/3rem; color: #fff;}
+
+		.quick-right .quick-right-re:is(:hover, .open) .quick-right-list{width:calc(24rem + 7.4rem); height:auto; padding-right:7.4rem;}
+		.quick-right .quick-right-re:is(:hover, .open) .quick-right-list>*{left:0; opacity: 1;}
+
+		.quick-right .quick-right-re:is(:hover, .open) .quick-right-list>*:nth-of-type(2){transition-delay: .2s;}
+		.quick-right .quick-right-re:is(:hover, .open) .quick-right-list>*:nth-of-type(3){transition-delay: .3s;}
+		.quick-right .quick-right-re:is(:hover, .open) .quick-right-list>*:nth-of-type(4){transition-delay: .4s;}
+
+		@media only screen and (max-width : 840px){
+			.quick-right .quick-right-re>img{height:50px;}
+			.quick-right .quick-right-re .quick-right-list{width:50px; border-radius:25px;}
+			.quick-right .quick-right-re .quick-right-list>*{width:24rem; height:50px;}
+			.quick-right .quick-right-re .quick-right-list>*{padding:0 0 0.3rem 6.5rem; font-size:1.8rem;}
+
+			.quick-right .quick-right-re:is(:hover, .open) .quick-right-list{width:calc(24rem + 60px); padding-right:60px;}
+
+			.quick-right .quick-right-re .quick-right-list>*.black,
+			.quick-right .quick-right-re .quick-right-list>*.kaka{display:none;}
+		}
+	</style>
+	<div class="quick-right">
+		<div class="quick-right-re"><img src="/images/main/q__cont01.png" alt="전화 상담" loading="lazy" decoding="async">
+			<div class="quick-right-list">
+				<a href="tel:1877-0256"><span><span>구입문의</span><strong>1877-0256</strong></span></a>
+				<a href="tel:1877-1859"><span><span>Amaranth10 문의</span><strong>1877-1859(1)</strong></span></a>
+				<a href="tel:1877-1859"><span><span>Bizbox Alpha 문의</span><strong>1877-1859(2)</strong></span></a>
+				<a href="tel:1877-0840"><span><span>iCUBE G20 문의</span><strong>1877-0840</strong></span></a>
+			</div>
+		</div>
+		<a href="/purchase/inquiry.asp" class="quick-right-re"><img src="/images/icon_inq.jpg" alt="온라인 구매 상담" loading="lazy" decoding="async" style="background:#222; border-radius:50%; padding:1.4rem; box-sizing:border-box; width:6.4rem;">
+			<div class="quick-right-list">
+				<p class="black"><span><span>온라인 구매상담</span><strong>평일 09:00~18:00</strong></span></p>
+			</div>
+		</a>
+		<a href="http://pf.kakao.com/_xnFVzK" target="_blank" rel="noopener noreferrer" class="quick-right-re"><img src="/images/main/q__cont03.png" alt="카카오톡 상담" loading="lazy" decoding="async">
+			<div class="quick-right-list">
+				<p class="kaka"><span><span>카카오톡 상담</span><strong>오픈채팅방</strong></span></p>
+			</div>
+		</a>
+		<a href="#" onclick="javascript:window.open('http://talk.naver.com/wil4im5?ref=https%3A%2F%2Fduzon119.co.kr%2F', 'talktalk', 'scrollbars=1, resizable=1, width=486, height=745');return false;" class="quick-right-re">
+            <img src="/images/main/q__cont04.png" alt="네이버 톡톡 문의" loading="lazy" decoding="async">
+			<div class="quick-right-list">
+				<p class="n-talk"><span><span>톡톡문의</span><strong>24시간 도입문의 상담</strong></span></p>
+			</div>
+		</a>
+	</div>
+
+
+
+<a href="javascript:void(0);" class="goTop">go top</a>
+
+<script>
+	$(document).ready(function () {
+		$("body").on("mouseenter", ".right", function() {
+			$(this).parent('.q__btn').addClass("open");
+		});
+
+		//$("body").on("mouseleave", ".q__btn.open .left", function() {
+		//		$(this).parent('.q__btn').removeClass("open");
+		//});
+
+		$("body").on("mouseleave", ".q__btn", function() {
+			$(this).removeClass("open");
+		});
+	});
+</script>
+
+<div id="menuArea" class="menuLayer">
+    <!-- <div class="language">
+        <a href="/" class="active"><span>KOR</span></a>
+        <a href="/index_en.asp"><span>ENG</span></a>
+    </div> -->
+    <ul id="menu" class="gnb">
+        <script type="text/javascript">globalNavigationBar();</script>
+    </ul>
+</div>
+
+            <div class="quick-left">
+                <p class="q_tit">DOUZONE</p>
+                <ul>
+                    <li>
+                        <a href="/purchase/inquiry.asp">
+                            <img src="/images/q_left_icon_01.png" alt="대면/비대면 상담신청" loading="lazy" decoding="async">
+                            <span>대면/비대면<br>상담신청</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/purchase/inquiry.asp">
+                            <img src="/images/q_left_icon_02.png" alt="Amaranth10 체험신청" loading="lazy" decoding="async">
+                            <span>
+                                <em>Amaranth10</em>
+                                체험신청하기
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:openCardnewsModal();">
+                            <svg class="cardnews-ico" aria-hidden="true" viewBox="0 0 48 48" width="42" height="42" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="cnGrad" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#4a9dff"/>
+                                        <stop offset="100%" stop-color="#0863de"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect x="6" y="10" width="30" height="32" rx="3" fill="#e8f1ff" stroke="#0863de" stroke-width="2"/>
+                                <rect x="10" y="6" width="30" height="32" rx="3" fill="url(#cnGrad)"/>
+                                <rect x="14" y="12" width="22" height="8" rx="1.5" fill="#fff" opacity="0.95"/>
+                                <line x1="14" y1="26" x2="36" y2="26" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+                                <line x1="14" y1="30" x2="36" y2="30" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+                                <line x1="14" y1="34" x2="28" y2="34" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+                            </svg>
+                            <span>카드뉴스<br>신청하기</span>
+                        </a>
+                    </li>
+                </ul>
+                <button type="button" class="fold_btn"><span>←</span></button>
+            </div>
+
+            <!-- ===== 카드뉴스 신청하기 모달 ===== -->
+            <div id="cardnewsLayer" class="cn-layer" style="display:none;" role="dialog" aria-modal="true" aria-labelledby="cn-title">
+                <div class="cn-dim"></div>
+                <div class="cn-box">
+                    <div class="cn-head">
+                        <h3 id="cn-title">카드뉴스 신청하기</h3>
+                        <button type="button" class="cn-close" aria-label="닫기">×</button>
+                    </div>
+                    <form id="cardnewsForm" class="cn-body" onsubmit="return false;">
+                        <div class="cn-field">
+                            <label for="cn-company">회사명 <em>*</em></label>
+                            <input type="text" id="cn-company" name="company" placeholder="회사명을 입력하세요" maxlength="100" />
+                        </div>
+                        <div class="cn-field">
+                            <label for="cn-writer">담당자명 <em>*</em></label>
+                            <input type="text" id="cn-writer" name="writer" placeholder="담당자명을 입력하세요" maxlength="50" />
+                        </div>
+                        <div class="cn-field">
+                            <label for="cn-phone">연락처 <em>*</em></label>
+                            <input type="text" id="cn-phone" name="phone" placeholder="연락처를 입력하세요" maxlength="30" />
+                        </div>
+                        <div class="cn-field">
+                            <label for="cn-email">이메일</label>
+                            <input type="email" id="cn-email" name="email" placeholder="이메일을 입력하세요" maxlength="100" />
+                        </div>
+                        <div class="cn-field">
+                            <label for="cn-interest">관심 주제</label>
+                            <input type="text" id="cn-interest" name="interest" placeholder="예: ERP, PMS, ISMS-P 등" maxlength="200" />
+                        </div>
+                        <div class="cn-field">
+                            <label for="cn-note1">문의사항</label>
+                            <textarea id="cn-note1" name="note1" rows="4" maxlength="500" placeholder="문의사항을 입력하세요 (최대 500자)"></textarea>
+                        </div>
+                        <div class="cn-agree">
+                            <strong>동의 항목 <em>*</em></strong>
+                            <label class="cn-chk">
+                                <input type="checkbox" id="cn-agree1" name="agree1" value="1">
+                                <span><b>[필수]</b> 개인정보 수집 및 이용에 동의합니다.</span>
+                            </label>
+                            <p class="cn-desc">수집 항목: 회사명, 담당자명, 연락처, 이메일 / 목적: 카드뉴스 발송 및 서비스 안내 / 보유기간: 동의 철회 시까지</p>
+                            <label class="cn-chk">
+                                <input type="checkbox" id="cn-agree2" name="agree2" value="1">
+                                <span><b>[필수]</b> 아이원소프트뱅크㈜의 카드뉴스 및 서비스 정보 수신에 동의합니다.</span>
+                            </label>
+                            <p class="cn-desc">ERP, PMS, ISMS-P 등 관련 최신 정보를 이메일로 수신합니다.</p>
+                            <p class="cn-note" id="cn-noteMsg">신청을 위해 위 동의 항목에 모두 체크해 주세요.</p>
+                        </div>
+                        <button type="button" class="cn-submit" id="cn-submitBtn" disabled>신청하기</button>
+                    </form>
+                </div>
+            </div>
+
+            <style>
+                /* card-news quick button (3rd) — img와 동일한 흐름으로 배치 */
+                .quick-left ul li .cardnews-ico{display:block; width:56px; height:56px; margin:0 auto;}
+                /* 카드뉴스 텍스트 강제 줄바꿈 (BR 안 먹히는 환경 대비) */
+                .quick-left ul li a > span{white-space:normal; word-break:keep-all;}
+                /* 구분선을 아래로 내리기: 이전 li 하단 여백 확보 */
+                .quick-left ul li + li{margin-top:1.5rem;}
+
+                /* card-news modal */
+                #cardnewsLayer{position:fixed; inset:0; z-index:9999;}
+                #cardnewsLayer .cn-dim{position:absolute; inset:0; background:rgba(0,0,0,0.55);}
+                #cardnewsLayer .cn-box{position:relative; width:42rem; max-width:calc(100vw - 3rem); max-height:calc(100vh - 4rem); margin:2rem auto; top:50%; transform:translateY(-50%); background:#fff; border-radius:1.2rem; box-shadow:0 2rem 5rem rgba(0,0,0,0.3); display:flex; flex-direction:column; overflow:hidden;}
+                #cardnewsLayer .cn-head{display:flex; align-items:center; justify-content:space-between; padding:1.8rem 2rem; border-bottom:1px solid #eee;}
+                #cardnewsLayer .cn-head h3{margin:0; font-size:1.8rem; font-weight:700; color:#111;}
+                #cardnewsLayer .cn-close{background:none; border:none; font-size:2.4rem; line-height:1; color:#888; cursor:pointer; padding:0 .4rem;}
+                #cardnewsLayer .cn-body{padding:1.6rem 2rem 2rem; overflow-y:auto; flex:1 1 auto;}
+                #cardnewsLayer .cn-field{margin-bottom:1.2rem;}
+                #cardnewsLayer .cn-field label{display:block; margin-bottom:.5rem; font-size:1.4rem; font-weight:600; color:#333;}
+                #cardnewsLayer .cn-field label em{color:#e23; font-style:normal; margin-left:.2rem;}
+                #cardnewsLayer .cn-field input[type=text],
+                #cardnewsLayer .cn-field input[type=email],
+                #cardnewsLayer .cn-field textarea{width:100%; box-sizing:border-box; padding:.9rem 1rem; font-size:1.4rem; border:1px solid #d6d6d6; border-radius:.6rem; outline:none; background:#fff; color:#222; font-family:inherit;}
+                #cardnewsLayer .cn-field input:focus,
+                #cardnewsLayer .cn-field textarea:focus{border-color:#0863de;}
+                #cardnewsLayer .cn-field textarea{resize:vertical; min-height:8rem;}
+                #cardnewsLayer .cn-agree{margin:1.4rem 0 1.2rem; padding:1.2rem 1.4rem; background:#f7f8fb; border-radius:.8rem;}
+                #cardnewsLayer .cn-agree>strong{display:block; margin-bottom:.8rem; font-size:1.4rem; color:#222;}
+                #cardnewsLayer .cn-agree>strong em{color:#e23; font-style:normal;}
+                /* 커스텀 체크박스: 네이티브 input 시각적으로 숨기고 span::before로 직접 그림 */
+                #cardnewsLayer .cn-chk{display:block !important; position:relative !important; padding:.2rem 0 .2rem 2.6rem !important; margin-top:.6rem !important; font-size:1.3rem !important; color:#333 !important; cursor:pointer !important; min-height:2rem !important; line-height:1.45 !important;}
+                #cardnewsLayer .cn-chk input[type="checkbox"]{position:absolute !important; left:.1rem !important; top:.3rem !important; width:1.8rem !important; height:1.8rem !important; opacity:0 !important; margin:0 !important; padding:0 !important; border:0 !important; z-index:1 !important; cursor:pointer !important;}
+                #cardnewsLayer .cn-chk > span{display:inline-block !important; vertical-align:top !important;}
+                #cardnewsLayer .cn-chk > span::before{content:'' !important; position:absolute !important; left:0 !important; top:.3rem !important; width:1.8rem !important; height:1.8rem !important; border:1.5px solid #b0b0b0 !important; border-radius:.3rem !important; background:#fff !important; box-sizing:border-box !important;}
+                #cardnewsLayer .cn-chk input[type="checkbox"]:checked + span::before{background:#0863de !important; border-color:#0863de !important;}
+                #cardnewsLayer .cn-chk input[type="checkbox"]:checked + span::after{content:'' !important; position:absolute !important; left:.65rem !important; top:.55rem !important; width:.5rem !important; height:.9rem !important; border:solid #fff !important; border-width:0 .25rem .25rem 0 !important; transform:rotate(45deg) !important; box-sizing:border-box !important;}
+                #cardnewsLayer .cn-chk b{font-weight:700;}
+                #cardnewsLayer .cn-desc{margin:.4rem 0 .6rem 2rem; font-size:1.2rem; color:#666; line-height:1.5;}
+                #cardnewsLayer .cn-note{margin:.8rem 0 0; font-size:1.2rem; color:#e23;}
+                #cardnewsLayer .cn-note.ok{color:#0863de;}
+                #cardnewsLayer .cn-submit{width:100%; padding:1.2rem; margin-top:.4rem; font-size:1.5rem; font-weight:700; color:#fff; background:#0863de; border:none; border-radius:.6rem; cursor:pointer;}
+                #cardnewsLayer .cn-submit:disabled{background:#c8ccd6; cursor:not-allowed;}
+
+                @media only screen and (max-width:640px){
+                    #cardnewsLayer .cn-box{width:auto; margin:1.5rem; transform:none; top:0; max-height:calc(100vh - 3rem);}
+                }
+            </style>
+
+            <script>
+                function openCardnewsModal(){
+                    document.getElementById('cardnewsLayer').style.display = 'block';
+                    document.body.style.overflow = 'hidden';
+                }
+                function closeCardnewsModal(){
+                    document.getElementById('cardnewsLayer').style.display = 'none';
+                    document.body.style.overflow = '';
+                }
+                $(function(){
+                    var $layer = $('#cardnewsLayer');
+                    $layer.on('click', '.cn-close, .cn-dim', closeCardnewsModal);
+
+                    function refreshSubmitState(){
+                        var ok = $('#cn-agree1').is(':checked') && $('#cn-agree2').is(':checked');
+                        $('#cn-submitBtn').prop('disabled', !ok);
+                        $('#cn-noteMsg').toggleClass('ok', ok).text(ok ? '동의 완료 — 신청할 수 있습니다.' : '신청을 위해 위 동의 항목에 모두 체크해 주세요.');
+                    }
+                    $layer.on('change', '#cn-agree1, #cn-agree2', refreshSubmitState);
+
+                    $('#cn-submitBtn').on('click', function(){
+                        var company = $.trim($('#cn-company').val());
+                        var writer  = $.trim($('#cn-writer').val());
+                        var phone   = $.trim($('#cn-phone').val());
+                        if (!company) { alert('회사명을 입력해주세요.'); $('#cn-company').focus(); return; }
+                        if (!writer)  { alert('담당자명을 입력해주세요.'); $('#cn-writer').focus(); return; }
+                        if (!phone)   { alert('연락처를 입력해주세요.'); $('#cn-phone').focus(); return; }
+                        if (!$('#cn-agree1').is(':checked') || !$('#cn-agree2').is(':checked')) {
+                            alert('필수 동의 항목에 체크해주세요.'); return;
+                        }
+                        var $btn = $(this).prop('disabled', true).text('전송 중...');
+                        $.ajax({
+                            url: '/_lib/cardnewsProc.asp',
+                            type: 'POST',
+                            data: {
+                                company:  company,
+                                writer:   writer,
+                                phone:    phone,
+                                email:    $.trim($('#cn-email').val()),
+                                interest: $.trim($('#cn-interest').val()),
+                                note1:    $.trim($('#cn-note1').val()),
+                                agree1:   $('#cn-agree1').is(':checked') ? '1' : '0',
+                                agree2:   $('#cn-agree2').is(':checked') ? '1' : '0'
+                            },
+                            dataType: 'text'
+                        }).done(function(res){
+                            res = $.trim(res);
+                            if (res === 'OK') {
+                                alert('카드뉴스 신청이 완료되었습니다.\n빠른 시일 내 안내드리겠습니다.');
+                                document.getElementById('cardnewsForm').reset();
+                                refreshSubmitState();
+                                closeCardnewsModal();
+                            } else if (res.indexOf('ERR:') === 0) {
+                                alert(res.substring(4));
+                            } else {
+                                alert('처리 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.');
+                            }
+                        }).fail(function(){
+                            alert('네트워크 오류가 발생했습니다.');
+                        }).always(function(){
+                            $btn.prop('disabled', false).text('신청하기');
+                            refreshSubmitState();
+                        });
+                    });
+                });
+            </script>
+            <!-- ===== /카드뉴스 신청하기 모달 ===== -->
+
+            <script>
+                $(".quick-left .fold_btn").on("click", function(){
+                    if($(".quick-left").hasClass("on")){
+                        $(".quick-left").removeClass("on");
+                    } else {
+                        $(".quick-left").addClass("on");
+                    }
+                });
+            </script>
+
+            <div id="fullpage">
+                <div id="main" class="mainWrap">
+
+                    <section id="mainVisual" class="f0 section sec1 section1">
+                        <div class="mainSlide_scroll">SCROLL</div>
+                        <div class="mainSlide_scroll_bar">
+                            <div class="scroll_bar"></div>
+                        </div>
+                        <div class="visualRoll swiper-wrapper">
+							<div class="swiper-slide">
+	<div class="video_box">
+		<iframe class="overlay-video" fetchpriority="high" loading="eager" src="https://www.youtube-nocookie.com/embed/NUXrXvrez80?&amp;autoplay=1&amp;mute=1&amp;playlist=NUXrXvrez80&amp;loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</div>
+	<div class="vTxtArea">
+		<div class="vTxt" ata-aos="fade-up" data-aos="fade-up" data-aos-delay="150">
+			<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>빈 여백</title>
+  <style>
+    .spacer {
+      margin-top: 350px; /* 약 10줄 정도 띄우는 효과 (줄마다 20px 가정) */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="spacer"></div>
+
+</body>
+</html>
+
+			<p class="ii btn" >
+				<a href="/product/amaranth10/brand.asp" target="" class="main__btn">체험하러가기 <img src="/images/main/main_arr.png" alt="바로가기" loading="lazy" decoding="async"></a>
+				<a href="/purchase/inquiry.asp" target="" class="main__btn">A10 체험하기 신청 바로가기 <img src="/images/main/main_arr.png" alt="바로가기" loading="lazy" decoding="async"></a>
+			</p>
+		</div>
+	</div>
+</div>
+
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </section>
+
+
+                    <section id="customizing" class="section fp-auto-height fp-auto-height-responsive customizing-sec">
+                        <div class="customizing-inner">
+                            <div class="customizing-head" data-aos="fade-up" data-aos-duration="900" data-aos-offset="120">
+                                <p class="eyebrow"><span class="dot"></span>DOUZONE CUSTOMIZING<span class="dot"></span></p>
+                                <h2><b>더존 ERP</b> 커스터마이징 전문 업체</h2>
+                                <p class="lead">기업 맞춤형 화면 구성부터 업무 프로세스 개선, 연동 개발까지</p>
+                            </div>
+
+                            <div class="customizing-diagram">
+                                <div class="hub" data-aos="fade-up" data-aos-duration="900" data-aos-delay="150" data-aos-offset="120">
+                                    <div class="hub-card">
+                                        <div class="hub-icon">
+                                            <svg viewBox="0 0 80 80" width="72" height="72" aria-hidden="true">
+                                                <rect x="10" y="14" width="60" height="40" rx="3" fill="#fff" stroke="#1a5cd7" stroke-width="2"/>
+                                                <rect x="10" y="14" width="60" height="8" rx="3" fill="#1a5cd7"/>
+                                                <text x="40" y="36" text-anchor="middle" font-size="9" font-weight="700" fill="#1a5cd7">ERP</text>
+                                                <rect x="16" y="40" width="18" height="10" fill="#cfe1ff"/>
+                                                <rect x="38" y="40" width="12" height="10" fill="#8fb8ff"/>
+                                                <rect x="52" y="40" width="14" height="10" fill="#1a5cd7"/>
+                                                <rect x="32" y="56" width="16" height="6" fill="#1a5cd7"/>
+                                                <rect x="26" y="62" width="28" height="4" fill="#1a5cd7"/>
+                                                <circle cx="60" cy="58" r="9" fill="#1a5cd7"/>
+                                                <circle cx="60" cy="58" r="3" fill="#fff"/>
+                                            </svg>
+                                        </div>
+                                        <strong>더존 ERP 커스터마이징</strong>
+                                    </div>
+                                </div>
+
+                                <ul class="branch-cards">
+                                    <li data-aos="fade-up" data-aos-duration="900" data-aos-delay="300" data-aos-offset="120">
+                                        <span class="num">01</span>
+                                        <div class="ico">
+                                            <svg viewBox="0 0 64 64" width="56" height="56" aria-hidden="true">
+                                                <rect x="6" y="10" width="52" height="38" rx="3" fill="#fff" stroke="#1a5cd7" stroke-width="2"/>
+                                                <rect x="6" y="10" width="52" height="7" rx="3" fill="#1a5cd7"/>
+                                                <circle cx="11" cy="13.5" r="1.2" fill="#fff"/><circle cx="15" cy="13.5" r="1.2" fill="#fff"/><circle cx="19" cy="13.5" r="1.2" fill="#fff"/>
+                                                <rect x="12" y="22" width="16" height="3" fill="#8fb8ff"/>
+                                                <rect x="12" y="28" width="22" height="3" fill="#cfe1ff"/>
+                                                <rect x="12" y="34" width="14" height="3" fill="#cfe1ff"/>
+                                                <circle cx="44" cy="34" r="9" fill="none" stroke="#1a5cd7" stroke-width="2"/>
+                                                <path d="M50 40 L56 46" stroke="#1a5cd7" stroke-width="3" stroke-linecap="round"/>
+                                            </svg>
+                                        </div>
+                                        <p class="t1">더존 ERP</p>
+                                        <p class="t2">화면 커스터마이징</p>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="900" data-aos-delay="400" data-aos-offset="120">
+                                        <span class="num">02</span>
+                                        <div class="ico">
+                                            <svg viewBox="0 0 64 64" width="56" height="56" aria-hidden="true">
+                                                <rect x="24" y="6" width="16" height="12" rx="2" fill="#cfe1ff" stroke="#1a5cd7" stroke-width="2"/>
+                                                <line x1="32" y1="18" x2="32" y2="28" stroke="#1a5cd7" stroke-width="2"/>
+                                                <line x1="14" y1="28" x2="50" y2="28" stroke="#1a5cd7" stroke-width="2"/>
+                                                <line x1="14" y1="28" x2="14" y2="36" stroke="#1a5cd7" stroke-width="2"/>
+                                                <line x1="32" y1="28" x2="32" y2="36" stroke="#1a5cd7" stroke-width="2"/>
+                                                <line x1="50" y1="28" x2="50" y2="36" stroke="#1a5cd7" stroke-width="2"/>
+                                                <rect x="6" y="36" width="16" height="14" rx="2" fill="#8fb8ff" stroke="#1a5cd7" stroke-width="2"/>
+                                                <rect x="24" y="36" width="16" height="14" rx="2" fill="#cfe1ff" stroke="#1a5cd7" stroke-width="2"/>
+                                                <circle cx="50" cy="43" r="8" fill="#1a5cd7"/>
+                                                <path d="M46 43 L49 46 L54 40" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <p class="t1">업무 프로세스</p>
+                                        <p class="t2">맞춤 개발</p>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="900" data-aos-delay="500" data-aos-offset="120">
+                                        <span class="num">03</span>
+                                        <div class="ico">
+                                            <svg viewBox="0 0 64 64" width="56" height="56" aria-hidden="true">
+                                                <path d="M14 6 H40 L52 18 V58 H14 Z" fill="#fff" stroke="#1a5cd7" stroke-width="2"/>
+                                                <path d="M40 6 V18 H52" fill="none" stroke="#1a5cd7" stroke-width="2"/>
+                                                <rect x="20" y="42" width="5" height="10" fill="#cfe1ff"/>
+                                                <rect x="28" y="36" width="5" height="16" fill="#8fb8ff"/>
+                                                <rect x="36" y="28" width="5" height="24" fill="#1a5cd7"/>
+                                            </svg>
+                                        </div>
+                                        <p class="t1">더존 커스텀</p>
+                                        <p class="t2">보고서·양식 제작</p>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="900" data-aos-delay="600" data-aos-offset="120">
+                                        <span class="num">04</span>
+                                        <div class="ico">
+                                            <svg viewBox="0 0 64 64" width="56" height="56" aria-hidden="true">
+                                                <rect x="2" y="14" width="24" height="18" rx="2" fill="#fff" stroke="#1a5cd7" stroke-width="2"/>
+                                                <rect x="6" y="18" width="16" height="10" fill="#cfe1ff"/>
+                                                <rect x="10" y="32" width="8" height="3" fill="#1a5cd7"/>
+                                                <rect x="38" y="14" width="24" height="18" rx="2" fill="#fff" stroke="#1a5cd7" stroke-width="2"/>
+                                                <rect x="42" y="18" width="16" height="10" fill="#8fb8ff"/>
+                                                <rect x="46" y="32" width="8" height="3" fill="#1a5cd7"/>
+                                                <path d="M28 23 L36 23" stroke="#1a5cd7" stroke-width="2"/>
+                                                <path d="M28 23 L31 20 M28 23 L31 26" stroke="#1a5cd7" stroke-width="2" fill="none"/>
+                                                <path d="M36 23 L33 20 M36 23 L33 26" stroke="#1a5cd7" stroke-width="2" fill="none"/>
+                                            </svg>
+                                        </div>
+                                        <p class="t1">타 시스템 연동</p>
+                                        <p class="t2">커스터마이징</p>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="900" data-aos-delay="700" data-aos-offset="120">
+                                        <span class="num">05</span>
+                                        <div class="ico">
+                                            <svg viewBox="0 0 64 64" width="56" height="56" aria-hidden="true">
+                                                <path d="M8 8 H28 V18 a4 4 0 0 0 8 0 V8 H56 V28 h-10 a4 4 0 0 1 0 8 H56 V56 H36 v-10 a4 4 0 0 0 -8 0 V56 H8 V36 h10 a4 4 0 0 0 0 -8 H8 Z" fill="#cfe1ff" stroke="#1a5cd7" stroke-width="2" stroke-linejoin="round"/>
+                                                <path d="M36 8 H56 V28 h-10 a4 4 0 0 1 0 8 H56 V56 H36 v-10 a4 4 0 0 0 -8 0 V56" fill="#1a5cd7" stroke="#1a5cd7" stroke-width="2" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <p class="t1">더존 추가 기능</p>
+                                        <p class="t2">개발</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="customizing-cta" data-aos="fade-up" data-aos-duration="900" data-aos-delay="850" data-aos-offset="120">
+                                <a href="/purchase/inquiry.asp" class="btn-primary">더존 커스터마이징 무료 상담 신청 <span aria-hidden="true">→</span></a>
+                            </div>
+                        </div>
+
+                        <style>
+                            .customizing-sec{padding:10rem 2rem; background:linear-gradient(180deg,#f4f7fc 0%, #ffffff 100%); text-align:center; position:relative; overflow:hidden;}
+                            .customizing-sec:before,.customizing-sec:after{content:""; position:absolute; border-radius:50%; opacity:.5; pointer-events:none;}
+                            .customizing-sec:before{width:600px; height:600px; right:-200px; top:-200px; background:radial-gradient(circle, rgba(26,92,215,.06) 0%, transparent 70%);}
+                            .customizing-sec:after{width:500px; height:500px; left:-150px; bottom:-150px; background:radial-gradient(circle, rgba(26,92,215,.05) 0%, transparent 70%);}
+                            .customizing-inner{max-width:130rem; margin:0 auto; position:relative; z-index:1;}
+                            .customizing-head .eyebrow{display:inline-flex; align-items:center; gap:1rem; color:#1a5cd7; font-weight:700; letter-spacing:.25em; font-size:1.4rem; margin-bottom:1.6rem;}
+                            .customizing-head .eyebrow .dot{width:6px; height:6px; border-radius:50%; background:#1a5cd7; display:inline-block;}
+                            .customizing-head h2{font-size:4rem; font-weight:800; color:#1a2540; line-height:1.25; margin:0 0 1.6rem;}
+                            .customizing-head h2 b{color:#1a5cd7; font-weight:800;}
+                            .customizing-head .lead{font-size:1.7rem; color:#5a6b85; line-height:1.6; margin:0 0 6rem;}
+
+                            .customizing-diagram{position:relative; padding:0 1rem 2rem;}
+                            .hub{display:flex; justify-content:center; margin-bottom:5rem; position:relative;}
+                            .hub-card{width:30rem; padding:3rem 2rem 2.4rem; background:#fff; border:2px solid #1a5cd7; border-radius:1.6rem; box-shadow:0 1.4rem 3rem rgba(26,92,215,.15); position:relative;}
+                            .hub-card .hub-icon{margin:0 auto 1.2rem; display:flex; justify-content:center;}
+                            .hub-card strong{display:block; font-size:1.9rem; font-weight:800; color:#1a2540;}
+
+                            .branch-cards{list-style:none; padding:0; margin:0; display:grid; grid-template-columns:repeat(5, 1fr); gap:2rem; position:relative;}
+                            .branch-cards:before{content:""; position:absolute; left:10%; right:10%; top:-3rem; height:2px; background:repeating-linear-gradient(90deg,#9fbef1 0 8px, transparent 8px 14px);}
+                            .branch-cards>li{position:relative; padding:5rem 1.6rem 2.6rem; background:#fff; border:1px solid #e1ebfa; border-radius:1.4rem; box-shadow:0 .6rem 1.6rem rgba(26,92,215,.06); transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;}
+                            .branch-cards>li:hover{transform:translateY(-6px); box-shadow:0 1.6rem 3rem rgba(26,92,215,.18); border-color:#1a5cd7;}
+                            .branch-cards>li:before{content:""; position:absolute; left:50%; top:-3rem; width:2px; height:3rem; background:#9fbef1; transform:translateX(-50%);}
+                            .branch-cards>li:after{content:""; position:absolute; left:50%; top:-3px; width:10px; height:10px; border-right:2px solid #1a5cd7; border-bottom:2px solid #1a5cd7; transform:translateX(-50%) rotate(45deg);}
+                            .branch-cards .num{position:absolute; top:1.6rem; left:50%; transform:translateX(-50%); font-size:1.3rem; font-weight:700; color:#1a5cd7; letter-spacing:.05em;}
+                            .branch-cards .ico{display:flex; justify-content:center; margin-bottom:1.4rem;}
+                            .branch-cards .t1{font-size:1.6rem; font-weight:700; color:#1a2540; margin:0; line-height:1.3;}
+                            .branch-cards .t2{font-size:1.6rem; font-weight:700; color:#1a2540; margin:.2rem 0 0; line-height:1.3;}
+
+                            .customizing-cta{margin-top:6rem;}
+                            .customizing-cta .btn-primary{display:inline-flex; align-items:center; gap:1rem; background:#1a5cd7; color:#fff; padding:1.8rem 4.2rem; border-radius:99rem; font-size:1.6rem; font-weight:700; text-decoration:none; box-shadow:0 1rem 2.4rem rgba(26,92,215,.3); transition:transform .2s ease, box-shadow .2s ease, background-color .2s ease;}
+                            .customizing-cta .btn-primary:hover{transform:translateY(-2px); background:#0e49b8; box-shadow:0 1.4rem 3rem rgba(26,92,215,.4);}
+
+                            @media (max-width: 1024px){
+                                .branch-cards{grid-template-columns:repeat(3, 1fr);}
+                                .branch-cards:before{display:none;}
+                                .branch-cards>li:before,.branch-cards>li:after{display:none;}
+                                .customizing-head h2{font-size:3rem;}
+                            }
+                            @media (max-width: 640px){
+                                .customizing-sec{padding:6rem 1.5rem;}
+                                .branch-cards{grid-template-columns:repeat(2, 1fr); gap:1.2rem;}
+                                .customizing-head h2{font-size:2.4rem;}
+                                .customizing-head .lead{font-size:1.4rem; margin-bottom:4rem;}
+                                .hub-card{width:24rem;}
+                            }
+                        </style>
+                    </section>
+
+
+                    <section id="" class="section sec3 section3">
+                        <a href="/product/amaranth10/brand.asp" style="display: block;" class="inConts">
+                            <div class="main__tit" data-aos="fade-up">
+                                <b>AMARANTH 10</b>
+                                <h2>
+                                    <span>대한민국 기업체 최적화된</span>
+                                    대표 ERP
+                                </h2>
+                                <p>
+                                    Amaranth 10은 ERP와 그룹웨어의 융합으로 이제 하나의 솔루션에서 <br />
+                                    모든 업무를 해결할 수 있는 'One-Stop' 서비스 경험을 제공합니다.
+                                </p>
+                            </div>
+                            <div class="img" data-aos="fade-up" data-aos-delay="100"><img src="/images/main/sec3__img01.png" alt="Amaranth 10 ERP 솔루션 이미지" loading="lazy" decoding="async"></div>
+                        </a>
+                    </section>
+
+
+                    <section id="" class="section sec2 section2">
+                        <a href="/product/wehago/smart_A10.asp" style="display: block;" class="inConts">
+                            <div class="main__tit" data-aos="fade-up" >
+                                <b>WEHAGO</b>
+                                <h2>
+                                    <span>기업에 필요한 다양한 업무환경을</span>
+                                    제공하는 비즈니스 플랫폼
+                                </h2>
+                                <p>
+                                    WEHAGO(위하고)는 회사 경영에 필수적인 경영관리부터 원활한 협업을 위한 <br />
+                                    서비스와 부가서비스까지 한 곳에서 사용할 수 있는 비즈니스 플랫폼입니다.
+                                </p>
+                            </div>
+                            <div class="img" data-aos="fade-up" data-aos-delay="100"><img src="/images/main/sec2__img01.png" alt="WEHAGO 비즈니스 플랫폼 이미지" loading="lazy" decoding="async"></div>
+                        </a>
+                    </section>
+
+                    <section id="" class="section sec4 section4 ">
+                        <div class="inConts">
+                            <div class="left">
+                                <div class="main__tit" data-aos="fade-up" >
+                                    <b>NATIONAL SUBSIDES</b>
+                                    <h2>
+                                        정부 지원사업
+                                    </h2>
+                                    <p>
+                                        기업의 인재육성과 기술우위 확보를 위한 지원으로 기업 성장을 돕고 <br />
+                                        서비스 품질을 고도화 함으로써 함께 성장하는 디지털 미래 개척에 기여합니다.
+                                    </p>
+                                </div>
+                                <a href="javascript:void(0);" class="box box1" data-aos="fade-up" data-aos-delay="200">
+                                    <b>Non-face-to-face</b>
+                                    <strong>정부지원</strong>
+                                    <p>
+                                        아이원소프트뱅크㈜의 <br />
+                                        정부지원사업
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="right" data-aos="fade-up" data-aos-delay="200">
+                                <div class="contWrap">
+                                    <a href="/government/notice.asp" class="box box3">
+                                        <b>UBSIDES</b>
+                                        <strong>공지사항</strong>
+                                        <p>
+                                            아이원소프트뱅크㈜의 <br />
+                                            공지사항입니다.
+                                        </p>
+                                    </a>
+                                    <a href="javascript:void(0);" class="box box4">
+                                        <b>Other support</b>
+                                        <strong>
+                                            기타 지원사업
+                                        </strong>
+                                        <p>
+                                            솔루션 연동 자동화 장비, <br />
+                                            제어기, 센서 구입 지원
+                                        </p>
+                                    </a>
+                                    <div class="logo">
+                                        <img src="/images/logo_company_2026.bak2.png" alt="아이원소프트뱅크 로고" style="width: 41.5rem; height: auto; image-rendering: -webkit-optimize-contrast;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="" class="section sec5 section5">
+                        <div class="inConts">
+                            <div class="main__tit" data-aos="fade-up" >
+                                <b>DOUZONE</b>
+                                <h2>
+                                    아이원소프트뱅크는
+                                </h2>
+                                <p>
+                                    클라우드, 모바일, 전자금융, 전자 문서 등 최첨단 기술을 통해 기업이 나아갈 바를 <br />
+                                    정확히 알고 축적된 노하우와 경험으로 기업의 탄생과 성장에 기여하고 있습니다.
+                                </p>
+                                <a href="/company/about.asp" class="main__btn">VIEW MORE <img src="/images/main/main_arr.png" alt="바로가기" loading="lazy" decoding="async"></a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="" class="section sec6 section6">
+                        <div class="inConts" data-aos="fade-up" data-aos-delay="100">
+                            <div class="main__tit">
+                                <b>Customer center</b>
+                                <h2>
+                                    고객센터
+                                </h2>
+                                <p>
+                                    비즈니스 성장의 시작은 지금부터! <br />
+                                    성장을 넘어 성공의 발걸음으로
+                                </p>
+                                <ul class="map_tabs">
+                                    <li class="tab-link current mg" data-tab="tab-1"><p><span>01</span>공지사항</p><p><img src="/images/main/main_arr.png" alt="공지사항 바로가기" loading="lazy" decoding="async"></p></li>
+                                    <li class="tab-link mg" data-tab="tab-2"><p><span>02</span>Amaranth 10</p><p><img src="/images/main/main_arr.png" alt="Amaranth 10 바로가기" loading="lazy" decoding="async"></p></li>
+
+                                    <li class="tab-link mg" data-tab="tab-4"><p><span>03</span>Bizbox Alpha</p><p><img src="/images/main/main_arr.png" alt="Bizbox Alpha 바로가기" loading="lazy" decoding="async"></p></li>
+									<li class="tab-link mg" data-tab="tab-3"><p><span>04</span>iCUBE / iCUBE G20</p><p><img src="/images/main/main_arr.png" alt="iCUBE 바로가기" loading="lazy" decoding="async"></p></li>
+                                </ul>
+                            </div>
+
+                            <div id="tab-1" class="tab-content current tab1">
+                                <div class="sec6__slide">
+                                    <div class="swiper-container">
+                                        <!-- Additional required wrapper -->
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+	<a href='/customer/notice.asp?mode=view&serboardsort=2&idx=5502' class="box">
+		<div class="slide__img"><img src="https://gw.duzon119.co.kr/ecm/oneffice/one006A02?seq=1ed928f1-5489-4a88-b245-47621870acef.png" alt="[Bizbox Alpha] 보안 취약점 업데이트 권고 안내 (V1.2.262_7)" loading="lazy" decoding="async" /></div>
+		<div class="slide__txt">
+			<b>NEW</b>
+			<p>[Bizbox Alpha] 보안 취약점 업데이트 권고 안내 (V1.2.262_7)</p>
+			<strong>2026-08-24</strong>
+		</div>
+	</a>
+</div>
+<div class="swiper-slide">
+	<a href='/customer/notice.asp?mode=view&serboardsort=1&idx=4519' class="box">
+		<div class="slide__img"><img src="/upload/ckeditor5/312884535%5F1777570333%2Epng" alt="[Amaranth10 Cloud] 더존(스팸장비) 메일 스팸 차단으로 인한 수신 불가 관련 안내 + 수정" loading="lazy" decoding="async" /></div>
+		<div class="slide__txt">
+			<b>NEW</b>
+			<p>[Amaranth10 Cloud] 더존(스팸장비) 메일 스팸 차단으로 인한 수신 불가 관련 안내 + 수정</p>
+			<strong>2026-04-30</strong>
+		</div>
+	</a>
+</div>
+<div class="swiper-slide">
+	<a href='/customer/notice.asp?mode=view&serboardsort=1&idx=4226' class="box">
+		<div class="slide__img"><img src="/upload/ckeditor5/559814621%5F1774543058%2Epng" alt="[Amaranth10] 더존(스팸장비) 사칭 피싱 메일 주의 안내" loading="lazy" decoding="async" /></div>
+		<div class="slide__txt">
+			<b>NEW</b>
+			<p>[Amaranth10] 더존(스팸장비) 사칭 피싱 메일 주의 안내</p>
+			<strong>2026-03-26</strong>
+		</div>
+	</a>
+</div>
+<div class="swiper-slide">
+	<a href='/customer/notice.asp?mode=view&serboardsort=1&idx=3998' class="box">
+		<div class="slide__img"><img src="https://www.duzon119.co.kr/upload/ckeditor5/192461452%5F1741861069.png" alt="[장애조치안내][Amaranth10 Cloud] Amaranth10 Cloud ERP 메뉴 오류 발생 해결의 건" loading="lazy" decoding="async" /></div>
+		<div class="slide__txt">
+			<b>NEW</b>
+			<p>[장애조치안내][Amaranth10 Cloud] Amaranth10 Cloud ERP 메뉴 오류 발생 해결의 건</p>
+			<strong>2026-02-25</strong>
+		</div>
+	</a>
+</div>
+<div class="swiper-slide">
+	<a href='/customer/notice.asp?mode=view&serboardsort=1&idx=3150' class="box">
+		<div class="slide__img"><img src="/upload/ckeditor5/1003331268%5F1765807414%2Epng" alt="[Amaranth10 / Amaranth10 Cloud] React 서버 컴포넌트 관련 보안 취약점(React2Shell) 이슈 안내" loading="lazy" decoding="async" /></div>
+		<div class="slide__txt">
+			<b>NEW</b>
+			<p>[Amaranth10 / Amaranth10 Cloud] React 서버 컴포넌트 관련 보안 취약점(React2Shell) 이슈 안내</p>
+			<strong>2025-12-15</strong>
+		</div>
+	</a>
+</div>
+<div class="swiper-slide">
+	<a href='/customer/notice.asp?mode=view&serboardsort=2&idx=3149' class="box">
+		<div class="slide__img"><img src="/upload/ckeditor5/1003331268%5F1765804075%2Epng" alt="[Bizbox Alpha / Bizbox Alpha Cloud] React 서버 컴포넌트 관련 보안 취약점(React2Shell) 이슈 안내" loading="lazy" decoding="async" /></div>
+		<div class="slide__txt">
+			<b>NEW</b>
+			<p>[Bizbox Alpha / Bizbox Alpha Cloud] React 서버 컴포넌트 관련 보안 취약점(React2Shell) 이슈 안내</p>
+			<strong>2025-12-15</strong>
+		</div>
+	</a>
+</div>
+<div class="swiper-slide">
+	<a href='/customer/notice.asp?mode=view&serboardsort=2&idx=3100' class="box">
+		<div class="slide__img"><img src="/upload/ckeditor5/883047556%5F1765291205%2Epng" alt="[Bizbox Alpha/Bizbox Alpha Cloud] (비영리) 전자결재 프로그램 설치 팝업 관련 안내" loading="lazy" decoding="async" /></div>
+		<div class="slide__txt">
+			<b>NEW</b>
+			<p>[Bizbox Alpha/Bizbox Alpha Cloud] (비영리) 전자결재 프로그램 설치 팝업 관련 안내</p>
+			<strong>2025-12-09</strong>
+		</div>
+	</a>
+</div>
+<div class="swiper-slide">
+	<a href='/customer/notice.asp?mode=view&serboardsort=2&idx=3013' class="box">
+		<div class="slide__img"><img src="/upload/ckeditor5/1070259692%5F1764348476%2Epng" alt="[Bizbox Alpha] v1.2.245 재배포 안내의 건" loading="lazy" decoding="async" /></div>
+		<div class="slide__txt">
+			<b>NEW</b>
+			<p>[Bizbox Alpha] v1.2.245 재배포 안내의 건</p>
+			<strong>2025-11-28</strong>
+		</div>
+	</a>
+</div>
+<div class="swiper-slide">
+	<a href='/customer/notice.asp?mode=view&serboardsort=1&idx=2820' class="box">
+		<div class="slide__img"><img src="/upload/ckeditor5/529288729%5F1762523149%2Epng" alt="[Amaranth10] PC메신저 베타버전 정식 서비스 전환 및 기존 버전 기술지원 종료 안내" loading="lazy" decoding="async" /></div>
+		<div class="slide__txt">
+			<b>NEW</b>
+			<p>[Amaranth10] PC메신저 베타버전 정식 서비스 전환 및 기존 버전 기술지원 종료 안내</p>
+			<strong>2025-11-07</strong>
+		</div>
+	</a>
+</div>
+<div class="swiper-slide">
+	<a href='/customer/notice.asp?mode=view&serboardsort=1&idx=2814' class="box">
+		<div class="slide__img"><img src="/upload/ckeditor5/529288729%5F1762513197%2Epng" alt="[Amaranth10][메일] '사용자 인증 제한' 신규 기능 개선 배포 안내" loading="lazy" decoding="async" /></div>
+		<div class="slide__txt">
+			<b>NEW</b>
+			<p>[Amaranth10][메일] '사용자 인증 제한' 신규 기능 개선 배포 안내</p>
+			<strong>2025-11-01</strong>
+		</div>
+	</a>
+</div>
+
+                                        </div>
+                                        <div class="swiper-scrollbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-2" class="tab-content tab2">
+                                <div class="sec6__slide">
+                                    <div class="swiper-container">
+                                        <!-- Additional required wrapper -->
+                                        <div class="swiper-wrapper">
+											<div class="swiper-slide">
+	<a href='/amaranth10/pds.asp?mode=view&serboardsort=&idx=868' class="box">
+		<div class="slide__img"><img src="/upload/ckeditor5/456950340%5F1732540112%2Epng" alt="[Amaranth10] 인사 담당자를 위한 교대근무 활용 프로세스 &amp; TIP" loading="lazy" decoding="async" /></div>
+		<div class="slide__txt">
+			<b>NEW</b>
+			<p>[Amaranth10] 인사 담당자를 위한 교대근무 활용 프로세스 &amp; TIP</p>
+			<strong>2024-11-25</strong>
+		</div>
+	</a>
+</div>
+<div class="swiper-slide">
+	<a href='/amaranth10/pds.asp?mode=view&serboardsort=&idx=867' class="box">
+		<div class="slide__img"><img src="/upload/ckeditor5/456950340%5F1732540018%2Epng" alt="[Amaranth10] 인사 담당자를 위한 유연근무 관리 활용 프로세스 &amp; TIP" loading="lazy" decoding="async" /></div>
+		<div class="slide__txt">
+			<b>NEW</b>
+			<p>[Amaranth10] 인사 담당자를 위한 유연근무 관리 활용 프로세스 &amp; TIP</p>
+			<strong>2024-11-25</strong>
+		</div>
+	</a>
+</div>
+<div class="swiper-slide">
+	<a href='/amaranth10/pds.asp?mode=view&serboardsort=&idx=866' class="box">
+		<div class="slide__img"><img src="/upload/ckeditor5/456950340%5F1732536079%2Epng" alt="[Amaranth10] ERP 담당자를 위한 ONE AI 데이터 분석 활용 프로세스 &amp; TIP" loading="lazy" decoding="async" /></div>
+		<div class="slide__txt">
+			<b>NEW</b>
+			<p>[Amaranth10] ERP 담당자를 위한 ONE AI 데이터 분석 활용 프로세스 &amp; TIP</p>
+			<strong>2024-11-25</strong>
+		</div>
+	</a>
+</div>
+<div class="swiper-slide">
+	<a href='/amaranth10/pds.asp?mode=view&serboardsort=&idx=476' class="box">
+		<div class="slide__img"><img src="/upload/ckeditor5/408771478%5F1723122766%2Epng" alt="[Amaranth10] 인사 담당자를 위한 급여관리 활용 프로세스 &amp; TIP" loading="lazy" decoding="async" /></div>
+		<div class="slide__txt">
+			<b>NEW</b>
+			<p>[Amaranth10] 인사 담당자를 위한 급여관리 활용 프로세스 &amp; TIP</p>
+			<strong>2024-08-08</strong>
+		</div>
+	</a>
+</div>
+<div class="swiper-slide">
+	<a href='/amaranth10/pds.asp?mode=view&serboardsort=&idx=143' class="box">
+		<div class="slide__img"><img src="/upload/ckeditor5/889420256%5F1721229113%2Epng" alt="[Amaranth10] 회계 담당자를 위한 회계기초정보관리 활용 프로세스 &amp; TIP" loading="lazy" decoding="async" /></div>
+		<div class="slide__txt">
+			<b>NEW</b>
+			<p>[Amaranth10] 회계 담당자를 위한 회계기초정보관리 활용 프로세스 &amp; TIP</p>
+			<strong>2024-07-17</strong>
+		</div>
+	</a>
+</div>
+<div class="swiper-slide">
+	<a href='/amaranth10/pds.asp?mode=view&serboardsort=&idx=142' class="box">
+		<div class="slide__img"><img src="/upload/ckeditor5/889420256%5F1721229029%2Epng" alt="[Amaranth10] 인사 담당자를 위한 연말정산 관리 활용 프로세스 &amp; TIP" loading="lazy" decoding="async" /></div>
+		<div class="slide__txt">
+			<b>NEW</b>
+			<p>[Amaranth10] 인사 담당자를 위한 연말정산 관리 활용 프로세스 &amp; TIP</p>
+			<strong>2024-07-17</strong>
+		</div>
+	</a>
+</div>
+<div class="swiper-slide">
+	<a href='/amaranth10/pds.asp?mode=view&serboardsort=&idx=141' class="box">
+		<div class="slide__img"><img src="/upload/ckeditor5/889420256%5F1721228819%2Epng" alt="[Amaranth10] 인사 담당자를 위한 퇴사자 처리 및 관리 활용 프로세스 &amp; TIP" loading="lazy" decoding="async" /></div>
+		<div class="slide__txt">
+			<b>NEW</b>
+			<p>[Amaranth10] 인사 담당자를 위한 퇴사자 처리 및 관리 활용 프로세스 &amp; TIP</p>
+			<strong>2024-07-17</strong>
+		</div>
+	</a>
+</div>
+<div class="swiper-slide">
+	<a href='/amaranth10/pds.asp?mode=view&serboardsort=&idx=140' class="box">
+		<div class="slide__img"><img src="/upload/ckeditor5/889420256%5F1721228671%2Epng" alt="[Amaranth10] 인사 담당자를 위한 신규 입사자 관리 활용 프로세스 &amp; TIP" loading="lazy" decoding="async" /></div>
+		<div class="slide__txt">
+			<b>NEW</b>
+			<p>[Amaranth10] 인사 담당자를 위한 신규 입사자 관리 활용 프로세스 &amp; TIP</p>
+			<strong>2024-07-17</strong>
+		</div>
+	</a>
+</div>
+<div class="swiper-slide">
+	<a href='/amaranth10/pds.asp?mode=view&serboardsort=&idx=139' class="box">
+		<div class="slide__img"><img src="/upload/ckeditor5/889420256%5F1721228506%2Epng" alt="[Amaranth10] 시스템 관리자를 위한 시스템 설정 활용 프로세스 &amp; TIP" loading="lazy" decoding="async" /></div>
+		<div class="slide__txt">
+			<b>NEW</b>
+			<p>[Amaranth10] 시스템 관리자를 위한 시스템 설정 활용 프로세스 &amp; TIP</p>
+			<strong>2024-07-17</strong>
+		</div>
+	</a>
+</div>
+<div class="swiper-slide">
+	<a href='/amaranth10/pds.asp?mode=view&serboardsort=&idx=136' class="box">
+		<div class="slide__img"><img src="/upload/ckeditor5/889419187%5F1721216892%2Epng" alt="[Amaranth10] ERP 관리자를 위한 ERP 관리자 모듈 환경설정 관리 활용 TIP" loading="lazy" decoding="async" /></div>
+		<div class="slide__txt">
+			<b>NEW</b>
+			<p>[Amaranth10] ERP 관리자를 위한 ERP 관리자 모듈 환경설정 관리 활용 TIP</p>
+			<strong>2024-07-17</strong>
+		</div>
+	</a>
+</div>
+
+                                        </div>
+                                        <div class="swiper-scrollbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-3" class="tab-content tab3">
+                                <div class="sec6__slide">
+                                    <div class="swiper-container">
+                                        <!-- Additional required wrapper -->
+                                        <div class="swiper-wrapper">
+											<div class="swiper-slide">
+	<a href='/icube/pds.asp?mode=view&serboardsort=&idx=79' class="box">
+		<div class="slide__img"><img src="/upload/ckeditor5/889419187%5F1721212327%2Epng" alt="iCUBE 재설치 바로가기" loading="lazy" decoding="async" /></div>
+		<div class="slide__txt">
+			<b>NEW</b>
+			<p>iCUBE 재설치 바로가기</p>
+			<strong>2024-07-01</strong>
+		</div>
+	</a>
+</div>
+<div class="swiper-slide">
+	<a href='/icube/pds.asp?mode=view&serboardsort=&idx=78' class="box">
+		<div class="slide__img"><img src="/upload/ckeditor5/889419187%5F1721212313%2Epng" alt="iCUBE G20 재설치 바로가기" loading="lazy" decoding="async" /></div>
+		<div class="slide__txt">
+			<b>NEW</b>
+			<p>iCUBE G20 재설치 바로가기</p>
+			<strong>2024-07-01</strong>
+		</div>
+	</a>
+</div>
+
+                                        </div>
+                                        <div class="swiper-scrollbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-4" class="tab-content tab4">
+                                <div class="sec6__slide">
+                                    <div class="swiper-container">
+                                        <!-- Additional required wrapper -->
+                                        <div class="swiper-wrapper">
+											<div class="swiper-slide">
+	<a href='/bizbox/pds.asp?mode=view&serboardsort=&idx=93' class="box">
+		<div class="slide__img"><img src="/upload/ckeditor5/889419187%5F1721212364%2Epng" alt="[Bizbox Alpha] 메신저 설치 가이드" loading="lazy" decoding="async" /></div>
+		<div class="slide__txt">
+			<b>NEW</b>
+			<p>[Bizbox Alpha] 메신저 설치 가이드</p>
+			<strong>2024-07-07</strong>
+		</div>
+	</a>
+</div>
+
+                                        </div>
+                                        <div class="swiper-scrollbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="" class="section sec7 section7 fp-auto-height fp-auto-height-responsive" style="">
+                        <div class="inConts flex" data-aos="fade-up" >
+                            <div class="main__tit">
+                                <b>Client story</b>
+                                <h2>
+                                    고객스토리
+                                </h2>
+                                <p>
+                                    아이원의 대표 구축 및 교육 고객사입니다.
+                                </p>
+                            </div>
+                            <div class="sec7__slide">
+                                <div class="swiper-container" >
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+										<div class="swiper-slide">
+	<div class="sec7__img">
+		<a  target="_blank"><img src="/upload/partner/01.jpg" alt="아이원 소프트 뱅크" loading="lazy" decoding="async"></a>
+	</div>
+</div>
+<div class="swiper-slide">
+	<div class="sec7__img">
+		<a  target="_blank"><img src="/upload/partner/청와대_수정.png" alt="청와대" loading="lazy" decoding="async"></a>
+	</div>
+</div>
+<div class="swiper-slide">
+	<div class="sec7__img">
+		<a  target="_blank"><img src="/upload/partner/스타쉽_수정.png" alt="스타쉽엔터테인먼트" loading="lazy" decoding="async"></a>
+	</div>
+</div>
+<div class="swiper-slide">
+	<div class="sec7__img">
+		<a  target="_blank"><img src="/upload/partner/오늘의_집_수정.png" alt="오늘의 집" loading="lazy" decoding="async"></a>
+	</div>
+</div>
+<div class="swiper-slide">
+	<div class="sec7__img">
+		<a  target="_blank"><img src="/upload/partner/파파존스_수정.png" alt="파파존스" loading="lazy" decoding="async"></a>
+	</div>
+</div>
+<div class="swiper-slide">
+	<div class="sec7__img">
+		<a  target="_blank"><img src="/upload/partner/레인보우_로보틱스_수정.png" alt="레인보우로보틱스" loading="lazy" decoding="async"></a>
+	</div>
+</div>
+<div class="swiper-slide">
+	<div class="sec7__img">
+		<a  target="_blank"><img src="/upload/partner/고대_세종캠_수정0.png" alt="고려대학교 세종캠퍼스" loading="lazy" decoding="async"></a>
+	</div>
+</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <div id="footer">
+	<div class="inConts">
+		<div class="top">
+			<ul>
+				<li><a href="/company/privacy.asp">개인정보취급방침 </a></li>
+				<li><a href="/company/clause.asp">이용약관</a></li>
+				<li><a href="/company/location.asp">오시는 길</a></li>
+				<!-- <li><a href="#">이메일 집단수신거부</a></li> -->
+			</ul>
+		</div>
+
+		<div class="bottom">
+
+			<div class="ft__01">
+				<strong><img src="/images/logo_2026_on.png" alt="아이원소프트뱅크 - 더존 ERP 공식 파트너" style="width: 20rem;" loading="lazy" decoding="async"></strong>
+				<address>COPYRIGHT &copy; 2024 DOUZONE BIZON.<br />All rights reserved.</address>
+			</div>
+
+			<div class="ft__05 text">
+				<p><span>아이원소프트뱅크㈜</span>    <span>대표 : 황명희</span>    <span>사업자등록번호 : 113-86-70956</span>    <span>통신판매신고번호 : 2017-서울구로-0617</span></p>
+				<p><span>주소 : 서울특별시 구로구 디지털로 285 에이스트윈타워 1차 405호 </span></p>
+				<!-- <p><span>더존강촌캠퍼스 : 강원도 춘천시 남산면 수동리 749 ( 도로명 : 춘천시 남산면 버들1길 130)</span></p> -->
+				<p><span>구매상담문의 : 1877-0256</span>    <span>고객센터 : 1877-1859</span>    <span>iCUBE / G20 : 1877-0840</span>    <span>블루멤버십 : 1600-4208</span></p>
+                <p><span>테스트 계정 신청 : 070-4497-3388</span></p>
+			</div>
+			<!-- <div class="ft__03">
+				<ul>
+					<li>
+						<b>대표자</b>
+						<p>황명희</p>
+					</li>
+					<li>
+						<b>사업자등록번호</b>
+						<p>113-86-70956</p>
+					</li>
+					<li>
+						<b>대표전화</b>
+						<p>1600-4208</p>
+					</li>
+					<li>
+						<b>팩    스</b>
+						<p>02-3432-4623</p>
+					</li>
+				</ul>
+			</div> -->
+			<div class="ft__04">
+				<div class="link">
+					<a href="https://cafe.naver.com/ionesoftbank" target="_blank" rel="noopener noreferrer"><img src="/images/main/cafe.png" alt="아이원소프트뱅크 네이버 카페" loading="lazy" decoding="async"></a>
+					<a href="https://blog.naver.com/zhogksgjqm" target="_blank" rel="noopener noreferrer"><img src="/images/main/blog.png" alt="아이원소프트뱅크 네이버 블로그" loading="lazy" decoding="async"></a>
+					<a href="https://www.instagram.com/ione130501?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank" rel="noopener noreferrer"><img src="/images/main/insta.png" alt="아이원소프트뱅크 인스타그램" loading="lazy" decoding="async"></a>
+					<a href="http://pf.kakao.com/_xnFVzK" target="_blank" rel="noopener noreferrer"><img src="/images/main/Kakao.png" alt="아이원소프트뱅크 카카오톡 채널" loading="lazy" decoding="async"></a>
+					<a href="https://youtube.com/@IONEsoftBK_official?si=r5_CIRHiMzhLeADq" target="_blank" rel="noopener noreferrer"><img src="/images/icon_social_youtobe_c.png" alt="아이원소프트뱅크 유튜브" loading="lazy" decoding="async"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	AOS.init({
+		once: true,
+		//delay: 0,
+		duration: 700,
+		easing: 'ease-out'
+	});
+
+	$.ripple(".board_btn .click, .btn-ripple", {
+		opacity: 0.4,
+		color: "auto",
+		multi: false,
+		duration: 0.7,
+		rate: function(pxPerSecond) {
+		return pxPerSecond; // animation speed
+	},
+		easing: 'linear'
+	});
+</script>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
+
+<script type="text/javascript">
+var mVisual, boardSwiper, ckSwiper;
+$(function () {
+	mVisual = new Swiper('#mainVisual', {
+		watchOverflow: true,
+		spaceBetween: 0,
+		slidesPerView: 1,
+		direction: 'horizontal',
+		loop: true,
+		speed: 1500,
+		allowTouchMove: true,
+		autoplay: {
+			delay: 6000,
+		},
+		pagination: {
+			el: '#mainVisual .swiper-pagination',
+			clickable: true,
+		},
+		// Navigation arrows
+		navigation: {
+			nextEl: '#mainVisual .swiper-button-next',
+			prevEl: '#mainVisual .swiper-button-prev',
+		},
+		on: {
+			init: function () {
+				//console.log(mVisual_total, this.realIndex, this.activeIndex)
+				//$("#mainVisual .swiper-number .n").html(this.activeIndex)
+				//$("#mainVisual .swiper-number .t").html(mVisual_total)
+			},
+			slideChange: function () {
+				//$("#mainVisual .swiper-number .n").html(this.activeIndex)
+			},
+		}
+	});
+
+	$(".m-tab>a").click(function () {
+		var idx = $(".m-tab>a").index($(this));
+		$(".m-tab>a").each(function (index) {
+			if (idx == index) {
+				$(this).addClass("active");
+				$(".main-board").eq(index).show()
+				$(".main-board").eq(index).addClass("swiper_" + index);
+
+				if (boardSwiper != undefined) {
+					boardSwiper.destroy();
+					boardSwiper = undefined;
+				}
+
+				boardSwiper = new Swiper(`.main-board.swiper_${index} .main-board-swiper`, { //mobile
+					watchOverflow: true, // 슬라이드가 1개 일 때 pager, button 숨김 여부 설정
+					slidesPerView: "auto",
+					spaceBetween: 39,
+					//slidesOffsetBefore: -10,
+					//slidesOffsetafter: -10,
+					direction: 'horizontal',
+					loop: true,
+					speed: 1000,
+					allowTouchMove: true,
+					navigation: {
+						nextEl: `.main-board.swiper_${index} .swiper-button-next`,
+						prevEl: `.main-board.swiper_${index} .swiper-button-prev`,
+					},
+					pagination: {
+						el: `.main-board.swiper_${index} .swiper-pagination`,
+						type: 'progressbar',
+					},
+					observer: true,
+					observeParents: true,
+					loopAdditionalSlides: 4
+				});
+			} else {
+				$(this).removeClass("active");
+				$(".main-board").eq(index).hide()
+			}
+		});
+	}).filter(":first").click();
+});
+</script>
+
+<script>
+$(document).ready(function () {
+	$('ul.map_tabs li').click(function () {
+		var tab_id = $(this).attr('data-tab');
+		$('ul.map_tabs li').removeClass('current');
+		$('.tab-content').removeClass('current');
+		$(this).addClass('current');
+		$("#" + tab_id).addClass('current');
+	});
+
+	// var bulletTit = ['오지', '크런처스', '필', '미미'];
+	var sec6Slide1 = new Swiper('.sec6 .swiper-container ', {
+		direction: 'horizontal',
+		// loop: true,
+		speed: 1200,
+		spaceBetween: 20,
+		slidesPerView: 1,
+		centeredSlides: true,
+		allowTouchMove: true,
+		observer: true,
+		observeParents: true,
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+		scrollbar: {
+			el: '.sec6 .swiper-scrollbar',
+			draggable: true,
+		},
+		navigation: {
+			nextEl: '.sec6 .swiper-button-next',
+			prevEl: '.sec6 .swiper-button-prev',
+		},
+		breakpoints: {
+            600: {
+				allowTouchMove: true,
+				spaceBetween: 15,
+				slidesPerView: 2,
+				centeredSlides: false,
+			},
+			1025: {
+				allowTouchMove: true,
+				spaceBetween: 20,
+				slidesPerView: 1.5,
+				centeredSlides: false,
+			},
+			1400: {
+				spaceBetween: 15,
+				slidesPerView: 3,
+				centeredSlides: false,
+				allowTouchMove: true,
+			},
+		},
+
+
+		// pagination: {
+		//     el: '.sec6 .swiper-pagination',
+		//     clickable: true,
+		//     renderBullet: function (index, className) {
+		//         return '<div class="' + className + '"><b>' + (bulletTit[index]) + '</b></div>';
+		//     }
+		// },
+	});
+
+	var sec7Slide1 = new Swiper('.sec7__slide .swiper-container ', {
+		direction: 'horizontal',
+		loop: true,
+		loopAdditionalSlides: 1,
+		speed: 1500,
+		spaceBetween: 15,
+		slidesPerView: 2.5,
+		// allowTouchMove: false,
+		autoplay: {
+			delay: 0,
+			disableOnInteraction: false,
+		},
+
+		breakpoints: {
+			640: {
+				direction: 'horizontal',
+				loop: true,
+				loopAdditionalSlides: 1,
+                spaceBetween: 30,
+				speed: 3000,
+				slidesPerView: 5,
+				// allowTouchMove: false,
+				autoplay: {
+					delay: 0,
+					disableOnInteraction: false,
+				},
+			},
+			1200: {
+				// allowTouchMove: false,
+				direction: 'horizontal',
+				loop: true,
+				loopAdditionalSlides: 1,
+				speed: 3000,
+				spaceBetween: 40,
+				slidesPerView: 6,
+				autoplay: {
+					delay: 0,
+					disableOnInteraction: false,
+				},
+			},
+		},
+	});
+
+	$('#fullpage').fullpage({
+		licenseKey: '8B7B0C73-C4FC4C00-96509ADF-313CB97A',
+		anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7', 'section8', 'section9', 'section10', 'sectionft'],
+		//menu: '#pc_menu',
+		autoScrolling: true,
+		responsiveWidth: 1025,
+		responsiveHeight: 870,
+		scrollingSpeed: 600,
+		scrollOverflow: false,
+		css3: true,
+		lazyLoad: true,
+		onLeave: function (origin, destination, direction) {
+			if (window.matchMedia("(min-width: 1025px)").matches) {
+				if (origin.index == 0) {
+					$("#header").addClass("scrolled");
+					$("#hd").addClass("on");
+				}
+				if (destination.index == 0) {
+					$("#header").removeClass("scrolled");
+					$("#hd").removeClass("on");
+				}
+
+				if (origin.index == 6) {
+					sec7Slide1.autoplay.start()
+				}
+			}
+
+			// 리본배너: 첫 섹션(index 0)에서만 노출 — 스크롤 내리면 숨김 (고정 오버레이라 fullPage 레이아웃엔 영향 없음)
+			if (destination.index === 0
+					&& getCookie("ribbon-banner") != "done"
+					&& $("#ribbon-banner .ribbon-roll .slider").length > 0){
+				$("#ribbon-banner").removeClass("disNone");
+			} else {
+				$("#ribbon-banner").addClass("disNone");
+			}
+		},
+		afterLoad: function(origin, destination, direction) {
+			if (window.matchMedia("(min-width: 1025px)").matches) {
+				if (destination.index == 0) {
+					$("#header").removeClass("scrolled");
+				} else if (destination.index !== 0) {
+
+				}
+			}
+			$('.fp-table.active .aos-init').addClass('aos-animate');
+		}
+	});
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+	$(function(){
+		if(getCookie("ribbon-banner")!="done"){
+			if ($("#ribbon-banner .ribbon-roll .slider").length > 0)	{
+				$("#ribbon-banner").removeClass("disNone");   // 첫 화면에서 노출 (고정 오버레이 — fullPage 레이아웃에 영향 없음)
+			}
+		}
+		/*
+		$(document).on("click","#ribbonClose",function(){
+			$("#ribbon-banner").addClass("disNone")
+		});
+		*/
+
+		$("body").on("click", "#ribbonToDayClose", function(){
+			closetoLayer('ribbon-banner')
+			$("#ribbon-banner").addClass("disNone").slideUp(300);
+			$("#fullpage").removeClass("ribbon");
+		});
+
+		var rePop = $(".ribbon-roll .slider").length;// 로그인쪽 위 베너
+		if(rePop > 1){
+			$(".ribbon-roll").addClass("roll");
+			$(".ribbon-roll").slick({
+				speed: 300,
+				// autoplay: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: false,
+				dots: true,
+				adaptiveHeight: true,
+				centerMode: true,
+				centerPadding: '0'
+			});
+		}else{
+			$(".ribbon-roll").addClass("open");
+		}
+
+		$(window).on('scroll', function(){// Scroll Event
+			scroll_T = window.scrollY;
+			if(!$("#ribbon-banner").hasClass("disNone")){
+				//console.log($("#ribbon-banner").height())
+				if(scroll_T >= $("#ribbon-banner").height()){
+					$("#header").addClass("fixed")
+				}else{
+					$("#header").removeClass("fixed")
+				}
+			}
+		}).scroll();
+
+		$(window).on('throttledresize', function(){
+			window_W = $(window).width();
+
+			//console.log(window_W, scroll_T, $("#ribbon-banner").height())
+			if(window_W > "1024"){
+				if(!$("#ribbon-banner").hasClass("disNone")){
+					//console.log($("#ribbon-banner").height())
+					if(scroll_T >= $("#ribbon-banner").height()){
+						$("#header").addClass("fixed")
+					}else{
+						$("#header").removeClass("fixed")
+					}
+				}
+			}
+		}).resize();
+	});
+</script>
