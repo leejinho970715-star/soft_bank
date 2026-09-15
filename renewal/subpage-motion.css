@@ -1,4 +1,12 @@
 /* Independent translate keeps the float separate from GSAP entrance transforms. */
+.sb-product-entry{height:120vh;height:120svh;position:relative}
+.sb-product-entry-stage{position:fixed;inset:0;z-index:90;display:grid;place-items:center;overflow:hidden;background:#f4f9ff;pointer-events:none;will-change:opacity}
+.sb-product-entry-stage[hidden],.sb-product-entry-skip[hidden]{display:none}
+.sb-product-entry-stage>img{width:min(48vw,520px);height:min(58vh,520px);object-fit:contain;will-change:transform;transform-origin:center;max-width:none}
+.sb-product-entering #soft-bank-renewal .site-header,.sb-product-entering #soft-bank-renewal :is(.quick-left,.quick-fab,.chat-launch){visibility:hidden}
+.sb-product-entry-skip{position:fixed;top:16px;left:16px;z-index:100;padding:12px 20px;border:0;border-radius:8px;background:#315cce;color:white;transform:translateY(-180%)}
+.sb-product-entry-skip:focus-visible{transform:none}
+@media(max-width:760px){.sb-product-entry{height:100svh}.sb-product-entry-stage>img{width:72vw;height:52svh}}
 @keyframes sb-gentle-float {
   0%,100% {translate:0 var(--float-base-y,0px)}
   50% {translate:var(--float-drift,3px) calc(var(--float-base-y,0px) - 10px)}

@@ -1,6 +1,62 @@
 /* Shared motion: no pinning, spacers, or persistent hidden content. */
 document.addEventListener('DOMContentLoaded', () => {
   if (!document.body.classList.contains('sb-renewal')) return;
+  const entryAsset = document.querySelector('.sb-product .sb-hero-asset');
+  const siteRoot = document.getElementById('soft-bank-renewal');
+  if (entryAsset && siteRoot && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const entry = document.createElement('div');
+    entry.className = 'sb-product-entry';
+    const stage = document.createElement('div');
+    stage.className = 'sb-product-entry-stage';
+    stage.setAttribute('aria-hidden', 'true');
+    const visual = document.createElement('img');
+    visual.src = entryAsset.src;
+    visual.alt = '';
+    visual.decoding = 'async';
+    visual.fetchPriority = 'high';
+    stage.append(visual);
+    const skip = document.createElement('button');
+    skip.type = 'button';
+    skip.className = 'sb-product-entry-skip';
+    skip.textContent = '제품 소개 본문으로 이동';
+    entry.append(stage, skip);
+    siteRoot.before(entry);
+    let entryFrame = 0;
+    const updateEntry = () => {
+      entryFrame = 0;
+      const distance = entry.offsetHeight;
+      const progress = Math.max(0, Math.min(1, -entry.getBoundingClientRect().top / distance));
+      const active = progress < 1;
+      const fade = Math.max(0, Math.min(1, (1 - progress) / .18));
+      visual.style.transform = `scale(${.8 + progress * 2})`;
+      stage.style.opacity = String(fade);
+      stage.hidden = !active;
+      skip.hidden = !active;
+      siteRoot.inert = active;
+      document.body.classList.toggle('sb-product-entering', active);
+    };
+    const queueEntry = () => { if (!entryFrame) entryFrame = requestAnimationFrame(updateEntry); };
+    skip.addEventListener('click', () => {
+      window.scrollTo({top: window.scrollY + entry.getBoundingClientRect().bottom, behavior: 'instant'});
+      updateEntry();
+      const main = document.getElementById('main-content');
+      main?.setAttribute('tabindex', '-1');
+      main?.focus({preventScroll: true});
+    });
+    window.addEventListener('scroll', queueEntry, {passive: true});
+    window.addEventListener('resize', queueEntry, {passive: true});
+    window.addEventListener('pageshow', queueEntry);
+    visual.addEventListener('error', () => {
+      entry.remove();
+      siteRoot.inert = false;
+      document.body.classList.remove('sb-product-entering');
+      window.removeEventListener('scroll', queueEntry);
+      window.removeEventListener('resize', queueEntry);
+      window.removeEventListener('pageshow', queueEntry);
+      cancelAnimationFrame(entryFrame);
+    }, {once: true});
+    updateEntry();
+  }
   const floating = [...document.querySelectorAll('.sb-hero-asset, .sb-content .sb-design-mockup, .sb-content .sb-cutout, .sb-content .sb-laptop-mockup, .sb-content .sb-wehago-illustration, .sb-content .sb-ai-brand, .sb-content .sb-wehago-ecosystem, .sb-content .about__list .img img, .sb-content img[src*="/features/"], .sb-content img[src*="/oneai-hq/mobile-"]')]
     .filter(el => !el.closest('.sb-article-content, .photo_list, .video__wrap') && !el.parentElement.closest('.sb-laptop-mockup'));
   floating.forEach((el, i) => {
