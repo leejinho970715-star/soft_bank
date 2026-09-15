@@ -3,6 +3,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import {load} from 'cheerio';
 import {applyProductDesign} from './figma-products.mjs';
+import {applyCompanyDesign} from './company-design.mjs';
 
 const origin='https://www.duzon119.co.kr';
 const inventory=JSON.parse(await fs.readFile('reference/inventory.json','utf8'));
@@ -224,6 +225,7 @@ for(const page of pages){
   }
  }
  if(family==='product')applyProductDesign(finalPage,page.path,root);
+ applyCompanyDesign(finalPage,page.path,root);
  finalPage('img').removeAttr('data-original-src');
  for(let attempt=0;;attempt++){
   try{await fs.writeFile('subpages/'+out,family==='product'?finalPage.html().replace(/[\t ]+$/gm,''):finalPage.html());break;}

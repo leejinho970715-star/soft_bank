@@ -1,0 +1,33 @@
+.sb-company .sb-content{max-width:1280px;margin:auto}
+.sb-company .sb-content .sb-company-art{display:block;width:100%;height:auto;max-height:380px;object-fit:contain;margin:auto}
+.sb-company .sb-content .headquarters>.top_txt{text-align:center;max-width:900px;margin:0 auto 64px}
+.sb-company .sb-content .headquarters>.top_txt>.sb-company-art{width:320px;margin-bottom:24px}
+.sb-company .sb-content .headquarters>.top_txt>strong{font-size:36px;line-height:1.35}
+.sb-company .sb-content .headquarters>.top_txt p{line-height:1.9;color:#52637b}
+.sb-company .sb-content .sb-company-values{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;padding:0;margin:0 0 80px;list-style:none}
+.sb-company .sb-content .sb-company-values>li{padding:32px;border:1px solid #e2eafb;border-radius:24px;background:#f5f8ff;min-width:0}
+.sb-company .sb-content .sb-company-values .img{width:180px;margin:0 auto 24px;padding:0;background:none}
+.sb-company .sb-content .sb-company-values .txt>b{display:block;color:#2b61d6;font-size:24px;line-height:1.45;margin-bottom:24px}
+.sb-company .sb-content .sb-company-values .txt>div+div{border-top:1px solid #dce6f6;margin-top:20px;padding-top:16px}
+.sb-company .sb-content .sb-company-values p{font-size:16px;line-height:1.8;color:#52637b;margin:8px 0}
+.sb-company .sb-content .sb-company-values br{display:none}
+.sb-company .sb-content .sb-visit{border:0;padding:0;border-radius:0}
+.sb-company .sb-content .sb-visit-intro{display:grid;grid-template-columns:1.25fr 1fr;align-items:center;gap:40px;background:linear-gradient(120deg,#edf6ff,#f0edff);border-radius:28px;padding:48px;margin-bottom:28px}
+.sb-company .sb-content .sb-visit-intro>.sb-company-art{max-width:330px}
+.sb-company .sb-content .sb-visit .top{display:block}
+.sb-company .sb-content .sb-visit .top p{font-size:16px;line-height:1.8;color:#52637b}
+.sb-company .sb-content .sb-visit .top h5{font-size:32px;line-height:1.4;margin:12px 0 28px;word-break:keep-all}
+.sb-company .sb-content .sb-map-link{display:inline-flex;align-items:center;gap:12px;border-radius:999px;padding:14px 24px;background:#2b61d6;color:white;font-size:15px;font-weight:700;min-height:48px}
+.sb-company .sb-content .sb-map-link img{display:none}
+.sb-company .sb-content .sb-visit-details{display:grid;grid-template-columns:2fr 1fr 1fr;gap:16px;padding:0;margin:0 0 28px;list-style:none}
+.sb-company .sb-content .sb-visit-details>li{padding:28px;border:1px solid #e1e9f5;border-radius:20px;min-width:0}
+.sb-company .sb-content .sb-visit-details b{display:block;font-size:17px;color:#2b61d6;margin-bottom:14px}
+.sb-company .sb-content .sb-visit-details p{margin:0;font-size:16px;line-height:1.8;overflow-wrap:anywhere}
+.sb-company .sb-content .headquarters .sb-visit-details{grid-template-columns:repeat(2,minmax(0,1fr))}
+.sb-company .sb-content .sb-visit .box{padding:32px;border-radius:20px;background:#f6f8fc}
+.sb-company .sb-content .sb-visit .box>strong{display:block;font-size:24px;margin-bottom:20px}
+.sb-company .sb-content .sb-visit .box .flex{display:grid;grid-template-columns:110px 1fr;gap:24px;padding:16px 0;border-top:1px solid #e1e9f5}
+.sb-company .sb-content .sb-visit .box b{color:#2b61d6}
+.sb-company .sb-content .sb-visit .box p{margin:0;line-height:1.8}
+@media(max-width:900px){.sb-company .sb-content .sb-visit-intro{padding:32px;gap:20px}.sb-company .sb-content .sb-visit-details{grid-template-columns:repeat(2,minmax(0,1fr))}.sb-company .sb-content .sb-visit-details>li:first-child{grid-column:1/-1}.sb-company .sb-content .headquarters .sb-visit-details>li:first-child{grid-column:auto}}
+@media(max-width:600px){.sb-company .sb-content .sb-company-values{grid-template-columns:1fr;gap:18px}.sb-company .sb-content .sb-company-values>li{padding:24px}.sb-company .sb-content .sb-visit-intro{grid-template-columns:1fr;padding:26px;text-align:center}.sb-company .sb-content .sb-visit-intro>.sb-company-art{grid-row:1;width:220px}.sb-company .sb-content .sb-visit .top h5{font-size:26px}.sb-company .sb-content .sb-visit-details,.sb-company .sb-content .headquarters .sb-visit-details{grid-template-columns:1fr}.sb-company .sb-content .sb-visit-details>li{padding:24px}.sb-company .sb-content .sb-visit .box{padding:24px}.sb-company .sb-content .sb-visit .box .flex{grid-template-columns:1fr;gap:10px}.sb-company .sb-content .headquarters>.top_txt>strong{font-size:28px}}
