@@ -19,8 +19,15 @@ document.addEventListener('DOMContentLoaded',()=>{
   if(initial)activateTab(group,initial.dataset.tab);
  });
  if(document.body.classList.contains('sb-page-product-nonprofit-intro')){
-  const value={groupware:'3',accounting:'1',hr:'2',docs:'4'}[new URLSearchParams(location.search).get('tab')];
-  if(value)activateTab('functions',value);
+  const requested=new URLSearchParams(location.search).get('tab');
+  const selected=['groupware','accounting','hr','docs'].includes(requested)?requested:'overview';
+  document.querySelectorAll('[data-np-page]').forEach(panel=>{panel.hidden=panel.dataset.npPage!==selected;});
+  document.querySelectorAll('.sb-product-tabs a').forEach(link=>{
+   const tab=new URL(link.href).searchParams.get('tab')||'overview';
+   const active=tab===selected;
+   link.classList.toggle('active',active);
+   if(active)link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');
+  });
  }
  const videoButtons=document.querySelectorAll('.js-video[data-video]');
  if(videoButtons.length){

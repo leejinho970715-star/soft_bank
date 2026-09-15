@@ -234,3 +234,4 @@
 :is(.sb-page-product-wehago-cooperation,.sb-page-product-wehago-linkedservice) .sb-content :is(.wehago_01,.wehago_03) .txt>strong{display:block;margin:0 0 14px}
 :is(.sb-page-product-wehago-cooperation,.sb-page-product-wehago-linkedservice) .sb-content :is(.wehago_01,.wehago_03) .txt>b{display:block;line-height:1.75;margin:0 0 18px}
 .sb-figma-product .sb-content .sb-nonprofit-process .sb-process-icon{display:block;width:128px;height:128px;max-height:128px;object-fit:contain;margin:16px auto 24px}@media(max-width:760px){.sb-figma-product .sb-content .sb-nonprofit-process .sb-process-icon{width:104px;height:104px;margin:12px auto 20px}}
+.sb-content [data-np-page][hidden]{display:none!important}.sb-content [data-np-page]>.contWrap{width:100%;max-width:100%;margin:0}.sb-content [data-np-page] .sb-design-mockup{height:auto;object-fit:contain}

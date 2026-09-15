@@ -44,6 +44,17 @@ for(const page of pages){
  const body=original('#pageTop').next();
  if(!body.length)throw new Error('Missing content: '+page.path);
  const $=load(body.toString(),null,false);
+ if(page.path==='/product/nonprofit/intro.asp'){
+  const container=$('.inConts1720');
+  const tabs=container.children('.amaranth10__list');
+  tabs.nextAll().wrapAll('<div data-np-page="overview"></div>');
+  for(const tab of ['groupware','accounting','hr','docs']){
+   const source=load(await fs.readFile('reference/nonprofit-tabs/'+tab+'.html','utf8'));
+   const content=source('.contWrap.amaranth10').first();
+   if(!content.length)throw new Error('Missing nonprofit tab: '+tab);
+   container.append('<section data-np-page="'+tab+'" hidden>'+content.toString()+'</section>');
+  }
+ }
  $('script,style,noscript').remove();
  if(page.path==='/customer/faq.asp'){
   $('#faqCount').text(String(faqData.length));
