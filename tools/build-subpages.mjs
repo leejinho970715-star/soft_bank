@@ -24,6 +24,14 @@ function featureIcon(text){
  const rules=[['search',/검색/],['approval',/결재|승인/],['calendar',/일정|근태|연차|예약/],['meeting',/화상|회의/],['share',/화면공유|연동|연계|공유/],['fax',/팩스|SMS/],['mail',/메일|전자메일/],['chat',/메신저|채팅|소통/],['storage',/문서|KEEP|자료|저장|자산화/],['finance',/회계|전표|장부|재무|자금|금융|세무|예산|급여|여신|원가|채권/],['hr',/인사|직원|인재|인력/],['logistics',/물류|재고|BOM|생산|자재|공정|수출|수입|구매|공급/],['security',/보안|보호|신뢰|관제/],['ai',/AI|RAG|분석|데이터|자동화/],['tasks',/업무관리|프로젝트|계약|진행|업무|협업|KISS/]];
  return rules.find(([,pattern])=>pattern.test(text))?.[0]||'portal';
 }
+const featureIconNames=['search','approval','calendar','meeting','share','fax','mail','chat','storage','finance','hr','logistics','security','ai','tasks','portal'];
+function uniqueFeatureIcon(text,used){
+ const preferred=featureIcon(text);
+ const selected=!used.has(preferred)?preferred:featureIconNames.find(name=>!used.has(name));
+ if(!selected)return null;
+ used.add(selected);
+ return selected;
+}
 const destinations=new Map(pages.map(p=>[p.path,p.path.slice(1).replace(/\.asp$/,'.html')]));
 const cleanText=$=>$.root().text().replace(/\s+/g,' ').trim();
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -66,6 +74,7 @@ for(const page of pages){
    const src=el.attr(attr);if(src&&!/^(data:|blob:)/.test(src))el.attr(attr,new URL(src,origin+page.path).href);
   }
   if(e.tagName==='img'){
+   el.attr('data-original-src',el.attr('src')||'');
    el.removeAttr('width height srcset').attr('loading','lazy');
    if(el.attr('src')===origin+'/images/sub/about__list03.jpg')el.attr('src',root+'assets/subpages/consulting-3d.png');
    else if(assetMap[el.attr('src')])el.attr('src',root+assetMap[el.attr('src')]);
@@ -97,7 +106,12 @@ for(const page of pages){
  if(family==='company'&&page.path.endsWith('/about.asp')){
   $('.about__list .img img').each((i,e)=>$(e).attr('src',root+'assets/subpages/v2/'+['platform','company','consult'][i]+'.png'));
  }
+ if(family==='company'&&page.path==='/company/headquarters.asp'){
+  const companyAssets=['portal','share','tasks','meeting'];
+  $('img[data-original-src*="/headqua__img"]').each((i,e)=>$(e).attr('src',root+'assets/subpages/features/'+companyAssets[i%companyAssets.length]+'.png').addClass('sb-company-3d'));
+ }
  if(family==='product'){
+  const usedFeatureIcons=new Set();
   if(page.path==='/product/nonprofit/intro.asp')$('#functions').addClass('sb-nonprofit-functions');
   $('.youtb_btn').each((i,e)=>{$(e).find('img').remove();$(e).addClass('cta sb-product-cta');});
   $('.amaranth10>div:has(.cont_txt):has(.img),.pms .revers_wrap>div:has(.cont_txt):has(.img)').addClass('sb-feature');
@@ -112,8 +126,7 @@ for(const page of pages){
    img.replaceWith(`<div class="sb-generated-panel">${img.toString()}</div>`);
   });
   $('.sb-original').remove();
-  if(page.path.startsWith('/product/wehago/')){
-   $('.sb-section-screen').each((i,e)=>{
+  $('.sb-section-screen').each((i,e)=>{
     const img=$(e),src=img.attr('src')||'';
     const file=src.startsWith(root)?src.slice(root.length):src;
     const dimensions=imageDimensions[file];
@@ -122,13 +135,28 @@ for(const page of pages){
     if(!small&&!photo)return;
     const region=img.closest('li').length?img.closest('li'):img.closest('.contWrap>div,.swiper-slide,section');
     const label=region.find('h3,h4,h5,strong,b').first().text()||region.text();
-    img.attr('src',root+'assets/subpages/features/'+featureIcon(label)+'.png').removeClass('sb-cutout sb-section-screen').addClass(photo?'sb-wehago-illustration':'sb-wehago-icon');
+    const icon=uniqueFeatureIcon(label,usedFeatureIcons);
+    if(!icon){img.remove();return;}
+    img.attr('src',root+'assets/subpages/features/'+icon+'.png').removeClass('sb-cutout sb-section-screen').addClass(photo?'sb-wehago-illustration':'sb-wehago-icon');
    });
-  }
   if(page.path==='/product/oneai.asp'){
    $('#usage').addClass('sb-oneai-usage');
-   $('.sb-section-screen').each((i,e)=>$(e).attr('src',root+'assets/subpages/oneai-hq/image-'+i+'.png'));
   }
+  $('.sb-section-screen').each((i,e)=>{
+   const img=$(e);
+   if(img.closest('.sb-laptop-mockup').length)return;
+   img.wrap('<div class="sb-laptop-mockup"><div class="sb-laptop-screen"></div></div>');
+   img.closest('.sb-laptop-mockup').append('<span class="sb-laptop-base" aria-hidden="true"></span>');
+  });
+  $('img[data-original-src*="icon"]').not('.sb-section-screen').each((i,e)=>{
+   const img=$(e),originalSrc=img.attr('data-original-src')||'';
+   if(/logo|arr|social|youtube|play/i.test(originalSrc))return;
+   const region=img.closest('li,.contWrap>div,.swiper-slide,section');
+   const label=region.find('h3,h4,h5,strong,b').first().text()||region.text();
+   const icon=uniqueFeatureIcon(label,usedFeatureIcons);
+   if(!icon){img.remove();return;}
+   img.attr('src',root+'assets/subpages/features/'+icon+'.png').removeClass().addClass('sb-wehago-icon');
+  });
   $('.js-video').addClass('cta sb-product-cta');
   $('a').each((i,e)=>{
    const a=$(e);
@@ -152,9 +180,9 @@ for(const page of pages){
   .replace(/<footer class="sb-footer">[\s\S]*?<\/footer>/,sharedMarkup('#soft-bank-renewal>footer',root)+sharedMarkup('.legal-modal',root))
   .replace('<link rel="stylesheet"',`<link rel="stylesheet" href="${root}styles.css"><link rel="stylesheet"`)
   .replace('<body class=',`<body class=`).replace(/(<body[^>]*>)/,'$1<div id="soft-bank-renewal">')
-  .replace(`${root}renewal/skin.css"`,`${root}renewal/skin.css?v=20260915-3"`)
-  .replace(`${root}renewal/skin.js"`,`${root}renewal/skin.js?v=20260915-3"`)
-  .replace('</head>',family==='product'?`<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script><script src="${root}renewal/product-motion.js?v=20260915-3" defer></script></head>`:'</head>')
+  .replace(`${root}renewal/skin.css"`,`${root}renewal/skin.css?v=20260915-4"`)
+  .replace(`${root}renewal/skin.js"`,`${root}renewal/skin.js?v=20260915-4"`)
+  .replace('</head>',family==='product'?`<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script><script src="${root}renewal/product-motion.js?v=20260915-4" defer></script></head>`:'</head>')
   .replace('</body>',`</div><script src="${root}app.js" defer></script></body>`);
  const finalPage=load(rendered);
  finalPage('a[href]').each((i,e)=>{
@@ -165,6 +193,25 @@ for(const page of pages){
   }catch{}
   if(!/^(https?:|\/\/|tel:|mailto:)/i.test(a.attr('href')))a.removeAttr('target rel');
  });
+ if(family==='product'){
+  const embedded=finalPage('main img[src^="data:image/"]').toArray();
+  for(const e of embedded){
+   const img=finalPage(e),src=img.attr('src')||'';
+   const match=src.match(/^data:image\/(jpeg|png|webp);base64,(.+)$/s);
+   if(!match)continue;
+   const ext=match[1]==='jpeg'?'jpg':match[1];
+   const bytes=Buffer.from(match[2],'base64');
+   const name=crypto.createHash('sha256').update(bytes).digest('hex').slice(0,16)+'.'+ext;
+   await fs.mkdir('assets/subpages/embedded',{recursive:true});
+   await fs.writeFile('assets/subpages/embedded/'+name,bytes);
+   img.attr('src',root+'assets/subpages/embedded/'+name).addClass('sb-section-screen');
+   if(!img.closest('.sb-laptop-mockup').length){
+    img.wrap('<div class="sb-laptop-mockup"><div class="sb-laptop-screen"></div></div>');
+    img.closest('.sb-laptop-mockup').append('<span class="sb-laptop-base" aria-hidden="true"></span>');
+   }
+  }
+ }
+ finalPage('img').removeAttr('data-original-src');
  for(let attempt=0;;attempt++){
   try{await fs.writeFile('subpages/'+out,finalPage.html());break;}
   catch(error){if(!['UNKNOWN','EBUSY','EPERM'].includes(error.code)||attempt>=5)throw error;await new Promise(resolve=>setTimeout(resolve,300*(attempt+1)));}
