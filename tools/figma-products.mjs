@@ -17,6 +17,7 @@ export function applyProductDesign($,page,root){
   const icons={'예산편성':'budget','구매·품의':'purchase','회계처리':'accounting','인사·급여':'hr','그룹웨어':'groupware','문서유통·기안':'documents'};
   grid.children().each((i,e)=>{
    const card=$(e),title=card.children('h3'),icon=icons[title.text().trim()];
+   card.children('span').filter((j,s)=>/^0[1-6]$/.test($(s).text().trim())).remove();
    if(icon)title.before($('<img class="sb-process-icon" width="128" height="128" loading="lazy">').attr('src',root+'assets/subpages/features/nonprofit/'+icon+'.png').attr('alt',title.text().trim()+' 3D 아이콘'));
   });
  }
