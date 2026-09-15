@@ -10,7 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const syncTopState = () => document.body.classList.toggle('sb-product-scroll-top', window.scrollY <= 1);
     syncTopState();
     window.addEventListener('scroll', syncTopState, { passive: true });
-    if (asset && hero && content) {
+    if (asset && hero && document.body.classList.contains('sb-page-product-omniesol')) {
+      gsap.fromTo(asset, { scale: 0.9 }, { scale: 1, ease: 'none', scrollTrigger: { trigger: hero, start: 'top top', end: 'bottom top', scrub: true } });
+    } else if (asset && hero && content) {
       const backdrop = document.createElement('div');
       backdrop.className = 'sb-intro-backdrop';
       hero.prepend(backdrop);

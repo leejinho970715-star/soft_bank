@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded',()=>{
+ const syncWidth=()=>document.documentElement.style.setProperty('--product-viewport',document.documentElement.clientWidth+'px');
+ syncWidth();window.addEventListener('resize',syncWidth);
  const tabs=[...document.querySelectorAll('.omniesol-nav [data-tab]')];
  const panels=[...document.querySelectorAll('.omniesol>.panel')];
  if(!tabs.length||!panels.length)return;

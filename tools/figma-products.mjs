@@ -8,6 +8,14 @@ export function applyProductDesign($,page,root){
  const am=page.includes('/amaranth10/')||page.includes('/nonprofit/');
  const weh=page.includes('/wehago/');
  const omni=page==='/product/omniesol.asp';
+ if(omni){
+  $('.omniesol .feature-wrap').each((i,e)=>{if($(e).children().length===8)$(e).addClass('sb-more-modules')});
+  $('.omniesol .mod-title').prepend('<span class="sec-label">Product &amp; Service</span>');
+  $('.omniesol .section>.inner').each((i,e)=>$(e).replaceWith($(e).contents()));
+  $('.omniesol .panel').each((i,p)=>$(p).children('.section').each((j,e)=>$(e).attr('data-omni-side',j%2?'left':'right')));
+ }
+ $('section.cta').addClass('sb-contact-banner');
+ $('a.cta').each((i,e)=>{if(/문의|상담/.test($(e).text()))$(e).closest('section').addClass('sb-contact-banner')});
  const title=am?(page.includes('nonprofit')?'Amaranth 10 비영리':'Amaranth 10'):weh?'WEHAGO':omni?'OmniEsol':page.includes('oneai')?'ONE AI':'PMS';
  $('.sb-hero>div>p').first().text('Product & Service');
  $('.sb-hero h1').text(title);
