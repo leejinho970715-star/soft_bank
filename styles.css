@@ -192,5 +192,5 @@ body.modal-open {overflow:hidden}
 @media(max-width:700px){#soft-bank-renewal .footer-top{flex-direction:column;gap:24px}#soft-bank-renewal .footer-top>div{width:100%;min-width:0}#soft-bank-renewal .footer-logo{width:min(330px,100%);max-width:100%;margin-left:0}#soft-bank-renewal .chat{right:16px;max-width:calc(100vw - 32px)}#soft-bank-renewal .legal-dialog{padding:28px 20px}#soft-bank-renewal .legal-scroll{overflow-wrap:anywhere}}
 @media(max-width:700px),(hover:none){.intro-skip{right:20px;bottom:30px}.intro-caption{bottom:100px;max-width:calc(100% - 48px)}.site-intro iframe{height:56.25vw;min-height:220px}}
 #soft-bank-renewal .privacy .bgBox li:has(>span+ p){display:flex;align-items:baseline;gap:8px;margin:10px 0}#soft-bank-renewal .privacy .bgBox li>span{flex:0 0 auto}#soft-bank-renewal .privacy .bgBox li>span+p{margin:0;min-width:0}
-#soft-bank-renewal .site-header .header-actions{gap:16px;justify-content:flex-start;flex-shrink:0}
+#soft-bank-renewal .site-header .header-actions{gap:12px;justify-content:flex-start;flex-shrink:0}
 #soft-bank-renewal .site-header .header-actions>.pill{margin:0}
