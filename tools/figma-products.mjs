@@ -5,6 +5,15 @@ const file=(family,n)=>assets[family]?.[n-1]?.file;
 
 export function applyProductDesign($,page,root){
  const body=$('body');body.addClass('sb-figma-product');
+ if(page==='/product/nonprofit/intro.asp'){
+  const heading=$('h2').filter((i,e)=>$(e).text().includes('비영리 업무 사이클')).first();
+  const grid=heading.parent().next('.grid').addClass('sb-nonprofit-process');
+  const icons={'예산편성':'budget','구매·품의':'purchase','회계처리':'accounting','인사·급여':'hr','그룹웨어':'groupware','문서유통·기안':'documents'};
+  grid.children().each((i,e)=>{
+   const card=$(e),title=card.children('h3'),icon=icons[title.text().trim()];
+   if(icon)title.before($('<img class="sb-process-icon" width="128" height="128" loading="lazy">').attr('src',root+'assets/subpages/features/nonprofit/'+icon+'.png').attr('alt',title.text().trim()+' 3D 아이콘'));
+  });
+ }
  if(page==='/product/pms.asp'){
   const source=$('.gw_info');
   const text=element=>element.text().replace(/\s+/g,' ').trim();
