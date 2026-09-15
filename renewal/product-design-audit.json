@@ -1,0 +1,86 @@
+[
+  {
+    "page": "/product/amaranth10/brand.asp",
+    "suppliedMockups": 12,
+    "missing": [],
+    "videoUnchanged": true,
+    "figmaStyles": true
+  },
+  {
+    "page": "/product/wehago/smart_A10.asp",
+    "suppliedMockups": 13,
+    "missing": [],
+    "videoUnchanged": true,
+    "figmaStyles": true
+  },
+  {
+    "page": "/product/omniesol.asp",
+    "suppliedMockups": 16,
+    "missing": [],
+    "videoUnchanged": true,
+    "figmaStyles": true
+  },
+  {
+    "page": "/product/oneai.asp",
+    "suppliedMockups": 0,
+    "missing": [],
+    "videoUnchanged": true,
+    "figmaStyles": true
+  },
+  {
+    "page": "/product/nonprofit/intro.asp",
+    "suppliedMockups": 4,
+    "missing": [],
+    "videoUnchanged": true,
+    "figmaStyles": true
+  },
+  {
+    "page": "/product/pms.asp",
+    "suppliedMockups": 0,
+    "missing": [],
+    "videoUnchanged": true,
+    "figmaStyles": true
+  },
+  {
+    "page": "/product/amaranth10/overview.asp",
+    "suppliedMockups": 9,
+    "missing": [],
+    "videoUnchanged": true,
+    "figmaStyles": true
+  },
+  {
+    "page": "/product/amaranth10/hr.asp",
+    "suppliedMockups": 5,
+    "missing": [],
+    "videoUnchanged": true,
+    "figmaStyles": true
+  },
+  {
+    "page": "/product/amaranth10/lm.asp",
+    "suppliedMockups": 9,
+    "missing": [],
+    "videoUnchanged": true,
+    "figmaStyles": true
+  },
+  {
+    "page": "/product/wehago/cooperation.asp",
+    "suppliedMockups": 18,
+    "missing": [],
+    "videoUnchanged": true,
+    "figmaStyles": true
+  },
+  {
+    "page": "/product/wehago/extraservice.asp",
+    "suppliedMockups": 6,
+    "missing": [],
+    "videoUnchanged": true,
+    "figmaStyles": true
+  },
+  {
+    "page": "/product/wehago/linkedservice.asp",
+    "suppliedMockups": 7,
+    "missing": [],
+    "videoUnchanged": true,
+    "figmaStyles": true
+  }
+]

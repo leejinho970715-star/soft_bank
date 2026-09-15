@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import {load} from 'cheerio';
+import {applyProductDesign} from './figma-products.mjs';
 
 const origin='https://www.duzon119.co.kr';
 const inventory=JSON.parse(await fs.readFile('reference/inventory.json','utf8'));
@@ -211,9 +212,10 @@ for(const page of pages){
    }
   }
  }
+ if(family==='product')applyProductDesign(finalPage,page.path,root);
  finalPage('img').removeAttr('data-original-src');
  for(let attempt=0;;attempt++){
-  try{await fs.writeFile('subpages/'+out,finalPage.html());break;}
+  try{await fs.writeFile('subpages/'+out,family==='product'?finalPage.html().replace(/[\t ]+$/gm,''):finalPage.html());break;}
   catch(error){if(!['UNKNOWN','EBUSY','EPERM'].includes(error.code)||attempt>=5)throw error;await new Promise(resolve=>setTimeout(resolve,300*(attempt+1)));}
  }
  report.push({path:page.path,preview:out,title,group,textHash:hash,textIdentical:before===after,images:$('img').length,forms});

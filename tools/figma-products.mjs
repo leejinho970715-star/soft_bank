@@ -1,0 +1,82 @@
+import fs from 'node:fs/promises';
+
+const assets=JSON.parse(await fs.readFile('assets/subpages/figma/manifest.json','utf8'));
+const file=(family,n)=>assets[family]?.[n-1]?.file;
+
+export function applyProductDesign($,page,root){
+ const body=$('body');body.addClass('sb-figma-product');
+ const am=page.includes('/amaranth10/')||page.includes('/nonprofit/');
+ const weh=page.includes('/wehago/');
+ const omni=page==='/product/omniesol.asp';
+ const title=am?(page.includes('nonprofit')?'Amaranth 10 비영리':'Amaranth 10'):weh?'WEHAGO':omni?'OmniEsol':page.includes('oneai')?'ONE AI':'PMS';
+ $('.sb-hero>div>p').first().text('Product & Service');
+ $('.sb-hero h1').text(title);
+ $('.sb-hero nav').remove();
+ $('.sb-hero h1').after('<p class="sb-hero-description">ERP·그룹웨어·AI가 하나로 융합된 더존 차세대 통합 비즈니스 플랫폼</p>');
+ const intro=$('<div class="sb-product-heading"><span>Product &amp; Service</span><h2></h2></div>');
+ intro.find('h2').text(title);$('main').prepend(intro);
+
+ const sourceMap=new Map();
+ const assign=(base,family,indices)=>indices.forEach((n,i)=>sourceMap.set(base+String(i+1).padStart(2,'0')+'.png',file(family,n)));
+ assign('brand01__img','amaranth',[1,2,3,4,5,4,5,6,7,8,8,9]);
+ assign('overview01__img','amaranth',[10,11,12,13,14,15,16,17,18]);
+ assign('hr01__img','amaranth',[18,19,20,21,22]);
+ assign('lm01__img','amaranth',[23,24,25,26,27,28,29,30,31]);
+ assign('cooperSec3__img','wehago',[11,12,13,14,15,16,17,18,19,20,21,22,13,14,16]);
+ assign('wehago_03_img','wehago',[1,2,3,4,5,6,7,8,9,10,10]);
+ assign('extraSec3__img','wehago',[21,22,17,16]);
+ assign('linkedSec3_img','wehago',[20,21,22,17,16]);
+ sourceMap.set('smart_A10__img01.png',file('wehago',4));
+ sourceMap.set('extraservice__img01.png',file('wehago',21));
+ sourceMap.set('linked__img01.png',file('wehago',20));
+ sourceMap.set('oneffice01__img01.png',file('omniesol',7));
+
+ $('main img').each((i,e)=>{
+  const img=$(e),src=img.attr('data-original-src')||'';
+  const base=src.split('/').pop();const mapped=sourceMap.get(base);
+  if(!mapped)return;
+  img.attr('src',root+mapped).attr('width','1600').attr('height','1200').addClass('sb-design-mockup').removeClass('sb-cutout sb-section-screen');
+  const frame=img.closest('.sb-laptop-mockup');
+  if(frame.length)frame.replaceWith(img.toString());
+ });
+ if(omni){
+  const mapping=[1,2,3,4,5,6,7,5,6,7,8,9,10,11,12,12];
+  $('main img.shot').each((i,e)=>{
+   const img=$(e);img.attr('src',root+file('omniesol',mapping[i]||12)).addClass('sb-design-mockup').removeClass('sb-section-screen sb-cutout');
+   img.closest('.sb-laptop-mockup').replaceWith(img.toString());
+  });
+ }
+ if(page==='/product/oneai.asp'){
+  const illustrations={'정확성':'ai','사용성':'chat','보안성':'security','세법도우미':'finance','ONE News':'mail','ONE Studio':'tasks'};
+  $('main img').each((i,e)=>{
+   const img=$(e),name=illustrations[img.attr('alt')];if(!name)return;
+   img.attr('src',root+'assets/subpages/features/'+name+'.png').removeClass().addClass('sb-ai-illustration');
+   const frame=img.closest('.sb-laptop-mockup');if(frame.length)frame.replaceWith(img.toString());
+  });
+ }
+ // The source sliders contain exact duplicate slides intended for looping.
+ $('.wehago_slide .swiper-wrapper').each((i,e)=>{
+  const seen=new Set();$(e).children('.swiper-slide').each((j,s)=>{const key=$(s).find('.txt').text().replace(/\s+/g,'');if(seen.has(key))$(s).remove();else seen.add(key)});
+ });
+ $('.sb-generated-panel:empty').remove();
+ $('.sb-feature').each((i,e)=>$(e).addClass('sb-design-row').attr('data-layout',i%2?'visual-left':'visual-right'));
+ $('.wehago_03>ul>li>.inner,.wehago_03>.wehago_slide .swiper-slide,.wehago_03 .swiper-wrapper>.swiper-slide').each((i,e)=>$(e).addClass('sb-design-row').attr('data-layout',i%2?'visual-left':'visual-right'));
+ const semanticIcons=[['회계','finance'],['급여','approval'],['인사','hr'],['물류','logistics'],['개인','calendar'],['전자','security'],['연말','tasks'],['법인','portal']];
+ $('.wehago_02>ul>li').not('.first').each((i,e)=>{
+  const card=$(e),label=card.find('.txt>b,strong').first().text();
+  const icon=semanticIcons.find(([word])=>label.includes(word))?.[1];
+  if(icon)card.find('img').first().attr('src',root+'assets/subpages/features/'+icon+'.png');
+ });
+ $('.sb-product-tabs a').each((i,e)=>{const a=$(e);if(a.hasClass('active'))a.attr('aria-current','page')});
+ $('.sb-design-mockup').each((i,e)=>{
+  const img=$(e),entry=Object.values(assets).flat().find(a=>root+a.file===img.attr('src'));
+  if(entry)img.attr('width',String(entry.width)).attr('height',String(entry.height));
+  if(!img.attr('alt')){
+   const section=img.closest('.sb-feature,.inner,.swiper-slide,.section');
+   const label=section.find('.cont_txt>b,.txt>strong,.sec-label').first().text().trim();
+   img.attr('alt',(label||title).replace(/\s+/g,' ')+' 제품 화면');
+  }
+ });
+ const css=$('<link rel="stylesheet">').attr('href',root+'renewal/products-figma.css?v=20260915-5');$('head').append(css);
+ $('head').append($('<script defer></script>').attr('src',root+'renewal/products-figma.js?v=20260915-5'));
+}

@@ -1,0 +1,800 @@
+{
+  "amaranth": [
+    {
+      "file": "assets/subpages/figma/amaranth-01.png",
+      "sourceBox": [
+        63,
+        110,
+        1850,
+        1409
+      ],
+      "width": 1600,
+      "height": 1163
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-02.png",
+      "sourceBox": [
+        1850,
+        110,
+        3621,
+        1409
+      ],
+      "width": 1600,
+      "height": 1174
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-03.png",
+      "sourceBox": [
+        3621,
+        110,
+        5368,
+        1409
+      ],
+      "width": 1600,
+      "height": 1190
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-04.png",
+      "sourceBox": [
+        5368,
+        110,
+        7210,
+        1409
+      ],
+      "width": 1600,
+      "height": 1128
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-05.png",
+      "sourceBox": [
+        7210,
+        110,
+        8919,
+        1409
+      ],
+      "width": 1579,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-06.png",
+      "sourceBox": [
+        8919,
+        110,
+        10627,
+        1409
+      ],
+      "width": 1578,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-07.png",
+      "sourceBox": [
+        10627,
+        110,
+        12280,
+        1409
+      ],
+      "width": 1527,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-08.png",
+      "sourceBox": [
+        12280,
+        110,
+        13996,
+        1409
+      ],
+      "width": 1585,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-09.png",
+      "sourceBox": [
+        13996,
+        110,
+        15853,
+        1409
+      ],
+      "width": 1600,
+      "height": 1119
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-10.png",
+      "sourceBox": [
+        63,
+        1425,
+        1842,
+        2747
+      ],
+      "width": 1600,
+      "height": 1189
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-11.png",
+      "sourceBox": [
+        1842,
+        1425,
+        3621,
+        2747
+      ],
+      "width": 1600,
+      "height": 1189
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-12.png",
+      "sourceBox": [
+        3621,
+        1425,
+        5384,
+        2747
+      ],
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-13.png",
+      "sourceBox": [
+        5384,
+        1425,
+        7226,
+        2747
+      ],
+      "width": 1600,
+      "height": 1148
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-14.png",
+      "sourceBox": [
+        7226,
+        1425,
+        8934,
+        2747
+      ],
+      "width": 1550,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-15.png",
+      "sourceBox": [
+        8934,
+        1425,
+        10627,
+        2747
+      ],
+      "width": 1537,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-16.png",
+      "sourceBox": [
+        10627,
+        1425,
+        12358,
+        2747
+      ],
+      "width": 1571,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-17.png",
+      "sourceBox": [
+        12358,
+        1425,
+        14090,
+        2747
+      ],
+      "width": 1572,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-18.png",
+      "sourceBox": [
+        63,
+        2857,
+        1842,
+        4251
+      ],
+      "width": 1531,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-19.png",
+      "sourceBox": [
+        1842,
+        2857,
+        3621,
+        4251
+      ],
+      "width": 1531,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-20.png",
+      "sourceBox": [
+        3621,
+        2857,
+        5392,
+        4251
+      ],
+      "width": 1525,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-21.png",
+      "sourceBox": [
+        5392,
+        2857,
+        7195,
+        4251
+      ],
+      "width": 1552,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-22.png",
+      "sourceBox": [
+        7195,
+        2857,
+        8895,
+        4251
+      ],
+      "width": 1463,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-23.png",
+      "sourceBox": [
+        63,
+        4251,
+        1929,
+        5880
+      ],
+      "width": 1375,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-24.png",
+      "sourceBox": [
+        1929,
+        4251,
+        3739,
+        5880
+      ],
+      "width": 1333,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-25.png",
+      "sourceBox": [
+        3739,
+        4251,
+        5471,
+        5880
+      ],
+      "width": 1276,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-26.png",
+      "sourceBox": [
+        5471,
+        4251,
+        7202,
+        5880
+      ],
+      "width": 1275,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-27.png",
+      "sourceBox": [
+        7202,
+        4251,
+        8934,
+        5880
+      ],
+      "width": 1276,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-28.png",
+      "sourceBox": [
+        8934,
+        4251,
+        10627,
+        5880
+      ],
+      "width": 1247,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-29.png",
+      "sourceBox": [
+        10627,
+        4251,
+        12358,
+        5880
+      ],
+      "width": 1275,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-30.png",
+      "sourceBox": [
+        12358,
+        4251,
+        14248,
+        5880
+      ],
+      "width": 1392,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-31.png",
+      "sourceBox": [
+        14248,
+        4251,
+        16058,
+        5880
+      ],
+      "width": 1333,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-32.png",
+      "sourceBox": [
+        63,
+        5919,
+        1889,
+        7281
+      ],
+      "width": 1600,
+      "height": 1193
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-33.png",
+      "sourceBox": [
+        1889,
+        5919,
+        3637,
+        7281
+      ],
+      "width": 1540,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-34.png",
+      "sourceBox": [
+        3637,
+        5919,
+        5431,
+        7281
+      ],
+      "width": 1581,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-35.png",
+      "sourceBox": [
+        5431,
+        5919,
+        7195,
+        7281
+      ],
+      "width": 1554,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-36.png",
+      "sourceBox": [
+        7195,
+        5919,
+        8974,
+        7281
+      ],
+      "width": 1567,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-37.png",
+      "sourceBox": [
+        8974,
+        5919,
+        10705,
+        7281
+      ],
+      "width": 1525,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/amaranth-38.png",
+      "sourceBox": [
+        10705,
+        5919,
+        12398,
+        7281
+      ],
+      "width": 1492,
+      "height": 1200
+    }
+  ],
+  "omniesol": [
+    {
+      "file": "assets/subpages/figma/omniesol-01.png",
+      "sourceBox": [
+        277,
+        297,
+        1759,
+        1482
+      ],
+      "width": 1482,
+      "height": 1185
+    },
+    {
+      "file": "assets/subpages/figma/omniesol-02.png",
+      "sourceBox": [
+        1759,
+        297,
+        3376,
+        1482
+      ],
+      "width": 1600,
+      "height": 1173
+    },
+    {
+      "file": "assets/subpages/figma/omniesol-03.png",
+      "sourceBox": [
+        3376,
+        297,
+        4854,
+        1482
+      ],
+      "width": 1478,
+      "height": 1185
+    },
+    {
+      "file": "assets/subpages/figma/omniesol-04.png",
+      "sourceBox": [
+        4854,
+        297,
+        6498,
+        1482
+      ],
+      "width": 1600,
+      "height": 1153
+    },
+    {
+      "file": "assets/subpages/figma/omniesol-05.png",
+      "sourceBox": [
+        325,
+        1494,
+        1783,
+        2762
+      ],
+      "width": 1380,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/omniesol-06.png",
+      "sourceBox": [
+        1783,
+        1494,
+        3467,
+        2762
+      ],
+      "width": 1594,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/omniesol-07.png",
+      "sourceBox": [
+        3467,
+        1494,
+        4873,
+        2762
+      ],
+      "width": 1331,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/omniesol-08.png",
+      "sourceBox": [
+        297,
+        2892,
+        1823,
+        4105
+      ],
+      "width": 1510,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/omniesol-09.png",
+      "sourceBox": [
+        1823,
+        2892,
+        3506,
+        4105
+      ],
+      "width": 1600,
+      "height": 1153
+    },
+    {
+      "file": "assets/subpages/figma/omniesol-10.png",
+      "sourceBox": [
+        3506,
+        2892,
+        5131,
+        4105
+      ],
+      "width": 1600,
+      "height": 1194
+    },
+    {
+      "file": "assets/subpages/figma/omniesol-11.png",
+      "sourceBox": [
+        5131,
+        2892,
+        6716,
+        4105
+      ],
+      "width": 1568,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/omniesol-12.png",
+      "sourceBox": [
+        297,
+        4140,
+        1743,
+        5388
+      ],
+      "width": 1390,
+      "height": 1200
+    }
+  ],
+  "wehago": [
+    {
+      "file": "assets/subpages/figma/wehago-01.png",
+      "sourceBox": [
+        181,
+        266,
+        1869,
+        1498
+      ],
+      "width": 1600,
+      "height": 1168
+    },
+    {
+      "file": "assets/subpages/figma/wehago-02.png",
+      "sourceBox": [
+        1869,
+        266,
+        3527,
+        1498
+      ],
+      "width": 1600,
+      "height": 1189
+    },
+    {
+      "file": "assets/subpages/figma/wehago-03.png",
+      "sourceBox": [
+        3527,
+        266,
+        5247,
+        1498
+      ],
+      "width": 1600,
+      "height": 1146
+    },
+    {
+      "file": "assets/subpages/figma/wehago-04.png",
+      "sourceBox": [
+        5247,
+        266,
+        7042,
+        1498
+      ],
+      "width": 1600,
+      "height": 1098
+    },
+    {
+      "file": "assets/subpages/figma/wehago-05.png",
+      "sourceBox": [
+        7042,
+        266,
+        8816,
+        1498
+      ],
+      "width": 1600,
+      "height": 1111
+    },
+    {
+      "file": "assets/subpages/figma/wehago-06.png",
+      "sourceBox": [
+        8816,
+        266,
+        10633,
+        1498
+      ],
+      "width": 1600,
+      "height": 1085
+    },
+    {
+      "file": "assets/subpages/figma/wehago-07.png",
+      "sourceBox": [
+        10633,
+        266,
+        12438,
+        1498
+      ],
+      "width": 1600,
+      "height": 1092
+    },
+    {
+      "file": "assets/subpages/figma/wehago-08.png",
+      "sourceBox": [
+        12438,
+        266,
+        14127,
+        1498
+      ],
+      "width": 1600,
+      "height": 1167
+    },
+    {
+      "file": "assets/subpages/figma/wehago-09.png",
+      "sourceBox": [
+        14127,
+        266,
+        16029,
+        1498
+      ],
+      "width": 1600,
+      "height": 1036
+    },
+    {
+      "file": "assets/subpages/figma/wehago-10.png",
+      "sourceBox": [
+        16029,
+        266,
+        17845,
+        1498
+      ],
+      "width": 1600,
+      "height": 1085
+    },
+    {
+      "file": "assets/subpages/figma/wehago-11.png",
+      "sourceBox": [
+        138,
+        1508,
+        1816,
+        3038
+      ],
+      "width": 1316,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/wehago-12.png",
+      "sourceBox": [
+        1816,
+        1508,
+        3527,
+        3038
+      ],
+      "width": 1342,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/wehago-13.png",
+      "sourceBox": [
+        3527,
+        1508,
+        5237,
+        3038
+      ],
+      "width": 1341,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/wehago-14.png",
+      "sourceBox": [
+        5237,
+        1508,
+        7011,
+        3038
+      ],
+      "width": 1391,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/wehago-15.png",
+      "sourceBox": [
+        7011,
+        1508,
+        8774,
+        3038
+      ],
+      "width": 1383,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/wehago-16.png",
+      "sourceBox": [
+        8774,
+        1508,
+        10569,
+        3038
+      ],
+      "width": 1408,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/wehago-17.png",
+      "sourceBox": [
+        10569,
+        1508,
+        12396,
+        3038
+      ],
+      "width": 1433,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/wehago-18.png",
+      "sourceBox": [
+        12396,
+        1508,
+        14212,
+        3038
+      ],
+      "width": 1424,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/wehago-19.png",
+      "sourceBox": [
+        14212,
+        1508,
+        16039,
+        3038
+      ],
+      "width": 1433,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/wehago-20.png",
+      "sourceBox": [
+        16039,
+        1508,
+        17813,
+        3038
+      ],
+      "width": 1391,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/wehago-21.png",
+      "sourceBox": [
+        17813,
+        1508,
+        19810,
+        3038
+      ],
+      "width": 1566,
+      "height": 1200
+    },
+    {
+      "file": "assets/subpages/figma/wehago-22.png",
+      "sourceBox": [
+        19810,
+        1508,
+        21669,
+        3038
+      ],
+      "width": 1458,
+      "height": 1200
+    }
+  ]
+}
