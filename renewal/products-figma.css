@@ -188,3 +188,26 @@
 .sb-page-product-oneai #downloads>.grid{grid-template-columns:1fr}
 .sb-page-product-oneai #intro p,.sb-page-product-oneai .alt-section p{font-size:14px}
 }
+/* Shared bottom CTA, independent of the main page's inline .cta button rules. */
+.sb-v2.sb-product .sb-content section.sb-contact-banner{display:block!important;height:auto!important;min-height:360px;white-space:normal;font-weight:400;line-height:1.6}
+.sb-v2.sb-product .sb-content .sb-contact-banner>.sb-contact-inner{display:flex!important;flex-direction:column;align-items:center;justify-content:center;width:100%;max-width:1200px;margin:0 auto;gap:0;text-align:center}
+.sb-v2.sb-product .sb-contact-inner>:is(h2,h3){width:100%;max-width:900px;font-size:32px;line-height:1.4;margin:0 0 24px!important;text-wrap:balance}
+.sb-v2.sb-product .sb-contact-inner>p{width:100%;max-width:1050px;margin:0 0 28px;font-size:15px;line-height:1.85}
+.sb-v2.sb-product .sb-contact-inner>.sb-product-cta{margin:8px 0 0!important;min-height:48px!important;padding:12px 28px!important;width:auto;max-width:100%;white-space:normal}
+.sb-v2.sb-product .sb-contact-inner>.sb-product-cta+p{margin:24px 0 0;font-size:13px}
+.sb-v2.sb-product .sb-contact-inner>.btns{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;width:100%}
+@media(max-width:600px){.sb-v2.sb-product .sb-content section.sb-contact-banner{min-height:0}.sb-v2.sb-product .sb-contact-inner>:is(h2,h3){font-size:25px}.sb-v2.sb-product .sb-contact-inner>p{font-size:14px}}
+.sb-figma-product .sb-wehago-connected{text-align:center;padding:80px 0;margin:50px 0;background:#fafafa}
+.sb-figma-product .sb-wehago-connected h2{font-size:26px;line-height:1.5;margin:0 auto 25px;max-width:1000px}
+.sb-service-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:30px}
+.sb-service-tags span{border:1px solid #b9cbff;padding:5px 12px;border-radius:4px;font-size:13px;color:#6486d6}
+.sb-wehago-ecosystem{width:min(100%,826px);aspect-ratio:826/809;margin:auto;background:url('../assets/subpages/wehago-design-board.png') 48.45% 94.586% / 232.445% auto no-repeat}
+.sb-figma-product .wehago_05{padding:60px 0;margin:0}
+.sb-figma-product .wehago_05>.cont_txt{text-align:center!important;margin-bottom:40px}
+.sb-figma-product .video__wrap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding:0;margin:0}
+.sb-figma-product .video__wrap>li{list-style:none;border:1px solid #e0e8f5;border-radius:16px;overflow:hidden;background:#fff}
+.sb-figma-product .video__wrap>li>a{display:block;position:relative}
+.sb-figma-product .video__wrap>li>a:after{content:'▶';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:#315ddbde;color:#fff}
+.sb-figma-product .video__wrap img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}
+.sb-figma-product .video__wrap>li>b{display:block;padding:20px;font-size:16px;line-height:1.6}
+@media(max-width:760px){.sb-figma-product .video__wrap{grid-template-columns:1fr}.sb-figma-product .sb-wehago-connected{padding:45px 0}.sb-figma-product .sb-wehago-connected h2{font-size:22px}}

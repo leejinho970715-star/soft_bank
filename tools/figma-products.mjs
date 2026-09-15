@@ -7,6 +7,12 @@ export function applyProductDesign($,page,root){
  const body=$('body');body.addClass('sb-figma-product');
  const am=page.includes('/amaranth10/')||page.includes('/nonprofit/');
  const weh=page.includes('/wehago/');
+ if(weh){
+  $('.video__wrap>li').each((i,e)=>{const a=$(e).children('a').first();if(a.length&&!a.find('img').length)a.append('<img src="'+root+'assets/subpages/wehago-video-0'+(i+1)+'.jpg" alt="'+$(e).children('b').text()+'" loading="lazy">')});
+ }
+ if(page==='/product/wehago/smart_A10.asp'){
+  $('.wehago_05').before('<section class="sb-wehago-connected"><h2>다른 서비스들과 연동된 편리함! WEHAGO의 서비스들과 연결되어<br>더욱 편리한 경영관리로 다양한 업무를 빠르고 효율적으로 처리할 수 있습니다.</h2><div class="sb-service-tags"><span>전자결재 연동</span><span>문서 관리</span><span>메신저</span><span>경비청구</span><span>근태관리</span></div><div class="sb-wehago-ecosystem" role="img" aria-label="Smart A10을 중심으로 연결된 WEHAGO 업무 서비스"></div></section>');
+ }
  const omni=page==='/product/omniesol.asp';
  if(omni){
   $('.omniesol .feature-wrap').each((i,e)=>{if($(e).children().length===8)$(e).addClass('sb-more-modules')});
@@ -15,7 +21,11 @@ export function applyProductDesign($,page,root){
   $('.omniesol .panel').each((i,p)=>$(p).children('.section').each((j,e)=>$(e).attr('data-omni-side',j%2?'left':'right')));
  }
  $('section.cta').addClass('sb-contact-banner');
- $('a.cta').each((i,e)=>{if(/문의|상담/.test($(e).text()))$(e).closest('section').addClass('sb-contact-banner')});
+ $('a.cta').each((i,e)=>{if(/문의|상담|세미나/.test($(e).text()))$(e).closest('section').addClass('sb-contact-banner')});
+ $('.sb-contact-banner').each((i,e)=>{
+  const banner=$(e);if(banner.children().length===1&&banner.children().first().is('div'))banner.html(banner.children().first().html());
+  banner.wrapInner('<div class="sb-contact-inner"></div>');
+ });
  const title=am?(page.includes('nonprofit')?'Amaranth 10 비영리':'Amaranth 10'):weh?'WEHAGO':omni?'OmniEsol':page.includes('oneai')?'ONE AI':'PMS';
  $('.sb-hero>div>p').first().text('Product & Service');
  $('.sb-hero h1').text(title);
