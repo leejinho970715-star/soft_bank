@@ -19,11 +19,15 @@ document.addEventListener('DOMContentLoaded', () => {
       const intro = gsap.timeline({
         scrollTrigger: {
           trigger: hero,
-          start: () => `top top+=${document.querySelector('.site-header')?.offsetHeight || 80}`,
+          start: () => `top top+=${Math.max(0, (document.querySelector('.site-header')?.offsetHeight || 80) - 1)}`,
           end: () => `+=${Math.max(900, innerHeight * 1.5)}`,
           pin: true,
           scrub: 0.6,
-          invalidateOnRefresh: true
+          invalidateOnRefresh: true,
+          onLeaveBack: () => gsap.set(hero, { x: 0, y: 0 }),
+          onUpdate: () => {
+            if (window.scrollY <= 1) gsap.set(hero, { x: 0, y: 0 });
+          }
         }
       });
       intro.fromTo(asset, {
