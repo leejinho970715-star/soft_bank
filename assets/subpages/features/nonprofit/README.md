@@ -1,5 +1,9 @@
 # Nonprofit process icons
 
+## platform.png
+
+Built-in image_gen, transparent RGBA PNG. Prompt: Generate one premium 3D hero asset for Amaranth 10 nonprofit integrated business management. A central glossy blue circular platform hub with six distinct connected floating rounded tiles arranged in a balanced ring: budget pie chart and coins, purchasing basket, accounting ledger, employee avatars, collaboration chat, and document folder. Express one unified nonprofit organization workflow. Elegant icy blue, cyan and small lavender accents, white ceramic and clear glass materials, soft studio lighting, restrained professional enterprise design. Centered three-quarter isometric composition, complete silhouette with generous margins, high resolution, no text, no logos, no monitors. Real transparent alpha PNG background, no checkerboard or floor. Designed to display 480px wide above a centered introduction heading.
+
 Generated with the built-in image_gen tool. Transparent PNG assets.
 
 ## budget.png

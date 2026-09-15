@@ -6,6 +6,12 @@ const file=(family,n)=>assets[family]?.[n-1]?.file;
 export function applyProductDesign($,page,root){
  const body=$('body');body.addClass('sb-figma-product');
  if(page==='/product/nonprofit/intro.asp'){
+  const overview=$('#intro');
+  const introduction=$('<section class="sb-nonprofit-introduction"></section>');
+  introduction.append($('<img class="sb-nonprofit-hero" width="480" height="480" loading="lazy" alt="회계·인사·예산·그룹웨어·문서유통을 연결하는 비영리 통합 플랫폼">').attr('src',root+'assets/subpages/features/nonprofit/platform.png'));
+  introduction.append(overview.children('div').first().contents());
+  overview.children('div').first().remove();
+  overview.before(introduction);
   const heading=$('h2').filter((i,e)=>$(e).text().includes('비영리 업무 사이클')).first();
   const grid=heading.parent().next('.grid').addClass('sb-nonprofit-process');
   const icons={'예산편성':'budget','구매·품의':'purchase','회계처리':'accounting','인사·급여':'hr','그룹웨어':'groupware','문서유통·기안':'documents'};
