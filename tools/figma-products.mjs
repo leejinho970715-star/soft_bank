@@ -65,6 +65,7 @@ export function applyProductDesign($,page,root){
   });
  }
  if(page==='/product/oneai.asp'){
+  $('#mobile>.grid>div').each((i,e)=>{$(e).children('span').first().replaceWith('<img class="sb-mobile-icon" src="'+root+'assets/subpages/oneai-hq/mobile-'+['voice','lens','calendar','messenger'][i]+'.png" alt="" width="140" height="140" loading="lazy">')});
   const illustrations={'정확성':0,'사용성':1,'보안성':2,'세법도우미':3,'ONE News':4,'ONE Studio':5};
   $('main img').each((i,e)=>{
    const img=$(e),name=illustrations[img.attr('alt')];if(name===undefined)return;

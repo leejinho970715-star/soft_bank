@@ -211,3 +211,7 @@
 .sb-figma-product .video__wrap img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}
 .sb-figma-product .video__wrap>li>b{display:block;padding:20px;font-size:16px;line-height:1.6}
 @media(max-width:760px){.sb-figma-product .video__wrap{grid-template-columns:1fr}.sb-figma-product .sb-wehago-connected{padding:45px 0}.sb-figma-product .sb-wehago-connected h2{font-size:22px}}
+.sb-page-product-oneai #cases>.grid>div>span{font-weight:700}
+.sb-v2.sb-product.sb-page-product-oneai .sb-content img.sb-mobile-icon{display:block;width:140px!important;height:140px!important;max-height:140px!important;object-fit:contain;margin:0 auto 24px}
+.sb-page-product-oneai #mobile>.grid>div h3{margin:0 0 24px;font-size:26px}
+@media(max-width:600px){.sb-v2.sb-product.sb-page-product-oneai .sb-content img.sb-mobile-icon{width:115px!important;height:115px!important}}
