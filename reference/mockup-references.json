@@ -1,0 +1,62 @@
+[
+  {
+    "page": "/product/amaranth10/brand.asp",
+    "key": "product-amaranth10-brand",
+    "reference": "assets/subpages/original/5920fddd21ee53.png"
+  },
+  {
+    "page": "/product/wehago/smart_A10.asp",
+    "key": "product-wehago-smart_a10",
+    "reference": "assets/subpages/original/9f8610bd214395.png"
+  },
+  {
+    "page": "/product/omniesol.asp",
+    "key": "product-omniesol",
+    "reference": "reference/product-omniesol-screen.png"
+  },
+  {
+    "page": "/product/oneai.asp",
+    "key": "product-oneai",
+    "reference": "reference/product-oneai-screen.png"
+  },
+  {
+    "page": "/product/nonprofit/intro.asp",
+    "key": "product-nonprofit-intro",
+    "reference": "assets/subpages/original/9b9826dfefa801.png"
+  },
+  {
+    "page": "/product/pms.asp",
+    "key": "product-pms",
+    "reference": "assets/subpages/original/c8837d243298c2.png"
+  },
+  {
+    "page": "/product/amaranth10/overview.asp",
+    "key": "product-amaranth10-overview",
+    "reference": "assets/subpages/original/9b9826dfefa801.png"
+  },
+  {
+    "page": "/product/amaranth10/hr.asp",
+    "key": "product-amaranth10-hr",
+    "reference": "assets/subpages/original/269a3565f81673.png"
+  },
+  {
+    "page": "/product/amaranth10/lm.asp",
+    "key": "product-amaranth10-lm",
+    "reference": "assets/subpages/original/8722c7df848f5b.png"
+  },
+  {
+    "page": "/product/wehago/cooperation.asp",
+    "key": "product-wehago-cooperation",
+    "reference": "assets/subpages/original/9f8610bd214395.png"
+  },
+  {
+    "page": "/product/wehago/extraservice.asp",
+    "key": "product-wehago-extraservice",
+    "reference": "assets/subpages/original/93c7bb31f48120.png"
+  },
+  {
+    "page": "/product/wehago/linkedservice.asp",
+    "key": "product-wehago-linkedservice",
+    "reference": "assets/subpages/original/9c81a7a73fd246.png"
+  }
+]

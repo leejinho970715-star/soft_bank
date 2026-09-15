@@ -228,7 +228,7 @@
           const card = document.createElement('a');
           card.className = 'news-card glass swiper-slide';
           card.href = data.href;
-          card.target = '_blank';
+          card.target = '_self';
           card.rel = 'noopener noreferrer';
 
           const img = document.createElement('img');
@@ -342,5 +342,5 @@ for (const [key, id] of [['privacy', 'privacy-modal'], ['terms', 'terms-modal']]
   const panel = document.querySelector('#' + id + ' .legal-scroll');
   if (!panel) continue;
   panel.textContent = '문서를 불러오는 중입니다.';
-  fetch('renewal/' + key + '.html').then(r => { if (!r.ok) throw new Error('Document unavailable'); return r.text(); }).then(html => { panel.innerHTML = html; }).catch(() => { panel.textContent = '문서를 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.'; });
+  fetch(new URL('renewal/' + key + '.html', document.currentScript?.src || location.href)).then(r => { if (!r.ok) throw new Error('Document unavailable'); return r.text(); }).then(html => { panel.innerHTML = html; }).catch(() => { panel.textContent = '문서를 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.'; });
 }

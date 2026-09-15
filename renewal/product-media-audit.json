@@ -1,0 +1,90 @@
+[
+  {
+    "page": "/product/amaranth10/brand.asp",
+    "videosUnchanged": true,
+    "videoSources": [],
+    "mockup": "../../../assets/subpages/logos/amaranth10-3d.png",
+    "icons": []
+  },
+  {
+    "page": "/product/wehago/smart_A10.asp",
+    "videosUnchanged": true,
+    "videoSources": [],
+    "mockup": "../../../assets/subpages/logos/wehago-3d.png",
+    "icons": []
+  },
+  {
+    "page": "/product/omniesol.asp",
+    "videosUnchanged": true,
+    "videoSources": [
+      "https://www.youtube-nocookie.com/embed/ndMF-eu0NH4?autoplay=1&mute=1&rel=0&loop=1&playlist=ndMF-eu0NH4",
+      "https://www.youtube-nocookie.com/embed/AYmYggo_6UQ?autoplay=1&mute=1&rel=0&loop=1&playlist=AYmYggo_6UQ"
+    ],
+    "mockup": "../../assets/subpages/logos/omniesol-3d.png",
+    "icons": []
+  },
+  {
+    "page": "/product/oneai.asp",
+    "videosUnchanged": true,
+    "videoSources": [
+      "https://www.douzone.com/html/event/240610/data/oneai_trailer.mp4"
+    ],
+    "mockup": "../../assets/subpages/logos/one-ai-3d.png",
+    "icons": []
+  },
+  {
+    "page": "/product/nonprofit/intro.asp",
+    "videosUnchanged": true,
+    "videoSources": [],
+    "mockup": "../../../assets/subpages/logos/amaranth10-3d.png",
+    "icons": []
+  },
+  {
+    "page": "/product/pms.asp",
+    "videosUnchanged": true,
+    "videoSources": [],
+    "icons": []
+  },
+  {
+    "page": "/product/amaranth10/overview.asp",
+    "videosUnchanged": true,
+    "videoSources": [],
+    "mockup": "../../../assets/subpages/logos/amaranth10-3d.png",
+    "icons": []
+  },
+  {
+    "page": "/product/amaranth10/hr.asp",
+    "videosUnchanged": true,
+    "videoSources": [],
+    "mockup": "../../../assets/subpages/logos/amaranth10-3d.png",
+    "icons": []
+  },
+  {
+    "page": "/product/amaranth10/lm.asp",
+    "videosUnchanged": true,
+    "videoSources": [],
+    "mockup": "../../../assets/subpages/logos/amaranth10-3d.png",
+    "icons": []
+  },
+  {
+    "page": "/product/wehago/cooperation.asp",
+    "videosUnchanged": true,
+    "videoSources": [],
+    "mockup": "../../../assets/subpages/logos/wehago-3d.png",
+    "icons": []
+  },
+  {
+    "page": "/product/wehago/extraservice.asp",
+    "videosUnchanged": true,
+    "videoSources": [],
+    "mockup": "../../../assets/subpages/logos/wehago-3d.png",
+    "icons": []
+  },
+  {
+    "page": "/product/wehago/linkedservice.asp",
+    "videosUnchanged": true,
+    "videoSources": [],
+    "mockup": "../../../assets/subpages/logos/wehago-3d.png",
+    "icons": []
+  }
+]
