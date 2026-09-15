@@ -1,0 +1,24 @@
+/* Transform only decorative illustrations; text, video and UI stay steady. */
+@keyframes sb-gentle-float {
+  0%,100% {transform:translate3d(0,0,0) rotate(-.35deg)}
+  50% {transform:translate3d(0,-9px,0) rotate(.35deg)}
+}
+.sb-renewal .sb-motion-float {
+  animation:sb-gentle-float var(--float-duration,7s) ease-in-out var(--float-delay,0s) infinite!important;
+  animation-play-state:paused!important;
+  transform-origin:center;
+}
+.sb-renewal .sb-motion-float.sb-motion-inview {animation-play-state:running!important}
+.sb-renewal .sb-content :is(.photo_list li,.info-card,.feature-card) {transition:box-shadow .3s ease,border-color .3s ease}
+@media(hover:hover) and (pointer:fine){
+  .sb-renewal .sb-content :is(.photo_list li,.info-card,.feature-card):hover {box-shadow:0 14px 32px #3a72be18;border-color:#93b8f0}
+  .sb-renewal :is(.sb-product-tabs,.sb-hero nav) a {transition:background-color .25s ease,color .25s ease,box-shadow .25s ease}
+  .sb-renewal :is(.sb-product-tabs,.sb-hero nav) a:hover {box-shadow:0 4px 14px #3676d528}
+}
+@media(max-width:760px){
+  @keyframes sb-gentle-float {0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(0,-5px,0)}}
+}
+@media(prefers-reduced-motion:reduce){
+  .sb-renewal .sb-motion-float{animation:none!important;transform:none!important}
+  .sb-renewal .sb-content *{transition:none!important}
+}

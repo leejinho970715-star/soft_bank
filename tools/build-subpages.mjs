@@ -183,7 +183,7 @@ for(const page of pages){
   .replace('<body class=',`<body class=`).replace(/(<body[^>]*>)/,'$1<div id="soft-bank-renewal">')
   .replace(`${root}renewal/skin.css"`,`${root}renewal/skin.css?v=20260915-4"`)
   .replace(`${root}renewal/skin.js"`,`${root}renewal/skin.js?v=20260915-4"`)
-  .replace('</head>',family==='product'?`<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script><script src="${root}renewal/product-motion.js?v=20260915-4" defer></script></head>`:'</head>')
+  .replace('</head>',`<link rel="stylesheet" href="${root}renewal/subpage-motion.css?v=20260916"><script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script><script src="${root}renewal/subpage-motion.js?v=20260916" defer></script></head>`)
   .replace('</body>',`</div><script src="${root}app.js" defer></script></body>`);
  const finalPage=load(rendered);
  finalPage('a[href]').each((i,e)=>{
@@ -230,4 +230,6 @@ for(const [key,p] of [['privacy','/company/privacy.asp'],['terms','/company/clau
 }
 const groups=[...new Set(report.map(p=>p.group))];
 await fs.writeFile('subpages/index.html',`<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>서브페이지 리뉴얼 | 아이원소프트뱅크</title><link rel="stylesheet" href="../renewal/skin.css"></head><body class="sb-renewal"><header class="sb-header"><a href="../index.html"><img src="../assets/logo-footer.png" alt="아이원소프트뱅크"></a></header><section class="sb-hero"><div><p>아이원소프트뱅크</p><h1>서브페이지 리뉴얼</h1><p>공개 페이지 기반 디자인 미리보기</p></div></section><main class="sb-content sb-catalog">${groups.map(g=>`<section><h2>${escape(g)}</h2><div>${report.filter(p=>p.group===g).map(p=>`<a href="${p.preview}" target="_blank" rel="noopener noreferrer"><span>${escape(p.title)}</span><small>${p.path}</small><b>↗</b></a>`).join('')}</div></section>`).join('')}</main></body></html>`);
+const catalog=await fs.readFile('subpages/index.html','utf8');
+await fs.writeFile('subpages/index.html',catalog.replace('</head>','<link rel="stylesheet" href="../renewal/subpage-motion.css?v=20260916"><script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script><script src="../renewal/subpage-motion.js?v=20260916" defer></script></head>'));
 console.log(`Built ${report.length} pages. Text comparison: all identical.`);
