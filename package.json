@@ -1,5 +1,5 @@
 {
-  "scripts": {"build":"node tools/build-subpages.mjs","dev":"node tools/serve.mjs"},
+  "scripts": {"build":"node tools/build-subpages.mjs && node tools/same-tab-links.mjs && node tools/build-vercel.mjs","dev":"node tools/serve.mjs"},
   "devDependencies": {
     "cheerio": "^1.2.0"
   }
