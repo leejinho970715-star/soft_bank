@@ -194,3 +194,4 @@ body.modal-open {overflow:hidden}
 #soft-bank-renewal .privacy .bgBox li:has(>span+ p){display:flex;align-items:baseline;gap:8px;margin:10px 0}#soft-bank-renewal .privacy .bgBox li>span{flex:0 0 auto}#soft-bank-renewal .privacy .bgBox li>span+p{margin:0;min-width:0}
 #soft-bank-renewal .site-header .header-actions{gap:12px;justify-content:flex-start;flex-shrink:0}
 #soft-bank-renewal .site-header .header-actions>.pill{margin:0}
+#soft-bank-renewal .site-header .lnb{border-radius:16px}

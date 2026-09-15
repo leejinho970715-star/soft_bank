@@ -253,3 +253,6 @@
  .sb-v2.sb-figma-product .sb-hero .sb-hero-asset{position:static;order:2;top:auto!important;bottom:auto;right:auto!important;width:190px!important;height:170px!important;margin:12px auto 18px;translate:none;--float-base-y:0px}
  .sb-v2.sb-figma-product .sb-hero .sb-hero-products{order:3}
 }
+.sb-figma-product .sb-content .wehago_02>ul>li.first>b{display:block;color:#2b61d6;font-size:16px;font-weight:600;margin-bottom:14px}
+.sb-figma-product .sb-content .wehago_02>ul>li.first>strong{font-size:40pt;line-height:1.3;margin:0 0 24px;letter-spacing:-.04em}
+@media(max-width:760px){.sb-figma-product .sb-content .wehago_02>ul>li.first>strong{font-size:34px}}
