@@ -113,6 +113,22 @@ export function applyProductDesign($,page,root){
   const icon=semanticIcons.find(([word])=>label.includes(word))?.[1];
   if(icon)card.find('img').first().attr('src',root+'assets/subpages/features/'+icon+'.png');
  });
+ if(page==='/product/wehago/cooperation.asp'){
+  const icons={'메신저':'chat','화상회의':'meeting','웹스토리지':'storage','거래처관리':'cooperation/crm','연락처':'cooperation/contacts','메일':'mail','일정관리':'calendar','할일관리':'tasks','노트':'cooperation/notes','팩스':'fax','문자':'cooperation/sms','근태관리':'cooperation/attendance','전자결재':'approval','회사게시판':'cooperation/bulletin','내PC원격접속':'cooperation/remote'};
+  const iconFor=label=>$('<img class="sb-wehago-illustration sb-cooperation-icon" width="140" height="140" loading="lazy">').attr('src',root+'assets/subpages/features/'+icons[label]+'.png').attr('alt',label+' 3D 아이콘');
+  $('.wehago_02>ul>li:not(.first)').each((i,e)=>{
+   const card=$(e),label=card.find('.txt>b').first().text().trim();
+   if(!icons[label])return;
+   card.children('.img').empty().append(iconFor(label));
+   // The source messenger summary accidentally duplicated accounting services.
+   if(label==='메신저')card.find('.txt .flex').html('<div><p>그룹대화 / 1:1 대화</p><p>대화내용 검색</p><p>문서·화면 공유</p><p>웹오피스 동시편집</p><p>실시간 협업</p></div>');
+  });
+  $('.wehago_03 .inner>.txt,.wehago_01 .swiper-slide>.txt').each((i,e)=>{
+   const text=$(e),label=text.children('strong').first().text().trim();
+   if(icons[label])text.prepend(iconFor(label).addClass('sb-cooperation-detail-icon'));
+   if(label==='메신저'&&text.closest('.wehago_01').length)text.siblings('.img').find('img').attr('src',root+file('wehago',11)).attr('width','1316').attr('height','1200');
+  });
+ }
  $('.sb-product-tabs a').each((i,e)=>{const a=$(e);if(a.hasClass('active'))a.attr('aria-current','page')});
  $('.sb-design-mockup').each((i,e)=>{
   const img=$(e),entry=Object.values(assets).flat().find(a=>root+a.file===img.attr('src'));
