@@ -1,6 +1,21 @@
 /* Shared motion: no pinning, spacers, or persistent hidden content. */
 document.addEventListener('DOMContentLoaded', () => {
   if (!document.body.classList.contains('sb-renewal')) return;
+  const tabPositionKey = 'sb-product-tab-position';
+  let tabPosition = null;
+  try {
+    const saved = JSON.parse(sessionStorage.getItem(tabPositionKey) || 'null');
+    sessionStorage.removeItem(tabPositionKey);
+    if (saved?.url === location.href && Date.now() - saved.time < 15000) tabPosition = saved.y;
+  } catch {}
+  document.addEventListener('click', event => {
+    const link = event.target.closest('.sb-product-tabs a');
+    if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const target = new URL(link.href);
+    if (target.origin !== location.origin || target.href === location.href ||
+        (target.pathname === location.pathname && target.search === location.search)) return;
+    try { sessionStorage.setItem(tabPositionKey, JSON.stringify({url: target.href, y: window.scrollY, time: Date.now()})); } catch {}
+  });
   const entryAsset = document.querySelector('.sb-product .sb-hero-asset');
   const siteRoot = document.getElementById('soft-bank-renewal');
   if (entryAsset && siteRoot && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -21,6 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
     skip.textContent = '제품 소개 본문으로 이동';
     entry.append(stage, skip);
     siteRoot.before(entry);
+    // Keep navigation interactive while the intro covers the page content.
+    const coveredContent = [...siteRoot.children]
+      .filter(el => !el.matches('.site-header') && !el.contains(siteRoot.querySelector('.site-header')))
+      .map(el => ({el, wasInert: el.inert}));
     let entryFrame = 0;
     const updateEntry = () => {
       entryFrame = 0;
@@ -32,8 +51,9 @@ document.addEventListener('DOMContentLoaded', () => {
       stage.style.opacity = String(fade);
       stage.hidden = !active;
       skip.hidden = !active;
-      siteRoot.inert = active;
+      coveredContent.forEach(({el, wasInert}) => { el.inert = active || wasInert; });
       document.body.classList.toggle('sb-product-entering', active);
+      document.body.classList.toggle('sb-product-entry-scrolling', active && progress > .005);
     };
     const queueEntry = () => { if (!entryFrame) entryFrame = requestAnimationFrame(updateEntry); };
     skip.addEventListener('click', () => {
@@ -48,14 +68,21 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('pageshow', queueEntry);
     visual.addEventListener('error', () => {
       entry.remove();
-      siteRoot.inert = false;
+      coveredContent.forEach(({el, wasInert}) => { el.inert = wasInert; });
       document.body.classList.remove('sb-product-entering');
+      document.body.classList.remove('sb-product-entry-scrolling');
       window.removeEventListener('scroll', queueEntry);
       window.removeEventListener('resize', queueEntry);
       window.removeEventListener('pageshow', queueEntry);
       cancelAnimationFrame(entryFrame);
     }, {once: true});
+    if (tabPosition !== null) window.scrollTo({top: tabPosition, behavior: 'instant'});
     updateEntry();
+  }
+  if (tabPosition !== null) {
+    const restoreTabPosition = () => window.scrollTo({top: tabPosition, behavior: 'instant'});
+    restoreTabPosition();
+    requestAnimationFrame(restoreTabPosition);
   }
   const floating = [...document.querySelectorAll('.sb-hero-asset, .sb-content .sb-design-mockup, .sb-content .sb-cutout, .sb-content .sb-laptop-mockup, .sb-content .sb-wehago-illustration, .sb-content .sb-ai-brand, .sb-content .sb-wehago-ecosystem, .sb-content .about__list .img img, .sb-content img[src*="/features/"], .sb-content img[src*="/oneai-hq/mobile-"]')]
     .filter(el => !el.closest('.sb-article-content, .photo_list, .video__wrap') && !el.parentElement.closest('.sb-laptop-mockup'));
@@ -81,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tweens.push(gsap.fromTo(hero, {backgroundPosition: '50% 44%'}, {backgroundPosition: '50% 56%', ease: 'none', scrollTrigger: {trigger: hero, start: 'top top', end: 'bottom top', scrub: .6}}));
     }
     let frame = 0, disposed = false;
-    const selector = '.sb-content h2, .sb-content h3, .sb-content .cont_txt, .sb-content .feature-text, .sb-content .contWrap>.img, .sb-content .sb-feature, .sb-content .about__list>li, .sb-content .photo_list li, .sb-content .video__wrap>li, .sb-content .info-card, .sb-content .feature-card, .sb-content .sb-product-heading, .sb-content .sb-contact-inner, .sb-content .sb-table-scroll, .sb-content .board_view, .sb-content .board_write, .sb-content .member-area, .sb-content .location, .sb-catalog section';
+    const selector = '.sb-content img, .sb-content h2, .sb-content h3, .sb-content .cont_txt, .sb-content .feature-text, .sb-content .contWrap>.img, .sb-content .sb-feature, .sb-content .about__list>li, .sb-content .photo_list li, .sb-content .video__wrap>li, .sb-content .info-card, .sb-content .feature-card, .sb-content .sb-product-heading, .sb-content .sb-contact-inner, .sb-content .sb-table-scroll, .sb-content .board_view, .sb-content .board_write, .sb-content .member-area, .sb-content .location, .sb-catalog section';
     const scan = () => {
       const candidates = [...document.querySelectorAll(selector)].filter(el => el.getClientRects().length && !el.closest('[hidden], .sb-original:not([open])'));
       candidates.filter(el => !candidates.some(parent => parent !== el && parent.contains(el))).forEach((el, index) => {
@@ -90,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Preserve scroll restoration and deep-link reading positions.
         if (el.getBoundingClientRect().top < 0) return;
         triggers.push(ScrollTrigger.create({trigger: el, start: 'top 95%', once: true, onEnter: () => {
-          tweens.push(gsap.fromTo(el, {y: distance, opacity: .12}, {y: 0, opacity: 1, duration: context.conditions.mobile ? .55 : .8, delay: (index % 4) * .045, ease: 'power2.out', clearProps: 'transform,opacity'}));
+          tweens.push(gsap.fromTo(el, {y: -distance, opacity: 0}, {y: 0, opacity: 1, duration: context.conditions.mobile ? .8 : 1.05, delay: (index % 4) * .045, ease: 'bounce.out', clearProps: 'transform,opacity'}));
         }}));
       });
     };
