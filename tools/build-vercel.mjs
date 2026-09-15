@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 
 const output = 'public';
-const directories = ['assets', 'subpages'];
+const directories = ['assets', 'renewal', 'subpages'];
 const files = ['index.html', 'styles.css', 'app.js', '.nojekyll'];
 
 await fs.rm(output, {recursive: true, force: true});
