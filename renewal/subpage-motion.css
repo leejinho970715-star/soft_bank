@@ -15,7 +15,8 @@
   0%,100% {translate:0 var(--float-base-y,0px)}
   50% {translate:var(--float-drift,3px) calc(var(--float-base-y,0px) - 10px)}
 }
-.sb-figma-product .sb-hero .sb-hero-asset{--float-base-y:-50%}
+.sb-v2 .sb-hero .sb-hero-asset{--float-base-y:-50%}
+@media(max-width:760px){.sb-v2:not(.sb-product) .sb-hero .sb-hero-asset{--float-base-y:0px}}
 .sb-renewal .sb-motion-float {
   animation:sb-gentle-float var(--float-duration,7s) ease-in-out var(--float-delay,0s) infinite!important;
   animation-play-state:paused!important;
