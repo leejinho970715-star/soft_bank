@@ -94,6 +94,8 @@
 .sb-content .photo_list.vod .thumb img{width:100%;height:100%;object-fit:cover}
 .sb-content .photo_list.vod .area{display:flex;flex:1;flex-direction:column;gap:9px;padding:18px}
 .sb-content .photo_list.vod .title{font-size:16px;line-height:1.5;min-height:3em;text-align:left}
+.sb-content .photo_list.vod .title>.one,.sb-content .photo_list.vod .area>.txt{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;text-overflow:ellipsis;white-space:normal;overflow-wrap:anywhere;line-height:1.5;max-height:3em}
+.sb-content .photo_list.vod .area>.txt{font-size:14px;color:#64748b}
 .sb-content .photo_list.vod .day{margin-top:auto}
 @media(max-width:1000px){.sb-content .photo_list.vod>.list{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:580px){.sb-content .photo_list.vod>.list{grid-template-columns:1fr;gap:18px}}
