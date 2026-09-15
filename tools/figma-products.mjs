@@ -113,6 +113,13 @@ export function applyProductDesign($,page,root){
   const icon=semanticIcons.find(([word])=>label.includes(word))?.[1];
   if(icon)card.find('img').first().attr('src',root+'assets/subpages/features/'+icon+'.png');
  });
+ if(page==='/product/wehago/extraservice.asp'){
+  const icons={'매출채권팩토링':'factoring','WE CRM':'crm','WE PMS':'pms','법인카드':'corporate','개인카드':'personal','경비현황 분석':'analytics'};
+  $('.wehago_02>ul>li:not(.first)').each((i,e)=>{
+   const card=$(e),label=card.find('.txt>b').first().text().trim();
+   if(icons[label])card.children('.img').empty().append($('<img class="sb-wehago-illustration sb-market-icon" width="140" height="140" loading="lazy">').attr('src',root+'assets/subpages/features/market/'+icons[label]+'.png').attr('alt',label+' 3D 아이콘'));
+  });
+ }
  if(page==='/product/wehago/cooperation.asp'){
   const icons={'메신저':'chat','화상회의':'meeting','웹스토리지':'storage','거래처관리':'cooperation/crm','연락처':'cooperation/contacts','메일':'mail','일정관리':'calendar','할일관리':'tasks','노트':'cooperation/notes','팩스':'fax','문자':'cooperation/sms','근태관리':'cooperation/attendance','전자결재':'approval','회사게시판':'cooperation/bulletin','내PC원격접속':'cooperation/remote'};
   $('.wehago_02>ul>li:not(.first)').each((i,e)=>{
