@@ -68,6 +68,15 @@ export function applyProductDesign($,page,root){
  $('.sb-hero>div>p').first().text('Product & Service');
  $('.sb-hero h1').text(title);
  $('.sb-hero nav').remove();
+ const products=[['OmniEsol','omniesol'],['Amaranth 10','amaranth10/brand'],['WEHAGO','wehago/smart_A10'],['ONE AI','oneai'],['Amaranth 10 비영리','nonprofit/intro'],['PMS','pms']];
+ const productNav=$('<nav class="sb-hero-products" aria-label="제품 서비스 이동"></nav>');
+ products.forEach(([label,path])=>{
+  const active=page===`/product/${path}.asp` || (path.includes('/')&&page.startsWith('/product/'+path.split('/')[0]+'/'));
+  const link=$('<a></a>').text(label).attr('href',root+'subpages/product/'+path+'.html');
+  if(active)link.attr('aria-current','page');
+  productNav.append(link);
+ });
+ $('.sb-hero>div').append(productNav);
  $('.sb-hero h1').after('<p class="sb-hero-description">ERP·그룹웨어·AI가 하나로 융합된 더존 차세대 통합 비즈니스 플랫폼</p>');
  const intro=$('<div class="sb-product-heading"><span>Product &amp; Service</span><h2></h2></div>');
  intro.find('h2').text(title);$('main').prepend(intro);
