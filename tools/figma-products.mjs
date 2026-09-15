@@ -79,7 +79,7 @@ export function applyProductDesign($,page,root){
  sourceMap.set('extraservice__img01.png',file('wehago',21));
  sourceMap.set('linked__img01.png',file('wehago',20));
  sourceMap.set('oneffice01__img01.png',file('omniesol',7));
- if(page==='/product/nonprofit/intro.asp')for(let n=1;n<=4;n++)sourceMap.set('oneffice01__img0'+n+'.png','assets/subpages/nonprofit-docs/source-'+n+'.png');
+ if(page==='/product/nonprofit/intro.asp')for(let n=1;n<=4;n++)sourceMap.set('oneffice01__img0'+n+'.png','assets/subpages/nonprofit-docs/transparent-'+n+'.png');
 
  $('main img').each((i,e)=>{
   const img=$(e),src=img.attr('data-original-src')||'';
