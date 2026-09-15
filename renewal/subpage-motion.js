@@ -1,12 +1,13 @@
 /* Shared motion: no pinning, spacers, or persistent hidden content. */
 document.addEventListener('DOMContentLoaded', () => {
   if (!document.body.classList.contains('sb-renewal')) return;
-  const floating = [...document.querySelectorAll('.sb-hero-asset, .sb-content .sb-design-mockup, .sb-content .sb-cutout, .sb-content .sb-laptop-mockup, .sb-content .sb-wehago-ecosystem, .sb-content .about__list .img img, .sb-content img[src*="/features/"], .sb-content img[src*="/oneai-hq/mobile-"]')]
+  const floating = [...document.querySelectorAll('.sb-hero-asset, .sb-content .sb-design-mockup, .sb-content .sb-cutout, .sb-content .sb-laptop-mockup, .sb-content .sb-wehago-illustration, .sb-content .sb-ai-brand, .sb-content .sb-wehago-ecosystem, .sb-content .about__list .img img, .sb-content img[src*="/features/"], .sb-content img[src*="/oneai-hq/mobile-"]')]
     .filter(el => !el.closest('.sb-article-content, .photo_list, .video__wrap') && !el.parentElement.closest('.sb-laptop-mockup'));
   floating.forEach((el, i) => {
     el.classList.add('sb-motion-float');
-    el.style.setProperty('--float-duration', `${6 + (i % 4) * .7}s`);
+    el.style.setProperty('--float-duration', `${7 + (i % 4) * .8}s`);
     el.style.setProperty('--float-delay', `${-(i % 5) * 1.1}s`);
+    el.style.setProperty('--float-drift', `${i % 2 ? -3 : 3}px`);
   });
   // Only visible illustrations consume animation frames.
   const floatObserver = new IntersectionObserver(entries => entries.forEach(({target, isIntersecting}) => target.classList.toggle('sb-motion-inview', isIntersecting)), {rootMargin: '60px'});

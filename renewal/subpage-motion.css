@@ -1,8 +1,9 @@
-/* Transform only decorative illustrations; text, video and UI stay steady. */
+/* Independent translate keeps the float separate from GSAP entrance transforms. */
 @keyframes sb-gentle-float {
-  0%,100% {transform:translate3d(0,0,0) rotate(-.35deg)}
-  50% {transform:translate3d(0,-9px,0) rotate(.35deg)}
+  0%,100% {translate:0 var(--float-base-y,0px)}
+  50% {translate:var(--float-drift,3px) calc(var(--float-base-y,0px) - 10px)}
 }
+.sb-figma-product .sb-hero .sb-hero-asset{--float-base-y:-50%}
 .sb-renewal .sb-motion-float {
   animation:sb-gentle-float var(--float-duration,7s) ease-in-out var(--float-delay,0s) infinite!important;
   animation-play-state:paused!important;
@@ -16,9 +17,9 @@
   .sb-renewal :is(.sb-product-tabs,.sb-hero nav) a:hover {box-shadow:0 4px 14px #3676d528}
 }
 @media(max-width:760px){
-  @keyframes sb-gentle-float {0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(0,-5px,0)}}
+  @keyframes sb-gentle-float {0%,100%{translate:0 var(--float-base-y,0px)}50%{translate:0 calc(var(--float-base-y,0px) - 5px)}}
 }
 @media(prefers-reduced-motion:reduce){
-  .sb-renewal .sb-motion-float{animation:none!important;transform:none!important}
+  .sb-renewal .sb-motion-float{animation:none!important}
   .sb-renewal .sb-content *{transition:none!important}
 }
