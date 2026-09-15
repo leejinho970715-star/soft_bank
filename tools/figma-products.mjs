@@ -55,12 +55,17 @@ export function applyProductDesign($,page,root){
   });
  }
  if(page==='/product/oneai.asp'){
-  const illustrations={'정확성':'ai','사용성':'chat','보안성':'security','세법도우미':'finance','ONE News':'mail','ONE Studio':'tasks'};
+  const illustrations={'정확성':0,'사용성':1,'보안성':2,'세법도우미':3,'ONE News':4,'ONE Studio':5};
   $('main img').each((i,e)=>{
-   const img=$(e),name=illustrations[img.attr('alt')];if(!name)return;
-   img.attr('src',root+'assets/subpages/features/'+name+'.png').removeClass().addClass('sb-ai-illustration');
+   const img=$(e),name=illustrations[img.attr('alt')];if(name===undefined)return;
+   img.attr('src',root+'assets/subpages/oneai-hq/image-'+name+'.png').removeClass().addClass('sb-ai-diagram');
+   const size=[[1782,883],[1404,1120],[1798,875],[1521,1034],[1527,1030],[1528,1029]][name];img.attr('width',size[0]).attr('height',size[1]);
    const frame=img.closest('.sb-laptop-mockup');if(frame.length)frame.replaceWith(img.toString());
   });
+  $('.alt-section>div').each((i,e)=>{const row=$(e);row.children().first().addClass('sb-ai-visual');row.children().last().addClass('sb-ai-copy')});
+  $('#intro').prepend('<img class="sb-ai-brand" src="'+root+'assets/subpages/oneai-hq/brand-visual.png" alt="ONE AI와 업무 서비스 연결">');
+  $('.alt-section').first().parent('section').addClass('sb-ai-values');
+  $('#downloads>.grid>div').each((i,e)=>{const card=$(e),icon=['chat','tasks','portal','mail'][i];card.addClass('sb-resource-card');card.children().first().empty().addClass('sb-resource-visual').append('<img src="'+root+'assets/subpages/features/'+icon+'.png" alt="" loading="lazy">')});
  }
  // The source sliders contain exact duplicate slides intended for looping.
  $('.wehago_slide .swiper-wrapper').each((i,e)=>{
