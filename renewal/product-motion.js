@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const hero = document.querySelector('.sb-hero');
     const asset = hero?.querySelector('.sb-hero-asset');
     const content = document.querySelector('.sb-content');
+    const syncTopState = () => document.body.classList.toggle('sb-product-scroll-top', window.scrollY <= 1);
+    syncTopState();
+    window.addEventListener('scroll', syncTopState, { passive: true });
     if (asset && hero && content) {
       const backdrop = document.createElement('div');
       backdrop.className = 'sb-intro-backdrop';
@@ -59,6 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.fonts?.ready.then(refresh);
     window.addEventListener('load', refresh, { once: true });
     return () => {
+      window.removeEventListener('scroll', syncTopState);
+      document.body.classList.remove('sb-product-scroll-top');
       hero?.classList.remove('sb-scroll-intro');
       hero?.querySelector('.sb-intro-backdrop')?.remove();
     };

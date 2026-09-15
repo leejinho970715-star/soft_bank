@@ -5,6 +5,23 @@ document.addEventListener('DOMContentLoaded',()=>{
  document.querySelectorAll('iframe[src*="youtube"]').forEach(frame=>{
   const url=new URL(frame.src);url.searchParams.set('controls','1');url.searchParams.set('autoplay','0');url.searchParams.set('loop','0');frame.src=url.href;
  });
+ const activateTab=(group,value)=>{
+  const buttons=[...document.querySelectorAll(`[data-tabset="${group}"]:not([data-panel]) [data-tab-button]`)];
+  const panels=[...document.querySelectorAll(`[data-tabset="${group}"][data-panel]`)];
+  if(!buttons.length||!panels.length)return;
+  buttons.forEach(button=>{const active=button.dataset.tab===String(value);button.classList.toggle('is-active',active);button.setAttribute('aria-selected',String(active));});
+  panels.forEach(panel=>panel.classList.toggle('is-active',panel.dataset.panel===String(value)));
+ };
+ document.querySelectorAll('[data-tabset]:not([data-panel])').forEach(tablist=>{
+  const group=tablist.dataset.tabset;
+  tablist.querySelectorAll('[data-tab-button]').forEach(button=>button.addEventListener('click',event=>{event.preventDefault();activateTab(group,button.dataset.tab);}));
+  const initial=tablist.querySelector('[data-tab-button].is-active,[data-tab-button]');
+  if(initial)activateTab(group,initial.dataset.tab);
+ });
+ if(document.body.classList.contains('sb-page-product-nonprofit-intro')){
+  const value={groupware:'3',accounting:'1',hr:'2',docs:'4'}[new URLSearchParams(location.search).get('tab')];
+  if(value)activateTab('functions',value);
+ }
  const videoButtons=document.querySelectorAll('.js-video[data-video]');
  if(videoButtons.length){
   const dialog=document.createElement('dialog');dialog.className='sb-video-dialog';

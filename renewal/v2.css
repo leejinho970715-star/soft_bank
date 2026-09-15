@@ -47,3 +47,5 @@
 /* Hero alignment and stable GSAP return state */
 .sb-v2 .sb-hero-asset{top:50%;translate:0 -50%}.sb-v2.sb-product-logo .sb-hero-asset{top:50%;translate:0 -50%}.sb-v2 .sb-scroll-intro .sb-intro-backdrop{opacity:1!important;visibility:visible!important}.sb-renewal .site-header .header-actions .pill.light{background:#4b90e2}.sb-renewal .site-header .header-actions .pill:not(.light){background:#2b61d6}@media(max-width:760px){.sb-v2 .sb-hero-asset,.sb-v2.sb-product-logo .sb-hero-asset{top:50%;translate:0 -50%}}
 
+.sb-product-scroll-top .pin-spacer>.sb-hero{transform:translate3d(0,0,0)!important}
+

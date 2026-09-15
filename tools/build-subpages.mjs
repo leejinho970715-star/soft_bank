@@ -77,7 +77,7 @@ for(const page of pages){
   if(href.startsWith('javascript:'))href=links.get(href.match(/link\d+/)?.[0])||'';
   if(href&&!href.startsWith('#')){
    const url=new URL(href,origin+page.path);
-   a.attr('href',url.origin===origin&&!url.search&&destinations.has(url.pathname)?local(url.pathname):url.href).attr('target','_blank').attr('rel','noopener noreferrer');
+   a.attr('href',url.origin===origin&&destinations.has(url.pathname)?local(url.pathname)+url.search+url.hash:url.href).attr('target','_blank').attr('rel','noopener noreferrer');
   }else if(!href){a.attr('href',origin+page.path).attr('target','_blank').attr('rel','noopener noreferrer');}
  });
  $('form').attr('data-preview-form','true');
@@ -152,10 +152,19 @@ for(const page of pages){
   .replace(/<footer class="sb-footer">[\s\S]*?<\/footer>/,sharedMarkup('#soft-bank-renewal>footer',root)+sharedMarkup('.legal-modal',root))
   .replace('<link rel="stylesheet"',`<link rel="stylesheet" href="${root}styles.css"><link rel="stylesheet"`)
   .replace('<body class=',`<body class=`).replace(/(<body[^>]*>)/,'$1<div id="soft-bank-renewal">')
-  .replace('</head>',family==='product'?`<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script><script src="${root}renewal/product-motion.js?v=20260915-2" defer></script></head>`:'</head>')
+  .replace(`${root}renewal/skin.css"`,`${root}renewal/skin.css?v=20260915-3"`)
+  .replace(`${root}renewal/skin.js"`,`${root}renewal/skin.js?v=20260915-3"`)
+  .replace('</head>',family==='product'?`<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script><script src="${root}renewal/product-motion.js?v=20260915-3" defer></script></head>`:'</head>')
   .replace('</body>',`</div><script src="${root}app.js" defer></script></body>`);
  const finalPage=load(rendered);
- finalPage('a[href]').each((i,e)=>{const a=finalPage(e);if(!/^(https?:|\/\/|tel:|mailto:)/i.test(a.attr('href')))a.removeAttr('target rel');});
+ finalPage('a[href]').each((i,e)=>{
+  const a=finalPage(e);const href=a.attr('href')||'';
+  try{
+   const url=new URL(href,origin+page.path);
+   if(url.origin===origin&&destinations.has(url.pathname))a.attr('href',local(url.pathname)+url.search+url.hash);
+  }catch{}
+  if(!/^(https?:|\/\/|tel:|mailto:)/i.test(a.attr('href')))a.removeAttr('target rel');
+ });
  for(let attempt=0;;attempt++){
   try{await fs.writeFile('subpages/'+out,finalPage.html());break;}
   catch(error){if(!['UNKNOWN','EBUSY','EPERM'].includes(error.code)||attempt>=5)throw error;await new Promise(resolve=>setTimeout(resolve,300*(attempt+1)));}
