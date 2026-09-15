@@ -5,6 +5,27 @@ const file=(family,n)=>assets[family]?.[n-1]?.file;
 
 export function applyProductDesign($,page,root){
  const body=$('body');body.addClass('sb-figma-product');
+ if(page==='/product/pms.asp'){
+  const source=$('.gw_info');
+  const text=element=>element.text().replace(/\s+/g,' ').trim();
+  const section=$('<section class="sb-pms-gw" aria-labelledby="pms-gw-title"></section>');
+  const header=$('<header class="sb-gw-heading"><span>GROUPWARE</span><h2 id="pms-gw-title">서비스소개: GW</h2></header>');
+  header.append($('<p></p>').text(text(source.children('.pms_pg_int'))));
+  section.append(header).append('<h3 class="sb-gw-label">GW 주요기능</h3>');
+  const grid=$('<div class="sb-gw-grid"></div>');
+  source.find('.cont_li>dl').each((i,e)=>{
+   const item=$(e),title=text(item.find('dt>p')).replace('전자결제','전자결재');
+   const card=$('<article class="info-card sb-gw-card"></article>');
+   card.append($('<img alt="" width="96" height="96" loading="lazy">').attr('src',root+'assets/subpages/features/'+['approval','finance','tasks'][i]+'.png'));
+   card.append($('<h4></h4>').text(title)).append($('<p></p>').text(text(item.find('dd'))));
+   grid.append(card);
+  });
+  section.append(grid);
+  const expansion=$('<div class="sb-gw-expansion"><span>SCALABILITY</span><h3>GW 확장가능한 기능</h3></div>');
+  expansion.append($('<p></p>').text(text(source.children('.img_faetures').find('.cont_txt>p'))));
+  section.append(expansion);
+  source.replaceWith(section);
+ }
  const am=page.includes('/amaranth10/')||page.includes('/nonprofit/');
  const weh=page.includes('/wehago/');
  if(weh){
