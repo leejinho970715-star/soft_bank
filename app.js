@@ -14,6 +14,28 @@
       menuToggle.setAttribute('aria-expanded', String(open));
     });
   }
+  const gnbItems = $$('.gnb-item');
+  const closeLnb = (except) => gnbItems.forEach((item) => {
+    if (item === except) return;
+    item.classList.remove('lnb-open');
+    item.querySelector('.lnb-toggle')?.setAttribute('aria-expanded', 'false');
+  });
+  $$('.lnb-toggle').forEach((button) => {
+    button.addEventListener('click', (event) => {
+      event.stopPropagation();
+      const item = button.closest('.gnb-item');
+      const open = !item.classList.contains('lnb-open');
+      closeLnb(item);
+      item.classList.toggle('lnb-open', open);
+      button.setAttribute('aria-expanded', String(open));
+    });
+  });
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest('.gnb-item')) closeLnb();
+  });
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 1100) closeLnb();
+  });
 
   const chat = $('.chat');
   const chatLaunch = $('.chat-launch');
