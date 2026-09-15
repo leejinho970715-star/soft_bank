@@ -152,7 +152,7 @@ for(const page of pages){
   .replace(/<footer class="sb-footer">[\s\S]*?<\/footer>/,sharedMarkup('#soft-bank-renewal>footer',root)+sharedMarkup('.legal-modal',root))
   .replace('<link rel="stylesheet"',`<link rel="stylesheet" href="${root}styles.css"><link rel="stylesheet"`)
   .replace('<body class=',`<body class=`).replace(/(<body[^>]*>)/,'$1<div id="soft-bank-renewal">')
-  .replace('</head>',family==='product'?`<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script><script src="${root}renewal/product-motion.js" defer></script></head>`:'</head>')
+  .replace('</head>',family==='product'?`<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script><script src="${root}renewal/product-motion.js?v=20260915-2" defer></script></head>`:'</head>')
   .replace('</body>',`</div><script src="${root}app.js" defer></script></body>`);
  const finalPage=load(rendered);
  finalPage('a[href]').each((i,e)=>{const a=finalPage(e);if(!/^(https?:|\/\/|tel:|mailto:)/i.test(a.attr('href')))a.removeAttr('target rel');});
