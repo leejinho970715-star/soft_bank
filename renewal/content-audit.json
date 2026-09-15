@@ -64,7 +64,7 @@
     "preview": "government/notice.html",
     "title": "정부지원사업",
     "group": "공지사항",
-    "textHash": "bb8c6fd7513615c27e9411e0087e29bd070dcb7c8fc1987e4c4527264c7e00e7",
+    "textHash": "4a7eb6ea8054a1f1f698c7f1f2c128bd97c8557146b9ac0571f13c909006b0f2",
     "textIdentical": true,
     "images": 9,
     "forms": [
@@ -100,7 +100,7 @@
     "preview": "government/promotion.html",
     "title": "더존프로모션",
     "group": "공지사항",
-    "textHash": "12f9595efa5c732aeb1b4bf69d72db77d4f4df352b003e022e8e8c1ed942fc80",
+    "textHash": "d569f45c3fbd457e41b0587f4ce8ed41bbe02ed232d5f5b5f66cb5ab7a0b4e09",
     "textIdentical": true,
     "images": 4,
     "forms": [
@@ -289,7 +289,7 @@
     "preview": "amaranth10/inquiry.html",
     "title": "Amaranth10",
     "group": "고객센터",
-    "textHash": "793ece6d11658d8c3512dcfd1af502594dbf4dfabf59cf99a74b32d613d6b203",
+    "textHash": "24c792aac118c55a0e5cc0d765934c9b911ab9e620978155e36293ecf337bfd8",
     "textIdentical": true,
     "images": 10,
     "forms": [
@@ -325,7 +325,7 @@
     "preview": "icube/inquiry.html",
     "title": "iCUBE / iCUBE G20",
     "group": "고객센터",
-    "textHash": "5a78454437b44b2b41457ed1e7a92260654e8eaf4fe41ea8cf7b20a808992bc6",
+    "textHash": "6e44f64842f2b78d108991559ec4fd9ca31cb9af40d8fc52820bd7fd70bc58f6",
     "textIdentical": true,
     "images": 10,
     "forms": [
@@ -361,7 +361,7 @@
     "preview": "bizbox/inquiry.html",
     "title": "Bizbox Alpha",
     "group": "고객센터",
-    "textHash": "7fcea96d09c247da98ec9edd5b2c3a41ed0811819440683d4cd8942c2b74576d",
+    "textHash": "75bdc16e9d8e98f4c472225e2943781cb60be09069d117c2e8c7e2416ef52afe",
     "textIdentical": true,
     "images": 10,
     "forms": [
@@ -714,7 +714,7 @@
     "preview": "customer/notice.html",
     "title": "공지사항",
     "group": "고객센터",
-    "textHash": "7eb89d331267daf7100920e2f568cf82cd99db3dd1a1ac9d4e473f374ab819ae",
+    "textHash": "dab623062d19988811825cde1601a2029504c43abd95ae4e8fb28948c1d68b34",
     "textIdentical": true,
     "images": 2,
     "forms": [
@@ -867,7 +867,7 @@
     "preview": "amaranth10/pds.html",
     "title": "Amaranth10",
     "group": "고객센터",
-    "textHash": "800ac2d0e1a2fe3b8f46fd1e02d5d35b828ca22bf6f66c470317552e71b6fa69",
+    "textHash": "cbcc923f61fda5424eddc40b9aa5db5a6ab3c89e9a9cfe716ca875c9c03a6a6a",
     "textIdentical": true,
     "images": 10,
     "forms": [
@@ -942,7 +942,7 @@
     "preview": "icube/pds.html",
     "title": "iCUBE / iCUBE G20",
     "group": "고객센터",
-    "textHash": "469c78b43d87980d6b6ba4e441ccda46cdb97f5651934e86526b65361e8f5bc7",
+    "textHash": "b11641dba238ceb2fab5e59bb7e3ec48765923b4a0e7cdbd20c918dd0220f39e",
     "textIdentical": true,
     "images": 2,
     "forms": [
@@ -978,7 +978,7 @@
     "preview": "bizbox/update.html",
     "title": "Bizbox Alpha",
     "group": "고객센터",
-    "textHash": "85823207486d0476b538a53e091b449594f9cbb6d7adbedfbbba60b8338e12dc",
+    "textHash": "b254e3b4d733f4fad9a2c48964ccb6b5c4875ea45b81d87b7f5cbff10bde1bea",
     "textIdentical": true,
     "images": 10,
     "forms": [
@@ -1053,7 +1053,7 @@
     "preview": "bizbox/pds.html",
     "title": "Bizbox Alpha",
     "group": "고객센터",
-    "textHash": "1c0f45f853add953d4b189411c947be3a5cb4df0e0c5aeb5863a9d5805748532",
+    "textHash": "8b8c789203c232dfca8386e6f3f4b6444785b3da461fcbed155b17ab9b3c35bf",
     "textIdentical": true,
     "images": 0,
     "forms": [

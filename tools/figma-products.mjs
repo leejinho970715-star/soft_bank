@@ -8,6 +8,7 @@ export function applyProductDesign($,page,root){
  const am=page.includes('/amaranth10/')||page.includes('/nonprofit/');
  const weh=page.includes('/wehago/');
  if(weh){
+  $('a').each((i,e)=>{if(/리플[릿렛].*보기/.test($(e).text()))$(e).attr('href',root+'assets/documents/wehago-services-2026.pdf').attr('target','_blank').attr('rel','noopener')});
   $('.video__wrap>li').each((i,e)=>{const a=$(e).children('a').first();if(a.length&&!a.find('img').length)a.append('<img src="'+root+'assets/subpages/wehago-video-0'+(i+1)+'.jpg" alt="'+$(e).children('b').text()+'" loading="lazy">')});
  }
  if(page==='/product/wehago/smart_A10.asp'){

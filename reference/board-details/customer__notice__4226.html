@@ -1,0 +1,577 @@
+
+<!DOCTYPE html>
+<html lang="ko" class="sub">
+<head>
+	
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+	<!-- <meta name="viewport" content="width=640,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes"> -->
+	<meta name="HandheldFriendly" content="true"><!-- // * true : 모바일용(화면 크기 조정 기능) * false : Desktop에 최적화된 html 사용 -->
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no, date=no" />
+	<meta name="naver-site-verification" content="567190b01310e71efefd0217e776de0cdf4abb6c" />
+	<meta name="google-site-verification" content="p6KsuwsxtTkDrsUf3hlUmxhnFnQefLdRsfsFkFiV48M" />
+
+	<!-- 2026-08-11 SEO 개선 (모바일 UI 컬러·iOS 홈 추가 최적화·리퍼러 정책) -->
+	<meta name="theme-color" content="#0369ec">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta name="apple-mobile-web-app-title" content="아이원소프트뱅크">
+	<meta name="referrer" content="strict-origin-when-cross-origin">
+
+	<!-- 2026-06-30 preconnect 최소화 — LCP 직결 호스트만, 나머지는 dns-prefetch로 강등 (PSI 권고) -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://www.youtube-nocookie.com">
+	<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+	<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+	<link rel="dns-prefetch" href="https://i.ytimg.com">
+	<link rel="dns-prefetch" href="https://www.youtube.com">
+	<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+	<link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="canonical" href="https://www.duzon119.co.kr/customer/notice.asp">
+
+	<!-- 2026-08-27 hreflang block removed: site is Korean-only.
+	     /en/ and /ja/ do not exist (dead alternates), and ko/x-default pointed
+	     every page at "/" instead of itself. Restore only when a real
+	     multilingual version ships, with per-page URLs. -->
+
+	<meta name="keywords" content="더존ERP뉴스,공지사항,Amaranth10업데이트,WEHAGO신기능,ERP세미나">
+	<meta name="description" content="더존 ERP 뉴스·공지사항 — 신제품 출시, 업데이트, 세미나 일정 등 최신 ERP/그룹웨어 소식. Amaranth10·WEHAGO 신기능 발표 가장 빠르게.">
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="공지사항 — 더존 ERP 소식 | 아이원소프트뱅크">
+	<meta property="og:site_name" content="아이원소프트뱅크(주)" />
+	<meta property="og:locale" content="ko_KR">
+	<meta property="og:url" content="https://www.duzon119.co.kr/customer/notice.asp">
+	<meta property="og:image" content="https://www.duzon119.co.kr/images/og_images.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:description" content="더존 ERP 뉴스·공지사항 — 신제품 출시, 업데이트, 세미나 일정 등 최신 ERP/그룹웨어 소식. Amaranth10·WEHAGO 신기능 발표 가장 빠르게.">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="공지사항 — 더존 ERP 소식 | 아이원소프트뱅크">
+	<meta name="twitter:url" content="https://www.duzon119.co.kr/customer/notice.asp">
+	<meta name="twitter:image" content="https://www.duzon119.co.kr/images/og_images.jpg">
+	<meta name="twitter:description" content="더존 ERP 뉴스·공지사항 — 신제품 출시, 업데이트, 세미나 일정 등 최신 ERP/그룹웨어 소식. Amaranth10·WEHAGO 신기능 발표 가장 빠르게.">
+
+	<title>공지사항 — 더존 ERP 소식 | 아이원소프트뱅크</title>
+
+	<!-- Organization schema — 구글 지식그래프 진입용. sameAs로 공식 SNS 연결해 외부 신호 통합 -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Organization",
+		"name": "아이원소프트뱅크㈜",
+		"alternateName": ["아이원소프트뱅크", "IONE Softbank", "더존119"],
+		"url": "https://duzon119.co.kr/",
+		"logo": "https://duzon119.co.kr/images/logo_2026_on.png",
+		"image": "https://duzon119.co.kr/images/og_images.jpg",
+		"description": "더존 ERP 공식 파트너 25년. Amaranth10·WEHAGO·iCUBE G20·OmniEsol 도입 컨설팅 및 사후관리.",
+		"foundingDate": "2001",
+		"taxID": "113-86-70956",
+		"telephone": "+82-1877-0256",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "디지털로 285 에이스트윈타워 1차 405호",
+			"addressLocality": "구로구",
+			"addressRegion": "서울특별시",
+			"addressCountry": "KR"
+		},
+		"contactPoint": [
+			{ "@type": "ContactPoint", "telephone": "+82-1877-0256", "contactType": "sales",            "areaServed": "KR", "availableLanguage": "Korean" },
+			{ "@type": "ContactPoint", "telephone": "+82-1877-1859", "contactType": "customer support", "areaServed": "KR", "availableLanguage": "Korean" },
+			{ "@type": "ContactPoint", "telephone": "+82-1877-0840", "contactType": "technical support","areaServed": "KR", "availableLanguage": "Korean" }
+		],
+		"sameAs": [
+			"https://cafe.naver.com/ionesoftbank",
+			"https://blog.naver.com/zhogksgjqm",
+			"https://www.instagram.com/ione130501",
+			"http://pf.kakao.com/_xnFVzK",
+			"https://youtube.com/@IONEsoftBK_official"
+		]
+	}
+	</script>
+	<!-- /Organization schema -->
+
+	<!-- WebSite schema + SearchAction — 구글 사이트링크 검색박스 노출 -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "WebSite",
+		"name": "아이원소프트뱅크㈜",
+		"alternateName": "더존119",
+		"url": "https://duzon119.co.kr/",
+		"inLanguage": "ko-KR",
+		"publisher": { "@type": "Organization", "name": "아이원소프트뱅크㈜" },
+		"potentialAction": {
+			"@type": "SearchAction",
+			"target": { "@type": "EntryPoint", "urlTemplate": "https://duzon119.co.kr/search.asp?keyword={search_term_string}" },
+			"query-input": "required name=search_term_string"
+		}
+	}
+	</script>
+	<!-- /WebSite schema -->
+
+	<!-- <link rel="stylesheet" type="text/css" href="/build/font-awesome/css/font-awesome.min.css" /> -->
+	<!-- 2026-07 FontAwesome: 죽은 kit(403 Forbidden) 제거 → 무료 CDN CSS로 교체(게시판·커뮤니티 등 아이콘 복구). 메인(홈)은 FA 미사용이라 로드 제외(속도) -->
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+	
+	<link rel="stylesheet" type="text/css" href="/common/font/SUIT-Variable.css" />
+    <!-- 2026-06-30 Montserrat weight 축소 — italic 미사용, 100/200 미사용 → 실제 쓰이는 300~900만 -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="/common/css/jquery.ui.lastest.css" />
+
+	<script type="text/javascript" src="/common/js/jquery.lastest.js" charset="utf-8"></script>
+	<script type="text/javascript" src="/common/js/jquery.ui.lastest.js" charset="utf-8"></script>
+	<script type="text/javascript" src="/common/js/jquery.throttledresize.js" charset="utf-8" defer></script>
+	<script type="text/javascript" src="/common/js/jquery.rwdImageMaps.min.js" charset="utf-8" defer></script>
+
+	<script type="text/javascript">
+		var langCode = "kor";
+		var langmode = "0";
+
+		$(function(){
+			$("#header .language>a").eq(langmode).addClass("active")
+		});
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="/common/css/layout.css?var=2026.9.16" />
+	<link rel="stylesheet" type="text/css" href="/common/css/contents.css?var=2026.9.16" />
+	<link rel="stylesheet" type="text/css" href="/common/css/front.css?var=2026.9.16" />
+
+	<script type="text/javascript" src="/common/js/publisher.js?var=2026.9.16" charset="utf-8"></script>
+	<script type="text/javascript" src="/common/js/link.js?var=2026.9.16" charset="utf-8" defer></script>
+	<script type="text/javascript" src="/common/js/menu.js?var=2026.9.16" charset="utf-8"></script>
+	<script type="text/javascript" src="/common/js/prefixfree.min.js" defer></script>
+
+	<!-- 2026-06-30 menu.js 중복 로드 블록 제거 (위 menu.js로 통합, 다국어 분기는 추후 필요 시 단일 분기로 재구성) -->
+
+	<link rel="stylesheet" type="text/css" href="/common/css/slick.css" />
+	<script type="text/javascript" src="/common/js/slick.js" charset="utf-8"></script>
+
+	
+	<link rel="stylesheet" href="/common/css/jquery.fancybox.css">
+	<script type="text/javascript" src="/common/js/jquery.fancybox.js" charset="utf-8" defer></script>
+	
+
+	<link rel="stylesheet" href="/common/css/aos.css">
+	<script type="text/javascript" src="/common/js/aos.js" charset="utf-8"></script>
+
+	<link rel="stylesheet" href="/build/ripple-click/ripple.min.css">
+	<script type="text/javascript" src="/build/ripple-click/ripple.min.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="/common/css/fullpage.css">
+	<script type="text/javascript" src="/common/js/fullpage.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://fastly.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  	<!-- 개발 Library -->
+	<script type="text/javascript">var langCode = "kor";</script>
+	
+	<script type="text/javascript" src="/_lib/js/plug-in/jquery.simplemodal/jquery.simplemodal.js"></script>
+	<link href="/_lib/css/editorContent.css" rel="stylesheet" type="text/css" />
+	
+	<script language="javascript" type="text/javascript" src="/_lib/functions.js"></script>
+	<script language="javascript" type="text/javascript" src="/_lib/boardcontrol.js"></script>
+	<script type="text/javascript" src="/_lib/js/plug-in/jquery.cookie/jquery.cookie.js"></script>
+	<link rel="stylesheet" href="/_lib/ckeditor5/content-styles.css" type="text/css">
+	<!-- 개발 Library -->
+
+	<!-- 2024-07-08 Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SLFWLP9QKE"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-SLFWLP9QKE');
+	</script>
+
+	<!-- Google Tag Manager 2026-02-12(목) -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-WKPK45TW');</script>
+	<!-- End Google Tag Manager 2026-02-12(목) -->
+
+	<!-- Talk Talk Banner Script start 2024-12-31 -->
+	<!-- <script type="text/javascript" src="https://partner.talk.naver.com/banners/script"></script>
+	<div class="talk_banner_div" data-id="155614"></div>
+	<style>
+	.talk_banner_div{position: fixed; right:13px; bottom:47px; z-index:7;}
+	.talk_banner_div .talk_banner_link{width:6.4rem; height:6.4rem; background:url("/images/main/q__cont04.png") no-repeat center; background-size:contain;}
+	.talk_banner_div .talk_banner_link .talk_banner_preview{display:none !important;}
+	@media only screen and (max-width: 840px){
+	.talk_banner_div{bottom:69px}
+	.talk_banner_div .talk_banner_link{width:50px; height:50px;}
+	}
+	</style> -->
+	<!-- Talk Talk Banner Script end 2024-12-31 -->
+</head>
+
+<body data-pgCode="0405">
+
+<!--[s] Skip To Content -->
+<a href="#contents" class="skip">&raquo; 본문 바로가기</a>
+<!--[e] Skip To Content -->
+
+<div id="wrap">
+	<!-- Google Tag Manager (noscript) 2026-02-12(목) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WKPK45TW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) 2026-02-12(목) -->
+
+<div id="header" class="hh">
+	<div class="gnbBg"></div>
+	<div class="inConts">
+
+		<h1 class="logo-h">
+			<a href="/">
+				<img src="/images/logo_tagline_2026.png" class="logo-tagline" alt="Authentic innovation, AX and More" fetchpriority="high" decoding="async">
+				<img src="/images/logo.png" class="logo" alt="아이원소프트뱅크 - 더존 ERP 공식 파트너" decoding="async">
+				<img src="/images/logo_on.png" class="logo_on" alt="아이원소프트뱅크 - 더존 ERP 공식 파트너" fetchpriority="high" decoding="async">
+			</a>
+		</h1>
+
+		<div id="pcMenu">
+			<ul id="list">
+				<script type="text/javascript">globalNavigationBar();</script>
+			</ul>
+		</div>
+
+		<div class="right-utill">
+			<div class="language-area">
+				<div class="language">
+					<a href="/purchase/inquiry.asp">구매상담</a>
+				</div>
+			</div>
+			<div class="language-area">
+				<div class="language">
+					
+					<a href="/member/login.asp">로그인</a>
+					
+				</div>
+			</div>
+			<button type="button" class="mMenu"><span></span></button>
+
+		</div>
+	</div>
+</div>
+
+	<style>
+		.quickWrap{display:none;}
+		.quick-right{position: fixed; right:13px; bottom:130px; z-index:9; display:block;}
+		.quick-right .quick-right-re{border-radius:3.2rem; display: flex; justify-content: flex-end; position: relative;}
+		.quick-right .quick-right-re+.quick-right-re{margin-top: 1rem;}
+		.quick-right .quick-right-re>img{height:6.4rem; position: relative; z-index:2;}
+		.quick-right .quick-right-re .quick-right-list{width:6.4rem; height:6.4rem; position: absolute; right:0; top:0; overflow: hidden; border-radius:3.2rem; transition:all .3s linear;}
+		.quick-right .quick-right-re .quick-right-list>*{width:24rem; height:6.4rem; padding:0.3rem 0 0 6.5rem; background: #0863de url('/images/icon_tel.jpg') no-repeat 2.3rem center/2rem; font-weight: 500; font-size:1.6rem; line-height:1.3; color: #fff; display: flex; align-items: center; border-radius:999rem; position: relative; left:7rem; transition:all .3s linear; opacity: 0;}
+		.quick-right .quick-right-re .quick-right-list>*+*{margin-top:0.5rem;}
+		.quick-right .quick-right-re .quick-right-list>* strong{font-weight: 600; display:block;}
+
+		.quick-right .quick-right-re .quick-right-list>*:nth-of-type(2),
+		.quick-right .quick-right-re .quick-right-list>*:nth-of-type(3),
+		.quick-right .quick-right-re .quick-right-list>*:nth-of-type(4){transition-delay: 0s;}
+
+		.quick-right .quick-right-re .quick-right-list>*.black{background: #222 url('/images/icon_inq.jpg') no-repeat 1.6rem center/3.2rem;}
+		.quick-right .quick-right-re .quick-right-list>*.kaka{background: #fae100 url('/images/icon_kaka.jpg') no-repeat 1.1rem center/4.2rem; color: #381e1f;}
+		.quick-right .quick-right-re .quick-right-list>*.n-talk{background: #03c75a url('/images/icon_n_talk.jpg') no-repeat 1.7rem center/3rem; color: #fff;}
+
+		.quick-right .quick-right-re:is(:hover, .open) .quick-right-list{width:calc(24rem + 7.4rem); height:auto; padding-right:7.4rem;}
+		.quick-right .quick-right-re:is(:hover, .open) .quick-right-list>*{left:0; opacity: 1;}
+
+		.quick-right .quick-right-re:is(:hover, .open) .quick-right-list>*:nth-of-type(2){transition-delay: .2s;}
+		.quick-right .quick-right-re:is(:hover, .open) .quick-right-list>*:nth-of-type(3){transition-delay: .3s;}
+		.quick-right .quick-right-re:is(:hover, .open) .quick-right-list>*:nth-of-type(4){transition-delay: .4s;}
+
+		@media only screen and (max-width : 840px){
+			.quick-right .quick-right-re>img{height:50px;}
+			.quick-right .quick-right-re .quick-right-list{width:50px; border-radius:25px;}
+			.quick-right .quick-right-re .quick-right-list>*{width:24rem; height:50px;}
+			.quick-right .quick-right-re .quick-right-list>*{padding:0 0 0.3rem 6.5rem; font-size:1.8rem;}
+
+			.quick-right .quick-right-re:is(:hover, .open) .quick-right-list{width:calc(24rem + 60px); padding-right:60px;}
+
+			.quick-right .quick-right-re .quick-right-list>*.black,
+			.quick-right .quick-right-re .quick-right-list>*.kaka{display:none;}
+		}
+	</style>
+	<div class="quick-right">
+		<div class="quick-right-re"><img src="/images/main/q__cont01.png" alt="전화 상담" loading="lazy" decoding="async">
+			<div class="quick-right-list">
+				<a href="tel:1877-0256"><span><span>구입문의</span><strong>1877-0256</strong></span></a>
+				<a href="tel:1877-1859"><span><span>Amaranth10 문의</span><strong>1877-1859(1)</strong></span></a>
+				<a href="tel:1877-1859"><span><span>Bizbox Alpha 문의</span><strong>1877-1859(2)</strong></span></a>
+				<a href="tel:1877-0840"><span><span>iCUBE G20 문의</span><strong>1877-0840</strong></span></a>
+			</div>
+		</div>
+		<a href="/purchase/inquiry.asp" class="quick-right-re"><img src="/images/icon_inq.jpg" alt="온라인 구매 상담" loading="lazy" decoding="async" style="background:#222; border-radius:50%; padding:1.4rem; box-sizing:border-box; width:6.4rem;">
+			<div class="quick-right-list">
+				<p class="black"><span><span>온라인 구매상담</span><strong>평일 09:00~18:00</strong></span></p>
+			</div>
+		</a>
+		<a href="http://pf.kakao.com/_xnFVzK" target="_blank" rel="noopener noreferrer" class="quick-right-re"><img src="/images/main/q__cont03.png" alt="카카오톡 상담" loading="lazy" decoding="async">
+			<div class="quick-right-list">
+				<p class="kaka"><span><span>카카오톡 상담</span><strong>오픈채팅방</strong></span></p>
+			</div>
+		</a>
+		<a href="#" onclick="javascript:window.open('http://talk.naver.com/wil4im5?ref=https%3A%2F%2Fduzon119.co.kr%2F', 'talktalk', 'scrollbars=1, resizable=1, width=486, height=745');return false;" class="quick-right-re">
+            <img src="/images/main/q__cont04.png" alt="네이버 톡톡 문의" loading="lazy" decoding="async">
+			<div class="quick-right-list">
+				<p class="n-talk"><span><span>톡톡문의</span><strong>24시간 도입문의 상담</strong></span></p>
+			</div>
+		</a>
+	</div>
+
+
+
+<a href="javascript:void(0);" class="goTop">go top</a>
+
+<script>
+	$(document).ready(function () {
+		$("body").on("mouseenter", ".right", function() {
+			$(this).parent('.q__btn').addClass("open");
+		});
+
+		//$("body").on("mouseleave", ".q__btn.open .left", function() {
+		//		$(this).parent('.q__btn').removeClass("open");
+		//});
+
+		$("body").on("mouseleave", ".q__btn", function() {
+			$(this).removeClass("open");
+		});
+	});
+</script>
+
+<div id="menuArea" class="menuLayer">
+    <!-- <div class="language">
+        <a href="/" class="active"><span>KOR</span></a>
+        <a href="/index_en.asp"><span>ENG</span></a>
+    </div> -->
+    <ul id="menu" class="gnb">
+        <script type="text/javascript">globalNavigationBar();</script>
+    </ul>
+</div>		<div id="sVisual"><div class="inConts">
+			<!-- <p class="s-cate" data-aos="fade-up" data-aos-delay="300"></p> -->
+			<h2 data-aos="fade-up" data-aos-delay="200"></h2>
+			<p class="s-txt" data-aos="fade-up" data-aos-delay="300"></p>
+		</div></div>
+		<div id="snb"><!-- Side Navigation Bar -->
+			<ul id="nav"><!-- Navigation -->
+				<script type="text/javascript">
+					var pgCode = $("body").attr("data-pgCode");
+					if(pgCode){
+						leftMenuList(pgCode);
+					}
+				</script>
+			</ul>
+		</div>
+		<div id="pageTop"><h3>&nbsp;</h3></div>
+
+	<div id="container">
+
+		<style>
+.board_view .comment_wp{width:100%;border-bottom:1px solid #ccc;}
+.board_view .comment_wp:after{clear:both;display:block;content:'';}
+.board_view .comment_wp li{display:block;float:left;width:830px;;border-bottom:1px solid #ccc;padding:13px 20px;letter-spacing:-1px;}
+.board_view .comment_wp li dt{font-size:16px;color:#333333;display:inline-block;}
+.board_view .comment_wp li dd{display:inline-block;}
+.board_view .comment_wp li dd.date{font-size:15px;color:#888;display:inline-block;margin-right:10px;}
+.board_view .comment_wp li dd.comment{width:100%;display:block;padding-top:10px;line-height:25px;color:#666666;font-size:15px;}
+
+.board_view .com_write{float:left;width:100%;padding:15px 0;}
+.board_view .com_write table{border-top:1px solid #ccc;}
+.board_view .com_write td.tt{background:#ebebeb;font-size:16px;color:#333;height:50px;font-weight:500;}
+.board_view .com_write td input{margin-left:5px;width:290px;height:34px; padding:0 10px; background-color:#fff; border:1px solid #ccc; line-height:28px; color:#666; vertical-align:middle; display:inline-block; box-sizing: border-box;}
+.board_view .com_write td.write textarea{display:inline-block;width:704px;height:78px;border:1px solid #ccc;padding:10px;}
+.board_view .com_write td.write a{margin-left:5px;}
+
+.view_cont .conIMG{text-align:center;}
+</style>
+
+
+<script type="application/ld+json">
+{
+	"@context":"https://schema.org","@type":"Article",
+	"headline":"[Amaranth10] 더존(스팸장비) 사칭 피싱 메일 주의 안내",
+	"description":" figure class='image'  img src='/upload/ckeditor5/559814621%5F1774543058%2Epng'  /figure  p &nbsp; /p  p style='margin-left:0px;'  span style='color:rgb(0,0,0);' 안녕하세요.&nbsp; /span  /p  p style='margin-left:0px;'  span style='color:rgb(0,0,0);' 더존 아이원소프트뱅크 Amaranth10 고객센터입니다. /span  /p  p style='mar",
+	"image":"https://www.duzon119.co.kr/images/og_images.jpg",
+	"datePublished":"2026-03-26",
+	"dateModified":"2026-03-26",
+	"author":{"@type":"Organization","name":"아이원소프트뱅크㈜","url":"https://duzon119.co.kr/"},
+	"publisher":{"@type":"Organization","name":"아이원소프트뱅크㈜","logo":{"@type":"ImageObject","url":"https://duzon119.co.kr/images/logo_2026_on.png"}},
+	"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.duzon119.co.kr/customer/notice.asp?mode=view&idx=4226"}
+}
+</script>
+
+
+<div class="board_view">
+	<table>
+		<thead>
+			<tr>
+				<th>
+					<div class="view_title">[Amaranth10] 더존(스팸장비) 사칭 피싱 메일 주의 안내</div>
+					<div class="view_info">
+						<div class="view_txt">
+
+
+							<p class="txt"><strong>구분</strong>&nbsp;Amaranth10</p>
+							
+							<p class="txt"><strong>등록일</strong>&nbsp;2026-03-26</p>
+							
+						</div>
+
+						
+						<div class="view_right">
+							
+							<p class="txt"><i class="fa fa-eye" aria-hidden="true"></i> &nbsp;1462</p>
+						</div>
+						
+					</div>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="view_cont">
+					
+					<div id="bo_v_con" class="ck-content"><p><figure class="image"><img src="/upload/ckeditor5/559814621%5F1774543058%2Epng"></figure><p>&nbsp;</p><p style="margin-left:0px;"><span style="color:rgb(0,0,0);">안녕하세요.&nbsp;</span></p><p style="margin-left:0px;"><span style="color:rgb(0,0,0);">더존 아이원소프트뱅크 Amaranth10 고객센터입니다.</span></p><p style="margin-left:0px;">&nbsp;</p><p><span style="color:hsl(0, 0%, 0%);"><span>최근 "douzone.com"도메인을 사칭하여 스팸 및 피싱 메일이 유포되고 있는 정황이 확인되었습니다.&nbsp;</span></span><br><span style="color:hsl(0, 0%, 0%);"><span>아래 내용을 확인하시어 정보 유출 등의 피해가 발생하지 않도록 각별한 주의를 부탁드립니다.</span></span></p><p>&nbsp;</p><p><br><span style="color:hsl(0, 0%, 0%);"><span><strong>1. 피싱 메일 상세 내용</strong></span></span><br><span style="color:hsl(0, 0%, 0%);"><span>현재 유포 중인 메일은 스팸장비에서 제공하는 공식 통계 보고서 메일 형식과 유사합니다.&nbsp;</span></span><br>&nbsp;</p><p><span style="background-color:hsl(0, 0%, 100%);color:hsl(0, 0%, 0%);">· 발송일시 : 2026년 ○월 ○일 &nbsp;오전</span></p><p><span style="background-color:hsl(0, 0%, 100%);color:hsl(0, 0%, 0%);">· 메일제목 : WBlock 일일 메일 통계 보고서</span></p><p><span style="background-color:hsl(0, 0%, 100%);color:hsl(0, 0%, 0%);">· 발신주소 : wblock@douzone.com&nbsp; </span><span style="background-color:hsl(0, 0%, 100%);color:rgb(255,0,0);">(※ 당사에서 사용하지 않는 주소입니다.)</span></p><p>&nbsp;</p><p><span><strong>&nbsp; </strong></span><span style="background-color:rgb(255,192,0);"><span><strong>&nbsp;※ 주의 사항&nbsp;</strong></span></span></p><p><span style="color:rgb(255,0,0);">&nbsp; 해당 메일 내 포함된 링크를 클릭할 경우 </span><strong>개인정보 탈취 및 악성코드 감염</strong><span style="color:rgb(255,0,0);">의 위험이 있습니다.&nbsp;</span></p><p><span style="color:rgb(255,0,0);">&nbsp; 메일을 수신하신 경우 <strong>즉시 삭제</strong>해 주시기 바랍니다.</span></p><p><br>&nbsp;</p><p><img class="image_resized" style="width:800px;" src="https://helpdesk.douzone.com/upload/editorImg/6cf04c28-77f1-4530-873e-fe9a970ce2d9.png"><br>&nbsp;</p><p><span>&nbsp;</span></p><p><span style="color:hsl(0, 0%, 0%);"><span><strong>2. 조치 현황</strong></span></span><br><span style="color:hsl(0, 0%, 0%);"><span>더존비즈온 공용 스팸 차단 솔루션을 이용 중인 고객사의 경우, 현재 해당 발신 주소 및 유입 경로에 대한 차단 조치를 진행하고 있습니다.</span></span><br><span style="color:hsl(0, 0%, 0%);"><span>유사한 형태의 메일이 지속적으로 수신될 경우, 즉시 고객센터로 문의해 주시기 바랍니다.</span></span><br>&nbsp;</p><p><span style="color:hsl(0, 0%, 0%);"><span><strong>3. 정보 보호를 위한 안전 수칙</strong></span></span><br><span style="color:hsl(0, 0%, 0%);"><span>고객님의 소중한 자산을 보호하기 위해 아래의 보안 수칙 준수를 권장합니다.</span></span></p><p><br><span>▪️&nbsp;</span><span style="color:rgb(47,85,151);"><strong>출처가 불분명한 링크 클릭 금지</strong></span><br><span>&nbsp; &nbsp; &nbsp;</span><span style="color:hsl(0, 0%, 0%);"><span>스팸 메일함으로 유입되었거나 의심스러운 제목의 메일은 본문 링크를 절대 클릭하지 마세요.</span></span><br><span>▪️</span><span style="color:rgb(47,85,151);"><span><strong>&nbsp;계정 정보 요구 주의</strong></span></span><br><span>&nbsp; &nbsp; &nbsp;</span><span style="color:hsl(0, 0%, 0%);"><span>더존비즈온은 어떠한 경우에도 링크를 통해 사용자의 비밀번호나 개인정보를 요구하지 않습니다.</span></span><br><span>▪️&nbsp;</span><span style="color:rgb(47,85,151);"><strong>비밀번호 관리 강화</strong></span><br><span>&nbsp; &nbsp;</span><span style="color:hsl(0, 0%, 0%);"><span> &nbsp;보안 유지를 위해 비밀번호를 주기적으로 변경해 주세요.&nbsp;</span><u>(영문 대/소문자, 숫자, 특수문자를 조합한 10자리 이상 권장)</u></span><br>&nbsp;</p><p><span style="color:hsl(0, 0%, 0%);"><span>관련하여 궁금하신 점이나 추가 문의 사항이 있으시면 아이원소프트뱅크 온라인 고객센터를 통해 문의해 주시기 바랍니다.</span></span></p><p><br><span style="color:hsl(0, 0%, 0%);"><span>더존 아이원소프트뱅크는 앞으로도 고객님의 안전한 서비스 이용을 위해 최선을 다하겠습니다.</span></span></p><p>&nbsp;</p><p><span style="color:hsl(0, 0%, 0%);"><span>감사합니다.</span></span><br>&nbsp;</p></p></div>
+
+					
+				</td>
+			</tr>
+			
+		</tbody>
+	</table>
+</div>
+<div class="pageNavigation">
+	<dl class="prev">
+		<dt>이전글</dt>
+		<dd>
+				<a onclick="location.href='?mode=view&page=1&idx=4519&pageSize=10&seritemidx=&serYear=&serboardsort=&search=0&searchStr='" style='cursor:pointer;'>[Amaranth10 Cloud] 더존(스팸장비) 메일 스팸 차단으로 인한 수신 불가 관련 안내 + 수정</a><p class="day">2026-04-30</p>
+
+		</dd>
+	</dl>
+	<dl class="next">
+		<dt>다음글</dt>
+		<dd>
+				<a onclick="location.href='?mode=view&page=1&idx=3998&pageSize=10&seritemidx=&serYear=&serboardsort=&search=0&searchStr='" style='cursor:pointer;'>[장애조치안내][Amaranth10 Cloud] Amaranth10 Cloud ERP 메뉴 오류 발생 해결의 건</a><p class="day">2026-02-25</p>
+
+		</dd>
+	</dl>
+</div>
+
+<div class="board_btn end">
+
+	<a href="?page=1&pageSize=10&seritemidx=&serYear=&serboardsort=&search=0&searchStr=" class="click">목록</a>
+</div>
+
+
+
+<form name='boardActfrm' id='boardActfrm' method='get' action='' style='margin:0;'>
+<input type='hidden' name='mode'>
+<input type='hidden' name='sort'>
+<input type='hidden' name='idx' value='4226'>
+<input type='hidden' name='Page' value='1'>
+<input type='hidden' name='BBSCode' value='30'>
+<input type='hidden' name='serboardsort' value=''>
+<input type='hidden' name='search' value='0'>
+<input type='hidden' name='searchStr' value=''>
+<input type='hidden' name='pageSize' value='10'>
+<input type='hidden' name='prepage' value='/customer/notice.asp'>
+<input type='hidden' name='serYear' value=''>
+<input type='hidden' name='serdiv1' value=''>
+<input type='hidden' name='serdiv2' value=''>
+<input type='hidden' name='serCate1' value=''>
+<input type='hidden' name='serCate2' value=''>
+<input type='hidden' name='seritemidx' value=''>
+</form>
+
+	</div>
+	<div id="footer">
+	<div class="inConts">
+		<div class="top">
+			<ul>
+				<li><a href="/company/privacy.asp">개인정보취급방침 </a></li>
+				<li><a href="/company/clause.asp">이용약관</a></li>
+				<li><a href="/company/location.asp">오시는 길</a></li>
+				<!-- <li><a href="#">이메일 집단수신거부</a></li> -->
+			</ul>
+		</div>
+
+		<div class="bottom">
+
+			<div class="ft__01">
+				<strong><img src="/images/logo_2026_on.png" alt="아이원소프트뱅크 - 더존 ERP 공식 파트너" style="width: 20rem;" loading="lazy" decoding="async"></strong>
+				<address>COPYRIGHT &copy; 2024 DOUZONE BIZON.<br />All rights reserved.</address>
+			</div>
+
+			<div class="ft__05 text">
+				<p><span>아이원소프트뱅크㈜</span>    <span>대표 : 황명희</span>    <span>사업자등록번호 : 113-86-70956</span>    <span>통신판매신고번호 : 2017-서울구로-0617</span></p>
+				<p><span>주소 : 서울특별시 구로구 디지털로 285 에이스트윈타워 1차 405호 </span></p>
+				<!-- <p><span>더존강촌캠퍼스 : 강원도 춘천시 남산면 수동리 749 ( 도로명 : 춘천시 남산면 버들1길 130)</span></p> -->
+				<p><span>구매상담문의 : 1877-0256</span>    <span>고객센터 : 1877-1859</span>    <span>iCUBE / G20 : 1877-0840</span>    <span>블루멤버십 : 1600-4208</span></p>
+                <p><span>테스트 계정 신청 : 070-4497-3388</span></p>
+			</div>
+			<!-- <div class="ft__03">
+				<ul>
+					<li>
+						<b>대표자</b>
+						<p>황명희</p>
+					</li>
+					<li>
+						<b>사업자등록번호</b>
+						<p>113-86-70956</p>
+					</li>
+					<li>
+						<b>대표전화</b>
+						<p>1600-4208</p>
+					</li>
+					<li>
+						<b>팩    스</b>
+						<p>02-3432-4623</p>
+					</li>
+				</ul>
+			</div> -->
+			<div class="ft__04">
+				<div class="link">
+					<a href="https://cafe.naver.com/ionesoftbank" target="_blank" rel="noopener noreferrer"><img src="/images/main/cafe.png" alt="아이원소프트뱅크 네이버 카페" loading="lazy" decoding="async"></a>
+					<a href="https://blog.naver.com/zhogksgjqm" target="_blank" rel="noopener noreferrer"><img src="/images/main/blog.png" alt="아이원소프트뱅크 네이버 블로그" loading="lazy" decoding="async"></a>
+					<a href="https://www.instagram.com/ione130501?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank" rel="noopener noreferrer"><img src="/images/main/insta.png" alt="아이원소프트뱅크 인스타그램" loading="lazy" decoding="async"></a>
+					<a href="http://pf.kakao.com/_xnFVzK" target="_blank" rel="noopener noreferrer"><img src="/images/main/Kakao.png" alt="아이원소프트뱅크 카카오톡 채널" loading="lazy" decoding="async"></a>
+					<a href="https://youtube.com/@IONEsoftBK_official?si=r5_CIRHiMzhLeADq" target="_blank" rel="noopener noreferrer"><img src="/images/icon_social_youtobe_c.png" alt="아이원소프트뱅크 유튜브" loading="lazy" decoding="async"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	AOS.init({
+		once: true,
+		//delay: 0,
+		duration: 700,
+		easing: 'ease-out'
+	});
+
+	$.ripple(".board_btn .click, .btn-ripple", {
+		opacity: 0.4,
+		color: "auto",
+		multi: false,
+		duration: 0.7,
+		rate: function(pxPerSecond) {
+		return pxPerSecond; // animation speed
+	},
+		easing: 'linear'
+	});
+</script>
+</div>
+</body>
+</html>

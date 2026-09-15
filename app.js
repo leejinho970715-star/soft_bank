@@ -189,50 +189,8 @@
     }
   });
 
-  if (window.Swiper) {
-    const newsData = {
-      notice: {
-        href: 'subpages/customer/notice.html',
-        items: [
-          ['Amaranth10 클라우드 기반 ERP 통합 지원', '2026-04-30'],
-          ['Amaranth10 PC 기본 환경 개선', '2026-03-26'],
-          ['Bizbox Alpha 도입 가이드 공개', '2026-02-25'],
-          ['ERP 환경 개선 및 보안 가이드', '2025-12-15'],
-          ['통합 업무 플랫폼 업데이트', '2025-11-28']
-        ]
-      },
-      amaranth: {
-        href: 'subpages/amaranth10/notice.html',
-        items: [
-          ['Amaranth 10 활용 가이드', '2024-11-25'],
-          ['ERP 업무 효율화 팁', '2024-11-15'],
-          ['AI 기반 업무 협업 자료', '2024-10-17'],
-          ['업무 자동화 전략', '2024-09-30'],
-          ['업무 복잡도 개선 사례', '2024-08-11']
-        ]
-      },
-      bizbox: {
-        href: 'subpages/bizbox/notice.html',
-        items: [
-          ['Bizbox Alpha 도입 사례', '2025-12-09'],
-          ['업무 프로세스 정리 가이드', '2025-11-28'],
-          ['ERP 협업 사례', '2025-10-20'],
-          ['기획 문서 표준화', '2025-09-12'],
-          ['자동화 시스템 운영', '2025-08-07']
-        ]
-      },
-      icube: {
-        href: 'subpages/icube/notice.html',
-        items: [
-          ['iCUBE 최신 가이드', '2024-07-01'],
-          ['iCUBE G20 소개 자료', '2024-06-18'],
-          ['운영 환경 최적화', '2024-05-22'],
-          ['업무 계열별 대응 전략', '2024-04-11'],
-          ['시스템 현대화 사례', '2024-03-20']
-        ]
-      }
-    };
-
+  if (window.Swiper && window.SOFTBANK_NEWS) {
+    const newsData = window.SOFTBANK_NEWS;
     let newsSwiper = null;
 
     function renderNews(category) {
@@ -246,19 +204,19 @@
       }
 
       wrapper.replaceChildren(
-        ...data.items.map(([title, date]) => {
+        ...data.items.map(([title, date, href, thumbnail]) => {
           const card = document.createElement('a');
           card.className = 'news-card glass swiper-slide';
-          card.href = data.href;
+          card.href = href || data.href;
           card.target = '_self';
           card.rel = 'noopener noreferrer';
 
           const img = document.createElement('img');
-          img.src = 'assets/notice-thumb.png';
+          img.src = thumbnail || 'assets/notice-thumb.png';
           img.alt = title;
 
           const badge = document.createElement('b');
-          badge.textContent = 'NEW';
+          badge.textContent = category === 'notice' ? '공지' : '영상';
 
           const copy = document.createElement('p');
           copy.textContent = title;

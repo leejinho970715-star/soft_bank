@@ -166,3 +166,28 @@ body.modal-open {overflow:hidden}
 @media(max-width:1100px){.gnb{align-self:auto;align-items:stretch;gap:8px}.gnb-item{height:auto;display:grid;grid-template-columns:1fr auto;min-width:180px}.gnb-link{min-height:44px;justify-content:center}.lnb-toggle{display:flex;width:40px;min-height:40px;border:0;background:#eef6ff;color:var(--deep);border-radius:50%;align-items:center;justify-content:center;cursor:pointer}.lnb{position:static;translate:0 0;grid-column:1/-1;width:100%;min-width:0;display:none;opacity:1;visibility:visible;transform:none;padding:8px;margin-top:5px;border-radius:12px;box-shadow:none}.gnb-item.lnb-open>.lnb{display:block}.gnb-item.lnb-open>.lnb-toggle{transform:rotate(180deg)}.gnb-link:after{display:none}}
 @media(max-width:700px){.gnb{max-height:calc(100vh - 68px);overflow-y:auto;flex-wrap:nowrap}.gnb-item{width:min(100%,360px)}.gnb-link{justify-content:flex-start;padding-left:16px}.lnb a{padding:11px 14px}}
 
+/* Responsive refinements and accessible video intro. */
+@media(min-width:701px) and (max-width:1100px){#soft-bank-renewal .support-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:35px}#soft-bank-renewal .support-grid>li:last-child{grid-column:1/-1}#soft-bank-renewal .support-grid>li{min-width:0}}
+.sb-v2.sb-product .sb-laptop-mockup{max-width:88%;margin-inline:auto}
+.intro-open{overflow:hidden}
+.site-intro{position:fixed;inset:0;z-index:10000;background:#060b17;display:grid;place-items:center;isolation:isolate}
+.site-intro iframe{width:100%;height:100%;border:0;pointer-events:none}
+.intro-caption{position:absolute;left:24px;bottom:20px;color:#fff;max-width:calc(100% - 180px);font-size:13px;line-height:1.6;text-shadow:0 2px 10px #000}
+.intro-skip{position:absolute;right:30px;bottom:30px;min-width:120px;min-height:52px;border:1px solid #ffffff80;border-radius:99px;background:#ffffffef;color:#2249a5;font-size:16px;font-weight:700;cursor:pointer;box-shadow:0 8px 30px #0003;z-index:2}
+.intro-skip.is-following{right:auto;bottom:auto;transform:translate(-50%,-50%)}
+.intro-skip:focus-visible{outline:3px solid #72c8ff;outline-offset:5px}
+.sb-v2 .sb-article-content{width:min(1200px,calc(100% - 40px));margin:0 auto;padding:64px 0;overflow-wrap:anywhere}
+.sb-v2 .sb-article-content .board_view>table{width:100%;table-layout:fixed}
+.sb-v2 .sb-article-content .view_title{font-size:clamp(22px,3vw,32px);font-weight:750;line-height:1.5;text-align:left}
+.sb-v2 .sb-article-content .view_info{display:flex;flex-wrap:wrap;gap:16px;margin:20px 0;text-align:left;font-weight:400}
+.sb-v2 .sb-article-content .view_cont{padding:32px 0;border-top:1px solid #dce5f5;line-height:1.8}
+.sb-v2 .sb-article-content :is(img,video){max-width:100%!important;height:auto!important;object-fit:contain}
+.sb-v2 .sb-article-content iframe{max-width:100%!important;width:100%;aspect-ratio:16/9;height:auto;border:0}
+.sb-v2 .sb-article-content figure{max-width:100%!important;margin:24px 0;overflow-x:auto}
+.sb-v2 .sb-article-content #bo_v_con{max-width:100%;overflow-x:auto}
+.sb-v2 .sb-article-content #bo_v_con table{min-width:540px}
+.sb-v2 .sb-article-content .view_file{padding:20px;background:#eef3fd;border-radius:12px;margin-top:24px}
+.sb-v2 .sb-article-back{text-align:center;margin-top:30px}
+.sb-service-notice,.sb-source-notice{padding:18px 24px;background:#eef3fd;border-radius:12px;line-height:1.7;margin-bottom:28px;overflow-wrap:anywhere}.sb-service-notice a{color:#2b61d6;font-weight:700}
+@media(max-width:700px){#soft-bank-renewal .footer-top{flex-direction:column;gap:24px}#soft-bank-renewal .footer-top>div{width:100%;min-width:0}#soft-bank-renewal .footer-logo{width:min(330px,100%);max-width:100%;margin-left:0}#soft-bank-renewal .chat{right:16px;max-width:calc(100vw - 32px)}#soft-bank-renewal .legal-dialog{padding:28px 20px}#soft-bank-renewal .legal-scroll{overflow-wrap:anywhere}}
+@media(max-width:700px),(hover:none){.intro-skip{right:20px;bottom:30px}.intro-caption{bottom:100px;max-width:calc(100% - 48px)}.site-intro iframe{height:56.25vw;min-height:220px}}

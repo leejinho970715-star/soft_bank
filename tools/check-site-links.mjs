@@ -1,0 +1,5 @@
+import fs from 'node:fs/promises';import path from 'node:path';import {load} from 'cheerio';
+const files=['index.html'];async function walk(d){for(const e of await fs.readdir(d,{withFileTypes:true})){const p=path.join(d,e.name);if(e.isDirectory())await walk(p);else if(p.endsWith('.html'))files.push(p)}}await walk('subpages');
+const issues=[];
+for(const f of files){const $=load(await fs.readFile(f,'utf8'));for(const e of $('a[href],img[src],script[src],link[rel=stylesheet]').toArray()){const v=$(e).attr(e.tagName==='a'?'href':e.tagName==='link'?'href':'src');if(!v||/^(https?:|\/\/|data:|tel:|mailto:)/i.test(v))continue;if(/^javascript:|^#$/.test(v)){issues.push({f,v,type:'placeholder',label:$(e).text().trim().slice(0,70)});continue}const u=new URL(v,'https://local/'+f.replaceAll('\\','/'));const target=decodeURIComponent(u.pathname.slice(1));try{await fs.access(target||'index.html')}catch{issues.push({f,v,type:'missing',label:$(e).text().trim().slice(0,70)})}}}
+await fs.writeFile('renewal/site-link-audit.json',JSON.stringify({pages:files.length,issues},null,2));console.log(JSON.stringify({pages:files.length,issues},null,2));

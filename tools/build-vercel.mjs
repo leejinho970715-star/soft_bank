@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 
 const output = 'public';
 const directories = ['assets', 'renewal', 'subpages'];
-const files = ['index.html', 'styles.css', 'app.js', '.nojekyll'];
+const files = ['index.html', 'styles.css', 'app.js', 'intro.js', '.nojekyll'];
 
 await fs.rm(output, {recursive: true, force: true});
 await fs.mkdir(output, {recursive: true});

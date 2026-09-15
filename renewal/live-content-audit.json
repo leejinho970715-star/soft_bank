@@ -1,0 +1,331 @@
+[
+  {
+    "path": "/product/amaranth10/brand.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 1445,
+    "currentLength": 1445
+  },
+  {
+    "path": "/product/wehago/smart_A10.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 2969,
+    "currentLength": 2969
+  },
+  {
+    "path": "/product/nonprofit/intro.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 3207,
+    "currentLength": 3207
+  },
+  {
+    "path": "/product/oneai.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 7178,
+    "currentLength": 7178
+  },
+  {
+    "path": "/product/omniesol.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 9987,
+    "currentLength": 9987
+  },
+  {
+    "path": "/purchase/inquiry.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 6899,
+    "currentLength": 6899
+  },
+  {
+    "path": "/product/pms.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 1820,
+    "currentLength": 1820
+  },
+  {
+    "path": "/government/notice.asp",
+    "status": 200,
+    "unchanged": false,
+    "previousLength": 508,
+    "currentLength": 508
+  },
+  {
+    "path": "/government/promotion.asp",
+    "status": 200,
+    "unchanged": false,
+    "previousLength": 282,
+    "currentLength": 282
+  },
+  {
+    "path": "/purchase/seminar.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 376,
+    "currentLength": 376
+  },
+  {
+    "path": "/purchase/bsnss_inquiry.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 6729,
+    "currentLength": 6729
+  },
+  {
+    "path": "/bizbox/inquiry.asp",
+    "status": 200,
+    "unchanged": false,
+    "previousLength": 868,
+    "currentLength": 893
+  },
+  {
+    "path": "/icube/inquiry.asp",
+    "status": 200,
+    "unchanged": false,
+    "previousLength": 849,
+    "currentLength": 851
+  },
+  {
+    "path": "/amaranth10/inquiry.asp",
+    "status": 200,
+    "unchanged": false,
+    "previousLength": 750,
+    "currentLength": 794
+  },
+  {
+    "path": "/purchase/service.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 129,
+    "currentLength": 129
+  },
+  {
+    "path": "/company/privacy.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 6609,
+    "currentLength": 6609
+  },
+  {
+    "path": "/company/about.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 590,
+    "currentLength": 590
+  },
+  {
+    "path": "/pms/inquiry.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 113,
+    "currentLength": 113
+  },
+  {
+    "path": "/omniesol/inquiry.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 120,
+    "currentLength": 120
+  },
+  {
+    "path": "/customer/customer_etc.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 745,
+    "currentLength": 745
+  },
+  {
+    "path": "/company/headquarters.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 942,
+    "currentLength": 942
+  },
+  {
+    "path": "/company/location.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 263,
+    "currentLength": 263
+  },
+  {
+    "path": "/member/login.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 79,
+    "currentLength": 79
+  },
+  {
+    "path": "/community/recruit.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 75,
+    "currentLength": 75
+  },
+  {
+    "path": "/community/conmment.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 135,
+    "currentLength": 135
+  },
+  {
+    "path": "/company/clause.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 6414,
+    "currentLength": 6414
+  },
+  {
+    "path": "/member/find.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 66,
+    "currentLength": 66
+  },
+  {
+    "path": "/member/yak.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 13028,
+    "currentLength": 13028
+  },
+  {
+    "path": "/purchase/amavideo.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 465,
+    "currentLength": 465
+  },
+  {
+    "path": "/customer/notice.asp",
+    "status": 200,
+    "unchanged": false,
+    "previousLength": 984,
+    "currentLength": 984
+  },
+  {
+    "path": "/product/amaranth10/lm.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 1285,
+    "currentLength": 1285
+  },
+  {
+    "path": "/product/amaranth10/overview.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 940,
+    "currentLength": 940
+  },
+  {
+    "path": "/product/wehago/cooperation.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 4884,
+    "currentLength": 4884
+  },
+  {
+    "path": "/product/amaranth10/hr.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 496,
+    "currentLength": 496
+  },
+  {
+    "path": "/customer/faq.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 202,
+    "currentLength": 202
+  },
+  {
+    "path": "/product/wehago/linkedservice.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 1999,
+    "currentLength": 1999
+  },
+  {
+    "path": "/product/wehago/extraservice.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 2006,
+    "currentLength": 2006
+  },
+  {
+    "path": "/amaranth10/pds.asp",
+    "status": 200,
+    "unchanged": false,
+    "previousLength": 722,
+    "currentLength": 722
+  },
+  {
+    "path": "/icube/notice.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 800,
+    "currentLength": 800
+  },
+  {
+    "path": "/amaranth10/notice.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 2876,
+    "currentLength": 2876
+  },
+  {
+    "path": "/bizbox/pds.asp",
+    "status": 200,
+    "unchanged": false,
+    "previousLength": 113,
+    "currentLength": 113
+  },
+  {
+    "path": "/pms/pds.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 62,
+    "currentLength": 62
+  },
+  {
+    "path": "/icube/pds.asp",
+    "status": 200,
+    "unchanged": false,
+    "previousLength": 131,
+    "currentLength": 131
+  },
+  {
+    "path": "/bizbox/notice.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 832,
+    "currentLength": 832
+  },
+  {
+    "path": "/bizbox/update.asp",
+    "status": 200,
+    "unchanged": false,
+    "previousLength": 587,
+    "currentLength": 587
+  },
+  {
+    "path": "/community/hit.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 58,
+    "currentLength": 58
+  },
+  {
+    "path": "/omniesol/pds.asp",
+    "status": 200,
+    "unchanged": true,
+    "previousLength": 71,
+    "currentLength": 71
+  }
+]

@@ -224,6 +224,8 @@ await fs.writeFile('renewal/content-audit.json',JSON.stringify(report,null,2));
 for(const [key,p] of [['privacy','/company/privacy.asp'],['terms','/company/clause.asp']]){
  const $=load(await fs.readFile('reference/pages/'+inventory.find(e=>e.path===p).file,'utf8'));
  const content=$('#pageTop').next();content.find('script,style').remove();
+ content.find('img').attr('src','/assets/logo-footer.png').attr('alt','아이원소프트뱅크');
+ content.find('[onchange]').removeAttr('onchange');
  await fs.writeFile(`renewal/${key}.html`,content.html());
 }
 const groups=[...new Set(report.map(p=>p.group))];
