@@ -75,9 +75,9 @@
 #soft-bank-renewal .watermark {bottom:0;transform:translateY(31%)}
 @media(max-width:700px){.support{min-height:auto;padding-bottom:150px}.watermark{bottom:0;transform:translateY(31%)}}
 @media(prefers-reduced-motion:reduce){.custom-grid:after,.custom-grid li:before{animation:none}}
-#soft-bank-renewal /* Final connector treatment: 5px sky-blue to blue gradient with moving highlight */
-.custom-grid:before {height:5px;border:0;background-image:linear-gradient(90deg,transparent 0,#fff 47%,#52bfff 50%,transparent 53%),linear-gradient(90deg,#bfeeff 0%,#75caff 35%,#2b61d6 50%,#75caff 65%,#bfeeff 100%);background-size:180px 5px,100% 5px;background-position:-180px 0,0 0}
-#soft-bank-renewal .custom-grid:after, #soft-bank-renewal .custom-grid li:before {width:5px;background-color:transparent;background-image:linear-gradient(to bottom,transparent 0,#fff 46%,#2388f5 50%,transparent 54%),linear-gradient(to bottom,#bfeeff,#2b61d6,#8edbff);background-size:5px 70px,5px 100%;background-position:0 -70px,0 0}
+#soft-bank-renewal /* Final connector treatment: 2px sky-blue to blue gradient with moving highlight */
+.custom-grid:before {height:2px;border:0;background-image:linear-gradient(90deg,transparent 0,#fff 47%,#52bfff 50%,transparent 53%),linear-gradient(90deg,#bfeeff 0%,#75caff 35%,#2b61d6 50%,#75caff 65%,#bfeeff 100%);background-size:180px 2px,100% 2px;background-position:-180px 0,0 0}
+#soft-bank-renewal .custom-grid:after, #soft-bank-renewal .custom-grid li:before {width:2px;background-color:transparent;background-image:linear-gradient(to bottom,transparent 0,#fff 46%,#2388f5 50%,transparent 54%),linear-gradient(to bottom,#bfeeff,#2b61d6,#8edbff);background-size:2px 70px,2px 100%;background-position:0 -70px,0 0}
 @keyframes line-travel{from{background-position:-180px 0,0 0}to{background-position:calc(100% + 180px) 0,0 0}}
 @keyframes stem-flow{from{background-position:0 -70px,0 0}to{background-position:0 70px,0 0}}
 #soft-bank-renewal /* Left reference quick menu and compact control above the chatbot */
