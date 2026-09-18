@@ -202,3 +202,4 @@ body.modal-open {overflow:hidden}
  #soft-bank-renewal .site-header .lnb-toggle:focus-visible{outline:3px solid #92baff;outline-offset:3px}
 }
 @media(prefers-reduced-motion:reduce){#soft-bank-renewal .site-header .lnb-toggle::before{transition:none}}
+#soft-bank-renewal[tabindex="-1"]:focus{outline:none}

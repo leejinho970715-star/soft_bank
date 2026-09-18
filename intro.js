@@ -9,7 +9,7 @@
   overlay.append(frame,caption,skip);document.body.append(overlay);root.inert=true;document.body.classList.add('intro-open');skip.focus({preventScroll:true});
   let player=null,closed=false;
   const previousReady=window.onYouTubeIframeAPIReady;
-  const close=()=>{if(closed)return;closed=true;try{sessionStorage.setItem('softbank-intro-seen','1')}catch{}player?.destroy();overlay.remove();root.inert=false;document.body.classList.remove('intro-open');document.removeEventListener('keydown',key);if(window.onYouTubeIframeAPIReady===apiReady)window.onYouTubeIframeAPIReady=previousReady;root.querySelector('.brand')?.focus({preventScroll:true});};
+  const close=()=>{if(closed)return;closed=true;try{sessionStorage.setItem('softbank-intro-seen','1')}catch{}player?.destroy();overlay.remove();root.inert=false;document.body.classList.remove('intro-open');document.removeEventListener('keydown',key);if(window.onYouTubeIframeAPIReady===apiReady)window.onYouTubeIframeAPIReady=previousReady;root.setAttribute('tabindex','-1');root.focus({preventScroll:true});};
   const key=e=>{if(e.key==='Escape')close();if(e.key==='Tab'){e.preventDefault();skip.focus()}};
   skip.addEventListener('click',close);document.addEventListener('keydown',key);
   overlay.addEventListener('pointermove',e=>{if(e.pointerType!=='mouse'||!matchMedia('(hover:hover) and (pointer:fine)').matches)return;const x=Math.max(70,Math.min(innerWidth-70,e.clientX+22));const y=Math.max(36,Math.min(innerHeight-36,e.clientY+22));skip.style.left=x+'px';skip.style.top=y+'px';skip.classList.add('is-following');});
