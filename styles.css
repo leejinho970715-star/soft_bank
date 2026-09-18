@@ -224,4 +224,4 @@ body.modal-open {overflow:hidden}
 }
 /* Shared reading rhythm for body copy; navigation and headings keep their own sizing. */
 #soft-bank-renewal :is(.sb-content,.section,footer) p,
-#soft-bank-renewal .sb-content :is(.cont_txt li,.txt li,.feature-box li,.sb-ai-copy li,.area>.txt){line-height:1.3}
+#soft-bank-renewal .sb-content :is(.cont_txt li,.txt li,.feature-box li,.sb-ai-copy li,.area>.txt){line-height:1.4}
