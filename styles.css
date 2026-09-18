@@ -222,3 +222,6 @@ body.modal-open {overflow:hidden}
  #soft-bank-renewal .chat-launch span{display:none}
  #soft-bank-renewal .chat{right:12px;bottom:78px;width:calc(100vw - 24px);max-height:calc(100svh - 100px);overflow-y:auto}
 }
+/* Shared reading rhythm for body copy; navigation and headings keep their own sizing. */
+#soft-bank-renewal :is(.sb-content,.section,footer) p,
+#soft-bank-renewal .sb-content :is(.cont_txt li,.txt li,.feature-box li,.sb-ai-copy li,.area>.txt){line-height:1.3}
