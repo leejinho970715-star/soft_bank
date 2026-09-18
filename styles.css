@@ -195,3 +195,10 @@ body.modal-open {overflow:hidden}
 #soft-bank-renewal .site-header .header-actions{gap:12px;justify-content:flex-start;flex-shrink:0}
 #soft-bank-renewal .site-header .header-actions>.pill{margin:0}
 #soft-bank-renewal .site-header .lnb{border-radius:16px}
+@media(max-width:1100px){
+ #soft-bank-renewal .site-header .lnb-toggle{width:44px;height:44px;min-height:44px;padding:0;align-self:center;flex-shrink:0;border:0;border-radius:50%;background:#2b61d6;color:#fff;font-size:0;line-height:0;transform:none}
+ #soft-bank-renewal .site-header .lnb-toggle::before{content:"";display:block;width:10px;height:10px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg);transition:transform .22s ease}
+ #soft-bank-renewal .site-header .lnb-toggle[aria-expanded="true"]::before{transform:translateY(2px) rotate(225deg)}
+ #soft-bank-renewal .site-header .lnb-toggle:focus-visible{outline:3px solid #92baff;outline-offset:3px}
+}
+@media(prefers-reduced-motion:reduce){#soft-bank-renewal .site-header .lnb-toggle::before{transition:none}}

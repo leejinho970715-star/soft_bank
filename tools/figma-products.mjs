@@ -68,10 +68,10 @@ export function applyProductDesign($,page,root){
  $('.sb-hero>div>p').first().text('Product & Service');
  $('.sb-hero h1').text(title);
  $('.sb-hero nav').remove();
- const products=[['OmniEsol','omniesol'],['Amaranth 10','amaranth10/brand'],['WEHAGO','wehago/smart_A10'],['ONE AI','oneai'],['Amaranth 10 비영리','nonprofit/intro'],['PMS','pms']];
+ const products=[['OmniEsol','omniesol'],['Amaranth 10','amaranth10/brand'],['WEHAGO','wehago/smart_A10'],['ONE AI','oneai'],['Amaranth 10 비영리','nonprofit/intro']];
  const productNav=$('<nav class="sb-hero-products" aria-label="제품 서비스 이동"></nav>');
  products.forEach(([label,path])=>{
-  const active=page===`/product/${path}.asp` || (path.includes('/')&&page.startsWith('/product/'+path.split('/')[0]+'/'));
+  const active=page===`/product/${path}.asp` || (path.includes('/')&&page.startsWith('/product/'+path.split('/')[0]+'/')) || (page==='/product/pms.asp'&&path==='amaranth10/brand');
   const link=$('<a></a>').text(label).attr('href',root+'subpages/product/'+path+'.html');
   if(active)link.attr('aria-current','page');
   productNav.append(link);

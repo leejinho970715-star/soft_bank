@@ -116,3 +116,17 @@
 .sb-content .faq-tags .tag{display:inline-flex;align-items:center;flex:0 0 auto;padding:7px 12px;border-radius:6px;background:#f1f3f5;color:#526174;font-size:14px;line-height:1.5;white-space:nowrap}
 .sb-content .faq-toolbar{display:flex;justify-content:space-between;gap:16px;margin:0 0 18px;line-height:1.6}
 @media(max-width:600px){.sb-content .faq-tags{gap:8px;margin:20px 0 24px}.sb-content .faq-tags .tip{flex-basis:100%;margin:0 0 2px}}
+.sb-renewal .sb-content .sb-article-back>a.cta,.sb-renewal .sb-content .sb-article-back>a.cta:visited,.sb-renewal .sb-content .sb-article-back>a.cta:hover{color:#fff}
+@media(max-width:760px){
+ .sb-content .board_list:has(.td_subject) .sb-table-scroll{overflow:visible;border:0;border-radius:0}
+ .sb-content .board_list:has(.td_subject) table{display:block;min-width:0;width:100%}
+ .sb-content .board_list:has(.td_subject) :is(colgroup,thead){display:none}
+ .sb-content .board_list:has(.td_subject) tbody{display:block;width:100%}
+ .sb-content .board_list:has(.td_subject) tr{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;padding:20px 0;border-bottom:1px solid #e2eaf4}
+ .sb-content .board_list:has(.td_subject) td{display:block;border:0;padding:0;width:auto;white-space:nowrap;font-size:12px;line-height:1.5;color:#64748b}
+ .sb-content .board_list td.td_subject{order:-1;flex:0 0 100%;width:100%;min-width:0}
+ .sb-content .board_list .td_subject>a{display:block;width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:left;font-size:16px;line-height:1.6;color:#24354d}
+ .sb-content .board_list:has(.td_subject) td.file:empty{display:none}
+ .sb-content .board_list:has(.td_subject) td.file img{width:18px;height:18px;object-fit:contain}
+}
+.sb-content .board_list .bbsimp{display:inline-block;margin-right:.35em}
