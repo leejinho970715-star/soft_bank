@@ -157,7 +157,7 @@ body.modal-open {overflow:hidden}
 .quick-left .quick-toggle{position:relative;cursor:pointer}
 .quick-left.closed{transform:translateX(calc(-100% + 32px))}
 .quick-left.closed .quick-toggle{font-size:0;border-radius:0 7px 7px 0}
-.quick-left.closed .quick-toggle:after{content:"›";position:absolute;right:0;top:0;display:grid;place-items:center;width:32px;height:100%;color:#fff;font-size:25px;font-weight:700}
+.quick-left.closed .quick-toggle:after{content:"+";position:absolute;right:0;top:0;display:grid;place-items:center;width:32px;height:100%;color:#fff;font-size:25px;font-weight:700}
 .quick-left.closed .quick-menu{visibility:hidden;pointer-events:none}
 .quick-left.closed{left:0}
 
@@ -203,3 +203,22 @@ body.modal-open {overflow:hidden}
 }
 @media(prefers-reduced-motion:reduce){#soft-bank-renewal .site-header .lnb-toggle::before{transition:none}}
 #soft-bank-renewal[tabindex="-1"]:focus{outline:none}
+@media(max-width:700px){
+ #soft-bank-renewal .quick-left{left:0;top:auto;bottom:90px;width:88px}
+ #soft-bank-renewal .quick-left .quick-toggle{height:32px;font-size:10px;padding:0 8px}
+ #soft-bank-renewal .quick-left .quick-menu{max-height:min(270px,55svh);overflow-y:auto}
+ #soft-bank-renewal .quick-left.closed .quick-menu{max-height:0;overflow:hidden;border:0}
+ #soft-bank-renewal .quick-left.closed .quick-toggle{font-size:0}
+ #soft-bank-renewal .quick-left .quick-menu a{height:88px;min-height:88px;font-size:11px;line-height:1.35;padding:6px 3px}
+ #soft-bank-renewal .quick-left .quick-menu img{width:40px;height:40px;margin-bottom:5px}
+ #soft-bank-renewal .quick-popover{right:12px;bottom:132px;width:66px}
+ #soft-bank-renewal .quick-popover>strong{height:26px;padding:0;justify-content:center;font-size:10px}
+ #soft-bank-renewal .quick-popover .right-quick-item{height:56px;min-height:56px}
+ #soft-bank-renewal .quick-popover .right-quick-item img{width:40px;height:40px}
+ #soft-bank-renewal .quick-fab{right:12px;bottom:80px;min-width:84px;height:44px;padding:0 10px;gap:6px;font-size:10px}
+ #soft-bank-renewal .quick-fab b{width:20px;height:20px;font-size:18px}
+ #soft-bank-renewal .chat-launch{right:12px;bottom:12px;padding:0}
+ #soft-bank-renewal .chat-launch img{width:58px;height:54px}
+ #soft-bank-renewal .chat-launch span{display:none}
+ #soft-bank-renewal .chat{right:12px;bottom:78px;width:calc(100vw - 24px);max-height:calc(100svh - 100px);overflow-y:auto}
+}
