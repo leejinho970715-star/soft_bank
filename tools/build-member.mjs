@@ -22,4 +22,10 @@ export async function buildMember(){
  find('.find').prepend('<div class="member-tabs" role="tablist" aria-label="계정 찾기"><button type="button" role="tab" id="find-id-tab" aria-controls="find-id" aria-selected="true">아이디 찾기</button><button type="button" role="tab" id="find-password-tab" aria-controls="find-password" aria-selected="false" tabindex="-1">비밀번호 찾기</button></div>');
  find('.find>.inBox').each((i,e)=>{const key=i?'password':'id';find(e).attr({id:'find-'+key,role:'tabpanel','aria-labelledby':'find-'+key+'-tab'});if(i)find(e).attr('hidden','');find(e).find('input').each((n,input)=>{const el=find(input);el.attr('id',`find-${key}-field-${n}`).attr('aria-label',el.attr('placeholder')||el.attr('value')||'입력');});});
  await fs.writeFile('subpages/member/find.html',find.html());
+ for(const [page,asset] of [['login','login'],['find','find'],['yak','join'],['join','join']]){
+  const path=`subpages/member/${page}.html`;
+  const $=load(await fs.readFile(path,'utf8'));
+  $('.sb-hero-asset').attr('src',`../../assets/subpages/member/${asset}.png`);
+  await fs.writeFile(path,$.html());
+ }
 }
