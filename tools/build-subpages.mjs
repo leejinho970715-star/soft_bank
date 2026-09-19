@@ -4,6 +4,7 @@ import crypto from 'node:crypto';
 import {load} from 'cheerio';
 import {applyProductDesign} from './figma-products.mjs';
 import {applyCompanyDesign} from './company-design.mjs';
+import {buildMember} from './build-member.mjs';
 
 const origin='https://www.duzon119.co.kr';
 const inventory=JSON.parse(await fs.readFile('reference/inventory.json','utf8'));
@@ -233,6 +234,7 @@ for(const page of pages){
  }
  report.push({path:page.path,preview:out,title,group,textHash:hash,textIdentical:before===after,images:$('img').length,forms});
 }
+await buildMember();
 await fs.writeFile('renewal/content-audit.json',JSON.stringify(report,null,2));
 for(const [key,p] of [['privacy','/company/privacy.asp'],['terms','/company/clause.asp']]){
  const $=load(await fs.readFile('reference/pages/'+inventory.find(e=>e.path===p).file,'utf8'));

@@ -1,0 +1,13 @@
+.sb-member .find{display:block!important;max-width:620px;margin:auto}
+.sb-member .find>.inBox{width:100%;padding:20px 0;border:0}
+.sb-member .find>.inBox[hidden]{display:none!important}
+.member-tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;background:#edf2fa;padding:6px;border-radius:16px;margin-bottom:30px}
+.member-tabs button{border:0;background:transparent;padding:16px 10px;border-radius:12px;color:#52637b;font-weight:700;cursor:pointer}
+.member-tabs button[aria-selected="true"]{background:#2b61d6;color:white}
+.sb-join [data-address-search]{flex:0 0 auto;width:auto;min-width:0;padding:12px 18px;white-space:nowrap}
+.sb-join input[name="zip"]{flex:1 1 120px!important;width:120px!important}
+.sb-join{max-width:860px;margin:auto}.sb-join>h2{font-size:32px}.sb-join>p{color:#64748b;margin:16px 0 32px}
+.sb-join .board_write{background:#f7f9fd;padding:28px;border-radius:24px}
+.sb-join th{width:170px;text-align:left}.sb-join td{padding:18px}.sb-join input:not([type="radio"]){width:100%;min-width:0;min-height:46px;padding:12px;border:1px solid #dbe4f2;border-radius:10px;background:white}
+.sb-join .flex{display:flex;gap:10px;align-items:center}.sb-join .flex>input{flex:1;width:0}.sb-join .juso{margin-top:12px;flex-direction:column}.sb-join .juso>input{width:100%}.sb-join .checkBox{display:flex;gap:20px}.sb-join .type{font-size:13px;color:#64748b}.member-status{padding:20px;background:#edf3ff;border-radius:12px;margin:24px 0;color:#52637b}.member-actions{display:flex;gap:12px;justify-content:center}.member-actions button{border:0;cursor:pointer}
+@media(max-width:760px){.sb-join .board_write{padding:16px}.sb-join th{width:100%}.sb-join td{padding:10px 0 20px}.sb-join .alert.flex,.sb-join .alert dl{flex-wrap:wrap}.member-actions{flex-wrap:wrap}.sb-member .find{padding:22px!important}}
