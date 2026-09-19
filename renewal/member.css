@@ -4,6 +4,10 @@
 .member-tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;background:#edf2fa;padding:6px;border-radius:16px;margin-bottom:30px}
 .member-tabs button{border:0;background:transparent;padding:16px 10px;border-radius:12px;color:#52637b;font-weight:700;cursor:pointer}
 .member-tabs button[aria-selected="true"]{background:#2b61d6;color:white}
+.member-agree-all{padding:24px;margin:28px 0;background:#edf3ff;border:1px solid #dbe6ff;border-radius:16px}.member-agree-all label{display:flex;align-items:center;gap:10px;cursor:pointer}.member-agree-all input{appearance:auto!important;position:static!important;opacity:1!important;width:20px!important;height:20px!important;accent-color:#2b61d6}.member-agree-all p{margin:10px 0 0;color:#64748b;font-size:14px}
+.member-modal-open{overflow:hidden}.member-join-dialog{box-sizing:border-box;width:min(920px,calc(100% - 32px));max-height:90dvh;margin:auto;padding:28px;border:0;border-radius:24px;background:#fff;color:#172b4d;overflow:auto;overscroll-behavior:contain;box-shadow:0 24px 80px #13264d40}.member-join-dialog::backdrop{background:#10234199;backdrop-filter:blur(4px)}.member-dialog-header{display:flex;align-items:center;justify-content:space-between;gap:16px}.member-dialog-header h2{font-size:28px;margin:0;outline:none}.member-dialog-header button{flex-shrink:0;width:40px;height:40px;border:0;border-radius:50%;background:#edf3ff;color:#2b61d6;font-size:28px;cursor:pointer}
+@media(max-width:760px){.member-join-dialog{padding:18px;width:calc(100% - 20px);max-height:92dvh;border-radius:18px}.member-dialog-header h2{font-size:24px}}
+.sb-content .member-dialog-header button{display:grid;place-items:center;position:static;padding:0;margin:0;width:40px;height:40px;min-width:40px;line-height:1;border-radius:50%}
 .sb-join [data-address-search]{flex:0 0 auto;width:auto;min-width:0;padding:12px 18px;white-space:nowrap}
 .sb-join input[name="zip"]{flex:1 1 120px!important;width:120px!important}
 .sb-join{max-width:860px;margin:auto}.sb-join>h2{font-size:32px}.sb-join>p{color:#64748b;margin:16px 0 32px}

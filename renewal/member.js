@@ -1,6 +1,15 @@
 document.addEventListener('DOMContentLoaded',()=>{
  const next=document.querySelector('[data-member-next]');
- next?.addEventListener('click',event=>{const missing=['agree1','agree2'].map(id=>document.getElementById(id)).find(el=>!el?.checked);if(missing){event.preventDefault();alert('이용약관과 개인정보 수집·이용에 동의해주세요.');missing.focus();}});
+ const agreements=['agree1','agree2'].map(id=>document.getElementById(id)).filter(Boolean);
+ const all=document.getElementById('agree-all');
+ const sync=()=>{if(all){all.checked=agreements.every(el=>el.checked);all.indeterminate=!all.checked&&agreements.some(el=>el.checked);}};
+ all?.addEventListener('change',()=>{agreements.forEach(el=>{el.checked=all.checked;});sync();});
+ agreements.forEach(el=>el.addEventListener('change',sync));if(all)sync();
+ const modal=document.getElementById('member-join-dialog');
+ next?.addEventListener('click',event=>{const missing=agreements.find(el=>!el.checked);if(missing){event.preventDefault();alert('이용약관과 개인정보 수집·이용에 동의해주세요.');missing.focus();return;}if(modal){event.preventDefault();modal.showModal();document.documentElement.classList.add('member-modal-open');modal.scrollTop=0;document.getElementById('member-join-title').focus();}});
+ modal?.querySelectorAll('[data-member-close]').forEach(button=>button.addEventListener('click',()=>modal.close()));
+ modal?.addEventListener('close',()=>{document.documentElement.classList.remove('member-modal-open');next?.focus({preventScroll:true});});
+ modal?.addEventListener('click',event=>{if(event.target===modal){const rect=modal.getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)modal.close();}});
  const tabs=[...document.querySelectorAll('.member-tabs [role="tab"]')];
  const select=tab=>tabs.forEach(button=>{const active=button===tab;button.setAttribute('aria-selected',String(active));button.tabIndex=active?0:-1;document.getElementById(button.getAttribute('aria-controls')).hidden=!active;});
  tabs.forEach((tab,i)=>{tab.addEventListener('click',()=>select(tab));tab.addEventListener('keydown',e=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;e.preventDefault();const target=tabs[e.key==='Home'?0:e.key==='End'?tabs.length-1:(i+(e.key==='ArrowRight'?1:tabs.length-1))%tabs.length];select(target);target.focus();});});
