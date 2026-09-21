@@ -260,6 +260,9 @@
 .sb-page-product-omniesol .omniesol .section.omni-dual-section{grid-template-columns:1fr;gap:40px}
 .sb-page-product-omniesol .omniesol .omni-dual-visual{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:center}
 @media(max-width:760px){.sb-page-product-omniesol .omniesol .omni-dual-visual{gap:10px}}
+.sb-page-product-wehago-extraservice .sb-content .txt>strong{display:block;white-space:normal;word-break:keep-all;overflow-wrap:anywhere;margin:0 0 16px}
+.sb-page-product-wehago-extraservice .sb-content .txt>b{display:block;white-space:normal;word-break:keep-all;overflow-wrap:anywhere;line-height:1.4;margin:0 0 20px}
+.sb-page-product-wehago-extraservice .sb-content :is(.txt,.cont_txt) p{white-space:normal;word-break:keep-all;overflow-wrap:anywhere;line-height:1.4}
 .sb-page-product-pms .sb-content .sb-pms-diagram{position:relative;width:100%;max-width:1200px;margin:36px auto 0;padding:0}
 .sb-page-product-pms .sb-content .sb-pms-diagram>img{display:block;width:100%;max-width:none;max-height:none;height:auto;margin:0;background:transparent;border:0;box-shadow:none}
 .sb-page-product-pms .sb-content .img_faetures .cont_img{width:100%;max-width:none;overflow:visible}
