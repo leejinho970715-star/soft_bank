@@ -13,3 +13,12 @@ Prompt set: keep supplied Korean interface, colors, tables and charts; present i
 - development.png: supplied development IDE screenshot in matching monitor mockup.
 - mlops.png: supplied dark operational metrics dashboard in matching monitor mockup.
 - chatbot.png: OmniEsol loop symbol with a friendly pearl-white robot, cyan eyes, code panel and chat bubble; blue/cyan/violet glossy 3D illustration with transparent background. Generated with built-in image_gen.
+
+## High-resolution delivery (2026-09-21)
+
+Final assets are upscaled to 3840 pixels wide with local Real-ESRGAN. Original
+composition and alpha are retained; per-file model and dimensions are recorded in
+`../product-upscale-manifest.json`. The initial render sizes above describe the
+pre-upscale images. Transparent PNGs remain the source assets; matching high-quality
+WebP copies reduce page download size. Small source lettering is not guaranteed to
+be reconstructed exactly by an AI upscaler.

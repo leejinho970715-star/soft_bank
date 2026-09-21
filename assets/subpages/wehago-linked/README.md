@@ -21,3 +21,12 @@ background outside the devices. Do not invent additional captions or objects.
 Management reuses the generated factoring asset because the supplied source is identical.
 Each service follows the user's attachment order even when its UI depicts another module.
 Small generated UI text may differ from the original screenshot.
+
+## High-resolution delivery (2026-09-21)
+
+Final assets are upscaled to 3840 pixels wide with local Real-ESRGAN. Original
+composition and alpha are retained; per-file model and dimensions are recorded in
+`../product-upscale-manifest.json`. The initial render sizes above describe the
+pre-upscale images. Transparent PNGs remain the source assets; matching high-quality
+WebP copies reduce page download size. Small source lettering is not guaranteed to
+be reconstructed exactly by an AI upscaler.

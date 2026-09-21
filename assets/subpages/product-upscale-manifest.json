@@ -1,0 +1,289 @@
+[
+  {
+    "file": "assets/subpages/omniesol-custom/chatbot.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "ef4ccede9ec7f42b68e15e8a7c8159bc7ec03d5f56041e38c157adf980c678c2",
+    "method": "realesrgan-x4plus, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/omniesol-custom/dashboard.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "d471d9ae73ea5313c8cf33bb5675417a6331c619be7b5bd02a8c45630053cb3c",
+    "method": "realesrgan-x4plus, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/omniesol-custom/development.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "702defc51b17cc7e6ffeab32e8b1fa08c228ef41e8fca7d906911ab570479792",
+    "method": "realesrgan-x4plus, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/omniesol-custom/expense.png",
+    "width": 3840,
+    "height": 2564,
+    "originalSha256": "227eb22becc3db3ebe9aff2b2c7fd5263b747f17933938ba8860f61c51a86b23",
+    "method": "realesrgan-x4plus, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/omniesol-custom/group.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "c1ba33637389e049783fd35c75c5973bde9e3dfe7e6f744c2da560b4625e917c",
+    "method": "realesrgan-x4plus, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/omniesol-custom/manufacturing.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "d1c1a30c512bc3e9923f42e15b72952f736543e6a8fc8fb046440295a8f5ee4e",
+    "method": "realesrgan-x4plus, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/omniesol-custom/mlops.png",
+    "width": 3840,
+    "height": 2126,
+    "originalSha256": "c8565f3b3eb073b4b828a0a431a3b115eaa140deca55c1e35451cbc4efc1bbea",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/omniesol-custom/procurement.png",
+    "width": 3840,
+    "height": 2564,
+    "originalSha256": "e5d0e8807c115f19427f6c28df97b01b9c6c2e10aedf0b880a76f3424395578c",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/omniesol-custom/sales.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "28a367297b3bec2a1a3661fe9ad2da8333f1b146b0e78e1fe6eaa1f277561eaf",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/amaranth-custom/banking.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "6ed95e94b686b42ad4ac93e1db1dbce0a6564f35a692eb0bf74df72ad0ec6e79",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/amaranth-custom/board.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "ad9a8f4d322d9d5b6df2d58977a2f4a8bb49479a1d364eca829b9641e0473f24",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/amaranth-custom/budget.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "a6057384c030b91f58f85d67c14f4672f287e54be09939588b5427709724bd08",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/amaranth-custom/closing.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "f8997a95de40bc7f2621c6b1ccdf8069a7ba81e81e47cc1a520532ed06ec212b",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/amaranth-custom/ecosystem.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "31d2253f78eda785380a90a801a3a14bd01414831c7b6b71a7012ebec85ec214",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/amaranth-custom/sharing.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "b0ebe19af35a1dc4a43856bf7953b99253d290734f0d80306e1e3d4e6b0cad84",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/amaranth-custom/statements.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "3ca251dbb90ba26c9ea55e7dc4e050f096d9dfbba28c8754d596e993c9bc73d6",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/amaranth-custom/tasks.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "14548478576687477e9b3c4f9ba16a13dba525c36d4424a944e12cb4fd20f33f",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/amaranth-custom/tax.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "c92fcd2a2f55756bd522727a1ad9eccb919039fc2b2796a272c431f2aedeb1b9",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/pms-custom/features.png",
+    "width": 3840,
+    "height": 1930,
+    "originalSha256": "99954ec537bbf6ec64876d1a2f65ff783070be934a9f6a35c6f833c348b9e35b",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/pms-custom/gw-expansion.png",
+    "width": 3840,
+    "height": 1814,
+    "originalSha256": "d0227fd50e9c26728c694e2fab499e01578cb79bbea5e5543a55b4b9d1ce90a9",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/wehago-custom/approval.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "6a7ce14ae380a1c0063d305f587524ee0805bf54f0ba9382d9d51b7dda733511",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/wehago-custom/attendance.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "7bcc2313e2bdc4413ed540c433700df61b867ab20923cf2928cfc23a156c7d52",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/wehago-custom/board.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "6f398af10a77e264d794aee9714f967507ca37560c94df373be71a01cd41831f",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/wehago-custom/calendar.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "7a4d333f11c7fdbbe538855e1bce2d350a77666dff1926156e450409dda349c9",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/wehago-custom/fax.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "925c12291433d211792ae75b66528cf5ffba0c5b89eb6020a4940580be8f22a8",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/wehago-custom/mail.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "a589ac8a0207a74173789c6ed959269677ff31d752db54f13fa350a3acde782e",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/wehago-custom/notes.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "6542da0c3995b76d2811f0111cbfeebe354de4238ab4b418c44e46bd861d7f76",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/wehago-custom/remote.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "a30930ccf52ba79065a55d69c05cdca98597873c35fe4ce832a865bd25ef46af",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/wehago-custom/sms.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "e898419fcd645371128742f560aea6e23a138c79fd45ac6515aa022cdaf93dad",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/wehago-custom/tasks.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "b8d090efc3e300f11567e15f0fefecd3d737c42088ac6af2a1fde966df50eedd",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/wehago-extra/corporate.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "83eab2deb08879620b21dac5f49582b72abfb3398a7579d6db9d8ade78ccfff8",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/wehago-extra/crm.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "f78bfd67ccf43759ccd409fb3db76dd08900e8ed4f1adaefcdf264be6510dac0",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/wehago-extra/factoring.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "c3b5c4bae1e53bba9cd0980860cde897f9d12bf7c9876efd34ffabe5dc7d4f09",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/wehago-extra/personal.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "d5945b38e211513dfad5f416470e1ef527a1880eb22f325419b740b0baa27b43",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/wehago-extra/pms.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "31279ced7604c052c51efdd79d1e74008f81b29695e150988223a44d8d9f7609",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/wehago-linked/banking.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "8f9d139a4e710f3fb054cc49107b1023852c1ac1253f105b955bdfde64f52f50",
+    "method": "realesrgan-x4plus, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/wehago-linked/billing.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "2608d57c625db2421285c624c71e2ac613fedac165d2481dc51d94c2078127a3",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/wehago-linked/expenses.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "1870b8a5fb6d8b33ad12a9a82cdb16bd5a58a693ef2d82a5649485926526f98a",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/wehago-linked/filing.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "ffd4840f6498f1122f8b2ca8e5f702855bb652e8fb87251aa46a69b8ccd3ec98",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/wehago-linked/management.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "c3b5c4bae1e53bba9cd0980860cde897f9d12bf7c9876efd34ffabe5dc7d4f09",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/wehago-linked/sales.png",
+    "width": 3840,
+    "height": 2560,
+    "originalSha256": "715fefb669da50ee96f9556fbff66e03b741b1782130692d17f20eff914eb553",
+    "method": "realesr-animevideov3, 3840px, original alpha"
+  }
+]

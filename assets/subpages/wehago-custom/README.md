@@ -32,3 +32,12 @@ Common: premium near-frontal 3D desktop monitor mockup with dark slim bezel and 
 - Remote: preserve blue connection setup screen, two white setup cards, icons and Windows desktop panel lower left.
 
 Generated UI lettering may differ slightly from reference. Existing storage and CRM detailed images are swapped by explicit paths; contacts reuses the new storage image.
+
+## High-resolution delivery (2026-09-21)
+
+Final assets are upscaled to 3840 pixels wide with local Real-ESRGAN. Original
+composition and alpha are retained; per-file model and dimensions are recorded in
+`../product-upscale-manifest.json`. The initial render sizes above describe the
+pre-upscale images. Transparent PNGs remain the source assets; matching high-quality
+WebP copies reduce page download size. Small source lettering is not guaranteed to
+be reconstructed exactly by an AI upscaler.

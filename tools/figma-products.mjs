@@ -5,6 +5,7 @@ import {applyPmsAssets} from './pms-assets.mjs';
 import {applyWehagoAssets} from './wehago-assets.mjs';
 import {applyWehagoExtraAssets} from './wehago-extra-assets.mjs';
 import {applyWehagoLinkedAssets} from './wehago-linked-assets.mjs';
+import {applyHighresAssets} from './product-highres.mjs';
 
 const assets=JSON.parse(await fs.readFile('assets/subpages/figma/manifest.json','utf8'));
 const file=(family,n)=>assets[family]?.[n-1]?.file;
@@ -179,6 +180,7 @@ export function applyProductDesign($,page,root){
  if(page==='/product/wehago/linkedservice.asp')applyWehagoLinkedAssets($,root);
  if(['/product/amaranth10/brand.asp','/product/amaranth10/overview.asp','/product/nonprofit/intro.asp'].includes(page))applyAmaranthAssets($,root,{nonprofit:page==='/product/nonprofit/intro.asp'});
  if(page==='/product/wehago/smart_A10.asp')$('.sb-wehago-connected').append($('<a class="cta sb-product-cta sb-wehago-leaflet">리플렛 자세히 보기</a>').attr('href',root+'assets/documents/wehago-services-2026.pdf'));
+ applyHighresAssets($,root);
  const css=$('<link rel="stylesheet">').attr('href',root+'renewal/products-figma.css?v=20260915-5');$('head').append(css);
  $('head').append($('<script defer></script>').attr('src',root+'renewal/products-figma.js?v=20260915-5'));
 }

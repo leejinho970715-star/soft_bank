@@ -19,3 +19,12 @@ Common: Recreate supplied screen faithfully as a premium near-frontal 3D monitor
 - PMS and personal: preserve business status table and six purple nodes 영업, 생산, 외주, 회계, 재고, 구매 around central document symbol at right.
 
 Generated lettering may differ slightly from reference screenshots.
+
+## High-resolution delivery (2026-09-21)
+
+Final assets are upscaled to 3840 pixels wide with local Real-ESRGAN. Original
+composition and alpha are retained; per-file model and dimensions are recorded in
+`../product-upscale-manifest.json`. The initial render sizes above describe the
+pre-upscale images. Transparent PNGs remain the source assets; matching high-quality
+WebP copies reduce page download size. Small source lettering is not guaranteed to
+be reconstructed exactly by an AI upscaler.
