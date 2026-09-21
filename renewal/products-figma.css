@@ -284,3 +284,13 @@
 .sb-page-product-omniesol .sb-content .sb-contact-banner{margin-top:0!important}
 /* Keep the established image layout while serving compact high-resolution assets. */
 .sb-highres-picture{display:contents}
+/* Steps & Step Cards (Cloud 관제 서비스, DEWS Platform 구성요소, ONE AI 자산화) */
+.sb-page-product-omniesol .omniesol .steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin:32px 0 60px}
+.sb-page-product-omniesol .omniesol .step{background:#edf3ff;border:1px solid #e0ebff;border-radius:12px;padding:30px 24px;transition:transform .2s ease,box-shadow .2s ease}
+.sb-page-product-omniesol .omniesol .step:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(43,97,214,.08)}
+.sb-page-product-omniesol .omniesol .step .num{color:#2b61d6;font-weight:700;font-size:13px;letter-spacing:.05em;margin-bottom:12px;text-transform:uppercase}
+.sb-page-product-omniesol .omniesol .step h5{color:#1D1D1F!important;font-weight:700!important;font-size:20px;line-height:1.4;margin:0 0 12px}
+.sb-page-product-omniesol .omniesol .step p{color:#636a77;font-size:14px;line-height:1.7;margin:0;word-break:keep-all}
+@media(max-width:900px){.sb-page-product-omniesol .omniesol .steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}}
+@media(max-width:550px){.sb-page-product-omniesol .omniesol .steps{grid-template-columns:1fr;gap:14px}.sb-page-product-omniesol .omniesol .step{padding:24px 20px}}
+
