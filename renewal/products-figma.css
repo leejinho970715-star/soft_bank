@@ -296,9 +296,10 @@
 
 /* Non-profit Intro function cards styling */
 .sb-page-product-nonprofit-intro .sb-nonprofit-functions [data-panel] .grid>div{background:#edf3ff!important;border:1px solid #e0ebff!important;border-radius:12px!important;padding:28px 24px!important}
-.sb-page-product-nonprofit-intro .sb-nonprofit-functions [data-panel] .grid>div>span:first-child{background:transparent!important;border:none!important;box-shadow:none!important;padding:0!important;color:#2b61d6!important;font-weight:700!important;font-size:13px!important;letter-spacing:.02em!important;display:block!important;width:auto!important;margin-bottom:10px!important}
+.sb-page-product-nonprofit-intro .sb-nonprofit-functions [data-panel] .grid>div span{background:none!important;background-color:transparent!important;border:none!important;box-shadow:none!important;padding:0!important;color:#2b61d6!important;font-weight:700!important;font-size:13px!important;letter-spacing:.02em!important;display:block!important;width:auto!important;margin-bottom:10px!important}
 .sb-page-product-nonprofit-intro .sb-nonprofit-functions [data-panel] .grid>div h3{color:#1D1D1F!important;font-weight:700!important;font-size:18px!important;line-height:1.4!important;margin:0 0 12px!important}
 .sb-page-product-nonprofit-intro .sb-nonprofit-functions [data-panel] .grid>div p{color:#555d6b!important;font-weight:400!important;font-style:normal!important;font-size:14px!important;line-height:1.75!important;margin:0!important}
+
 
 
 /* WEHAGO features title left alignment with content grid */
