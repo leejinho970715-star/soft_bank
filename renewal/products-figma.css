@@ -300,4 +300,10 @@
 .sb-page-product-nonprofit-intro .sb-nonprofit-functions [data-panel] .grid>div h3{color:#1D1D1F!important;font-weight:700!important;font-size:18px!important;line-height:1.4!important;margin:0 0 12px!important}
 .sb-page-product-nonprofit-intro .sb-nonprofit-functions [data-panel] .grid>div p{color:#555d6b!important;font-weight:400!important;font-style:normal!important;font-size:14px!important;line-height:1.75!important;margin:0!important}
 
+/* WEHAGO features title left alignment with content grid */
+.sb-figma-product .sb-content .wehago_04 > .cont_txt {text-align:left!important;margin-bottom:40px!important;padding-left:0!important}
+.sb-figma-product .sb-content .wehago_04 > .cont_txt > b {display:block;color:var(--product-blue,#2b61d6);font-size:15px;font-weight:600;margin-bottom:8px;text-align:left!important}
+.sb-figma-product .sb-content .wehago_04 > .cont_txt h5 {font-size:clamp(25px,2.2vw,36px);line-height:1.35;letter-spacing:-.045em;color:var(--product-ink,#34373d);font-weight:700;margin:0;text-align:left!important}
+
+
 
