@@ -47,6 +47,10 @@
 #soft-bank-renewal .company .title, #soft-bank-renewal .company .cta {z-index:2}
 #soft-bank-renewal .type-text.typing:after {content:"";display:inline-block;width:2px;height:.95em;margin-left:5px;vertical-align:-.08em;background:#2b61d6;animation:cursor-blink .65s steps(1) infinite}
 @keyframes cursor-blink{50%{opacity:0}}
+@media (scripting:enabled) and (prefers-reduced-motion:no-preference){
+  #soft-bank-renewal .company .type-text,
+  #soft-bank-renewal .company .type-cta{opacity:0;visibility:hidden}
+}
 @media(max-width:700px){.watermark{bottom:-6%;width:82%}}
 #soft-bank-renewal /* Customer-center Swiper */
 .news-tabs {display:flex;flex-direction:column}
@@ -225,3 +229,29 @@ body.modal-open {overflow:hidden}
 /* Shared reading rhythm for body copy; navigation and headings keep their own sizing. */
 #soft-bank-renewal :is(.sb-content,.section,footer) p,
 #soft-bank-renewal .sb-content :is(.cont_txt li,.txt li,.feature-box li,.sb-ai-copy li,.area>.txt){line-height:1.4}
+
+/* Keep card content within its border and reserve a separate date row. */
+#soft-bank-renewal .news-slider .news-card{display:flex;flex-direction:column;gap:14px;height:410px;overflow:hidden;min-width:0}
+#soft-bank-renewal .news-slider .news-card img{width:100%;height:200px;flex:0 0 200px;object-fit:cover}
+#soft-bank-renewal .news-slider .news-card b{align-self:flex-start;flex-shrink:0;margin:0}
+#soft-bank-renewal .news-slider .news-card p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden;margin:0;line-height:1.4;max-height:4.2em;flex-shrink:0}
+#soft-bank-renewal .news-slider .news-card time{display:block;margin-top:auto;white-space:nowrap;flex-shrink:0}
+#soft-bank-renewal .company .title{width:100%}
+/* Two equal groups make the left-to-right logo loop seamless. */
+#soft-bank-renewal .client-logos{display:block;max-width:none;width:100%;overflow:hidden;margin:64px auto 0}
+#soft-bank-renewal .client-logo-track{display:flex;width:max-content;animation:client-flow-right 55s linear infinite;will-change:transform}
+#soft-bank-renewal .client-logo-group{display:flex;flex:none;align-items:center;gap:28px;padding-right:28px}
+#soft-bank-renewal .client-logo-group img{flex:0 0 260px;width:260px;height:102px;max-width:none;object-fit:contain;background:#fff;border-radius:8px}
+#soft-bank-renewal .client-logos:hover .client-logo-track{animation-play-state:paused}
+@keyframes client-flow-right{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+@media(max-width:700px){
+ #soft-bank-renewal .news-slider .news-card{width:min(300px,calc(100vw - 54px));height:390px;gap:12px}
+ #soft-bank-renewal .news-slider .news-card img{height:180px;flex-basis:180px}
+ #soft-bank-renewal .client-logo-group{gap:20px;padding-right:20px}
+ #soft-bank-renewal .client-logo-group img{flex-basis:220px;width:220px;height:86px}
+}
+@media(prefers-reduced-motion:reduce){
+ #soft-bank-renewal .client-logos{overflow-x:auto}
+ #soft-bank-renewal .client-logo-track{animation:none;transform:none}
+ #soft-bank-renewal .client-logo-group[aria-hidden]{display:none}
+}

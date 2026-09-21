@@ -255,6 +255,19 @@
     renderNews('notice');
   }
 
+  const clientLogos = $('.client-logos');
+  if (clientLogos) {
+    const track = document.createElement('div');
+    track.className = 'client-logo-track';
+    const group = document.createElement('div');
+    group.className = 'client-logo-group';
+    while (clientLogos.firstChild) group.append(clientLogos.firstChild);
+    const duplicate = group.cloneNode(true);
+    duplicate.setAttribute('aria-hidden', 'true');
+    track.append(group, duplicate);
+    clientLogos.append(track);
+  }
+
   if (window.gsap && window.ScrollTrigger && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -283,13 +296,15 @@
     const companyButton = company ? $('.type-cta', company) : null;
 
     if (company && typeItems.length) {
+      gsap.set([...typeItems, ...(companyButton ? [companyButton] : [])], { autoAlpha: 0 });
       const typing = gsap.timeline({
         scrollTrigger: { trigger: company, start: 'top 72%', once: true }
       });
 
       typeItems.forEach((el, index) => {
         const text = el.dataset.typeText || el.textContent.trim().replace(/\s+/g, ' ');
-        typing.set(el, { opacity: 1, onComplete: () => {
+        typing.set(el, { autoAlpha: 1, onComplete: () => {
+          el.style.minHeight = `${el.getBoundingClientRect().height}px`;
           el.textContent = '';
           el.classList.add('typing');
         }}).to({ count: 0 }, {
@@ -305,15 +320,15 @@
       });
 
       if (companyButton) {
-        typing.set(companyButton, { opacity: 0 })
-          .to(companyButton, { opacity: 1, duration: 0.18 })
-          .to(companyButton, { x: -16, duration: 0.1 })
-          .to(companyButton, { x: 14, duration: 0.1 })
-          .to(companyButton, { x: -10, duration: 0.1 })
-          .to(companyButton, { x: 7, duration: 0.1 })
-          .to(companyButton, { x: 0, duration: 0.14, ease: 'power2.out' });
+        typing.fromTo(companyButton, { autoAlpha: 0, y: 22 },
+          { autoAlpha: 1, y: 0, duration: 0.65, ease: 'back.out(1.3)' });
       }
     }
+  } else {
+    $$('.company .type-text, .company .type-cta').forEach(el => {
+      el.style.opacity = '1';
+      el.style.visibility = 'visible';
+    });
   }
 })();
 
