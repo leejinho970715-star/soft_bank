@@ -19,3 +19,24 @@ The user explicitly confirmed the attachment order, including video meeting for 
 - Ecosystem: preserve complete blue Amaranth 10 cube, ERP, green groupware and cyan document nodes, Korean labels and ECO Platform icons inside monitor; white diagram background stays within the screen.
 
 Generated UI lettering may differ slightly from the reference screenshots.
+
+## Accounting page additions
+
+Built-in imagegen, 2026-09-21, transparent PNG, 1536 × 1024. Saved in this directory.
+
+| File | Section | Source clipboard ID |
+| --- | --- | --- |
+| closing.png | 자동결산 / 주요 재무제표 | 42c9e2dc-962c-4087-8fd4-867053e2a01f |
+| statements.png | 업종별 재무제표 | f880c279-c0d6-416f-9442-6e807b535e98 |
+| banking.png | 통합 금융자금관리 | 6848ce87-ff55-4163-8f0d-1a46fa275088 |
+| tax.png | 세무신고자동화 | 5008a644-7cc5-42ed-b129-470cb994d430 |
+| budget.png | 예산편성 관리 | 6a51d7a2-f079-4ba0-80e7-b0dfcf6824bf |
+
+Prompt set: Create a premium near-frontal 3D desktop monitor mockup containing the supplied Amaranth10 screenshot. Preserve original Korean UI content and arrangement faithfully. Complete slim dark navy bezel monitor with silver stand, whole device visible, landscape 1536x1024. Remove the old gray shadow cloud. Genuine transparent PNG alpha outside the device, no backdrop, floor or checkerboard, no extra objects.
+
+Per-image details:
+- Closing: preserve blue toolbar, dimmed financial table and centered white 결산분개 내역보기 modal.
+- Statements: preserve Korean table columns and floating 포괄손익계산서 upper-right panel with pale green rows.
+- Banking: preserve dark left sidebar, transfer workflow, financial transfer table, yellow total row and lower journal table.
+- Tax: preserve tax form table, pale yellow/green rows, related forms panel and upper-right Amaranth10 / 홈택스 로그인 / 파일형식 검증 card.
+- Budget: preserve 예산관리 blue header, 실행예산신청 title, project selection, pale green budget table, monthly columns, lower form and project list panel.

@@ -172,7 +172,7 @@ export function applyProductDesign($,page,root){
   }
  });
  if(page==='/product/omniesol.asp')applyOmniAssets($,root);
- if(page==='/product/amaranth10/brand.asp')applyAmaranthAssets($,root);
+ if(['/product/amaranth10/brand.asp','/product/amaranth10/overview.asp'].includes(page))applyAmaranthAssets($,root);
  const css=$('<link rel="stylesheet">').attr('href',root+'renewal/products-figma.css?v=20260915-5');$('head').append(css);
  $('head').append($('<script defer></script>').attr('src',root+'renewal/products-figma.js?v=20260915-5'));
 }
