@@ -332,6 +332,25 @@
   }
 })();
 
+// Keep the decorative hero video muted and offer a keyboard-accessible pause control.
+const heroVideo = document.querySelector('.hero-video');
+const heroVideoToggle = document.querySelector('.hero-video-toggle');
+if (heroVideo && heroVideoToggle) {
+  const syncVideoButton = () => {
+    heroVideoToggle.textContent = heroVideo.paused ? '영상 재생' : '영상 일시정지';
+    heroVideoToggle.setAttribute('aria-pressed', String(heroVideo.paused));
+  };
+  heroVideo.muted = true;
+  heroVideo.addEventListener('play', syncVideoButton);
+  heroVideo.addEventListener('pause', syncVideoButton);
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) heroVideo.pause();
+  heroVideoToggle.addEventListener('click', () => {
+    if (heroVideo.paused) heroVideo.play().catch(syncVideoButton);
+    else heroVideo.pause();
+  });
+  syncVideoButton();
+}
+
 // Display the captured original legal documents in full.
 for (const [key, id] of [['privacy', 'privacy-modal'], ['terms', 'terms-modal']]) {
   const panel = document.querySelector('#' + id + ' .legal-scroll');

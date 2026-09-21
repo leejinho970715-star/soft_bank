@@ -256,4 +256,8 @@ body.modal-open {overflow:hidden}
  #soft-bank-renewal .client-logo-group[aria-hidden]{display:none}
 }
 /* Customer story background supplied by the client. */
-.clients{background:#e6edff url('assets/customer-story-bg.png') center/cover no-repeat}
+.clients{background:#e6edff url('assets/customer-story-bg-v2.png') center/cover no-repeat}
+.hero-video-layer{position:absolute;inset:0;background:#fff;pointer-events:none}
+.hero-video{display:block;width:100%;height:100%;object-fit:cover;opacity:.45}
+.hero-video-toggle{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);z-index:3;padding:9px 16px;border:1px solid #c5d5ee;border-radius:999px;background:#ffffffe6;color:#29466d;font-size:13px;cursor:pointer}
+.hero-video-toggle:focus-visible{outline:3px solid #315ddb;outline-offset:3px}
