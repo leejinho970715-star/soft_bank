@@ -157,10 +157,7 @@ export function applyProductDesign($,page,root){
    // The source messenger summary accidentally duplicated accounting services.
    if(label==='메신저')card.find('.txt .flex').html('<div><p>그룹대화 / 1:1 대화</p><p>대화내용 검색</p><p>문서·화면 공유</p><p>웹오피스 동시편집</p><p>실시간 협업</p></div>');
   });
-  $('.wehago_03 .inner>.txt,.wehago_01 .swiper-slide>.txt').each((i,e)=>{
-   const text=$(e),label=text.children('strong').first().text().trim();
-   if(label==='메신저'&&text.closest('.wehago_01').length)text.siblings('.img').find('img').attr('src',root+file('wehago',11)).attr('width','1316').attr('height','1200');
-  });
+  $('.wehago_01 .swiper-slide').filter((i,e)=>$(e).find('.txt>strong').first().text().trim()==='메신저').remove();
  }
  $('.sb-product-tabs a').each((i,e)=>{const a=$(e);if(a.hasClass('active'))a.attr('aria-current','page')});
  $('.sb-design-mockup').each((i,e)=>{
