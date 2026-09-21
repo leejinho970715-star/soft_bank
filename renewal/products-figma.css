@@ -201,7 +201,9 @@
 .sb-figma-product .sb-wehago-connected h2{font-size:26px;line-height:1.5;margin:0 auto 25px;max-width:1000px}
 .sb-service-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:30px}
 .sb-service-tags span{border:1px solid #b9cbff;padding:5px 12px;border-radius:4px;font-size:13px;color:#6486d6}
-.sb-wehago-ecosystem{width:min(100%,826px);aspect-ratio:826/809;margin:auto;background:url('../assets/subpages/wehago-design-board.png') 48.45% 94.586% / 232.445% auto no-repeat}
+.sb-wehago-ecosystem{position:relative;overflow:hidden;width:min(100%,826px);aspect-ratio:826/640;margin:auto}
+.sb-wehago-ecosystem::before{content:"";position:absolute;top:0;left:0;width:100%;aspect-ratio:826/809;background:url('../assets/subpages/wehago-design-board.png') 48.45% 94.586% / 232.445% auto no-repeat}
+.sb-figma-product .sb-wehago-connected .sb-wehago-leaflet{margin-top:28px}
 .sb-figma-product .wehago_05{padding:60px 0;margin:0}
 .sb-figma-product .wehago_05>.cont_txt{text-align:center!important;margin-bottom:40px}
 .sb-figma-product .video__wrap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding:0;margin:0}
@@ -277,3 +279,6 @@
  .sb-page-product-pms .sb-content .sb-pms-diagram-details li:last-child{margin-bottom:0}
  .sb-page-product-pms .sb-pms-gw .sb-gw-expansion{padding:24px 12px}
 }
+/* User-supplied AX background; adjacent final sections share an edge. */
+.sb-page-product-omniesol .omniesol .band:not(.first){margin-bottom:0!important;background:linear-gradient(100deg,rgba(238,247,255,.72),rgba(248,239,255,.72)),url('../assets/subpages/omniesol-ax-bg.png') center/cover no-repeat}
+.sb-page-product-omniesol .sb-content .sb-contact-banner{margin-top:0!important}

@@ -255,3 +255,5 @@ body.modal-open {overflow:hidden}
  #soft-bank-renewal .client-logo-track{animation:none;transform:none}
  #soft-bank-renewal .client-logo-group[aria-hidden]{display:none}
 }
+/* Customer story background supplied by the client. */
+.clients{background:#e6edff url('assets/customer-story-bg.png') center/cover no-repeat}
