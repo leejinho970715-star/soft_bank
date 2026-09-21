@@ -10,3 +10,6 @@ Prompt set: keep supplied Korean interface, colors, tables and charts; present i
 - dashboard.png: screenshot 4, OmniEsol integrated dashboard.
 - sales.png: screenshot 5, sales progress.
 - group.png: existing OmniEsol loop symbol, connected corporate buildings, analytics and checkmark; glossy cyan/blue/violet 3D, transparent background.
+- development.png: supplied development IDE screenshot in matching monitor mockup.
+- mlops.png: supplied dark operational metrics dashboard in matching monitor mockup.
+- chatbot.png: OmniEsol loop symbol with a friendly pearl-white robot, cyan eyes, code panel and chat bubble; blue/cyan/violet glossy 3D illustration with transparent background. Generated with built-in image_gen.
