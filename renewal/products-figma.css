@@ -256,3 +256,7 @@
 .sb-figma-product .sb-content .wehago_02>ul>li.first>b{display:block;color:#2b61d6;font-size:16px;font-weight:600;margin-bottom:14px}
 .sb-figma-product .sb-content .wehago_02>ul>li.first>strong{font-size:40pt;line-height:1.3;margin:0 0 24px;letter-spacing:-.04em}
 @media(max-width:760px){.sb-figma-product .sb-content .wehago_02>ul>li.first>strong{font-size:34px}}
+.sb-page-product-omniesol .omniesol .omni-custom-visual img{width:100%;height:auto;max-height:none;object-fit:contain;background:transparent;border:0;box-shadow:none}
+.sb-page-product-omniesol .omniesol .section.omni-dual-section{grid-template-columns:1fr;gap:40px}
+.sb-page-product-omniesol .omniesol .omni-dual-visual{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:center}
+@media(max-width:760px){.sb-page-product-omniesol .omniesol .omni-dual-visual{gap:10px}}

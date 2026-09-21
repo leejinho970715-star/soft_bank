@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import {applyOmniAssets} from './omniesol-assets.mjs';
 
 const assets=JSON.parse(await fs.readFile('assets/subpages/figma/manifest.json','utf8'));
 const file=(family,n)=>assets[family]?.[n-1]?.file;
@@ -169,6 +170,7 @@ export function applyProductDesign($,page,root){
    img.attr('alt',(label||title).replace(/\s+/g,' ')+' 제품 화면');
   }
  });
+ if(page==='/product/omniesol.asp')applyOmniAssets($,root);
  const css=$('<link rel="stylesheet">').attr('href',root+'renewal/products-figma.css?v=20260915-5');$('head').append(css);
  $('head').append($('<script defer></script>').attr('src',root+'renewal/products-figma.js?v=20260915-5'));
 }
