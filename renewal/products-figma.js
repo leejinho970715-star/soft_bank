@@ -8,8 +8,9 @@ document.addEventListener('DOMContentLoaded',()=>{
   dialog.append(close,image,caption);document.body.append(dialog);
   let trigger=null;
   const open=(img,source)=>{
+   dialog.classList.toggle('sb-poster-dialog',source.dataset.imageModal==='poster');
    trigger=source;image.src=img.src;image.alt=img.alt||'제품 이미지';caption.textContent=image.alt;
-   dialog.showModal();document.body.classList.add('sb-image-open');close.focus();
+   dialog.showModal();dialog.scrollTop=0;document.body.classList.add('sb-image-open');close.focus();
   };
   close.addEventListener('click',()=>dialog.close());
   dialog.addEventListener('click',e=>{if(e.target!==dialog)return;const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();});

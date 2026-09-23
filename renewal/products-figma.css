@@ -421,3 +421,8 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
 /* Shared banner typography: dark copy and blue eyebrow labels. */
 .sb-figma-product #soft-bank-renewal .sb-hero h1,.sb-figma-product #soft-bank-renewal .sb-hero>div>p,.sb-figma-product #soft-bank-renewal .sb-content :is(.sb-contact-banner,.band) :is(h2,h3,p){color:#1d1d1f}
 .sb-figma-product #soft-bank-renewal .sb-hero>div>p:first-of-type{color:#2b61d6}
+
+/* Posters retain readable width and scroll vertically inside the centered dialog. */
+.sb-image-dialog.sb-poster-dialog{box-sizing:border-box;width:1500px;max-width:calc(100vw - 32px);max-height:94dvh;margin:auto;padding:12px 18px 14px;overscroll-behavior:contain}
+.sb-poster-dialog>.sb-image-close{position:sticky;top:0;right:auto;display:block;width:max-content;margin:0 0 12px auto;z-index:1}
+.sb-poster-dialog>img{width:100%;max-width:100%;height:auto;max-height:none}
