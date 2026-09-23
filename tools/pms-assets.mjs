@@ -1,3 +1,5 @@
+import fs from 'node:fs';
+const screens=JSON.parse(fs.readFileSync('assets/subpages/pms-screens/manifest.json','utf8'));
 const features=[
  ['현황관리',['재고 및 장비 관리','프로젝트별 진행률 현황관리','프로젝트별 추정손익 관리','목표대비 실적 관리','예산대비 실적현황 관리']],
  ['운영관리',['프로젝트별 청구 관리','프로젝트별 수주잔고 관리','프로젝트별 이슈 관리']],
@@ -13,6 +15,18 @@ const extensions=[
  ['재고 및 판매 관리',['제품 및 자재의 입출고 현황, 재고 수준을 모니터링하며 판매 정보를 효과적으로 관리합니다.']],
 ];
 export function applyPmsAssets($,root){
+ const labels=['대시보드','계약현황','계약관리','프로젝트현황','진행상황','GW 전자결재','예약관리','주요 기능 업무 흐름'];
+ $('main img').each((i,el)=>{
+  const img=$(el),index=screens.findIndex(s=>(img.attr('src')||'').endsWith(s.source+'.png'));
+  if(index<0)return;
+  const screen=screens[index],base=root+'assets/subpages/pms-screens/'+screen.name;
+  img.attr({src:base+'.png',width:screen.width,height:screen.height,alt:'더존 PMS '+labels[index]+' 화면'});
+  const frame=img.closest('.sb-laptop-mockup');
+  if(screen.name==='workflow')frame.replaceWith(img.removeClass('sb-section-screen').addClass('sb-pms-workflow'));
+  else frame.addClass('sb-pms-screen-mockup');
+  img.wrap('<picture class="sb-pms-screen-picture"></picture>');
+  img.before($('<source type="image/webp">').attr('srcset',base+'.webp'));
+ });
  function diagram(file,alt,entries){
   const figure=$('<figure class="sb-pms-diagram"></figure>');
   const [width,height]=file==='features'?[1769,889]:[1825,862];

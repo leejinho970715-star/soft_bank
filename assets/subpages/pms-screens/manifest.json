@@ -1,0 +1,146 @@
+[
+  {
+    "source": "c8837d243298c2",
+    "name": "dashboard",
+    "width": 3840,
+    "height": 1764,
+    "sourceSize": [
+      960,
+      464
+    ],
+    "crop": [
+      15,
+      15,
+      960,
+      449
+    ],
+    "sourceSha256": "30067844b49605bd14123994cb3be52b29ab5ed692e8b93b79873be4344fc655",
+    "method": "Lanczos + mild unsharp; original UI content retained"
+  },
+  {
+    "source": "d04779dd94eecf",
+    "name": "contracts",
+    "width": 3840,
+    "height": 1976,
+    "sourceSize": [
+      960,
+      494
+    ],
+    "crop": [
+      0,
+      0,
+      960,
+      494
+    ],
+    "sourceSha256": "064260b024fe4214710c13a3115a1eb37d95fa920feaed1c98ba689ef8ca7fcc",
+    "method": "Lanczos + mild unsharp; original UI content retained"
+  },
+  {
+    "source": "95319d1d375e4d",
+    "name": "contract-management",
+    "width": 3840,
+    "height": 1980,
+    "sourceSize": [
+      960,
+      495
+    ],
+    "crop": [
+      0,
+      0,
+      960,
+      495
+    ],
+    "sourceSha256": "595493c0282681030006025868704547321af352d092c37b5f2100c58493b3e3",
+    "method": "Lanczos + mild unsharp; original UI content retained"
+  },
+  {
+    "source": "dcc82d16101e28",
+    "name": "projects",
+    "width": 3840,
+    "height": 2060,
+    "sourceSize": [
+      960,
+      515
+    ],
+    "crop": [
+      0,
+      0,
+      960,
+      515
+    ],
+    "sourceSha256": "00db7bc222a45463279c00469817240150f94fb55c869ceaef3b887fecd73017",
+    "method": "Lanczos + mild unsharp; original UI content retained"
+  },
+  {
+    "source": "613a28b2c14d6e",
+    "name": "progress",
+    "width": 3840,
+    "height": 2120,
+    "sourceSize": [
+      960,
+      530
+    ],
+    "crop": [
+      0,
+      0,
+      960,
+      530
+    ],
+    "sourceSha256": "dcd5d16f8cda6073aeea7d87833bb8ecef2fe8c10979e41d19f5b1bca93b0111",
+    "method": "Lanczos + mild unsharp; original UI content retained"
+  },
+  {
+    "source": "63d7d5b75da515",
+    "name": "approval",
+    "width": 3840,
+    "height": 1888,
+    "sourceSize": [
+      960,
+      472
+    ],
+    "crop": [
+      0,
+      0,
+      960,
+      472
+    ],
+    "sourceSha256": "f5dbf35b9dbd82c762fb229c93bdda04220587c4d901e72f2144d98836ea3216",
+    "method": "Lanczos + mild unsharp; original UI content retained"
+  },
+  {
+    "source": "9ed3b00b26fef6",
+    "name": "reservations",
+    "width": 3840,
+    "height": 2064,
+    "sourceSize": [
+      960,
+      516
+    ],
+    "crop": [
+      0,
+      0,
+      960,
+      516
+    ],
+    "sourceSha256": "3e80f64f558dde2ffea501814509d8b74a2a94d633ef24fa59cd15d5ae061629",
+    "method": "Lanczos + mild unsharp; original UI content retained"
+  },
+  {
+    "source": "ae5df97fd5267d",
+    "name": "workflow",
+    "width": 3840,
+    "height": 1492,
+    "sourceSize": [
+      1300,
+      505
+    ],
+    "crop": [
+      0,
+      0,
+      1300,
+      505
+    ],
+    "sourceSha256": "919a3eadb2033f019d3a22b06691de52778c05eac7c3219ecda8d948437cc136",
+    "method": "Lanczos + mild unsharp; original UI content retained"
+  }
+]

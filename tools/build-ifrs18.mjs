@@ -1,5 +1,13 @@
 import fs from 'node:fs/promises';
 import {load} from 'cheerio';
+async function writePage(path,content){
+ for(let attempt=0;;attempt++){
+  try{return await fs.writeFile(path,content);}catch(error){
+   if(attempt>=8||!['UNKNOWN','EBUSY','EPERM'].includes(error.code))throw error;
+   await new Promise(resolve=>setTimeout(resolve,300*(attempt+1)));
+  }
+ }
+}
 
 // Build from the shared product shell so navigation, footer and contact UI stay consistent.
 const $=load(await fs.readFile('subpages/product/omniesol.html','utf8'));
@@ -10,7 +18,8 @@ $('.sb-hero-asset').attr({src:'../../assets/subpages/ifrs18/hero.png',alt:'Amara
 $('.sb-hero h1').text('Amaranth 10 IFRS18');
 $('.sb-hero-description').html('새로운 기준의 시작,<br>복잡한 전환을 간편하게');
 $('.sb-hero-products a').removeAttr('aria-current').filter((i,e)=>$(e).text()==='IFRS18').attr('aria-current','page');
-const picture=(name,alt)=>`<picture><source type="image/webp" srcset="../../assets/subpages/ifrs18/${name}.webp"><img src="../../assets/subpages/ifrs18/${name}.png" alt="${alt}" loading="lazy" width="940" height="575"></picture>`;
+const screenSizes=new Map(JSON.parse(await fs.readFile('assets/subpages/ifrs18/screens-manifest.json','utf8')).map(entry=>[entry.name,entry]));
+const picture=(name,alt)=>`<picture><source type="image/webp" srcset="../../assets/subpages/ifrs18/${name}.webp"><img src="../../assets/subpages/ifrs18/${name}.png" alt="${alt}" loading="lazy" width="${screenSizes.get(name).width}" height="${screenSizes.get(name).height}"></picture>`;
 const features=[
  ['01','format','재무제표 양식설정','새 기준에 맞는 양식을 손쉽게','합계잔액시산표, 재무상태표, 재무성과표의 기본 서식을 제공합니다. 영업·투자·재무 범주에 따라 계산식과 계정과목 연결을 설정해 회사에 맞는 양식으로 구성하세요.','기초 서식 생성 · 계산식 설정 · 계정과목 연결'],
  ['02','categories','계정별 범주설정','기존 전표는 그대로, 비교 자료는 새롭게','과거 전표와 초기이월 자료를 IFRS18 계정 체계로 재분류합니다. 건별 분할과 일괄 매핑을 지원하며, 원천 전표의 관리항목은 유지됩니다.','전표·초기이월 분류 · 건별 분할 · 일괄 매핑'],
@@ -41,8 +50,8 @@ $('main').attr('class','sb-content ifrs-content').html(`
 <section class="ifrs-ready"><span class="ifrs-eyebrow">GET READY</span><h2>2027년 적용을 향한 준비</h2><div class="ifrs-timeline"><article><span>2024.04</span><h3>IFRS18 발표</h3><p>국제회계기준위원회가 새로운 표시·공시 기준을 발표했습니다.</p></article><article><span>전환 준비</span><h3>비교 자료 정비</h3><p>적용 시점에 앞서 재무제표 양식과 비교기간의 계정 분류를 점검하세요.</p></article><article><span>2027.01.01~</span><h3>시행</h3><p>IFRS18은 해당 날짜 이후 시작하는 연차 보고기간부터 적용되며 조기 적용이 허용됩니다.</p></article></div><a class="ifrs-source" href="https://www.ifrs.org/issued-standards/list-of-standards/ifrs-18-presentation-and-disclosure-in-financial-statements/">IFRS Foundation 공식 기준 안내 ↗</a></section>
 <section id="ifrs-resources" class="ifrs-resources"><span class="ifrs-eyebrow">RESOURCES</span><h2>더 자세한 내용이 궁금하다면</h2><p>서비스 소개와 실제 설정 방법을 확인하세요.</p><div class="ifrs-downloads"><a href="../../assets/documents/ifrs18-intro.pdf" download><span>서비스 소개서</span><strong>Amaranth 10 IFRS18</strong><span>PDF 다운로드 ↓</span></a><a href="../../assets/documents/ifrs18-manual.pdf" download><span>사용자 매뉴얼</span><strong>K-IFRS18 대응 가이드</strong><span>PDF 다운로드 ↓</span></a></div></section>
 <section class="ifrs-contact"><h2>IFRS18 전환,<br>Amaranth 10과 함께 준비하세요</h2><p>우리 회사에 맞는 도입 범위와 준비 과정을 안내해 드립니다.</p><a class="cta dark" href="../purchase/inquiry.html">도입 상담 신청</a></section>`);
-await fs.writeFile('subpages/product/ifrs18.html',$.html());
+await writePage('subpages/product/ifrs18.html',$.html());
 const catalog=load(await fs.readFile('subpages/index.html','utf8'));
 catalog('.sb-catalog section').filter((i,e)=>catalog(e).find('h2').text().includes('제품')).first().children('div').append('<a href="product/ifrs18.html"><span>IFRS18</span><small>Amaranth 10 IFRS18</small><b>↗</b></a>');
-await fs.writeFile('subpages/index.html',catalog.html());
+await writePage('subpages/index.html',catalog.html());
 console.log('Built IFRS18 product page and catalog entry.');

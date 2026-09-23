@@ -1,0 +1,29 @@
+[
+  {
+    "name": "format",
+    "width": 3840,
+    "height": 2305,
+    "sourceWidth": 943,
+    "sourceHeight": 566,
+    "sourceSha256": "6a9d4fb454717d7ac8b5392d1443f2d2b82b5885ee07b30acea0b8dd0182e2b7",
+    "method": "Lanczos resampling, mild unsharp mask, original alpha preserved; no generated UI text"
+  },
+  {
+    "name": "categories",
+    "width": 3840,
+    "height": 2346,
+    "sourceWidth": 941,
+    "sourceHeight": 575,
+    "sourceSha256": "7fca38ffe8e863980e0dbf39b1c723b940c1580048990de45c01fd0efd03da80",
+    "method": "Lanczos resampling, mild unsharp mask, original alpha preserved; no generated UI text"
+  },
+  {
+    "name": "cashflow",
+    "width": 3840,
+    "height": 2345,
+    "sourceWidth": 940,
+    "sourceHeight": 574,
+    "sourceSha256": "53d8548acfe802ad38810dec9233b9a833a4a1ecddf1f0140f8b04c1cf3aa328",
+    "method": "Lanczos resampling, mild unsharp mask, original alpha preserved; no generated UI text"
+  }
+]
