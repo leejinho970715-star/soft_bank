@@ -65,6 +65,11 @@ export function applyPmsAssets($,root){
   }
   return figure.append(text);
  }
+ $('.sb-pms-workflow-3d figcaption>section').each((i,el)=>{
+  const card=$(el),heading=$('<div class="sb-workflow-heading"></div>');
+  heading.append(card.children('.sb-workflow-number')).append(card.children('h4'));
+  card.prepend(heading);
+ });
  $('.pms .img_faetures .cont_img').removeClass('scrollTb').empty().append(diagram('features','PMS에서 현황·운영·계약·예산·일정 관리로 연결되는 3D 주요기능 구성도',features));
  const gw=$('.sb-gw-expansion');
  gw.children('.sb-pms-diagram').remove();

@@ -395,6 +395,9 @@
 .sb-pms-workflow-3d>figcaption{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:18px;margin-top:24px}
 .sb-pms-workflow-3d section{padding:0!important;text-align:left}
 .sb-pms-workflow-3d h4{font-size:20px!important;line-height:1.45}
+.sb-page-product-pms #soft-bank-renewal .sb-workflow-heading{display:flex;align-items:center;gap:8px;text-align:left}
+.sb-page-product-pms #soft-bank-renewal .sb-workflow-heading .sb-workflow-number{flex:0 0 32px;margin:0}
+.sb-page-product-pms #soft-bank-renewal .sb-workflow-heading h4{margin:0!important;padding:0;text-align:left}
 .sb-pms-workflow-3d ul{padding:0!important;margin:16px 0!important}
 .sb-pms-workflow-3d li{margin:8px 0;list-style:none}
 .sb-workflow-number{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#197ce3;color:white;font-weight:700}
