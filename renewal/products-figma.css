@@ -201,8 +201,8 @@
 .sb-figma-product .sb-wehago-connected h2{font-size:26px;line-height:1.5;margin:0 auto 25px;max-width:1000px}
 .sb-service-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:30px}
 .sb-service-tags span{border:1px solid #b9cbff;padding:5px 12px;border-radius:4px;font-size:13px;color:#6486d6}
-.sb-wehago-ecosystem{position:relative;overflow:hidden;width:min(100%,826px);aspect-ratio:826/640;margin:auto}
-.sb-wehago-ecosystem::before{content:"";position:absolute;top:0;left:0;width:100%;aspect-ratio:826/809;background:url('../assets/subpages/wehago-design-board.png') 48.45% 94.586% / 232.445% auto no-repeat}
+.sb-wehago-ecosystem{width:min(100%,826px);margin:auto}
+.sb-wehago-ecosystem picture,.sb-wehago-ecosystem img{display:block;width:100%;height:auto}
 .sb-figma-product .sb-wehago-connected .sb-wehago-leaflet{margin-top:28px}
 .sb-figma-product .wehago_05{padding:60px 0;margin:0}
 .sb-figma-product .wehago_05>.cont_txt{text-align:center!important;margin-bottom:40px}
