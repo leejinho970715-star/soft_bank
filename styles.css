@@ -274,3 +274,6 @@ body.modal-open {overflow:hidden}
 @media(max-width:700px){#soft-bank-renewal .hero{min-height:0;padding:40px 20px 64px}#soft-bank-renewal .hero>.hero-asset{top:auto;width:min(90vw,420px);margin-bottom:30px}#soft-bank-renewal .hero h1{font-size:36px}}
 .hero>.hero-asset{z-index:1;height:auto;pointer-events:none}
 @media(max-width:700px){#soft-bank-renewal .hero>.hero-asset{top:7%;width:min(90vw,420px)}}
+
+/* Disable CSS smooth scrolling only while the home paging controller owns movement. */
+html.sb-home-paging{scroll-behavior:auto!important}

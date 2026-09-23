@@ -332,6 +332,106 @@
   }
 })();
 
+// Home paging uses native window scrolling, keeping ScrollTrigger's scroller intact.
+(() => {
+  const root = document.getElementById('soft-bank-renewal');
+  const main = root?.querySelector(':scope > main');
+  if (!main?.querySelector(':scope > .hero') || document.body.classList.contains('sb-renewal')) return;
+  const sections = [...main.children].filter(el => el.tagName === 'SECTION');
+  const footer = root.querySelector(':scope > footer');
+  if (footer) sections.push(footer);
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  let frame = 0, active = false, lastWheel = 0, delta = 0, direction = 0, refreshTimer;
+  const blocked = () => root.inert || document.body.matches('.intro-open,.modal-open') ||
+    !!root.querySelector('.gnb.open,dialog[open],.legal-modal.open');
+  const cancel = () => {
+    cancelAnimationFrame(frame);
+    active = false;
+    document.documentElement.classList.remove('sb-home-paging');
+  };
+  function stops() {
+    const header = root.querySelector('.site-header')?.getBoundingClientRect().height || 0;
+    const viewport = Math.max(1, innerHeight-header);
+    const max = Math.max(0, document.documentElement.scrollHeight-innerHeight);
+    const positions = [0,max];
+    for (const section of sections) {
+      const rect = section.getBoundingClientRect();
+      const top = Math.max(0, Math.min(max, scrollY+rect.top-header));
+      const bottom = Math.max(top, Math.min(max, scrollY+rect.bottom-innerHeight));
+      positions.push(top);
+      // Overlapping viewport-sized stops preserve every line in tall sections.
+      for (let y=top+viewport*.88; y<bottom-2; y+=viewport*.88) positions.push(y);
+      if (bottom>top+2) positions.push(bottom);
+    }
+    return positions.sort((a,b)=>a-b).filter((y,i,all)=>!i || y-all[i-1]>2);
+  }
+  function move(sign,edge) {
+    const points = stops();
+    const target = edge==='start' ? 0 : edge==='end' ? points.at(-1) :
+      sign>0 ? points.find(y=>y>scrollY+3) : points.findLast(y=>y<scrollY-3);
+    if (target===undefined || Math.abs(target-scrollY)<2) return;
+    cancel(); active=true;
+    document.documentElement.classList.add('sb-home-paging');
+    const from=scrollY, start=performance.now();
+    const duration=Math.min(850,Math.max(450,Math.abs(target-from)*.65));
+    const tick = now => {
+      if (blocked() || reduced.matches) { cancel(); return; }
+      const t=Math.min(1,(now-start)/duration);
+      const ease=t<.5 ? 4*t*t*t : 1-Math.pow(-2*t+2,3)/2;
+      window.scrollTo({top:from+(target-from)*ease,behavior:'instant'});
+      if(t<1) frame=requestAnimationFrame(tick); else cancel();
+    };
+    frame=requestAnimationFrame(tick);
+  }
+  function nativeTarget(target) {
+    if (!(target instanceof Element)) return true;
+    if (target.closest('input,textarea,select,[contenteditable="true"],.legal-modal,.chat,.gnb,.quick-menu')) return true;
+    for(let el=target;el && el!==root;el=el.parentElement) {
+      if (/(auto|scroll)/.test(getComputedStyle(el).overflowY) && el.scrollHeight>el.clientHeight+2) return true;
+    }
+    return false;
+  }
+  window.addEventListener('wheel',event=>{
+    if(event.defaultPrevented || reduced.matches || blocked() || event.ctrlKey || event.metaKey ||
+       Math.abs(event.deltaX)>Math.abs(event.deltaY) || nativeTarget(event.target) || !event.deltaY) return;
+    event.preventDefault();
+    const now=performance.now(),sign=Math.sign(event.deltaY),fresh=now-lastWheel>180;
+    lastWheel=now;
+    if(active) { delta=0; return; }
+    // Ignore a trackpad's inertial tail until the next distinct gesture.
+    if(!fresh && delta===0) return;
+    if(fresh || direction!==sign) delta=0;
+    direction=sign;
+    delta+=event.deltaY*(event.deltaMode===1 ? 16 : event.deltaMode===2 ? innerHeight : 1);
+    if(Math.abs(delta)>=24) { delta=0; move(sign); }
+  },{passive:false});
+  window.addEventListener('keydown',event=>{
+    if(event.key==='Escape') { cancel(); return; }
+    if(event.defaultPrevented || reduced.matches || blocked() || nativeTarget(event.target) ||
+       event.target.closest?.('button,a,[role="button"],.swiper') || event.altKey || event.ctrlKey || event.metaKey) return;
+    const down=['ArrowDown','PageDown',' '].includes(event.key);
+    const up=['ArrowUp','PageUp'].includes(event.key) || (event.key===' ' && event.shiftKey);
+    if(!down && !up && !['Home','End'].includes(event.key)) return;
+    event.preventDefault();
+    if(!active) move(up ? -1 : 1,event.key==='Home' ? 'start' : event.key==='End' ? 'end' : undefined);
+  });
+  // Touch, links and scrollbar dragging remain native and interrupt the animation.
+  window.addEventListener('pointerdown',cancel,{passive:true});
+  window.addEventListener('touchstart',cancel,{passive:true});
+  window.addEventListener('hashchange',cancel);
+  window.addEventListener('pagehide',cancel);
+  reduced.addEventListener('change',cancel);
+  const refresh=()=>{
+    cancel(); clearTimeout(refreshTimer);
+    refreshTimer=setTimeout(()=>window.ScrollTrigger?.refresh(),180);
+  };
+  window.addEventListener('resize',refresh);
+  window.addEventListener('load',refresh,{once:true});
+  document.fonts?.ready.then(refresh);
+  const observer=new ResizeObserver(refresh);
+  sections.forEach(el=>observer.observe(el));
+})();
+
 // Display the captured original legal documents in full.
 for (const [key, id] of [['privacy', 'privacy-modal'], ['terms', 'terms-modal']]) {
   const panel = document.querySelector('#' + id + ' .legal-scroll');
