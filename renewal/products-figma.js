@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   for(const heading of headings){
    if(!heading.getClientRects().length||!heading.classList.contains('sb-two-line-title'))continue;
    heading.style.removeProperty('font-size');
-   const available=heading.clientWidth;
+   const available=Math.min(...[...heading.children].map(line=>line.clientWidth));
    const base=parseFloat(getComputedStyle(heading).fontSize);
    const longest=Math.max(...[...heading.children].map(line=>line.scrollWidth));
    if(available&&longest>available)heading.style.setProperty('font-size',`${Math.floor(base*available/longest*100)/100}px`,'important');

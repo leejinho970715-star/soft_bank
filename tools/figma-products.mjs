@@ -6,11 +6,13 @@ import {applyWehagoAssets} from './wehago-assets.mjs';
 import {applyWehagoExtraAssets} from './wehago-extra-assets.mjs';
 import {applyWehagoLinkedAssets} from './wehago-linked-assets.mjs';
 import {applyHighresAssets} from './product-highres.mjs';
+import {applyFrontalScreens} from './frontal-screens.mjs';
 
 const assets=JSON.parse(await fs.readFile('assets/subpages/figma/manifest.json','utf8'));
 const file=(family,n)=>assets[family]?.[n-1]?.file;
 
 export function applyProductDesign($,page,root){
+ $('main img').each((i,e)=>$(e).attr('data-screen-source',$(e).attr('src')||''));
  const body=$('body');body.addClass('sb-figma-product');
  if(page==='/product/nonprofit/intro.asp'){
   // Preserve the corrected card labels from the shared source branch on rebuild.
@@ -197,6 +199,7 @@ export function applyProductDesign($,page,root){
  $('.sb-design-mockup').each((i,e)=>{
   $(e).closest('.sb-feature,.sb-design-row,.omniesol .section,.alt-section>div,.wehago_slide .swiper-slide').addClass('sb-centered-feature');
  });
+ applyFrontalScreens($,root);
  applyHighresAssets($,root);
  const css=$('<link rel="stylesheet">').attr('href',root+'renewal/products-figma.css?v=20260915-5');$('head').append(css);
  $('head').append($('<script defer></script>').attr('src',root+'renewal/products-figma.js?v=20260915-5'));

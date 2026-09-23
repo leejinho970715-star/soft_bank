@@ -281,7 +281,7 @@
 }
 /* User-supplied AX background; adjacent final sections share an edge. */
 .sb-page-product-omniesol .omniesol .band:not(.first){margin-bottom:0!important;background:linear-gradient(100deg,rgba(238,247,255,.72),rgba(248,239,255,.72)),url('../assets/subpages/omniesol-ax-bg.png') center/cover no-repeat}
-.sb-page-product-omniesol .sb-content .sb-contact-banner{margin-top:0!important}
+.sb-page-product-omniesol .sb-content .sb-contact-banner{margin-top:clamp(80px,8vw,140px)!important}
 /* Keep the established image layout while serving compact high-resolution assets. */
 .sb-highres-picture{display:contents}
 .sb-figma-product #soft-bank-renewal .sb-two-line-title{width:100%;max-width:1100px;margin-inline:auto!important;text-wrap:initial}
@@ -363,3 +363,12 @@
 .sb-figma-product #soft-bank-renewal .sb-pms-screen-picture img{display:block;width:100%!important;height:auto!important;max-height:none;object-fit:contain;margin:0!important}
 .sb-figma-product #soft-bank-renewal .sb-pms-workflow{width:100%;height:auto;max-width:1200px}
 @media(max-width:600px){.sb-figma-product #soft-bank-renewal .sb-pms-screen-mockup{padding:5px;border-radius:10px}}
+.sb-figma-product #soft-bank-renewal .sb-frontal-monitor{width:100%;max-width:1200px;margin:20px auto 32px;perspective:none;transform:none}
+.sb-figma-product #soft-bank-renewal .sb-frontal-display{padding:12px 12px 0;background:#171b24;border-radius:20px 20px 0 0;border:1px solid #4c5260;overflow:hidden}
+.sb-figma-product #soft-bank-renewal .sb-frontal-screen{display:block;width:100%!important;height:auto!important;max-height:none!important;object-fit:contain;transform:none!important;animation:none!important;margin:0 auto!important}
+.sb-figma-product #soft-bank-renewal .sb-frontal-chin{height:30px;background:linear-gradient(#eceff3,#c7cbd2);border-radius:0 0 16px 16px}
+.sb-figma-product #soft-bank-renewal .sb-frontal-stand{height:60px;width:15%;margin:auto;background:linear-gradient(#9199a5,#e7e9ed);clip-path:polygon(18% 0,82% 0,100% 100%,0 100%)}
+.sb-figma-product #soft-bank-renewal .sb-frontal-foot{height:12px;width:32%;margin:auto;border-radius:50%;background:linear-gradient(#f6f7f8,#9ba3af);box-shadow:0 9px 18px #172a4426}
+.sb-figma-product #soft-bank-renewal .sb-faithful-reference{width:100%;max-width:1200px;margin:20px auto 32px}
+@media(max-width:600px){.sb-figma-product #soft-bank-renewal .sb-frontal-display{padding:5px 5px 0;border-radius:9px 9px 0 0}.sb-figma-product #soft-bank-renewal .sb-frontal-chin{height:16px}.sb-figma-product #soft-bank-renewal .sb-frontal-stand{height:26px}}
+.sb-frontal-picture{display:block;width:100%}
