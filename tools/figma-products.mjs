@@ -189,6 +189,11 @@ export function applyProductDesign($,page,root){
  if(['/product/amaranth10/brand.asp','/product/amaranth10/overview.asp','/product/nonprofit/intro.asp'].includes(page))applyAmaranthAssets($,root,{nonprofit:page==='/product/nonprofit/intro.asp'});
  if(page==='/product/wehago/smart_A10.asp')$('.sb-wehago-connected').append($('<a class="cta sb-product-cta sb-wehago-leaflet">리플렛 자세히 보기</a>').attr('href',root+'assets/documents/wehago-services-2026.pdf'));
  if(omni){
+  $('.cards3').filter((i,e)=>$(e).children('.info-card').length===3).each((i,e)=>{
+   const cards=$(e);
+   cards.addClass('sb-three-card-row');
+   cards.attr('style',(cards.attr('style')||'').replace(/grid-template-columns\s*:[^;]+;?/gi,''));
+  });
   const heading=$('#panel-platform .mod-title').filter((i,e)=>$(e).text().includes('6대 도구')).first();
   heading.before($('#panel-platform>.band:not(.first)'));
  }

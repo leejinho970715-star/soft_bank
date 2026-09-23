@@ -138,7 +138,7 @@
 .sb-page-product-omniesol .omniesol .band,.sb-figma-product .sb-content .sb-contact-banner{padding:50px 24px!important;min-height:0;margin-top:55px}
 .sb-page-product-omniesol .omniesol .band h3,.sb-figma-product .sb-contact-banner :is(h2,h3){font-size:25px}
 }
-.sb-page-product-omniesol .omniesol .tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.sb-page-product-omniesol .omniesol .tag-row{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:24px}
 .sb-page-product-omniesol .omniesol .tag{font-size:12px;background:#f4f4f5;color:#858a91;padding:5px 12px;border-radius:3px}
 .sb-page-product-omniesol .omniesol .mod-title{text-align:center;margin:100px 0 35px}
 .sb-page-product-omniesol .omniesol .mod-title h3{margin:8px 0 18px;font-size:30px}
@@ -410,3 +410,7 @@
 @media(max-width:1199px){.sb-page-product-wehago-smart_a10 #soft-bank-renewal .sb-content .wehago_02>ul{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:899px){.sb-page-product-wehago-smart_a10 #soft-bank-renewal .sb-content .wehago_02>ul{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:599px){.sb-page-product-wehago-smart_a10 #soft-bank-renewal .sb-content .wehago_02>ul{grid-template-columns:1fr}}
+
+/* Three-card OmniEsol groups share a single desktop row. */
+.sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .sb-three-card-row{width:100%;grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}
+@media(max-width:760px){.sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .sb-three-card-row{grid-template-columns:1fr}}
