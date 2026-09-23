@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded',()=>{
  const syncWidth=()=>document.documentElement.style.setProperty('--product-viewport',document.documentElement.clientWidth+'px');
  syncWidth();window.addEventListener('resize',syncWidth);
  // Split descriptive headings into two balanced lines, retaining inline emphasis.
- const headings=[...document.querySelectorAll('.sb-content h2,.sb-content h3,.sb-content h5,.sb-content .txt>strong')]
+ const headings=[...document.querySelectorAll('.sb-content h2,.sb-content h3,.sb-content h4,.sb-content h5,.sb-content .txt>strong')]
   .filter(el=>!el.closest('.sb-product-heading,.sb-product-tabs')&&!['Amaranth 10','ONE AI','IFRS18','WEHAGO','OmniEsol','PMS'].includes(el.textContent.trim()));
  for(const heading of headings){
   const originalBreaks=[...heading.querySelectorAll('br')];

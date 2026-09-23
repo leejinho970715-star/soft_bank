@@ -262,7 +262,8 @@ body.modal-open {overflow:hidden}
 #soft-bank-renewal .hero h1 :is(span,strong),#soft-bank-renewal .hero p b{color:var(--deep)}
 /* Body copy is 18pt (24 CSS pixels), including responsive layouts. */
 #soft-bank-renewal :is(main,.section,.hero-copy,footer) p,
-#soft-bank-renewal .sb-content :is(dd,.cont_txt p,.txt p,.sec-text p,.info-card p){font-size:18pt!important;line-height:1.65!important;overflow-wrap:anywhere}
+#soft-bank-renewal .sb-content :is(dd,.cont_txt p,.txt p,.sec-text p,.info-card p),
+#soft-bank-renewal main li:not(.sb-product-tabs li){font-size:18pt!important;line-height:1.65!important;overflow-wrap:anywhere}
 #soft-bank-renewal .hero{height:auto;min-height:1000px;display:flex;flex-direction:column;align-items:center;padding:60px 24px 72px}
 #soft-bank-renewal .hero>.hero-asset{position:relative;top:auto;left:auto;translate:none;width:min(620px,70vw);margin:0 auto 42px}
 #soft-bank-renewal .hero>.hero-copy{position:relative;top:auto;padding:0;width:100%}
