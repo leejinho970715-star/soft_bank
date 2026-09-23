@@ -13,6 +13,12 @@ const file=(family,n)=>assets[family]?.[n-1]?.file;
 export function applyProductDesign($,page,root){
  const body=$('body');body.addClass('sb-figma-product');
  if(page==='/product/nonprofit/intro.asp'){
+  // Preserve the corrected card labels from the shared source branch on rebuild.
+  $('#functions [data-panel] .grid>div>span').each((i,e)=>{
+   const label=$(e);
+   label.after(label.children('h3,p'));
+   label.attr('class','text-[#2b61d6] text-xs font-bold block mb-2.5');
+  });
   const overview=$('#intro');
   const introduction=$('<section class="sb-nonprofit-introduction"></section>');
   introduction.append($('<img class="sb-nonprofit-hero" width="480" height="480" loading="lazy" alt="회계·인사·예산·그룹웨어·문서유통을 연결하는 비영리 통합 플랫폼">').attr('src',root+'assets/subpages/features/nonprofit/platform.png'));
