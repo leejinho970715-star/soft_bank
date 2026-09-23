@@ -382,6 +382,10 @@
 .sb-device-foot{width:36%;height:calc(var(--device-unit)*12);margin:auto;border-radius:50%;background:linear-gradient(#f2f4f7,#a1a9b5);box-shadow:0 8px 18px #172a4420}
 .sb-device-phone{position:absolute;z-index:2;padding:calc(var(--device-unit)*18) calc(var(--device-unit)*12);background:#242933;border:1px solid #737b87;border-radius:calc(var(--device-unit)*25);box-shadow:0 12px 28px #172a4426}
 .sb-device-phone .sb-device-window{border-radius:calc(var(--device-unit)*12)}
+/* PMS feature descriptions: hanging checkmarks and room before the next diagram. */
+.sb-page-product-pms #soft-bank-renewal .pms_ftrs .cont_li dd>p{position:relative;padding-left:26px;text-align:left}
+.sb-page-product-pms #soft-bank-renewal .pms_ftrs .cont_li dd>p::before{content:'✓';position:absolute;left:0;top:0;color:#2874ed;font-weight:800}
+.sb-page-product-pms #soft-bank-renewal .pms_ftrs{padding-bottom:clamp(64px,7vw,112px)}
 /* Natural heading wrapping and readable feature checklists. */
 #soft-bank-renewal .sb-content .sb-natural-title{white-space:normal!important;word-break:keep-all;overflow-wrap:normal;text-wrap:balance}
 #soft-bank-renewal .sb-content .sb-check-item{list-style:none!important}
