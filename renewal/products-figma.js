@@ -14,6 +14,12 @@ document.addEventListener('DOMContentLoaded',()=>{
   close.addEventListener('click',()=>dialog.close());
   dialog.addEventListener('click',e=>{if(e.target!==dialog)return;const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();});
   dialog.addEventListener('close',()=>{document.body.classList.remove('sb-image-open');trigger?.focus({preventScroll:true});image.removeAttribute('src');});
+  document.querySelectorAll('a[data-image-modal]').forEach(link=>{
+   link.addEventListener('click',e=>{
+    if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;
+    e.preventDefault();open({src:link.href,alt:link.dataset.imageCaption||link.textContent.trim()},link);
+   });
+  });
   document.querySelectorAll('.sb-content img,.sb-hero-asset').forEach(img=>{
    if(img.closest('button')||img.alt===''||img.closest('.sb-product-heading,.sb-contact-banner'))return;
    const link=img.closest('a');
