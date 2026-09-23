@@ -64,7 +64,7 @@ export function applyProductDesign($,page,root){
   $('.video__wrap>li').each((i,e)=>{const a=$(e).children('a').first();if(a.length&&!a.find('img').length)a.append('<img src="'+root+'assets/subpages/wehago-video-0'+(i+1)+'.jpg" alt="'+$(e).children('b').text()+'" loading="lazy">')});
  }
  if(page==='/product/wehago/smart_A10.asp'){
-  $('.wehago_05').before('<section class="sb-wehago-connected"><h2>다른 서비스들과 연동된 편리함! WEHAGO의 서비스들과 연결되어<br>더욱 편리한 경영관리로 다양한 업무를 빠르고 효율적으로 처리할 수 있습니다.</h2><div class="sb-service-tags"><span>전자결재 연동</span><span>문서 관리</span><span>메신저</span><span>경비청구</span><span>근태관리</span></div><div class="sb-wehago-ecosystem"><picture><source type="image/webp" srcset="'+root+'assets/subpages/regenerated/ui-084.webp"><img src="'+root+'assets/subpages/regenerated/ui-084.png" width="1337" height="1177" loading="lazy" alt="Smart A10을 중심으로 WEHAGO 업무 서비스가 연결되는 3D 에셋"></picture></div></section>');
+  $('.wehago_05').before('<section class="sb-wehago-connected"><h2>다른 서비스들과 연동된 편리함! WEHAGO의 서비스들과 연결되어<br>더욱 편리한 경영관리로 다양한 업무를 빠르고 효율적으로 처리할 수 있습니다.</h2><div class="sb-service-tags"><span>전자결재 연동</span><span>문서 관리</span><span>메신저</span><span>경비청구</span><span>근태관리</span></div><div class="sb-wehago-ecosystem"><picture><source type="image/webp" srcset="'+root+'assets/subpages/regenerated/ui-084.webp"><img src="'+root+'assets/subpages/regenerated/ui-084.png" width="1335" height="1178" loading="lazy" alt="Smart A10을 중심으로 WEHAGO 업무 서비스가 연결되는 3D 에셋"></picture></div></section>');
  }
  const omni=page==='/product/omniesol.asp';
  if(omni){

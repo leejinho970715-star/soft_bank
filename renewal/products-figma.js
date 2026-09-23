@@ -1,4 +1,31 @@
 document.addEventListener('DOMContentLoaded',()=>{
+ if(document.body.classList.contains('sb-product')){
+  const dialog=document.createElement('dialog');
+  dialog.className='sb-image-dialog';dialog.setAttribute('aria-label','제품 이미지 크게 보기');
+  const close=document.createElement('button');close.type='button';close.className='sb-image-close';close.textContent='닫기 ×';
+  const image=document.createElement('img');
+  const caption=document.createElement('p');caption.className='sb-image-caption';
+  dialog.append(close,image,caption);document.body.append(dialog);
+  let trigger=null;
+  const open=(img,source)=>{
+   trigger=source;image.src=img.src;image.alt=img.alt||'제품 이미지';caption.textContent=image.alt;
+   dialog.showModal();document.body.classList.add('sb-image-open');close.focus();
+  };
+  close.addEventListener('click',()=>dialog.close());
+  dialog.addEventListener('click',e=>{if(e.target!==dialog)return;const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();});
+  dialog.addEventListener('close',()=>{document.body.classList.remove('sb-image-open');trigger?.focus({preventScroll:true});image.removeAttribute('src');});
+  document.querySelectorAll('.sb-content img,.sb-hero-asset').forEach(img=>{
+   if(img.closest('button')||img.alt===''||img.closest('.sb-product-heading,.sb-contact-banner'))return;
+   const link=img.closest('a');
+   // Keep product navigation and download links; intercept image-file links only.
+   if(link&&!/\.(png|webp|jpe?g|gif|svg)(?:[?#]|$)/i.test(link.href))return;
+   const target=link||img;
+   if(!link){target.tabIndex=0;target.setAttribute('role','button');target.setAttribute('aria-label',(img.alt||'제품 이미지')+' 크게 보기');}
+   target.classList.add('sb-image-trigger');target.setAttribute('aria-haspopup','dialog');
+   target.addEventListener('click',e=>{if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();open(img,target);});
+   if(!link)target.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open(img,target);}});
+  });
+ }
  const syncWidth=()=>document.documentElement.style.setProperty('--product-viewport',document.documentElement.clientWidth+'px');
  syncWidth();window.addEventListener('resize',syncWidth);
  // Short headings remain on one line; longer headings wrap naturally.

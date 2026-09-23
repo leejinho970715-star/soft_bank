@@ -277,3 +277,4 @@ body.modal-open {overflow:hidden}
 
 /* Disable CSS smooth scrolling only while the home paging controller owns movement. */
 html.sb-home-paging{scroll-behavior:auto!important}
+body.sb-notice-open{overflow:hidden}.sb-home-notice{padding:0;border:0;width:min(480px,calc(100vw - 28px));max-height:94dvh;overflow:auto;background:#fff7f0;border-radius:6px;box-shadow:0 20px 80px #0004}.sb-home-notice::backdrop{background:#10203d99}.sb-notice-visual{width:100%;aspect-ratio:480/497;overflow:hidden}.sb-notice-visual img{display:block;width:100%;height:auto}.sb-notice-actions{display:flex;background:#4398e8;position:sticky;bottom:0}.sb-notice-actions button{flex:1;border:0;background:transparent;color:#fff;padding:18px 10px;cursor:pointer;font-size:14px;font-weight:700}.sb-notice-actions button:first-child{flex:2}.sb-notice-actions button:focus-visible{outline:3px solid #173e78;outline-offset:-4px}

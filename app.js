@@ -342,7 +342,7 @@
   if (footer) sections.push(footer);
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   let frame = 0, active = false, lastWheel = 0, delta = 0, direction = 0, refreshTimer;
-  const blocked = () => root.inert || document.body.matches('.intro-open,.modal-open') ||
+  const blocked = () => root.inert || document.body.matches('.intro-open,.modal-open,.sb-notice-open') ||
     !!root.querySelector('.gnb.open,dialog[open],.legal-modal.open');
   const cancel = () => {
     cancelAnimationFrame(frame);
