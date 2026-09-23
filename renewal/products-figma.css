@@ -417,3 +417,7 @@
 
 /* Product image viewer uses the browser top layer for accessible focus trapping. */
 body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-trigger:focus-visible{outline:3px solid #2874ed;outline-offset:5px}.sb-image-dialog{width:max-content;max-width:96vw;max-height:94dvh;padding:50px 18px 14px;border:0;border-radius:16px;background:#fff;overflow:auto}.sb-image-dialog::backdrop{background:#122039c9}.sb-image-dialog>img{display:block;width:auto;height:auto;max-width:calc(96vw - 36px);max-height:calc(94dvh - 110px);object-fit:contain;margin:auto}.sb-image-close{position:absolute;right:16px;top:10px;border:0;border-radius:8px;background:#eef4ff;color:#214d88;padding:8px 14px;cursor:pointer}.sb-image-caption{text-align:center;margin:12px 0 0;font-size:14px;color:#53617a}
+
+/* Shared banner typography: dark copy and blue eyebrow labels. */
+.sb-figma-product #soft-bank-renewal .sb-hero h1,.sb-figma-product #soft-bank-renewal .sb-hero>div>p,.sb-figma-product #soft-bank-renewal .sb-content :is(.sb-contact-banner,.band) :is(h2,h3,p){color:#1d1d1f}
+.sb-figma-product #soft-bank-renewal .sb-hero>div>p:first-of-type{color:#2b61d6}
