@@ -1,7 +1,9 @@
 import fs from 'node:fs';
+import {deviceScene,isDeviceDiagram} from './device-scenes.mjs';
 const supplied=JSON.parse(fs.readFileSync('assets/subpages/frontal-sources/clipboard-map.json','utf8'));
 const highres=JSON.parse(fs.readFileSync('assets/subpages/frontal-screens/manifest.json','utf8'));
-// Keep real UI pixels. Hardware is drawn in CSS so no AI can alter screen text.
+const regenerated=JSON.parse(fs.readFileSync('assets/subpages/regenerated/manifest.json','utf8'));
+// Prefer regenerated presentations; preserve source mappings as a fallback.
 const omni={procurement:'f3f6c3f6fd590304',expense:'fec2a236c39964fe',manufacturing:'32663a23a2ee4f8b',dashboard:'aa0431a08f2e2baf',sales:'b3ac3aa33857b471',development:'c051731f2a4086ad',mlops:'e44a910ec1912e04'};
 export function applyFrontalScreens($,root){
  $('main img').each((i,e)=>{
@@ -19,14 +21,18 @@ export function applyFrontalScreens($,root){
   img.attr('src',original).removeAttr('width height').removeClass('sb-design-mockup sb-amaranth-custom sb-section-screen').addClass('sb-frontal-screen');
   img.attr('alt',(img.attr('alt')||'제품 화면').replace(/3D (?:모니터 )?목업|3D 화면 목업/g,'실제 화면'));
   const oldFrame=img.closest('.sb-laptop-mockup');if(oldFrame.length)oldFrame.replaceWith(img);
+  const asset=regenerated[original.slice(root.length)]||highres[original.slice(root.length)];
+  if(asset?.generated)img.attr('alt',img.attr('alt').replaceAll('실제 화면','서비스 화면'));
+  const scene=asset&&!asset.generated&&deviceScene($,original.slice(root.length),asset,root,img.attr('alt'));
+  if(scene){img.replaceWith(scene);return;}
   // WEHAGO's original references already include front-facing devices.
-  if(original.includes('/embedded/')||current.includes('/amaranth-')||current.includes('/nonprofit-docs/')||$('body').hasClass('sb-page-product-omniesol')){
+  const needsFrame=asset?.generated?asset.kind==='screen':!isDeviceDiagram(original.slice(root.length))&&(original.includes('/embedded/')||current.includes('/amaranth-')||current.includes('/nonprofit-docs/')||$('body').hasClass('sb-page-product-omniesol'));
+  if(needsFrame){
    img.wrap('<figure class="sb-frontal-monitor"><div class="sb-frontal-display"></div></figure>');
    img.closest('figure').append('<div class="sb-frontal-chin" aria-hidden="true"></div><div class="sb-frontal-stand" aria-hidden="true"></div><div class="sb-frontal-foot" aria-hidden="true"></div>');
   }else{
    img.wrap('<figure class="sb-faithful-reference"></figure>');
   }
-  const asset=highres[original.slice(root.length)];
   if(asset){
    img.attr({src:root+asset.file,width:asset.width,height:asset.height});
    img.wrap('<picture class="sb-frontal-picture"></picture>');

@@ -322,7 +322,7 @@
 #soft-bank-renewal .sb-content :is(.cont_txt,.txt,.sec-text,.mod-title,.sb-gw-heading,.sb-gw-label,.sb-gw-card,.sb-gw-expansion){text-align:center!important;width:100%;max-width:1100px;margin-inline:auto!important}
 .sb-figma-product #soft-bank-renewal :is(h2,h3,h4,h5,.sec-label){text-align:center!important}
 .sb-figma-product #soft-bank-renewal .sb-content :is(.info-card,.feature-card,.feature-box,.grid>div,.step){text-align:center!important}
-.sb-figma-product #soft-bank-renewal .sb-content :is(.alt-section li,.sec-text,.feature-box>div){font-size:18pt;line-height:1.65}
+.sb-figma-product #soft-bank-renewal .sb-content :is(.alt-section li,.sec-text,.feature-box>div){font-size:16px;line-height:1.65}
 #soft-bank-renewal .sb-centered-feature>:is(.cont_txt,.txt,.sec-text){order:0!important;flex:none!important}
 #soft-bank-renewal .sb-centered-feature>:is(.img,.sec-visual,.sb-generated-panel,.cont_img){order:1!important;width:100%!important;max-width:1200px!important;height:auto!important;margin:0 auto!important;flex:none!important;position:relative;inset:auto;transform:none}
 #soft-bank-renewal .sb-content img.sb-design-mockup{width:100%!important;max-width:1200px!important;height:auto!important;max-height:none!important;object-fit:contain;margin:0 auto!important;animation:none!important}
@@ -335,7 +335,7 @@
 .sb-figma-product #soft-bank-renewal .sb-content :is(.cont_txt,.txt,.sec-text) :is(p,b,strong){max-width:1100px;margin-inline:auto;white-space:normal;overflow-wrap:anywhere}
 .sb-figma-product #soft-bank-renewal .sb-content :is(.cont_txt,.txt,.sec-text) p br{display:none}
 .sb-figma-product #soft-bank-renewal .sb-content :is(.cont_txt,.txt,.sec-text) :is(ul,.flex){justify-content:center}
-.sb-figma-product #soft-bank-renewal .sb-content :is(.cont_txt,.txt,.sec-text) li{font-size:18pt;line-height:1.65}
+.sb-figma-product #soft-bank-renewal .sb-content :is(.cont_txt,.txt,.sec-text) li{font-size:16px;line-height:1.65}
 .sb-figma-product #soft-bank-renewal .sb-content :is(.txt>b,.cont_txt>b){display:block}
 .sb-figma-product #soft-bank-renewal .sb-content .cont_txt>b{text-align:center!important}
 .sb-page-product-nonprofit-intro #soft-bank-renewal .sb-nonprofit-functions [data-panel] .grid>div h3{font-size:28px!important}
@@ -344,7 +344,7 @@
 .sb-figma-product #soft-bank-renewal .sb-content .sb-product-cta{display:inline-flex;margin:24px auto 0!important}
 .sb-figma-product #soft-bank-renewal .sb-hero>div{align-items:center;text-align:center;padding:64px 24px!important;min-height:0!important}
 .sb-figma-product #soft-bank-renewal .sb-hero .sb-hero-asset{position:relative;inset:auto!important;translate:none;width:min(400px,80vw)!important;height:280px!important;margin:0 auto 28px;order:0;--float-base-y:0px}
-.sb-figma-product #soft-bank-renewal .sb-hero>div>.sb-hero-description{max-width:1000px;font-size:18pt;line-height:1.65}
+.sb-figma-product #soft-bank-renewal .sb-hero>div>.sb-hero-description{max-width:1000px;font-size:16px;line-height:1.65}
 .sb-figma-product #soft-bank-renewal .sb-hero .sb-hero-products{max-width:100%;justify-content:center;order:4}
 .sb-figma-product #soft-bank-renewal .sb-content .sb-gw-card>img{margin-inline:auto}
 .sb-figma-product #soft-bank-renewal .sb-content :is(.cards3,.cards4,.cards5,.wehago_02>ul){grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -372,3 +372,28 @@
 .sb-figma-product #soft-bank-renewal .sb-faithful-reference{width:100%;max-width:1200px;margin:20px auto 32px}
 @media(max-width:600px){.sb-figma-product #soft-bank-renewal .sb-frontal-display{padding:5px 5px 0;border-radius:9px 9px 0 0}.sb-figma-product #soft-bank-renewal .sb-frontal-chin{height:16px}.sb-figma-product #soft-bank-renewal .sb-frontal-stand{height:26px}}
 .sb-frontal-picture{display:block;width:100%}
+.sb-figma-product #soft-bank-renewal .sb-device-scene{position:relative;container-type:inline-size;width:100%;max-width:1160px;margin:24px auto 40px;isolation:isolate}
+.sb-device-desktop{position:absolute;top:0}
+.sb-device-desktop-bezel{padding:calc(var(--device-unit)*12);background:#20242d;border-radius:calc(var(--device-unit)*18) calc(var(--device-unit)*18) 0 0;box-shadow:0 12px 28px #172a4412}
+.sb-device-window{position:relative;overflow:hidden;width:100%;background:white}
+.sb-figma-product #soft-bank-renewal img.sb-device-pixels{position:absolute!important;max-width:none!important;max-height:none!important;object-fit:fill!important;display:block;transform:none!important;animation:none!important;margin:0!important;border:0!important;border-radius:0!important}
+.sb-device-chin{height:calc(var(--device-unit)*28);background:linear-gradient(#edf0f4,#c4c9d1);border-radius:0 0 calc(var(--device-unit)*14) calc(var(--device-unit)*14)}
+.sb-device-neck{width:16%;height:calc(var(--device-unit)*65);margin:auto;background:linear-gradient(#8a939f,#e1e5ec);clip-path:polygon(18% 0,82% 0,100% 100%,0 100%)}
+.sb-device-foot{width:36%;height:calc(var(--device-unit)*12);margin:auto;border-radius:50%;background:linear-gradient(#f2f4f7,#a1a9b5);box-shadow:0 8px 18px #172a4420}
+.sb-device-phone{position:absolute;z-index:2;padding:calc(var(--device-unit)*18) calc(var(--device-unit)*12);background:#242933;border:1px solid #737b87;border-radius:calc(var(--device-unit)*25);box-shadow:0 12px 28px #172a4426}
+.sb-device-phone .sb-device-window{border-radius:calc(var(--device-unit)*12)}
+/* Natural heading wrapping and readable feature checklists. */
+#soft-bank-renewal .sb-content .sb-natural-title{white-space:normal!important;word-break:keep-all;overflow-wrap:normal;text-wrap:balance}
+#soft-bank-renewal .sb-content .sb-check-item{list-style:none!important}
+#soft-bank-renewal .sb-content .sb-check-item::before{content:'✓';display:inline-block;margin-right:.6em;color:#2874ed;font-weight:800}
+.sb-pms-workflow-3d{margin:40px auto;width:100%;max-width:1400px}
+.sb-pms-workflow-3d>img{display:block;width:100%;height:auto}
+.sb-pms-workflow-3d>figcaption{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:18px;margin-top:24px}
+.sb-pms-workflow-3d section{padding:0!important;text-align:left}
+.sb-pms-workflow-3d h4{font-size:20px!important;line-height:1.45}
+.sb-pms-workflow-3d ul{padding:0!important;margin:16px 0!important}
+.sb-pms-workflow-3d li{margin:8px 0;list-style:none}
+.sb-workflow-number{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#197ce3;color:white;font-weight:700}
+@media(max-width:1100px){.sb-pms-workflow-3d>figcaption{grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}}
+@media(max-width:600px){.sb-pms-workflow-3d>figcaption{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 16px}}
+.sb-figma-product #soft-bank-renewal .sb-pms-screen-mockup .sb-laptop-base{width:100%!important;left:0!important;right:0!important;margin-left:0!important;transform:none!important}
