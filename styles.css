@@ -257,7 +257,19 @@ body.modal-open {overflow:hidden}
 }
 /* Customer story background supplied by the client. */
 .clients{background:#e6edff url('assets/customer-story-bg-v2.png') center/cover no-repeat}
-.hero-video-layer{position:absolute;inset:0;background:#fff;pointer-events:none}
-.hero-video{display:block;width:100%;height:100%;object-fit:cover;opacity:.45}
+/* Main visual uses the supplied still background; the foreground keeps floating. */
+#soft-bank-renewal .hero{background:#f1f8ff url('assets/main-visual-bg.png') center/cover no-repeat}
+#soft-bank-renewal .hero h1 :is(span,strong),#soft-bank-renewal .hero p b{color:var(--deep)}
+/* Body copy is 20pt (26.667 CSS pixels), including responsive layouts. */
+#soft-bank-renewal :is(main,.section,.hero-copy,footer) p,
+#soft-bank-renewal .sb-content :is(dd,.cont_txt p,.txt p,.sec-text p,.info-card p){font-size:20pt!important;line-height:1.65!important;overflow-wrap:anywhere}
+#soft-bank-renewal .hero{height:auto;min-height:1000px;display:flex;flex-direction:column;align-items:center;padding:60px 24px 72px}
+#soft-bank-renewal .hero>.hero-asset{position:relative;top:auto;left:auto;translate:none;width:min(620px,70vw);margin:0 auto 42px}
+#soft-bank-renewal .hero>.hero-copy{position:relative;top:auto;padding:0;width:100%}
+#soft-bank-renewal .hero .actions{margin-top:32px}
+#soft-bank-renewal .news-slider .news-card{height:530px}
+#soft-bank-renewal .news-slider .news-card p{max-height:4.95em}
+@media(max-width:700px){#soft-bank-renewal .news-slider .news-card{height:510px}}
+@media(max-width:700px){#soft-bank-renewal .hero{min-height:0;padding:40px 20px 64px}#soft-bank-renewal .hero>.hero-asset{top:auto;width:min(90vw,420px);margin-bottom:30px}#soft-bank-renewal .hero h1{font-size:36px}}
 .hero>.hero-asset{z-index:1;height:auto;pointer-events:none}
 @media(max-width:700px){#soft-bank-renewal .hero>.hero-asset{top:7%;width:min(90vw,420px)}}

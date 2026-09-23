@@ -1,6 +1,8 @@
 node_modules/
 public/
 tmp/upscale/
+tmp/pdfs/
+output/
 dist/
 .env
 .env.*

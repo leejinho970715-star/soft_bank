@@ -75,7 +75,7 @@ export function applyProductDesign($,page,root){
  $('.sb-hero>div>p').first().text('Product & Service');
  $('.sb-hero h1').text(title);
  $('.sb-hero nav').remove();
- const products=[['OmniEsol','omniesol'],['Amaranth 10','amaranth10/brand'],['WEHAGO','wehago/smart_A10'],['ONE AI','oneai'],['Amaranth 10 비영리','nonprofit/intro']];
+ const products=[['OmniEsol','omniesol'],['Amaranth 10','amaranth10/brand'],['WEHAGO','wehago/smart_A10'],['ONE AI','oneai'],['Amaranth 10 비영리','nonprofit/intro'],['IFRS18','ifrs18']];
  const productNav=$('<nav class="sb-hero-products" aria-label="제품 서비스 이동"></nav>');
  products.forEach(([label,path])=>{
   const active=page===`/product/${path}.asp` || (path.includes('/')&&page.startsWith('/product/'+path.split('/')[0]+'/')) || (page==='/product/pms.asp'&&path==='amaranth10/brand');
@@ -180,6 +180,17 @@ export function applyProductDesign($,page,root){
  if(page==='/product/wehago/linkedservice.asp')applyWehagoLinkedAssets($,root);
  if(['/product/amaranth10/brand.asp','/product/amaranth10/overview.asp','/product/nonprofit/intro.asp'].includes(page))applyAmaranthAssets($,root,{nonprofit:page==='/product/nonprofit/intro.asp'});
  if(page==='/product/wehago/smart_A10.asp')$('.sb-wehago-connected').append($('<a class="cta sb-product-cta sb-wehago-leaflet">리플렛 자세히 보기</a>').attr('href',root+'assets/documents/wehago-services-2026.pdf'));
+ if(omni){
+  const heading=$('#panel-platform .mod-title').filter((i,e)=>$(e).text().includes('6대 도구')).first();
+  heading.before($('#panel-platform>.band:not(.first)'));
+ }
+ const connected=$('.sb-wehago-connected h2');
+ if(connected.length)connected.text('다른 서비스들과 연동된 편리함!').after('<p>WEHAGO의 서비스들과 연결되어 더욱 편리한 경영관리로<br> 다양한 업무를 빠르고 효율적으로 처리할 수 있습니다.</p>');
+ $('.sb-feature,.sb-design-row').addClass('sb-centered-feature');
+ $('main p br').before(' ');
+ $('.sb-design-mockup').each((i,e)=>{
+  $(e).closest('.sb-feature,.sb-design-row,.omniesol .section,.alt-section>div,.wehago_slide .swiper-slide').addClass('sb-centered-feature');
+ });
  applyHighresAssets($,root);
  const css=$('<link rel="stylesheet">').attr('href',root+'renewal/products-figma.css?v=20260915-5');$('head').append(css);
  $('head').append($('<script defer></script>').attr('src',root+'renewal/products-figma.js?v=20260915-5'));

@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Preserve scroll restoration and deep-link reading positions.
         if (el.getBoundingClientRect().top < 0) return;
         triggers.push(ScrollTrigger.create({trigger: el, start: 'top 95%', once: true, onEnter: () => {
-          tweens.push(gsap.fromTo(el, {y: -distance, opacity: 0}, {y: 0, opacity: 1, duration: context.conditions.mobile ? .8 : 1.05, delay: (index % 4) * .045, ease: 'bounce.out', clearProps: 'transform,opacity'}));
+          tweens.push(gsap.fromTo(el, {y: distance, opacity: 0}, {y: 0, opacity: 1, duration: context.conditions.mobile ? .65 : .9, delay: (index % 4) * .045, ease: 'power2.out', clearProps: 'transform,opacity'}));
         }}));
       });
     };

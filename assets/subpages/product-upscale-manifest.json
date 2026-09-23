@@ -285,5 +285,509 @@
     "height": 2560,
     "originalSha256": "715fefb669da50ee96f9556fbff66e03b741b1782130692d17f20eff914eb553",
     "method": "realesr-animevideov3, 3840px, original alpha"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-01.png",
+    "width": 3840,
+    "height": 2791,
+    "originalSha256": "3dc0ba17515eef5e1942fc805522ad9a7d1b4bb618c3efcb7618f1f3fe201021",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-02.png",
+    "width": 3840,
+    "height": 2818,
+    "originalSha256": "75c43712588158590db06d4965e468df9ba173772742ff0430ad288dffbbe3b9",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-03.png",
+    "width": 3840,
+    "height": 2856,
+    "originalSha256": "aeb269dac730e868f089e26c005f554fa3745bf2822a3bd4868d6db895aceaed",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-04.png",
+    "width": 3840,
+    "height": 2707,
+    "originalSha256": "c1442232caaccf0de7d62f9259e060a06aa95d4ebd33375c7df9e2d7f5fcb66f",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-05.png",
+    "width": 3840,
+    "height": 2918,
+    "originalSha256": "7618300615e2e69b0c5a861dbd81c59585a599f311b02380e28f61e4172caf86",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-06.png",
+    "width": 3840,
+    "height": 2920,
+    "originalSha256": "43618e89eb5afff588c59bb339171d2a08b7c1fd3cdfe3b4fe17cad3866c75a0",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-07.png",
+    "width": 3840,
+    "height": 3018,
+    "originalSha256": "c0dc5e7604e8ee15c424431c93b60bd30adf52263680386f2cedc4dba5bb001b",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-08.png",
+    "width": 3840,
+    "height": 2907,
+    "originalSha256": "84256c8ec9275e123f9555b6da3608a76f7e0976a8749fbaee08e32d79327a29",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-09.png",
+    "width": 3840,
+    "height": 2686,
+    "originalSha256": "4f2f28421420d89b19f97821cca2bce64052544de0a5528d09571e0900b5fca3",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-10.png",
+    "width": 3840,
+    "height": 2854,
+    "originalSha256": "3926523fcbeda1c5328c92cf43fa10199b18c48af4d0692b52a172d1f17f9f39",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-11.png",
+    "width": 3840,
+    "height": 2854,
+    "originalSha256": "22b22a1e8e5401d3638d0998a95519357c0b4b0b200baa89efb5d43c7e9ac415",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-12.png",
+    "width": 3840,
+    "height": 2880,
+    "originalSha256": "ad52995f4726da712018bf32c828cde6d643cd66a65f7f5aa16fb317b84de70b",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-13.png",
+    "width": 3840,
+    "height": 2755,
+    "originalSha256": "ba7bedd10de7113eb3259529b4893561a660ce469232b2d36020134703aad54b",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-14.png",
+    "width": 3840,
+    "height": 2973,
+    "originalSha256": "88537fc69688d8e8cad068f2a86dd2568df44444c8db2803541dfa35e5e2786f",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-15.png",
+    "width": 3840,
+    "height": 2998,
+    "originalSha256": "6a3cf3d448cd9974c2fe3bd209fa6792b712cc741c6d157f619181a1ecd04246",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-16.png",
+    "width": 3840,
+    "height": 2933,
+    "originalSha256": "965551f735645f6669539224ec99d90774c6a19d864462b72487a635e7e30a48",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-17.png",
+    "width": 3840,
+    "height": 2931,
+    "originalSha256": "3be39a0e0805a3e9cfedcdee839862eafc828f817d798b7e01ab25fe0444433e",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-18.png",
+    "width": 3840,
+    "height": 3010,
+    "originalSha256": "1afd5d57ae51f32c921af85f3af0fed6a7217fa5652ccc74c9245141b2517875",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-19.png",
+    "width": 3840,
+    "height": 3010,
+    "originalSha256": "a06362f34088e75d2150fe421082fb3f112acdb7dd0f208c028883267ad63350",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-20.png",
+    "width": 3840,
+    "height": 3022,
+    "originalSha256": "a7e609882fad97e52e13c7edd86e068c42ffeefe5e43d3bc6436c1effaa505da",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-21.png",
+    "width": 3840,
+    "height": 2969,
+    "originalSha256": "9d7aacfef59fa48f3e033c5c17f96fa5017bbe87a2eb1338ec186ba835778c0b",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-22.png",
+    "width": 3840,
+    "height": 3150,
+    "originalSha256": "e792019067c38fbc688dabe2a6f3ba72c81e39e72094597ac2a6f7fa1291d517",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-23.png",
+    "width": 3840,
+    "height": 3351,
+    "originalSha256": "cc36fbd7155125b632fad4994b2b615401a7ed1d1d0e5467b0cb3f4381f5151c",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-24.png",
+    "width": 3840,
+    "height": 3457,
+    "originalSha256": "58768c2c33ee1b62a4e849741160d343e4706c37af9c798145687a518fe42e63",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-25.png",
+    "width": 3840,
+    "height": 3611,
+    "originalSha256": "82ce5e95cb2fb33879ce90f3ba73c4e2aee77028cd12e05b2a07396bea37b5e6",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-26.png",
+    "width": 3840,
+    "height": 3614,
+    "originalSha256": "fc5071a3f3a066948712614ff93c5c70e0f3c8bec82796b8244a17ced0c60b35",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-27.png",
+    "width": 3840,
+    "height": 3611,
+    "originalSha256": "1be2042e7d7051723788fabc198d03b7fff390e2f17d0e0c19359d6ad35db0ee",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-28.png",
+    "width": 3840,
+    "height": 3695,
+    "originalSha256": "5628c4c00f3064649c9a33729bd9b4cd1879a624fb1ddc5dd994877bbb257c61",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-29.png",
+    "width": 3840,
+    "height": 3614,
+    "originalSha256": "ed145018e32895b35b29dc18f8fff3c6fd2e831dbf95a1e766f4b8dee5b9a4bf",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-30.png",
+    "width": 3840,
+    "height": 3310,
+    "originalSha256": "474cdea692d044bcd84ee25952473eff607537b02c4a291b98e0f3369b5d8067",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-31.png",
+    "width": 3840,
+    "height": 3457,
+    "originalSha256": "52a595363f1a11f06ef5eb8209bf44b338f8c7666761e7523b4bf14e0ed06b61",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-32.png",
+    "width": 3840,
+    "height": 2863,
+    "originalSha256": "651d3268b612ac55f36adaa6c481cd85243f5423189a40adf3a4a83c9dcc6054",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-33.png",
+    "width": 3840,
+    "height": 2992,
+    "originalSha256": "bb4baae96308f86427b0dbe02adf6a432087519a8364784594ffe2ec8ba18bb7",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-34.png",
+    "width": 3840,
+    "height": 2915,
+    "originalSha256": "ffa79528cae15950efdbbedd0566245d26c4e81d2e2ccd65eef65022a8811197",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-35.png",
+    "width": 3840,
+    "height": 2965,
+    "originalSha256": "74e13d06c593ea14d9cab6c2cfbb3701d4a5fa24222e255136450077344b44e3",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-36.png",
+    "width": 3840,
+    "height": 2941,
+    "originalSha256": "afe5e92f81e132253d22fd372ec79f76f3bd7282970a8d427757df3a1bd0875d",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-37.png",
+    "width": 3840,
+    "height": 3022,
+    "originalSha256": "98914df24640578e1dd2031cca8b1eec1d133028330f0982a865c044652b5a39",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/amaranth-38.png",
+    "width": 3840,
+    "height": 3088,
+    "originalSha256": "dc699d1acfb666fa665610b5de3ecd57c0de34d042df92ac7fe6781f815604da",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/omniesol-01.png",
+    "width": 3840,
+    "height": 3070,
+    "originalSha256": "d77a844d4cd81381ea45e74b2955a5f271ed7cff2fadd9eedfccdc718c7fbf77",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/omniesol-02.png",
+    "width": 3840,
+    "height": 2815,
+    "originalSha256": "628973cbf08439bce32e2babf348cd4f5fe692b55a876fc02330bb05982c3faf",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/omniesol-03.png",
+    "width": 3840,
+    "height": 3079,
+    "originalSha256": "8846a2d3dba95caef9f401158ed955985235bde50d90ad072644929f6e430c0d",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/omniesol-04.png",
+    "width": 3840,
+    "height": 2767,
+    "originalSha256": "17871f8fdd55fc3019c6c81be8a42ce92848fa6280babf1f5a946b1c43896104",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/omniesol-05.png",
+    "width": 3840,
+    "height": 3339,
+    "originalSha256": "13b3975a1688401e85c8ec186bdd29a1eb5648948a864198d46720d77fe00674",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/omniesol-06.png",
+    "width": 3840,
+    "height": 2891,
+    "originalSha256": "1e86437b91166eb7b90b66a91041ae1927c7bc6d3b1a60656e50eb22eccf105e",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/omniesol-07.png",
+    "width": 3840,
+    "height": 3462,
+    "originalSha256": "2a85d747ca8e6ac4809bf582c664997d046af6bfb209685a03b062c7d9f0b677",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/omniesol-08.png",
+    "width": 3840,
+    "height": 3052,
+    "originalSha256": "9a754bd362231ee87d49a36ebf2cda55c04fc56271a63143fb7f5063099fa6f4",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/omniesol-09.png",
+    "width": 3840,
+    "height": 2767,
+    "originalSha256": "ac6c5445b2b0f04b2bcec4412f6bd01206fbdc9a2a671638c071384a26d16f9e",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/omniesol-10.png",
+    "width": 3840,
+    "height": 2866,
+    "originalSha256": "dda4248009c5879e5154b5ca9abb4f49a0714e848383e8e7c6bb8a00053d789c",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/omniesol-11.png",
+    "width": 3840,
+    "height": 2939,
+    "originalSha256": "506cf783b5cdcd0931651ef4c2a0adbab2d4f5ab383ba716c58bbb799c6ecf6f",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/omniesol-12.png",
+    "width": 3840,
+    "height": 3315,
+    "originalSha256": "a03fe6214de5f9bd7fc52ccc2a6e1643fa0621b1eb55c211b745b844ad3276df",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/wehago-01.png",
+    "width": 3840,
+    "height": 2803,
+    "originalSha256": "32d3068a4856b7d49304687be1d64fa5fab58cb4a7bd2709d351ab9fb29905fe",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/wehago-02.png",
+    "width": 3840,
+    "height": 2854,
+    "originalSha256": "1c1d9dfb977eb35326f37635ce67ff0df69a596518a97758dadcfb23b9b4c8ef",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/wehago-03.png",
+    "width": 3840,
+    "height": 2750,
+    "originalSha256": "ef9956998237e9c14750d3e2027f9ee83340d2e769174280e0e4f4f93425d013",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/wehago-04.png",
+    "width": 3840,
+    "height": 2635,
+    "originalSha256": "963b6d0329ebd6151e4f99550b4cc51fd2a54beec266a58388a414b00ef877a3",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/wehago-05.png",
+    "width": 3840,
+    "height": 2666,
+    "originalSha256": "bf1617a43b5590f8b18312987df7a65ca3b07e8599068701b41000f802c9015d",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/wehago-06.png",
+    "width": 3840,
+    "height": 2604,
+    "originalSha256": "49981534fea1673994908f5c01c5817d5f3dbc0b729c9bfcee44a1bd575be632",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/wehago-07.png",
+    "width": 3840,
+    "height": 2621,
+    "originalSha256": "5956d7e3c409aed918cbb9839749ed6c12334129fbd55319c785e18f8323447d",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/wehago-08.png",
+    "width": 3840,
+    "height": 2801,
+    "originalSha256": "88b6ea5c2bedbfa79c1e0a514a5ef7522b2b25a7b99c59fb0b3fbbc1b7cce1f0",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/wehago-09.png",
+    "width": 3840,
+    "height": 2486,
+    "originalSha256": "fa3acd962909030cfd56131c58e1c60673334eaefab6abcb896a80cdd402061f",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/wehago-10.png",
+    "width": 3840,
+    "height": 2604,
+    "originalSha256": "46928974baac3c880806a2bfc50c7e12266cdeae57548b447189cc76858aaf0f",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/wehago-11.png",
+    "width": 3840,
+    "height": 3502,
+    "originalSha256": "d0ceb990cf730a8fb201d323c0bcf4489c0981e648633f06155741a3bc1b6718",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/wehago-12.png",
+    "width": 3840,
+    "height": 3434,
+    "originalSha256": "55ba68b7ba366b715c9b35847c8b71d75d26997994d0c0cbf92092de53fd5b8c",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/wehago-13.png",
+    "width": 3840,
+    "height": 3436,
+    "originalSha256": "1f6da026f0f1d43d9f593ae8bde4af7c5ddadaffdb1938d098f3a3f6b0dc8627",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/wehago-14.png",
+    "width": 3840,
+    "height": 3313,
+    "originalSha256": "ccef64f8399c4d0cf5183006a9fb6f2e6f349a5b50a3dfe7f1ec7ee76be4ae1a",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/wehago-15.png",
+    "width": 3840,
+    "height": 3332,
+    "originalSha256": "f1c1e13ec9d458901a9383b82d8e64328da734bf9c080187cf45f24ddb5506d7",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/wehago-16.png",
+    "width": 3840,
+    "height": 3273,
+    "originalSha256": "6c5c2d4b5eba51e4c056fd33622b37e664ee2c513d9119d1cd0b81cfee30dee8",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/wehago-17.png",
+    "width": 3840,
+    "height": 3216,
+    "originalSha256": "4569935dde7381ce7cd329c6ae13ad6a957b519b9f2ae87f4dea5c66a1e4a5e5",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/wehago-18.png",
+    "width": 3840,
+    "height": 3236,
+    "originalSha256": "7c1f5615c72c1e47c63045990f5d9e448f22d90539497d479dd9b8c59614b7e0",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/wehago-19.png",
+    "width": 3840,
+    "height": 3216,
+    "originalSha256": "1e6adaa316deefed2c67f15d97e8c318a9c97ef03e4e93b2a579883317fa69d6",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/wehago-20.png",
+    "width": 3840,
+    "height": 3313,
+    "originalSha256": "aa996bf3d5055842b70080fe5c9e6455760cef25fcbea5f36a6af50f788fbb27",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/wehago-21.png",
+    "width": 3840,
+    "height": 2943,
+    "originalSha256": "8b1a0ea9598606f2063990a82224a69b2f05022d2de4f53c1a311320259c627c",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
+  },
+  {
+    "file": "assets/subpages/figma/wehago-22.png",
+    "width": 3840,
+    "height": 3160,
+    "originalSha256": "ccc7c080eb903801c456561d7ab5bb394d37cd9a529b92e78283cbd1b9abb971",
+    "method": "Lanczos resampling + mild unsharp mask, 3840px, preserved alpha; no synthesized UI detail"
   }
 ]

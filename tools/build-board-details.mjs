@@ -2,6 +2,13 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {load} from 'cheerio';
 const origin='https://www.duzon119.co.kr';
+// OneDrive can hold a generated HTML file briefly while synchronizing it.
+async function writeOutput(file,html){
+ for(let attempt=0;;attempt++){
+  try{await fs.writeFile(file,html);return;}
+  catch(error){if(!['UNKNOWN','EBUSY','EPERM'].includes(error.code)||attempt>=5)throw error;await new Promise(resolve=>setTimeout(resolve,300*(attempt+1)));}
+ }
+}
 const articles=JSON.parse(await fs.readFile('reference/board-details/index.json','utf8'));
 const map=new Map(articles.map(p=>[p.path+'?idx='+p.idx,'/subpages/articles/'+p.key+'.html']));
 await fs.mkdir('subpages/articles',{recursive:true});
@@ -20,11 +27,12 @@ for(const p of articles){
  $('title').text(title+' | 아이원소프트뱅크');
  $('.sb-content').empty().addClass('sb-article-content').append(article.toString()).append(`<p class="sb-article-back"><a class="cta" href="${p.path.replace('.asp','.html').replace(/^\//,'/subpages/')}">목록으로 돌아가기</a></p>`);
  $('.sb-preview-dialog').remove();
- await fs.writeFile('subpages/articles/'+p.key+'.html',$.html());
+ await writeOutput('subpages/articles/'+p.key+'.html',$.html());
 }
 const files=[];async function walk(dir){for(const e of await fs.readdir(dir,{withFileTypes:true})){const f=path.join(dir,e.name);if(e.isDirectory())await walk(f);else if(f.endsWith('.html'))files.push(f)}}await walk('subpages');
 for(const f of files){const $=load(await fs.readFile(f,'utf8'));$('a[href]').each((i,e)=>{const a=$(e),href=a.attr('href');try{const u=new URL(href,'https://local/'+f.replaceAll('\\','/'));const oldPath=u.pathname.replace(/^\/subpages\//,'/').replace(/\.html$/,'.asp');const key=oldPath+'?idx='+u.searchParams.get('idx');if(map.has(key))a.attr('href',map.get(key));else if(u.hostname==='local'&&(u.searchParams.has('mode')||Number(u.searchParams.get('page'))>1))a.attr('href',origin+oldPath+u.search);if(a.closest('.sb-preview-dialog').length||a.is('.inqSubmitBtn')||/^(주소검색|회원정보입력)$/.test(a.text().trim()))a.attr('href',origin+oldPath);}catch{}});
+ $('[data-member-next]').attr('href','join.html');
  const servicePath='/'+f.replaceAll('\\','/').replace(/^subpages\//,'').replace('.html','.asp');
  if(!f.includes('articles')&&$('form[data-preview-form]').length&&/\/(member|purchase)\//.test(servicePath))$('main').prepend(`<p class="sb-service-notice">접수·로그인은 기존 서비스에서 진행됩니다. <a href="${origin+servicePath}">실제 서비스로 이동 →</a></p>`);
- $('img[src^="http:"]').each((i,e)=>$(e).attr('src',$(e).attr('src').replace('http:','https:')));await fs.writeFile(f,$.html());}
+ $('img[src^="http:"]').each((i,e)=>$(e).attr('src',$(e).attr('src').replace('http:','https:')));await writeOutput(f,$.html());}
 console.log('Built',articles.length,'public article pages and repaired board links.');
