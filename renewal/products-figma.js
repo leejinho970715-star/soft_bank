@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded',()=>{
    // Keep product navigation and download links; intercept image-file links only.
    if(link&&!/\.(png|webp|jpe?g|gif|svg)(?:[?#]|$)/i.test(link.href))return;
    const target=link||img;
-   if(img.closest('.sb-content'))zoomImages.push(img);
+   if(img.closest('.sb-content')&&!document.body.classList.contains('sb-page-product-oneai'))zoomImages.push(img);
    if(!link){target.tabIndex=0;target.setAttribute('role','button');target.setAttribute('aria-label',(img.alt||'제품 이미지')+' 크게 보기');}
    target.classList.add('sb-image-trigger');target.setAttribute('aria-haspopup','dialog');
    target.addEventListener('click',e=>{if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();open(img,target);});
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded',()=>{
    const actions=document.createElement('div');actions.className='sb-screen-actions';
    let container=img.parentElement,video=null;
    while(container&&!container.matches('.sb-content')){
-    const candidate=[...container.querySelectorAll('a')].find(a=>a.textContent.trim()==='영상으로 확인하기');
+    const candidate=[...container.querySelectorAll('a')].find(a=>a.textContent.trim()==='영상으로 확인하기'||(document.body.classList.contains('sb-page-product-wehago-smart_a10')&&/^리플[릿렛]\s*자세히\s*보기$/.test(a.textContent.trim())));
     if(candidate&&zoomImages.filter(other=>container.contains(other)).length===1){video=candidate;break;}
     container=container.parentElement;
    }
@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded',()=>{
  }
  const syncWidth=()=>document.documentElement.style.setProperty('--product-viewport',document.documentElement.clientWidth+'px');
  syncWidth();window.addEventListener('resize',syncWidth);
+ document.querySelectorAll('.sb-page-product-wehago-smart_a10 .wehago_02 .contBox .txt p').forEach(p=>p.classList.add('sb-check-item'));
  // Short headings remain on one line; longer headings wrap naturally.
  document.querySelectorAll('.sb-content h2,.sb-content h3,.sb-content h4,.sb-content h5,.sb-content .txt>strong').forEach(heading=>{
   if(heading.closest('.sb-product-heading,.sb-product-tabs'))return;
