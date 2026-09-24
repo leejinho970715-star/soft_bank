@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded',()=>{
    // Keep product navigation and download links; intercept image-file links only.
    if(link&&!/\.(png|webp|jpe?g|gif|svg)(?:[?#]|$)/i.test(link.href))return;
    const target=link||img;
-   if(img.closest('.sb-content')&&!document.body.classList.contains('sb-page-product-oneai'))zoomImages.push(img);
+   if(img.closest('.sb-content')&&!document.body.classList.contains('sb-page-product-oneai')&&!img.matches('.sb-page-product-nonprofit-intro .sb-nonprofit-hero,.sb-page-product-nonprofit-intro .sb-nonprofit-process .sb-process-icon'))zoomImages.push(img);
    if(!link){target.tabIndex=0;target.setAttribute('role','button');target.setAttribute('aria-label',(img.alt||'제품 이미지')+' 크게 보기');}
    target.classList.add('sb-image-trigger');target.setAttribute('aria-haspopup','dialog');
    target.addEventListener('click',e=>{if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();open(img,target);});
