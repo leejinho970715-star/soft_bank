@@ -46,12 +46,12 @@ document.addEventListener('DOMContentLoaded',()=>{
    }
    if(video){video.before(actions);actions.append(video,button);}
    else{
-    const feature=img.closest('.sb-feature');
-    const copy=feature&&zoomImages.filter(other=>feature.contains(other)).length===1?feature.querySelector('.cont_txt,.txt'):null;
+    const feature=img.closest('.sb-feature,.sb-centered-feature,.ifrs-feature');
+    const copy=feature&&zoomImages.filter(other=>feature.contains(other)).length===1?feature.querySelector('.cont_txt,.txt,.sec-text'):null;
     if(copy)copy.append(actions);
     else{
      const visual=img.closest('figure,.img,.sb-laptop-mockup')||img.closest('a,picture')||img;
-     visual.after(actions);
+     visual.before(actions);
     }
     actions.append(button);
    }

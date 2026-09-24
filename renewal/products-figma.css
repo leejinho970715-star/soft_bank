@@ -428,8 +428,8 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
 .sb-poster-dialog>img{width:100%;max-width:100%;height:auto;max-height:none}
 
 /* Image viewing actions share a row with the corresponding video link. */
-.sb-product #soft-bank-renewal .sb-screen-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;margin:24px 0;width:100%}
-.sb-product #soft-bank-renewal .sb-screen-actions>:is(a,button){display:inline-flex;align-items:center;justify-content:center;position:relative;width:auto;min-height:50px;margin:0!important;padding:12px 28px;border:0;border-radius:999px;font-size:16px;font-weight:600;line-height:1.5;white-space:normal}
+.sb-product #soft-bank-renewal .sb-content .sb-screen-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:16px;margin:24px auto;width:100%;grid-column:1/-1}
+.sb-product #soft-bank-renewal .sb-content .sb-screen-actions>:is(a,button){flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;position:relative;width:auto;min-height:50px;margin:0!important;padding:12px 28px;border:0;border-radius:999px;font-size:16px;font-weight:600;line-height:1.5;white-space:normal}
 .sb-product #soft-bank-renewal .sb-screen-actions>.sb-screen-view{background:#4b90e2;color:#fff;cursor:pointer}
 .sb-product #soft-bank-renewal .sb-screen-view:hover{background:#347ed5}
 .sb-product #soft-bank-renewal .sb-screen-view:focus-visible{outline:3px solid #245c9f;outline-offset:3px}
