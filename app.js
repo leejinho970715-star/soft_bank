@@ -2,6 +2,17 @@
   const root = document.getElementById('soft-bank-renewal');
   if (!root) return;
 
+  const topButton = document.createElement('button');
+  topButton.type = 'button';
+  topButton.className = 'sb-back-to-top';
+  topButton.setAttribute('aria-label', '페이지 맨 위로 이동');
+  topButton.innerHTML = '<span aria-hidden="true">↑</span>TOP';
+  topButton.addEventListener('click', () => {
+    window.dispatchEvent(new Event('sb:back-to-top'));
+    window.scrollTo({top: 0, left: 0, behavior: 'instant'});
+  });
+  root.append(topButton);
+
   const $ = (selector, scope = root) => scope.querySelector(selector);
   const $$ = (selector, scope = root) => Array.from(scope.querySelectorAll(selector));
 
@@ -419,6 +430,7 @@
   window.addEventListener('pointerdown',cancel,{passive:true});
   window.addEventListener('touchstart',cancel,{passive:true});
   window.addEventListener('hashchange',cancel);
+  window.addEventListener('sb:back-to-top',()=>{cancel();delta=0;lastWheel=performance.now();});
   window.addEventListener('pagehide',cancel);
   reduced.addEventListener('change',cancel);
   const refresh=()=>{

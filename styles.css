@@ -280,3 +280,10 @@ html.sb-home-paging{scroll-behavior:auto!important}
 body.sb-notice-open{overflow:hidden}.sb-home-notice{padding:0;border:0;width:min(480px,calc(100vw - 28px));max-height:94dvh;overflow:auto;background:#fff7f0;border-radius:6px;box-shadow:0 20px 80px #0004}.sb-home-notice::backdrop{background:#10203d99}.sb-notice-visual{width:100%;aspect-ratio:480/497;overflow:hidden}.sb-notice-visual img{display:block;width:100%;height:auto}.sb-notice-actions{display:flex;background:#4398e8;position:sticky;bottom:0}.sb-notice-actions button{flex:1;border:0;background:transparent;color:#fff;padding:18px 10px;cursor:pointer;font-size:14px;font-weight:700}.sb-notice-actions button:first-child{flex:2}.sb-notice-actions button:last-child{border:1px solid #fff;border-radius:8px;margin:7px;padding:10px}.sb-notice-actions button:focus-visible{outline:2px solid #fff;outline-offset:-4px;border-radius:8px}
 /* Home support content no longer reserves a watermark band. */
 #soft-bank-renewal>main>.support{min-height:0;padding-bottom:80px}@media(max-width:700px){#soft-bank-renewal>main>.support{padding-bottom:56px}}
+
+/* Shared instant back-to-top control, below the left quick menu. */
+#soft-bank-renewal .sb-back-to-top{position:fixed;left:0;bottom:20px;z-index:35;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;width:60px;height:60px;padding:6px;border:1px solid #fff;border-left:0;border-radius:0 14px 14px 0;background:#4b90e2;color:#fff;font-size:13px;font-weight:700;line-height:1.2;box-shadow:0 4px 16px #215bad26;cursor:pointer}
+#soft-bank-renewal .sb-back-to-top span{font-size:24px;line-height:1}
+#soft-bank-renewal .sb-back-to-top:hover{background:#347ed5}
+#soft-bank-renewal .sb-back-to-top:focus-visible{outline:3px solid #245c9f;outline-offset:3px}
+@media(max-width:700px){#soft-bank-renewal .sb-back-to-top{width:52px;height:52px;bottom:max(16px,env(safe-area-inset-bottom))}}
