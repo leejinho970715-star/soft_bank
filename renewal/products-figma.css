@@ -433,3 +433,9 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
 .sb-product #soft-bank-renewal .sb-screen-actions>.sb-screen-view{background:#4b90e2;color:#fff;cursor:pointer}
 .sb-product #soft-bank-renewal .sb-screen-view:hover{background:#347ed5}
 .sb-product #soft-bank-renewal .sb-screen-view:focus-visible{outline:3px solid #245c9f;outline-offset:3px}
+
+/* Linked services: three solution assets per desktop row. */
+.sb-page-product-wehago-linkedservice #soft-bank-renewal .sb-content .wehago_02>ul{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.sb-page-product-wehago-linkedservice #soft-bank-renewal .sb-content .wehago_02>ul>.contBox{min-width:0}
+@media(max-width:899px){.sb-page-product-wehago-linkedservice #soft-bank-renewal .sb-content .wehago_02>ul{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:599px){.sb-page-product-wehago-linkedservice #soft-bank-renewal .sb-content .wehago_02>ul{grid-template-columns:1fr}}
