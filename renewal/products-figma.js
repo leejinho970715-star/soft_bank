@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded',()=>{
  }
  const syncWidth=()=>document.documentElement.style.setProperty('--product-viewport',document.documentElement.clientWidth+'px');
  syncWidth();window.addEventListener('resize',syncWidth);
- document.querySelectorAll('.sb-page-product-wehago-smart_a10 .wehago_02 .contBox .txt p').forEach(p=>p.classList.add('sb-check-item'));
+ document.querySelectorAll('.sb-page-product-wehago-smart_a10 .wehago_02 .contBox .txt p,.sb-page-product-wehago-cooperation .wehago_02 .contBox .txt p,.sb-page-product-wehago-extraservice .wehago_02 .contBox .txt p').forEach(p=>p.classList.add('sb-check-item'));
  // Short headings remain on one line; longer headings wrap naturally.
  document.querySelectorAll('.sb-content h2,.sb-content h3,.sb-content h4,.sb-content h5,.sb-content .txt>strong').forEach(heading=>{
   if(heading.closest('.sb-product-heading,.sb-product-tabs'))return;
