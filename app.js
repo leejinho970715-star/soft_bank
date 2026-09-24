@@ -9,7 +9,7 @@
   topButton.innerHTML = '<span aria-hidden="true">↑</span>TOP';
   topButton.addEventListener('click', () => {
     window.dispatchEvent(new Event('sb:back-to-top'));
-    window.scrollTo({top: 0, left: 0, behavior: 'instant'});
+    window.scrollTo({top: 0, left: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
   });
   root.append(topButton);
 

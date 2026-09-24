@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded',()=>{
    // Keep product navigation and download links; intercept image-file links only.
    if(link&&!/\.(png|webp|jpe?g|gif|svg)(?:[?#]|$)/i.test(link.href))return;
    const target=link||img;
-   if(img.closest('.sb-content')&&!document.body.classList.contains('sb-page-product-oneai')&&!img.matches('.sb-page-product-nonprofit-intro .sb-nonprofit-hero,.sb-page-product-nonprofit-intro .sb-nonprofit-process .sb-process-icon,.sb-page-product-wehago-cooperation .wehago_02 img,.sb-page-product-wehago-extraservice .wehago_02 img,.sb-page-product-pms .sb-pms-workflow-3d img,.sb-page-product-omniesol img[src$="/omniesol-custom/chatbot.png"]'))zoomImages.push(img);
+   if(img.closest('.sb-content')&&!document.body.classList.contains('sb-page-product-oneai')&&!img.matches('.sb-page-product-nonprofit-intro .sb-nonprofit-hero,.sb-page-product-nonprofit-intro .sb-nonprofit-process .sb-process-icon,.sb-page-product-wehago-cooperation .wehago_02 img,.sb-page-product-wehago-extraservice .wehago_02 img,.sb-page-product-pms .sb-pms-workflow-3d img,.sb-page-product-pms .sect_faetures img,.sb-page-product-omniesol img[src$="/omniesol-custom/chatbot.png"]'))zoomImages.push(img);
    if(!link){target.tabIndex=0;target.setAttribute('role','button');target.setAttribute('aria-label',(img.alt||'제품 이미지')+' 크게 보기');}
    target.classList.add('sb-image-trigger');target.setAttribute('aria-haspopup','dialog');
    target.addEventListener('click',e=>{if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();open(img,target);});
