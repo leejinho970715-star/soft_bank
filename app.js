@@ -7,9 +7,26 @@
   topButton.className = 'sb-back-to-top';
   topButton.setAttribute('aria-label', '페이지 맨 위로 이동');
   topButton.innerHTML = '<span aria-hidden="true">↑</span>TOP';
+  let topScrollFrame = 0;
+  const cancelTopScroll = () => cancelAnimationFrame(topScrollFrame);
+  window.addEventListener('wheel', cancelTopScroll, {passive: true});
+  window.addEventListener('touchstart', cancelTopScroll, {passive: true});
+  window.addEventListener('pointerdown', cancelTopScroll, {passive: true});
+  window.addEventListener('keydown', cancelTopScroll);
   topButton.addEventListener('click', () => {
+    cancelTopScroll();
     window.dispatchEvent(new Event('sb:back-to-top'));
-    window.scrollTo({top: 0, left: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      window.scrollTo({top: 0, left: 0, behavior: 'instant'});
+      return;
+    }
+    const from = window.scrollY, start = performance.now();
+    const tick = now => {
+      const progress = Math.min(1, (now - start) / 850);
+      window.scrollTo({top: from * Math.pow(1 - progress, 3), left: 0, behavior: 'instant'});
+      if (progress < 1) topScrollFrame = requestAnimationFrame(tick);
+    };
+    topScrollFrame = requestAnimationFrame(tick);
   });
   root.append(topButton);
 
