@@ -282,6 +282,36 @@ body.sb-notice-open{overflow:hidden}.sb-home-notice{padding:0;border:0;width:min
 #soft-bank-renewal>main>.support{min-height:0;padding-bottom:80px}@media(max-width:700px){#soft-bank-renewal>main>.support{padding-bottom:56px}}
 
 /* Shared back-to-top control, below the left quick menu. */
+/* Give standalone subpage copy breathing room without changing padded cards. */
+#soft-bank-renewal .sb-content :is(.cont_txt,.txt,.sec-text){box-sizing:border-box;padding-inline:16px}
+#soft-bank-renewal :is(.quick-toggle,.quick-fab,.quick-menu a,.right-quick-item){touch-action:manipulation}
+#soft-bank-renewal .chat:not(.open){visibility:hidden;pointer-events:none}
+#soft-bank-renewal .chat:not(.open) .questions{pointer-events:none}
+#soft-bank-renewal .chat.open{visibility:visible}
+@media(max-width:700px){
+ #soft-bank-renewal .quick-left{z-index:45}
+ #soft-bank-renewal .quick-left.closed{transform:translateX(calc(-100% + 44px))}
+ #soft-bank-renewal .quick-left .quick-toggle{height:44px;min-height:44px}
+ #soft-bank-renewal .quick-left.closed .quick-toggle:after{width:44px}
+ #soft-bank-renewal .quick-left .quick-menu{overscroll-behavior:contain;touch-action:pan-y}
+ #soft-bank-renewal .quick-popover{z-index:45;max-height:calc(100dvh - 150px);overflow-y:auto}
+ #soft-bank-renewal .quick-fab{z-index:46}
+}
+body.sb-cardnews-open{overflow:hidden}
+.sb-cardnews-dialog{width:min(520px,calc(100vw - 32px));max-height:calc(100dvh - 32px);padding:24px;border:0;border-radius:18px;box-sizing:border-box;color:#1d1d1f;background:#fff;overflow-y:auto}
+.sb-cardnews-dialog::backdrop{background:#14223899}
+.sb-cardnews-dialog header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.sb-cardnews-dialog h2{font-size:24px;margin:0}
+.sb-cardnews-dialog header button{width:44px;height:44px;border:0;background:transparent;font-size:28px;cursor:pointer}
+.sb-cardnews-dialog form{display:grid;gap:14px;margin-top:20px}
+.sb-cardnews-dialog label{display:grid;gap:6px;font-size:14px}
+.sb-cardnews-dialog input:not([type=checkbox]),.sb-cardnews-dialog textarea{width:100%;min-height:44px;padding:10px 12px;border:1px solid #b8c7dc;border-radius:8px;box-sizing:border-box;font:inherit;font-size:16px}
+.sb-cardnews-dialog .sb-consent{display:flex;align-items:flex-start;gap:8px;line-height:1.6;cursor:pointer}
+.sb-cardnews-dialog input[type=checkbox]{width:20px;height:20px;flex:none;accent-color:#4b90e2}
+.sb-cardnews-dialog p{margin:0;font-size:13px;line-height:1.6;color:#526174}
+.sb-cardnews-dialog button[type=submit]{min-height:48px;border:0;border-radius:10px;background:#4b90e2;color:white;font-size:16px;font-weight:700;cursor:pointer}
+.sb-cardnews-dialog button:disabled{opacity:.6;cursor:wait}
+.sb-cardnews-dialog :focus-visible{outline:2px solid #2874ed;outline-offset:3px}
 #soft-bank-renewal .sb-back-to-top{position:fixed;left:0;bottom:20px;z-index:35;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;width:60px;height:60px;padding:6px;border:1px solid #fff;border-left:0;border-radius:0 14px 14px 0;background:#4b90e2;color:#fff;font-size:13px;font-weight:700;line-height:1.2;box-shadow:0 4px 16px #215bad26;cursor:pointer}
 #soft-bank-renewal .sb-back-to-top span{font-size:24px;line-height:1}
 #soft-bank-renewal .sb-back-to-top:hover{background:#347ed5}

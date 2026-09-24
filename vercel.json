@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/_lib/cardnewsProc.asp", "destination": "https://www.duzon119.co.kr/_lib/cardnewsProc.asp" }
+  ]
+}

@@ -181,7 +181,7 @@
 .sb-page-product-oneai #soft-bank-renewal #downloads .sb-resource-card .sb-product-cta{margin:auto 0 0!important;width:100%;height:48px;min-height:48px!important;flex-shrink:0;box-sizing:border-box;align-items:center;justify-content:center;text-align:center}
 @media(max-width:900px){.sb-page-product-oneai #downloads>.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){
-.sb-page-product-oneai .sb-ai-values{padding:20px 0;background:#fafafa}
+.sb-page-product-oneai .sb-ai-values{padding:20px;background:#fafafa}
 .sb-page-product-oneai .alt-section>div{padding:40px 0;gap:26px}
 .sb-page-product-oneai .alt-section h3,.sb-page-product-oneai #intro h2{font-size:25px}
 .sb-page-product-oneai .sb-ai-brand{margin-bottom:30px}

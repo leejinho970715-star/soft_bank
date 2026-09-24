@@ -113,18 +113,58 @@
 
   const setQuick = (open) => {
     quickOpen = open;
+    if (open) setChat(false);
     if (quick) quick.classList.toggle('closed', !open);
     if (quickToggle) {
       quickToggle.innerHTML = 'DOUZONE <span>' + (open ? '×' : '+') + '</span>';
       quickToggle.setAttribute('aria-expanded', String(open));
       quickToggle.setAttribute('aria-label', open ? '왼쪽 퀵메뉴 접기' : '왼쪽 퀵메뉴 열기');
     }
-    if (quickFab) {
-      quickFab.setAttribute('aria-expanded', String(open));
-      const sign = quickFab.querySelector('b');
-      if (sign) sign.textContent = open ? '×' : '+';
-    }
+    if (quick) quick.querySelector('.quick-menu')?.toggleAttribute('inert', !open);
   };
+  setQuick(!matchMedia('(max-width: 700px)').matches);
+
+  const cardnewsLink = quick && [...quick.querySelectorAll('a')].find(a => a.textContent.includes('카드뉴스'));
+  const trialLink = quick && [...quick.querySelectorAll('a')].find(a => a.textContent.includes('체험신청'));
+  if (trialLink) trialLink.href = 'https://www.duzon119.co.kr/purchase/inquiry.asp';
+  if (cardnewsLink) {
+    cardnewsLink.href = '#cardnews-dialog';
+    cardnewsLink.setAttribute('aria-haspopup', 'dialog');
+    const cardDialog = document.createElement('dialog');
+    cardDialog.id = 'cardnews-dialog';
+    cardDialog.className = 'sb-cardnews-dialog';
+    cardDialog.setAttribute('aria-labelledby', 'cardnews-title');
+    cardDialog.innerHTML = `<header><h2 id="cardnews-title">카드뉴스 신청하기</h2><button type="button" aria-label="카드뉴스 신청창 닫기">×</button></header>
+      <form><label>회사명 *<input name="company" maxlength="100" autocomplete="organization" required></label>
+      <label>담당자명 *<input name="writer" maxlength="50" autocomplete="name" required></label>
+      <label>연락처 *<input name="phone" type="tel" maxlength="30" autocomplete="tel" required></label>
+      <label>이메일<input name="email" type="email" maxlength="100" autocomplete="email"></label>
+      <label>관심 주제<input name="interest" maxlength="200" placeholder="ERP, PMS, ISMS-P 등"></label>
+      <label>문의사항<textarea name="note1" rows="3" maxlength="2000"></textarea></label>
+      <label class="sb-consent"><input name="agree1" type="checkbox" value="1" required> [필수] 개인정보 수집 및 이용에 동의합니다.</label>
+      <p>수집 항목: 회사명, 담당자명, 연락처, 이메일 / 목적: 카드뉴스 발송 및 서비스 안내 / 보유기간: 동의 철회 시까지</p>
+      <label class="sb-consent"><input name="agree2" type="checkbox" value="1" required> [필수] 카드뉴스 및 서비스 정보 수신에 동의합니다.</label>
+      <p>ERP, PMS, ISMS-P 등 관련 최신 정보를 이메일로 수신합니다.</p>
+      <p role="status" class="sb-cardnews-status"></p><button type="submit">신청하기</button></form>`;
+    root.append(cardDialog);
+    const closeCard = () => cardDialog.close();
+    cardDialog.querySelector('header button').addEventListener('click', closeCard);
+    cardDialog.addEventListener('click', e => { if (e.target === cardDialog) { const r=cardDialog.getBoundingClientRect(); if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom) closeCard(); } });
+    cardDialog.addEventListener('close', () => {document.body.classList.remove('sb-cardnews-open');cardnewsLink.focus({preventScroll:true});});
+    cardnewsLink.addEventListener('click', e => { e.preventDefault();cardDialog.showModal();document.body.classList.add('sb-cardnews-open'); });
+    cardDialog.querySelector('form').addEventListener('submit', async e => {
+      e.preventDefault();
+      const form=e.currentTarget, submit=form.querySelector('[type=submit]'), status=form.querySelector('[role=status]');
+      submit.disabled=true;status.textContent='신청 내용을 전송하고 있습니다.';
+      try {
+        const response=await fetch('/_lib/cardnewsProc.asp', {method:'POST', body:new URLSearchParams(new FormData(form))});
+        const result=(await response.text()).trim();
+        if (!response.ok || result !== 'OK') throw new Error(result.startsWith('ERR:') ? result.slice(4) : '신청을 완료하지 못했습니다. 잠시 후 다시 시도해 주세요.');
+        form.reset();status.textContent='카드뉴스 신청이 완료되었습니다.';
+      } catch(error) {status.textContent=error.message || '연결에 실패했습니다. 잠시 후 다시 시도해 주세요.';}
+      finally {submit.disabled=false;}
+    });
+  }
 
   const closeOutsidePanels = (event) => {
     const target = event.target;
@@ -165,6 +205,7 @@
       event.stopPropagation();
       if (quickPopover) {
         const open = quickPopover.classList.toggle('open');
+        if (open) setChat(false);
         quickPopover.setAttribute('aria-hidden', String(!open));
         quickFab.setAttribute('aria-expanded', String(open));
         const sign = quickFab.querySelector('b');
