@@ -21,17 +21,42 @@ document.addEventListener('DOMContentLoaded',()=>{
     e.preventDefault();open({src:link.href,alt:link.dataset.imageCaption||link.textContent.trim()},link);
    });
   });
+  const zoomImages=[];
   document.querySelectorAll('.sb-content img,.sb-hero-asset').forEach(img=>{
    if(img.closest('button')||img.alt===''||img.closest('.sb-product-heading,.sb-contact-banner'))return;
    const link=img.closest('a');
    // Keep product navigation and download links; intercept image-file links only.
    if(link&&!/\.(png|webp|jpe?g|gif|svg)(?:[?#]|$)/i.test(link.href))return;
    const target=link||img;
+   if(img.closest('.sb-content'))zoomImages.push(img);
    if(!link){target.tabIndex=0;target.setAttribute('role','button');target.setAttribute('aria-label',(img.alt||'제품 이미지')+' 크게 보기');}
    target.classList.add('sb-image-trigger');target.setAttribute('aria-haspopup','dialog');
    target.addEventListener('click',e=>{if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();open(img,target);});
    if(!link)target.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open(img,target);}});
   });
+  zoomImages.forEach(img=>{
+   const button=document.createElement('button');button.type='button';button.className='sb-screen-view';button.textContent='화면 크게보기';button.setAttribute('aria-haspopup','dialog');button.setAttribute('aria-label',(img.alt||'제품 이미지')+' 화면 크게보기');
+   button.addEventListener('click',()=>open(img,button));
+   const actions=document.createElement('div');actions.className='sb-screen-actions';
+   let container=img.parentElement,video=null;
+   while(container&&!container.matches('.sb-content')){
+    const candidate=[...container.querySelectorAll('a')].find(a=>a.textContent.trim()==='영상으로 확인하기');
+    if(candidate&&zoomImages.filter(other=>container.contains(other)).length===1){video=candidate;break;}
+    container=container.parentElement;
+   }
+   if(video){video.before(actions);actions.append(video,button);}
+   else{
+    const feature=img.closest('.sb-feature');
+    const copy=feature&&zoomImages.filter(other=>feature.contains(other)).length===1?feature.querySelector('.cont_txt,.txt'):null;
+    if(copy)copy.append(actions);
+    else{
+     const visual=img.closest('figure,.img,.sb-laptop-mockup')||img.closest('a,picture')||img;
+     visual.after(actions);
+    }
+    actions.append(button);
+   }
+  });
+
  }
  const syncWidth=()=>document.documentElement.style.setProperty('--product-viewport',document.documentElement.clientWidth+'px');
  syncWidth();window.addEventListener('resize',syncWidth);
