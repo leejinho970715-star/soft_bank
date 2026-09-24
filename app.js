@@ -125,8 +125,6 @@
   setQuick(!matchMedia('(max-width: 700px)').matches);
 
   const cardnewsLink = quick && [...quick.querySelectorAll('a')].find(a => a.textContent.includes('카드뉴스'));
-  const trialLink = quick && [...quick.querySelectorAll('a')].find(a => a.textContent.includes('체험신청'));
-  if (trialLink) trialLink.href = 'https://www.duzon119.co.kr/purchase/inquiry.asp';
   if (cardnewsLink) {
     cardnewsLink.href = '#cardnews-dialog';
     cardnewsLink.setAttribute('aria-haspopup', 'dialog');
