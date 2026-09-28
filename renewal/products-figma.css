@@ -442,11 +442,13 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
 
 /* Amaranth 10 footer promotion for IFRS 18. */
 #soft-bank-renewal .sb-amaranth-ifrs-banner{display:flex;align-items:center;justify-content:space-between;gap:40px;width:calc(100% - 32px);max-width:1468px;margin:24px auto 0;padding:44px 50px;border-radius:22px;background:linear-gradient(120deg,#e5efff 0%,#eeebff 65%,#f3eaff 100%);color:#1d1d1f;box-sizing:border-box}
-#soft-bank-renewal .sb-amaranth-ifrs-label{display:inline-block;padding:8px 14px;border-radius:99px;background:#d2def8;color:#1d1d1f;font-size:14px;font-weight:700}
+#soft-bank-renewal .sb-amaranth-ifrs-label{display:inline-block;padding:8px 14px;border-radius:99px;background:#dcefff;color:#2874ed;font-size:14px;font-weight:700}
 #soft-bank-renewal .sb-amaranth-ifrs-banner h2{margin:16px 0 14px;font-size:clamp(24px,2.2vw,32px);line-height:1.4;letter-spacing:-.04em;color:#1d1d1f;word-break:keep-all}
 #soft-bank-renewal .sb-amaranth-ifrs-banner p{margin:0;font-size:16px;line-height:1.8;color:#1d1d1f;word-break:keep-all;overflow-wrap:anywhere}
-#soft-bank-renewal .sb-amaranth-ifrs-link{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;min-height:60px;padding:16px 34px;border-radius:99px;background:#fff;color:#1d1d1f;font-size:16px;font-weight:700;text-align:center;text-decoration:none;transition:background .2s}
-#soft-bank-renewal .sb-amaranth-ifrs-link:hover{background:#f7faff}
+#soft-bank-renewal .sb-amaranth-ifrs-link{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;min-height:60px;padding:16px 34px;border-radius:99px;background:#4b90e2;color:#fff;font-size:16px;font-weight:700;text-align:center;text-decoration:none;transition:background .2s}
+#soft-bank-renewal .sb-amaranth-ifrs-copy,
+#soft-bank-renewal .sb-amaranth-ifrs-banner .sb-amaranth-ifrs-copy :is(h2,p){text-align:left!important}
+#soft-bank-renewal .sb-amaranth-ifrs-link:hover{background:#347ed5}
 #soft-bank-renewal .sb-amaranth-ifrs-link:focus-visible{outline:3px solid #397bea;outline-offset:4px}
 @media(max-width:900px){#soft-bank-renewal .sb-amaranth-ifrs-banner{flex-direction:column;align-items:flex-start;gap:24px;padding:32px 24px}#soft-bank-renewal .sb-amaranth-ifrs-banner br{display:none}}
 @media(max-width:480px){#soft-bank-renewal .sb-amaranth-ifrs-banner{padding:28px 20px}#soft-bank-renewal .sb-amaranth-ifrs-link{width:100%;padding-inline:18px}}
