@@ -1,4 +1,16 @@
 document.addEventListener('DOMContentLoaded',()=>{
+ if([...document.body.classList].some(name=>name.startsWith('sb-page-product-amaranth10-'))){
+  const footer=document.querySelector('#soft-bank-renewal > footer');
+  if(footer&&!document.querySelector('.sb-amaranth-ifrs-banner'))footer.insertAdjacentHTML('beforebegin',`
+   <section class="sb-amaranth-ifrs-banner" aria-labelledby="sb-amaranth-ifrs-title">
+    <div class="sb-amaranth-ifrs-copy">
+     <span class="sb-amaranth-ifrs-label">K-IFRS 제1118호 대응</span>
+     <h2 id="sb-amaranth-ifrs-title">2027년부터 손익계산서가 재무성과표로<br>바뀝니다.</h2>
+     <p>전표 수정 없는 계정별 범주 재분류, 18호 기초서식 자동 생성, 영업손익 기준<br>현금흐름표까지 — Amaranth 10의 IFRS 18 재무제표관리를 확인해 보세요.</p>
+    </div>
+    <a class="sb-amaranth-ifrs-link" href="../ifrs18.html">IFRS 18 대응 자세히 보기</a>
+   </section>`);
+ }
  if(document.body.classList.contains('sb-product')){
   const dialog=document.createElement('dialog');
   dialog.className='sb-image-dialog';dialog.setAttribute('aria-label','제품 이미지 크게 보기');
