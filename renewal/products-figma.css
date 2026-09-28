@@ -450,3 +450,6 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
 #soft-bank-renewal .sb-amaranth-ifrs-link:focus-visible{outline:3px solid #397bea;outline-offset:4px}
 @media(max-width:900px){#soft-bank-renewal .sb-amaranth-ifrs-banner{flex-direction:column;align-items:flex-start;gap:24px;padding:32px 24px}#soft-bank-renewal .sb-amaranth-ifrs-banner br{display:none}}
 @media(max-width:480px){#soft-bank-renewal .sb-amaranth-ifrs-banner{padding:28px 20px}#soft-bank-renewal .sb-amaranth-ifrs-link{width:100%;padding-inline:18px}}
+
+/* PMS feature subtitles: 2px larger than the 16px body copy. */
+.sb-page-product-pms #soft-bank-renewal .pms_ftrs .cont_li dt>p{font-size:18px!important;font-weight:600}
