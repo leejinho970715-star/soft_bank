@@ -372,6 +372,9 @@
 .sb-figma-product #soft-bank-renewal .sb-faithful-reference{width:100%;max-width:1200px;margin:20px auto 32px}
 @media(max-width:600px){.sb-figma-product #soft-bank-renewal .sb-frontal-display{padding:5px 5px 0;border-radius:9px 9px 0 0}.sb-figma-product #soft-bank-renewal .sb-frontal-chin{height:16px}.sb-figma-product #soft-bank-renewal .sb-frontal-stand{height:26px}}
 .sb-frontal-picture{display:block;width:100%}
+/* Scale product previews once at their outer frame; keep zoomed images full size. */
+.sb-figma-product #soft-bank-renewal .sb-content :is(.sb-faithful-reference,.sb-frontal-monitor,.sb-laptop-mockup){width:70%;max-width:840px;margin-inline:auto}
+.sb-figma-product #soft-bank-renewal .sb-content .sb-device-scene{width:70%;max-width:812px;margin-inline:auto}
 .sb-figma-product #soft-bank-renewal .sb-device-scene{position:relative;container-type:inline-size;width:100%;max-width:1160px;margin:24px auto 40px;isolation:isolate}
 .sb-device-desktop{position:absolute;top:0}
 .sb-device-desktop-bezel{padding:calc(var(--device-unit)*12);background:#20242d;border-radius:calc(var(--device-unit)*18) calc(var(--device-unit)*18) 0 0;box-shadow:0 12px 28px #172a4412}
