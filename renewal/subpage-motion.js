@@ -16,69 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
         (target.pathname === location.pathname && target.search === location.search)) return;
     try { sessionStorage.setItem(tabPositionKey, JSON.stringify({url: target.href, y: window.scrollY, time: Date.now()})); } catch {}
   });
-  const entryAsset = document.querySelector('.sb-product .sb-hero-asset');
-  const siteRoot = document.getElementById('soft-bank-renewal');
-  if (entryAsset && siteRoot && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    const entry = document.createElement('div');
-    entry.className = 'sb-product-entry';
-    const stage = document.createElement('div');
-    stage.className = 'sb-product-entry-stage';
-    stage.setAttribute('aria-hidden', 'true');
-    const visual = document.createElement('img');
-    visual.src = entryAsset.src;
-    visual.alt = '';
-    visual.decoding = 'async';
-    visual.fetchPriority = 'high';
-    stage.append(visual);
-    const skip = document.createElement('button');
-    skip.type = 'button';
-    skip.className = 'sb-product-entry-skip';
-    skip.textContent = '제품 소개 본문으로 이동';
-    entry.append(stage, skip);
-    siteRoot.before(entry);
-    // Keep navigation interactive while the intro covers the page content.
-    const coveredContent = [...siteRoot.children]
-      .filter(el => !el.matches('.site-header') && !el.contains(siteRoot.querySelector('.site-header')))
-      .map(el => ({el, wasInert: el.inert}));
-    let entryFrame = 0;
-    const updateEntry = () => {
-      entryFrame = 0;
-      const distance = entry.offsetHeight;
-      const progress = Math.max(0, Math.min(1, -entry.getBoundingClientRect().top / distance));
-      const active = progress < 1;
-      const fade = Math.max(0, Math.min(1, (1 - progress) / .18));
-      visual.style.transform = `scale(${.8 + progress * 2})`;
-      stage.style.opacity = String(fade);
-      stage.hidden = !active;
-      skip.hidden = !active;
-      coveredContent.forEach(({el, wasInert}) => { el.inert = active || wasInert; });
-      document.body.classList.toggle('sb-product-entering', active);
-      document.body.classList.toggle('sb-product-entry-scrolling', active && progress > .005);
-    };
-    const queueEntry = () => { if (!entryFrame) entryFrame = requestAnimationFrame(updateEntry); };
-    skip.addEventListener('click', () => {
-      window.scrollTo({top: window.scrollY + entry.getBoundingClientRect().bottom, behavior: 'instant'});
-      updateEntry();
-      const main = document.getElementById('main-content');
-      main?.setAttribute('tabindex', '-1');
-      main?.focus({preventScroll: true});
-    });
-    window.addEventListener('scroll', queueEntry, {passive: true});
-    window.addEventListener('resize', queueEntry, {passive: true});
-    window.addEventListener('pageshow', queueEntry);
-    visual.addEventListener('error', () => {
-      entry.remove();
-      coveredContent.forEach(({el, wasInert}) => { el.inert = wasInert; });
-      document.body.classList.remove('sb-product-entering');
-      document.body.classList.remove('sb-product-entry-scrolling');
-      window.removeEventListener('scroll', queueEntry);
-      window.removeEventListener('resize', queueEntry);
-      window.removeEventListener('pageshow', queueEntry);
-      cancelAnimationFrame(entryFrame);
-    }, {once: true});
-    if (tabPosition !== null) window.scrollTo({top: tabPosition, behavior: 'instant'});
-    updateEntry();
-  }
   if (tabPosition !== null) {
     const restoreTabPosition = () => window.scrollTo({top: tabPosition, behavior: 'instant'});
     restoreTabPosition();

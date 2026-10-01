@@ -5,18 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const motion = gsap.matchMedia();
   motion.add('(prefers-reduced-motion: no-preference)', () => {
     const hero = document.querySelector('.sb-hero');
-    const asset = hero?.querySelector('.sb-hero-asset');
-    const content = document.querySelector('.sb-content');
     const syncTopState = () => document.body.classList.toggle('sb-product-scroll-top', window.scrollY <= 1);
     syncTopState();
     window.addEventListener('scroll', syncTopState, { passive: true });
-    if (asset && hero) {
-      // Scale inside the existing hero; never add a pin spacer or hide the page.
-      gsap.fromTo(asset, { scale: 0.88 }, {
-        scale: 1, ease: 'none',
-        scrollTrigger: { trigger: hero, start: 'top top', end: 'bottom top', scrub: 0.3, invalidateOnRefresh: true }
-      });
-    }
     const candidates = [...document.querySelectorAll('.sb-content .cont_txt, .sb-content .sb-cutout, .sb-content h2, .sb-content h3, .sb-content .sb-product-cta')];
     candidates.filter(el => !el.closest('.sb-original:not([open])') && !candidates.some(parent => parent !== el && parent.contains(el))).forEach(el => {
       gsap.from(el, {

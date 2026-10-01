@@ -99,13 +99,14 @@
     "prompt": "This is an edit of the attached enterprise product reference, for a real Korean product website. Recreate at highest available resolution with professionally typeset, crisp legible Korean glyphs, clean vector-like icons and sharp table lines. Preserve original software branding, recognizable feature and layout, exact headings and readable source labels. Do not blur, invent gibberish, add unrelated modules or change the product. Recreate ONLY the FLAT application UI at the original aspect ratio. No monitor/phone hardware, no perspective, no decorative surroundings, no gray shadow/halo/canvas. If the reference is a composite with an existing border, extract and restore the actual main desktop UI and its relevant dialogs inside a clean rectangular white application screen. Do not embed an old mockup, gray mat or phone in the UI. White/light application surface stays opaque. Restore razor-sharp headings, typography and table lines without changing the feature. This image will be placed inside a separate native front-view frame."
   },
   "assets/subpages/original/5920fddd21ee53.png": {
-    "file": "assets/subpages/regenerated/ui-014.png",
+    "file": "assets/subpages/regenerated/ui-014-portal.png",
     "width": 1536,
     "height": 1024,
     "kind": "devices",
     "generated": true,
     "source": "assets/subpages/original/5920fddd21ee53.png",
-    "prompt": "Recreate the supplied Korean enterprise application visual at the highest available image resolution. Build a complete perfectly FRONT-FACING dark slim desktop monitor with silver stand and a separate FRONT-FACING smartphone alongside its lower corner. Put ONLY the desktop application's UI inside the PC screen and ONLY the original mobile UI inside the phone. No phone inside the desktop screen, no screenshot of a device inside another device. Devices must be rectangular and completely frontal with zero yaw/perspective/tilt. Preserve the reference's software feature, layout, colors, table data and every readable Korean heading; re-render type and icons crisply. Remove the entire existing gray halo/mat and old frames. Genuine transparent PNG alpha outside devices, no floor, gray cloud, black backdrop, checkerboard or extra decorative text. Whole devices and stands visible with modest margin. Highest sharpness with clean vector-like Korean glyphs. Do not invent unrelated software, use this exact source UI. Landscape composition."
+    "prompt": "Correct Amaranth 10 home portal dashboard based on the existing Amaranth home asset, with front-facing desktop and readable phone dashboard. Crisp Korean menu labels and intact widgets. Calendar content replaced with appropriate main portal.",
+    "textReviewed": "2026-10-01"
   },
   "assets/subpages/original/b0f6c6b5e9dc28.png": {
     "file": "assets/subpages/regenerated/ui-015-proofread-v2.png",

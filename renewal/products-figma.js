@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded',()=>{
    }
    if(video){video.before(actions);actions.append(video,button);}
    else{
-    const feature=img.closest('.sb-feature,.sb-centered-feature,.ifrs-feature');
+    const feature=img.closest('.sb-zigzag-feature,.sb-feature,.sb-centered-feature,.ifrs-feature');
     const copy=feature&&zoomImages.filter(other=>feature.contains(other)).length===1?feature.querySelector('.cont_txt,.txt,.sec-text'):null;
     if(copy)copy.append(actions);
     else{
