@@ -108,13 +108,14 @@
     "prompt": "Recreate the supplied Korean enterprise application visual at the highest available image resolution. Build a complete perfectly FRONT-FACING dark slim desktop monitor with silver stand and a separate FRONT-FACING smartphone alongside its lower corner. Put ONLY the desktop application's UI inside the PC screen and ONLY the original mobile UI inside the phone. No phone inside the desktop screen, no screenshot of a device inside another device. Devices must be rectangular and completely frontal with zero yaw/perspective/tilt. Preserve the reference's software feature, layout, colors, table data and every readable Korean heading; re-render type and icons crisply. Remove the entire existing gray halo/mat and old frames. Genuine transparent PNG alpha outside devices, no floor, gray cloud, black backdrop, checkerboard or extra decorative text. Whole devices and stands visible with modest margin. Highest sharpness with clean vector-like Korean glyphs. Do not invent unrelated software, use this exact source UI. Landscape composition."
   },
   "assets/subpages/original/b0f6c6b5e9dc28.png": {
-    "file": "assets/subpages/regenerated/ui-015.png",
+    "file": "assets/subpages/regenerated/ui-015-proofread.png",
     "width": 1536,
     "height": 1024,
     "kind": "devices",
     "generated": true,
     "source": "assets/subpages/original/b0f6c6b5e9dc28.png",
-    "prompt": "This is an edit of the attached enterprise product reference, for a real Korean product website. Recreate at highest available resolution with professionally typeset, crisp legible Korean glyphs, clean vector-like icons and sharp table lines. Preserve original software branding, recognizable feature and layout, exact headings and readable source labels. Do not blur, invent gibberish, add unrelated modules or change the product. Create a complete perfectly FRONT-FACING desktop monitor (thin black bezel, silver chin and stand). When the source includes an actual mobile or tablet application, show that original mobile UI inside a SEPARATE FRONT-FACING phone/tablet beside the desktop, slightly overlapping its lower corner. The PC screen must contain ONLY the desktop application, NEVER the entire composite screenshot or a phone embedded inside its screen. Do not invent mobile UI if the source has none. Keep source floating dialogs/receipt/feature icons as distinct foreground elements where applicable. Remove old gray cloud and frame. Zero yaw, zero perspective, no left/right tilt. Fully visible hardware, no cropped edges. TRUE TRANSPARENT PNG alpha outside devices, no background, checkerboard, gray halo or ground. Landscape composition with small margin."
+    "prompt": "Corrected Korean typography and spelling in integrated search / document sharing UI; preserved hardware composition and transparent alpha.",
+    "textReviewed": "2026-10-01"
   },
   "assets/subpages/original/79784b6a05fb18.png": {
     "file": "assets/subpages/regenerated/ui-016.png",
@@ -180,13 +181,14 @@
     "prompt": "This is an edit of the attached enterprise product reference, for a real Korean product website. Recreate at highest available resolution with professionally typeset, crisp legible Korean glyphs, clean vector-like icons and sharp table lines. Preserve original software branding, recognizable feature and layout, exact headings and readable source labels. Do not blur, invent gibberish, add unrelated modules or change the product. Create a complete perfectly FRONT-FACING desktop monitor (thin black bezel, silver chin and stand). When the source includes an actual mobile or tablet application, show that original mobile UI inside a SEPARATE FRONT-FACING phone/tablet beside the desktop, slightly overlapping its lower corner. The PC screen must contain ONLY the desktop application, NEVER the entire composite screenshot or a phone embedded inside its screen. Do not invent mobile UI if the source has none. Keep source floating dialogs/receipt/feature icons as distinct foreground elements where applicable. Remove old gray cloud and frame. Zero yaw, zero perspective, no left/right tilt. Fully visible hardware, no cropped edges. TRUE TRANSPARENT PNG alpha outside devices, no background, checkerboard, gray halo or ground. Landscape composition with small margin."
   },
   "assets/subpages/frontal-sources/amaranth-custom-sharing.png": {
-    "file": "assets/subpages/regenerated/ui-022.png",
+    "file": "assets/subpages/regenerated/ui-022-proofread.png",
     "width": 1536,
     "height": 1024,
     "kind": "devices",
     "generated": true,
     "source": "assets/subpages/frontal-sources/amaranth-custom-sharing.png",
-    "prompt": "This is an edit of the attached enterprise product reference, for a real Korean product website. Recreate at highest available resolution with professionally typeset, crisp legible Korean glyphs, clean vector-like icons and sharp table lines. Preserve original software branding, recognizable feature and layout, exact headings and readable source labels. Do not blur, invent gibberish, add unrelated modules or change the product. Create a complete perfectly FRONT-FACING desktop monitor (thin black bezel, silver chin and stand). When the source includes an actual mobile or tablet application, show that original mobile UI inside a SEPARATE FRONT-FACING phone/tablet beside the desktop, slightly overlapping its lower corner. The PC screen must contain ONLY the desktop application, NEVER the entire composite screenshot or a phone embedded inside its screen. Do not invent mobile UI if the source has none. Keep source floating dialogs/receipt/feature icons as distinct foreground elements where applicable. Remove old gray cloud and frame. Zero yaw, zero perspective, no left/right tilt. Fully visible hardware, no cropped edges. TRUE TRANSPARENT PNG alpha outside devices, no background, checkerboard, gray halo or ground. Landscape composition with small margin."
+    "prompt": "Corrected Korean typography and spelling in integrated search / document sharing UI; preserved hardware composition and transparent alpha.",
+    "textReviewed": "2026-10-01"
   },
   "assets/subpages/original/24c520ac80a963.png": {
     "file": "assets/subpages/regenerated/ui-023.png",
