@@ -181,13 +181,13 @@
     "prompt": "This is an edit of the attached enterprise product reference, for a real Korean product website. Recreate at highest available resolution with professionally typeset, crisp legible Korean glyphs, clean vector-like icons and sharp table lines. Preserve original software branding, recognizable feature and layout, exact headings and readable source labels. Do not blur, invent gibberish, add unrelated modules or change the product. Create a complete perfectly FRONT-FACING desktop monitor (thin black bezel, silver chin and stand). When the source includes an actual mobile or tablet application, show that original mobile UI inside a SEPARATE FRONT-FACING phone/tablet beside the desktop, slightly overlapping its lower corner. The PC screen must contain ONLY the desktop application, NEVER the entire composite screenshot or a phone embedded inside its screen. Do not invent mobile UI if the source has none. Keep source floating dialogs/receipt/feature icons as distinct foreground elements where applicable. Remove old gray cloud and frame. Zero yaw, zero perspective, no left/right tilt. Fully visible hardware, no cropped edges. TRUE TRANSPARENT PNG alpha outside devices, no background, checkerboard, gray halo or ground. Landscape composition with small margin."
   },
   "assets/subpages/frontal-sources/amaranth-custom-sharing.png": {
-    "file": "assets/subpages/regenerated/ui-022-proofread.png",
+    "file": "assets/subpages/regenerated/ui-022-desktop.png",
     "width": 1536,
     "height": 1024,
     "kind": "devices",
     "generated": true,
     "source": "assets/subpages/frontal-sources/amaranth-custom-sharing.png",
-    "prompt": "Corrected Korean typography and spelling in integrated search / document sharing UI; preserved hardware composition and transparent alpha.",
+    "prompt": "Removed the smartphone, centered desktop monitor and stand, preserved the corrected Korean screen-sharing document and transparent alpha.",
     "textReviewed": "2026-10-01"
   },
   "assets/subpages/original/24c520ac80a963.png": {
