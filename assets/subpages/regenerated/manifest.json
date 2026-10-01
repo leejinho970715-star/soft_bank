@@ -108,23 +108,23 @@
     "prompt": "Recreate the supplied Korean enterprise application visual at the highest available image resolution. Build a complete perfectly FRONT-FACING dark slim desktop monitor with silver stand and a separate FRONT-FACING smartphone alongside its lower corner. Put ONLY the desktop application's UI inside the PC screen and ONLY the original mobile UI inside the phone. No phone inside the desktop screen, no screenshot of a device inside another device. Devices must be rectangular and completely frontal with zero yaw/perspective/tilt. Preserve the reference's software feature, layout, colors, table data and every readable Korean heading; re-render type and icons crisply. Remove the entire existing gray halo/mat and old frames. Genuine transparent PNG alpha outside devices, no floor, gray cloud, black backdrop, checkerboard or extra decorative text. Whole devices and stands visible with modest margin. Highest sharpness with clean vector-like Korean glyphs. Do not invent unrelated software, use this exact source UI. Landscape composition."
   },
   "assets/subpages/original/b0f6c6b5e9dc28.png": {
-    "file": "assets/subpages/regenerated/ui-015-proofread.png",
+    "file": "assets/subpages/regenerated/ui-015-proofread-v2.png",
     "width": 1536,
     "height": 1024,
     "kind": "devices",
     "generated": true,
     "source": "assets/subpages/original/b0f6c6b5e9dc28.png",
-    "prompt": "Corrected Korean typography and spelling in integrated search / document sharing UI; preserved hardware composition and transparent alpha.",
+    "prompt": "Corrected Korean typography and spelling in integrated search / document sharing UI; preserved hardware composition and transparent alpha. Text edit: 출장직원 주차",
     "textReviewed": "2026-10-01"
   },
   "assets/subpages/original/79784b6a05fb18.png": {
-    "file": "assets/subpages/regenerated/ui-016.png",
+    "file": "assets/subpages/regenerated/ui-016-desktop.png",
     "width": 1536,
     "height": 1024,
     "kind": "devices",
     "generated": true,
     "source": "assets/subpages/original/79784b6a05fb18.png",
-    "prompt": "This is an edit of the attached enterprise product reference, for a real Korean product website. Recreate at highest available resolution with professionally typeset, crisp legible Korean glyphs, clean vector-like icons and sharp table lines. Preserve original software branding, recognizable feature and layout, exact headings and readable source labels. Do not blur, invent gibberish, add unrelated modules or change the product. Create a complete perfectly FRONT-FACING desktop monitor (thin black bezel, silver chin and stand). When the source includes an actual mobile or tablet application, show that original mobile UI inside a SEPARATE FRONT-FACING phone/tablet beside the desktop, slightly overlapping its lower corner. The PC screen must contain ONLY the desktop application, NEVER the entire composite screenshot or a phone embedded inside its screen. Do not invent mobile UI if the source has none. Keep source floating dialogs/receipt/feature icons as distinct foreground elements where applicable. Remove old gray cloud and frame. Zero yaw, zero perspective, no left/right tilt. Fully visible hardware, no cropped edges. TRUE TRANSPARENT PNG alpha outside devices, no background, checkerboard, gray halo or ground. Landscape composition with small margin."
+    "prompt": "This is an edit of the attached enterprise product reference, for a real Korean product website. Recreate at highest available resolution with professionally typeset, crisp legible Korean glyphs, clean vector-like icons and sharp table lines. Preserve original software branding, recognizable feature and layout, exact headings and readable source labels. Do not blur, invent gibberish, add unrelated modules or change the product. Create a complete perfectly FRONT-FACING desktop monitor (thin black bezel, silver chin and stand). When the source includes an actual mobile or tablet application, show that original mobile UI inside a SEPARATE FRONT-FACING phone/tablet beside the desktop, slightly overlapping its lower corner. The PC screen must contain ONLY the desktop application, NEVER the entire composite screenshot or a phone embedded inside its screen. Do not invent mobile UI if the source has none. Keep source floating dialogs/receipt/feature icons as distinct foreground elements where applicable. Remove old gray cloud and frame. Zero yaw, zero perspective, no left/right tilt. Fully visible hardware, no cropped edges. TRUE TRANSPARENT PNG alpha outside devices, no background, checkerboard, gray halo or ground. Landscape composition with small margin. Text edit: Remove phone; desktop calendar only."
   },
   "assets/subpages/original/8d93ed8faca9ae.png": {
     "file": "assets/subpages/regenerated/ui-017.png",
@@ -443,22 +443,22 @@
     "prompt": "Edit this supplied Korean enterprise software reference for a product website. Highest available resolution, exceptionally crisp correctly spelled Korean typography, precise icons and thin table lines. Preserve its real feature, branding, original content hierarchy and readable headings. No blurry text, gibberish or unrelated UI. Output only a CLEAN FLAT RECTANGULAR APPLICATION SCREEN. Extract actual desktop UI and pertinent dialogs from old decorative shadow/frame if present; eliminate all gray halo, mat, outer mockup and hardware. No phone or monitor inside image. White application background opaque. Match original UI aspect ratio and layout, professionally retypeset original Korean labels without inventing modules."
   },
   "assets/subpages/original/0e15c164ea9abd.png": {
-    "file": "assets/subpages/regenerated/ui-049.png",
+    "file": "assets/subpages/regenerated/ui-049-proofread.png",
     "width": 1536,
     "height": 1024,
     "kind": "devices",
     "generated": true,
     "source": "assets/subpages/original/0e15c164ea9abd.png",
-    "prompt": "Edit this supplied Korean enterprise software reference for a product website. Highest available resolution, exceptionally crisp correctly spelled Korean typography, precise icons and thin table lines. Preserve its real feature, branding, original content hierarchy and readable headings. No blurry text, gibberish or unrelated UI. Build a completely front-facing desktop monitor with a slim black bezel and silver stand. If source includes a phone/tablet, place that actual mobile UI in a SEPARATE front-facing phone/tablet beside the PC. NEVER put an old device or entire composite image inside the PC screen. Zero perspective or yaw, perfectly level rectangular displays. Preserve key foreground popups/receipt/feature icons as separate foreground objects. Fully visible devices, clean edges. True transparent PNG ALPHA outside hardware: no background, gray cloud, black backdrop, ground or checkerboard. Do not invent a phone when source has none. Landscape composition with restrained margin."
+    "prompt": "Edit this supplied Korean enterprise software reference for a product website. Highest available resolution, exceptionally crisp correctly spelled Korean typography, precise icons and thin table lines. Preserve its real feature, branding, original content hierarchy and readable headings. No blurry text, gibberish or unrelated UI. Build a completely front-facing desktop monitor with a slim black bezel and silver stand. If source includes a phone/tablet, place that actual mobile UI in a SEPARATE front-facing phone/tablet beside the PC. NEVER put an old device or entire composite image inside the PC screen. Zero perspective or yaw, perfectly level rectangular displays. Preserve key foreground popups/receipt/feature icons as separate foreground objects. Fully visible devices, clean edges. True transparent PNG ALPHA outside hardware: no background, gray cloud, black backdrop, ground or checkerboard. Do not invent a phone when source has none. Landscape composition with restrained margin. Text edit: ERP비즈니스 리포트, 매출 증대 전략"
   },
   "assets/subpages/nonprofit-docs/source-1.png": {
-    "file": "assets/subpages/regenerated/ui-049.png",
+    "file": "assets/subpages/regenerated/ui-049-proofread.png",
     "width": 1536,
     "height": 1024,
     "kind": "devices",
     "generated": true,
     "source": "assets/subpages/original/0e15c164ea9abd.png",
-    "prompt": "Edit this supplied Korean enterprise software reference for a product website. Highest available resolution, exceptionally crisp correctly spelled Korean typography, precise icons and thin table lines. Preserve its real feature, branding, original content hierarchy and readable headings. No blurry text, gibberish or unrelated UI. Build a completely front-facing desktop monitor with a slim black bezel and silver stand. If source includes a phone/tablet, place that actual mobile UI in a SEPARATE front-facing phone/tablet beside the PC. NEVER put an old device or entire composite image inside the PC screen. Zero perspective or yaw, perfectly level rectangular displays. Preserve key foreground popups/receipt/feature icons as separate foreground objects. Fully visible devices, clean edges. True transparent PNG ALPHA outside hardware: no background, gray cloud, black backdrop, ground or checkerboard. Do not invent a phone when source has none. Landscape composition with restrained margin."
+    "prompt": "Edit this supplied Korean enterprise software reference for a product website. Highest available resolution, exceptionally crisp correctly spelled Korean typography, precise icons and thin table lines. Preserve its real feature, branding, original content hierarchy and readable headings. No blurry text, gibberish or unrelated UI. Build a completely front-facing desktop monitor with a slim black bezel and silver stand. If source includes a phone/tablet, place that actual mobile UI in a SEPARATE front-facing phone/tablet beside the PC. NEVER put an old device or entire composite image inside the PC screen. Zero perspective or yaw, perfectly level rectangular displays. Preserve key foreground popups/receipt/feature icons as separate foreground objects. Fully visible devices, clean edges. True transparent PNG ALPHA outside hardware: no background, gray cloud, black backdrop, ground or checkerboard. Do not invent a phone when source has none. Landscape composition with restrained margin. Text edit: ERP비즈니스 리포트, 매출 증대 전략"
   },
   "assets/subpages/embedded/503efe83441f3d81.jpg": {
     "file": "assets/subpages/regenerated/ui-005.png",
@@ -587,13 +587,13 @@
     "prompt": "Edit this supplied Korean enterprise software reference for a product website. Highest available resolution, exceptionally crisp correctly spelled Korean typography, precise icons and thin table lines. Preserve its real feature, branding, original content hierarchy and readable headings. No blurry text, gibberish or unrelated UI. Build a completely front-facing desktop monitor with a slim black bezel and silver stand. If source includes a phone/tablet, place that actual mobile UI in a SEPARATE front-facing phone/tablet beside the PC. NEVER put an old device or entire composite image inside the PC screen. Zero perspective or yaw, perfectly level rectangular displays. Preserve key foreground popups/receipt/feature icons as separate foreground objects. Fully visible devices, clean edges. True transparent PNG ALPHA outside hardware: no background, gray cloud, black backdrop, ground or checkerboard. Do not invent a phone when source has none. Landscape composition with restrained margin."
   },
   "assets/subpages/frontal-sources/wehago-custom-sms.png": {
-    "file": "assets/subpages/regenerated/ui-062.png",
+    "file": "assets/subpages/regenerated/ui-062-proofread.png",
     "width": 1536,
     "height": 1024,
     "kind": "devices",
     "generated": true,
     "source": "assets/subpages/frontal-sources/wehago-custom-sms.png",
-    "prompt": "Edit this supplied Korean enterprise software reference for a product website. Highest available resolution, exceptionally crisp correctly spelled Korean typography, precise icons and thin table lines. Preserve its real feature, branding, original content hierarchy and readable headings. No blurry text, gibberish or unrelated UI. Build a completely front-facing desktop monitor with a slim black bezel and silver stand. If source includes a phone/tablet, place that actual mobile UI in a SEPARATE front-facing phone/tablet beside the PC. NEVER put an old device or entire composite image inside the PC screen. Zero perspective or yaw, perfectly level rectangular displays. Preserve key foreground popups/receipt/feature icons as separate foreground objects. Fully visible devices, clean edges. True transparent PNG ALPHA outside hardware: no background, gray cloud, black backdrop, ground or checkerboard. Do not invent a phone when source has none. Landscape composition with restrained margin."
+    "prompt": "Edit this supplied Korean enterprise software reference for a product website. Highest available resolution, exceptionally crisp correctly spelled Korean typography, precise icons and thin table lines. Preserve its real feature, branding, original content hierarchy and readable headings. No blurry text, gibberish or unrelated UI. Build a completely front-facing desktop monitor with a slim black bezel and silver stand. If source includes a phone/tablet, place that actual mobile UI in a SEPARATE front-facing phone/tablet beside the PC. NEVER put an old device or entire composite image inside the PC screen. Zero perspective or yaw, perfectly level rectangular displays. Preserve key foreground popups/receipt/feature icons as separate foreground objects. Fully visible devices, clean edges. True transparent PNG ALPHA outside hardware: no background, gray cloud, black backdrop, ground or checkerboard. Do not invent a phone when source has none. Landscape composition with restrained margin. Text correction: Use clear two-line document sending instructions."
   },
   "assets/subpages/frontal-sources/wehago-custom-attendance.png": {
     "file": "assets/subpages/regenerated/ui-063.png",
@@ -605,31 +605,31 @@
     "prompt": "Edit this supplied Korean enterprise software reference for a product website. Highest available resolution, exceptionally crisp correctly spelled Korean typography, precise icons and thin table lines. Preserve its real feature, branding, original content hierarchy and readable headings. No blurry text, gibberish or unrelated UI. Build a completely front-facing desktop monitor with a slim black bezel and silver stand. If source includes a phone/tablet, place that actual mobile UI in a SEPARATE front-facing phone/tablet beside the PC. NEVER put an old device or entire composite image inside the PC screen. Zero perspective or yaw, perfectly level rectangular displays. Preserve key foreground popups/receipt/feature icons as separate foreground objects. Fully visible devices, clean edges. True transparent PNG ALPHA outside hardware: no background, gray cloud, black backdrop, ground or checkerboard. Do not invent a phone when source has none. Landscape composition with restrained margin."
   },
   "assets/subpages/frontal-sources/wehago-custom-approval.png": {
-    "file": "assets/subpages/regenerated/ui-064.png",
+    "file": "assets/subpages/regenerated/ui-064-proofread.png",
     "width": 1536,
     "height": 1024,
     "kind": "devices",
     "generated": true,
     "source": "assets/subpages/frontal-sources/wehago-custom-approval.png",
-    "prompt": "Edit this supplied Korean enterprise software reference for a product website. Highest available resolution, exceptionally crisp correctly spelled Korean typography, precise icons and thin table lines. Preserve its real feature, branding, original content hierarchy and readable headings. No blurry text, gibberish or unrelated UI. Build a completely front-facing desktop monitor with a slim black bezel and silver stand. If source includes a phone/tablet, place that actual mobile UI in a SEPARATE front-facing phone/tablet beside the PC. NEVER put an old device or entire composite image inside the PC screen. Zero perspective or yaw, perfectly level rectangular displays. Preserve key foreground popups/receipt/feature icons as separate foreground objects. Fully visible devices, clean edges. True transparent PNG ALPHA outside hardware: no background, gray cloud, black backdrop, ground or checkerboard. Do not invent a phone when source has none. Landscape composition with restrained margin."
+    "prompt": "Edit this supplied Korean enterprise software reference for a product website. Highest available resolution, exceptionally crisp correctly spelled Korean typography, precise icons and thin table lines. Preserve its real feature, branding, original content hierarchy and readable headings. No blurry text, gibberish or unrelated UI. Build a completely front-facing desktop monitor with a slim black bezel and silver stand. If source includes a phone/tablet, place that actual mobile UI in a SEPARATE front-facing phone/tablet beside the PC. NEVER put an old device or entire composite image inside the PC screen. Zero perspective or yaw, perfectly level rectangular displays. Preserve key foreground popups/receipt/feature icons as separate foreground objects. Fully visible devices, clean edges. True transparent PNG ALPHA outside hardware: no background, gray cloud, black backdrop, ground or checkerboard. Do not invent a phone when source has none. Landscape composition with restrained margin. Text correction: Exact text: 빠르게 and 원활한 업무환경."
   },
   "assets/subpages/frontal-sources/wehago-custom-board.png": {
-    "file": "assets/subpages/regenerated/ui-065.png",
+    "file": "assets/subpages/regenerated/ui-065-proofread.png",
     "width": 1488,
     "height": 1057,
     "kind": "devices",
     "generated": true,
     "source": "assets/subpages/frontal-sources/wehago-custom-board.png",
-    "prompt": "Edit this supplied Korean enterprise software reference for a product website. Highest available resolution, exceptionally crisp correctly spelled Korean typography, precise icons and thin table lines. Preserve its real feature, branding, original content hierarchy and readable headings. No blurry text, gibberish or unrelated UI. Build a completely front-facing desktop monitor with a slim black bezel and silver stand. If source includes a phone/tablet, place that actual mobile UI in a SEPARATE front-facing phone/tablet beside the PC. NEVER put an old device or entire composite image inside the PC screen. Zero perspective or yaw, perfectly level rectangular displays. Preserve key foreground popups/receipt/feature icons as separate foreground objects. Fully visible devices, clean edges. True transparent PNG ALPHA outside hardware: no background, gray cloud, black backdrop, ground or checkerboard. Do not invent a phone when source has none. Landscape composition with restrained margin."
+    "prompt": "Edit this supplied Korean enterprise software reference for a product website. Highest available resolution, exceptionally crisp correctly spelled Korean typography, precise icons and thin table lines. Preserve its real feature, branding, original content hierarchy and readable headings. No blurry text, gibberish or unrelated UI. Build a completely front-facing desktop monitor with a slim black bezel and silver stand. If source includes a phone/tablet, place that actual mobile UI in a SEPARATE front-facing phone/tablet beside the PC. NEVER put an old device or entire composite image inside the PC screen. Zero perspective or yaw, perfectly level rectangular displays. Preserve key foreground popups/receipt/feature icons as separate foreground objects. Fully visible devices, clean edges. True transparent PNG ALPHA outside hardware: no background, gray cloud, black backdrop, ground or checkerboard. Do not invent a phone when source has none. Landscape composition with restrained margin. Correct text exactly: 회사게시판(홈), 새롭게 변화하겠습니다, 부탁드립니다, 여러분도 함께 생각해봐요."
   },
   "assets/subpages/frontal-sources/wehago-custom-remote.png": {
-    "file": "assets/subpages/regenerated/ui-066.png",
-    "width": 1465,
+    "file": "assets/subpages/regenerated/ui-066-proofread.png",
+    "width": 1466,
     "height": 1073,
     "kind": "devices",
     "generated": true,
     "source": "assets/subpages/frontal-sources/wehago-custom-remote.png",
-    "prompt": "Edit this supplied Korean enterprise software reference for a product website. Highest available resolution, exceptionally crisp correctly spelled Korean typography, precise icons and thin table lines. Preserve its real feature, branding, original content hierarchy and readable headings. No blurry text, gibberish or unrelated UI. Build a completely front-facing desktop monitor with a slim black bezel and silver stand. If source includes a phone/tablet, place that actual mobile UI in a SEPARATE front-facing phone/tablet beside the PC. NEVER put an old device or entire composite image inside the PC screen. Zero perspective or yaw, perfectly level rectangular displays. Preserve key foreground popups/receipt/feature icons as separate foreground objects. Fully visible devices, clean edges. True transparent PNG ALPHA outside hardware: no background, gray cloud, black backdrop, ground or checkerboard. Do not invent a phone when source has none. Landscape composition with restrained margin."
+    "prompt": "Edit this supplied Korean enterprise software reference for a product website. Highest available resolution, exceptionally crisp correctly spelled Korean typography, precise icons and thin table lines. Preserve its real feature, branding, original content hierarchy and readable headings. No blurry text, gibberish or unrelated UI. Build a completely front-facing desktop monitor with a slim black bezel and silver stand. If source includes a phone/tablet, place that actual mobile UI in a SEPARATE front-facing phone/tablet beside the PC. NEVER put an old device or entire composite image inside the PC screen. Zero perspective or yaw, perfectly level rectangular displays. Preserve key foreground popups/receipt/feature icons as separate foreground objects. Fully visible devices, clean edges. True transparent PNG ALPHA outside hardware: no background, gray cloud, black backdrop, ground or checkerboard. Do not invent a phone when source has none. Landscape composition with restrained margin. Correct text exactly: 자동 탐지를 하거나"
   },
   "assets/subpages/frontal-sources/wehago-extra-factoring.png": {
     "file": "assets/subpages/regenerated/ui-067.png",
@@ -776,13 +776,13 @@
     "prompt": "Edit this supplied Korean enterprise software reference for a product website. Highest available resolution, exceptionally crisp correctly spelled Korean typography, precise icons and thin table lines. Preserve the real feature, branding, original content hierarchy and readable headings. No blurry text, gibberish or unrelated UI. Build a completely front-facing desktop monitor with a slim black bezel and silver stand. If source includes a phone/tablet, place that actual mobile UI in a SEPARATE front-facing phone/tablet beside the PC. NEVER put an old device or entire composite image inside the PC screen. Zero perspective or yaw, perfectly level rectangular displays. Preserve key foreground popups/receipt/feature icons as separate foreground objects. Fully visible devices, clean edges. True transparent PNG ALPHA outside hardware: no background, gray cloud, black backdrop, ground or checkerboard. Do not invent a phone when source has none. Landscape composition with restrained margin. Text correction: building name must read exactly 더존 하이브리드 빌딩. Preserve other content."
   },
   "assets/subpages/original/9886433835a2f9.png": {
-    "file": "assets/subpages/regenerated/ui-078.png",
-    "width": 1494,
+    "file": "assets/subpages/regenerated/ui-078-proofread.png",
+    "width": 1495,
     "height": 1052,
     "kind": "devices",
     "generated": true,
     "source": "assets/subpages/original/9886433835a2f9.png",
-    "prompt": "Edit this supplied Korean enterprise software reference for a product website. Highest available resolution, exceptionally crisp correctly spelled Korean typography, precise icons and thin table lines. Preserve the real feature, branding, original content hierarchy and readable headings. No blurry text, gibberish or unrelated UI. Build a completely front-facing desktop monitor with a slim black bezel and silver stand. If source includes a phone/tablet, place that actual mobile UI in a SEPARATE front-facing phone/tablet beside the PC. NEVER put an old device or entire composite image inside the PC screen. Zero perspective or yaw, perfectly level rectangular displays. Preserve key foreground popups/receipt/feature icons as separate foreground objects. Fully visible devices, clean edges. True transparent PNG ALPHA outside hardware: no background, gray cloud, black backdrop, ground or checkerboard. Do not invent a phone when source has none. Landscape composition with restrained margin."
+    "prompt": "Edit this supplied Korean enterprise software reference for a product website. Highest available resolution, exceptionally crisp correctly spelled Korean typography, precise icons and thin table lines. Preserve the real feature, branding, original content hierarchy and readable headings. No blurry text, gibberish or unrelated UI. Build a completely front-facing desktop monitor with a slim black bezel and silver stand. If source includes a phone/tablet, place that actual mobile UI in a SEPARATE front-facing phone/tablet beside the PC. NEVER put an old device or entire composite image inside the PC screen. Zero perspective or yaw, perfectly level rectangular displays. Preserve key foreground popups/receipt/feature icons as separate foreground objects. Fully visible devices, clean edges. True transparent PNG ALPHA outside hardware: no background, gray cloud, black backdrop, ground or checkerboard. Do not invent a phone when source has none. Landscape composition with restrained margin. Text edit: 자동이체 거래금 지급"
   },
   "assets/subpages/original/db8479d52d6dde.png": {
     "file": "assets/subpages/regenerated/ui-079.png",
@@ -911,31 +911,31 @@
     "prompt": "Edit this supplied Korean enterprise software reference for a product website. Highest available resolution, exceptionally crisp correctly spelled Korean typography, precise icons and thin table lines. Preserve the real feature, branding, original content hierarchy and readable headings. No blurry text, gibberish or unrelated UI. Redraw the original diagram sharply, with identical Korean labels and relationships, preserving original aspect ratio and all intended panels. No added hardware. Empty outer background transparent PNG."
   },
   "assets/subpages/oneai-hq/reference-3.png": {
-    "file": "assets/subpages/regenerated/ui-091.png",
+    "file": "assets/subpages/regenerated/ui-091-proofread.png",
     "width": 1521,
     "height": 1034,
     "kind": "diagram",
     "generated": true,
     "source": "assets/subpages/oneai-hq/reference-3.png",
-    "prompt": "Edit this supplied Korean enterprise software reference for a product website. Highest available resolution, exceptionally crisp correctly spelled Korean typography, precise icons and thin table lines. Preserve the real feature, branding, original content hierarchy and readable headings. No blurry text, gibberish or unrelated UI. Redraw the original diagram sharply, with identical Korean labels and relationships, preserving original aspect ratio and all intended panels. No added hardware. Empty outer background transparent PNG."
+    "prompt": "Edit this supplied Korean enterprise software reference for a product website. Highest available resolution, exceptionally crisp correctly spelled Korean typography, precise icons and thin table lines. Preserve the real feature, branding, original content hierarchy and readable headings. No blurry text, gibberish or unrelated UI. Redraw the original diagram sharply, with identical Korean labels and relationships, preserving original aspect ratio and all intended panels. No added hardware. Empty outer background transparent PNG. Replace unreadable interpretation-result text with clear short topic labels in a search-example list; do not invent case identifiers."
   },
   "assets/subpages/oneai-hq/reference-4.png": {
-    "file": "assets/subpages/regenerated/ui-092.png",
-    "width": 1526,
+    "file": "assets/subpages/regenerated/ui-092-proofread.png",
+    "width": 1527,
     "height": 1030,
     "kind": "diagram",
     "generated": true,
     "source": "assets/subpages/oneai-hq/reference-4.png",
-    "prompt": "Edit this supplied Korean enterprise software reference for a product website. Highest available resolution, exceptionally crisp correctly spelled Korean typography, precise icons and thin table lines. Preserve the real feature, branding, original content hierarchy and readable headings. No blurry text, gibberish or unrelated UI. Redraw the original diagram sharply, with identical Korean labels and relationships, preserving original aspect ratio and all intended panels. No added hardware. Empty outer background transparent PNG."
+    "prompt": "Edit this supplied Korean enterprise software reference for a product website. Highest available resolution, exceptionally crisp correctly spelled Korean typography, precise icons and thin table lines. Preserve the real feature, branding, original content hierarchy and readable headings. No blurry text, gibberish or unrelated UI. Redraw the original diagram sharply, with identical Korean labels and relationships, preserving original aspect ratio and all intended panels. No added hardware. Empty outer background transparent PNG. Text edit: Readable Korean article paragraphs, correction suggestions and keyword tags."
   },
   "assets/subpages/oneai-hq/reference-5.png": {
-    "file": "assets/subpages/regenerated/ui-093.png",
-    "width": 1528,
+    "file": "assets/subpages/regenerated/ui-093-proofread.png",
+    "width": 1529,
     "height": 1029,
     "kind": "diagram",
     "generated": true,
     "source": "assets/subpages/oneai-hq/reference-5.png",
-    "prompt": "Edit this supplied Korean enterprise software reference for a product website. Highest available resolution, exceptionally crisp correctly spelled Korean typography, precise icons and thin table lines. Preserve the real feature, branding, original content hierarchy and readable headings. No blurry text, gibberish or unrelated UI. Redraw the original diagram sharply, with identical Korean labels and relationships, preserving original aspect ratio and all intended panels. No added hardware. Empty outer background transparent PNG."
+    "prompt": "Edit this supplied Korean enterprise software reference for a product website. Highest available resolution, exceptionally crisp correctly spelled Korean typography, precise icons and thin table lines. Preserve the real feature, branding, original content hierarchy and readable headings. No blurry text, gibberish or unrelated UI. Redraw the original diagram sharply, with identical Korean labels and relationships, preserving original aspect ratio and all intended panels. No added hardware. Empty outer background transparent PNG. Proofread complete Korean script and labels including 앵커, 옵션, 템플릿, 인공지능, 지금, 우리가 준비해야 할 사항."
   },
   "assets/subpages/pms-screens/dashboard.png": {
     "file": "assets/subpages/regenerated/ui-094.png",
