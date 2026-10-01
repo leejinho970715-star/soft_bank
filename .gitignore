@@ -11,4 +11,5 @@ dist/
 .DS_Store
 Thumbs.db
 reference/live-audit/
+reference/live-forms/
 reference/detail-sample.html

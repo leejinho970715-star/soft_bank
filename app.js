@@ -133,18 +133,27 @@
     cardDialog.className = 'sb-cardnews-dialog';
     cardDialog.setAttribute('aria-labelledby', 'cardnews-title');
     cardDialog.innerHTML = `<header><h2 id="cardnews-title">카드뉴스 신청하기</h2><button type="button" aria-label="카드뉴스 신청창 닫기">×</button></header>
-      <form><label>회사명 *<input name="company" maxlength="100" autocomplete="organization" required></label>
-      <label>담당자명 *<input name="writer" maxlength="50" autocomplete="name" required></label>
-      <label>연락처 *<input name="phone" type="tel" maxlength="30" autocomplete="tel" required></label>
-      <label>이메일<input name="email" type="email" maxlength="100" autocomplete="email"></label>
-      <label>관심 주제<input name="interest" maxlength="200" placeholder="ERP, PMS, ISMS-P 등"></label>
-      <label>문의사항<textarea name="note1" rows="3" maxlength="2000"></textarea></label>
+      <form><label>회사명 *<input name="company" maxlength="100" autocomplete="organization" placeholder="회사명을 입력하세요" required></label>
+      <label>담당자명 *<input name="writer" maxlength="50" autocomplete="name" placeholder="담당자명을 입력하세요" required></label>
+      <label>연락처 *<input name="phone" type="tel" maxlength="30" autocomplete="tel" placeholder="연락처를 입력하세요" required></label>
+      <label>이메일<input name="email" type="email" maxlength="100" autocomplete="email" placeholder="이메일을 입력하세요"></label>
+      <label>관심 주제<input name="interest" maxlength="200" placeholder="예: ERP, PMS, ISMS-P 등"></label>
+      <label>문의사항<textarea name="note1" rows="4" maxlength="500" placeholder="문의사항을 입력하세요 (최대 500자)"></textarea></label>
+      <strong>동의 항목 *</strong>
       <label class="sb-consent"><input name="agree1" type="checkbox" value="1" required> [필수] 개인정보 수집 및 이용에 동의합니다.</label>
       <p>수집 항목: 회사명, 담당자명, 연락처, 이메일 / 목적: 카드뉴스 발송 및 서비스 안내 / 보유기간: 동의 철회 시까지</p>
-      <label class="sb-consent"><input name="agree2" type="checkbox" value="1" required> [필수] 카드뉴스 및 서비스 정보 수신에 동의합니다.</label>
+      <label class="sb-consent"><input name="agree2" type="checkbox" value="1" required> [필수] 아이원소프트뱅크㈜의 카드뉴스 및 서비스 정보 수신에 동의합니다.</label>
       <p>ERP, PMS, ISMS-P 등 관련 최신 정보를 이메일로 수신합니다.</p>
-      <p role="status" class="sb-cardnews-status"></p><button type="submit">신청하기</button></form>`;
+      <p role="status" class="sb-cardnews-status">신청을 위해 위 동의 항목에 모두 체크해 주세요.</p><button type="submit" disabled>신청하기</button></form>`;
     root.append(cardDialog);
+    const consentFields=[...cardDialog.querySelectorAll('.sb-consent input')];
+    let cardSubmitting=false;
+    const refreshCardConsent=()=>{
+      const agreed=consentFields.every(field=>field.checked);
+      cardDialog.querySelector('[type=submit]').disabled=cardSubmitting||!agreed;
+      cardDialog.querySelector('[role=status]').textContent=agreed?'':'신청을 위해 위 동의 항목에 모두 체크해 주세요.';
+    };
+    consentFields.forEach(field=>field.addEventListener('change',refreshCardConsent));
     const closeCard = () => cardDialog.close();
     cardDialog.querySelector('header button').addEventListener('click', closeCard);
     cardDialog.addEventListener('click', e => { if (e.target === cardDialog) { const r=cardDialog.getBoundingClientRect(); if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom) closeCard(); } });
@@ -153,6 +162,8 @@
     cardDialog.querySelector('form').addEventListener('submit', async e => {
       e.preventDefault();
       const form=e.currentTarget, submit=form.querySelector('[type=submit]'), status=form.querySelector('[role=status]');
+      if(cardSubmitting)return;
+      cardSubmitting=true;
       submit.disabled=true;status.textContent='신청 내용을 전송하고 있습니다.';
       try {
         const response=await fetch('/_lib/cardnewsProc.asp', {method:'POST', body:new URLSearchParams(new FormData(form))});
@@ -160,7 +171,7 @@
         if (!response.ok || result !== 'OK') throw new Error(result.startsWith('ERR:') ? result.slice(4) : '신청을 완료하지 못했습니다. 잠시 후 다시 시도해 주세요.');
         form.reset();status.textContent='카드뉴스 신청이 완료되었습니다.';
       } catch(error) {status.textContent=error.message || '연결에 실패했습니다. 잠시 후 다시 시도해 주세요.';}
-      finally {submit.disabled=false;}
+      finally {cardSubmitting=false;submit.disabled=!consentFields.every(field=>field.checked);}
     });
   }
 

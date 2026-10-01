@@ -130,3 +130,41 @@
  .sb-content .board_list:has(.td_subject) td.file img{width:18px;height:18px;object-fit:contain}
 }
 .sb-content .board_list .bbsimp{display:inline-block;margin-right:.35em}
+
+/* Shared inquiry/application layout: original row order, responsive input groups. */
+.sb-postcode-dialog{width:min(480px,calc(100vw - 24px));max-height:calc(100dvh - 24px);padding:16px;border:0;border-radius:16px}
+.sb-postcode-dialog::backdrop{background:#0008}
+.sb-postcode-dialog>button{display:block;margin:0 0 12px auto;padding:8px 20px;border:0;border-radius:8px;background:#3564d9;color:#fff;cursor:pointer}
+.sb-postcode-dialog>div{height:min(500px,calc(100dvh - 110px))}
+.sb-content .sb-inquiry-form .board_write{padding:24px}
+.sb-content .sb-inquiry-form th{width:180px;vertical-align:top}
+.sb-content .sb-inquiry-form .sb-required-label::after{content:' *';color:#3564d9}
+.sb-content .sb-inquiry-form td>.flex{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.sb-content .sb-inquiry-form .flex.three{flex-wrap:nowrap;max-width:440px}
+.sb-content .sb-inquiry-form .flex.three input{width:0;flex:1;min-width:0}
+.sb-content .sb-inquiry-form .flex:has(input[name=email]){flex-wrap:nowrap;max-width:560px}
+.sb-content .sb-inquiry-form input[name=email]{width:0;flex:1;min-width:0}
+.sb-content .sb-inquiry-form .check-new{display:inline-flex;align-items:center;gap:8px;margin:4px 18px 4px 0}
+.sb-content .sb-inquiry-form .check-new input{flex-shrink:0;margin:0}
+.sb-content .sb-inquiry-form .check-new label{cursor:pointer;padding:8px 0}
+.sb-content .sb-inquiry-form input.small{width:min(100%,360px)}
+.sb-content .sb-inquiry-form #postcode{width:150px}
+.sb-content .sb-inquiry-form .juso{margin-top:10px}
+.sb-content .sb-inquiry-form .juso input{flex:1;min-width:180px}
+.sb-content .sb-inquiry-form input[type=file]{width:100%}
+.sb-content .sb-inquiry-form input[type=file]::file-selector-button{border:0;border-radius:6px;padding:8px 14px;margin-right:12px;background:#edf3ff;color:#285ed1;cursor:pointer}
+.sb-content .sb-inquiry-form .clauseArea{margin-top:32px}
+.sb-content .sb-inquiry-form .clauseArea>.tit{font-size:20px;font-weight:600}
+.sb-content .sb-inquiry-form .clauseArea>.scroll{max-height:280px;overflow-y:auto;border:1px solid #dce5ef;border-radius:12px;padding:20px;overscroll-behavior:contain}
+.sb-content .sb-inquiry-form .clauseArea .privacy{padding:0;border:0;border-radius:0}
+.sb-content .sb-inquiry-form .clauseArea .privacy :is(h2,h3,h4){font-size:18px}
+@media(max-width:760px){
+ .sb-content .sb-inquiry-form .board_write{padding:12px}
+ .sb-content .sb-inquiry-form th{width:100%}
+ .sb-content .sb-inquiry-form td{padding:14px 10px 20px}
+ .sb-content .sb-inquiry-form .flex{gap:6px}
+ .sb-content .sb-inquiry-form .flex input{padding:9px 6px}
+ .sb-content .sb-inquiry-form .juso{flex-direction:column;align-items:stretch}
+ .sb-content .sb-inquiry-form .juso input{width:100%;min-width:0}
+ .sb-content .sb-inquiry-form .clauseArea>.scroll{padding:16px}
+}
