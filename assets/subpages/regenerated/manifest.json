@@ -118,13 +118,14 @@
     "textReviewed": "2026-10-01"
   },
   "assets/subpages/original/79784b6a05fb18.png": {
-    "file": "assets/subpages/regenerated/ui-016-desktop.png",
+    "file": "assets/subpages/regenerated/ui-016-desktop-v2.png",
     "width": 1536,
     "height": 1024,
     "kind": "devices",
     "generated": true,
     "source": "assets/subpages/original/79784b6a05fb18.png",
-    "prompt": "This is an edit of the attached enterprise product reference, for a real Korean product website. Recreate at highest available resolution with professionally typeset, crisp legible Korean glyphs, clean vector-like icons and sharp table lines. Preserve original software branding, recognizable feature and layout, exact headings and readable source labels. Do not blur, invent gibberish, add unrelated modules or change the product. Create a complete perfectly FRONT-FACING desktop monitor (thin black bezel, silver chin and stand). When the source includes an actual mobile or tablet application, show that original mobile UI inside a SEPARATE FRONT-FACING phone/tablet beside the desktop, slightly overlapping its lower corner. The PC screen must contain ONLY the desktop application, NEVER the entire composite screenshot or a phone embedded inside its screen. Do not invent mobile UI if the source has none. Keep source floating dialogs/receipt/feature icons as distinct foreground elements where applicable. Remove old gray cloud and frame. Zero yaw, zero perspective, no left/right tilt. Fully visible hardware, no cropped edges. TRUE TRANSPARENT PNG alpha outside devices, no background, checkerboard, gray halo or ground. Landscape composition with small margin. Text edit: Remove phone; desktop calendar only."
+    "prompt": "PC-only Amaranth 10 calendar. Crisp readable Korean labels, corrected event titles and chronological time gutter. No phone or floating magnified callout. Transparent exterior.",
+    "textReviewed": "2026-10-01"
   },
   "assets/subpages/original/8d93ed8faca9ae.png": {
     "file": "assets/subpages/regenerated/ui-017.png",
