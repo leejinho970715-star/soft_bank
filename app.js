@@ -122,7 +122,7 @@
     }
     if (quick) quick.querySelector('.quick-menu')?.toggleAttribute('inert', !open);
   };
-  setQuick(!matchMedia('(max-width: 700px)').matches);
+  setQuick(true);
 
   const cardnewsLink = quick && [...quick.querySelectorAll('a')].find(a => a.textContent.includes('카드뉴스'));
   if (cardnewsLink) {
@@ -198,10 +198,6 @@
 
     if (!clickedInsideChat && !clickedInsideChatLaunch) {
       setChat(false);
-    }
-
-    if (!clickedInsideQuick && !clickedInsideQuickToggle) {
-      setQuick(false);
     }
   };
 
