@@ -373,8 +373,8 @@
 @media(max-width:600px){.sb-figma-product #soft-bank-renewal .sb-frontal-display{padding:5px 5px 0;border-radius:9px 9px 0 0}.sb-figma-product #soft-bank-renewal .sb-frontal-chin{height:16px}.sb-figma-product #soft-bank-renewal .sb-frontal-stand{height:26px}}
 .sb-frontal-picture{display:block;width:100%}
 /* Scale product previews once at their outer frame; keep zoomed images full size. */
-.sb-figma-product #soft-bank-renewal .sb-content :is(.sb-faithful-reference,.sb-frontal-monitor,.sb-laptop-mockup){width:70%;max-width:840px;margin-inline:auto}
-.sb-figma-product #soft-bank-renewal .sb-content .sb-device-scene{width:70%;max-width:812px;margin-inline:auto}
+.sb-figma-product #soft-bank-renewal .sb-content :is(.sb-faithful-reference,.sb-frontal-monitor,.sb-laptop-mockup){width:84%;max-width:1008px;margin-inline:auto}
+.sb-figma-product #soft-bank-renewal .sb-content .sb-device-scene{width:84%;max-width:974.4px;margin-inline:auto}
 .sb-figma-product #soft-bank-renewal .sb-device-scene{position:relative;container-type:inline-size;width:100%;max-width:1160px;margin:24px auto 40px;isolation:isolate}
 .sb-device-desktop{position:absolute;top:0}
 .sb-device-desktop-bezel{padding:calc(var(--device-unit)*12);background:#20242d;border-radius:calc(var(--device-unit)*18) calc(var(--device-unit)*18) 0 0;box-shadow:0 12px 28px #172a4412}
@@ -460,8 +460,8 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
 .sb-page-product-pms #soft-bank-renewal .pms_ftrs .cont_li dt>p{font-size:18px!important;font-weight:600}
 
 /* Keep each screen and its explanation together, alternating only mockup rows. */
-.sb-figma-product #soft-bank-renewal .sb-content .sb-zigzag-feature{display:grid!important;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)!important;flex-direction:initial!important;align-items:center!important;gap:clamp(28px,4vw,64px)!important;padding:48px 0!important;min-height:0!important}
-.sb-figma-product #soft-bank-renewal .sb-content .sb-zigzag-feature[data-screen-layout=visual-left]{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr)!important}
+.sb-figma-product #soft-bank-renewal .sb-content .sb-zigzag-feature{--sb-screen-height:516px;--sb-flat-screen-height:432px;--sb-laptop-screen-height:456px;display:grid!important;grid-template-columns:minmax(0,.56fr) minmax(0,1.44fr)!important;flex-direction:initial!important;align-items:center!important;gap:clamp(28px,4vw,64px)!important;padding:48px 0!important;min-height:0!important}
+.sb-figma-product #soft-bank-renewal .sb-content .sb-zigzag-feature[data-screen-layout=visual-left]{grid-template-columns:minmax(0,1.44fr) minmax(0,.56fr)!important}
 .sb-figma-product #soft-bank-renewal .sb-content .sb-zigzag-feature>.sb-feature-copy{grid-column:1;grid-row:1;order:initial!important;text-align:left!important;min-width:0;width:100%!important;max-width:none!important;margin:0!important}
 .sb-figma-product #soft-bank-renewal .sb-content .sb-zigzag-feature>.sb-feature-visual{grid-column:2;grid-row:1;order:initial!important;min-width:0;width:100%!important;max-width:none!important;height:auto!important;margin:0!important;padding:0!important;position:relative;inset:auto;transform:none}
 .sb-figma-product #soft-bank-renewal .sb-zigzag-feature[data-screen-layout=visual-left]>.sb-feature-copy{grid-column:2}
@@ -470,20 +470,22 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
 .sb-figma-product #soft-bank-renewal .sb-zigzag-feature>.sb-feature-copy :is(h2,h3,h4,h5,.txt>strong){font-size:clamp(24px,2.2vw,32px);line-height:1.4;text-wrap:pretty}
 .sb-figma-product #soft-bank-renewal .sb-zigzag-feature>.sb-feature-copy p{margin:10px 0;word-break:keep-all;overflow-wrap:anywhere}
 .sb-figma-product #soft-bank-renewal .sb-zigzag-feature .sb-feature-visual :is(.sb-faithful-reference,.sb-frontal-monitor,.sb-laptop-mockup,.sb-device-scene){width:100%;max-width:100%;margin:0 auto}
-.sb-figma-product #soft-bank-renewal .sb-zigzag-feature .sb-feature-visual img.sb-frontal-screen{display:block;width:100%!important;height:auto!important;max-height:430px!important;object-fit:contain;margin:0!important}
-.sb-figma-product #soft-bank-renewal .sb-zigzag-feature .sb-frontal-display img.sb-frontal-screen{max-height:360px!important}
-.sb-figma-product #soft-bank-renewal .sb-zigzag-feature .sb-pms-screen-picture img{max-height:380px!important}
+.sb-figma-product #soft-bank-renewal .sb-zigzag-feature .sb-feature-visual .sb-frontal-monitor{width:min(100%,calc(var(--sb-screen-ratio,1.6) * var(--sb-flat-screen-height) + 26px))}
+.sb-figma-product #soft-bank-renewal .sb-zigzag-feature .sb-feature-visual .sb-faithful-reference{width:min(100%,calc(var(--sb-screen-ratio,1.5) * var(--sb-screen-height)))}
+.sb-figma-product #soft-bank-renewal .sb-zigzag-feature .sb-feature-visual .sb-laptop-mockup{width:min(100%,calc(var(--sb-screen-ratio,1.6) * var(--sb-laptop-screen-height) + 24px))}
+.sb-figma-product #soft-bank-renewal .sb-zigzag-feature .sb-feature-visual img.sb-frontal-screen,
+.sb-figma-product #soft-bank-renewal .sb-zigzag-feature .sb-pms-screen-picture img{display:block;width:100%!important;height:auto!important;max-height:none!important;object-fit:contain;margin:0!important}
 .sb-figma-product #soft-bank-renewal .sb-zigzag-feature .sb-feature-copy .sb-screen-actions{justify-content:flex-start;margin:24px 0 0;gap:10px}
 .sb-figma-product #soft-bank-renewal .sb-zigzag-feature .sb-feature-copy .sb-screen-actions>:is(a,button){min-height:44px!important;font-size:14px;padding:11px 20px!important}
 .sb-figma-product #soft-bank-renewal .sb-zigzag-feature>.omni-dual-visual{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 .sb-figma-product #soft-bank-renewal .sb-zigzag-feature .sec-text .chips{justify-content:flex-start}
 @media(max-width:760px){
- .sb-figma-product #soft-bank-renewal .sb-content .sb-zigzag-feature[data-screen-layout]{grid-template-columns:minmax(0,1fr)!important;gap:18px!important;padding:28px 0!important}
+ .sb-figma-product #soft-bank-renewal .sb-content .sb-zigzag-feature[data-screen-layout]{--sb-screen-height:408px;--sb-flat-screen-height:408px;grid-template-columns:minmax(0,1fr)!important;gap:18px!important;padding:28px 0!important}
  .sb-figma-product #soft-bank-renewal .sb-content .sb-zigzag-feature[data-screen-layout]>.sb-feature-copy{grid-column:1;grid-row:1}
  .sb-figma-product #soft-bank-renewal .sb-content .sb-zigzag-feature[data-screen-layout]>.sb-feature-visual{grid-column:1;grid-row:2}
  .sb-figma-product #soft-bank-renewal .sb-zigzag-feature>.sb-feature-copy :is(h2,h3,h4,h5,.txt>strong){font-size:24px}
  .sb-figma-product #soft-bank-renewal .sb-zigzag-feature>.sb-feature-copy p{margin:8px 0;line-height:1.6!important}
  .sb-figma-product #soft-bank-renewal .sb-zigzag-feature>.sb-feature-copy>b{margin-bottom:12px}
- .sb-figma-product #soft-bank-renewal .sb-zigzag-feature .sb-feature-visual img.sb-frontal-screen{max-height:340px!important}
+ .sb-figma-product #soft-bank-renewal .sb-zigzag-feature .sb-feature-visual .sb-frontal-monitor{width:min(100%,calc(var(--sb-screen-ratio,1.6) * var(--sb-flat-screen-height) + 12px))}
  .sb-figma-product #soft-bank-renewal .sb-zigzag-feature>.omni-dual-visual{grid-template-columns:1fr}
 }

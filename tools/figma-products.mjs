@@ -7,7 +7,7 @@ import {applyWehagoExtraAssets} from './wehago-extra-assets.mjs';
 import {applyWehagoLinkedAssets} from './wehago-linked-assets.mjs';
 import {applyHighresAssets} from './product-highres.mjs';
 import {applyFrontalScreens} from './frontal-screens.mjs';
-import {applyProductScreenLayout} from './product-screen-layout.mjs';
+import {applyProductScreenLayout, applyProductMockupRatios} from './product-screen-layout.mjs';
 
 const assets=JSON.parse(await fs.readFile('assets/subpages/figma/manifest.json','utf8'));
 const file=(family,n)=>assets[family]?.[n-1]?.file;
@@ -208,6 +208,7 @@ export function applyProductDesign($,page,root){
  applyFrontalScreens($,root);
  applyHighresAssets($,root);
  applyProductScreenLayout($);
- const css=$('<link rel="stylesheet">').attr('href',root+'renewal/products-figma.css?v=20261001-1');$('head').append(css);
+ applyProductMockupRatios($);
+ const css=$('<link rel="stylesheet">').attr('href',root+'renewal/products-figma.css?v=20261002-1');$('head').append(css);
  $('head').append($('<script defer></script>').attr('src',root+'renewal/products-figma.js?v=20261001-1'));
 }

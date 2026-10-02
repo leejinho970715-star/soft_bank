@@ -3,6 +3,18 @@ import fs from 'node:fs';
 const assets = Object.values(JSON.parse(fs.readFileSync('assets/subpages/regenerated/manifest.json', 'utf8')));
 const diagrams = new Set(assets.filter(asset => asset.kind === 'diagram').map(asset => asset.file));
 
+export function applyProductMockupRatios($) {
+  $('.sb-frontal-monitor,.sb-faithful-reference,.sb-laptop-mockup').each((_, element) => {
+    const frame = $(element);
+    const image = frame.find('img').first();
+    const width = Number(image.attr('width'));
+    const height = Number(image.attr('height'));
+    if (!(width > 0 && height > 0)) return;
+    const style = (frame.attr('style') || '').replace(/--sb-screen-ratio\s*:[^;]+;?/g, '').trim();
+    frame.attr('style', `${style}${style && !style.endsWith(';') ? ';' : ''}--sb-screen-ratio:${(width / height).toFixed(6)}`);
+  });
+}
+
 // Only screen mockups receive alternating rows; diagrams and icon groups stay centered.
 export function applyProductScreenLayout($) {
   if ($('body').is('.sb-page-product-oneai,.sb-page-product-ifrs18')) return;
