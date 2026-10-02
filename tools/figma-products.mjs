@@ -209,6 +209,6 @@ export function applyProductDesign($,page,root){
  applyHighresAssets($,root);
  applyProductScreenLayout($);
  applyProductMockupRatios($);
- const css=$('<link rel="stylesheet">').attr('href',root+'renewal/products-figma.css?v=20261002-1');$('head').append(css);
+ const css=$('<link rel="stylesheet">').attr('href',root+'renewal/products-figma.css?v=20261002-2');$('head').append(css);
  $('head').append($('<script defer></script>').attr('src',root+'renewal/products-figma.js?v=20261001-1'));
 }

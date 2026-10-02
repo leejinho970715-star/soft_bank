@@ -139,6 +139,7 @@
 .sb-page-product-omniesol .omniesol .band h3,.sb-figma-product .sb-contact-banner :is(h2,h3){font-size:25px}
 }
 .sb-page-product-omniesol .omniesol .tag-row{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:24px}
+.sb-page-product-omniesol #soft-bank-renewal .omniesol .section>.sec-text.sb-feature-copy .tag-row{justify-content:flex-start;text-align:left}
 .sb-page-product-omniesol .omniesol .tag{font-size:12px;background:#f4f4f5;color:#858a91;padding:5px 12px;border-radius:3px}
 .sb-page-product-omniesol .omniesol .mod-title{text-align:center;margin:100px 0 35px}
 .sb-page-product-omniesol .omniesol .mod-title h3{margin:8px 0 18px;font-size:30px}
