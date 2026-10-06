@@ -12,7 +12,7 @@ async function writePage(path,content){
 // Build from the shared product shell so navigation, footer and contact UI stay consistent.
 const $=load(await fs.readFile('subpages/product/omniesol.html','utf8'));
 $('title').text('IFRS18 | Amaranth 10 | 아이원소프트뱅크');
-$('head').append('<meta name="description" content="기존 전표는 그대로, IFRS18 기준 재무제표 전환은 간편하게. Amaranth 10의 재무제표 양식설정, 계정별 범주설정, 현금흐름표 기능을 만나보세요."><link rel="stylesheet" href="../../renewal/ifrs18.css?v=20261002-1">');
+$('head').append('<meta name="description" content="기존 전표는 그대로, IFRS18 기준 재무제표 전환은 간편하게. Amaranth 10의 재무제표 양식설정, 계정별 범주설정, 현금흐름표 기능을 만나보세요."><link rel="stylesheet" href="../../renewal/ifrs18.css?v=20261006-1">');
 $('body').removeClass('sb-page-product-omniesol').addClass('sb-page-product-ifrs18');
 $('.sb-hero-asset').attr({src:'../../assets/subpages/ifrs18/hero.png',alt:'Amaranth 10 IFRS18 재무관리 3D 비주얼',width:'1536',height:'1024'});
 $('.sb-hero h1').text('Amaranth 10 IFRS18');

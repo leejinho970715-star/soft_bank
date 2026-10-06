@@ -1,0 +1,173 @@
+{
+  "template": "assets/subpages/official-corrected/black-monitor-template.png",
+  "method": "Generated black monitor frame with original official UI pixels rendered by native Canvas. No generated interface text.",
+  "outputWidth": 2560,
+  "entries": [
+    {
+      "key": "crm-sfa",
+      "title": "CRM / SFA — 영업진행현황 화면",
+      "source": "assets/subpages/regenerated/ui-009.png",
+      "crop": null
+    },
+    {
+      "key": "mes",
+      "title": "MES — 설비가동분석 화면",
+      "source": "assets/subpages/regenerated/ui-011.png",
+      "crop": null
+    },
+    {
+      "key": "onechamber",
+      "title": "ONECHAMBER — ONECHAMBER 내 문서함 화면",
+      "source": "assets/subpages/regenerated/ui-005.png",
+      "crop": null
+    },
+    {
+      "key": "oneffice",
+      "title": "ONEFFICE — ONEFFICE HOME 화면",
+      "source": "assets/subpages/regenerated/ui-006.png",
+      "crop": null
+    },
+    {
+      "key": "scm",
+      "title": "ERP SCM — 년도별매출비교현황 화면",
+      "source": "assets/subpages/regenerated/ui-001.png",
+      "crop": null
+    },
+    {
+      "key": "hrm",
+      "title": "ERP HRM — 개인근태조회 화면",
+      "source": "assets/subpages/regenerated/ui-002.png",
+      "crop": null
+    },
+    {
+      "key": "we-drive",
+      "title": "웹스토리지 — WE드라이브 화면",
+      "source": "assets/subpages/official-corrected/sources/we-drive.png",
+      "crop": [
+        280,
+        86,
+        1200,
+        850
+      ]
+    },
+    {
+      "key": "todo",
+      "title": "할일관리 — 할일 보드 화면",
+      "source": "assets/subpages/official-corrected/sources/screenshot_co_08.gif",
+      "crop": null
+    },
+    {
+      "key": "factoring",
+      "title": "매출채권팩토링 — 팩토링 신청·심사 현황 화면",
+      "source": "assets/subpages/official-corrected/sources/screenshot_extra_06.png",
+      "crop": null
+    },
+    {
+      "key": "we-crm",
+      "title": "WE CRM — WE CRM 영업 목표·실적 화면",
+      "source": "assets/subpages/official-corrected/sources/screenshot_extra_04.gif",
+      "crop": null
+    },
+    {
+      "key": "we-pms",
+      "title": "WE PMS — WE PMS 프로젝트·이슈 화면",
+      "source": "assets/subpages/official-corrected/sources/screenshot_extra_05.gif",
+      "crop": null
+    },
+    {
+      "key": "corporate-card",
+      "title": "경비청구 - 법인카드 — 법인카드 관리 화면",
+      "source": "assets/subpages/official-corrected/sources/screenshot_extra_01.gif",
+      "crop": null
+    },
+    {
+      "key": "personal-card",
+      "title": "경비청구 - 개인카드 — 개인카드 사용·승인 요청 화면",
+      "source": "assets/subpages/official-corrected/sources/screenshot_extra_02.gif",
+      "crop": null
+    },
+    {
+      "key": "business-status",
+      "title": "경영현황 — T edge 경영현황 화면",
+      "source": "assets/subpages/official-corrected/sources/business-status.png",
+      "crop": [
+        222,
+        140,
+        702,
+        434
+      ]
+    },
+    {
+      "key": "tax-status",
+      "title": "신고/납부현황 — T edge 신고·납부 내역 화면",
+      "source": "assets/subpages/official-corrected/sources/tax-status.png",
+      "crop": [
+        155,
+        114,
+        728,
+        452
+      ]
+    },
+    {
+      "key": "billing",
+      "title": "청구서 조회 및 납부 — T edge 청구내역·납부 화면",
+      "source": "assets/subpages/official-corrected/sources/billing.png",
+      "crop": [
+        198,
+        137,
+        734,
+        455
+      ]
+    },
+    {
+      "key": "expenses",
+      "title": "경비현황분석 — 경비모니터링 리포트 화면",
+      "source": "assets/subpages/official-corrected/sources/screenshot_extra_03.gif",
+      "crop": null
+    },
+    {
+      "key": "security",
+      "title": "회사의 중요한 정보자산을 보호 — 사용자 활동기록·보안 설정 화면",
+      "source": "assets/subpages/official-corrected/sources/security.png",
+      "crop": [
+        98,
+        94,
+        484,
+        386
+      ]
+    },
+    {
+      "key": "smart-a10-modules",
+      "title": "스마트한 Online 경영관리 — Smart A10 통합 업무 모듈 화면",
+      "source": "assets/subpages/official-corrected/sources/smart-a10-modules.png",
+      "crop": [
+        65,
+        45,
+        700,
+        389
+      ]
+    },
+    {
+      "key": "corporate-tax",
+      "title": "법인 유형별로 맞춤 법인세 신고관리 — 법인세과세표준 및 세액신고서 화면",
+      "source": "assets/subpages/official-corrected/sources/corporate-tax.png",
+      "crop": [
+        218,
+        91,
+        1226,
+        775
+      ]
+    },
+    {
+      "key": "income-tax",
+      "title": "소득자별 맞춤형 종합소득세 신고관리 — 소득자별 조정검토 / 소득금액조정 화면",
+      "source": "assets/subpages/official-corrected/sources/income-tax.png",
+      "crop": [
+        486,
+        114,
+        1170,
+        730
+      ]
+    }
+  ]
+}

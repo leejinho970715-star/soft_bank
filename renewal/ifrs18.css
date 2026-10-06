@@ -1,6 +1,5 @@
 .sb-page-product-ifrs18{--ifrs-blue:#185fef;--ifrs-purple:#7545f5}
-.sb-page-product-ifrs18 #soft-bank-renewal .sb-hero{background:url('../assets/subpages/ifrs18/section-bg.png') center/cover no-repeat;background-blend-mode:normal;border-bottom:1px solid #e4eaff}
-.sb-page-product-ifrs18 #soft-bank-renewal .sb-hero .sb-hero-asset{width:min(660px,90vw)!important;height:auto!important;max-height:none!important;margin:0 auto 30px;object-fit:contain}
+/* Inherit the shared product hero background and responsive asset dimensions. */
 .sb-page-product-ifrs18 #soft-bank-renewal .sb-hero h1{background:none;color:#1d1d1f}
 .sb-page-product-ifrs18 #soft-bank-renewal .sb-hero>div>p{color:#1d1d1f}
 .sb-page-product-ifrs18 #soft-bank-renewal .ifrs-content{max-width:1400px;padding:0 40px 100px;color:#1b2b48;text-align:center}

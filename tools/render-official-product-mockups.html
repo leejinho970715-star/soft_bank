@@ -1,0 +1,27 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><title>검정 투명 PNG 목업 제작</title><style>body{font:14px sans-serif;background:#eff3fa}canvas{display:block;width:640px;max-width:100%;background:repeating-conic-gradient(#eee 0% 25%,white 0% 50%) 0/20px 20px}textarea{display:none}</style><h1>검정 투명 PNG 목업 제작</h1><div id="results"></div><script type="module">
+const config=await (await fetch('/assets/subpages/official-corrected/composition.json')).json();
+const image=src=>new Promise((resolve,reject)=>{const im=new Image();im.onload=()=>resolve(im);im.onerror=reject;im.src='/'+src});
+const frame=await image(config.template);
+for(const entry of config.entries){
+ const ui=await image(entry.source);
+ const [sx,sy,sw,sh]=entry.crop||[0,0,ui.naturalWidth,ui.naturalHeight];
+ const W=2560,screenW=2320,screenH=Math.round(screenW*sh/sw),top=75,pad=42,chin=75,standH=210;
+ const H=top+screenH+chin+standH+80;
+ const canvas=document.createElement('canvas');canvas.width=W;canvas.height=H;canvas.dataset.key=entry.key;
+ const ctx=canvas.getContext('2d');ctx.imageSmoothingEnabled=true;ctx.imageSmoothingQuality='high';
+ const left=(W-screenW)/2;
+ // Recreate clean analytic edges while using the generated black material as the bezel.
+ ctx.save();ctx.beginPath();ctx.roundRect(left-pad,top-pad,screenW+pad*2,screenH+pad+chin,32);ctx.clip();
+ ctx.fillStyle='#151719';ctx.fillRect(0,0,W,H);
+ ctx.drawImage(frame,40,48,1416,762,left-pad,top-pad,screenW+pad*2,screenH+pad+chin);ctx.restore();
+ const standTop=top+screenH+chin-3;
+ const neckW=260;
+ ctx.save();const g=ctx.createLinearGradient(W/2-neckW/2,0,W/2+neckW/2,0);g.addColorStop(0,'#1a1c1e');g.addColorStop(.5,'#323538');g.addColorStop(1,'#141617');
+ ctx.fillStyle=g;ctx.beginPath();ctx.moveTo(W/2-neckW/2,standTop);ctx.lineTo(W/2+neckW/2,standTop);ctx.lineTo(W/2+175,standTop+standH-45);ctx.lineTo(W/2-175,standTop+standH-45);ctx.closePath();ctx.fill();
+ ctx.fillStyle='#202326';ctx.beginPath();ctx.roundRect(W/2-420,standTop+standH-65,840,65,24);ctx.fill();ctx.strokeStyle='#414548';ctx.lineWidth=2;ctx.stroke();ctx.restore();
+ ctx.save();ctx.beginPath();ctx.roundRect(left,top,screenW,screenH,9);ctx.clip();ctx.fillStyle='white';ctx.fillRect(left,top,screenW,screenH);ctx.drawImage(ui,sx,sy,sw,sh,left,top,screenW,screenH);ctx.restore();
+ const heading=document.createElement('h2');heading.textContent=entry.title;results.append(heading,canvas);
+ const encoded=document.createElement('textarea');encoded.id='png-'+entry.key;encoded.value=canvas.toDataURL('image/png');results.append(encoded);
+}
+document.body.dataset.complete='true';
+</script></html>
