@@ -1,0 +1,58 @@
+{
+  "board": {
+    "name": "board",
+    "file": "assets/subpages/amaranth-corrected/board.png",
+    "path": "C:/Users/tlscj/.codex/generated_images/01a089de-ab15-7310-a911-f9ffb1a1b7e3/exec-3b06affb-a4ca-4d41-89c0-e86684a1644e.png",
+    "alt": "Amaranth 10 게시판 분류와 게시글 목록 화면",
+    "page": "https://www.douzonea.com/products/groupware.php",
+    "source": "https://www.douzonea.com/images/sub/groupware-img06.png",
+    "prompts": [
+      "Use case: compositing / high-fidelity UI mockup edit. For a real Korean Amaranth10 product website. Make a high-resolution landscape PNG, aim for 3072x2048 or the highest supported resolution. Perfectly FRONT-FACING desktop monitor: thin black bezel, subtle silver chin and stand matching the existing site's monitors. Entire hardware visible, zero perspective, no tilted screen. TRUE transparent alpha outside the hardware, no white/gray/black canvas, no checkerboard baked in, no ground or haze. Preserve the source product UI, menu structure and feature, professionally crisp Korean typography and sharp table lines. Never include the entire device composite inside the PC screen. Never replace this screen with a different module or decorative illustration. Do not add explanatory headlines or fake data outside the UI. Keep all readable source labels exact, never invent garbled Hangul. The software content must fill the display naturally without distortion or nested frames. Input image is the source board application to insert. Produce ONE desktop monitor ONLY, remove the phone and old white frame/shadow. Preserve the blue Amaranth10 board UI and its open navigation menu; lighten the dimmed underlying board just enough to remain legible. Important exact Korean strings: 'Amaranth10', '일반게시판', '최근공지글', '최근게시글', '사내게시판', '게시판', '사내게시판 1', '사내게시판 2', '설문조사', '나의활동', '스크랩', '게시글', '내가 쓴 댓글', '임시보관함', '담당게시판', '구분', '전체', '제목', '게시판명', '게시글 등록합니다.', 'Q&A게시판'. The visible feature is a BOARD and article list, absolutely no video conference participants or camera controls."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "kind": "devices",
+    "generated": true,
+    "transparent": true,
+    "generationTool": "built-in imagegen",
+    "created": "2026-10-06"
+  },
+  "fax": {
+    "name": "fax",
+    "file": "assets/subpages/amaranth-corrected/fax-sms.png",
+    "path": "C:/Users/tlscj/.codex/generated_images/01a089de-ab15-7310-a911-f9ffb1a1b7e3/exec-0d4eb8fa-c0e4-4741-8a2e-a7e2c229874c.png",
+    "alt": "Amaranth 10 전자팩스 수신함과 SMS 발송 메뉴 화면",
+    "page": "https://www.douzonea.com/products/groupware.php",
+    "source": "https://www.douzonea.com/images/sub/groupware-img11.png",
+    "prompts": [
+      "Use case: compositing / high-fidelity UI mockup edit. For a real Korean Amaranth10 product website. Make a high-resolution landscape PNG, aim for 3072x2048 or the highest supported resolution. Perfectly FRONT-FACING desktop monitor: thin black bezel, subtle silver chin and stand matching the existing site's monitors. Entire hardware visible, zero perspective, no tilted screen. TRUE transparent alpha outside the hardware, no white/gray/black canvas, no checkerboard baked in, no ground or haze. Preserve the source product UI, menu structure and feature, professionally crisp Korean typography and sharp table lines. Never include the entire device composite inside the PC screen. Never replace this screen with a different module or decorative illustration. Do not add explanatory headlines or fake data outside the UI. Keep all readable source labels exact, never invent garbled Hangul. The software content must fill the display naturally without distortion or nested frames. Input image is the fax/SMS application to insert. Produce ONE desktop monitor ONLY; remove the phone, source white hardware and shadows so PC UI can be large and legible. Preserve received-fax inbox UI with left navigation, received-fax list and fax-document preview below. Exact main Korean strings: 'Amaranth10', '팩스', '받은팩스함', '팩스 보내기', '국내팩스보내기', '국제팩스보내기', '광고팩스보내기', '대량팩스보내기', '전자등기팩스보내기', '문자 보내기', '일반문자보내기', '엑셀보내기', '내부용바꿔보내기', '받은시간', '보낸팩스번호', '보낸회사', '보낸사람', '받은팩스번호', '받은사람', '장수', '제목', '내용을 입력해주세요', '조회', '엑셀파일 저장'. Maintain original numbers where readable. Document preview 'DOUZONE' and '더존 클라우드팩스 인터넷 팩스번호 신청서'. Absolutely no ERP ecosystem diagram."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "kind": "devices",
+    "generated": true,
+    "transparent": true,
+    "generationTool": "built-in imagegen",
+    "created": "2026-10-06"
+  },
+  "hrTax": {
+    "name": "hrTax",
+    "file": "assets/subpages/amaranth-corrected/hr-withholding-tax.png",
+    "path": "C:/Users/tlscj/.codex/generated_images/01a089de-ab15-7310-a911-f9ffb1a1b7e3/exec-3f78ea2a-a421-49aa-8944-a6d0ed231039.png",
+    "alt": "Amaranth 10 인사 세무관리 원천징수이행상황신고서 화면",
+    "page": "https://www.idouzone.com/product/pservice02_5.php",
+    "source": "https://www.idouzone.com/images/sub/solu-img34.png",
+    "prompts": [
+      "Use case: compositing / high-fidelity UI mockup edit. For a real Korean Amaranth10 product website. Make a high-resolution landscape PNG, aim for 3072x2048 or the highest supported resolution. Perfectly FRONT-FACING desktop monitor: thin black bezel, subtle silver chin and stand matching the existing site's monitors. Entire hardware visible, zero perspective, no tilted screen. TRUE transparent alpha outside the hardware, no white/gray/black canvas, no checkerboard baked in, no ground or haze. Preserve the source product UI, menu structure and feature, professionally crisp Korean typography and sharp table lines. Never include the entire device composite inside the PC screen. Never replace this screen with a different module or decorative illustration. Do not add explanatory headlines or fake data outside the UI. Keep all readable source labels exact, never invent garbled Hangul. The software content must fill the display naturally without distortion or nested frames. Input image is the HR withholding tax return UI. Produce ONE desktop monitor ONLY. Preserve the exact visible layout of the original '원천징수이행상황신고서' screenshot, its form header, grid, pale yellow totals row, and small HomeTax login overlay on the right. High-resolution careful reconstruction of readable original Korean, never transfer/banking/4대보험/financial management. Exact text: '원천징수이행상황신고서', '사업장', '문서번호', '신고구분', '귀속연월', '지급연월', '신고', '매월', '반기', '구분', '수정', '연말', '소득처분', '법인청산', '총괄납부', '일괄납부', '조회안', '거주자분표', '비거주자분표', '법인원천표', '환급신청부표', '기납부세액', '차월이월소계', '원천징수명세', '소득자소득구분', '코드', '소득지급', '(가감징수, 비과세포함)', '4.인원', '5.총지급액', '6.소득세 등', '7.농어촌특별세', '8.가산세', '근로소득', '간이세액', '중도퇴사', '일용근로', '연말', '합계', '총합계', '홈택스 로그인'. Preserve source numeric examples, the original source does not contain bank transfer or journal issuance. Do not add a mobile mockup.",
+      "Use case: text-localization. Edit the provided transparent desktop tax-report mockup. Keep hardware, composition, true transparent alpha, original UI layout, numbers and all other labels unchanged. Correct only the following Korean labels with crisp professionally typeset Hangul, no garbled glyphs: table centered title must be exactly '원천징수명세'; the line below '소득지급' must be exactly '(과세미달, 비과세 포함)'; label at left must be exactly '소득자 소득구분'; bottom left table header exactly '전월미환급세액'; bottom middle exactly '당월발생환급세액'; bottom right exactly '18.조정대상환급세액' (wrap cleanly if needed); main blue tab '주화면'; HomeTax overlay '홈택스 로그인'. Main title must remain exactly '원천징수이행상황신고서'. Ensure '징수세액', '농어촌특별세', '가산세', '당월조정 환급세액', '총합계' are crisp and exact. Preserve actual PNG alpha outside monitor; do not add background or fog. Highest supported resolution, do not crop any hardware or distort the display.",
+      "Precise text edit of this transparent PNG. There is a typo in the centered table heading directly above the '소득지급' and '징수세액' columns. Replace that SINGLE heading with EXACTLY these seven Korean syllables: 원 천 징 수 명 세 (render without spaces: 원천징수명세). The fifth syllable is 명, NOT 영; the full correct text is 원천징수명세. Use a slightly larger, bold, clean Korean sans-serif font so 명 and 세 are unambiguous, centered in the same header cell. Keep the rest of the image, all rows, all other Korean text, numbers, original resolution, monitor and existing transparent alpha UNCHANGED. Do not blur, recolor or regenerate the other UI. True transparent background PNG."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "kind": "devices",
+    "generated": true,
+    "transparent": true,
+    "generationTool": "built-in imagegen",
+    "created": "2026-10-06"
+  }
+}
