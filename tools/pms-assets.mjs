@@ -2,7 +2,7 @@ import fs from 'node:fs';
 const screens=JSON.parse(fs.readFileSync('assets/subpages/pms-screens/manifest.json','utf8'));
 const regenerated=JSON.parse(fs.readFileSync('assets/subpages/regenerated/manifest.json','utf8'));
 const features=[
- ['현황관리',['재고 및 장비 관리','프로젝트별 진행률 현황관리','프로젝트별 추정손익 관리','목표대비 실적 관리','예산대비 실적현황 관리']],
+ ['현황관리',['재고 및 장비 관리','프로젝트별 진행율 현황관리','프로젝트별 추정손익 관리','목표대비 실적 관리','예산대비 실적현황 관리']],
  ['운영관리',['프로젝트별 청구 관리','프로젝트별 수주잔고 관리','프로젝트별 이슈 관리']],
  ['계약관리',['프로젝트별 계약관리','프로젝트별 견적관리','프로젝트별 목표관리']],
  ['예산관리',['프로젝트별 예산관리','프로젝트별 실행내역 관리','발생비용 집계관리','투입원가관리']],
@@ -55,7 +55,8 @@ export function applyPmsAssets($,root){
  function diagram(file,alt,entries){
   const figure=$('<figure class="sb-pms-diagram"></figure>');
   const [width,height]=file==='features'?[1769,889]:[1825,862];
-  figure.append($('<img loading="lazy">').attr({src:root+'assets/subpages/pms-custom/'+file+'.png',alt,width,height}));
+  const asset=file==='features'?'features-clean-v2':file;
+  figure.append($('<img loading="lazy">').attr({src:root+'assets/subpages/pms-custom/'+asset+'.png',alt,width,height}));
   const text=$('<figcaption class="sb-pms-diagram-details"></figcaption>');
   for(const [title,items] of entries){
    const card=$('<section></section>').append($('<h4></h4>').text(title));

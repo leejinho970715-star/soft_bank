@@ -19,3 +19,13 @@ composition and alpha are retained; per-file model and dimensions are recorded i
 pre-upscale images. Transparent PNGs remain the source assets; matching high-quality
 WebP copies reduce page download size. Small source lettering is not guaranteed to
 be reconstructed exactly by an AI upscaler.
+
+## Feature diagram correction (2026-10-06)
+
+`features-clean-v2.png` replaces the feature diagram on the PMS page. Built-in
+imagegen corrected the requested `프로젝트별 진행율 현황관리` lettering and
+removed the stray cutout pixels around the PMS node, connectors and cards.
+The transparent PNG is retained at its native 1769 × 889 pixels, without the
+previous local upscaler or an old WebP source. The same requested wording is
+used in the accessible/mobile HTML description. Both black and white background
+previews were checked. Source and complete prompt: `features-clean-v2.json`.
