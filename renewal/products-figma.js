@@ -16,17 +16,28 @@ document.addEventListener('DOMContentLoaded',()=>{
   dialog.className='sb-image-dialog';dialog.setAttribute('aria-label','제품 이미지 크게 보기');
   const close=document.createElement('button');close.type='button';close.className='sb-image-close';close.textContent='닫기 ×';
   const image=document.createElement('img');
+  const crop=document.createElement('div');crop.className='sb-image-crop';crop.hidden=true;
   const caption=document.createElement('p');caption.className='sb-image-caption';
-  dialog.append(close,image,caption);document.body.append(dialog);
+  dialog.append(close,image,crop,caption);document.body.append(dialog);
   let trigger=null;
   const open=(img,source)=>{
    dialog.classList.toggle('sb-poster-dialog',source.dataset.imageModal==='poster');
    trigger=source;image.src=img.src;image.alt=img.alt||'제품 이미지';caption.textContent=image.alt;
+   const viewport=img.closest?.('.sb-screen-window');
+   image.hidden=!!viewport;crop.hidden=!viewport;crop.replaceChildren();
+   if(viewport){
+    const copy=viewport.cloneNode(true);
+    // Cloning only the viewport keeps raster hardware out of the enlarged view.
+    copy.querySelectorAll('img').forEach(el=>{el.loading='eager';el.removeAttribute('tabindex');el.removeAttribute('role');});
+    crop.append(copy);
+    const rect=img.dataset.screenCrop.split(',').map(Number);
+    crop.style.setProperty('--sb-crop-ratio',String(rect[2]/rect[3]));
+   }
    dialog.showModal();dialog.scrollTop=0;document.body.classList.add('sb-image-open');close.focus();
   };
   close.addEventListener('click',()=>dialog.close());
   dialog.addEventListener('click',e=>{if(e.target!==dialog)return;const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();});
-  dialog.addEventListener('close',()=>{document.body.classList.remove('sb-image-open');trigger?.focus({preventScroll:true});image.removeAttribute('src');});
+  dialog.addEventListener('close',()=>{document.body.classList.remove('sb-image-open');trigger?.focus({preventScroll:true});image.removeAttribute('src');crop.replaceChildren();});
   document.querySelectorAll('a[data-image-modal]').forEach(link=>{
    link.addEventListener('click',e=>{
     if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;

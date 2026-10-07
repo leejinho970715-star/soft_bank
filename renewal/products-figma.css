@@ -140,7 +140,7 @@
 }
 .sb-page-product-omniesol .omniesol .tag-row{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:24px}
 .sb-page-product-omniesol #soft-bank-renewal .omniesol .section>.sec-text.sb-feature-copy .tag-row{justify-content:flex-start;text-align:left}
-.sb-page-product-omniesol .omniesol .tag{font-size:12px;background:#f4f4f5;color:#858a91;padding:5px 12px;border-radius:3px}
+.sb-page-product-omniesol .omniesol .tag{font-size:14px;background:#2874ed;color:#fff;padding:5px 12px;border-radius:3px}
 .sb-page-product-omniesol .omniesol .mod-title{text-align:center;margin:100px 0 35px}
 .sb-page-product-omniesol .omniesol .mod-title h3{margin:8px 0 18px;font-size:30px}
 .sb-page-product-omniesol .omniesol .mod-title p{font-size:14px;color:#7b818a}
@@ -490,3 +490,14 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
  .sb-figma-product #soft-bank-renewal .sb-zigzag-feature .sb-feature-visual .sb-frontal-monitor{width:min(100%,calc(var(--sb-screen-ratio,1.6) * var(--sb-flat-screen-height) + 12px))}
  .sb-figma-product #soft-bank-renewal .sb-zigzag-feature>.omni-dual-visual{grid-template-columns:1fr}
 }
+
+/* Screen-only previews: enlarge by 20% within the available responsive column. */
+.sb-figma-product #soft-bank-renewal .sb-content .sb-unframed-screen{display:block;width:100%;max-width:1209.6px;margin:24px auto;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;transform:none}
+.sb-figma-product #soft-bank-renewal .sb-zigzag-feature .sb-feature-visual .sb-unframed-screen{width:min(100%,calc((var(--sb-preview-ratio,1.6) * var(--sb-preview-height,516px) + var(--sb-preview-padding,0px)) * 1.2));max-width:100%;margin:0 auto}
+.sb-unframed-screen>.sb-screen-zoom{display:block;width:100%}
+.sb-figma-product #soft-bank-renewal .sb-content img.sb-flat-screen{display:block;width:100%!important;height:auto!important;max-height:none!important;object-fit:contain;margin:0!important;border:0!important;border-radius:0!important;filter:none;transform:none!important;animation:none!important}
+.sb-screen-window{position:relative;display:block;width:100%;overflow:hidden;background:#fff;isolation:isolate}
+.sb-screen-window img.sb-screen-pixels{position:absolute!important;display:block;max-width:none!important;max-height:none!important;object-fit:fill!important;transform:none!important;margin:0!important;border:0!important;border-radius:0!important}
+.sb-image-dialog>img[hidden],.sb-image-dialog>.sb-image-crop[hidden]{display:none!important}
+.sb-image-crop{width:min(calc(96vw - 36px),calc((94dvh - 110px) * var(--sb-crop-ratio)));margin:auto}
+@media(max-width:760px){.sb-figma-product #soft-bank-renewal .sb-zigzag-feature .sb-feature-visual .sb-unframed-screen{--sb-preview-height:408px;--sb-preview-padding:0px;width:100%}}

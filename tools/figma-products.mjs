@@ -10,6 +10,7 @@ import {applyFrontalScreens} from './frontal-screens.mjs';
 import {applyProductScreenLayout, applyProductMockupRatios} from './product-screen-layout.mjs';
 import {applyAmaranthImageCorrections} from './amaranth-image-corrections.mjs';
 import {applyOfficialProductImageCorrections} from './official-product-image-corrections.mjs';
+import {applyUnframedProductScreens} from './unframed-product-screens.mjs';
 
 const assets=JSON.parse(await fs.readFile('assets/subpages/figma/manifest.json','utf8'));
 const file=(family,n)=>assets[family]?.[n-1]?.file;
@@ -213,6 +214,7 @@ export function applyProductDesign($,page,root){
  applyAmaranthImageCorrections($,page,root);
  applyOfficialProductImageCorrections($,page,root);
  applyProductMockupRatios($);
- const css=$('<link rel="stylesheet">').attr('href',root+'renewal/products-figma.css?v=20261002-2');$('head').append(css);
- $('head').append($('<script defer></script>').attr('src',root+'renewal/products-figma.js?v=20261001-1'));
+ applyUnframedProductScreens($,root);
+ const css=$('<link rel="stylesheet">').attr('href',root+'renewal/products-figma.css?v=20261007-1');$('head').append(css);
+ $('head').append($('<script defer></script>').attr('src',root+'renewal/products-figma.js?v=20261007-1'));
 }

@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import {load} from 'cheerio';
+import {applyUnframedProductScreens} from './unframed-product-screens.mjs';
 async function writePage(path,content){
  for(let attempt=0;;attempt++){
   try{return await fs.writeFile(path,content);}catch(error){
@@ -52,6 +53,7 @@ $('main').attr('class','sb-content ifrs-content').html(`
 <section class="ifrs-ready"><span class="ifrs-eyebrow">GET READY</span><h2>2027년 적용을 향한 준비</h2><div class="ifrs-timeline"><article><span>2024.04</span><h3>IFRS18 발표</h3><p>국제회계기준위원회가 새로운 표시·공시 기준을 발표했습니다.</p></article><article><span>전환 준비</span><h3>비교 자료 정비</h3><p>적용 시점에 앞서 재무제표 양식과 비교기간의 계정 분류를 점검하세요.</p></article><article><span>2027.01.01~</span><h3>시행</h3><p>IFRS18은 해당 날짜 이후 시작하는 연차 보고기간부터 적용되며 조기 적용이 허용됩니다.</p></article></div><a class="ifrs-source" href="https://www.ifrs.org/issued-standards/list-of-standards/ifrs-18-presentation-and-disclosure-in-financial-statements/">IFRS Foundation 공식 기준 안내 ↗</a></section>
 <section id="ifrs-resources" class="ifrs-resources"><span class="ifrs-eyebrow">RESOURCES</span><h2>더 자세한 내용이 궁금하다면</h2><p>서비스 소개와 실제 설정 방법을 확인하세요.</p><div class="ifrs-downloads"><a href="../../assets/documents/ifrs18-intro.pdf" download><span>서비스 소개서</span><strong>Amaranth 10 IFRS18</strong><span>PDF 다운로드 ↓</span></a><a href="../../assets/documents/ifrs18-manual.pdf" download><span>사용자 매뉴얼</span><strong>K-IFRS18 대응 가이드</strong><span>PDF 다운로드 ↓</span></a></div></section>
 <section class="ifrs-contact"><h2>IFRS18 전환,<br>Amaranth 10과 함께 준비하세요</h2><p>우리 회사에 맞는 도입 범위와 준비 과정을 안내해 드립니다.</p><a class="cta dark" href="../purchase/inquiry.html">도입 상담 신청</a></section>`);
+applyUnframedProductScreens($,'../../');
 await writePage('subpages/product/ifrs18.html',$.html());
 const catalog=load(await fs.readFile('subpages/index.html','utf8'));
 catalog('.sb-catalog section').filter((i,e)=>catalog(e).find('h2').text().includes('제품')).first().children('div').append('<a href="product/ifrs18.html"><span>IFRS18</span><small>Amaranth 10 IFRS18</small><b>↗</b></a>');
