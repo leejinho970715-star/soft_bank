@@ -1,0 +1,11 @@
+{
+  "file": "assets/subpages/regenerated/ui-021-amaranth-v2.png",
+  "source": "assets/subpages/regenerated/ui-021.png",
+  "generated": true,
+  "generationTool": "built-in imagegen",
+  "editPrompt": "Use case: text-localization. Edit target: attached ui-021.png enterprise video meeting image. Change ONLY the brand area in the desktop software's top-left BLUE title bar. Replace the white four-square icon and Korean text '다우오피스' with the exact Latin brand text 'Amaranth 10', typeset sharply in white at the same visual size, aligned on the same baseline. Preserve the adjacent meeting duration badge '회의 참여시간 35분 14초/60분'. Preserve ALL other pixels/composition, monitor and phone shapes, faces/identities, participant list, thumbnail tiles, UI controls, colors and Korean labels. Do not change faces, zoom, crop, move anything, invent other text or add logos. Keep the original landscape aspect ratio and return highest quality high-resolution PNG with original transparent alpha outside devices. No watermark, no black or white opaque outside background. The only intentional edit is removing the incorrect '다우오피스' branding and placing 'Amaranth 10' clearly.",
+  "created": "2026-10-07",
+  "width": 1536,
+  "height": 1024,
+  "kind": "devices"
+}
