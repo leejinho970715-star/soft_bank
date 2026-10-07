@@ -501,3 +501,8 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
 .sb-image-dialog>img[hidden],.sb-image-dialog>.sb-image-crop[hidden]{display:none!important}
 .sb-image-crop{width:min(calc(96vw - 36px),calc((94dvh - 110px) * var(--sb-crop-ratio)));margin:auto}
 @media(max-width:760px){.sb-figma-product #soft-bank-renewal .sb-zigzag-feature .sb-feature-visual .sb-unframed-screen{--sb-preview-height:408px;--sb-preview-padding:0px;width:100%}}
+
+/* Two authentic screens for the combined fax/SMS feature; each opens independently. */
+.sb-figma-product #soft-bank-renewal .sb-content .sb-native-screen-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:start}
+.sb-native-screen-label{display:block;margin-top:8px;color:#58677b;font-size:14px;text-align:left}
+@media(max-width:760px){.sb-figma-product #soft-bank-renewal .sb-content .sb-native-screen-pair{grid-template-columns:minmax(0,1fr)}}

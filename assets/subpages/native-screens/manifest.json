@@ -1,0 +1,1165 @@
+{
+  "date": "2026-10-07",
+  "assets": {
+    "sms": {
+      "file": "assets/subpages/native-screens/sms.png",
+      "width": 1041,
+      "height": 669,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 71,
+      "originalFile": "pdf-originals/catalog-10-p71-1.jpg",
+      "originalSize": [
+        1041,
+        669
+      ],
+      "crop": null,
+      "sha256": "0eb725b6b51bcb781841c27d3dd1a7343f41d752bebb26fe5fb582fc8038a55c",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-004": {
+      "file": "assets/subpages/native-screens/wehago-flexible-work.png",
+      "width": 746,
+      "height": 500,
+      "sourceUrl": "https://www.idouzone.com/images/sub/swipe-img11.jpg",
+      "sourcePageUrl": "https://www.idouzone.com/product/pservice01_2.php",
+      "pdfPage": null,
+      "originalFile": "originals/www-idouzone-com-07692609-swipe-img11.jpg",
+      "originalSize": [
+        746,
+        500
+      ],
+      "crop": null,
+      "sha256": "785ad38d3ff82c136dfef1b7159d3156c3ffea07826a167fb08b9f238558ab90",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-010": {
+      "file": "assets/subpages/native-screens/wehago-e-tax.png",
+      "width": 746,
+      "height": 500,
+      "sourceUrl": "https://www.idouzone.com/images/sub/swipe-img7.jpg",
+      "sourcePageUrl": "https://www.idouzone.com/product/pservice01.php",
+      "pdfPage": null,
+      "originalFile": "originals/www-idouzone-com-5be528c4-swipe-img7.jpg",
+      "originalSize": [
+        746,
+        500
+      ],
+      "crop": null,
+      "sha256": "f9c41a525dffb5307865fa9f26a407d35b4276ef109e7a7c162ebdcc4793b131",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-041": {
+      "file": "assets/subpages/native-screens/automatic-journals.png",
+      "width": 1042,
+      "height": 671,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 90,
+      "originalFile": "pdf-originals/catalog-10-p90-1.png",
+      "originalSize": [
+        1042,
+        671
+      ],
+      "crop": null,
+      "sha256": "3b1abd429d4267930501f982e017b64d4f8b1a7f8358eb4420aa08aec6cef990",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-043": {
+      "file": "assets/subpages/native-screens/attendance.png",
+      "width": 1039,
+      "height": 669,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 80,
+      "originalFile": "pdf-originals/catalog-10-p80-1.jpg",
+      "originalSize": [
+        1039,
+        669
+      ],
+      "crop": null,
+      "sha256": "17a19eeb84495345369fcdaade1589c71694308067ea84681ed005475344b55a",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-046": {
+      "file": "assets/subpages/native-screens/calendar.png",
+      "width": 1156,
+      "height": 752,
+      "sourceUrl": "https://douzone.it/uploaded/board/bocatalog/_c664bb6202ab6f44a3c9085c68a7e9391.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 12,
+      "originalFile": "pdf-originals/catalog-4-p12-10.jp2",
+      "originalSize": [
+        1156,
+        752
+      ],
+      "crop": null,
+      "sha256": "af76e2be99c16484cdaf1ee8c98993e4d32cbe7e2ce1a128506f76a6d72d121d",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-048": {
+      "file": "assets/subpages/native-screens/portal.png",
+      "width": 1280,
+      "height": 840,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 45,
+      "originalFile": "pdf-originals/catalog-10-p45-1.jpg",
+      "originalSize": [
+        1280,
+        840
+      ],
+      "crop": null,
+      "sha256": "e394b7bfc59770394420db6242b458c1428b7e5059984180fedc4cdbac78d378",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-050": {
+      "file": "assets/subpages/native-screens/search.png",
+      "width": 1037,
+      "height": 669,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 46,
+      "originalFile": "pdf-originals/catalog-10-p46-1.jpg",
+      "originalSize": [
+        1037,
+        669
+      ],
+      "crop": null,
+      "sha256": "3dd2681e5e9f15d01368b9fa4a4322671ccbf40b95c31fc56b1bab1b083a887f",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-052": {
+      "file": "assets/subpages/native-screens/approval.png",
+      "width": 1314,
+      "height": 861,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 50,
+      "originalFile": "pdf-originals/catalog-10-p50-1.jpg",
+      "originalSize": [
+        1314,
+        861
+      ],
+      "crop": null,
+      "sha256": "3e6dd43d48c9bd487fbba0758134afc0b263ef10af3a4ad59919adb802156fab",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-054": {
+      "file": "assets/subpages/native-screens/mail.png",
+      "width": 1041,
+      "height": 670,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 62,
+      "originalFile": "pdf-originals/catalog-10-p62-1.jpg",
+      "originalSize": [
+        1041,
+        670
+      ],
+      "crop": null,
+      "sha256": "0b9c29e3bc49d3a097cc926b128f26b3674a1d51ee85a620b407966b8307a3bb",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-056": {
+      "file": "assets/subpages/native-screens/bulletin.png",
+      "width": 1037,
+      "height": 669,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 64,
+      "originalFile": "pdf-originals/catalog-10-p64-1.jpg",
+      "originalSize": [
+        1037,
+        669
+      ],
+      "crop": null,
+      "sha256": "664e18ec36c063aa23b85915f43b1f82ef3348ebea6d0467b6e88667e1650cac",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-058": {
+      "file": "assets/subpages/native-screens/kiss.png",
+      "width": 1042,
+      "height": 668,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 67,
+      "originalFile": "pdf-originals/catalog-10-p67-1.png",
+      "originalSize": [
+        1042,
+        668
+      ],
+      "crop": null,
+      "sha256": "2ed20859ccec9183f1bb64a8f99b70240ce9e76b29f228ed84bf59b1417c4a06",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-060": {
+      "file": "assets/subpages/native-screens/video-meeting.png",
+      "width": 1039,
+      "height": 668,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 69,
+      "originalFile": "pdf-originals/catalog-10-p69-1.jpg",
+      "originalSize": [
+        1039,
+        668
+      ],
+      "crop": null,
+      "sha256": "7893ed46f5cad216a3b3daecf93f46b93734cc03030b5e721163d0e5fb0e4bc9",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-062": {
+      "file": "assets/subpages/native-screens/screen-sharing.png",
+      "width": 660,
+      "height": 415,
+      "sourceUrl": "https://www.idouzone.com/images/sub/solu-img17.png",
+      "sourcePageUrl": "https://www.idouzone.com/product/pservice02_3.php",
+      "pdfPage": null,
+      "originalFile": "originals/www-idouzone-com-7860d49e-solu-img17.png",
+      "originalSize": [
+        700,
+        458
+      ],
+      "crop": [
+        20,
+        22,
+        680,
+        437
+      ],
+      "sha256": "d34c84605178f124fd73f410b1b8b6be60a4811c1dfa29db51015660b94c1fed",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-063": {
+      "file": "assets/subpages/native-screens/messenger.png",
+      "width": 928,
+      "height": 702,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 66,
+      "originalFile": "pdf-originals/catalog-10-p66-1.png",
+      "originalSize": [
+        928,
+        702
+      ],
+      "crop": null,
+      "sha256": "22feebd8789d373ccde80dcd83704e8ce847605628b4b93517f533c3a76354e2",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-065": {
+      "file": "assets/subpages/native-screens/fax.png",
+      "width": 1037,
+      "height": 671,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 70,
+      "originalFile": "pdf-originals/catalog-10-p70-1.png",
+      "originalSize": [
+        1037,
+        671
+      ],
+      "crop": null,
+      "sha256": "601721d0d937d3e3b4237fdb192fcb5d8bb0df870ec3ed6650f30d80c2e7c11f",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-067": {
+      "file": "assets/subpages/native-screens/keep.png",
+      "width": 660,
+      "height": 415,
+      "sourceUrl": "https://www.idouzone.com/images/sub/solu-img20.png",
+      "sourcePageUrl": "https://www.idouzone.com/product/pservice02_3.php",
+      "pdfPage": null,
+      "originalFile": "originals/www-idouzone-com-cf9fe9d8-solu-img20.png",
+      "originalSize": [
+        700,
+        459
+      ],
+      "crop": [
+        20,
+        22,
+        680,
+        437
+      ],
+      "sha256": "e014c5340e3c72893afcf5d0848b2fdd22f844730e0575221a7c1a76c8895ed5",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-068": {
+      "file": "assets/subpages/native-screens/journals.png",
+      "width": 1039,
+      "height": 668,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 91,
+      "originalFile": "pdf-originals/catalog-10-p91-1.png",
+      "originalSize": [
+        1039,
+        668
+      ],
+      "crop": null,
+      "sha256": "805b71d5efcab576878bb591a942a0fff14b6fb61e714856db023bacf642f1c4",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-070": {
+      "file": "assets/subpages/native-screens/closing-statements.png",
+      "width": 1039,
+      "height": 668,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 94,
+      "originalFile": "pdf-originals/catalog-10-p94-1.png",
+      "originalSize": [
+        1039,
+        668
+      ],
+      "crop": null,
+      "sha256": "60812d6046ff4fccce20f4c25d641a16067cfe50b9a8c3f3b88876bf4220865a",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-072": {
+      "file": "assets/subpages/native-screens/custom-statements.png",
+      "width": 1039,
+      "height": 669,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 97,
+      "originalFile": "pdf-originals/catalog-10-p97-1.jpg",
+      "originalSize": [
+        1039,
+        669
+      ],
+      "crop": null,
+      "sha256": "fedadeb6365ea387a24361666cb260af5331fb0223f6f62ec1798dacd8e4d84f",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-074": {
+      "file": "assets/subpages/native-screens/fixed-assets.png",
+      "width": 1039,
+      "height": 669,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 99,
+      "originalFile": "pdf-originals/catalog-10-p99-1.png",
+      "originalSize": [
+        1039,
+        669
+      ],
+      "crop": null,
+      "sha256": "cff0206c51928e0c5e264baa6b3d6d9845c44ed76a41eaa489bcf19a066b655a",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-076": {
+      "file": "assets/subpages/native-screens/funds.png",
+      "width": 1039,
+      "height": 668,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 93,
+      "originalFile": "pdf-originals/catalog-10-p93-1.png",
+      "originalSize": [
+        1039,
+        668
+      ],
+      "crop": null,
+      "sha256": "c7f6de4aca956c1370c2505d4da403c8fd8e3615e6b3e87712b4f3b32ea2a3dc",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-078": {
+      "file": "assets/subpages/native-screens/financial-services.png",
+      "width": 660,
+      "height": 415,
+      "sourceUrl": "https://www.idouzone.com/images/sub/solu-img27.png",
+      "sourcePageUrl": "https://www.idouzone.com/product/pservice02_4.php",
+      "pdfPage": null,
+      "originalFile": "originals/www-idouzone-com-f10c1697-solu-img27.png",
+      "originalSize": [
+        700,
+        459
+      ],
+      "crop": [
+        20,
+        22,
+        680,
+        437
+      ],
+      "sha256": "4a777ec1709a15a5f25f23138dfba8f2cfbdb3c786fd6bf9ec1ffe456440a84b",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-079": {
+      "file": "assets/subpages/native-screens/tax-filing.png",
+      "width": 1038,
+      "height": 669,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 98,
+      "originalFile": "pdf-originals/catalog-10-p98-1.png",
+      "originalSize": [
+        1038,
+        669
+      ],
+      "crop": null,
+      "sha256": "3e50753796178c84813b020dfad7c743d5702c7981c8e928d5c9209103fa543f",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-081": {
+      "file": "assets/subpages/native-screens/budget.png",
+      "width": 660,
+      "height": 415,
+      "sourceUrl": "https://www.idouzone.com/images/sub/solu-img29.png",
+      "sourcePageUrl": "https://www.idouzone.com/product/pservice02_4.php",
+      "pdfPage": null,
+      "originalFile": "originals/www-idouzone-com-dfc11e7b-solu-img29.png",
+      "originalSize": [
+        700,
+        459
+      ],
+      "crop": [
+        20,
+        22,
+        680,
+        437
+      ],
+      "sha256": "9bfff699cb2b8779936ad4f915f5269a8396da5a5c1c2536f9be65d5f54b6ff7",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-082": {
+      "file": "assets/subpages/native-screens/hr.png",
+      "width": 1035,
+      "height": 672,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 111,
+      "originalFile": "pdf-originals/catalog-10-p111-1.png",
+      "originalSize": [
+        1035,
+        672
+      ],
+      "crop": null,
+      "sha256": "a820c28e0be9a3bcf348030f3e0ffa909c379cba94806c642dfc2031c336db93",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-084": {
+      "file": "assets/subpages/native-screens/annual-leave.png",
+      "width": 1039,
+      "height": 653,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 79,
+      "originalFile": "pdf-originals/catalog-10-p79-1.png",
+      "originalSize": [
+        1039,
+        653
+      ],
+      "crop": null,
+      "sha256": "96d7777e794bb69cd03ae4e1c99b45d7cd81c925306e7101a030daa0c0ffc87a",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-086": {
+      "file": "assets/subpages/native-screens/payroll.png",
+      "width": 1032,
+      "height": 673,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 120,
+      "originalFile": "pdf-originals/catalog-10-p120-1.png",
+      "originalSize": [
+        1032,
+        673
+      ],
+      "crop": null,
+      "sha256": "28b91c6246df070510d10e198e1ed766b26ef06e74343d3786bc67bd95730d21",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-088": {
+      "file": "assets/subpages/native-screens/hr-tax.png",
+      "width": 1042,
+      "height": 668,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 115,
+      "originalFile": "pdf-originals/catalog-10-p115-1.png",
+      "originalSize": [
+        1042,
+        668
+      ],
+      "crop": null,
+      "sha256": "46e22b156e3cfab35a08a76e07efb4d16b648ed8715d2e61f46d46cc740ca1d7",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-093": {
+      "file": "assets/subpages/native-screens/credit.png",
+      "width": 1172,
+      "height": 739,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 135,
+      "originalFile": "pdf-originals/catalog-10-p135-1.png",
+      "originalSize": [
+        1172,
+        739
+      ],
+      "crop": null,
+      "sha256": "8680ed6c3d3277aaafdea52a2ee46a09ba397ad79f5194544552bd296178a6d7",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-095": {
+      "file": "assets/subpages/native-screens/bom.png",
+      "width": 1044,
+      "height": 666,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 140,
+      "originalFile": "pdf-originals/catalog-10-p140-1.png",
+      "originalSize": [
+        1044,
+        666
+      ],
+      "crop": null,
+      "sha256": "59146a190f50d82f86a4a37b2c7ec4a7eca85b8c2468c69a5994410c25d34936",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-097": {
+      "file": "assets/subpages/native-screens/cost-elements.png",
+      "width": 1046,
+      "height": 654,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 147,
+      "originalFile": "pdf-originals/catalog-10-p147-1.png",
+      "originalSize": [
+        1046,
+        654
+      ],
+      "crop": null,
+      "sha256": "e7c33d13f916af525450a698606746471b6facf7d9a8689617ba12303607eff6",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-099": {
+      "file": "assets/subpages/native-screens/inventory-valuation.png",
+      "width": 1223,
+      "height": 786,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 136,
+      "originalFile": "pdf-originals/catalog-10-p136-1.png",
+      "originalSize": [
+        1223,
+        786
+      ],
+      "crop": null,
+      "sha256": "f474dd5d27f4c115994b4fcc4b1370124e15e27062b7dfa4f8bbcd1d54da268f",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-101": {
+      "file": "assets/subpages/native-screens/process.png",
+      "width": 1035,
+      "height": 658,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 139,
+      "originalFile": "pdf-originals/catalog-10-p139-1.jpg",
+      "originalSize": [
+        1035,
+        658
+      ],
+      "crop": null,
+      "sha256": "bea6c952b83f1bd8a151a4fcc0e753603b192f7b7abdd2525391b4639788c0b1",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-103": {
+      "file": "assets/subpages/native-screens/mps.png",
+      "width": 1037,
+      "height": 659,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 141,
+      "originalFile": "pdf-originals/catalog-10-p141-1.jpg",
+      "originalSize": [
+        1037,
+        659
+      ],
+      "crop": null,
+      "sha256": "d2adaa49910228c0ade38cf0ab3a8c7a2ea8e69a79bd6ff124c18119af8d289f",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-105": {
+      "file": "assets/subpages/native-screens/mrp.png",
+      "width": 1166,
+      "height": 737,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 142,
+      "originalFile": "pdf-originals/catalog-10-p142-1.jpg",
+      "originalSize": [
+        1166,
+        737
+      ],
+      "crop": null,
+      "sha256": "590bf3fa8bab22270556ce7d0844b673386b7c06258e06039e3551b73468779b",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-107": {
+      "file": "assets/subpages/native-screens/mobile-logistics.png",
+      "width": 1267,
+      "height": 792,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 149,
+      "originalFile": "pdf-originals/catalog-10-p149-1.jpg",
+      "originalSize": [
+        1267,
+        792
+      ],
+      "crop": null,
+      "sha256": "649f6d086373b6db48bda907d9b092534f5bce4b79195c40379c8815e7a1dac3",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    },
+    "source-109": {
+      "file": "assets/subpages/native-screens/domestic-overseas-sales.png",
+      "width": 987,
+      "height": 632,
+      "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
+      "sourcePageUrl": null,
+      "pdfPage": 132,
+      "originalFile": "pdf-originals/catalog-10-p132-1.png",
+      "originalSize": [
+        987,
+        632
+      ],
+      "crop": null,
+      "sha256": "f1bff5b158b9dd6aaeeea0aec67e0b7ddfbc13ea110ab95c383182341f83b6fc",
+      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+    }
+  },
+  "bindings": [
+    {
+      "reviewId": 4,
+      "page": "subpages/product/wehago/smart_A10.html",
+      "tab": "",
+      "label": "유연한 근무환경 제공",
+      "title": "",
+      "asset": "source-004"
+    },
+    {
+      "reviewId": 11,
+      "page": "subpages/product/wehago/smart_A10.html",
+      "tab": "",
+      "label": "전자세금계산서 발행",
+      "title": "",
+      "asset": "source-010"
+    },
+    {
+      "reviewId": 70,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "overview",
+      "label": "회계관리",
+      "title": "자동으로 수집된 기관별 증빙 데이터의 자동 분개",
+      "asset": "source-041"
+    },
+    {
+      "reviewId": 71,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "overview",
+      "label": "인사관리",
+      "title": "관리업무 시간을 줄여주는 효율적인 근태관리",
+      "asset": "source-043"
+    },
+    {
+      "reviewId": 73,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "overview",
+      "label": "그룹웨어",
+      "title": "나만의 똑똑한 AI비서로 통합 일정 공유와 중단 없는 업무 협업",
+      "asset": "source-046"
+    },
+    {
+      "reviewId": 74,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "groupware",
+      "label": "메인포털",
+      "title": "나에게 필요한 정보만 제공하는 맞춤형 메인포털",
+      "asset": "source-048"
+    },
+    {
+      "reviewId": 75,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "groupware",
+      "label": "통합검색",
+      "title": "정보를 찾을 땐 통합검색으로 보기 쉽게, 한 번에.",
+      "asset": "source-050"
+    },
+    {
+      "reviewId": 76,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "groupware",
+      "label": "일정관리",
+      "title": "나만의 똑똑한 AI비서로 통합 일정 공유와 중단 없는 업무 협업",
+      "asset": "source-046"
+    },
+    {
+      "reviewId": 77,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "groupware",
+      "label": "전자결재",
+      "title": "고객사의 유형별로 제공되는 차별화된 결재 프로세스",
+      "asset": "source-052"
+    },
+    {
+      "reviewId": 78,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "groupware",
+      "label": "전자메일",
+      "title": "신속한 정보 교환, 커뮤니케이션의 시작은 전자메일로부터",
+      "asset": "source-054"
+    },
+    {
+      "reviewId": 79,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "groupware",
+      "label": "게시판",
+      "title": "업무 성격에 따라 자유롭게 구성 가능한 맞춤형 게시판",
+      "asset": "source-056"
+    },
+    {
+      "reviewId": 80,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "groupware",
+      "label": "업무관리(KISS)",
+      "title": "모든 업무 현황을 한눈에 조망하는 업무 협업 프로세스 관리",
+      "asset": "source-058"
+    },
+    {
+      "reviewId": 81,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "groupware",
+      "label": "화상회의",
+      "title": "장소불문. 디지털 대면이 가능한 화상회의",
+      "asset": "source-060"
+    },
+    {
+      "reviewId": 82,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "groupware",
+      "label": "화면공유",
+      "title": "자료를 함께 보며 메모하고 대화하는 스마트워크 환경",
+      "asset": "source-062"
+    },
+    {
+      "reviewId": 83,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "groupware",
+      "label": "메신저",
+      "title": "실시간 채팅 및 알람을 통한 신속한 소통과 협업",
+      "asset": "source-063"
+    },
+    {
+      "reviewId": 84,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "groupware",
+      "label": "전자팩스/SMS",
+      "title": "별도의 프로그램 설치 없는 편리한 전자팩스와 SMS",
+      "asset": "source-065",
+      "secondaryAsset": "sms"
+    },
+    {
+      "reviewId": 85,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "groupware",
+      "label": "KEEP",
+      "title": "업무 중 필요한 자료는 나만의 공간에 보관하고 언제든지 공유하고",
+      "asset": "source-067"
+    },
+    {
+      "reviewId": 86,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "accounting",
+      "label": "자동전표처리",
+      "title": "자동으로 수집된 기관별 증빙 데이터의 자동 분개",
+      "asset": "source-041"
+    },
+    {
+      "reviewId": 87,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "accounting",
+      "label": "전표/장부관리",
+      "title": "체계적인 구조로 원천 데이터까지 추적 가능한 전표관리",
+      "asset": "source-068"
+    },
+    {
+      "reviewId": 88,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "accounting",
+      "label": "결산/재무제표관리",
+      "title": "자동결산 기능과 관리항목별로 작성된 주요 재무제표 지원",
+      "asset": "source-070"
+    },
+    {
+      "reviewId": 89,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "accounting",
+      "label": "사용자정의 재무제표관리",
+      "title": "의료법인, 금융업, 보험업 등 직접 제작하는 다양한 업종별 재무제표",
+      "asset": "source-072"
+    },
+    {
+      "reviewId": 90,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "accounting",
+      "label": "고정자산관리",
+      "title": "유/무형자산 상각비 계산과 결산 지원은 자동으로",
+      "asset": "source-074"
+    },
+    {
+      "reviewId": 91,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "accounting",
+      "label": "자금관리",
+      "title": "한눈에 파악하고 예측하는 기업의 가용자금 흐름과 자금손익",
+      "asset": "source-076"
+    },
+    {
+      "reviewId": 92,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "accounting",
+      "label": "금융서비스 연동",
+      "title": "한 곳에서 일괄 관리할 수 있는 통합 금융자금관리",
+      "asset": "source-078"
+    },
+    {
+      "reviewId": 93,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "accounting",
+      "label": "세무신고자동화",
+      "title": "신고서 작성, 검증에서 전자신고까지 자동화시킨 Amaranth 10",
+      "asset": "source-079"
+    },
+    {
+      "reviewId": 94,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "accounting",
+      "label": "예산관리",
+      "title": "예산과목 기준으로 프로젝트/부서별 예산편성 관리",
+      "asset": "source-081"
+    },
+    {
+      "reviewId": 95,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "hr",
+      "label": "인사관리",
+      "title": "다양한 인사관리 메뉴를 통해 편리하게 인사 자료 관리",
+      "asset": "source-082"
+    },
+    {
+      "reviewId": 96,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "hr",
+      "label": "근태관리",
+      "title": "관리업무 시간을 줄여주는 효율적인 근태관리",
+      "asset": "source-043"
+    },
+    {
+      "reviewId": 97,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "hr",
+      "label": "연차관리",
+      "title": "연차 사용 촉진 업무 시스템화로 업무절차 75% 축소",
+      "asset": "source-084"
+    },
+    {
+      "reviewId": 98,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "hr",
+      "label": "급여관리",
+      "title": "급여계산식 설정을 통한 급여 자동 산출",
+      "asset": "source-086"
+    },
+    {
+      "reviewId": 99,
+      "page": "subpages/product/nonprofit/intro.html",
+      "tab": "hr",
+      "label": "세무관리",
+      "title": "세무 신고의 Best Practice, Amaranth 10 세무관리",
+      "asset": "source-088"
+    },
+    {
+      "reviewId": 107,
+      "page": "subpages/product/amaranth10/overview.html",
+      "tab": "",
+      "label": "자동전표처리",
+      "title": "자동으로 수집된 기관별 증빙 데이터의 자동 분개",
+      "asset": "source-041"
+    },
+    {
+      "reviewId": 108,
+      "page": "subpages/product/amaranth10/overview.html",
+      "tab": "",
+      "label": "전표/장부관리",
+      "title": "체계적인 구조로 원천 데이터까지 추적 가능한 전표관리",
+      "asset": "source-068"
+    },
+    {
+      "reviewId": 109,
+      "page": "subpages/product/amaranth10/overview.html",
+      "tab": "",
+      "label": "결산/재무제표관리",
+      "title": "자동결산 기능과 관리항목별로 작성된 주요 재무제표 지원",
+      "asset": "source-070"
+    },
+    {
+      "reviewId": 110,
+      "page": "subpages/product/amaranth10/overview.html",
+      "tab": "",
+      "label": "사용자정의 재무제표관리",
+      "title": "의료법인, 금융업, 보험업 등 직접 제작하는 다양한 업종별 재무제표",
+      "asset": "source-072"
+    },
+    {
+      "reviewId": 111,
+      "page": "subpages/product/amaranth10/overview.html",
+      "tab": "",
+      "label": "고정자산관리",
+      "title": "유/무형자산 상각비 계산과 결산 지원은 자동으로",
+      "asset": "source-074"
+    },
+    {
+      "reviewId": 112,
+      "page": "subpages/product/amaranth10/overview.html",
+      "tab": "",
+      "label": "자금관리",
+      "title": "한눈에 파악하고 예측하는 기업의 가용자금 흐름과 자금손익",
+      "asset": "source-076"
+    },
+    {
+      "reviewId": 113,
+      "page": "subpages/product/amaranth10/overview.html",
+      "tab": "",
+      "label": "금융서비스 연동",
+      "title": "한 곳에서 일괄 관리할 수 있는 통합 금융자금관리",
+      "asset": "source-078"
+    },
+    {
+      "reviewId": 114,
+      "page": "subpages/product/amaranth10/overview.html",
+      "tab": "",
+      "label": "세무신고자동화",
+      "title": "신고서 작성, 검증에서 전자신고까지 자동화시킨 Amaranth 10",
+      "asset": "source-079"
+    },
+    {
+      "reviewId": 115,
+      "page": "subpages/product/amaranth10/overview.html",
+      "tab": "",
+      "label": "예산관리",
+      "title": "예산과목 기준으로 프로젝트/부서별 예산편성 관리",
+      "asset": "source-081"
+    },
+    {
+      "reviewId": 116,
+      "page": "subpages/product/amaranth10/lm.html",
+      "tab": "",
+      "label": "여신관리",
+      "title": "거래처 미수채권을 반영한 여신한도 경고 및 통제",
+      "asset": "source-093"
+    },
+    {
+      "reviewId": 117,
+      "page": "subpages/product/amaranth10/lm.html",
+      "tab": "",
+      "label": "BOM관리",
+      "title": "사용 목적에 따라 다양한 BOM 메뉴 활용",
+      "asset": "source-095"
+    },
+    {
+      "reviewId": 118,
+      "page": "subpages/product/amaranth10/lm.html",
+      "tab": "",
+      "label": "요소별 원가계산",
+      "title": "원가요소를 관리 기준에 따라 세분화해 산출해 내는 요소별 원가계산",
+      "asset": "source-097"
+    },
+    {
+      "reviewId": 119,
+      "page": "subpages/product/amaranth10/lm.html",
+      "tab": "",
+      "label": "재고평가",
+      "title": "버튼 하나로 간편하게 정확하게. 실시간데이터를 기반으로 재고자산 금액 산출",
+      "asset": "source-099"
+    },
+    {
+      "reviewId": 120,
+      "page": "subpages/product/amaranth10/lm.html",
+      "tab": "",
+      "label": "공정관리",
+      "title": "생산지시를 기반으로 공정별 자재 불출에서 불량관리까지 체계적인 공정관리 실현",
+      "asset": "source-101"
+    },
+    {
+      "reviewId": 121,
+      "page": "subpages/product/amaranth10/lm.html",
+      "tab": "",
+      "label": "주생산계획등록(MPS)",
+      "title": "품목별 옵션 세분화로 구체적인 생산계획 수립이 가능한 주생산계획등록(MPS)",
+      "asset": "source-103"
+    },
+    {
+      "reviewId": 122,
+      "page": "subpages/product/amaranth10/lm.html",
+      "tab": "",
+      "label": "자재소요계획등록(MRP)",
+      "title": "주생산계획등록(MPS) 연동으로 자재소요계획 산출을 쉽고 빠르게",
+      "asset": "source-105"
+    },
+    {
+      "reviewId": 123,
+      "page": "subpages/product/amaranth10/lm.html",
+      "tab": "",
+      "label": "모바일물류관리",
+      "title": "언제 어디서나 디바이스 제약 없이 현장 업무를 처리하는 올인원 모바일물류관리 시스템",
+      "asset": "source-107"
+    },
+    {
+      "reviewId": 124,
+      "page": "subpages/product/amaranth10/lm.html",
+      "tab": "",
+      "label": "국내/외 영업통합관리",
+      "title": "별도로 운영되던 국내 거래와 수출/수입 거래를 통합해 하나의 프로세스로.",
+      "asset": "source-109"
+    },
+    {
+      "reviewId": 125,
+      "page": "subpages/product/amaranth10/hr.html",
+      "tab": "",
+      "label": "인사관리",
+      "title": "다양한 인사관리 메뉴를 통해 편리하게 인사 자료 관리",
+      "asset": "source-082"
+    },
+    {
+      "reviewId": 126,
+      "page": "subpages/product/amaranth10/hr.html",
+      "tab": "",
+      "label": "근태관리",
+      "title": "관리업무 시간을 줄여주는 효율적인 근태관리",
+      "asset": "source-043"
+    },
+    {
+      "reviewId": 127,
+      "page": "subpages/product/amaranth10/hr.html",
+      "tab": "",
+      "label": "연차관리",
+      "title": "연차 사용 촉진 업무 시스템화로 업무절차 75% 축소",
+      "asset": "source-084"
+    },
+    {
+      "reviewId": 128,
+      "page": "subpages/product/amaranth10/hr.html",
+      "tab": "",
+      "label": "급여관리",
+      "title": "급여계산식 설정을 통한 급여 자동 산출",
+      "asset": "source-086"
+    },
+    {
+      "reviewId": 129,
+      "page": "subpages/product/amaranth10/hr.html",
+      "tab": "",
+      "label": "세무관리",
+      "title": "세무 신고의 Best Practice, Amaranth 10 세무관리",
+      "asset": "source-088"
+    },
+    {
+      "reviewId": 130,
+      "page": "subpages/product/amaranth10/brand.html",
+      "tab": "",
+      "label": "메인포털",
+      "title": "나에게 필요한 정보만 제공하는 맞춤형 메인포털",
+      "asset": "source-048"
+    },
+    {
+      "reviewId": 131,
+      "page": "subpages/product/amaranth10/brand.html",
+      "tab": "",
+      "label": "통합검색",
+      "title": "정보를 찾을 땐 통합검색으로 보기 쉽게, 한 번에.",
+      "asset": "source-050"
+    },
+    {
+      "reviewId": 132,
+      "page": "subpages/product/amaranth10/brand.html",
+      "tab": "",
+      "label": "일정관리",
+      "title": "나만의 똑똑한 AI비서로 통합 일정 공유와 중단 없는 업무 협업",
+      "asset": "source-046"
+    },
+    {
+      "reviewId": 133,
+      "page": "subpages/product/amaranth10/brand.html",
+      "tab": "",
+      "label": "전자결재",
+      "title": "고객사의 유형별로 제공되는 차별화된 결재 프로세스",
+      "asset": "source-052"
+    },
+    {
+      "reviewId": 134,
+      "page": "subpages/product/amaranth10/brand.html",
+      "tab": "",
+      "label": "전자메일",
+      "title": "신속한 정보 교환, 커뮤니케이션의 시작은 전자메일로부터",
+      "asset": "source-054"
+    },
+    {
+      "reviewId": 135,
+      "page": "subpages/product/amaranth10/brand.html",
+      "tab": "",
+      "label": "게시판",
+      "title": "업무 성격에 따라 자유롭게 구성 가능한 맞춤형 게시판",
+      "asset": "source-056"
+    },
+    {
+      "reviewId": 136,
+      "page": "subpages/product/amaranth10/brand.html",
+      "tab": "",
+      "label": "업무관리(KISS)",
+      "title": "모든 업무 현황을 한눈에 조망하는 업무 협업 프로세스 관리",
+      "asset": "source-058"
+    },
+    {
+      "reviewId": 137,
+      "page": "subpages/product/amaranth10/brand.html",
+      "tab": "",
+      "label": "화상회의",
+      "title": "장소불문. 디지털 대면이 가능한 화상회의",
+      "asset": "source-060"
+    },
+    {
+      "reviewId": 138,
+      "page": "subpages/product/amaranth10/brand.html",
+      "tab": "",
+      "label": "화면공유",
+      "title": "자료를 함께 보며 메모하고 대화하는 스마트워크 환경",
+      "asset": "source-062"
+    },
+    {
+      "reviewId": 139,
+      "page": "subpages/product/amaranth10/brand.html",
+      "tab": "",
+      "label": "메신저",
+      "title": "실시간 채팅 및 알람을 통한 신속한 소통과 협업",
+      "asset": "source-063"
+    },
+    {
+      "reviewId": 140,
+      "page": "subpages/product/amaranth10/brand.html",
+      "tab": "",
+      "label": "전자팩스/SMS",
+      "title": "별도의 프로그램 설치 없는 편리한 전자팩스와 SMS",
+      "asset": "source-065",
+      "secondaryAsset": "sms"
+    },
+    {
+      "reviewId": 141,
+      "page": "subpages/product/amaranth10/brand.html",
+      "tab": "",
+      "label": "KEEP",
+      "title": "업무 중 필요한 자료는 나만의 공간에 보관하고 언제든지 공유하고",
+      "asset": "source-067"
+    }
+  ]
+}

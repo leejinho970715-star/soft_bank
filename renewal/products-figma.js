@@ -61,6 +61,16 @@ document.addEventListener('DOMContentLoaded',()=>{
    const button=document.createElement('button');button.type='button';button.className='sb-screen-view';button.textContent='화면 크게보기';button.setAttribute('aria-haspopup','dialog');button.setAttribute('aria-label',(img.alt||'제품 이미지')+' 화면 크게보기');
    button.addEventListener('click',()=>open(img,button));
    const actions=document.createElement('div');actions.className='sb-screen-actions';
+   const pair=img.closest('.sb-native-screen-pair');
+   if(pair){
+    const copy=pair.closest('.sb-zigzag-feature')?.querySelector('.sb-feature-copy');
+    if(copy){
+     let group=copy.querySelector('.sb-native-pair-actions');
+     if(!group){group=document.createElement('div');group.className='sb-screen-actions sb-native-pair-actions';copy.append(group);}
+     button.textContent=(img.closest('a')?.querySelector('.sb-native-screen-label')?.textContent||'')+' 화면 크게보기';
+     group.append(button);return;
+    }
+   }
    let container=img.parentElement,video=null;
    while(container&&!container.matches('.sb-content')){
     const candidate=[...container.querySelectorAll('a')].find(a=>a.textContent.trim()==='영상으로 확인하기'||(document.body.matches('.sb-page-product-wehago-smart_a10,.sb-page-product-wehago-cooperation,.sb-page-product-wehago-extraservice,.sb-page-product-wehago-linkedservice')&&/^리플[릿렛]\s*자세히\s*보기$/.test(a.textContent.trim())));
