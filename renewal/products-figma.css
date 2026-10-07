@@ -211,7 +211,7 @@
 .sb-figma-product .video__wrap>li{list-style:none;border:1px solid #e0e8f5;border-radius:16px;overflow:hidden;background:#fff}
 .sb-figma-product .video__wrap>li>a{display:block;position:relative}
 .sb-figma-product .video__wrap>li>a:after{content:'▶';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:#315ddbde;color:#fff}
-.sb-figma-product .video__wrap img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}
+.sb-figma-product .video__wrap img{width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;display:block}
 .sb-figma-product .video__wrap>li>b{display:block;padding:20px;font-size:16px;line-height:1.6}
 @media(max-width:760px){.sb-figma-product .video__wrap{grid-template-columns:1fr}.sb-figma-product .sb-wehago-connected{padding:45px 0}.sb-figma-product .sb-wehago-connected h2{font-size:22px}}
 .sb-page-product-oneai #cases>.grid>div>span{font-weight:700}

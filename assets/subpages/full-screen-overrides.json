@@ -1,0 +1,577 @@
+{
+  "version": "20261007-2",
+  "tool": "Built-in image_gen.imagegen for flat UI edits; original pixel CSS extraction for native UI",
+  "prompts": {
+    "prompt-1": "Use case: precise-object-edit. Convert the supplied product reference into a FULL FLAT DESKTOP SOFTWARE SCREENSHOT. Remove all physical monitor/laptop/tablet bezel, chin, stand and every physical smartphone. Keep the ENTIRE original desktop application UI from LEFT EDGE TO RIGHT EDGE: full brand/header, navigation sidebars, every table/chart column, labels, buttons and control icons must be present, with no words or content clipped. Preserve the original software module, branding, layout, colors, readable Korean text/numbers, logos and photo identities. Restore only UI hidden beneath the removed devices by continuing the existing panels or grid, never inventing unrelated modules or fake labels. Keep meaningful floating software dialogs/info cards fully visible inside the resulting image, with no clipped sides, and remove only presentation hardware. Render a single front-facing OPAQUE rectangular software screenshot edge-to-edge at the desktop UI's original aspect ratio, highest available resolution, high-quality PNG with sharp Korean glyphs. No black/white outside canvas, transparency holes, cutout photo backgrounds, perspective, hardware, phones, device-shaped corners, ground shadows, marketing headings, watermark or gibberish. Do not add words from a descriptive caption; keep only the text already present in the source.",
+    "prompt-2": "Use case: precise-object-edit. Turn this reference into a FULL FLAT DESKTOP SOFTWARE SCREENSHOT, removing all physical monitor bezel, chin, stand and the overlapping smartphone. Retain the ENTIRE desktop application from its ORIGINAL LEFT EDGE TO RIGHT EDGE, including the whole header/brand, complete navigation sidebar, all buttons, all chart/table columns and labels. No cut-off words or controls. Restore only the small desktop UI area hidden by the removed phone by continuing the source UI grid/panel; do not invent a different module or fake labels. Preserve software layout, branding (WEHAGO/T edge as shown), all readable original Korean words and numbers, chart colors, logos, and fonts. Do not rename the product, add a marketing headline or omit sidebars. Keep floating SOFTWARE dialogs/info cards if any fully visible within the output. No hardware, phone, tablet, bezel, shadows or perspective. Render an OPAQUE clean rectangular desktop screenshot edge to edge, original desktop aspect ratio, highest resolution high-quality PNG, crisp text. No transparency holes, no cutout people, no clipped edges or outside background. Edit only presentation hardware; preserve UI meaning and visible text.",
+    "prompt-3": "Use case: precise-object-edit. Convert the attached image to a FULL FLAT DESKTOP SOFTWARE SCREENSHOT for the Amaranth 10 video meeting UI. The ENTIRE rectangular software screenshot must be opaque including the complete office photo background on the left. Absolutely NO transparent holes or cutout subject, NO device frame, bezel, stand, smartphone, shadows or perspective. Remove only hardware and overlapping phone, restoring the lower-right blank pale-blue participant panel and bottom plus button beneath it. Preserve the whole UI from left to right, all control icons, names, text, title bar and four full thumbnails. No clipping any edge. Preserve original faces and all visible software pixels and readable Korean lettering. Top-left exact brand 'Amaranth 10', meeting badge '회의 참여시간 35분 14초/60분'. Keep the original desktop screenshot aspect ratio about 1174:724. High quality high resolution PNG. Fill the image edge to edge with the UI, no outside margin. Only reconstruct what the removed phone obscured; do not invent new labels or people."
+  },
+  "entries": {
+    "assets/subpages/regenerated/ui-051.png": {
+      "file": "assets/subpages/flat-screens/ui-051-full.png",
+      "crop": null,
+      "size": [
+        1536,
+        1024
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "자동 회계 처리 기능 제품 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/official-corrected/sources/security.png": {
+      "file": "assets/subpages/flat-screens/security-full.png",
+      "crop": null,
+      "size": [
+        1649,
+        954
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "회사의 중요한 정보자산을 보호 — 사용자 활동기록·보안 설정 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/official-corrected/sources/smart-a10-modules.png": {
+      "file": "assets/subpages/official-corrected/sources/smart-a10-modules.png",
+      "crop": null,
+      "size": [
+        830,
+        480
+      ],
+      "strategy": "full-native-ui",
+      "alt": "스마트한 Online 경영관리 — Smart A10 통합 업무 모듈 화면"
+    },
+    "assets/subpages/regenerated/ui-076.png": {
+      "file": "assets/subpages/flat-screens/ui-076-full.png",
+      "crop": null,
+      "size": [
+        1514,
+        1039
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "유연한 근무환경 제공 제품 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-077-proofread.png": {
+      "file": "assets/subpages/flat-screens/ui-077-proofread-full.png",
+      "crop": null,
+      "size": [
+        1488,
+        1057
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "자동 회계 처리 기능 제품 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-078-proofread.png": {
+      "file": "assets/subpages/flat-screens/ui-078-proofread-full.png",
+      "crop": null,
+      "size": [
+        1495,
+        1052
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "초보자에겐 쉽고, 전문가에겐 편리한 입력 기능 제품 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-079.png": {
+      "file": "assets/subpages/flat-screens/ui-079-full.png",
+      "crop": null,
+      "size": [
+        1488,
+        1057
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "원스톱 물류흐름분석 제품 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-080.png": {
+      "file": "assets/subpages/flat-screens/ui-080-full.png",
+      "crop": null,
+      "size": [
+        1619,
+        971
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "올인원으로 관리 가능한 인사관리 솔루션 제품 화면",
+      "promptId": "prompt-2"
+    },
+    "assets/subpages/official-corrected/sources/corporate-tax.png": {
+      "file": "assets/subpages/flat-screens/corporate-tax-full.png",
+      "crop": null,
+      "size": [
+        1649,
+        954
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "법인 유형별로 맞춤 법인세 신고관리 — 법인세과세표준 및 세액신고서 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/official-corrected/sources/income-tax.png": {
+      "file": "assets/subpages/flat-screens/income-tax-full.png",
+      "crop": null,
+      "size": [
+        1650,
+        953
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "소득자별 맞춤형 종합소득세 신고관리 — 소득자별 조정검토 / 소득금액조정 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-083.png": {
+      "file": "assets/subpages/flat-screens/ui-083-full.png",
+      "crop": null,
+      "size": [
+        1505,
+        1045
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "전자세금계산서 발행 제품 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/official-corrected/sources/business-status.png": {
+      "file": "assets/subpages/flat-screens/business-status-full.png",
+      "crop": null,
+      "size": [
+        1553,
+        1013
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "경영현황 — T edge 경영현황 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-071.png": {
+      "file": "assets/subpages/flat-screens/ui-071-full.png",
+      "crop": null,
+      "size": [
+        1581,
+        995
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "통장입·출금 현황 첨부 화면 서비스 화면",
+      "promptId": "prompt-2"
+    },
+    "assets/subpages/regenerated/ui-072.png": {
+      "file": "assets/subpages/flat-screens/ui-072-full.png",
+      "crop": null,
+      "size": [
+        1536,
+        1024
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "매출·매입 현황 첨부 화면 서비스 화면",
+      "promptId": "prompt-2"
+    },
+    "assets/subpages/official-corrected/sources/tax-status.png": {
+      "file": "assets/subpages/flat-screens/tax-status-full.png",
+      "crop": null,
+      "size": [
+        1552,
+        1013
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "신고/납부현황 — T edge 신고·납부 내역 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/official-corrected/sources/billing.png": {
+      "file": "assets/subpages/flat-screens/billing-full.png",
+      "crop": null,
+      "size": [
+        1553,
+        1013
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "청구서 조회 및 납부 — T edge 청구내역·납부 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-052.png": {
+      "file": "assets/subpages/flat-screens/ui-052-full.png",
+      "crop": null,
+      "size": [
+        1508,
+        1043
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "메신저 제품 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-053.png": {
+      "file": "assets/subpages/flat-screens/ui-053-full.png",
+      "crop": null,
+      "size": [
+        1495,
+        1052
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "화상회의 제품 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/official-corrected/sources/we-drive.png": {
+      "file": "assets/subpages/flat-screens/we-drive-full.png",
+      "crop": null,
+      "size": [
+        1647,
+        955
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "웹스토리지 — WE드라이브 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-055.png": {
+      "file": "assets/subpages/flat-screens/ui-055-full.png",
+      "crop": null,
+      "size": [
+        1492,
+        1054
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "거래처관리 제품 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-056-proofread.png": {
+      "file": "assets/subpages/flat-screens/ui-056-proofread-full.png",
+      "crop": null,
+      "size": [
+        1536,
+        1024
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "연락처 제품 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-057.png": {
+      "file": "assets/subpages/regenerated/ui-057.png",
+      "crop": [
+        206,
+        47,
+        1262,
+        675
+      ],
+      "size": [
+        1672,
+        941
+      ],
+      "strategy": "full-native-ui",
+      "alt": "메일 서비스 화면"
+    },
+    "assets/subpages/regenerated/ui-058.png": {
+      "file": "assets/subpages/flat-screens/ui-058-full.png",
+      "crop": null,
+      "size": [
+        1519,
+        1035
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "일정관리 서비스 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-060.png": {
+      "file": "assets/subpages/flat-screens/ui-060-full.png",
+      "crop": null,
+      "size": [
+        1536,
+        1024
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "노트 서비스 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-061.png": {
+      "file": "assets/subpages/flat-screens/ui-061-full.png",
+      "crop": null,
+      "size": [
+        1482,
+        1061
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "팩스 서비스 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-062-proofread.png": {
+      "file": "assets/subpages/flat-screens/ui-062-proofread-full.png",
+      "crop": null,
+      "size": [
+        1536,
+        1024
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "문자 서비스 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-063.png": {
+      "file": "assets/subpages/flat-screens/ui-063-full.png",
+      "crop": null,
+      "size": [
+        1514,
+        1039
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "근태관리 서비스 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-064-proofread.png": {
+      "file": "assets/subpages/flat-screens/ui-064-proofread-full.png",
+      "crop": null,
+      "size": [
+        1536,
+        1024
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "전자결재 서비스 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-065-proofread.png": {
+      "file": "assets/subpages/flat-screens/ui-065-proofread-full.png",
+      "crop": null,
+      "size": [
+        1488,
+        1057
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "회사게시판 서비스 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-066-proofread.png": {
+      "file": "assets/subpages/flat-screens/ui-066-proofread-full.png",
+      "crop": null,
+      "size": [
+        1466,
+        1073
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "내PC원격접속 서비스 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-049-proofread.png": {
+      "file": "assets/subpages/flat-screens/ui-049-proofread-full.png",
+      "crop": null,
+      "size": [
+        1536,
+        1024
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "문서작성 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-016-desktop-v2.png": {
+      "file": "assets/subpages/regenerated/ui-016-desktop-v2.png",
+      "crop": [
+        105,
+        52,
+        1325,
+        802
+      ],
+      "size": [
+        1536,
+        1024
+      ],
+      "strategy": "full-native-ui",
+      "alt": "일정관리 화면"
+    },
+    "assets/subpages/regenerated/ui-014-portal.png": {
+      "file": "assets/subpages/flat-screens/ui-014-portal-full.png",
+      "crop": null,
+      "size": [
+        1536,
+        1024
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "메인포털 제품 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-015-proofread-v2.png": {
+      "file": "assets/subpages/flat-screens/ui-015-proofread-v2-full.png",
+      "crop": null,
+      "size": [
+        1536,
+        1024
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "통합검색 제품 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-017.png": {
+      "file": "assets/subpages/flat-screens/ui-017-full.png",
+      "crop": null,
+      "size": [
+        1536,
+        1024
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "전자결재 제품 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-018.png": {
+      "file": "assets/subpages/flat-screens/ui-018-full.png",
+      "crop": null,
+      "size": [
+        1536,
+        1024
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "전자메일 제품 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/amaranth-corrected/board.png": {
+      "file": "assets/subpages/amaranth-corrected/board.png",
+      "crop": [
+        94,
+        67,
+        1350,
+        758
+      ],
+      "size": [
+        1536,
+        1024
+      ],
+      "strategy": "full-native-ui",
+      "alt": "Amaranth 10 게시판 분류와 게시글 목록 화면"
+    },
+    "assets/subpages/regenerated/ui-020.png": {
+      "file": "assets/subpages/flat-screens/ui-020-full.png",
+      "crop": null,
+      "size": [
+        1536,
+        1024
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "Amaranth 10 업무관리와 모바일 업무 현황 서비스 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-019.png": {
+      "file": "assets/subpages/flat-screens/ui-019-full.png",
+      "crop": null,
+      "size": [
+        1536,
+        1024
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "화상회의 화면과 모바일 참여 화면 서비스 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-022-desktop.png": {
+      "file": "assets/subpages/regenerated/ui-022-desktop.png",
+      "crop": [
+        208,
+        67,
+        1120,
+        773
+      ],
+      "size": [
+        1536,
+        1024
+      ],
+      "strategy": "full-native-ui",
+      "alt": "문서 공유와 메모를 활용하는 스마트워크 서비스 화면"
+    },
+    "assets/subpages/regenerated/ui-023-proofread.png": {
+      "file": "assets/subpages/flat-screens/ui-023-proofread-full.png",
+      "crop": null,
+      "size": [
+        1536,
+        1024
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "메신저 제품 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/amaranth-corrected/fax-sms.png": {
+      "file": "assets/subpages/amaranth-corrected/fax-sms.png",
+      "crop": [
+        108,
+        50,
+        1320,
+        811
+      ],
+      "size": [
+        1536,
+        1024
+      ],
+      "strategy": "full-native-ui",
+      "alt": "Amaranth 10 전자팩스 수신함과 SMS 발송 메뉴 화면"
+    },
+    "assets/subpages/regenerated/ui-025.png": {
+      "file": "assets/subpages/flat-screens/ui-025-full.png",
+      "crop": null,
+      "size": [
+        1536,
+        1024
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "KEEP 제품 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/amaranth-corrected/hr-withholding-tax.png": {
+      "file": "assets/subpages/amaranth-corrected/hr-withholding-tax.png",
+      "crop": [
+        101,
+        53,
+        1336,
+        787
+      ],
+      "size": [
+        1536,
+        1024
+      ],
+      "strategy": "full-native-ui",
+      "alt": "Amaranth 10 인사 세무관리 원천징수이행상황신고서 화면"
+    },
+    "assets/subpages/regenerated/ui-085.png": {
+      "file": "assets/subpages/flat-screens/ui-085-full.png",
+      "crop": null,
+      "size": [
+        1461,
+        1076
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "문서공유 제품 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-086.png": {
+      "file": "assets/subpages/flat-screens/ui-086-full.png",
+      "crop": null,
+      "size": [
+        1536,
+        1024
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "문서댓글 제품 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-087.png": {
+      "file": "assets/subpages/flat-screens/ui-087-full.png",
+      "crop": null,
+      "size": [
+        1536,
+        1024
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "연관문서 제품 화면",
+      "promptId": "prompt-1"
+    },
+    "assets/subpages/regenerated/ui-038.png": {
+      "file": "assets/subpages/regenerated/ui-038.png",
+      "crop": [
+        48,
+        148,
+        1068,
+        644
+      ],
+      "size": [
+        1460,
+        1078
+      ],
+      "strategy": "full-native-ui",
+      "alt": "Amaranth 10 물류관리 — lm01__img08"
+    },
+    "assets/subpages/regenerated/ui-021-amaranth-v2.png": {
+      "file": "assets/subpages/flat-screens/ui-021-amaranth-v2-full.png",
+      "crop": null,
+      "size": [
+        1597,
+        985
+      ],
+      "strategy": "flat-ui-edit",
+      "alt": "Amaranth 10 화상회의 화면",
+      "promptId": "prompt-3"
+    }
+  }
+}

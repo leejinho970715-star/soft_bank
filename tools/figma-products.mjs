@@ -215,6 +215,6 @@ export function applyProductDesign($,page,root){
  applyOfficialProductImageCorrections($,page,root);
  applyProductMockupRatios($);
  applyUnframedProductScreens($,root);
- const css=$('<link rel="stylesheet">').attr('href',root+'renewal/products-figma.css?v=20261007-1');$('head').append(css);
- $('head').append($('<script defer></script>').attr('src',root+'renewal/products-figma.js?v=20261007-1'));
+ const css=$('<link rel="stylesheet">').attr('href',root+'renewal/products-figma.css?v=20261007-2');$('head').append(css);
+ $('head').append($('<script defer></script>').attr('src',root+'renewal/products-figma.js?v=20261007-2'));
 }
