@@ -1,12 +1,12 @@
 {
-  "date": "2026-10-08",
-  "processing": "Prefer real product sources. Most exports use non-generative processing. Eight user-selected low-resolution screens use explicitly authorized AI clarity reconstruction; see reconstruction-20261008.json for original references, prompts and review. Preserve complete rectangles with opaque internal UI and 12px transparent external padding.",
+  "date": "2026-10-09",
+  "processing": "32 audited assets use user-authorized built-in image_gen clarity restoration; see reconstruction-20261009.json. Sources retained. Main-page width caps removed for these assets, full PNG is used both inline and in zoom. Export enlargement is a delivery format, not extra native source detail.",
   "entries": {
     "assets/subpages/native-screens/sms.png": {
       "id": "sms",
-      "file": "assets/subpages/quality-screens/sms-clear-v1.png",
-      "width": 2106,
-      "height": 1362,
+      "file": "assets/subpages/quality-screens/sms-restored-v3.png",
+      "width": 3024,
+      "height": 1966,
       "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
       "sourcePageUrl": null,
       "pdfPage": 71,
@@ -25,13 +25,17 @@
         "y2": 3,
         "y3": 6
       },
-      "sha256": "849cc197922b49f9fe658291b73c1a0e45056cc019254a23aabb8ea2b8356e81"
+      "sha256": "052a9682efad2d84e610ef2b3f00a66d0d5dacee21437827226460dbf7a4904c",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-012",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/quality-screens/sms-clear-v1.png"
     },
     "assets/subpages/native-screens/automatic-journals.png": {
       "id": "source-041",
-      "file": "assets/subpages/quality-screens/automatic-journals-clear-v1.png",
-      "width": 2108,
-      "height": 1366,
+      "file": "assets/subpages/quality-screens/automatic-journals-restored-v3.png",
+      "width": 3024,
+      "height": 1970,
       "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
       "sourcePageUrl": null,
       "pdfPage": 90,
@@ -50,13 +54,17 @@
         "y2": 3,
         "y3": 6
       },
-      "sha256": "9aedadb710845efd142c6660b44423be72cbe185fdc3064efeea5491f4e29ea2"
+      "sha256": "f50160c30782b08078635a72cda91f112c814b5f08257442fdf1dd399efd5cb6",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-028",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/quality-screens/automatic-journals-clear-v1.png"
     },
     "assets/subpages/native-screens/attendance.png": {
       "id": "source-043",
-      "file": "assets/subpages/quality-screens/attendance-clear-v1.png",
-      "width": 2102,
-      "height": 1362,
+      "file": "assets/subpages/quality-screens/attendance-restored-v3.png",
+      "width": 3024,
+      "height": 1970,
       "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
       "sourcePageUrl": null,
       "pdfPage": 80,
@@ -75,13 +83,17 @@
         "y2": 3,
         "y3": 6
       },
-      "sha256": "9584030760a759c48b63a1dcf3a7f12964888c19b7f4a97c882a635dceec224c"
+      "sha256": "57ebf5bfa20aec8b7f4804546049182af27a63898b903eca70c411d5f9724c72",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-015",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/quality-screens/attendance-clear-v1.png"
     },
     "assets/subpages/native-screens/calendar.png": {
       "id": "source-046",
-      "file": "assets/subpages/quality-screens/calendar-clear-v1.png",
-      "width": 2336,
-      "height": 1528,
+      "file": "assets/subpages/quality-screens/calendar-restored-v3.png",
+      "width": 3024,
+      "height": 1987,
       "sourceUrl": "https://douzone.it/uploaded/board/bocatalog/_c664bb6202ab6f44a3c9085c68a7e9391.pdf",
       "sourcePageUrl": null,
       "pdfPage": 12,
@@ -100,13 +112,17 @@
         "y2": 3,
         "y3": 6
       },
-      "sha256": "a6de0a055b999f1bd274d1646d82c6fa991443e50b40c274aaa5e6613af98bd9"
+      "sha256": "f188312636fa48fc8238dccddd53360f26c95ace395d9879b04b53d84cbb0d38",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-003",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/quality-screens/calendar-clear-v1.png"
     },
     "assets/subpages/native-screens/portal.png": {
       "id": "source-048",
-      "file": "assets/subpages/quality-screens/portal-clear-v1.png",
-      "width": 2584,
-      "height": 1704,
+      "file": "assets/subpages/quality-screens/portal-restored-v3.png",
+      "width": 3024,
+      "height": 2001,
       "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
       "sourcePageUrl": null,
       "pdfPage": 45,
@@ -125,7 +141,11 @@
         "y2": 3,
         "y3": 6
       },
-      "sha256": "4a1ed00b404e72faea071d8aa1480077dfe2887f168317778038b063870f1afc"
+      "sha256": "bcdd263e65312dfff56dfb7947dce997138d58f07a21b844f1ef80b6fb8884e0",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-001",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/quality-screens/portal-clear-v1.png"
     },
     "assets/subpages/native-screens/search.png": {
       "id": "source-050",
@@ -152,9 +172,9 @@
     },
     "assets/subpages/native-screens/approval.png": {
       "id": "source-052",
-      "file": "assets/subpages/quality-screens/approval-clear-v1.png",
-      "width": 2652,
-      "height": 1746,
+      "file": "assets/subpages/quality-screens/approval-restored-v3.png",
+      "width": 3024,
+      "height": 2001,
       "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
       "sourcePageUrl": null,
       "pdfPage": 50,
@@ -173,13 +193,17 @@
         "y2": 3,
         "y3": 6
       },
-      "sha256": "24ddc0f5ef0f8888e56deb6f51d9fe12c83a201a4cf78cf094d953932f944f55"
+      "sha256": "4279f8c5edddf56082afa2bc49265617c1f18e867716c5eec7a5d6d67bd35370",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-004",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/quality-screens/approval-clear-v1.png"
     },
     "assets/subpages/native-screens/mail.png": {
       "id": "source-054",
-      "file": "assets/subpages/quality-screens/mail-clear-v1.png",
-      "width": 2106,
-      "height": 1364,
+      "file": "assets/subpages/quality-screens/mail-restored-v3.png",
+      "width": 3024,
+      "height": 1969,
       "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
       "sourcePageUrl": null,
       "pdfPage": 62,
@@ -198,13 +222,17 @@
         "y2": 3,
         "y3": 6
       },
-      "sha256": "ec51a08bce9548983b584015fcf8da8d15a747b1f9fbbd048b0b862be260d780"
+      "sha256": "0381f9a85d8e19b3c459db367a2e61cd83100a8244b013e667f887fc806a110d",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-005",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/quality-screens/mail-clear-v1.png"
     },
     "assets/subpages/native-screens/bulletin.png": {
       "id": "source-056",
-      "file": "assets/subpages/quality-screens/bulletin-clear-v1.png",
-      "width": 2098,
-      "height": 1362,
+      "file": "assets/subpages/quality-screens/bulletin-restored-v3.png",
+      "width": 3024,
+      "height": 1970,
       "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
       "sourcePageUrl": null,
       "pdfPage": 64,
@@ -223,13 +251,17 @@
         "y2": 3,
         "y3": 6
       },
-      "sha256": "05ca9af8ead179405cb853d0e7b1ef32dfc02fc28f5eee0235d2118221831bf5"
+      "sha256": "412287cef517e4ec165a15ad1b92775af8b285c2cb1efa17c194d9c0067cfff8",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-006",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/quality-screens/bulletin-clear-v1.png"
     },
     "assets/subpages/native-screens/kiss.png": {
       "id": "source-058",
-      "file": "assets/subpages/quality-screens/kiss-clear-v1.png",
-      "width": 2108,
-      "height": 1360,
+      "file": "assets/subpages/quality-screens/kiss-restored-v3.png",
+      "width": 3024,
+      "height": 1959,
       "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
       "sourcePageUrl": null,
       "pdfPage": 67,
@@ -248,7 +280,11 @@
         "y2": 3,
         "y3": 6
       },
-      "sha256": "fda1dc359e9c2bdb0d441e6e9f8a33f188e1d6315f75b73264c60319cd672f5a"
+      "sha256": "09ddd9b2f0e6f357f30a6831a13988803f60c6199602aafae8766663e484f90c",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-007",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/quality-screens/kiss-clear-v1.png"
     },
     "assets/subpages/native-screens/video-meeting.png": {
       "id": "source-060",
@@ -300,9 +336,9 @@
     },
     "assets/subpages/native-screens/messenger.png": {
       "id": "source-063",
-      "file": "assets/subpages/quality-screens/messenger-clear-v1.png",
-      "width": 1880,
-      "height": 1428,
+      "file": "assets/subpages/quality-screens/messenger-restored-v3.png",
+      "width": 3024,
+      "height": 2303,
       "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
       "sourcePageUrl": null,
       "pdfPage": 66,
@@ -321,13 +357,17 @@
         "y2": 3,
         "y3": 6
       },
-      "sha256": "8b65558fc7f3beb3933765c1497acf758eb34251ef384f1e5ee9ec4aa173ed47"
+      "sha256": "749c46579ee73b24d05a017c992835a453358a4dfd08b6679720ba1a1dd6abd4",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-010",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/quality-screens/messenger-clear-v1.png"
     },
     "assets/subpages/native-screens/fax.png": {
       "id": "source-065",
-      "file": "assets/subpages/quality-screens/fax-clear-v1.png",
-      "width": 2098,
-      "height": 1366,
+      "file": "assets/subpages/quality-screens/fax-restored-v3.png",
+      "width": 3024,
+      "height": 1976,
       "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
       "sourcePageUrl": null,
       "pdfPage": 70,
@@ -346,13 +386,17 @@
         "y2": 3,
         "y3": 6
       },
-      "sha256": "56ed7b1f75c20855514e56591377e9714345c9df51ad3237673ae7dce5c45ef3"
+      "sha256": "440745909fc22bc3f3598b0a62b2ad02d8ed123a5572f5d316ccb326e9cc3b24",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-011",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/quality-screens/fax-clear-v1.png"
     },
     "assets/subpages/native-screens/keep.png": {
       "id": "source-067",
-      "file": "assets/subpages/quality-screens/keep-clear-v1.png",
-      "width": 1572,
-      "height": 1186,
+      "file": "assets/subpages/quality-screens/keep-restored-v3.png",
+      "width": 3024,
+      "height": 2283,
       "sourceUrl": "https://pict.space/douzonevr/download/pdf/Amaranth_10_General.pdf",
       "sourcePageUrl": "https://www.idouzone.com/product/pservice02_3.php",
       "pdfPage": 14,
@@ -371,13 +415,17 @@
         "y2": 3,
         "y3": 6
       },
-      "sha256": "f30df5b2b18c5998ba10fab7e1e6ae58acc91e02bff1331cbb44e561cdaea1db"
+      "sha256": "35e30802a7f9ff86903c7f4846504b09eec96f4ff7669620875de9317204a64f",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-013",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/quality-screens/keep-clear-v1.png"
     },
     "assets/subpages/native-screens/journals.png": {
       "id": "source-068",
-      "file": "assets/subpages/quality-screens/journals-clear-v1.png",
-      "width": 2102,
-      "height": 1360,
+      "file": "assets/subpages/quality-screens/journals-restored-v3.png",
+      "width": 3024,
+      "height": 1966,
       "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
       "sourcePageUrl": null,
       "pdfPage": 91,
@@ -396,13 +444,17 @@
         "y2": 3,
         "y3": 6
       },
-      "sha256": "8914a04634e3823fcc647274a638361c4f3e165c7d16ea4d66800b83f261c2b2"
+      "sha256": "13413f847c4ada786260258cc6b79d5861a351c0f105fbb68bb69a3e029c2923",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-029",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/quality-screens/journals-clear-v1.png"
     },
     "assets/subpages/native-screens/closing-statements.png": {
       "id": "source-070",
-      "file": "assets/subpages/quality-screens/closing-statements-clear-v1.png",
-      "width": 2102,
-      "height": 1360,
+      "file": "assets/subpages/quality-screens/closing-statements-restored-v3.png",
+      "width": 3024,
+      "height": 1966,
       "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
       "sourcePageUrl": null,
       "pdfPage": 94,
@@ -421,13 +473,17 @@
         "y2": 3,
         "y3": 6
       },
-      "sha256": "4e06a91f4c1bf043cd7df2cad14fe478add9d707da610eebb51bd1cdc8b153a5"
+      "sha256": "5cb313dc48b714b4672d3f08e36ff575f59eda57b1f7d8562fcc10706655e3d6",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-030",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/quality-screens/closing-statements-clear-v1.png"
     },
     "assets/subpages/native-screens/custom-statements.png": {
       "id": "source-072",
-      "file": "assets/subpages/quality-screens/custom-statements-clear-v1.png",
-      "width": 2102,
-      "height": 1362,
+      "file": "assets/subpages/quality-screens/custom-statements-restored-v3.png",
+      "width": 3024,
+      "height": 1970,
       "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
       "sourcePageUrl": null,
       "pdfPage": 97,
@@ -446,13 +502,17 @@
         "y2": 3,
         "y3": 6
       },
-      "sha256": "cf449c0053992d1cc09bbca85ffed505927fd028f71e2a22bfb8ab5f2459f344"
+      "sha256": "9e570450a5a3ad2de9c249a7e94b16b5bd59e6134ac9f3214385a25f00700a0e",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-031",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/quality-screens/custom-statements-clear-v1.png"
     },
     "assets/subpages/native-screens/fixed-assets.png": {
       "id": "source-074",
-      "file": "assets/subpages/quality-screens/fixed-assets-clear-v1.png",
-      "width": 2102,
-      "height": 1362,
+      "file": "assets/subpages/quality-screens/fixed-assets-restored-v3.png",
+      "width": 3024,
+      "height": 1970,
       "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
       "sourcePageUrl": null,
       "pdfPage": 99,
@@ -471,7 +531,11 @@
         "y2": 3,
         "y3": 6
       },
-      "sha256": "5fa953d50d36f74ba24757d01148d8773527b31af8727a82bc02eb4fa6525ef2"
+      "sha256": "1b4eb8fa588cba791eb65ac751172a60950c856754ab9e90acbd1c0ff1bb0387",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-032",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/quality-screens/fixed-assets-clear-v1.png"
     },
     "assets/subpages/native-screens/funds.png": {
       "id": "source-076",
@@ -569,9 +633,9 @@
     },
     "assets/subpages/native-screens/hr.png": {
       "id": "source-082",
-      "file": "assets/subpages/quality-screens/hr-clear-v1.png",
-      "width": 2094,
-      "height": 1368,
+      "file": "assets/subpages/quality-screens/hr-restored-v3.png",
+      "width": 3024,
+      "height": 1985,
       "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
       "sourcePageUrl": null,
       "pdfPage": 111,
@@ -590,13 +654,17 @@
         "y2": 3,
         "y3": 6
       },
-      "sha256": "bdc3deda8c3919c9783afd266e77aa84a469fd55abf8ecb986a99fe978490584"
+      "sha256": "d7969cd1051ab3db7cf6de2caec5a8fc059c151536c1ed3d6ab3ed67f5252bdb",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-014",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/quality-screens/hr-clear-v1.png"
     },
     "assets/subpages/native-screens/annual-leave.png": {
       "id": "source-084",
-      "file": "assets/subpages/quality-screens/annual-leave-clear-v1.png",
-      "width": 2102,
-      "height": 1330,
+      "file": "assets/subpages/quality-screens/annual-leave-restored-v3.png",
+      "width": 3024,
+      "height": 1924,
       "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
       "sourcePageUrl": null,
       "pdfPage": 79,
@@ -615,13 +683,17 @@
         "y2": 3,
         "y3": 6
       },
-      "sha256": "47af375034d1ed3a3cca4396f92410d996f30f0b8b731929b1d1de5281f05622"
+      "sha256": "75bf2aa6c1c73c11f3ba0819ed4d913f624e798f855d3ea708d7ef154393144d",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-016",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/quality-screens/annual-leave-clear-v1.png"
     },
     "assets/subpages/native-screens/payroll.png": {
       "id": "source-086",
-      "file": "assets/subpages/quality-screens/payroll-clear-v1.png",
-      "width": 2088,
-      "height": 1370,
+      "file": "assets/subpages/quality-screens/payroll-restored-v3.png",
+      "width": 3024,
+      "height": 1993,
       "sourceUrl": "https://douzone.it/uploaded/board/boproposal/_b8c27d22e68d6a7ab8328318c20422c21.pdf",
       "sourcePageUrl": null,
       "pdfPage": 120,
@@ -640,7 +712,11 @@
         "y2": 3,
         "y3": 6
       },
-      "sha256": "349f4422e4b29b4d4b30462fac5ae8b9e167f12b663e7db1c3cfa7ed5d0234c5"
+      "sha256": "8b5f4ff445d802442daff542568c475c88204e894b0f8e9c30008b9c350bec49",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-017",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/quality-screens/payroll-clear-v1.png"
     },
     "assets/subpages/native-screens/hr-tax.png": {
       "id": "source-088",
@@ -915,9 +991,9 @@
     },
     "assets/subpages/official-corrected/sources/screenshot_extra_04.gif": {
       "id": "wehago-crm",
-      "file": "assets/subpages/quality-screens/screenshot_extra_04-clear-v1.png",
-      "width": 1384,
-      "height": 868,
+      "file": "assets/subpages/quality-screens/screenshot_extra_04-restored-v3.png",
+      "width": 3024,
+      "height": 1905,
       "sourceUrl": "https://static.wehago.com/html/landing/img/v2/screenshot_extra_04.gif",
       "sourcePageUrl": "https://www.wehago.com/landing/ko/addition/",
       "pdfPage": null,
@@ -936,13 +1012,17 @@
         "y2": 3,
         "y3": 6
       },
-      "sha256": "720757b46017e0e61fce84be9d3ec0ef6c48158df82a1ae6b54251ec11856896"
+      "sha256": "ed2eba1216293f5bc242a0387be3099a9854cf4b1ee2e309defe23f891e761e2",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-133",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/quality-screens/screenshot_extra_04-clear-v1.png"
     },
     "assets/subpages/official-corrected/sources/screenshot_extra_05.gif": {
       "id": "wehago-pms",
-      "file": "assets/subpages/quality-screens/screenshot_extra_05-clear-v1.png",
-      "width": 2258,
-      "height": 1678,
+      "file": "assets/subpages/quality-screens/screenshot_extra_05-restored-v3.png",
+      "width": 3024,
+      "height": 2253,
       "sourceUrl": "https://wehagohelp.zendesk.com/hc/article_attachments/360000620481/mceclip0.png",
       "sourcePageUrl": "https://wehagohelp.zendesk.com/hc/ko/articles/360000372742",
       "pdfPage": null,
@@ -961,8 +1041,12 @@
         "y2": 3,
         "y3": 6
       },
-      "sha256": "db67b50e5739e800a2adfe64fce0eb86c174fee7e4a2d4c604eb43dccc3010d1",
-      "alt": "WEHAGO WE PMS 프로젝트 진행현황 대시보드"
+      "sha256": "dfb9464532aeb81828c4e1ed4e2b88431f79a1a407b6b5259d23032aa1a4ccfe",
+      "alt": "WEHAGO WE PMS 프로젝트 진행현황 대시보드",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-134",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/quality-screens/screenshot_extra_05-clear-v1.png"
     },
     "assets/subpages/official-corrected/sources/screenshot_co_08.gif": {
       "id": "wehago-todo",
@@ -992,9 +1076,9 @@
     },
     "assets/subpages/official-corrected/sources/screenshot_extra_01.gif": {
       "id": "wehago-corporate-card",
-      "file": "assets/subpages/quality-screens/screenshot_extra_01-clear-v1.png",
-      "width": 2020,
-      "height": 1340,
+      "file": "assets/subpages/quality-screens/screenshot_extra_01-restored-v3.png",
+      "width": 3024,
+      "height": 2013,
       "sourceUrl": "https://wehagohelp.zendesk.com/hc/article_attachments/360010692353",
       "sourcePageUrl": "https://wehagohelp.zendesk.com/hc/ko/articles/360003536074",
       "pdfPage": null,
@@ -1013,7 +1097,11 @@
         "y2": 3,
         "y3": 6
       },
-      "sha256": "e1e5cddf14d9be8cc2263f5d43c3f4987353ad3184e1afb970f23605494922e3"
+      "sha256": "c91d77b896ec3cbe1d9bd43ca836de1951d455eccaf3650c47525f5b13c49345",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-135",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/quality-screens/screenshot_extra_01-clear-v1.png"
     },
     "assets/subpages/official-corrected/sources/screenshot_extra_02.gif": {
       "id": "wehago-personal-card",
@@ -1055,6 +1143,263 @@
       "scale": 1,
       "sharpen": null,
       "sha256": "f88d7798a14effe4226dc675316e5386159ce2374d9eb508197db7d0dd75dd8c"
+    },
+    "assets/subpages/regenerated/ui-002.png": {
+      "id": "screen-055",
+      "file": "assets/subpages/quality-screens/ui-002-restored-v3.png",
+      "width": 3024,
+      "height": 3539,
+      "inputFile": "assets/subpages/regenerated/ui-002.png",
+      "inputSha256": "68f88825ac05d679dca14ba14ca9470f2eb9cd5c002a04c6e1a35692251e76d9",
+      "transparentPadding": 12,
+      "sha256": "f3f644325d82835d81470058b716f1a2c82c0b044d678986e4bfaa25adb8322f",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-055",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/regenerated/ui-002.png"
+    },
+    "assets/subpages/regenerated/ui-006.png": {
+      "id": "screen-059",
+      "file": "assets/subpages/quality-screens/ui-006-restored-v3.png",
+      "width": 3024,
+      "height": 3075,
+      "inputFile": "assets/subpages/regenerated/ui-006.png",
+      "inputSha256": "1e43923554da1d696e21649ea8477c1f8abb74f2bb5bbb24f6ac76b8ac16563e",
+      "transparentPadding": 12,
+      "sha256": "512c8d417d0abd0a667ec7fc3b3d52a88ee613da04c51403067335ec177a988f",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-059",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/regenerated/ui-006.png"
+    },
+    "assets/subpages/regenerated/ui-005.png": {
+      "id": "screen-060",
+      "file": "assets/subpages/quality-screens/ui-005-restored-v3.png",
+      "width": 3024,
+      "height": 2369,
+      "inputFile": "assets/subpages/regenerated/ui-005.png",
+      "inputSha256": "c6f88fda53ed1af11bf65d5687dbd668bbae5e9fa378871bcebf64f5b88357a1",
+      "transparentPadding": 12,
+      "sha256": "a832965864a1c34460fbcf9c194e07143bd8ba1eb74e4d977269e5d6f4dfe5cf",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-060",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/regenerated/ui-005.png"
+    },
+    "assets/subpages/regenerated/ui-091-proofread.png": {
+      "id": "screen-074",
+      "file": "assets/subpages/quality-screens/ui-091-proofread-restored-v3.png",
+      "width": 3024,
+      "height": 2070,
+      "inputFile": "assets/subpages/regenerated/ui-091-proofread.png",
+      "inputSha256": "d19320b7fb720544c9462bdac64b57afecf027d09fb9aac7cbf5a2c42743af75",
+      "transparentPadding": 12,
+      "sha256": "4208bbf78cd2ea11a45a8f17833b3b34ffa7fd195ffdcdcab7c560028c6887d9",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-074",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/regenerated/ui-091-proofread.png"
+    },
+    "assets/subpages/regenerated/ui-092-proofread.png": {
+      "id": "screen-075",
+      "file": "assets/subpages/quality-screens/ui-092-proofread-restored-v3.png",
+      "width": 3024,
+      "height": 2059,
+      "inputFile": "assets/subpages/regenerated/ui-092-proofread.png",
+      "inputSha256": "4380c144129435128c5a351831ea9bca23befd53da312d8f9c63c0e19b2cf04d",
+      "transparentPadding": 12,
+      "sha256": "49204894587d1c9987f1a6e88f55c22786f8e3599c8a81cc5e64f9579e6aec89",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-075",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/regenerated/ui-092-proofread.png"
+    },
+    "assets/subpages/regenerated/ui-093-proofread.png": {
+      "id": "screen-076",
+      "file": "assets/subpages/quality-screens/ui-093-proofread-restored-v3.png",
+      "width": 3024,
+      "height": 2051,
+      "inputFile": "assets/subpages/regenerated/ui-093-proofread.png",
+      "inputSha256": "fc1f6435a28b7b06904d33b58c71b030610762cb8f3a6a297598309955616e89",
+      "transparentPadding": 12,
+      "sha256": "258d051dea9473cfcd7795b1aabdf2464306216e705c9c9634f6f9ffcf8b1aec",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-076",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/regenerated/ui-093-proofread.png"
+    },
+    "assets/subpages/regenerated/ui-098.png": {
+      "id": "screen-095",
+      "file": "assets/subpages/quality-screens/pms-progress-restored-v3.png",
+      "width": 3024,
+      "height": 1680,
+      "inputFile": "assets/subpages/regenerated/ui-098.png",
+      "inputSha256": "db765e5eb1c805f3f1b89db260245bf12fa083685743868c66504631d1bf2e8f",
+      "transparentPadding": 12,
+      "sha256": "926e489c3d4aa6a96762fedbf2cccbc5ed1e3632a8594ecfdcb611059471c9bd",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-095",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/regenerated/ui-098.png",
+      "inlinePanels": [
+        {
+          "label": "매출관리",
+          "bounds": [
+            35,
+            19,
+            1479,
+            505
+          ]
+        },
+        {
+          "label": "손익현황",
+          "bounds": [
+            35,
+            543,
+            1479,
+            515
+          ]
+        },
+        {
+          "label": "주간회의",
+          "bounds": [
+            35,
+            1075,
+            1479,
+            572
+          ]
+        },
+        {
+          "label": "목표관리",
+          "bounds": [
+            1537,
+            19,
+            1456,
+            848
+          ]
+        },
+        {
+          "label": "실적관리",
+          "bounds": [
+            1537,
+            886,
+            1456,
+            759
+          ]
+        }
+      ],
+      "inlineDefault": 0
+    },
+    "assets/subpages/regenerated/ui-100.png": {
+      "id": "screen-097",
+      "file": "assets/subpages/quality-screens/pms-reservations-restored-v3.png",
+      "width": 3024,
+      "height": 1636,
+      "inputFile": "assets/subpages/regenerated/ui-100.png",
+      "inputSha256": "d2bc499f6d99910a31bcf56f0be3354962c2353ed91d23ac291d9c02d44a0d22",
+      "transparentPadding": 12,
+      "sha256": "82265116e02d90cccdd43bd0bd008a588d4c3b938dfaf20178da170fe25647ff",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-097",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/regenerated/ui-100.png",
+      "inlinePanels": [
+        {
+          "label": "예약현황",
+          "bounds": [
+            12,
+            12,
+            3000,
+            1058
+          ]
+        },
+        {
+          "label": "자원등록",
+          "bounds": [
+            12,
+            1073,
+            1411,
+            542
+          ]
+        },
+        {
+          "label": "자원별 일정",
+          "bounds": [
+            1424,
+            1073,
+            1586,
+            542
+          ]
+        }
+      ],
+      "inlineDefault": 0
+    },
+    "assets/subpages/official-corrected/sources/smart-a10-modules.png": {
+      "id": "screen-149",
+      "file": "assets/subpages/quality-screens/smart-a10-modules-restored-v3.png",
+      "width": 3024,
+      "height": 1760,
+      "inputFile": "assets/subpages/official-corrected/sources/smart-a10-modules.png",
+      "inputSha256": "103160f0c4fc625dd574898ef0c7dc70262728479c15780c18d6ed63c2005cf2",
+      "transparentPadding": 12,
+      "sha256": "a43532aa4b8a60920c4ac7e1c83f87654bfefe24fb96c5578632c9a9535a72a5",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-149",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/official-corrected/sources/smart-a10-modules.png",
+      "inlinePanels": [
+        {
+          "label": "물류",
+          "bounds": [
+            101,
+            83,
+            1374,
+            833
+          ]
+        },
+        {
+          "label": "회계",
+          "bounds": [
+            1551,
+            83,
+            1379,
+            833
+          ]
+        },
+        {
+          "label": "급여",
+          "bounds": [
+            101,
+            936,
+            1374,
+            770
+          ]
+        },
+        {
+          "label": "법인",
+          "bounds": [
+            1551,
+            936,
+            1379,
+            770
+          ]
+        }
+      ],
+      "inlineDefault": 1
+    },
+    "assets/subpages/native-screens/wehago-flexible-work-transparent-v2.png": {
+      "id": "screen-150",
+      "file": "assets/subpages/quality-screens/wehago-flexible-work-restored-v3.png",
+      "width": 3024,
+      "height": 2024,
+      "inputFile": "assets/subpages/native-screens/wehago-flexible-work-transparent-v2.png",
+      "inputSha256": "2af9c489f61c404eb27ea909e8c62af6c7d627d0faa5c486b4033243064a6cf0",
+      "transparentPadding": 12,
+      "sha256": "430b39d556b92b27a1ff049c20047afdef4501f53b000c6065454dada265e8f6",
+      "generationDate": "2026-10-09",
+      "clarityReviewId": "screen-150",
+      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "originalAsset": "assets/subpages/native-screens/wehago-flexible-work-transparent-v2.png"
     }
   }
 }

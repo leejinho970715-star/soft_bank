@@ -1,4 +1,15 @@
 document.addEventListener('DOMContentLoaded',()=>{
+ document.querySelectorAll('.sb-inline-screen-gallery').forEach(figure=>{
+  const tabs=[...figure.querySelectorAll('.sb-inline-screen-tabs [role="tab"]')],panels=[...figure.querySelectorAll('.sb-inline-screen-view')];
+  const select=index=>{tabs.forEach((tab,i)=>{tab.setAttribute('aria-selected',String(i===index));tab.tabIndex=i===index?0:-1;panels[i].hidden=i!==index;});};
+  tabs.forEach((tab,index)=>{
+   tab.addEventListener('click',()=>select(index));
+   tab.addEventListener('keydown',event=>{
+    const keys={ArrowRight:(index+1)%tabs.length,ArrowLeft:(index-1+tabs.length)%tabs.length,Home:0,End:tabs.length-1};
+    if(!(event.key in keys))return;event.preventDefault();select(keys[event.key]);tabs[keys[event.key]].focus();
+   });
+  });
+ });
  if([...document.body.classList].some(name=>name.startsWith('sb-page-product-amaranth10-'))){
   const footer=document.querySelector('#soft-bank-renewal > footer');
   if(footer&&!document.querySelector('.sb-amaranth-ifrs-banner'))footer.insertAdjacentHTML('beforebegin',`
@@ -67,7 +78,8 @@ document.addEventListener('DOMContentLoaded',()=>{
    // Keep product navigation and download links; intercept image-file links only.
    if(link&&!/\.(png|webp|jpe?g|gif|svg)(?:[?#]|$)/i.test(link.href))return;
    const target=link||img;
-   if(img.closest('.sb-content')&&!document.body.classList.contains('sb-page-product-oneai')&&!img.matches('.sb-page-product-nonprofit-intro .sb-nonprofit-hero,.sb-page-product-nonprofit-intro .sb-nonprofit-process .sb-process-icon,.sb-page-product-wehago-cooperation .wehago_02 img,.sb-page-product-wehago-extraservice .wehago_02 img,.sb-page-product-pms .sb-pms-workflow-3d img,.sb-page-product-pms .sect_faetures img,.sb-page-product-omniesol img[src$="/omniesol-custom/chatbot.png"]'))zoomImages.push(img);
+   const gallery=img.closest('.sb-inline-screen-gallery');
+   if((!gallery||img===gallery.querySelector('img'))&&img.closest('.sb-content')&&!document.body.classList.contains('sb-page-product-oneai')&&!img.matches('.sb-page-product-nonprofit-intro .sb-nonprofit-hero,.sb-page-product-nonprofit-intro .sb-nonprofit-process .sb-process-icon,.sb-page-product-wehago-cooperation .wehago_02 img,.sb-page-product-wehago-extraservice .wehago_02 img,.sb-page-product-pms .sb-pms-workflow-3d img,.sb-page-product-pms .sect_faetures img,.sb-page-product-omniesol img[src$="/omniesol-custom/chatbot.png"]'))zoomImages.push(img);
    if(!link){target.tabIndex=0;target.setAttribute('role','button');target.setAttribute('aria-label',(img.alt||'제품 이미지')+' 크게 보기');}
    target.classList.add('sb-image-trigger');target.setAttribute('aria-haspopup','dialog');
    target.addEventListener('click',e=>{if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();open(img,target);});
@@ -75,6 +87,8 @@ document.addEventListener('DOMContentLoaded',()=>{
   });
   zoomImages.forEach(img=>{
    const button=document.createElement('button');button.type='button';button.className='sb-screen-view';button.textContent='화면 크게보기';button.setAttribute('aria-haspopup','dialog');button.setAttribute('aria-label',(img.alt||'제품 이미지')+' 화면 크게보기');
+   const gallery=img.closest('.sb-inline-screen-gallery');
+   if(gallery){button.textContent='전체 화면 크게보기';button.setAttribute('aria-label',gallery.getAttribute('aria-label')+' 전체 화면 크게보기');}
    button.addEventListener('click',()=>open(img,button));
    const actions=document.createElement('div');actions.className='sb-screen-actions';
    const pair=img.closest('.sb-native-screen-pair');

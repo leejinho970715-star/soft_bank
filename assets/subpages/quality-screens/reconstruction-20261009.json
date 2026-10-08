@@ -1,0 +1,869 @@
+{
+  "date": "2026-10-09",
+  "mode": "built-in image_gen",
+  "scope": "32 assets flagged by screen-clarity-audit-20261009, normal inline visibility first, modal secondary",
+  "note": "Authorized reconstructed illustrations based on existing product screens, not pixel-exact native captures. Original references remain available.",
+  "records": [
+    {
+      "id": "screen-001",
+      "slug": "portal",
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: Amaranth 10, 통합검색, 최근검색어, 전표, 자금, 세금, 근태, 경비, 카드, 회계관리, 주소록, 지출결의, 일정, 메일, 결재, 경비청구, 구매신청, 게시판, ONEFFICE, 계좌관리, KISS, 내 정보, 홍길동 과장, (주) 더존비즈온, 출근, 퇴근, 귀사의 업무에 최적화 된, 쉽고 편리한 ERP가 필요하십니까?, 업종별 맞춤형 ERP를 제공하고 있는, ERP 시장점유율 1위 기업 더존!, ERP는 더존과 상의하세요., 자세히보기, 전체 알림, 알파멘션, 일정등록, 전자결재, 공지사항, 나의업무, 예정, 진행, 완료. Preserve exactly same faces and icon grid.",
+      "generatedFile": "exec-9f7aba0e-e70e-41a1-a962-faa1e0b223b3.png",
+      "reference": "assets/subpages/quality-screens/portal-clear-v1.png",
+      "output": "assets/subpages/quality-screens/portal-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 2001,
+      "generatedWidth": 1545,
+      "generatedHeight": 1018,
+      "outputSha256": "bcdd263e65312dfff56dfb7947dce997138d58f07a21b844f1ef80b6fb8884e0",
+      "uses": [
+        {
+          "location": "Amaranth10 · 그룹웨어",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/amaranth10/brand.html",
+          "title": "Amaranth 10 메인포털 실제 제품 화면"
+        },
+        {
+          "location": "Amaranth10 비영리 / 그룹웨어",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/nonprofit/intro.html?tab=groupware",
+          "title": "Amaranth 10 메인포털 실제 제품 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-004",
+      "slug": "approval",
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: Amaranth 10, 결재 HOME, 전자결재, 결재작성, 상신보관함, 결재수신함, 이전문서함, 결재분류함, 결재설정, 인수인계, 추천양식, 미결문서, 기결문서, 방원배 님의 결재 현황, 최근 한달 기준, 6건, 사용중, 자주쓰는 양식 현황, 외근신청서, 연차휴가신청서, 구매품의서, 기타, 최근평균 결재소요일, 상신 문서, 결재 문서, 결재 타임라인, 전체, 진행, 종결, 결재라인보기. Keep original document titles, Korean names and dates.",
+      "generatedFile": "exec-0f2d1ae5-79bf-4d21-b124-5fb4b894d248.png",
+      "reference": "assets/subpages/quality-screens/approval-clear-v1.png",
+      "output": "assets/subpages/quality-screens/approval-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 2001,
+      "generatedWidth": 1545,
+      "generatedHeight": 1018,
+      "outputSha256": "4279f8c5edddf56082afa2bc49265617c1f18e867716c5eec7a5d6d67bd35370",
+      "uses": [
+        {
+          "location": "Amaranth10 · 그룹웨어",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/amaranth10/brand.html",
+          "title": "Amaranth 10 전자결재 실제 제품 화면"
+        },
+        {
+          "location": "Amaranth10 비영리 / 그룹웨어",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/nonprofit/intro.html?tab=groupware",
+          "title": "Amaranth 10 전자결재 실제 제품 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-010",
+      "slug": "messenger",
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: 대화함, Beta, 일반 미팅룸, 프로젝트 미팅룸, 즐겨찾기 미팅룸, 내용, 내용, 사용자, 첨부파일명, 솔루션사업부문 UC설계/디자인센터, Amaranth 10 Mobile, 나에게 답장, 김더존 대리, 차장님, 제플린 확인하였습니다. 빠르게 진행해 주셔서 감사합니다!, 네~ ^-^, AI 번역, 전송. Preserve all exact chat messages and original faces.",
+      "generatedFile": "exec-6d897231-27fd-4640-86e4-f643759d4f90.png",
+      "reference": "assets/subpages/quality-screens/messenger-clear-v1.png",
+      "output": "assets/subpages/quality-screens/messenger-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 2303,
+      "generatedWidth": 1439,
+      "generatedHeight": 1093,
+      "outputSha256": "749c46579ee73b24d05a017c992835a453358a4dfd08b6679720ba1a1dd6abd4",
+      "uses": [
+        {
+          "location": "Amaranth10 · 그룹웨어",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/amaranth10/brand.html",
+          "title": "Amaranth 10 메신저 실제 제품 화면"
+        },
+        {
+          "location": "Amaranth10 비영리 / 그룹웨어",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/nonprofit/intro.html?tab=groupware",
+          "title": "Amaranth 10 메신저 실제 제품 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-013",
+      "slug": "keep",
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: Keep, 김더존님의 Keep 리스트 입니다., 기록의 습관, 스마트워크의 시작, KEEP으로 완성하다., Keep 52, 안 읽은 Keep 19, 전체, 결재, 메일, 일정, 게시판, 업무보고, ONEFFICE, 첨부파일, 이미지, 동영상, 최신순, 정확도순, DOCC PAN 로그인 화면 전달합니다…, Amaranth10 세미나 오후 4시, ERP10 mobile 화면 전달합니다., 2021년 더존ICT그룹 의무교육관련, 발신자: agency@douzone.com, 업무Keep, 정보 Keep, 메모 Keep. Preserve dark photo background; brighten small card labels enough to read without changing wording.",
+      "generatedFile": "exec-a37a7145-d948-447e-a8a2-2631c4f919c3.png",
+      "priorGeneratedFile": "exec-2da1677f-8539-4613-a3a3-ef32a6d0472a.png",
+      "repairPrompt": "Targeted text repair of the provided screenshot. Correct only the bottom-right card title from 'WehagoONE Mobile - 채팅 옵선 말풍선 수정' to exact 'WehagoONE Mobile - 채팅 옵션 말풍선 수정'. Also the top subtitle exact '기록의 습관, 스마트워크의 시작, KEEP으로 완성하다.' Preserve ALL other words, shapes, fonts, layout and pixels. Full rectangular UI must stay opaque, preserve all original content, geometry and product branding; highest-resolution PNG; no crop or extra decoration.",
+      "repairHistory": [
+        {
+          "file": "exec-74755ebf-bff2-484f-bc04-a8d71e7c0bd1.png",
+          "prompt": "Precise targeted text repair, clean high resolution PNG with fully opaque original UI, same complete aspect ratio. Overwrite the bottom-right card title with exact readable text: 'WehagoONE Mobile - 채팅 옵션 말풍선 수정'. Spell 옵 션, not 옵 선. Use a clear Korean sans-serif typeface where 션 is visibly distinct. Replace entire title line, keep card, other text and all rest identical."
+        }
+      ],
+      "reference": "assets/subpages/quality-screens/keep-clear-v1.png",
+      "output": "assets/subpages/quality-screens/keep-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 2283,
+      "generatedWidth": 1445,
+      "generatedHeight": 1088,
+      "outputSha256": "35e30802a7f9ff86903c7f4846504b09eec96f4ff7669620875de9317204a64f",
+      "uses": [
+        {
+          "location": "Amaranth10 · 그룹웨어",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/amaranth10/brand.html",
+          "title": "Amaranth 10 KEEP 실제 제품 화면"
+        },
+        {
+          "location": "Amaranth10 비영리 / 그룹웨어",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/nonprofit/intro.html?tab=groupware",
+          "title": "Amaranth 10 KEEP 실제 제품 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-014",
+      "slug": "hr",
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: Amaranth 10, 인사관리, 인사정보변경승인, 승인, 반려, 신청일자, 사업장, 사업장코드, 부서, 부서코드, 변경신청 대상자, 변경신청정보, 총인원 4명, 신청일자 정렬, 미확인, 확인, 전체, 대기, 인적정보, 기타정보, 가족, 외국어, 신청구분, 승인상태, 사원(영문), 사원(한자), 내외국인여부, 주민등록번호, 외국인등록번호, 우편번호, 기본주소, 상세주소, 취미, 신규, 변경, 성명, 관계, 동거여부, 부양관계, 내국인, 외국어시험, 외국어등급, 외국어능력, 유효기간시작일, 유효기간만료일. Keep current clipped-at-native-boundary words, don't invent hidden columns.",
+      "generatedFile": "exec-c034d888-4418-46b1-9fce-6ad44436195f.png",
+      "reference": "assets/subpages/quality-screens/hr-clear-v1.png",
+      "output": "assets/subpages/quality-screens/hr-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 1985,
+      "generatedWidth": 1551,
+      "generatedHeight": 1014,
+      "outputSha256": "d7969cd1051ab3db7cf6de2caec5a8fc059c151536c1ed3d6ab3ed67f5252bdb",
+      "uses": [
+        {
+          "location": "Amaranth10 · 인사관리",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/amaranth10/hr.html",
+          "title": "Amaranth 10 인사관리 실제 제품 화면"
+        },
+        {
+          "location": "Amaranth10 비영리 / 인사관리",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/nonprofit/intro.html?tab=hr",
+          "title": "Amaranth 10 인사관리 실제 제품 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-017",
+      "slug": "payroll",
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: Amaranth 10, 급여입력, 인사관리, 대상자 선정, 급여 계산, 과세집계, 마감관리, 귀속년월, 지급일자, 조회조건, 사업장, 생산직여부, 감면유형, 연말정산 여부, 전체, 사원코드, 사원명, 마감여부, 지급항목, 공제항목, 금액, 기본급, 식대, 자가운전보조비, 차량운영비, 근속수당, 연장근무수당, 국민연금, 건강보험, 장기요양보험료, 고용보험, 소득세, 지방소득세, 사원 수 54, 차인지급액 4,455,720, 전체 급여총액, 개인 급여총액, 과세총액, 지급기부금, 국민연금, 신고비과세, 회사부담금. All original amounts unchanged.",
+      "generatedFile": "exec-b38198f5-3f6b-4530-9d0c-cf5bc8e1e5d2.png",
+      "repairHistory": [
+        {
+          "file": "exec-c08be475-af7d-445d-b7d5-ffc1f6bec41e.png",
+          "prompt": "Precise targeted text repair, clean high resolution PNG with fully opaque original UI, same complete aspect ratio. Correct ONLY the summary field label in bottom grid first row second column, now '지급기부금', to exact '정치기부금'. The original reference label is 정치기부금 (political donation). All other text, amounts, rows and columns unchanged."
+        }
+      ],
+      "reference": "assets/subpages/quality-screens/payroll-clear-v1.png",
+      "output": "assets/subpages/quality-screens/payroll-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 1993,
+      "generatedWidth": 1548,
+      "generatedHeight": 1016,
+      "outputSha256": "8b5f4ff445d802442daff542568c475c88204e894b0f8e9c30008b9c350bec49",
+      "uses": [
+        {
+          "location": "Amaranth10 · 인사관리",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/amaranth10/hr.html",
+          "title": "Amaranth 10 급여관리 실제 제품 화면"
+        },
+        {
+          "location": "Amaranth10 비영리 / 인사관리",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/nonprofit/intro.html?tab=hr",
+          "title": "Amaranth 10 급여관리 실제 제품 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-028",
+      "slug": "automatic-journals",
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: Amaranth 10, 회계, 자료수집 및 자동분개처리, 최근수집현황, 자료수집, 오류현황, 통장, 가상계좌, 신용카드 매입, 신용카드 매출, 세금계산서 매입, 세금계산서 매출, 현금영수증 매입, 현금영수증 매출, 직전 수집일시, 직전 수집기간, 직전 수집건수, 자동수집, 직접수집, 수집성공, 수집오류, 등록된 가상계좌가 없습니다., [증빙등록/기초설정] 메뉴에서 등록해주시기 바랍니다. Do not change dates or row cards, even original odd sample-date ordering.",
+      "generatedFile": "exec-08f9ae1e-6ce7-4109-b610-7bf52b23c7b1.png",
+      "reference": "assets/subpages/quality-screens/automatic-journals-clear-v1.png",
+      "output": "assets/subpages/quality-screens/automatic-journals-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 1970,
+      "generatedWidth": 1557,
+      "generatedHeight": 1010,
+      "outputSha256": "f50160c30782b08078635a72cda91f112c814b5f08257442fdf1dd399efd5cb6",
+      "uses": [
+        {
+          "location": "Amaranth10 · 회계관리",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/amaranth10/overview.html",
+          "title": "Amaranth 10 자동전표처리 실제 제품 화면"
+        },
+        {
+          "location": "Amaranth10 비영리 / overview",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/nonprofit/intro.html?tab=overview",
+          "title": "Amaranth 10 자동전표처리 실제 제품 화면"
+        },
+        {
+          "location": "Amaranth10 비영리 / 회계관리",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/nonprofit/intro.html?tab=accounting",
+          "title": "Amaranth 10 자동전표처리 실제 제품 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-030",
+      "slug": "closing-statements",
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: Amaranth 10, 회계관리, 결산자료입력, 새로작성, 감가상각, 전표발행, 발행취소, 계정설정, 결산자료, 회계단위, 기간, 과목, 금액, 분개대상금액, 매출액, 상품매출, 제품매출, 매출원가, 결산분개 내역보기, 결의부서, 결의사원, 결의일, 계정코드, 계정명, 대차, 차변, 대변, 적요, 원재료비, 직원급여, 복리후생비, 복리후생비-식대, 여비교통비-국내출장, 통신비-전화요금, 재공품, 상품, 접대비, 결산정리. Preserve grey backdrop intentional modal effect; sharpen all small letters, no whitening overlay.",
+      "generatedFile": "exec-ef5d5277-bbbc-48f4-bea5-c59b1971b0f3.png",
+      "reference": "assets/subpages/quality-screens/closing-statements-clear-v1.png",
+      "output": "assets/subpages/quality-screens/closing-statements-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 1966,
+      "generatedWidth": 1559,
+      "generatedHeight": 1009,
+      "outputSha256": "5cb313dc48b714b4672d3f08e36ff575f59eda57b1f7d8562fcc10706655e3d6",
+      "uses": [
+        {
+          "location": "Amaranth10 · 회계관리",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/amaranth10/overview.html",
+          "title": "Amaranth 10 결산/재무제표관리 실제 제품 화면"
+        },
+        {
+          "location": "Amaranth10 비영리 / 회계관리",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/nonprofit/intro.html?tab=accounting",
+          "title": "Amaranth 10 결산/재무제표관리 실제 제품 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-029",
+      "slug": "journals",
+      "generatedFile": "exec-58d35c25-e30e-4a0e-8202-20a2bb33384f.png",
+      "prompt": "Edit target: provided actual Amaranth 10 journal accounting screenshot. Make the SAME complete screenshot extremely crisp, high-resolution PNG. Restore clean uniform native Korean UI fonts instead of blur, with no redesigned layout and absolutely no new text, no misspellings. Preserve every original row, number, date, logo, labels, proportions and UI whitespace. Exact key labels: Amaranth 10, 전표입력, 회계관리, 결재상신, 세금계산서발행, 회계단위, 작성부서, 작성자, 작성일, 기본정보, 전표품의내역, 전표승인정보, 결재정보, 전표처리화면, 전표분개, 차변금액, 대변금액, 차이금액, 관리항목, 매입부가세정보, 승인필요, 미제출, 매입, 일반, 소모품비-사무용품, 부가세대급금, 미지급금, 전화기, 세금계산서. Original sample data remains unchanged and original grid remains fully visible including left and right edges. No framing border or device mockup. Transparency ONLY outside full rectangular UI, UI white background stays opaque. Match source aspect ratio. Highest resolution, razor-sharp small labels, solid dark gray typography with careful Hangul syllables.\nOpaque rectangular UI, no transparency inside.",
+      "reference": "assets/subpages/quality-screens/journals-clear-v1.png",
+      "output": "assets/subpages/quality-screens/journals-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 1966,
+      "generatedWidth": 1559,
+      "generatedHeight": 1009,
+      "outputSha256": "13413f847c4ada786260258cc6b79d5861a351c0f105fbb68bb69a3e029c2923",
+      "uses": [
+        {
+          "location": "Amaranth10 · 회계관리",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/amaranth10/overview.html",
+          "title": "Amaranth 10 전표/장부관리 실제 제품 화면"
+        },
+        {
+          "location": "Amaranth10 비영리 / 회계관리",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/nonprofit/intro.html?tab=accounting",
+          "title": "Amaranth 10 전표/장부관리 실제 제품 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-031",
+      "slug": "custom-statements",
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: Amaranth 10, 회계관리, 재무제표양식설정, 서식설정, 그룹매핑확인, 서식유형, 재무상태표, 서식, 그룹등록, 계산설정, 계정등록, 코드, 그룹명, 그룹명(보조언어), 계산유형, 차대구분, 표시구분, 하위계정전개, 상위그룹, 레벨코드, 그룹성격, 정렬순서, 출력명(이익), 출력명(이익-보조언어), 자산, 유동자산, 당좌자산, 재고자산, 임대주택 자산, 비유동자산, 투자자산, 유형자산, 무형자산, 기타비유동자산, 자산총계, 부채, 유동부채, 비유동부채, 부채총계, 자본, 자본금, 계산안함, 그룹집계(차감), 계정집계(차감), 차변, 대변, 무조건 표시. IMPORTANT original auxiliary language is Chinese/Japanese legitimate accounting translations; preserve them, do not turn them into gibberish or replace with Korean. 資産, 流動資産, 当座資産, 在庫資産, 非流動資産, 有形資産, 無形資産, 資産総計, 負債, 流動負債, 非流動負債, 負債総計, 資本, 資本金.",
+      "generatedFile": "exec-77b4946d-8b9c-4205-928f-89f6dea222a2.png",
+      "reference": "assets/subpages/quality-screens/custom-statements-clear-v1.png",
+      "output": "assets/subpages/quality-screens/custom-statements-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 1970,
+      "generatedWidth": 1557,
+      "generatedHeight": 1010,
+      "outputSha256": "9e570450a5a3ad2de9c249a7e94b16b5bd59e6134ac9f3214385a25f00700a0e",
+      "uses": [
+        {
+          "location": "Amaranth10 · 회계관리",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/amaranth10/overview.html",
+          "title": "Amaranth 10 사용자정의 재무제표관리 실제 제품 화면"
+        },
+        {
+          "location": "Amaranth10 비영리 / 회계관리",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/nonprofit/intro.html?tab=accounting",
+          "title": "Amaranth 10 사용자정의 재무제표관리 실제 제품 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-032",
+      "slug": "fixed-assets",
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: Amaranth 10, 회계관리, 고정자산등록, 재계산, 월상각 내역보기, 회계단위, 자산유형, 입력기수, 토지 외 42건, 자산코드, 취득일, 상각여부, 마감여부, 건물, 호남사업장건물, 춘천공장, 부산사업장건물, 을지사옥, 강릉본사, 강릉복지동, 기계장치, 하드코팅기, 차량운반구, 아반떼7704, 주요등록사항, 추가등록사항, 자산명, 취득일자, 상각방법, 내용연수, 상각률, 정액법, 취득원가, 당기상각비, 전기말상각누계액, 당기말 상각누계액, 전기말장부가액, 당기말 장부가액, 경비구분, 제조, 당기상각 여부, 상각진행, 상각안함, 자산이력, 일자, 구분, 적요, 금액, 전기말상각누계액감소, 변동수량, 자본적지출. Preserve sample values20,000,000;2,000,000;1,800,000;3,800,000;18,200,000;16,200,000.",
+      "generatedFile": "exec-e05d56c5-0969-49cc-b600-ecabd358048d.png",
+      "reference": "assets/subpages/quality-screens/fixed-assets-clear-v1.png",
+      "output": "assets/subpages/quality-screens/fixed-assets-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 1970,
+      "generatedWidth": 1557,
+      "generatedHeight": 1010,
+      "outputSha256": "1b4eb8fa588cba791eb65ac751172a60950c856754ab9e90acbd1c0ff1bb0387",
+      "uses": [
+        {
+          "location": "Amaranth10 · 회계관리",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/amaranth10/overview.html",
+          "title": "Amaranth 10 고정자산관리 실제 제품 화면"
+        },
+        {
+          "location": "Amaranth10 비영리 / 회계관리",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/nonprofit/intro.html?tab=accounting",
+          "title": "Amaranth 10 고정자산관리 실제 제품 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-133",
+      "slug": "screenshot_extra_04",
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: WE CRM, 대시보드, 거래처관리, 목표설정, 서비스관리, 거래처(담당자) 등록, 거래처, 전체, 검색어를 입력해주세요., 목표금액, 2019년 2분기, 3,000,000,000원, 목표 달성률, -270,000,000원, 20%, 목표 달성 가능성, 보통, 60%, 전체 수주, 미수주, 전체 차변, 내차변, 영업현황, 실적현황, 이슈/영업관리, 영업 거래, 요구분석, 제안 및 검토, 구매 의도 단계, 평가단계, 평가기업, DBP본부, 월별, 분기별, 전체. Every chart tick, amount and month unchanged. Sharpen tiny sidebar labels. Keep same graph lengths and layout.",
+      "generatedFile": "exec-e8455b00-0b1b-422d-96d2-0c976011f7ec.png",
+      "priorGeneratedFile": "exec-ec5c5c40-21fb-4f9d-91bd-9336ec7b50ee.png",
+      "repairPrompt": "Targeted text repair of the provided screenshot. Correct ONLY the last of the six stage headings (far right, above 250,000,000원) from garbled '평가기안' to exact '평가의견 (-60%)'. The adjacent previous heading remains exact '평가단계 (-60%)'. All other labels and numeric amounts remain unchanged. Full rectangular UI must stay opaque, preserve all original content, geometry and product branding; highest-resolution PNG; no crop or extra decoration.",
+      "repairHistory": [
+        {
+          "file": "exec-b25ded09-41d8-4199-add1-bd26b18f4fdf.png",
+          "prompt": "Precise local repair of provided image; highest supported resolution PNG, no cropping. Far-right stage heading is misspelled 평가기견. Replace with 평가의견 (-60%). Exact syllables 평 가 의 견, including third syllable 의. Keep previous 평가단계 (-60%). All other text unchanged."
+        }
+      ],
+      "reference": "assets/subpages/quality-screens/screenshot_extra_04-clear-v1.png",
+      "output": "assets/subpages/quality-screens/screenshot_extra_04-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 1905,
+      "generatedWidth": 1584,
+      "generatedHeight": 993,
+      "outputSha256": "ed2eba1216293f5bc242a0387be3099a9854cf4b1ee2e309defe23f891e761e2",
+      "uses": [
+        {
+          "location": "WEHAGO · 부가서비스",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/wehago/extraservice.html",
+          "title": "WE CRM — WE CRM 영업 목표·실적 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-134",
+      "slug": "screenshot_extra_05",
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: WEHAGO, (주)더존비즈온, WE PMS, 대시보드, 프로젝트 관리, 자원관리, 관리자페이지, 총 프로젝트, 13건, 완료 0건, 진행중 11건, 보류 1건, 지연 0건, 실패 1건, 이번달 종료되는 프로젝트, 정보화전략 프로젝트, (유)에림꽃게, 진행률, 67%,35%, 실시간 이슈, 제품기획 요구정의서, 홈페이지, 리플릿제작 의뢰, Gang Survey 시설 구축, KMAC 실시간 모니터링, 진행현황, 이슈현황, 상태, 전체프로젝트, 우선순위, 전체, 기간, 시작일 순, 구분, 프로젝트명, 거래처, 시작일, 투입기간, 담당자, 이슈, 더존상사, Today. Preserve yellow numbered help annotations 1,2,3. Spell 진행률 precisely, not 진행울. Preserve original table dates/counts/percentages and bar geometry.",
+      "generatedFile": "exec-34cc1154-5fee-47e0-980b-0eddfda3bcd3.png",
+      "reference": "assets/subpages/quality-screens/screenshot_extra_05-clear-v1.png",
+      "output": "assets/subpages/quality-screens/screenshot_extra_05-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 2253,
+      "generatedWidth": 1455,
+      "generatedHeight": 1081,
+      "outputSha256": "dfb9464532aeb81828c4e1ed4e2b88431f79a1a407b6b5259d23032aa1a4ccfe",
+      "uses": [
+        {
+          "location": "WEHAGO · 부가서비스",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/wehago/extraservice.html",
+          "title": "WEHAGO WE PMS 프로젝트 진행현황 대시보드"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-135",
+      "slug": "screenshot_extra_01",
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: WEHAGO, 법인카드, 카드관리, 경비관리, 지출관리, 결재, 지출현황, 서비스관리, 전체카드 10, 사용카드 9, 미사용카드 1, 카드등록, BC카드, 국민카드, 삼성카드, 우리카드, 정기, 장기, 단기, 사용중, 카드사용자, 사용기간, 카드기본정보, 카드정보, 등록시 입력한 정보는 수정할 수 없습니다, 사이트아이디, 계정변경, 유효기간, 카드별칭, 결제계좌, 결제일, 입력안함, 카드사용정보, 사용구분, 사용용도, 승인금액, 카드실사용자, 경비관리자, 직원을 검색하세요., 찾기, 사용 카드는 삭제할 수 없습니다., 반납 후 사용해주세요., 카드반납, 저장. Preserve original card numbers masked stars, sample user names anddates.",
+      "generatedFile": "exec-7fa13ebc-8431-4af1-a6ec-48fee0bf75e7.png",
+      "reference": "assets/subpages/quality-screens/screenshot_extra_01-clear-v1.png",
+      "output": "assets/subpages/quality-screens/screenshot_extra_01-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 2013,
+      "generatedWidth": 1540,
+      "generatedHeight": 1021,
+      "outputSha256": "c91d77b896ec3cbe1d9bd43ca836de1951d455eccaf3650c47525f5b13c49345",
+      "uses": [
+        {
+          "location": "WEHAGO · 부가서비스",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/wehago/extraservice.html",
+          "title": "경비청구 - 법인카드 — 법인카드 관리 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-005",
+      "slug": "mail",
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: Amaranth 10, 메일, 메일쓰기, 내게쓰기, 받은메일함, 전체메일함, 보낸메일함, 수신확인, 예약메일함, 임시보관함, 내메일함, 스팸메일함, 휴지통, 안읽음, 중요, 첨부, 받는사람, 읽음, 삭제, 수신차단, 답장, 전체답장, 전달, 이동, 정렬:날짜, 필터:모든메일, 내보내기, 링크복사, KEEP, 게시판, 업무관리, 네트워크 작업일정 공유 및 문의드립니다., 보낸사람, 받는사람, 용량, 맨 위로. Keep original dimmed background overlay, sharpen text behind and inside modal. Same original long Korean email text, don't introduce nonsense.",
+      "generatedFile": "exec-92743b0f-31a0-4575-84b5-6c725db6d669.png",
+      "reference": "assets/subpages/quality-screens/mail-clear-v1.png",
+      "output": "assets/subpages/quality-screens/mail-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 1969,
+      "generatedWidth": 1558,
+      "generatedHeight": 1010,
+      "outputSha256": "0381f9a85d8e19b3c459db367a2e61cd83100a8244b013e667f887fc806a110d",
+      "uses": [
+        {
+          "location": "Amaranth10 · 그룹웨어",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/amaranth10/brand.html",
+          "title": "Amaranth 10 전자메일 실제 제품 화면"
+        },
+        {
+          "location": "Amaranth10 비영리 / 그룹웨어",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/nonprofit/intro.html?tab=groupware",
+          "title": "Amaranth 10 전자메일 실제 제품 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-006",
+      "slug": "bulletin",
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: Amaranth 10, 게시판, 최근공지글, 최근게시글, 사내게시판, 상담형 게시판, 제안게시판, 메모게시판, 웹진형게시판, 사진게시판, 동영상게시판, 토론게시판, 설문조사, 나의활동, 스크랩, 게시글, 내가 쓴 댓글, 임시보관함, 담당게시판, 제목, 내용, 텍스트 검색, 목록열기, 글쓰기, 더존비즈온, 4차 산업혁명 선도 공로 ‘대통령 표창’, 국가생산성대상, NATIONAL PRODUCTIVITY AWARD. Preserve the EXACT original four people in ceremony photo and original image; no new faces/photo replacement. Lower article text must remain identical with crisp readable Korean, no fake text.",
+      "generatedFile": "exec-be6ad4b0-a0f5-4e83-8d0a-9050ddd0b583.png",
+      "priorGeneratedFile": "exec-ff482605-2335-45a6-a5a1-74b5b2e46a00.png",
+      "repairPrompt": "Targeted text repair of the provided screenshot. Correct ONLY two visible text mistakes. Left sidebar: row between '사진게시판 195' and '동영상게시판 137' must be '상담형게시판 415', not a second 동영상게시판. At first article paragraph directly below photograph, the red highlighted company-name word must be exact '더존비즈온'. Full paragraph: '[아시아경제 장효원 기자] 더존비즈온 (대표 김용우)은 3일 서울 영등포구 전경련회관 컨퍼런스센터에서 열린 ‘제46회 국가생산성대회’에서 국가생산성대상 4차 산업혁명 선도기업 부문 ‘대통령표창’을 수상했다고 4일 밝혔다.' Preserve all other original pixels, photo, words and layout. Full rectangular UI must stay opaque, preserve all original content, geometry and product branding; highest-resolution PNG; no crop or extra decoration.",
+      "reference": "assets/subpages/quality-screens/bulletin-clear-v1.png",
+      "output": "assets/subpages/quality-screens/bulletin-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 1970,
+      "generatedWidth": 1557,
+      "generatedHeight": 1010,
+      "outputSha256": "412287cef517e4ec165a15ad1b92775af8b285c2cb1efa17c194d9c0067cfff8",
+      "uses": [
+        {
+          "location": "Amaranth10 · 그룹웨어",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/amaranth10/brand.html",
+          "title": "Amaranth 10 게시판 실제 제품 화면"
+        },
+        {
+          "location": "Amaranth10 비영리 / 그룹웨어",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/nonprofit/intro.html?tab=groupware",
+          "title": "Amaranth 10 게시판 실제 제품 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-003",
+      "slug": "calendar",
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: Amaranth 10, 일정, 일정등록, 기간, 월별,2021-06-01~2021-06-30, 2021년 6월, 오늘, 내 일정만 보기, ON, ToDo, 월간, 주간, 일간, 목록, 개인별주간, 나의 ToDo 10, 개인일정, 전사문서함, 부서문서함, 결재문서함, 구글, 공유일정, EBP사업본부, EBP개발센터, 구독일정, 일,월,화,수,목,금,토, 당직(주간), 당직(야간), Web 고도화 디자인, Web 컨퍼런스, [연차] 이사원, 클라우드 서비스, 개발센터 교육진행, 기획Cell 교육진행. Preserve complete calendar. Some original event names deliberately end in ellipsis; don't invent their hidden words.",
+      "generatedFile": "exec-eb0fab5f-33a9-4904-be72-66143872adc6.png",
+      "priorGeneratedFile": "exec-8a0b6859-3ccc-4997-873f-2f699e70c61e.png",
+      "repairPrompt": "Targeted text repair of the provided screenshot. Correct only the selected calendar mode button '월가' to EXACT '월간' (two Hangul syllables). Adjacent buttons remain '주간', '일간', '목록', '개인별주간'. Preserve all other original pixels, UI, dates and words. Full rectangular UI must stay opaque, preserve all original content, geometry and product branding; highest-resolution PNG; no crop or extra decoration.",
+      "repairHistory": [
+        {
+          "file": "exec-54308809-37b8-4db9-b416-74834b1ef5d1.png",
+          "prompt": "Precise local repair of provided image; highest supported resolution PNG, no cropping. The selected blue-outlined calendar button near upper right currently reads 월가. Replace that EXACT word with 월간. It is monthly view, Korean 월간, second syllable 간 (giyeok + a + nieun). Do not write 월가. Do not change anything else."
+        }
+      ],
+      "reference": "assets/subpages/quality-screens/calendar-clear-v1.png",
+      "output": "assets/subpages/quality-screens/calendar-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 1987,
+      "generatedWidth": 1550,
+      "generatedHeight": 1014,
+      "outputSha256": "f188312636fa48fc8238dccddd53360f26c95ace395d9879b04b53d84cbb0d38",
+      "uses": [
+        {
+          "location": "Amaranth10 · 그룹웨어",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/amaranth10/brand.html",
+          "title": "Amaranth 10 일정관리 실제 제품 화면"
+        },
+        {
+          "location": "Amaranth10 비영리 / overview",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/nonprofit/intro.html?tab=overview",
+          "title": "Amaranth 10 일정관리 실제 제품 화면"
+        },
+        {
+          "location": "Amaranth10 비영리 / 그룹웨어",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/nonprofit/intro.html?tab=groupware",
+          "title": "Amaranth 10 일정관리 실제 제품 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-007",
+      "slug": "kiss",
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: Amaranth 10, 업무관리, ToDo 등록, 나의업무, 예정, 지연, 진행, 완료, 업무모아보기, 업무리포트, 나의 ToDo, 할당된 ToDo, 지켜보기 ToDo, 프로젝트, 나의그룹, 전체그룹, 나의그룹1, 나의그룹2, 나의그룹3, 즐겨찾기, 나의 전체업무, 필터초기화, 2025년 4월 6일, 오늘, 나의 ToDo (2), 일반, ToDo명, Amaranth 10 구축, 중요, 부가세신고업무, 나의업무이력, 프로젝트별 업무, 위치변경, 이슈등록, SubTask 등록, 긴급, 지급업체업무, 박더존 과장, 개인연차계획작성. Preserve original dates, states and percentages. Do not confuse 그룹 with 고룹.",
+      "generatedFile": "exec-a96f331e-9074-49d5-83dd-aa53ec7f802f.png",
+      "reference": "assets/subpages/quality-screens/kiss-clear-v1.png",
+      "output": "assets/subpages/quality-screens/kiss-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 1959,
+      "generatedWidth": 1561,
+      "generatedHeight": 1007,
+      "outputSha256": "09ddd9b2f0e6f357f30a6831a13988803f60c6199602aafae8766663e484f90c",
+      "uses": [
+        {
+          "location": "Amaranth10 · 그룹웨어",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/amaranth10/brand.html",
+          "title": "Amaranth 10 업무관리(KISS) 실제 제품 화면"
+        },
+        {
+          "location": "Amaranth10 비영리 / 그룹웨어",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/nonprofit/intro.html?tab=groupware",
+          "title": "Amaranth 10 업무관리(KISS) 실제 제품 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-011",
+      "slug": "fax",
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: Amaranth 10, 팩스, 팩스보내기, 국내팩스보내기, 국제팩스보내기, 광고팩스보내기, 대량팩스보내기, 전자동기팩스보내기, 팩스함, 받은팩스함, 공유팩스함, 휴지통, 전송결과, 국내팩스보내기, 보내기방식 선택, 팩스번호, 회사, 내 팩스번호를 선택하면 상대방에게 발신자번호로 표시됩니다., 받는사람, 보내실 팩스번호를 직접 입력해주세요., 직접입력의 경우 팩스번호 형식의 값만 입력 가능합니다., 전송문서, 파일명, 장수, 미리보기, 순서변경, 삭제, 최근 사용한 번호, 체크박스를 선택하면 받는사람에 추가됩니다., 선택, 검색결과가 없습니다., 파일첨부, 전체 미리보기, 초기화, 팩스 보내기, 파일변환을 하지 못하는 경우 확인[내용보기]. Original emptytables stayempty. Exactly preserve native screen, no new fake UI.",
+      "generatedFile": "exec-5579254f-6401-4e79-b9f5-682e26d10344.png",
+      "repairHistory": [
+        {
+          "file": "exec-2ba80ac2-c9ad-4664-af8b-06969be77ed4.png",
+          "prompt": "Precise targeted text repair, clean high resolution PNG with fully opaque original UI, same complete aspect ratio. Remove ONLY the extra fifth sidebar menu text '전자동기팩스보내기' below 대량팩스보내기. Original fax menu has exactly four items: 국내팩스보내기, 국제팩스보내기, 광고팩스보내기, 대량팩스보내기. Keep remaining sidebar 팩스함 / 받은팩스함 / 공유팩스함 / 휴지통 / 전송결과 and every other pixel and word unchanged."
+        }
+      ],
+      "reference": "assets/subpages/quality-screens/fax-clear-v1.png",
+      "output": "assets/subpages/quality-screens/fax-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 1976,
+      "generatedWidth": 1555,
+      "generatedHeight": 1012,
+      "outputSha256": "440745909fc22bc3f3598b0a62b2ad02d8ed123a5572f5d316ccb326e9cc3b24",
+      "uses": [
+        {
+          "location": "Amaranth10 · 그룹웨어",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/amaranth10/brand.html",
+          "title": "Amaranth 10 전자팩스 화면"
+        },
+        {
+          "location": "Amaranth10 비영리 / 그룹웨어",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/nonprofit/intro.html?tab=groupware",
+          "title": "Amaranth 10 전자팩스 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-012",
+      "slug": "sms",
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: Amaranth 10, 문자, 문자보내기, 일반문자 보내기, 엑셀 보내기, 광고문자 보내기, 전송결과, 환경설정, 서비스관리, 미리보기, 90byte 초과 시 장문문자로 전환됩니다., 잔여 0/90 byte, 다시쓰기, 문자보관함, 문자저장, 회사명, 담당자, * 표시는 필수입력 사항입니다., 포인트, 요금안내, 발신번호 사전등록 안내, 제목, 받는사람 불러오기, 파일 불러오기, 핸드폰번호, 담당자, 번호등록관리, 받는사람, 보내는사람, 번호 등록 관리, 전송옵션, 전송시간, 즉시보내기, 예약보내기, 포토화질, 원본화질, 일반화질, 저화질, 전송단가 단문:25P 장문:60P 포토:200P, 예상금액 0P, 초기화, 문자보내기. Exact 옵션 not 옵선. Preserve the phone preview inside application and all boundaries.",
+      "generatedFile": "exec-0d170318-447f-49b6-ba19-aaea65f1a957.png",
+      "reference": "assets/subpages/quality-screens/sms-clear-v1.png",
+      "output": "assets/subpages/quality-screens/sms-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 1966,
+      "generatedWidth": 1559,
+      "generatedHeight": 1009,
+      "outputSha256": "052a9682efad2d84e610ef2b3f00a66d0d5dacee21437827226460dbf7a4904c",
+      "uses": [
+        {
+          "location": "Amaranth10 · 그룹웨어",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/amaranth10/brand.html",
+          "title": "Amaranth 10 SMS 화면"
+        },
+        {
+          "location": "Amaranth10 비영리 / 그룹웨어",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/nonprofit/intro.html?tab=groupware",
+          "title": "Amaranth 10 SMS 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-015",
+      "slug": "attendance",
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: Amaranth 10, 임직원업무관리, 개인근무시간동의, 근태신청서,2025년 2월 2주, 이번주, 근태적용, 인정근무 총계 40시간 00분, 초과근무, 기본근무, 잔여근무 12시간 00분, 구분, 2월 3일(월),2월 4일(화),2월 5일(수),2월 6일(목),2월 7일(금),2월 8일(토),2월 9일(일), 표준근무, 출결구분, 출근시간, 퇴근시간, 정상근무, 휴일, 기본근무, 초과근무, 외출시간, 인정근무, 조정신청, 근태신청, 댓글, 상태, 승인. All times/date/columns preserved. Make currently pale labels legible but no changing meaning.",
+      "generatedFile": "exec-692423bd-9d3c-402e-bf07-c4674d94caf8.png",
+      "reference": "assets/subpages/quality-screens/attendance-clear-v1.png",
+      "output": "assets/subpages/quality-screens/attendance-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 1970,
+      "generatedWidth": 1557,
+      "generatedHeight": 1010,
+      "outputSha256": "57ebf5bfa20aec8b7f4804546049182af27a63898b903eca70c411d5f9724c72",
+      "uses": [
+        {
+          "location": "Amaranth10 · 인사관리",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/amaranth10/hr.html",
+          "title": "Amaranth 10 근태관리 실제 제품 화면"
+        },
+        {
+          "location": "Amaranth10 비영리 / overview",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/nonprofit/intro.html?tab=overview",
+          "title": "Amaranth 10 근태관리 실제 제품 화면"
+        },
+        {
+          "location": "Amaranth10 비영리 / 인사관리",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/nonprofit/intro.html?tab=hr",
+          "title": "Amaranth 10 근태관리 실제 제품 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-016",
+      "slug": "annual-leave",
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: Amaranth 10, 월별연차계획, 임직원업무관리, 근태신청서, 사내매뉴얼, 공지사항,2025년 05월, 작성완료, ERP설계1팀, 김더존 연차계획현황, 제출기한:2025년 05월 14일, 당월연차계획 1일, 연차사용현황, 전체일수 15, 사용일수 5, 잔여일수 10, 기준일 2025-05-12,33%, 연차사용률,2025년 5월, 이번달, 내 계획 보기, 작성취소, 일,월,화,수,목,금,토, 정용빈 사원 (1일 휴가), 어린이날. Preserve full original illustration, counters and dates; increase legibility of light gray statistic captions.",
+      "generatedFile": "exec-6c72fa98-64d1-4522-996d-3d2679badf09.png",
+      "reference": "assets/subpages/quality-screens/annual-leave-clear-v1.png",
+      "output": "assets/subpages/quality-screens/annual-leave-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 1924,
+      "generatedWidth": 1576,
+      "generatedHeight": 998,
+      "outputSha256": "75bf2aa6c1c73c11f3ba0819ed4d913f624e798f855d3ea708d7ef154393144d",
+      "uses": [
+        {
+          "location": "Amaranth10 · 인사관리",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/amaranth10/hr.html",
+          "title": "Amaranth 10 연차관리 실제 제품 화면"
+        },
+        {
+          "location": "Amaranth10 비영리 / 인사관리",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/nonprofit/intro.html?tab=hr",
+          "title": "Amaranth 10 연차관리 실제 제품 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-055",
+      "slug": "ui-002",
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: ERP10, 인사관리, 개인근태조회, 대사우관리(ESS), 개인신청관리, 근태신청관리, 대사우보고, 월별실적국세이전, 개인별급여명세서, 개인급여현황, 부서원근태조회, 인사정보조회, 개인별근태시간등록현황, 비상연락망, 휴근태현황, HR개발Cell, 김더존 개인근태현황, 근무일수, 총근무시간, 111시간 1분, 최소168시간, 기본근무시간, 연장근무시간, 야간근무시간, 잔여근무시간, 정상근무, 연차, 지각, 결근, 사원번호, 입사일, 근속일, 발생연차, 사용연차, 잔여연차, 근로시간 정보 2024년 4월 정상 근무일수(20일), 일자, 요일, 출근시간, 퇴근시간, 외출, 지각, 조퇴, 정상, 연장, 연장(초), 연장(야), 야간, 심야, 계, 근로시간 합계, 근무유형별집계, 근태코드별집계. Preserve full tall screenshot, both tables and all numbers. For ordinary web display make tiny text solid and legible at reduced size.",
+      "generatedFile": "exec-3c7e07dc-385f-4427-ac00-0b1c3c477aa7.png",
+      "reference": "assets/subpages/regenerated/ui-002.png",
+      "output": "assets/subpages/quality-screens/ui-002-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 3539,
+      "generatedWidth": 1159,
+      "generatedHeight": 1358,
+      "outputSha256": "f3f644325d82835d81470058b716f1a2c82c0b044d678986e4bfaa25adb8322f",
+      "uses": [
+        {
+          "location": "OmniEsol / ERP",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/omniesol.html",
+          "title": "ERP HRM — 개인근태조회 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-059",
+      "slug": "ui-006",
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: OmniEsol, ONEFFICE, ONEFFICE HOME, 새 문서 만들기, 내 문서함, 공유문서함, ONEFLIP, 중요문서함, 보안문서함, 휴지통, 전체 문서함, 제목, 검색, ONECHAMBER 바로가기, 최근사용한 양식, 나만의 양식, 모든양식, 업무보고, 세무회계, 회의록, 언론기사, 보고서, 새문서, 나의 양식1, 일반양식, 보고서양식, 제안서양식, 회계양식, 최근 조회한 문서, 최근 3개월 이내에 조회한 문서만 표시합니다., 모든 문서 타입, 모든문서, 중요, 제목, 문서상태, 소유자, 최근조회날짜, 크기, 더존비즈온 활동보고서, 원피스 2차 회의록, ECM 활동 보고서, ONEFFICE 기사편집기 개선 아이디어 정리, ONEFFICE 포스트 에세지 정책 질의서, ONEFFICE 기획 설계, ONEFFICE 모바일_QA QC_210615, Amaranth 10 ONEFFICE & ONECHAMBER 내부서함 통합 QA 리스트,210614_제목 없는 문서, 진행중. Keep all names, dates, rows and filename exact. Tiny document thumbnail text stays native rather than invented.",
+      "generatedFile": "exec-b70c0074-aa43-48f2-bbd1-e2ee2a9b5d48.png",
+      "reference": "assets/subpages/regenerated/ui-006.png",
+      "output": "assets/subpages/quality-screens/ui-006-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 3075,
+      "generatedWidth": 1244,
+      "generatedHeight": 1265,
+      "outputSha256": "512c8d417d0abd0a667ec7fc3b3d52a88ee613da04c51403067335ec177a988f",
+      "uses": [
+        {
+          "location": "OmniEsol / 그룹웨어/문서관리",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/omniesol.html",
+          "title": "ONEFFICE — ONEFFICE HOME 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-060",
+      "slug": "ui-005",
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: OmniEsol, ONECHAMBER, 내 문서함, ONFDC로 바로가기, 대시보드, 내 스토리지, 도큐플로우, 휴지통, 전사문서함, 부서문서함, 결재문서함, 연동문서함, 내가 작성한 문서, 폐기문서함, 최근문서함, 공유문서함, 중요문서함, 문서체계검색, 권한요청, 요청한 권한, 요청받은 권한, 통계, 기획서,2021기획서, 화면설계서, 수정일, 최신순, 새문서, 새폴더, 종류, 이름, 버전, 등록자, 크기, 문서상태/정보, 현장비 기능 명세서, 현장비 구매건, 공통 아이콘_LNB_폴더.png, 2024 사업컨텐츠_솔루션사업본부_20240507_final, 사업계획서_솔루션사업본부_20240607_v1.0_final…, 현장비 공유파일, 수정중, [24.06.04] Amaranth10_팀장비_화면리뉴얼_v1.1.pdf, 솔루션사업본부_20240607_v2.0_final.pptx, 홍길동, 홍보화면_final.mp4, 파일을 해당 폴더에 드롭하면 업로드 됩니다. Preserve filenames and dates exactly.",
+      "generatedFile": "exec-038fb6be-724e-4e77-aa1a-01508b4ef84a.png",
+      "reference": "assets/subpages/regenerated/ui-005.png",
+      "output": "assets/subpages/quality-screens/ui-005-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 2369,
+      "generatedWidth": 1419,
+      "generatedHeight": 1109,
+      "outputSha256": "a832965864a1c34460fbcf9c194e07143bd8ba1eb74e4d977269e5d6f4dfe5cf",
+      "uses": [
+        {
+          "location": "OmniEsol / 그룹웨어/문서관리",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/omniesol.html",
+          "title": "ONECHAMBER — ONECHAMBER 내 문서함 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-074",
+      "slug": "ui-091-proofread",
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact large text: 법령부터 예규, 판례까지 꼼꼼하게! 실무 중 발생하는 궁금증부터 복잡한 법령 해석까지 스마트하게 해결하는 AI 세법 도우미. 체계적이고 전문적인 방식으로 최적의 답변을 생성. 근거 법령, 판례, 해석례·검색, 세법 해석례, 판례까지 추가하여 정확하고 실효성있는 답변 작성, 안녕하세요, 세법도우미 입니다. 세무와 세법에 대한 궁금한 사항을 물어보세요., 필요할 때 바로 클릭하는 AI 세법 질의, 일반질의, 세법질의, 이런 질문도 있어요. IMPORTANT retain every original law/case citation verbatim, don't invent/change legal citations. Left rows need higher font contrast. Keep whole composition; true transparency ONLY exterior of white UI and callout panels. Use no blue background.",
+      "generatedFile": "exec-a1fa1c4f-58ad-4c00-9910-985e9ca1ba2a.png",
+      "repairHistory": [
+        {
+          "file": "exec-d206c07d-3049-408c-a912-4b19e0bc82e2.png",
+          "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact large text: 법령부터 예규, 판례까지 꼼꼼하게! 실무 중 발생하는 궁금증부터 복잡한 법령 해석까지 스마트하게 해결하는 AI 세법 도우미. 체계적이고 전문적인 방식으로 최적의 답변을 생성. 근거 법령, 판례, 해석례·검색, 세법 해석례, 판례까지 추가하여 정확하고 실효성있는 답변 작성, 안녕하세요, 세법도우미 입니다. 세무와 세법에 대한 궁금한 사항을 물어보세요., 필요할 때 바로 클릭하는 AI 세법 질의, 일반질의, 세법질의, 이런 질문도 있어요. IMPORTANT retain every original law/case citation verbatim, don't invent/change legal citations. Left rows need higher font contrast. Keep whole composition; true transparency ONLY exterior of white UI and callout panels. Use no blue background."
+        }
+      ],
+      "repairPrompt": "Precise edge cleanup only of this existing Korean product screenshot composition. Remove ALL scattered white/blue noise, jagged fringe, isolated speckles and scraps OUTSIDE the intended rounded UI panels, headline plaques and feature callouts. Create perfectly clean, smooth antialiased object silhouettes on genuine transparent alpha background. Preserve every intended element, complete unclipped composition, layout, UI, colors, Korean text and numbers precisely; do not rewrite article or legal content or change glyphs. No background fill/checkerboard/black rectangle. High resolution crisp Korean text. ",
+      "reference": "assets/subpages/regenerated/ui-091-proofread.png",
+      "output": "assets/subpages/quality-screens/ui-091-proofread-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 2070,
+      "generatedWidth": 1519,
+      "generatedHeight": 1036,
+      "outputSha256": "4208bbf78cd2ea11a45a8f17833b3b34ffa7fd195ffdcdcab7c560028c6887d9",
+      "uses": [
+        {
+          "location": "ONE AI",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/oneai.html",
+          "title": "세법도우미"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-075",
+      "slug": "ui-092-proofread",
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: ONE News, ONE NEWS, 산업 AI 혁신을 위한 10대 과제, 정부, 산업 AI 혁신 위한 10대 추진 과제 발표, 정확한 기사 초안, 참조 문서 첨부로 간편하게, 보기 쉬운 검사 및 결과 사용자 편의성 극대화, 주제 및 키워드 입력으로 간편화된 기사 생성, AI 교정 제안부터 직접 수정까지 빠르고 쉬운 기사문 교정, 고품질 기사 작성을 위한 전용 템플릿과 세부 옵션 설정, 맞춤법 검사, 반복어 검사, 어휘 평행 검사, 수정 제안, 모두 반영, 제목과 본문 연관성 검토, 본문 구문 및 어휘성 검토, 부적합, 원문, 수정안, 적용 유형, 반영, 도움말, AI 기사문 생성, 일반 입력, 현장 음성, 사진→글, 참조문서, 주제, 추가 키워드, 선택된 키워드, 추천받기, 산업 AI, 혁신 과제, 10대 과제, 디지털 전환, AI 정책, 산업 경쟁력, 자동화, 성장 전략, 한국 제조업, ONE AI 기사문 템플릿, 템플릿 선택, 맞춤형 적용, 세부설정, 문단 안정화, 완화, 문체, 기본. Exact word 템플릿, 옵션. Keep existing article paragraphs verbatim with crisp text.",
+      "generatedFile": "exec-5105210e-cc0d-4515-8e4f-8448e607f199.png",
+      "repairHistory": [
+        {
+          "file": "exec-bfc995fb-094f-4420-8321-9f8c97f12381.png",
+          "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: ONE News, ONE NEWS, 산업 AI 혁신을 위한 10대 과제, 정부, 산업 AI 혁신 위한 10대 추진 과제 발표, 정확한 기사 초안, 참조 문서 첨부로 간편하게, 보기 쉬운 검사 및 결과 사용자 편의성 극대화, 주제 및 키워드 입력으로 간편화된 기사 생성, AI 교정 제안부터 직접 수정까지 빠르고 쉬운 기사문 교정, 고품질 기사 작성을 위한 전용 템플릿과 세부 옵션 설정, 맞춤법 검사, 반복어 검사, 어휘 평행 검사, 수정 제안, 모두 반영, 제목과 본문 연관성 검토, 본문 구문 및 어휘성 검토, 부적합, 원문, 수정안, 적용 유형, 반영, 도움말, AI 기사문 생성, 일반 입력, 현장 음성, 사진→글, 참조문서, 주제, 추가 키워드, 선택된 키워드, 추천받기, 산업 AI, 혁신 과제, 10대 과제, 디지털 전환, AI 정책, 산업 경쟁력, 자동화, 성장 전략, 한국 제조업, ONE AI 기사문 템플릿, 템플릿 선택, 맞춤형 적용, 세부설정, 문단 안정화, 완화, 문체, 기본. Exact word 템플릿, 옵션. Keep existing article paragraphs verbatim with crisp text."
+        }
+      ],
+      "repairPrompt": "Precise edge cleanup only of this existing Korean product screenshot composition. Remove ALL scattered white/blue noise, jagged fringe, isolated speckles and scraps OUTSIDE the intended rounded UI panels, headline plaques and feature callouts. Create perfectly clean, smooth antialiased object silhouettes on genuine transparent alpha background. Preserve every intended element, complete unclipped composition, layout, UI, colors, Korean text and numbers precisely; do not rewrite article or legal content or change glyphs. No background fill/checkerboard/black rectangle. High resolution crisp Korean text. ",
+      "reference": "assets/subpages/regenerated/ui-092-proofread.png",
+      "output": "assets/subpages/quality-screens/ui-092-proofread-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 2059,
+      "generatedWidth": 1523,
+      "generatedHeight": 1033,
+      "outputSha256": "49204894587d1c9987f1a6e88f55c22786f8e3599c8a81cc5e64f9579e6aec89",
+      "uses": [
+        {
+          "location": "ONE AI",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/oneai.html",
+          "title": "ONE News"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-076",
+      "slug": "ui-093-proofread",
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: ONE Studio, 복잡한 편집 프로그램 없이도 클릭 몇 번으로 뉴스, 홍보, 교육 영상은 물론 숏폼 콘텐츠까지 손쉽게 제작 가능. AI 영상 생성, AI 대본 생성, 영상 생성, 선택한 영상 화면, 타이틀, 도입, 본론, 결론, 출연진, 김미주, 앵커, 최민호, 리포터, 영상 템플릿, 출연진 등 사용자 선택 옵션 화면 제공, AI 대본, 대본을 수정하고 출연진과 자막을 설정할 수 있습니다., 한국어, AI 대본 내보내기, Sc.No., 출연진, 스크립트, 자막, 자료화면, 출연진별 스크립트 및 자막 AI 자동 생성, 콘텐츠 몰입도를 높이는 자막 자동 생성, 아바타 음성 미리 듣고 발화 품질 손쉽게 확인, 이미지, 영상 자료화면 첨부만으로 빠르게 완성하는 영상 생성. Preserve exact script paragraphs: '안녕하세요. 오늘의 주제는 산업 AI 혁신입니다. 인공지능(AI)을 활용한 주요 추진 과제를 살펴보겠습니다. 지금부터 우리가 준비해야 할 사항을 알아보겠습니다.' All subsequent current paragraphs preserved exactly with correctly spelled 인공지능, 지금, 우리가 준비해야 할 사항, 기대됩니다. White application panels remain opaque, no croppededges.",
+      "generatedFile": "exec-41c3fc72-b438-49ff-8080-29227b824777.png",
+      "repairHistory": [
+        {
+          "file": "exec-5a752dff-dc63-4164-aeb7-b5ff41808c4c.png",
+          "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled. Exact labels: ONE Studio, 복잡한 편집 프로그램 없이도 클릭 몇 번으로 뉴스, 홍보, 교육 영상은 물론 숏폼 콘텐츠까지 손쉽게 제작 가능. AI 영상 생성, AI 대본 생성, 영상 생성, 선택한 영상 화면, 타이틀, 도입, 본론, 결론, 출연진, 김미주, 앵커, 최민호, 리포터, 영상 템플릿, 출연진 등 사용자 선택 옵션 화면 제공, AI 대본, 대본을 수정하고 출연진과 자막을 설정할 수 있습니다., 한국어, AI 대본 내보내기, Sc.No., 출연진, 스크립트, 자막, 자료화면, 출연진별 스크립트 및 자막 AI 자동 생성, 콘텐츠 몰입도를 높이는 자막 자동 생성, 아바타 음성 미리 듣고 발화 품질 손쉽게 확인, 이미지, 영상 자료화면 첨부만으로 빠르게 완성하는 영상 생성. Preserve exact script paragraphs: '안녕하세요. 오늘의 주제는 산업 AI 혁신입니다. 인공지능(AI)을 활용한 주요 추진 과제를 살펴보겠습니다. 지금부터 우리가 준비해야 할 사항을 알아보겠습니다.' All subsequent current paragraphs preserved exactly with correctly spelled 인공지능, 지금, 우리가 준비해야 할 사항, 기대됩니다. White application panels remain opaque, no croppededges."
+        },
+        {
+          "file": "exec-d23602f7-c0f3-4bcd-8317-ff4c02bdd757.png",
+          "prompt": "Precise edge cleanup only of this existing Korean product screenshot composition. Remove ALL scattered white/blue noise, jagged fringe, isolated speckles and scraps OUTSIDE the intended rounded UI panels, headline plaques and feature callouts. Create perfectly clean, smooth antialiased object silhouettes on genuine transparent alpha background. Preserve every intended element, complete unclipped composition, layout, UI, colors, Korean text and numbers precisely; do not rewrite article or legal content or change glyphs. No background fill/checkerboard/black rectangle. High resolution crisp Korean text. Also ensure the presenter role below 김미주 spells exactly '앵커' (not 앵거)."
+        }
+      ],
+      "repairPrompt": "Localized Korean typo correction only. In the upper-right presenter card beneath the female portrait, replace the role word below 김미주 with exactly 앵커. Spell it 앵 + 커, final syllable 커 contains ㅋ (not ㄱ). Use clean bold Noto Sans Korean so the ㅋ has two parallel horizontal strokes. Preserve all other text, layout, colors, complete screenshot and external transparency unchanged. No other changes.",
+      "reference": "assets/subpages/regenerated/ui-093-proofread.png",
+      "output": "assets/subpages/quality-screens/ui-093-proofread-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 2051,
+      "generatedWidth": 1526,
+      "generatedHeight": 1031,
+      "outputSha256": "258d051dea9473cfcd7795b1aabdf2464306216e705c9c9634f6f9ffcf8b1aec",
+      "uses": [
+        {
+          "location": "ONE AI",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/oneai.html",
+          "title": "ONE Studio"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-095",
+      "slug": "pms-progress",
+      "generatedFile": "exec-ead446b4-e6d7-463e-a262-a76de7ecba54.png",
+      "transparent": false,
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled.  Faithful restoration of all five complete PMS panels: 매출관리, 손익현황, 주간회의 매출수주, 목표관리, 실적관리. Sharpen Korean and numeric table text; preserve rows, dates, charts and complete bounds.",
+      "reference": "assets/subpages/regenerated/ui-098.png",
+      "output": "assets/subpages/quality-screens/pms-progress-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 1680,
+      "generatedWidth": 1688,
+      "generatedHeight": 932,
+      "outputSha256": "926e489c3d4aa6a96762fedbf2cccbc5ed1e3632a8594ecfdcb611059471c9bd",
+      "uses": [
+        {
+          "location": "PMS",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/pms.html",
+          "title": "더존 PMS 진행상황 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-097",
+      "slug": "pms-reservations",
+      "generatedFile": "exec-783b49f1-24ea-4281-a443-d2283416a25f.png",
+      "transparent": false,
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled.  Faithful restoration of PMS resource booking and registration. Exact primary labels 자원, 나의예약, 자원등록, 카테고리, 코드, 명칭, 사용여부, 삭제, 예약자, 조회, 초기화, 저장, 수정, 2024년 7월. All panels complete.",
+      "reference": "assets/subpages/regenerated/ui-100.png",
+      "output": "assets/subpages/quality-screens/pms-reservations-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 1636,
+      "generatedWidth": 1710,
+      "generatedHeight": 919,
+      "outputSha256": "82265116e02d90cccdd43bd0bd008a588d4c3b938dfaf20178da170fe25647ff",
+      "uses": [
+        {
+          "location": "PMS",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/pms.html",
+          "title": "더존 PMS 예약관리 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-149",
+      "slug": "smart-a10-modules",
+      "generatedFile": "exec-b8d19e36-f674-452a-a23d-b15b8800845d.png",
+      "transparent": true,
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled.  Restore all four complete Smart A10 module screenshots, exact 물류, 회계, 급여, 법인, Smart A10. Transparent exterior only; opaque white UI, sharp Korean. No border or fringe.",
+      "repairHistory": [
+        {
+          "file": "exec-9b3f67be-298e-46f5-a69e-ec5efc9749af.png",
+          "prompt": "Precise local repair of provided image; highest supported resolution PNG, no cropping. Remove ALL ragged colored fringe, scattered pixels, paint noise outside the four rounded module cards. Use truly transparent background outside only. Preserve white UI interiors and four screens, center Smart A10. Smooth clean alpha outline only, no white or colored halo. Correct 급여 screen subtitle to 이번달 급여지급현황, and small lower left icons: 급여명세, 근태현황, 휴가신청, 증명서, 연말정산."
+        }
+      ],
+      "reference": "assets/subpages/official-corrected/sources/smart-a10-modules.png",
+      "output": "assets/subpages/quality-screens/smart-a10-modules-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 1760,
+      "generatedWidth": 1649,
+      "generatedHeight": 954,
+      "outputSha256": "a43532aa4b8a60920c4ac7e1c83f87654bfefe24fb96c5578632c9a9535a72a5",
+      "uses": [
+        {
+          "location": "WEHAGO · Smart A10",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/wehago/smart_A10.html",
+          "title": "스마트한 Online 경영관리 — Smart A10 통합 업무 모듈 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    },
+    {
+      "id": "screen-150",
+      "slug": "wehago-flexible-work",
+      "generatedFile": "exec-3f4be442-fe16-4d7d-868e-2931d3490c4c.png",
+      "transparent": true,
+      "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled.  Restore all four WEHAGO mobile UI screens, straighten into front-facing 2 by 2 panels, retain full content and branding. Exact 채팅, 아이디, 비밀번호, 로그인, 아이디 저장, 로그인 상태 유지, 메일, 캘린더, 메신저, 전자결재, 근태관리, 화상회의. Transparent exterior, opaque UI.",
+      "repairHistory": [
+        {
+          "file": "exec-44ec5276-fca0-4b34-9576-97d3822138be.png",
+          "prompt": "Precise local repair of provided image; highest supported resolution PNG, no cropping. Remove the ENTIRE gray-white vignette background and glow behind and around all four panels. Outside the four white UI panels must be completely alpha=0 transparent; retain fully opaque white UI panels. No shadows, no background glow, no fringes. Keep all four complete UI screens, every Korean word unchanged."
+        }
+      ],
+      "reference": "assets/subpages/native-screens/wehago-flexible-work-transparent-v2.png",
+      "output": "assets/subpages/quality-screens/wehago-flexible-work-restored-v3.png",
+      "outputWidth": 3024,
+      "outputHeight": 2024,
+      "generatedWidth": 1536,
+      "generatedHeight": 1024,
+      "outputSha256": "430b39d556b92b27a1ff049c20047afdef4501f53b000c6065454dada265e8f6",
+      "uses": [
+        {
+          "location": "WEHAGO · Smart A10",
+          "url": "https://soft-bank-beta.vercel.app/subpages/product/wehago/smart_A10.html",
+          "title": "WEHAGO 유연한 근무환경 제공 실제 제품 화면"
+        }
+      ],
+      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+    }
+  ]
+}

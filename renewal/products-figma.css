@@ -508,3 +508,22 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
 .sb-figma-product #soft-bank-renewal .sb-content .sb-native-screen-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:start}
 .sb-native-screen-label{display:block;margin-top:8px;color:#58677b;font-size:14px;text-align:left}
 @media(max-width:760px){.sb-figma-product #soft-bank-renewal .sb-content .sb-native-screen-pair{grid-template-columns:minmax(0,1fr)}}
+
+/* Audited screenshots must be readable inline, without a height-derived width cap. */
+.sb-figma-product #soft-bank-renewal .sb-content .sb-clarity-restored,
+.sb-figma-product #soft-bank-renewal .sb-content .sb-zigzag-feature:has(.sb-clarity-restored){opacity:1!important;transform:none!important}
+.sb-figma-product #soft-bank-renewal .sb-content figure.sb-clarity-restored,
+.sb-figma-product #soft-bank-renewal .sb-zigzag-feature .sb-feature-visual figure.sb-clarity-restored{width:100%;max-width:100%;padding:0;border:0;background:transparent;box-shadow:none;overflow:visible}
+.sb-figma-product #soft-bank-renewal .sb-content .sb-native-screen-pair.sb-clarity-restored{grid-template-columns:minmax(0,1fr);gap:20px}
+.sb-inline-screen-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.sb-inline-screen-tabs button{border:0;border-radius:6px;background:#eef4ff;color:#2855a9;font-size:15px;padding:9px 15px;cursor:pointer}
+.sb-inline-screen-tabs button[aria-selected=true]{background:#2967d5;color:#fff}
+.sb-inline-screen-tabs button:focus-visible{outline:3px solid #90b8ff;outline-offset:3px}
+.sb-inline-screen-view[hidden]{display:none!important}
+.sb-inline-screen-window{position:relative;display:block;width:100%;overflow:hidden}
+.sb-figma-product #soft-bank-renewal .sb-content img.sb-inline-screen-image{position:absolute;display:block;max-width:none!important;max-height:none!important;object-fit:fill;border:0!important;border-radius:0!important;transform:none!important;opacity:1!important;animation:none!important}
+.sb-figma-product #soft-bank-renewal .sb-content .sb-zigzag-feature:has(.sb-clarity-restored){grid-template-columns:minmax(220px,.46fr) minmax(0,1.54fr)!important;gap:clamp(24px,3vw,44px)!important}
+.sb-figma-product #soft-bank-renewal .sb-content .sb-zigzag-feature[data-screen-layout=visual-left]:has(.sb-clarity-restored){grid-template-columns:minmax(0,1.54fr) minmax(220px,.46fr)!important}
+@media(max-width:760px){
+ .sb-figma-product #soft-bank-renewal .sb-content .sb-zigzag-feature[data-screen-layout]:has(.sb-clarity-restored){grid-template-columns:minmax(0,1fr)!important;gap:18px!important}
+}
