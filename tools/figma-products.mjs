@@ -223,6 +223,6 @@ export function applyProductDesign($,page,root){
  applyUnframedProductScreens($,root);
  applyNativeProductScreens($,page,root);
  applyProductScreenQuality($,page,root);
- const css=$('<link rel="stylesheet">').attr('href',root+'renewal/products-figma.css?v=20261008-1');$('head').append(css);
+ const css=$('<link rel="stylesheet">').attr('href',root+'renewal/products-figma.css?v=20261008-2');$('head').append(css);
  $('head').append($('<script defer></script>').attr('src',root+'renewal/products-figma.js?v=20261008-1'));
 }
