@@ -12,6 +12,7 @@ import {applyAmaranthImageCorrections} from './amaranth-image-corrections.mjs';
 import {applyOfficialProductImageCorrections} from './official-product-image-corrections.mjs';
 import {applyUnframedProductScreens} from './unframed-product-screens.mjs';
 import {applyNativeProductScreens} from './native-product-screens.mjs';
+import {applyProductScreenQuality} from './product-screen-quality.mjs';
 
 const assets=JSON.parse(await fs.readFile('assets/subpages/figma/manifest.json','utf8'));
 const file=(family,n)=>assets[family]?.[n-1]?.file;
@@ -221,6 +222,7 @@ export function applyProductDesign($,page,root){
  applyProductMockupRatios($);
  applyUnframedProductScreens($,root);
  applyNativeProductScreens($,page,root);
- const css=$('<link rel="stylesheet">').attr('href',root+'renewal/products-figma.css?v=20261007-3');$('head').append(css);
- $('head').append($('<script defer></script>').attr('src',root+'renewal/products-figma.js?v=20261007-3'));
+ applyProductScreenQuality($,page,root);
+ const css=$('<link rel="stylesheet">').attr('href',root+'renewal/products-figma.css?v=20261008-1');$('head').append(css);
+ $('head').append($('<script defer></script>').attr('src',root+'renewal/products-figma.js?v=20261008-1'));
 }

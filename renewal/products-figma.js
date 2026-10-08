@@ -15,14 +15,20 @@ document.addEventListener('DOMContentLoaded',()=>{
   const dialog=document.createElement('dialog');
   dialog.className='sb-image-dialog';dialog.setAttribute('aria-label','제품 이미지 크게 보기');
   const close=document.createElement('button');close.type='button';close.className='sb-image-close';close.textContent='닫기 ×';
+  const detail=document.createElement('button');detail.type='button';detail.className='sb-image-detail-toggle';detail.textContent='글자 확대';detail.hidden=true;detail.setAttribute('aria-pressed','false');
   const image=document.createElement('img');
   const crop=document.createElement('div');crop.className='sb-image-crop';crop.hidden=true;
   const caption=document.createElement('p');caption.className='sb-image-caption';
-  dialog.append(close,image,crop,caption);document.body.append(dialog);
-  let trigger=null;
+  const controls=document.createElement('div');controls.className='sb-image-tools';controls.append(detail,close);
+  dialog.append(controls,image,crop,caption);document.body.append(dialog);
+  image.addEventListener('load',()=>{detail.disabled=false;});
+  let trigger=null,fittedWidth=0;
   const open=(img,source)=>{
+   dialog.classList.remove('sb-image-detail');image.style.removeProperty('width');
+   detail.hidden=!img.dataset?.qualitySource;detail.textContent='글자 확대';detail.setAttribute('aria-pressed','false');
    dialog.classList.toggle('sb-poster-dialog',source.dataset.imageModal==='poster');
    trigger=source;image.src=img.src;image.alt=img.alt||'제품 이미지';caption.textContent=image.alt;
+   detail.disabled=!image.complete||!image.naturalWidth;
    const viewport=img.closest?.('.sb-screen-window');
    image.hidden=!!viewport;crop.hidden=!viewport;crop.replaceChildren();
    if(viewport){
@@ -33,11 +39,21 @@ document.addEventListener('DOMContentLoaded',()=>{
     const rect=img.dataset.screenCrop.split(',').map(Number);
     crop.style.setProperty('--sb-crop-ratio',String(rect[2]/rect[3]));
    }
-   dialog.showModal();dialog.scrollTop=0;document.body.classList.add('sb-image-open');close.focus();
+   dialog.showModal();dialog.scrollTop=0;dialog.scrollLeft=0;document.body.classList.add('sb-image-open');close.focus();
+   fittedWidth=0;
   };
+  detail.addEventListener('click',()=>{
+   const expanded=!dialog.classList.contains('sb-image-detail');
+   if(expanded)fittedWidth=image.getBoundingClientRect().width;
+   dialog.classList.toggle('sb-image-detail',expanded);
+   if(expanded)image.style.width=Math.min(image.naturalWidth,Math.max(fittedWidth*2,1200))+'px';
+   else image.style.removeProperty('width');
+   detail.textContent=expanded?'전체 화면':'글자 확대';detail.setAttribute('aria-pressed',String(expanded));
+   dialog.scrollTop=0;dialog.scrollLeft=0;
+  });
   close.addEventListener('click',()=>dialog.close());
   dialog.addEventListener('click',e=>{if(e.target!==dialog)return;const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();});
-  dialog.addEventListener('close',()=>{document.body.classList.remove('sb-image-open');trigger?.focus({preventScroll:true});image.removeAttribute('src');crop.replaceChildren();});
+  dialog.addEventListener('close',()=>{document.body.classList.remove('sb-image-open');trigger?.focus({preventScroll:true});image.removeAttribute('src');image.style.removeProperty('width');dialog.classList.remove('sb-image-detail');crop.replaceChildren();});
   document.querySelectorAll('a[data-image-modal]').forEach(link=>{
    link.addEventListener('click',e=>{
     if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;
