@@ -18,36 +18,38 @@
       "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
     },
     "source-004": {
-      "file": "assets/subpages/native-screens/wehago-flexible-work.png",
-      "width": 746,
-      "height": 500,
-      "sourceUrl": "https://www.idouzone.com/images/sub/swipe-img11.jpg",
-      "sourcePageUrl": "https://www.idouzone.com/product/pservice01_2.php",
+      "file": "assets/subpages/native-screens/wehago-flexible-work-transparent-v2.png",
+      "width": 1355,
+      "height": 904,
+      "sourceUrl": "https://static.wehago.com/html/landing/img/v2/bg_mobile.png",
+      "sourcePageUrl": "https://www.wehago.com/landing/ko/home/",
       "pdfPage": null,
-      "originalFile": "originals/www-idouzone-com-07692609-swipe-img11.jpg",
+      "originalFile": "output/wehago-quality-sources/official-mobile.png",
       "originalSize": [
-        746,
-        500
+        1355,
+        904
       ],
       "crop": null,
-      "sha256": "785ad38d3ff82c136dfef1b7159d3156c3ffea07826a167fb08b9f238558ab90",
-      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+      "transparentPadding": 0,
+      "sha256": "2af9c489f61c404eb27ea909e8c62af6c7d627d0faa5c486b4033243064a6cf0",
+      "export": "Larger official native source, lossless PNG with true alpha. Entire original retained; no resize, sharpening, text or UI generation. Transparent padding only where specified."
     },
     "source-010": {
-      "file": "assets/subpages/native-screens/wehago-e-tax.png",
-      "width": 746,
-      "height": 500,
-      "sourceUrl": "https://www.idouzone.com/images/sub/swipe-img7.jpg",
-      "sourcePageUrl": "https://www.idouzone.com/product/pservice01.php",
+      "file": "assets/subpages/native-screens/wehago-e-tax-full-v2.png",
+      "width": 1906,
+      "height": 948,
+      "sourceUrl": "https://wehagothelp.zendesk.com/hc/article_attachments/900004568246/mceclip0.png",
+      "sourcePageUrl": "https://wehagothelp.zendesk.com/hc/ko/articles/11368661603609--전자세금계산서-전자세금계산서-역발행",
       "pdfPage": null,
-      "originalFile": "originals/www-idouzone-com-5be528c4-swipe-img7.jpg",
+      "originalFile": "output/wehago-quality-sources/tax-form-uncropped.png",
       "originalSize": [
-        746,
-        500
+        1858,
+        900
       ],
       "crop": null,
-      "sha256": "f9c41a525dffb5307865fa9f26a407d35b4276ef109e7a7c162ebdcc4793b131",
-      "export": "Native pixels, lossless PNG; no upscaling, sharpening, text or UI regeneration."
+      "transparentPadding": 24,
+      "sha256": "36e06af23fab28a5f3d7e7c2360baa8841e2d3b0144eb74358fc826a77e601b6",
+      "export": "Larger official native source, lossless PNG with true alpha. Entire original retained; no resize, sharpening, text or UI generation. Transparent padding only where specified."
     },
     "source-041": {
       "file": "assets/subpages/native-screens/automatic-journals.png",
@@ -1161,5 +1163,6 @@
       "title": "업무 중 필요한 자료는 나만의 공간에 보관하고 언제든지 공유하고",
       "asset": "source-067"
     }
-  ]
+  ],
+  "qualityUpdateDate": "2026-10-08"
 }
