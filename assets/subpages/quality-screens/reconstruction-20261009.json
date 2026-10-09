@@ -812,22 +812,26 @@
     {
       "id": "screen-149",
       "slug": "smart-a10-modules",
-      "generatedFile": "exec-b8d19e36-f674-452a-a23d-b15b8800845d.png",
+      "generatedFile": "exec-87ed112e-37da-4dc5-ae1a-7ab5bceef508.png",
       "transparent": true,
       "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled.  Restore all four complete Smart A10 module screenshots, exact 물류, 회계, 급여, 법인, Smart A10. Transparent exterior only; opaque white UI, sharp Korean. No border or fringe.",
       "repairHistory": [
         {
           "file": "exec-9b3f67be-298e-46f5-a69e-ec5efc9749af.png",
           "prompt": "Precise local repair of provided image; highest supported resolution PNG, no cropping. Remove ALL ragged colored fringe, scattered pixels, paint noise outside the four rounded module cards. Use truly transparent background outside only. Preserve white UI interiors and four screens, center Smart A10. Smooth clean alpha outline only, no white or colored halo. Correct 급여 screen subtitle to 이번달 급여지급현황, and small lower left icons: 급여명세, 근태현황, 휴가신청, 증명서, 연말정산."
+        },
+        {
+          "file": "exec-b8d19e36-f674-452a-a23d-b15b8800845d.png",
+          "prompt": "Faithful clarity restoration of the PROVIDED product screenshot, editing target only. Preserve complete original interface, exact row and column counts, all navigation and every numeral, date, filename and Korean label. Do not invent data, replace text with nonsense or change product branding. Resolve blurry glyphs into precise clean native Korean sans-serif fonts with solid dark text and professional pixel-sharp UI edges. No redesign, no new illustration, no crop; the FULL source's left, right, top and bottom remain visible. Retain all application whitespace, cards, photographs, original icons and selected states. Very high-resolution lossless PNG, highest supported resolution (prefer 3000 pixels wide). Important: the WHOLE rectangular screen must remain FULLY OPAQUE including white backgrounds. No transparent holes inside UI; no device mockup, exterior border, shadow, new background or decorative elements. Tiny original external transparent padding can be represented as plain white; export processing will provide true alpha outside screen. Maintain aspect ratio. All Hangul syllables must be correctly spelled.  Restore all four complete Smart A10 module screenshots, exact 물류, 회계, 급여, 법인, Smart A10. Transparent exterior only; opaque white UI, sharp Korean. No border or fringe."
         }
       ],
       "reference": "assets/subpages/official-corrected/sources/smart-a10-modules.png",
-      "output": "assets/subpages/quality-screens/smart-a10-modules-restored-v3.png",
+      "output": "assets/subpages/quality-screens/smart-a10-modules-complete-v4.png",
       "outputWidth": 3024,
-      "outputHeight": 1760,
-      "generatedWidth": 1649,
-      "generatedHeight": 954,
-      "outputSha256": "a43532aa4b8a60920c4ac7e1c83f87654bfefe24fb96c5578632c9a9535a72a5",
+      "outputHeight": 1770,
+      "generatedWidth": 1644,
+      "generatedHeight": 957,
+      "outputSha256": "e45a0cca2f5104c0786612c42c33be4ed2c1cf0f92ebd66127792da71ede01be",
       "uses": [
         {
           "location": "WEHAGO · Smart A10",
@@ -835,7 +839,9 @@
           "title": "스마트한 Online 경영관리 — Smart A10 통합 업무 모듈 화면"
         }
       ],
-      "review": "Original and output visually compared. Primary headings, navigation and feature labels checked; identified spelling defects repaired. Reconstructed sample data and fine details may differ; original reference retained."
+      "review": "Exact 정확성 headline verified using enlarged inspection crop. Full four-panel composite retained; tiny sample details are reconstructed.",
+      "repairPrompt": "Precise localized correction of this Smart A10 FOUR-panel composite, high-resolution PNG with true transparent exterior. Preserve the full 2x2 layout: 물류 upper-left, 회계 upper-right, 급여 lower-left, 법인 lower-right, central circular Smart A10 logo. Keep all four screens together, no separate panels, no cropping, no device mockup added. Correct only malformed Korean glyphs and the following exact readable UI words: in the 회계 screen main headline render '믿음과 정확성의 스마트한 세무회계 파트너 Smart A10', exactly 정확성, not 장확성 or 정학성. In the 물류 table faithfully preserve existing table headings, especially 현재고, 가용재고, 상품코드, 상품명, 규격, 단위. 회계 navigation: 전표관리, 자동전표처리, 결산관리, 재무제표/부속명세서, 고정자산관리, 자금관리(예금/어음/카드), 부가가치세관리, 원천세관리, 세무신고, 관리자용기능. 급여 headings: 이번달 급여지급현황, 근태현황 (이번달), 공지사항; tabs: 급여, 근태, 인원관리, 세무신고, 리포트, 환경설정; mobile labels: 자주 사용하는 메뉴, 급여명세, 근태현황, 휴가신청, 증명서, 연말정산. 법인 heading 등기신청서 and 진행상황 조회, labels 처리내용 and 처리결과. Preserve all numbers, dates, icons, portraits, other text and layout unchanged. Use precise native Korean sans-serif, no generated squiggles or ambiguous Hangul. Remove stray ragged speckles and fringe outside the rounded colored cards; use smooth clean alpha silhouette, fully opaque screenshot interiors. No new text and no background fill.",
+      "presentation": "Four complete module screens together; no per-module preview tabs."
     },
     {
       "id": "screen-150",

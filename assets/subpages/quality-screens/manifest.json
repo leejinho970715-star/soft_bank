@@ -1336,56 +1336,18 @@
     },
     "assets/subpages/official-corrected/sources/smart-a10-modules.png": {
       "id": "screen-149",
-      "file": "assets/subpages/quality-screens/smart-a10-modules-restored-v3.png",
+      "file": "assets/subpages/quality-screens/smart-a10-modules-complete-v4.png",
       "width": 3024,
-      "height": 1760,
+      "height": 1770,
       "inputFile": "assets/subpages/official-corrected/sources/smart-a10-modules.png",
       "inputSha256": "103160f0c4fc625dd574898ef0c7dc70262728479c15780c18d6ed63c2005cf2",
       "transparentPadding": 12,
-      "sha256": "a43532aa4b8a60920c4ac7e1c83f87654bfefe24fb96c5578632c9a9535a72a5",
+      "sha256": "e45a0cca2f5104c0786612c42c33be4ed2c1cf0f92ebd66127792da71ede01be",
       "generationDate": "2026-10-09",
       "clarityReviewId": "screen-149",
-      "processing": "Authorized built-in image_gen clarity reconstruction; complete UI, PNG export for normal inline display and zoom.",
+      "processing": "User-requested complete 2x2 layout with built-in image_gen localized Korean text repair. Main headings and menu labels visually checked.",
       "originalAsset": "assets/subpages/official-corrected/sources/smart-a10-modules.png",
-      "inlinePanels": [
-        {
-          "label": "물류",
-          "bounds": [
-            101,
-            83,
-            1374,
-            833
-          ]
-        },
-        {
-          "label": "회계",
-          "bounds": [
-            1551,
-            83,
-            1379,
-            833
-          ]
-        },
-        {
-          "label": "급여",
-          "bounds": [
-            101,
-            936,
-            1374,
-            770
-          ]
-        },
-        {
-          "label": "법인",
-          "bounds": [
-            1551,
-            936,
-            1379,
-            770
-          ]
-        }
-      ],
-      "inlineDefault": 1
+      "presentation": "Complete four-module composite; individual panel enlargement removed at user request."
     },
     "assets/subpages/native-screens/wehago-flexible-work-transparent-v2.png": {
       "id": "screen-150",

@@ -13,8 +13,15 @@ export function applyProductScreenQuality($,page,root){
   const asset=entries[previous];if(!asset)return;
   const figure=img.closest('figure'),link=img.closest('.sb-screen-zoom');
   if(!figure.length||!link.length)return;
-  if(figure.hasClass('sb-inline-screen-gallery'))return;
   const before=$.html(figure[0]);
+  if(figure.hasClass('sb-inline-screen-gallery')){
+   if(asset.inlinePanels)return;
+   // A composite can return to one complete image when panel previews are disabled.
+   const fullAlt=figure.attr('aria-label')||img.attr('alt')||'제품 화면';
+   img.attr('alt',fullAlt).removeClass('sb-inline-screen-image');
+   link.empty().append(img).attr('aria-label',fullAlt+' 크게 보기');
+   figure.empty().append(link).removeClass('sb-inline-screen-gallery').removeAttr('data-inline-gallery aria-label');
+  }
   // Full PNG replaces crop windows and WebP source sets in both inline and zoom views.
   const label=link.children('.sb-native-screen-label').remove();
   link.empty().append(img).append(label);

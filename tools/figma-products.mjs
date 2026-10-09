@@ -207,6 +207,9 @@ export function applyProductDesign($,page,root){
  if(connected.length)connected.text('다른 서비스들과 연동된 편리함!').after('<p>WEHAGO의 서비스들과 연결되어 더욱 편리한 경영관리로<br> 다양한 업무를 빠르고 효율적으로 처리할 수 있습니다.</p>');
  if(page==='/product/wehago/smart_A10.asp'){
   $('.sb-wehago-ecosystem').remove();
+  $('main p').contents().filter((i,node)=>node.type==='text').each((i,node)=>{
+   node.data=node.data.replace('자동회계처라가','자동회계처리가');
+  });
   $('.wehago_03 .inner').filter((i,e)=>$(e).children('.txt').children('strong').first().text().trim()==='다른 서비스들과 연결로 편리하게').children('.img').remove();
  }
  $('.sb-feature,.sb-design-row').addClass('sb-centered-feature');
