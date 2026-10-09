@@ -27,14 +27,46 @@ document.addEventListener('DOMContentLoaded',()=>{
   dialog.className='sb-image-dialog';dialog.setAttribute('aria-label','제품 이미지 크게 보기');
   const close=document.createElement('button');close.type='button';close.className='sb-image-close';close.textContent='닫기 ×';
   const detail=document.createElement('button');detail.type='button';detail.className='sb-image-detail-toggle';detail.textContent='글자 확대';detail.hidden=true;detail.setAttribute('aria-pressed','false');
-  const image=document.createElement('img');
+  const image=document.createElement('img');image.draggable=false;
   const crop=document.createElement('div');crop.className='sb-image-crop';crop.hidden=true;
   const caption=document.createElement('p');caption.className='sb-image-caption';
   const controls=document.createElement('div');controls.className='sb-image-tools';controls.append(detail,close);
   dialog.append(controls,image,crop,caption);document.body.append(dialog);
   image.addEventListener('load',()=>{detail.disabled=false;});
-  let trigger=null,fittedWidth=0;
+  let trigger=null,fittedWidth=0,pan=null,suppressDragClick=false;
+  const endPan=(suppressClick=false)=>{
+   const active=pan;pan=null;dialog.classList.remove('sb-image-panning');
+   if(!active)return;
+   if(suppressClick&&active.moved){
+    suppressDragClick=true;
+    // A captured drag can finish over the backdrop; do not treat its click as closing.
+    setTimeout(()=>{suppressDragClick=false;},0);
+   }
+   if(dialog.hasPointerCapture(active.pointerId))dialog.releasePointerCapture(active.pointerId);
+  };
+  dialog.addEventListener('pointerdown',e=>{
+   if(!dialog.classList.contains('sb-image-detail')||!e.isPrimary||e.button!==0||!['mouse','pen'].includes(e.pointerType))return;
+   if(e.target.closest?.('.sb-image-tools,button,a,input,select,textarea'))return;
+   const rect=dialog.getBoundingClientRect();
+   // Leave native scrollbars and backdrop clicks to the browser.
+   if(e.clientX<rect.left+dialog.clientLeft||e.clientX>=rect.left+dialog.clientLeft+dialog.clientWidth||e.clientY<rect.top+dialog.clientTop||e.clientY>=rect.top+dialog.clientTop+dialog.clientHeight)return;
+   suppressDragClick=false;
+   pan={pointerId:e.pointerId,x:e.clientX,y:e.clientY,left:dialog.scrollLeft,top:dialog.scrollTop,moved:false};
+   dialog.setPointerCapture(e.pointerId);dialog.classList.add('sb-image-panning');e.preventDefault();
+  });
+  dialog.addEventListener('pointermove',e=>{
+   if(!pan||e.pointerId!==pan.pointerId)return;
+   if(!(e.buttons&1)){endPan();return;}
+   const dx=e.clientX-pan.x,dy=e.clientY-pan.y;
+   if(Math.max(Math.abs(dx),Math.abs(dy))>=4)pan.moved=true;
+   dialog.scrollLeft=pan.left-dx;dialog.scrollTop=pan.top-dy;e.preventDefault();
+  });
+  dialog.addEventListener('pointerup',e=>{if(e.pointerId===pan?.pointerId)endPan(true);});
+  dialog.addEventListener('pointercancel',e=>{if(e.pointerId===pan?.pointerId)endPan();});
+  dialog.addEventListener('lostpointercapture',e=>{if(e.pointerId===pan?.pointerId)endPan();});
+  window.addEventListener('blur',()=>endPan());
   const open=(img,source)=>{
+   endPan();suppressDragClick=false;
    dialog.classList.remove('sb-image-detail');image.style.removeProperty('width');
    detail.hidden=!img.dataset?.qualitySource;detail.textContent='글자 확대';detail.setAttribute('aria-pressed','false');
    dialog.classList.toggle('sb-poster-dialog',source.dataset.imageModal==='poster');
@@ -54,6 +86,7 @@ document.addEventListener('DOMContentLoaded',()=>{
    fittedWidth=0;
   };
   detail.addEventListener('click',()=>{
+   endPan();suppressDragClick=false;
    const expanded=!dialog.classList.contains('sb-image-detail');
    if(expanded)fittedWidth=image.getBoundingClientRect().width;
    dialog.classList.toggle('sb-image-detail',expanded);
@@ -63,8 +96,8 @@ document.addEventListener('DOMContentLoaded',()=>{
    dialog.scrollTop=0;dialog.scrollLeft=0;
   });
   close.addEventListener('click',()=>dialog.close());
-  dialog.addEventListener('click',e=>{if(e.target!==dialog)return;const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();});
-  dialog.addEventListener('close',()=>{document.body.classList.remove('sb-image-open');trigger?.focus({preventScroll:true});image.removeAttribute('src');image.style.removeProperty('width');dialog.classList.remove('sb-image-detail');crop.replaceChildren();});
+  dialog.addEventListener('click',e=>{if(suppressDragClick){suppressDragClick=false;e.preventDefault();e.stopPropagation();return;}if(e.target!==dialog)return;const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();});
+  dialog.addEventListener('close',()=>{endPan();suppressDragClick=false;document.body.classList.remove('sb-image-open');trigger?.focus({preventScroll:true});image.removeAttribute('src');image.style.removeProperty('width');dialog.classList.remove('sb-image-detail');crop.replaceChildren();});
   document.querySelectorAll('a[data-image-modal]').forEach(link=>{
    link.addEventListener('click',e=>{
     if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;

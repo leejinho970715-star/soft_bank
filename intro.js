@@ -2,13 +2,13 @@
  // Show the home announcement without an introductory video overlay.
  if(!document.querySelector('#soft-bank-renewal > main > .hero')||document.body.classList.contains('sb-renewal'))return;
  const today=()=>new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
- const storageKey='sb-holiday-notice-2026-09-hidden';
+ const storageKey='sb-ifrs18-notice-20261009-hidden';
  let hidden=false;try{hidden=localStorage.getItem(storageKey)===today();}catch{}
  if(hidden)return;
- const notice=document.createElement('dialog');notice.className='sb-home-notice';notice.setAttribute('aria-label','추석 휴무 안내: 9월 23일부터 9월 27일까지');
- const visual=document.createElement('div');visual.className='sb-notice-visual';
- const img=document.createElement('img');img.src='assets/holiday-notice.png';img.width=480;img.height=552;
- img.alt='추석 휴무 안내. 9월 23일부터 9월 27일까지 휴무입니다. Amaranth10, Alpha, icube 기능 및 기술지원 문의는 9월 23일 오후 3시까지 접수 가능합니다. 제품 및 서비스 구매 문의는 icsu@duzon119.co.kr로 접수 부탁드립니다. 아이원소프트뱅크.';
+ const notice=document.createElement('dialog');notice.className='sb-home-notice';notice.setAttribute('aria-label','Amaranth 10 IFRS18 서비스 안내');
+ const visual=document.createElement('a');visual.className='sb-notice-visual';visual.href='subpages/product/ifrs18.html';visual.setAttribute('aria-label','Amaranth 10 IFRS18 자세히 보기');
+ const img=document.createElement('img');img.src='assets/subpages/ifrs18/home-modal-banner-20261009.png';img.width=1254;img.height=1254;
+ img.alt='Amaranth 10. IFRS18 전환, 지금 준비하세요. 기존 전표는 그대로, 재무제표 전환은 간편하게. 재무제표 양식설정 · 계정별 범주설정 · 현금흐름표. 자세히 보기.';
  visual.append(img);
  const actions=document.createElement('div');actions.className='sb-notice-actions';
  const hide=document.createElement('button');hide.type='button';hide.textContent='오늘 하루 동안 열지 않기';
