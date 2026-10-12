@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     <div class="sb-amaranth-ifrs-copy">
      <span class="sb-amaranth-ifrs-label">K-IFRS 제1118호 대응</span>
      <h2 id="sb-amaranth-ifrs-title">2027년부터 손익계산서가 재무성과표로<br>바뀝니다.</h2>
-     <p>전표 수정 없는 계정별 범주 재분류, 18호 기초서식 자동 생성, 영업손익 기준<br>현금흐름표까지 — Amaranth 10의 IFRS 18 재무제표관리를 확인해 보세요.</p>
+     <p>전표 수정 없는 계정별 범주 재분류, 1118호 기초서식 자동 생성, 영업손익 기준<br>현금흐름표까지 — Amaranth 10의 IFRS 18 재무제표관리를 확인해 보세요.</p>
     </div>
     <a class="sb-amaranth-ifrs-link" href="../ifrs18.html">IFRS 18 대응 자세히 보기</a>
    </section>`);
@@ -106,6 +106,9 @@ document.addEventListener('DOMContentLoaded',()=>{
   });
   const zoomImages=[];
   document.querySelectorAll('.sb-content img,.sb-hero-asset').forEach(img=>{
+   // Decorative icons have no image-viewer controls, cursor or keyboard action.
+   const icon=img.matches('.sb-hero-asset,.sb-process-icon,.sb-wehago-icon,.sb-wehago-illustration,.sb-mobile-icon,[data-image-role="icon"]')||/\/assets\/(?:point-color\/|subpages\/(?:features|v2)\/)/.test(img.src);
+   if(icon)return;
    if(img.closest('button')||img.alt===''||img.closest('.sb-product-heading,.sb-contact-banner'))return;
    const link=img.closest('a');
    // Keep product navigation and download links; intercept image-file links only.
