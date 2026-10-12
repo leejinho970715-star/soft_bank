@@ -13,6 +13,7 @@ import {applyOfficialProductImageCorrections} from './official-product-image-cor
 import {applyUnframedProductScreens} from './unframed-product-screens.mjs';
 import {applyNativeProductScreens} from './native-product-screens.mjs';
 import {applyProductScreenQuality} from './product-screen-quality.mjs';
+import {applyProductHeroTabs} from './product-hero-tabs.mjs';
 
 const assets=JSON.parse(await fs.readFile('assets/subpages/figma/manifest.json','utf8'));
 const file=(family,n)=>assets[family]?.[n-1]?.file;
@@ -29,7 +30,6 @@ export function applyProductDesign($,page,root){
   });
   const overview=$('#intro');
   const introduction=$('<section class="sb-nonprofit-introduction"></section>');
-  introduction.append($('<img class="sb-nonprofit-hero" width="480" height="480" loading="lazy" alt="회계·인사·예산·그룹웨어·문서유통을 연결하는 비영리 통합 플랫폼">').attr('src',root+'assets/subpages/features/nonprofit/platform.png'));
   introduction.append(overview.children('div').first().contents());
   overview.children('div').first().remove();
   overview.before(introduction);
@@ -98,6 +98,7 @@ export function applyProductDesign($,page,root){
   productNav.append(link);
  });
  $('.sb-hero>div').append(productNav);
+ applyProductHeroTabs($,root);
  $('.sb-hero h1').after('<p class="sb-hero-description">ERP·그룹웨어·AI가 하나로 융합된 더존 차세대 통합 비즈니스 플랫폼</p>');
  const intro=$('<div class="sb-product-heading"><span>Product &amp; Service</span><h2></h2></div>');
  intro.find('h2').text(title);$('main').prepend(intro);
@@ -226,6 +227,6 @@ export function applyProductDesign($,page,root){
  applyUnframedProductScreens($,root);
  applyNativeProductScreens($,page,root);
  applyProductScreenQuality($,page,root);
- const css=$('<link rel="stylesheet">').attr('href',root+'renewal/products-figma.css?v=20261009-2');$('head').append(css);
+ const css=$('<link rel="stylesheet">').attr('href',root+'renewal/products-figma.css?v=20261012-3');$('head').append(css);
  $('head').append($('<script defer></script>').attr('src',root+'renewal/products-figma.js?v=20261012-2'));
 }
