@@ -3,7 +3,7 @@ import path from 'node:path';
 import {load} from 'cheerio';
 
 const url = 'https://axdx-test.vercel.app/';
-const version = '20261012-axdx-footer';
+const version = '20261012-axdx-footer-2';
 const icon = '<span class="external-link-icon" aria-hidden="true">↗</span>';
 const footerLink = `<a class="footer-checklist" href="${url}" target="_blank" rel="noopener noreferrer" aria-label="AX/DX 레벨 체크리스트 (새 창)">AX/DX 레벨 체크리스트 ${icon}</a>`;
 
