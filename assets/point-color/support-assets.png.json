@@ -1,0 +1,8 @@
+{
+  "original": "assets/support-assets.png",
+  "file": "assets/point-color/support-assets.png",
+  "width": 2172,
+  "height": 724,
+  "tool": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit. Existing transparent enterprise website 3D illustration strip is the EDIT TARGET. Preserve the exact 3:1 wide canvas and three equally spaced original groups in their original thirds, object silhouettes, composition, Korean words 정부지원사업 and 공지사항 exactly, flag and all original symbols. Change only the coin stacks in the LEFT government grant group to golden yellow, the megaphone rim and bell in the CENTER notice group to coral red and golden yellow respectively, and one small robot joint cap in the RIGHT industrial support group to golden yellow with a tiny coral equipment button. Keep the predominant polished blue/cyan/white material and soft lighting. Do not add objects, change text or move groups, no crop. Crisp high-resolution edges, keep each object wholly inside its same third. True RGBA PNG completely transparent outside objects, no opaque background, no matte fringe or stray cutout pixels."
+}

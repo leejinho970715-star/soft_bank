@@ -1,0 +1,8 @@
+{
+  "original": "assets/subpages/features/company/visit.png",
+  "file": "assets/point-color/subpages/features/company/visit.png",
+  "width": 1254,
+  "height": 1254,
+  "tool": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change the location pin rim to coral red and a small map marker to golden yellow. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+}

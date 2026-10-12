@@ -3,7 +3,7 @@ import path from 'node:path';
 import {load} from 'cheerio';
 async function update(file){
  const $=load(await fs.readFile(file,'utf8'));
- $('a[href]').each((i,e)=>{const a=$(e);if(!/^(https?:|\/\/|tel:|mailto:)/i.test(a.attr('href')))a.removeAttr('target rel');});
+ $('a[href]').each((i,e)=>{const a=$(e);if(a.is('[data-pdf-viewer]'))return;if(!/^(https?:|\/\/|tel:|mailto:)/i.test(a.attr('href')))a.removeAttr('target rel');});
  for(let attempt=0;;attempt++){
   try{await fs.writeFile(file,$.html());break;}
   catch(error){if(!['UNKNOWN','EBUSY','EPERM'].includes(error.code)||attempt>=5)throw error;await new Promise(resolve=>setTimeout(resolve,300*(attempt+1)));}

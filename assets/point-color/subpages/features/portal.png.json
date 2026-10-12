@@ -1,0 +1,8 @@
+{
+  "original": "assets/subpages/features/portal.png",
+  "file": "assets/point-color/subpages/features/portal.png",
+  "width": 1254,
+  "height": 1254,
+  "tool": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit. Asset type: existing enterprise website 3D icon. Input image is the EDIT TARGET: portal.png. Preserve its exact subject, silhouette, camera angle, dimensional proportions, composition, polished translucent blue/white materials, soft studio lighting and existing symbolic content. Change only the gear to warm golden yellow and one small chart bar to coral red. Keep the blue and white monitor and all remaining objects identical. Accent colors should cover approximately 15–25% of the visible object, with cobalt blue/cyan/white remaining dominant. No new objects, no text, no layout change, no surrounding scene, no crop, no new pedestal. Keep the whole object comfortably inside the canvas. High-resolution crisp edges and fine shading. Output actual transparent RGBA PNG with completely transparent outside background, no black/white/colored canvas, no checkerboard, no fringe or stray pixels."
+}

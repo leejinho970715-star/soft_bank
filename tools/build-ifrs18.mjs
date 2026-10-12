@@ -13,7 +13,7 @@ async function writePage(path,content){
 // Build from the shared product shell so navigation, footer and contact UI stay consistent.
 const $=load(await fs.readFile('subpages/product/omniesol.html','utf8'));
 $('title').text('IFRS18 | Amaranth 10 | 아이원소프트뱅크');
-$('head').append('<meta name="description" content="기존 전표는 그대로, IFRS18 기준 재무제표 전환은 간편하게. Amaranth 10의 재무제표 양식설정, 계정별 범주설정, 현금흐름표 기능을 만나보세요."><link rel="stylesheet" href="../../renewal/ifrs18.css?v=20261006-1">');
+$('head').append('<meta name="description" content="기존 전표는 그대로, IFRS18 기준 재무제표 전환은 간편하게. Amaranth 10의 재무제표 양식설정, 계정별 범주설정, 현금흐름표 기능을 만나보세요."><link rel="stylesheet" href="../../renewal/ifrs18.css?v=20261012-1">');
 $('body').removeClass('sb-page-product-omniesol').addClass('sb-page-product-ifrs18');
 $('.sb-hero-asset').attr({src:'../../assets/subpages/ifrs18/hero.png',alt:'Amaranth 10 IFRS18 재무관리 3D 비주얼',width:'1536',height:'1024'});
 $('.sb-hero h1').text('Amaranth 10 IFRS18');
@@ -33,7 +33,7 @@ $('main').attr('class','sb-content ifrs-content').html(`
  <span class="ifrs-eyebrow">STANDARD · EASY · SMART · COMPLIANCE</span>
  <h2>재무제표의 새로운 기준,<br><em>준비는 지금부터</em></h2>
  <p>계정과목 재분류부터 재무제표 작성까지.<br>Amaranth 10이 IFRS18 전환 업무를 하나의 흐름으로 연결합니다.</p>
- <div class="ifrs-actions"><a class="cta dark" href="../purchase/inquiry.html">도입 상담하기</a><a class="cta ifrs-outline" href="../../assets/subpages/ifrs18/introduction-poster.png" data-image-modal="poster" data-image-caption="Amaranth 10 IFRS18 소개 포스터" aria-haspopup="dialog">소개 자료 보기</a></div>
+ <div class="ifrs-actions"><a class="cta dark" href="../purchase/inquiry.html">도입 상담하기</a><a class="cta ifrs-outline" href="../../assets/subpages/ifrs18/introduction-poster.png" data-image-modal="poster" data-image-caption="Amaranth 10 IFRS18 소개 포스터" aria-haspopup="dialog">소개 자료 보기</a><a class="cta ifrs-outline ifrs-pdf-guide" href="../../assets/documents/k-ifrs-1118-key-points.pdf" target="_blank" rel="noopener noreferrer" data-pdf-viewer aria-label="K-IFRS 제1118호 주요 내용 PDF 보기 (새 창)">K-IFRS 제1118호 주요 내용 PDF 보기 ↗</a></div>
 </section>
 <section class="ifrs-benefits" aria-label="IFRS18 서비스 특장점">
  ${[['finance','기존 전표는 그대로','마감된 전표를 직접 수정하지 않고 IFRS18 계정과목으로 분류해 이원화 관리합니다.'],['tasks','분류 업무는 간편하게','투자·재무 계정을 지정하고 건별 또는 일괄 매핑으로 반복 업무를 줄입니다.'],['storage','표준 양식으로 빠르게','기본 서식을 생성한 뒤 회사에 맞게 계산식과 계정 연결을 조정합니다.']].map(([icon,title,copy])=>`<article><img src="../../assets/subpages/features/${icon}.png" alt="" loading="lazy" width="128" height="128"><h3>${title}</h3><p>${copy}</p></article>`).join('')}

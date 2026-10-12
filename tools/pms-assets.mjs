@@ -15,6 +15,20 @@ const extensions=[
  ['현금관리',['사업 거래의 현금 흐름을 효과적으로 관리하여 신속한 의사결정을 지원합니다.']],
  ['재고 및 판매 관리',['제품 및 자재의 입출고 현황, 재고 수준을 모니터링하며 판매 정보를 효과적으로 관리합니다.']],
 ];
+export function buildPmsFeatureChart($,root){
+ const icons=['logistics','portal','storage','finance','calendar'];
+ const chart=$('<figure class="sb-pms-feature-chart" aria-label="PMS 주요기능 구성도"></figure>');
+ chart.append('<div class="sb-pms-chart-node" aria-hidden="true">PMS</div>');
+ const cards=$('<figcaption class="sb-pms-chart-cards"></figcaption>');
+ features.forEach(([title,items],i)=>{
+  const card=$('<section class="sb-pms-chart-card"></section>');
+  card.append($('<img loading="lazy" alt="" width="96" height="96">').attr('src',root+'assets/subpages/features/'+icons[i]+'.png'));
+  card.append($('<h4></h4>').text(title));
+  const list=$('<ul></ul>');items.forEach(item=>list.append($('<li></li>').text(item)));
+  cards.append(card.append(list));
+ });
+ return chart.append(cards);
+}
 export function applyPmsAssets($,root){
  const labels=['대시보드','계약현황','계약관리','프로젝트현황','진행상황','GW 전자결재','예약관리','주요 기능 업무 흐름'];
  $('main img').each((i,el)=>{
@@ -39,13 +53,11 @@ export function applyPmsAssets($,root){
     ['안전관리',['안전보건일지','안전교육대장','작업계획서','안전관리비현황','각종보고서']]
    ];
    const figure=$('<figure id="pms-project-workflow" class="sb-pms-workflow-3d"></figure>');
-   figure.append($('<img loading="lazy">').attr({src:root+'assets/subpages/regenerated/pms-workflow-3d.png',alt:'PMS의 일곱 업무 단계를 연결하는 3D 아이콘'}));
    const caption=$('<figcaption></figcaption>');
    workflow.forEach(([title,items],i)=>{const section=$('<section></section>');section.append($('<span class="sb-workflow-number"></span>').text(i+1));section.append($('<h4></h4>').text(title));const list=$('<ul></ul>');items.forEach(item=>list.append($('<li class="sb-check-item"></li>').text(item)));caption.append(section.append(list));});
    figure.append(caption);img.closest('picture').replaceWith(figure);
  const stages=[['입고 등록',['자재 입고','바코드 부착']],['작업지시',['BOM 기반 작업지시','자재 소요량 계산','작업 순서 정의']],['자재 준비',['피킹 리스트 생성','자재 출고','자재 스캔 검증']],['가공작업',['작업 시작/완료','사용 자재 실적 등록','설비 연동','공정 간 자재 이동']],['품질검사',['중간/최종 검사','검사 결과 등록','불량 처리','재작업 관리']],['완제품 등록',['완제품 입고','바코드 부착','재고 반영']],['출하',['출하 계획','출하 검증','운송장 연동','출하 완료']]];
  const flow=$('<figure id="pms-manufacturing-workflow" class="sb-pms-workflow-3d sb-manufacturing-workflow"></figure>');
- flow.append($('<img loading="lazy">').attr({src:root+'assets/subpages/regenerated/manufacturing-workflow-3d.png',alt:'입고부터 출하까지 일곱 생산 단계를 연결하는 3D 업무 흐름도'}));
  const manufacturingCaption=$('<figcaption></figcaption>');
  stages.forEach(([title,items],i)=>{const card=$('<section></section>').append($('<span class="sb-workflow-number"></span>').text(i+1)).append($('<h4></h4>').text(title));const list=$('<ul></ul>');items.forEach(text=>list.append($('<li class="sb-check-item"></li>').text(text)));manufacturingCaption.append(card.append(list));});
  flow.prepend($('<h3></h3>').text('생산·출하 업무 흐름'));
@@ -71,7 +83,7 @@ export function applyPmsAssets($,root){
   heading.append(card.children('.sb-workflow-number')).append(card.children('h4'));
   card.prepend(heading);
  });
- $('.pms .img_faetures .cont_img').removeClass('scrollTb').empty().append(diagram('features','PMS에서 현황·운영·계약·예산·일정 관리로 연결되는 3D 주요기능 구성도',features));
+ $('.pms .img_faetures .cont_img').removeClass('scrollTb').empty().append(buildPmsFeatureChart($,root));
  const gw=$('.sb-gw-expansion');
  gw.children('.sb-pms-diagram').remove();
  gw.append(diagram('gw-expansion','GW를 중심으로 PM·CFOS·AWS·IMS 모듈과 다섯 업무 기능이 연결되는 3D 확장 구성도',extensions));

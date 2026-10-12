@@ -1,0 +1,15 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+const [original,generated,promptFile]=process.argv.slice(2);
+if(!original?.startsWith('assets/')||!generated||!promptFile)throw new Error('Expected asset, generated PNG, prompt JSON');
+const destination=path.join('assets/point-color',original.slice(7));
+const base=path.resolve('assets/point-color');
+if(!path.resolve(destination).startsWith(base+path.sep))throw new Error('Invalid asset destination');
+await fs.mkdir(path.dirname(destination),{recursive:true});
+await fs.copyFile(generated,destination);
+const png=await fs.readFile(destination);
+if(png.subarray(1,4).toString()!=='PNG'||png[25]!==6)throw new Error('Expected RGBA PNG');
+const job=JSON.parse(await fs.readFile(promptFile,'utf8'));
+const entry={original,file:destination.replaceAll('\\','/'),width:png.readUInt32BE(16),height:png.readUInt32BE(20),tool:'built-in image_gen',prompt:job.prompt};
+await fs.writeFile(destination+'.json',JSON.stringify(entry,null,2)+'\n');
+console.log(JSON.stringify({original,file:entry.file,width:entry.width,height:entry.height}));

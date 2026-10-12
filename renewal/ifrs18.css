@@ -11,6 +11,7 @@
 .ifrs-eyebrow{display:block;font-size:15px;font-weight:750;letter-spacing:.09em;color:#4e68d7}
 .ifrs-actions,.ifrs-categories,.ifrs-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
 .ifrs-actions{margin-top:36px}.ifrs-outline{background:white;color:#2863dc;border:1px solid #a8bdea}
+.ifrs-actions .ifrs-pdf-guide{font-size:16px;line-height:1.5;padding:14px 24px;white-space:normal;text-align:center}
 .sb-page-product-ifrs18 #soft-bank-renewal .ifrs-content a.cta.dark{color:#fff}
 .sb-page-product-ifrs18 #soft-bank-renewal .ifrs-content a.ifrs-outline{color:#2863dc}
 .ifrs-content .ifrs-benefits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding-top:0}

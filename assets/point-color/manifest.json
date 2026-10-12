@@ -1,0 +1,378 @@
+[
+  {
+    "original": "assets/custom-addon.png",
+    "file": "assets/point-color/custom-addon.png",
+    "width": 1373,
+    "height": 1145,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change one chart bar to golden yellow and one small adjacent bar to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/custom-connect.png",
+    "file": "assets/point-color/custom-connect.png",
+    "width": 1774,
+    "height": 887,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change one connecting arrow to golden yellow and one small monitor detail to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/custom-main.png",
+    "file": "assets/point-color/custom-main.png",
+    "width": 1536,
+    "height": 1024,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change the gear to golden yellow and a single small chart bar to coral red. Preserve ERP lettering exactly. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/custom-process.png",
+    "file": "assets/point-color/custom-process.png",
+    "width": 1373,
+    "height": 1145,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change one flowchart cube to golden yellow and the outer check badge rim to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/custom-report.png",
+    "file": "assets/point-color/custom-report.png",
+    "width": 1373,
+    "height": 1145,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change a small puzzle connector end to golden yellow and another small edge to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/custom-screen.png",
+    "file": "assets/point-color/custom-screen.png",
+    "width": 1536,
+    "height": 1024,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change the magnifier rim to golden yellow with a small coral handle grip. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/ai.png",
+    "file": "assets/point-color/subpages/features/ai.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change one network node rim to golden yellow and one small node to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/approval.png",
+    "file": "assets/point-color/subpages/features/approval.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing enterprise website 3D icon. Input image is the EDIT TARGET: approval.png. Preserve its exact subject, silhouette, camera angle, dimensional proportions, composition, polished translucent blue/white materials, soft studio lighting and existing symbolic content. Change only the outer award/seal rim to coral red and one small checkbox to golden yellow. Keep white checkmarks, blue interior and white paper. Accent colors should cover approximately 15–25% of the visible object, with cobalt blue/cyan/white remaining dominant. No new objects, no text, no layout change, no surrounding scene, no crop, no new pedestal. Keep the whole object comfortably inside the canvas. High-resolution crisp edges and fine shading. Output actual transparent RGBA PNG with completely transparent outside background, no black/white/colored canvas, no checkerboard, no fringe or stray pixels."
+  },
+  {
+    "original": "assets/subpages/features/calendar.png",
+    "file": "assets/point-color/subpages/features/calendar.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing enterprise website 3D icon. Input image is the EDIT TARGET: calendar.png. Preserve its exact subject, silhouette, camera angle, dimensional proportions, composition, polished translucent blue/white materials, soft studio lighting and existing symbolic content. Change only the calendar header strip to warm golden yellow and the clock hands to coral red. Keep all dates represented as the same abstract squares, blue trim and white body. Accent colors should cover approximately 15–25% of the visible object, with cobalt blue/cyan/white remaining dominant. No new objects, no text, no layout change, no surrounding scene, no crop, no new pedestal. Keep the whole object comfortably inside the canvas. High-resolution crisp edges and fine shading. Output actual transparent RGBA PNG with completely transparent outside background, no black/white/colored canvas, no checkerboard, no fringe or stray pixels."
+  },
+  {
+    "original": "assets/subpages/features/chat.png",
+    "file": "assets/point-color/subpages/features/chat.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change the smaller chat bubble rim to golden yellow and one small bubble edge to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/company/consulting.png",
+    "file": "assets/point-color/subpages/features/company/consulting.png",
+    "width": 1312,
+    "height": 1199,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change one small chart bar to golden yellow and one small shield rim detail to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/company/network.png",
+    "file": "assets/point-color/subpages/features/company/network.png",
+    "width": 1230,
+    "height": 1278,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change one network node to golden yellow and one small person node to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/company/platform.png",
+    "file": "assets/point-color/subpages/features/company/platform.png",
+    "width": 1374,
+    "height": 1145,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change a small mobile header detail to golden yellow and one cloud connection accent to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/company/visit.png",
+    "file": "assets/point-color/subpages/features/company/visit.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change the location pin rim to coral red and a small map marker to golden yellow. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/cooperation/attendance.png",
+    "file": "assets/point-color/subpages/features/cooperation/attendance.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change the clock hands to coral red and the check badge rim to golden yellow. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/cooperation/bulletin.png",
+    "file": "assets/point-color/subpages/features/cooperation/bulletin.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change the megaphone rim to coral red and one pushpin to golden yellow. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/cooperation/contacts.png",
+    "file": "assets/point-color/subpages/features/cooperation/contacts.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change the phone handset to golden yellow and one address-book tab to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/cooperation/crm.png",
+    "file": "assets/point-color/subpages/features/cooperation/crm.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change one connected node to golden yellow and one small building accent to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/cooperation/notes.png",
+    "file": "assets/point-color/subpages/features/cooperation/notes.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change the pen to golden yellow and one notebook tab to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/cooperation/remote.png",
+    "file": "assets/point-color/subpages/features/cooperation/remote.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change the connection arrow to golden yellow and a small laptop detail to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/cooperation/sms.png",
+    "file": "assets/point-color/subpages/features/cooperation/sms.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change the chat bubble rim to golden yellow and one phone UI block to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/fax.png",
+    "file": "assets/point-color/subpages/features/fax.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change one small fax key to golden yellow and a small machine tray edge to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/finance.png",
+    "file": "assets/point-color/subpages/features/finance.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change the coins to golden yellow and one calculator button to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/hr.png",
+    "file": "assets/point-color/subpages/features/hr.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change one small person collar detail to golden yellow and a small ID badge accent to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/logistics.png",
+    "file": "assets/point-color/subpages/features/logistics.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change one box detail to golden yellow and the scanner button to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/mail.png",
+    "file": "assets/point-color/subpages/features/mail.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change the small envelope seal/pin to coral red and a small message panel accent to golden yellow. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/market/analytics.png",
+    "file": "assets/point-color/subpages/features/market/analytics.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change a small pie segment to golden yellow and one small bar to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/market/corporate.png",
+    "file": "assets/point-color/subpages/features/market/corporate.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change a small receipt marker to golden yellow and one card detail to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/market/crm.png",
+    "file": "assets/point-color/subpages/features/market/crm.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change one connected people node rim to golden yellow and one small chart bar to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/market/factoring.png",
+    "file": "assets/point-color/subpages/features/market/factoring.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change the coins to golden yellow and one transfer arrow to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/market/personal.png",
+    "file": "assets/point-color/subpages/features/market/personal.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change one wallet card edge to golden yellow and a small receipt marker to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/market/pms.png",
+    "file": "assets/point-color/subpages/features/market/pms.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change one gantt bar to golden yellow and the clock hands to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/meeting.png",
+    "file": "assets/point-color/subpages/features/meeting.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change one small monitor edge detail to golden yellow and one small call-status accent to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/nonprofit/accounting.png",
+    "file": "assets/point-color/subpages/features/nonprofit/accounting.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change a small ledger binding to golden yellow and one calculator button to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/nonprofit/budget.png",
+    "file": "assets/point-color/subpages/features/nonprofit/budget.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change the coins to golden yellow and one chart bar to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/nonprofit/documents.png",
+    "file": "assets/point-color/subpages/features/nonprofit/documents.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change the pen detail to golden yellow and the arrow to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/nonprofit/groupware.png",
+    "file": "assets/point-color/subpages/features/nonprofit/groupware.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change one small calendar header to golden yellow and one chat bubble rim to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/nonprofit/hr.png",
+    "file": "assets/point-color/subpages/features/nonprofit/hr.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change the won coin to golden yellow and one small payroll receipt marker to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/nonprofit/platform.png",
+    "file": "assets/point-color/subpages/features/nonprofit/platform.png",
+    "width": 1536,
+    "height": 1024,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change one satellite icon rim to golden yellow and the heart to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/nonprofit/purchase.png",
+    "file": "assets/point-color/subpages/features/nonprofit/purchase.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change the basket handle to golden yellow and the outer check badge rim to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/portal.png",
+    "file": "assets/point-color/subpages/features/portal.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing enterprise website 3D icon. Input image is the EDIT TARGET: portal.png. Preserve its exact subject, silhouette, camera angle, dimensional proportions, composition, polished translucent blue/white materials, soft studio lighting and existing symbolic content. Change only the gear to warm golden yellow and one small chart bar to coral red. Keep the blue and white monitor and all remaining objects identical. Accent colors should cover approximately 15–25% of the visible object, with cobalt blue/cyan/white remaining dominant. No new objects, no text, no layout change, no surrounding scene, no crop, no new pedestal. Keep the whole object comfortably inside the canvas. High-resolution crisp edges and fine shading. Output actual transparent RGBA PNG with completely transparent outside background, no black/white/colored canvas, no checkerboard, no fringe or stray pixels."
+  },
+  {
+    "original": "assets/subpages/features/search.png",
+    "file": "assets/point-color/subpages/features/search.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing enterprise website 3D icon. Input image is the EDIT TARGET: search.png. Preserve its exact subject, silhouette, camera angle, dimensional proportions, composition, polished translucent blue/white materials, soft studio lighting and existing symbolic content. Change only the magnifying glass ring and handle to warm golden yellow, with a tiny coral red accent on the folded corner of the document. Retain the blue lines and white paper. Accent colors should cover approximately 15–25% of the visible object, with cobalt blue/cyan/white remaining dominant. No new objects, no text, no layout change, no surrounding scene, no crop, no new pedestal. Keep the whole object comfortably inside the canvas. High-resolution crisp edges and fine shading. Output actual transparent RGBA PNG with completely transparent outside background, no black/white/colored canvas, no checkerboard, no fringe or stray pixels."
+  },
+  {
+    "original": "assets/subpages/features/security.png",
+    "file": "assets/point-color/subpages/features/security.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change the lock shackle to golden yellow and a small shield rim detail to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/share.png",
+    "file": "assets/point-color/subpages/features/share.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change the connecting arrow to golden yellow and a small monitor detail to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/storage.png",
+    "file": "assets/point-color/subpages/features/storage.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change a small folder tab to golden yellow and a small paper corner to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/subpages/features/tasks.png",
+    "file": "assets/point-color/subpages/features/tasks.png",
+    "width": 1254,
+    "height": 1254,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset type: existing polished 3D enterprise website illustration. The supplied original PNG is the EDIT TARGET. Preserve its exact subject, silhouette, camera angle, object proportions, composition, blue/white materials and soft lighting. Change one flowchart node rim to golden yellow and one small connector to coral red. Keep cobalt blue, cyan and white as the main palette, warm accents only about 15–25% of the object. Preserve all existing symbols and text exactly. Do not add objects, lettering, backdrop, podium or crop. Preserve aspect ratio and scale inside the canvas. High-resolution crisp smooth edges. Output true RGBA transparent PNG with fully transparent outside background, no white/black/colored canvas, no checkerboard, no stray pixels or matte fringe."
+  },
+  {
+    "original": "assets/support-assets.png",
+    "file": "assets/point-color/support-assets.png",
+    "width": 2172,
+    "height": 724,
+    "tool": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Existing transparent enterprise website 3D illustration strip is the EDIT TARGET. Preserve the exact 3:1 wide canvas and three equally spaced original groups in their original thirds, object silhouettes, composition, Korean words 정부지원사업 and 공지사항 exactly, flag and all original symbols. Change only the coin stacks in the LEFT government grant group to golden yellow, the megaphone rim and bell in the CENTER notice group to coral red and golden yellow respectively, and one small robot joint cap in the RIGHT industrial support group to golden yellow with a tiny coral equipment button. Keep the predominant polished blue/cyan/white material and soft lighting. Do not add objects, change text or move groups, no crop. Crisp high-resolution edges, keep each object wholly inside its same third. True RGBA PNG completely transparent outside objects, no opaque background, no matte fringe or stray cutout pixels."
+  }
+]
