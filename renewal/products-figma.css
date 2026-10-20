@@ -550,3 +550,20 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
 @media(max-width:760px){
  .sb-figma-product #soft-bank-renewal .sb-content .sb-zigzag-feature[data-screen-layout]:has(.sb-clarity-restored){grid-template-columns:minmax(0,1fr)!important;gap:18px!important}
 }
+
+/* October client revisions: readable product tabs and native proposal content. */
+.sb-figma-product #soft-bank-renewal .sb-hero .sb-hero-products a{font-size:16px;gap:8px;padding-inline:8px}
+.sb-figma-product #soft-bank-renewal .sb-content .sb-feature-keywords{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:8px;list-style:none;padding:0;margin:22px 0}
+.sb-figma-product #soft-bank-renewal .sb-content .sb-feature-keywords li{margin:0;padding:6px 10px;border-radius:6px;background:#1746b4;color:#fff;font-size:14px!important;line-height:1.5!important;word-break:keep-all}
+.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-text-overview{display:block;text-align:center;padding:30px 20px}
+.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-text-overview .txt{width:100%;max-width:1050px;margin:auto}
+.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-service-directory{display:block;width:100%;padding:72px 0 24px;text-align:left}
+.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-service-directory>h2{text-align:center;font-size:34px;margin:0 0 40px}
+.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-service-group{padding:0;margin:0 0 30px;border:0;border-radius:16px;overflow:hidden;background:#f4f4f4;box-shadow:none}
+.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-service-group>h3{margin:0;padding:16px 26px;background:#292929;color:#fff;font-size:18px;line-height:1.5;font-weight:700;border:0}
+.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-service-group>ul{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:22px 18px;list-style:none;padding:24px 26px;margin:0}
+.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-service-group li{display:flex;align-items:center;gap:10px;min-width:0;margin:0;padding:0;color:#222;font-size:16px!important;line-height:1.5!important;font-weight:600;word-break:keep-all}
+.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-service-group li img{display:block;flex:0 0 28px;width:28px!important;height:28px!important;max-height:28px!important;object-fit:contain;margin:0!important;border:0;background:transparent;animation:none!important;cursor:default}
+@media(max-width:1000px){.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-service-group>ul{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){.sb-figma-product #soft-bank-renewal .sb-hero .sb-hero-products a{font-size:14px}.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-service-directory{padding-top:48px}.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-service-directory>h2{font-size:28px}}
+@media(max-width:600px){.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-service-group>ul{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 12px;padding:22px 18px}.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-service-group>h3{padding:14px 18px}.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-service-group li{font-size:14px!important;gap:8px}}

@@ -3,10 +3,10 @@ import path from 'node:path';
 import {load} from 'cheerio';
 
 const url = 'https://axdx-test.vercel.app/';
-const version = '20261012-axdx-last';
+const version = '20261020-1';
 const icon = '<span class="external-link-icon" aria-hidden="true">↗</span>';
-const menu = `<div class="gnb-item gnb-checklist"><a class="gnb-link" href="${url}" target="_blank" rel="noopener noreferrer" aria-label="AX/DX 레벨 체크리스트 (새 창)">AX/DX 진단 ${icon}</a></div>`;
 const footerLink = `<a class="footer-checklist" href="${url}" target="_blank" rel="noopener noreferrer" aria-label="AX/DX 레벨 체크리스트 (새 창)">AX/DX 레벨 체크리스트 ${icon}</a>`;
+async function writePage(file,html){for(let attempt=0;;attempt++){try{return await fs.writeFile(file,html);}catch(error){if(attempt>=8||!['UNKNOWN','EBUSY','EPERM'].includes(error.code))throw error;await new Promise(resolve=>setTimeout(resolve,250*(attempt+1)));}}}
 
 async function htmlFiles(directory) {
   const files = [];
@@ -18,7 +18,7 @@ async function htmlFiles(directory) {
   return files;
 }
 
-// Keep the diagnostic menu last, and preserve the footer link and page content.
+// The checklist remains in the footer; the header shortcut was removed on request.
 const files = ['index.html', ...await htmlFiles('subpages'), ...await htmlFiles('renewal')];
 let updated = 0;
 let checked = 0;
@@ -27,9 +27,8 @@ for (const file of files) {
   if (!source.includes('<header class="site-header">')) continue;
   let html = source.replace(/<header class="site-header">[\s\S]*?<\/header>/, header => {
     const clean = header.replace(/<div class="gnb-item gnb-checklist">[\s\S]*?<\/div>\r?\n?/g, '');
-    const changed = clean.replace(/(<nav class="gnb"[^>]*>[\s\S]*?)(<\/nav>)/, `$1${menu}\n$2`);
-    if (changed === clean) throw new Error(`Header navigation missing: ${file}`);
-    return changed;
+    if (!clean.includes('class="gnb"')) throw new Error(`Header navigation missing: ${file}`);
+    return clean;
   });
   html = html.replace(/<footer\b[^>]*>[\s\S]*?<\/footer>/, footer => {
     if (footer.includes('footer-checklist')) return footer;
@@ -41,13 +40,13 @@ for (const file of files) {
   const $ = load(html);
   const headerLinks = $(`.site-header a[href="${url}"]`);
   const footerLinks = $('#soft-bank-renewal > footer .footer-checklist');
-  if (headerLinks.length !== 1 || footerLinks.length !== 1 || !$('.gnb>.gnb-item').last().hasClass('gnb-checklist')) throw new Error(`Checklist must be last in the header and present once in the footer: ${file}`);
+  if (headerLinks.length !== 0 || footerLinks.length !== 1) throw new Error(`Checklist must be absent from the header and present once in the footer: ${file}`);
   for (const link of [...headerLinks, ...footerLinks]) {
     if ($(link).attr('href') !== url || $(link).attr('target') !== '_blank' || $(link).attr('rel') !== 'noopener noreferrer') throw new Error(`Checklist destination incorrect: ${file}`);
   }
   checked++;
   if (html !== source) {
-    await fs.writeFile(file, html);
+    await writePage(file, html);
     updated++;
   }
 }

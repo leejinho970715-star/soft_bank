@@ -110,6 +110,16 @@
   const quickFab = $('.quick-fab');
   const quickPopover = $('.quick-popover');
   let quickOpen = true;
+  const setQuickPopover = (open) => {
+    quickPopover?.classList.toggle('open', open);
+    quickPopover?.setAttribute('aria-hidden', String(!open));
+    quickPopover?.toggleAttribute('inert', !open);
+    quickFab?.setAttribute('aria-expanded', String(open));
+    quickFab?.setAttribute('aria-label', open ? '퀵메뉴 닫기' : '퀵메뉴 열기');
+    const sign = quickFab?.querySelector('b');
+    if (sign) sign.textContent = open ? '×' : '+';
+  };
+  setQuickPopover(true);
 
   const setQuick = (open) => {
     quickOpen = open;
@@ -177,24 +187,10 @@
 
   const closeOutsidePanels = (event) => {
     const target = event.target;
-    const clickedInsideQuick = quick && quick.contains(target);
-    const clickedInsideQuickToggle = quickToggle && quickToggle.contains(target);
-    const clickedInsideQuickFab = quickFab && quickFab.contains(target);
-    const clickedInsideQuickPopover = quickPopover && quickPopover.contains(target);
     const clickedInsideChat = chat && chat.contains(target);
     const clickedInsideChatLaunch = chatLaunch && chatLaunch.contains(target);
 
-    if (!clickedInsideQuick && !clickedInsideQuickToggle && !clickedInsideQuickFab && !clickedInsideQuickPopover) {
-      if (quickPopover) {
-        quickPopover.classList.remove('open');
-        quickPopover.setAttribute('aria-hidden', 'true');
-      }
-      if (quickFab) {
-        quickFab.setAttribute('aria-expanded', 'false');
-        const sign = quickFab.querySelector('b');
-        if (sign) sign.textContent = '+';
-      }
-    }
+    // Keep the quick links expanded until their own toggle is explicitly used.
 
     if (!clickedInsideChat && !clickedInsideChatLaunch) {
       setChat(false);
@@ -209,12 +205,9 @@
     quickFab.addEventListener('click', (event) => {
       event.stopPropagation();
       if (quickPopover) {
-        const open = quickPopover.classList.toggle('open');
+        const open = !quickPopover.classList.contains('open');
         if (open) setChat(false);
-        quickPopover.setAttribute('aria-hidden', String(!open));
-        quickFab.setAttribute('aria-expanded', String(open));
-        const sign = quickFab.querySelector('b');
-        if (sign) sign.textContent = open ? '×' : '+';
+        setQuickPopover(open);
       }
     });
   }

@@ -1,0 +1,326 @@
+[
+  {
+    "file": "assets/proposal-native-20261020/wehago-portal.png",
+    "width": 3642,
+    "height": 1917,
+    "sourceDocument": "260703_물류고도화_01-복사.pdf",
+    "sourcePage": 33,
+    "imageIndices": [
+      2,
+      3,
+      4
+    ],
+    "sourceSha256": "466644321e29090493383b72a472172f780405a3f546a049111f61f9024dba9d",
+    "export": "Native pixels. Consecutive strips joined only when needed. No UI or text generation."
+  },
+  {
+    "file": "assets/proposal-native-20261020/wehago-mobile.png",
+    "width": 1138,
+    "height": 2296,
+    "sourceDocument": "260703_물류고도화_01-복사.pdf",
+    "sourcePage": 39,
+    "imageIndices": [
+      2
+    ],
+    "sourceSha256": "466644321e29090493383b72a472172f780405a3f546a049111f61f9024dba9d",
+    "export": "Native pixels. Consecutive strips joined only when needed. No UI or text generation."
+  },
+  {
+    "file": "assets/proposal-native-20261020/wehago-accounting.png",
+    "width": 3059,
+    "height": 1694,
+    "sourceDocument": "260703_물류고도화_01-복사.pdf",
+    "sourcePage": 17,
+    "imageIndices": [
+      2,
+      3
+    ],
+    "sourceSha256": "466644321e29090493383b72a472172f780405a3f546a049111f61f9024dba9d",
+    "export": "Native pixels. Consecutive strips joined only when needed. No UI or text generation."
+  },
+  {
+    "file": "assets/proposal-native-20261020/wehago-input.png",
+    "width": 2236,
+    "height": 1170,
+    "sourceDocument": "260703_물류고도화_01-복사.pdf",
+    "sourcePage": 28,
+    "imageIndices": [
+      2
+    ],
+    "sourceSha256": "466644321e29090493383b72a472172f780405a3f546a049111f61f9024dba9d",
+    "export": "Native pixels. Consecutive strips joined only when needed. No UI or text generation."
+  },
+  {
+    "file": "assets/proposal-native-20261020/wehago-logistics.png",
+    "width": 2273,
+    "height": 1140,
+    "sourceDocument": "260703_물류고도화_01-복사.pdf",
+    "sourcePage": 28,
+    "imageIndices": [
+      6
+    ],
+    "sourceSha256": "466644321e29090493383b72a472172f780405a3f546a049111f61f9024dba9d",
+    "export": "Native pixels. Consecutive strips joined only when needed. No UI or text generation."
+  },
+  {
+    "file": "assets/proposal-native-20261020/amaranth-mobile.png",
+    "width": 353,
+    "height": 764,
+    "sourceDocument": "Amaranth_10_General.pdf",
+    "sourcePage": 16,
+    "imageIndices": [
+      17
+    ],
+    "sourceSha256": "b3e07fc7cf748912890ff6b51285aa3a174bc9ada9176b956d5b567230f6c904",
+    "export": "Native pixels. Consecutive strips joined only when needed. No UI or text generation."
+  },
+  {
+    "file": "assets/proposal-native-20261020/service-5.png",
+    "width": 88,
+    "height": 88,
+    "sourceDocument": "[WEHAGO] ONE AI 제안서_고객안내용_아이원소프트뱅크.pdf",
+    "sourcePage": 4,
+    "imageIndices": [
+      5
+    ],
+    "sourceSha256": "64893176fc6247a5768cf0d339eebf722333933a25278bfeb174e4c656ce34e8",
+    "export": "Native pixels. Consecutive strips joined only when needed. No UI or text generation."
+  },
+  {
+    "file": "assets/proposal-native-20261020/service-6.png",
+    "width": 88,
+    "height": 88,
+    "sourceDocument": "[WEHAGO] ONE AI 제안서_고객안내용_아이원소프트뱅크.pdf",
+    "sourcePage": 4,
+    "imageIndices": [
+      6
+    ],
+    "sourceSha256": "64893176fc6247a5768cf0d339eebf722333933a25278bfeb174e4c656ce34e8",
+    "export": "Native pixels. Consecutive strips joined only when needed. No UI or text generation."
+  },
+  {
+    "file": "assets/proposal-native-20261020/service-8.png",
+    "width": 83,
+    "height": 83,
+    "sourceDocument": "[WEHAGO] ONE AI 제안서_고객안내용_아이원소프트뱅크.pdf",
+    "sourcePage": 4,
+    "imageIndices": [
+      8
+    ],
+    "sourceSha256": "64893176fc6247a5768cf0d339eebf722333933a25278bfeb174e4c656ce34e8",
+    "export": "Native pixels. Consecutive strips joined only when needed. No UI or text generation."
+  },
+  {
+    "file": "assets/proposal-native-20261020/service-10.png",
+    "width": 117,
+    "height": 117,
+    "sourceDocument": "[WEHAGO] ONE AI 제안서_고객안내용_아이원소프트뱅크.pdf",
+    "sourcePage": 4,
+    "imageIndices": [
+      10
+    ],
+    "sourceSha256": "64893176fc6247a5768cf0d339eebf722333933a25278bfeb174e4c656ce34e8",
+    "export": "Native pixels. Consecutive strips joined only when needed. No UI or text generation."
+  },
+  {
+    "file": "assets/proposal-native-20261020/service-11.png",
+    "width": 114,
+    "height": 114,
+    "sourceDocument": "[WEHAGO] ONE AI 제안서_고객안내용_아이원소프트뱅크.pdf",
+    "sourcePage": 4,
+    "imageIndices": [
+      11
+    ],
+    "sourceSha256": "64893176fc6247a5768cf0d339eebf722333933a25278bfeb174e4c656ce34e8",
+    "export": "Native pixels. Consecutive strips joined only when needed. No UI or text generation."
+  },
+  {
+    "file": "assets/proposal-native-20261020/service-12.png",
+    "width": 120,
+    "height": 120,
+    "sourceDocument": "[WEHAGO] ONE AI 제안서_고객안내용_아이원소프트뱅크.pdf",
+    "sourcePage": 4,
+    "imageIndices": [
+      12
+    ],
+    "sourceSha256": "64893176fc6247a5768cf0d339eebf722333933a25278bfeb174e4c656ce34e8",
+    "export": "Native pixels. Consecutive strips joined only when needed. No UI or text generation."
+  },
+  {
+    "file": "assets/proposal-native-20261020/service-13.png",
+    "width": 117,
+    "height": 116,
+    "sourceDocument": "[WEHAGO] ONE AI 제안서_고객안내용_아이원소프트뱅크.pdf",
+    "sourcePage": 4,
+    "imageIndices": [
+      13
+    ],
+    "sourceSha256": "64893176fc6247a5768cf0d339eebf722333933a25278bfeb174e4c656ce34e8",
+    "export": "Native pixels. Consecutive strips joined only when needed. No UI or text generation."
+  },
+  {
+    "file": "assets/proposal-native-20261020/service-14.png",
+    "width": 120,
+    "height": 120,
+    "sourceDocument": "[WEHAGO] ONE AI 제안서_고객안내용_아이원소프트뱅크.pdf",
+    "sourcePage": 4,
+    "imageIndices": [
+      14
+    ],
+    "sourceSha256": "64893176fc6247a5768cf0d339eebf722333933a25278bfeb174e4c656ce34e8",
+    "export": "Native pixels. Consecutive strips joined only when needed. No UI or text generation."
+  },
+  {
+    "file": "assets/proposal-native-20261020/service-16.png",
+    "width": 128,
+    "height": 117,
+    "sourceDocument": "[WEHAGO] ONE AI 제안서_고객안내용_아이원소프트뱅크.pdf",
+    "sourcePage": 4,
+    "imageIndices": [
+      16
+    ],
+    "sourceSha256": "64893176fc6247a5768cf0d339eebf722333933a25278bfeb174e4c656ce34e8",
+    "export": "Native pixels. Consecutive strips joined only when needed. No UI or text generation."
+  },
+  {
+    "file": "assets/proposal-native-20261020/service-17.png",
+    "width": 123,
+    "height": 123,
+    "sourceDocument": "[WEHAGO] ONE AI 제안서_고객안내용_아이원소프트뱅크.pdf",
+    "sourcePage": 4,
+    "imageIndices": [
+      17
+    ],
+    "sourceSha256": "64893176fc6247a5768cf0d339eebf722333933a25278bfeb174e4c656ce34e8",
+    "export": "Native pixels. Consecutive strips joined only when needed. No UI or text generation."
+  },
+  {
+    "file": "assets/proposal-native-20261020/service-19.png",
+    "width": 58,
+    "height": 58,
+    "sourceDocument": "[WEHAGO] ONE AI 제안서_고객안내용_아이원소프트뱅크.pdf",
+    "sourcePage": 4,
+    "imageIndices": [
+      19
+    ],
+    "sourceSha256": "64893176fc6247a5768cf0d339eebf722333933a25278bfeb174e4c656ce34e8",
+    "export": "Native pixels. Consecutive strips joined only when needed. No UI or text generation."
+  },
+  {
+    "file": "assets/proposal-native-20261020/service-20.png",
+    "width": 117,
+    "height": 117,
+    "sourceDocument": "[WEHAGO] ONE AI 제안서_고객안내용_아이원소프트뱅크.pdf",
+    "sourcePage": 4,
+    "imageIndices": [
+      20
+    ],
+    "sourceSha256": "64893176fc6247a5768cf0d339eebf722333933a25278bfeb174e4c656ce34e8",
+    "export": "Native pixels. Consecutive strips joined only when needed. No UI or text generation."
+  },
+  {
+    "file": "assets/proposal-native-20261020/service-21.png",
+    "width": 83,
+    "height": 83,
+    "sourceDocument": "[WEHAGO] ONE AI 제안서_고객안내용_아이원소프트뱅크.pdf",
+    "sourcePage": 4,
+    "imageIndices": [
+      21
+    ],
+    "sourceSha256": "64893176fc6247a5768cf0d339eebf722333933a25278bfeb174e4c656ce34e8",
+    "export": "Native pixels. Consecutive strips joined only when needed. No UI or text generation."
+  },
+  {
+    "file": "assets/proposal-native-20261020/service-22.png",
+    "width": 116,
+    "height": 116,
+    "sourceDocument": "[WEHAGO] ONE AI 제안서_고객안내용_아이원소프트뱅크.pdf",
+    "sourcePage": 4,
+    "imageIndices": [
+      22
+    ],
+    "sourceSha256": "64893176fc6247a5768cf0d339eebf722333933a25278bfeb174e4c656ce34e8",
+    "export": "Native pixels. Consecutive strips joined only when needed. No UI or text generation."
+  },
+  {
+    "file": "assets/proposal-native-20261020/service-23.png",
+    "width": 115,
+    "height": 116,
+    "sourceDocument": "[WEHAGO] ONE AI 제안서_고객안내용_아이원소프트뱅크.pdf",
+    "sourcePage": 4,
+    "imageIndices": [
+      23
+    ],
+    "sourceSha256": "64893176fc6247a5768cf0d339eebf722333933a25278bfeb174e4c656ce34e8",
+    "export": "Native pixels. Consecutive strips joined only when needed. No UI or text generation."
+  },
+  {
+    "file": "assets/proposal-native-20261020/service-24.png",
+    "width": 116,
+    "height": 116,
+    "sourceDocument": "[WEHAGO] ONE AI 제안서_고객안내용_아이원소프트뱅크.pdf",
+    "sourcePage": 4,
+    "imageIndices": [
+      24
+    ],
+    "sourceSha256": "64893176fc6247a5768cf0d339eebf722333933a25278bfeb174e4c656ce34e8",
+    "export": "Native pixels. Consecutive strips joined only when needed. No UI or text generation."
+  },
+  {
+    "file": "assets/proposal-native-20261020/service-25.png",
+    "width": 124,
+    "height": 124,
+    "sourceDocument": "[WEHAGO] ONE AI 제안서_고객안내용_아이원소프트뱅크.pdf",
+    "sourcePage": 4,
+    "imageIndices": [
+      25
+    ],
+    "sourceSha256": "64893176fc6247a5768cf0d339eebf722333933a25278bfeb174e4c656ce34e8",
+    "export": "Native pixels. Consecutive strips joined only when needed. No UI or text generation."
+  },
+  {
+    "file": "assets/proposal-native-20261020/service-26.png",
+    "width": 84,
+    "height": 84,
+    "sourceDocument": "[WEHAGO] ONE AI 제안서_고객안내용_아이원소프트뱅크.pdf",
+    "sourcePage": 4,
+    "imageIndices": [
+      26
+    ],
+    "sourceSha256": "64893176fc6247a5768cf0d339eebf722333933a25278bfeb174e4c656ce34e8",
+    "export": "Native pixels. Consecutive strips joined only when needed. No UI or text generation."
+  },
+  {
+    "file": "assets/proposal-native-20261020/service-27.png",
+    "width": 84,
+    "height": 84,
+    "sourceDocument": "[WEHAGO] ONE AI 제안서_고객안내용_아이원소프트뱅크.pdf",
+    "sourcePage": 4,
+    "imageIndices": [
+      27
+    ],
+    "sourceSha256": "64893176fc6247a5768cf0d339eebf722333933a25278bfeb174e4c656ce34e8",
+    "export": "Native pixels. Consecutive strips joined only when needed. No UI or text generation."
+  },
+  {
+    "file": "assets/proposal-native-20261020/service-28.png",
+    "width": 81,
+    "height": 82,
+    "sourceDocument": "[WEHAGO] ONE AI 제안서_고객안내용_아이원소프트뱅크.pdf",
+    "sourcePage": 4,
+    "imageIndices": [
+      28
+    ],
+    "sourceSha256": "64893176fc6247a5768cf0d339eebf722333933a25278bfeb174e4c656ce34e8",
+    "export": "Native pixels. Consecutive strips joined only when needed. No UI or text generation."
+  },
+  {
+    "file": "assets/proposal-native-20261020/amaranth-portal.png",
+    "width": 1280,
+    "height": 840,
+    "sourceDocument": "Official Amaranth 10 product catalog",
+    "sourcePage": 45,
+    "sourceAsset": "assets/subpages/native-screens/portal.png",
+    "export": "Unchanged native portal pixels."
+  }
+]
