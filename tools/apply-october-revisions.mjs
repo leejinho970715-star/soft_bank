@@ -46,7 +46,11 @@ function serviceDirectory($,root){
  return section;
 }
 function applyProducts($,file,root){
- $('.sb-hero-products a').each((i,e)=>{const link=$(e),text=name(link.text());if(text)link.children('span').length?link.children('span').text(text):link.text(text);});
+ $('.sb-hero-products a').each((i,e)=>{
+  const link=$(e),href=link.attr('href')||'';
+  const text=href.includes('/amaranth10/')?'Amaranth10':href.includes('/wehago/')?'WEHAGO':href.includes('/nonprofit/')?'Amaranth10 비영리':null;
+  if(text)link.children('span').length?link.children('span').text(text):link.text(text);
+ });
  let korean='',english='';
  if(file.includes('/product/amaranth10/')){korean='아마란스 10';english='Amaranth 10';}
  if(file.includes('/product/nonprofit/')){korean='아마란스 10 비영리';english='Amaranth 10';}
