@@ -106,7 +106,7 @@ function applyProducts($,file,root){
 }
 function applyHome($,root){
  $('link[href*="home-device-mockups/layout.css"]').remove();
- $('head').append('<link rel="stylesheet" href="'+root+'assets/home-device-mockups/layout.css?v=20261021-2">');
+ $('head').append('<link rel="stylesheet" href="'+root+'assets/home-device-mockups/layout.css?v=20261021-3">');
  $('.products .product').each((i,e)=>{
   const article=$(e),link=article.children('a').first();
   const isAmaranth=(link.attr('href')||'').includes('amaranth10/brand');
