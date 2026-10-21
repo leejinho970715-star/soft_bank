@@ -3,7 +3,7 @@ import path from 'node:path';
 import {load} from 'cheerio';
 
 const version='20261021-2';
-const productVersion='20261021-4';
+const productVersion='20261021-6';
 const native=JSON.parse(await fs.readFile('assets/proposal-native-20261020/manifest.json','utf8'));
 const assets=new Map(native.map(asset=>[path.basename(asset.file,'.png'),asset]));
 const normalize=text=>text.replace(/\s+/g,' ').trim();
