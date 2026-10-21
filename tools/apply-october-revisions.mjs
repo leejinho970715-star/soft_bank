@@ -115,7 +115,7 @@ function applyHome($,root){
   article.removeClass('reveal');article.find('.title>span').first().text(display);
   const pair=$('<span class="sb-home-product-screens sb-home-device-mockup"></span>');
   if(!isAmaranth)pair.addClass('sb-home-device-wehago');
-  pair.append($('<img loading="lazy">').attr({src:root+'assets/home-device-mockups/'+family+'-pc-mobile.svg?v=20261021-2',width:1800,height:isAmaranth?1180:830,alt:display+' 실제 화면을 담은 PC·모바일 전체 프레임 목업'}));
+  pair.append($('<img loading="lazy">').attr({src:root+'assets/home-device-mockups/'+family+'-pc-mobile.svg?v=20261021-3',width:1800,height:isAmaranth?1180:830,alt:display+' 실제 화면을 담은 PC·모바일 전체 프레임 목업'}));
   link.empty().append(pair);
  });
  const popover=$('.quick-popover');

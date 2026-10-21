@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 
-// Keep the native product pixels intact; only the surrounding device frames are vector artwork.
+// Embed the native product pixels (Amaranth as a 2-3x resample for the 1240px layout); only the device frames are vector artwork.
 const out='assets/home-device-mockups';
 await fs.mkdir(out,{recursive:true});
 const data=async name=>'data:image/png;base64,'+(await fs.readFile('assets/proposal-native-20261020/'+name+'.png')).toString('base64');
@@ -14,7 +14,7 @@ function phone(src,x,y,w,h){return `<rect x="${x-5}" y="${y-5}" width="${w+10}" 
  <rect x="${x+w*.35}" y="${y+9}" width="${w*.3}" height="5" rx="2.5" fill="#424951"/>
  <svg x="${x+10}" y="${y+24}" width="${w-20}" height="${h}" viewBox="0 0 ${w-20} ${h}"><image href="${src}" width="${w-20}" height="${h}" preserveAspectRatio="xMidYMid meet"/></svg>
  <rect x="${x+w*.34}" y="${y+h+36}" width="${w*.32}" height="4" rx="2" fill="#e3e7ed"/>`;}
-const amaranth=await data('amaranth-portal'),amobile=await data('amaranth-mobile');
+const amaranth=await data('amaranth-portal-highres'),amobile=await data('amaranth-mobile-highres');
 const a=`<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1180" viewBox="0 0 1800 1180" role="img" aria-label="아마란스 10 PC 모니터와 모바일 목업">${defs}
  <path d="M625 958h190l34 135H591z" fill="url(#stand)"/>
  <rect x="456" y="1090" width="574" height="26" rx="13" fill="url(#metal)"/>

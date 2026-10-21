@@ -322,5 +322,21 @@
     "sourcePage": 45,
     "sourceAsset": "assets/subpages/native-screens/portal.png",
     "export": "Unchanged native portal pixels."
+  },
+  {
+    "file": "assets/proposal-native-20261020/amaranth-portal-highres.png",
+    "width": 2560,
+    "height": 1680,
+    "sourceAsset": "assets/proposal-native-20261020/amaranth-portal.png",
+    "sourceSha256": "e394b7bfc59770394420db6242b458c1428b7e5059984180fedc4cdbac78d378",
+    "export": "2x Lanczos resample with light unsharp mask. No AI upscaling, UI or text generation."
+  },
+  {
+    "file": "assets/proposal-native-20261020/amaranth-mobile-highres.png",
+    "width": 1059,
+    "height": 2292,
+    "sourceAsset": "assets/proposal-native-20261020/amaranth-mobile.png",
+    "sourceSha256": "968d5516e9ad0f3a454395a96c714bc1007cb8c48ef527123e5ed08387b1e620",
+    "export": "3x Lanczos resample with light unsharp mask. No AI upscaling, UI or text generation."
   }
 ]

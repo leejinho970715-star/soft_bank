@@ -10,3 +10,5 @@ The PNG files preserve the original pixels from the supplied product proposals. 
 - Amaranth desktop and mobile: previously retained official Amaranth product catalogs. See `manifest.json` for source pages and native dimensions.
 
 Use `tools/extract-october-reference-assets.py` to repeat extraction from the originals. The build uses these committed exports and does not need the source documents.
+
+`amaranth-portal-highres.png` (2x) and `amaranth-mobile-highres.png` (3x) are Lanczos resamples of the native Amaranth screens with a light unsharp mask, used by the 1240px home mockup. AI upscaling was rejected because it rewrote small labels and faces. Rebuild them with `tools/prepare-home-amaranth-highres.py`.
