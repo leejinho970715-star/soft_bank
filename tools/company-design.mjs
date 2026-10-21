@@ -1,6 +1,6 @@
 export function applyCompanyDesign($, page, root) {
   if (!['/company/about.asp','/company/location.asp','/company/headquarters.asp'].includes(page)) return;
-  $('head').append(`<link rel="stylesheet" href="${root}renewal/company-design.css?v=20261021-1">`);
+  $('head').append(`<link rel="stylesheet" href="${root}renewal/company-design.css?v=20261021-2">`);
   const asset = name => `${root}assets/subpages/features/company/${name}.png`;
   const picture = (name, alt) => `<img class="sb-company-art" src="${asset(name)}" alt="${alt}" width="512" height="512" loading="lazy">`;
   if (page === '/company/about.asp') {
