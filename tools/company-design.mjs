@@ -1,13 +1,17 @@
 export function applyCompanyDesign($, page, root) {
   if (!['/company/about.asp','/company/location.asp','/company/headquarters.asp'].includes(page)) return;
-  $('head').append(`<link rel="stylesheet" href="${root}renewal/company-design.css">`);
+  $('head').append(`<link rel="stylesheet" href="${root}renewal/company-design.css?v=20261021-1">`);
   const asset = name => `${root}assets/subpages/features/company/${name}.png`;
   const picture = (name, alt) => `<img class="sb-company-art" src="${asset(name)}" alt="${alt}" width="512" height="512" loading="lazy">`;
   if (page === '/company/about.asp') {
+    // Simple greeting box on a lavender wave background, followed by photo-led introductions.
+    $('.about .bgBox').addClass('sb-about-greeting').empty()
+      .append('<b>ABOUT US</b><h3>안녕하십니까<br>더존을 항상 성원해 주시고 아껴주시는<br>고객님들께 항상 진심으로 감사드립니다.</h3>');
+    $('.about__list').addClass('sb-about-list');
     $('.about__list>li').each((i,e) => {
-      const names=['platform','network','consulting'];
-      const labels=['통합 ERP 솔루션과 디지털 서비스','고객사와 연결되는 비즈니스 네트워크','기업 성장을 돕는 전문 컨설팅'];
-      $(e).find('.img').first().empty().append(picture(names[i],labels[i]));
+      const names=['solutions','customers','consulting'];
+      const labels=['통합 ERP 솔루션을 함께 검토하는 업무 현장','고객사와 신뢰를 쌓아 온 비즈니스 미팅','기업 성장을 돕는 전문 컨설팅'];
+      $(e).find('.img').first().empty().append(`<img class="sb-about-photo" src="${root}assets/subpages/company/about-${names[i]}.jpg" alt="${labels[i]}" width="1600" height="1200" loading="lazy">`);
     });
   }
   if (page === '/company/headquarters.asp') {
