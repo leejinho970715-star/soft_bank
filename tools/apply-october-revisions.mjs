@@ -7,7 +7,8 @@ const productVersion='20261021-1';
 const native=JSON.parse(await fs.readFile('assets/proposal-native-20261020/manifest.json','utf8'));
 const assets=new Map(native.map(asset=>[path.basename(asset.file,'.png'),asset]));
 const normalize=text=>text.replace(/\s+/g,' ').trim();
-const name=text=>({'WEHAGO':'위하고','Amaranth 10':'아마란스 10','Amaranth10':'아마란스 10','Amaranth 10 비영리':'아마란스 10 비영리','Amaranth 10(비영리)':'아마란스 10(비영리)'})[normalize(text)];
+// Product menu names match the English product tabs on the product pages.
+const name=text=>({'위하고':'WEHAGO','아마란스 10':'Amaranth10','Amaranth 10':'Amaranth10','아마란스 10 비영리':'Amaranth10 비영리','아마란스 10(비영리)':'Amaranth10 비영리','Amaranth 10 비영리':'Amaranth10 비영리','Amaranth 10(비영리)':'Amaranth10 비영리'})[normalize(text)];
 const keywordGroups={
  '근태관리':['근태리더기 연동','교대근무','유연근무','모바일출퇴근'],
  'BOM관리':['생산관리','생산계획','공정수불관리','외주관리'],
