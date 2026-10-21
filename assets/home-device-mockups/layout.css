@@ -5,8 +5,3 @@
 /* Leave room for the expanded side menus on desktop while using the available width. */
 @media(min-width:1101px) and (max-width:1499px){#soft-bank-renewal .sb-home-product-screens.sb-home-device-mockup{width:calc(100% - 240px);margin-left:132px;margin-right:108px}}
 @media(max-width:700px){#soft-bank-renewal .sb-home-product-screens.sb-home-device-wehago{width:100%;margin-top:16px}}
-/* Cursor magnifier for the mockups; pointer-events stay on the image so the product link still works. */
-#soft-bank-renewal .sb-home-device-mockup{position:relative}
-#soft-bank-renewal .sb-home-device-mockup>.sb-mockup-lens{position:absolute;left:0;top:0;width:240px;height:240px;border-radius:50%;border:3px solid #fff;box-shadow:0 12px 32px rgba(17,32,74,.28),0 0 0 1px rgba(43,97,214,.25);background-color:#fff;background-repeat:no-repeat;pointer-events:none;opacity:0;transition:opacity .15s ease;z-index:2;will-change:transform}
-#soft-bank-renewal .sb-home-device-mockup.is-magnifying>.sb-mockup-lens{opacity:1}
-#soft-bank-renewal .sb-home-device-mockup.is-magnifying>img{cursor:zoom-in}

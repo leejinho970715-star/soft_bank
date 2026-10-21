@@ -1,6 +1,6 @@
 export function applyCompanyDesign($, page, root) {
   if (!['/company/about.asp','/company/location.asp','/company/headquarters.asp'].includes(page)) return;
-  $('head').append(`<link rel="stylesheet" href="${root}renewal/company-design.css?v=20261021-2">`);
+  $('head').append(`<link rel="stylesheet" href="${root}renewal/company-design.css?v=20261021-3">`);
   const asset = name => `${root}assets/subpages/features/company/${name}.png`;
   const picture = (name, alt) => `<img class="sb-company-art" src="${asset(name)}" alt="${alt}" width="512" height="512" loading="lazy">`;
   if (page === '/company/about.asp') {
@@ -15,7 +15,6 @@ export function applyCompanyDesign($, page, root) {
     });
   }
   if (page === '/company/headquarters.asp') {
-    $('.headquarters>.top_txt').prepend(picture('network','글로벌 ICT 비즈니스 네트워크'));
     $('.headquarters>ul').addClass('sb-company-values');
     $('.headquarters>ul>li').each((i,e) => {
       $(e).find('.img').first().empty().append(picture(['platform','consulting','platform','network'][i],['기업 정보화 솔루션','신뢰와 전문성','통합 경영 플랫폼','글로벌 네트워크'][i]));

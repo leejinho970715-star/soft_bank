@@ -350,3 +350,7 @@ body.sb-cardnews-open{overflow:hidden}
 #soft-bank-renewal .sb-back-to-top:hover{background:#347ed5}
 #soft-bank-renewal .sb-back-to-top:focus-visible{outline:3px solid #245c9f;outline-offset:3px}
 @media(max-width:700px){#soft-bank-renewal .sb-back-to-top{width:52px;height:52px;bottom:max(16px,env(safe-area-inset-bottom))}}
+/* Cursor magnifier for product screens; the lens ignores pointer events so links and zoom dialogs still work. */
+.sb-mockup-lens{position:fixed;left:0;top:0;width:240px;height:240px;border-radius:50%;border:3px solid #fff;box-shadow:0 12px 32px rgba(17,32,74,.28),0 0 0 1px rgba(43,97,214,.25);background-color:#fff;background-repeat:no-repeat;pointer-events:none;opacity:0;transition:opacity .15s ease;z-index:9999;will-change:transform}
+.sb-mockup-lens.is-visible{opacity:1}
+img.sb-magnifiable{cursor:zoom-in}
