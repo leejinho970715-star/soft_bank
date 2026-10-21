@@ -295,7 +295,7 @@ footer>nav .footer-checklist{display:inline-flex;align-items:center;gap:5px}
 /* Disable CSS smooth scrolling only while the home paging controller owns movement. */
 html.sb-home-paging{scroll-behavior:auto!important}
 /* Real product captures stay still and preserve their complete native proportions. */
-#soft-bank-renewal .sb-home-product-screens{display:grid;grid-template-columns:minmax(0,1fr) 170px;align-items:center;gap:28px;width:min(100%,1050px);margin:36px auto 0}
+#soft-bank-renewal .sb-home-product-screens{display:grid;grid-template-columns:minmax(0,1fr) 170px;align-items:center;gap:28px;width:min(100%,980px);margin:36px auto 0}
 #soft-bank-renewal .sb-home-product-screens img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;animation:none!important;transform:none!important}
 #soft-bank-renewal .sb-home-product-screens .sb-home-screen-mobile{max-width:170px;margin:auto}
 #soft-bank-renewal .quick-popover{width:80px;background:#fff;box-shadow:none;backdrop-filter:none}

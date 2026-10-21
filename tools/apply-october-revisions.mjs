@@ -2,7 +2,8 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {load} from 'cheerio';
 
-const version='20261020-1';
+const version='20261020-2';
+const productVersion='20261020-2';
 const native=JSON.parse(await fs.readFile('assets/proposal-native-20261020/manifest.json','utf8'));
 const assets=new Map(native.map(asset=>[path.basename(asset.file,'.png'),asset]));
 const normalize=text=>text.replace(/\s+/g,' ').trim();
@@ -134,7 +135,7 @@ for(const file of ['index.html',...await walk('subpages'),...await walk('renewal
  if(normalized.includes('subpages/product/'))applyProducts($,normalized,root);
  if(normalized==='index.html')applyHome($,root);
  $('link[href*="styles.css"]').each((i,e)=>$(e).attr('href',($(e).attr('href').split('?')[0])+'?v='+version));
- $('link[href*="products-figma.css"]').each((i,e)=>$(e).attr('href',($(e).attr('href').split('?')[0])+'?v='+version));
+ $('link[href*="products-figma.css"]').each((i,e)=>$(e).attr('href',($(e).attr('href').split('?')[0])+'?v='+productVersion));
  $('script[src]').each((i,e)=>{const script=$(e),src=script.attr('src');if(/(?:^|\/)app\.js(?:\?|$)/.test(src))script.attr('src',src.split('?')[0]+'?v='+version);});
  const html=normalized.includes('subpages/product/')?$.html().replace(/[\t ]+$/gm,''):$.html();if(source!==html){await writePage(file,html);changed++;}
 }
