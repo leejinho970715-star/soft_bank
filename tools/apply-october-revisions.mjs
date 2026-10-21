@@ -106,7 +106,7 @@ function applyProducts($,file,root){
 }
 function applyHome($,root){
  $('link[href*="home-device-mockups/layout.css"]').remove();
- $('head').append('<link rel="stylesheet" href="'+root+'assets/home-device-mockups/layout.css?v=20261021-1">');
+ $('head').append('<link rel="stylesheet" href="'+root+'assets/home-device-mockups/layout.css?v=20261021-2">');
  $('.products .product').each((i,e)=>{
   const article=$(e),link=article.children('a').first();
   const isAmaranth=(link.attr('href')||'').includes('amaranth10/brand');
@@ -114,7 +114,8 @@ function applyHome($,root){
   const family=isAmaranth?'amaranth':'wehago',display=isAmaranth?'아마란스 10 · Amaranth 10':'위하고 · WEHAGO';
   article.removeClass('reveal');article.find('.title>span').first().text(display);
   const pair=$('<span class="sb-home-product-screens sb-home-device-mockup"></span>');
-  pair.append($('<img loading="lazy">').attr({src:root+'assets/home-device-mockups/'+family+'-pc-mobile.svg',width:1800,height:isAmaranth?1180:1000,alt:display+' 실제 화면을 담은 PC·모바일 전체 프레임 목업'}));
+  if(!isAmaranth)pair.addClass('sb-home-device-wehago');
+  pair.append($('<img loading="lazy">').attr({src:root+'assets/home-device-mockups/'+family+'-pc-mobile.svg?v=20261021-2',width:1800,height:isAmaranth?1180:830,alt:display+' 실제 화면을 담은 PC·모바일 전체 프레임 목업'}));
   link.empty().append(pair);
  });
  const popover=$('.quick-popover');

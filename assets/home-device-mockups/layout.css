@@ -1,3 +1,7 @@
 /* Complete vector device frames with embedded native product screenshots. */
 #soft-bank-renewal .sb-home-product-screens.sb-home-device-mockup{display:block;overflow:visible;width:min(100%,980px);height:auto}
 #soft-bank-renewal .sb-home-device-mockup>img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;object-position:center;border:0}
+#soft-bank-renewal .sb-home-product-screens.sb-home-device-wehago{width:min(100%,1240px);margin-top:20px}
+/* Leave room for the expanded side menus on desktop while using the available width. */
+@media(min-width:1101px) and (max-width:1499px){#soft-bank-renewal .sb-home-product-screens.sb-home-device-wehago{width:calc(100% - 240px);margin-left:132px;margin-right:108px}}
+@media(max-width:700px){#soft-bank-renewal .sb-home-product-screens.sb-home-device-wehago{width:100%;margin-top:16px}}

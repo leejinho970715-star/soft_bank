@@ -25,9 +25,10 @@ const a=`<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1180" view
  <path d="M48 934h1330v8q0 28-28 28H76q-28 0-28-28z" fill="url(#metal)"/>
  ${phone(amobile,1440,228,310,Math.round(290*764/353))}</svg>`;
 const wehago=await data('wehago-portal'),wmobile=await data('wehago-mobile');
-const w=`<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1000" viewBox="0 0 1800 1000" role="img" aria-label="위하고 노트북과 전체 모바일 프레임 목업">${defs}
- <image href="${wehago}" x="20" y="180" width="1380" height="727" preserveAspectRatio="xMidYMid meet"/>
- ${phone(wmobile,1440,160,310,Math.round(290*2296/1138))}</svg>`;
+// Use more of the composition for the laptop screen, with both complete devices still separate.
+const w=`<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="830" viewBox="0 0 1800 830" role="img" aria-label="위하고 노트북과 전체 모바일 프레임 목업">${defs}
+ <image href="${wehago}" x="10" y="28" width="1460" height="769" preserveAspectRatio="xMidYMid meet"/>
+ ${phone(wmobile,1480,80,280,Math.round(260*2296/1138))}</svg>`;
 await fs.writeFile(out+'/amaranth-pc-mobile.svg',a);
 await fs.writeFile(out+'/wehago-pc-mobile.svg',w);
 console.log('Built two lossless device mockups with complete device frames.');

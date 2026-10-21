@@ -3,9 +3,6 @@ import path from 'node:path';
 import {load} from 'cheerio';
 
 const url = 'https://axdx-test.vercel.app/';
-const version = '20261020-1';
-const icon = '<span class="external-link-icon" aria-hidden="true">↗</span>';
-const footerLink = `<a class="footer-checklist" href="${url}" target="_blank" rel="noopener noreferrer" aria-label="AX/DX 레벨 체크리스트 (새 창)">AX/DX 레벨 체크리스트 ${icon}</a>`;
 async function writePage(file,html){for(let attempt=0;;attempt++){try{return await fs.writeFile(file,html);}catch(error){if(attempt>=8||!['UNKNOWN','EBUSY','EPERM'].includes(error.code))throw error;await new Promise(resolve=>setTimeout(resolve,250*(attempt+1)));}}}
 
 async function htmlFiles(directory) {
@@ -18,7 +15,7 @@ async function htmlFiles(directory) {
   return files;
 }
 
-// The checklist remains in the footer; the header shortcut was removed on request.
+// Remove both shortcuts, including after shared pages are regenerated during a build.
 const files = ['index.html', ...await htmlFiles('subpages'), ...await htmlFiles('renewal')];
 let updated = 0;
 let checked = 0;
@@ -31,19 +28,12 @@ for (const file of files) {
     return clean;
   });
   html = html.replace(/<footer\b[^>]*>[\s\S]*?<\/footer>/, footer => {
-    if (footer.includes('footer-checklist')) return footer;
-    const changed = footer.replace(/(<nav\b[^>]*>[\s\S]*?)(<\/nav>)/, `$1${footerLink}$2`);
-    if (changed === footer) throw new Error(`Footer navigation missing: ${file}`);
-    return changed;
+    return footer.replace(/<a\b[^>]*class="[^"]*footer-checklist[^"]*"[^>]*>[\s\S]*?<\/a>/g, '');
   });
-  html = html.replace(/(href="(?:\.\.\/)*styles\.css)(?:\?[^"\s]*)?"/g, `$1?v=${version}"`);
   const $ = load(html);
   const headerLinks = $(`.site-header a[href="${url}"]`);
   const footerLinks = $('#soft-bank-renewal > footer .footer-checklist');
-  if (headerLinks.length !== 0 || footerLinks.length !== 1) throw new Error(`Checklist must be absent from the header and present once in the footer: ${file}`);
-  for (const link of [...headerLinks, ...footerLinks]) {
-    if ($(link).attr('href') !== url || $(link).attr('target') !== '_blank' || $(link).attr('rel') !== 'noopener noreferrer') throw new Error(`Checklist destination incorrect: ${file}`);
-  }
+  if (headerLinks.length !== 0 || footerLinks.length !== 0 || $(`footer a[href="${url}"]`).length) throw new Error(`Checklist must be absent from both header and footer: ${file}`);
   checked++;
   if (html !== source) {
     await writePage(file, html);
