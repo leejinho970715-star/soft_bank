@@ -3,7 +3,7 @@ import path from 'node:path';
 import {load} from 'cheerio';
 
 const version='20261021-1';
-const productVersion='20261020-2';
+const productVersion='20261021-1';
 const native=JSON.parse(await fs.readFile('assets/proposal-native-20261020/manifest.json','utf8'));
 const assets=new Map(native.map(asset=>[path.basename(asset.file,'.png'),asset]));
 const normalize=text=>text.replace(/\s+/g,' ').trim();
@@ -14,6 +14,12 @@ const keywordGroups={
  '요소별 원가계산':['원가관리','제조원가현황'],
  '재고평가':['구매자재관리','온라인쇼핑몰관리','견적관리','주문관리','출고관리','API연동 (사방넷)','자동환율관리','수입선적관리','시리얼 발행 추적','바코드 관리','프로그램 연동개발']
 };
+// Area hashtags shown with the OmniEsol tag style on Amaranth 10 and its nonprofit edition.
+const areaTags={
+ '회계관리':['지출결의','결산','부가가치세관리','금융서비스연동(CMS)','그룹재무제표','자동전표처리','반제처리','자금수지계획','법인세관리','자금일보'],
+ '그룹웨어':['경비청구','업무용승용차','공유문서','대표메일','게시판','문서중앙화','업무관리','프로젝트현황','보안관리']
+};
+const areaTagRow=($,area)=>{const row=$('<div class="tag-row sb-area-tags"></div>').attr('aria-label',area+' 관련 키워드');areaTags[area].forEach(word=>row.append($('<span class="tag"></span>').text('#'+word)));return row;};
 const serviceGroups=[
  ['경영관리',[['회계관리',19],['급여관리',20],['물류관리',21],['법인조정',22],['개인조정',23],['전자세금계산서',24],['타임머신','clock']]],
  ['협업서비스',[['메신저',5],['화상회의',6],['거래처관리',8],['연락처',10],['메일',11],['일정관리',12],['할일관리',13],['노트',14],['팩스',16],['문자','sms'],['회사게시판',17],['내PC원격접속','remote']]],
@@ -69,6 +75,12 @@ function applyProducts($,file,root){
   words.forEach(word=>list.append($('<li></li>').text('#'+word)));
   const action=copy.children('a,button,.sb-screen-actions').first();action.length?action.before(list):copy.append(list);
  });
+ if(file.includes('/product/nonprofit/'))$('.np-features .sb-zigzag-feature>.sb-feature-copy').each((i,e)=>{
+  const copy=$(e),area=normalize(copy.children('b').first().text());
+  if(areaTags[area]&&!copy.children('.sb-area-tags').length)copy.append(areaTagRow($,area));
+ });
+ const tabArea=file.endsWith('/product/amaranth10/overview.html')?'회계관리':file.endsWith('/product/amaranth10/brand.html')?'그룹웨어':null;
+ if(tabArea&&!$('.sb-product-tabs+.sb-area-tags').length)$('.sb-product-tabs').first().after(areaTagRow($,tabArea).addClass('sb-area-tags-intro'));
  if(!file.includes('/product/wehago/'))return;
  const first=$('.wehago_01 figure').first();
  if(first.length){

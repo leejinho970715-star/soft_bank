@@ -567,3 +567,7 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
 @media(max-width:1000px){.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-service-group>ul{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:760px){.sb-figma-product #soft-bank-renewal .sb-hero .sb-hero-products a{font-size:14px}.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-service-directory{padding-top:48px}.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-service-directory>h2{font-size:28px}}
 @media(max-width:600px){.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-service-group>ul{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 12px;padding:22px 18px}.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-service-group>h3{padding:14px 18px}.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-service-group li{font-size:14px!important;gap:8px}}
+/* Area hashtags for Amaranth 10 and its nonprofit edition, matching the OmniEsol tag style. */
+#soft-bank-renewal .sb-content .sb-area-tags{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:8px;margin:24px 0 0}
+#soft-bank-renewal .sb-content .sb-area-tags .tag{font-size:14px;line-height:1.5;background:#2874ed;color:#fff;padding:5px 12px;border-radius:3px;white-space:nowrap}
+#soft-bank-renewal .sb-content .sb-area-tags-intro{justify-content:center;max-width:1120px;margin:28px auto 8px}
