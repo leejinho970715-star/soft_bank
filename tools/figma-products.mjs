@@ -211,7 +211,17 @@ export function applyProductDesign($,page,root){
   $('main p').contents().filter((i,node)=>node.type==='text').each((i,node)=>{
    node.data=node.data.replace('자동회계처라가','자동회계처리가');
   });
-  $('.wehago_03 .inner').filter((i,e)=>$(e).children('.txt').children('strong').first().text().trim()==='다른 서비스들과 연결로 편리하게').children('.img').remove();
+  const connectedRow=$('.wehago_03 .inner').filter((i,e)=>$(e).children('.txt').children('strong').first().text().trim()==='다른 서비스들과 연결로 편리하게');
+  connectedRow.children('.img').remove();
+  // Open the WEHAGO 특장점 section with its heading, then the connected-services row, then the feature slides.
+  const featuresHeading=$('.wehago_04>.cont_txt').first(),connectedItem=connectedRow.closest('li');
+  if(featuresHeading.length&&connectedItem.length){
+   const list=connectedItem.closest('.wehago_03');
+   const headingWrap=$('<div class="wehago_04 sb-wehago-features-heading"></div>').append(featuresHeading);
+   const rowWrap=$('<div class="wehago_03 view-full sb-wehago-connected-row"><ul></ul></div>');
+   rowWrap.children('ul').append(connectedItem);
+   list.after(headingWrap,rowWrap);
+  }
  }
  $('.sb-feature,.sb-design-row').addClass('sb-centered-feature');
  $('main p br').before(' ');

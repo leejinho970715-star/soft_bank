@@ -571,3 +571,8 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
 #soft-bank-renewal .sb-content .sb-area-tags{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:8px;margin:24px 0 0}
 #soft-bank-renewal .sb-content .sb-area-tags .tag{font-size:14px;line-height:1.5;background:#2874ed;color:#fff;padding:5px 12px;border-radius:3px;white-space:nowrap}
 #soft-bank-renewal .sb-content .sb-area-tags-intro{justify-content:center;max-width:1120px;margin:28px auto 8px}
+/* WEHAGO 특장점 heading now opens the section above the connected-services row. */
+.sb-figma-product .sb-content .sb-wehago-features-heading{margin-top:80px}
+.sb-figma-product .sb-content .sb-wehago-features-heading>.cont_txt{text-align:center!important;margin-bottom:0!important}
+.sb-figma-product .sb-content .sb-wehago-connected-row>ul>li>.inner{padding-top:56px!important;margin-top:0!important}
+@media(max-width:760px){.sb-figma-product .sb-content .sb-wehago-features-heading{margin-top:72px}.sb-figma-product .sb-content .sb-wehago-connected-row>ul>li>.inner{padding-top:40px!important}}
