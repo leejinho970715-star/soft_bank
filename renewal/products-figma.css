@@ -576,3 +576,6 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
 .sb-figma-product .sb-content .sb-wehago-features-heading>.cont_txt{text-align:center!important;margin-bottom:0!important}
 .sb-figma-product .sb-content .sb-wehago-connected-row>ul>li>.inner{padding-top:56px!important;margin-top:0!important}
 @media(max-width:760px){.sb-figma-product .sb-content .sb-wehago-features-heading{margin-top:72px}.sb-figma-product .sb-content .sb-wehago-connected-row>ul>li>.inner{padding-top:40px!important}}
+/* 올인원 플랫폼 overview as a light blue content box, like the other section banners. */
+.sb-page-product-wehago-smart_a10 #soft-bank-renewal .sb-content .sb-wehago-text-overview{padding:72px 48px;border-radius:20px;overflow:hidden;background:#eaf3ff;background-image:linear-gradient(100deg,rgba(238,246,255,.86),rgba(226,238,255,.86)),url('../assets/products-bg.png');background-position:center;background-size:cover;background-repeat:no-repeat}
+@media(max-width:760px){.sb-page-product-wehago-smart_a10 #soft-bank-renewal .sb-content .sb-wehago-text-overview{padding:44px 20px}}
