@@ -11,7 +11,7 @@ export function applyCompanyDesign($, page, root) {
     $('.about__list>li').each((i,e) => {
       const names=['solutions','customers','consulting'];
       const labels=['통합 ERP 솔루션을 함께 검토하는 업무 현장','고객사와 신뢰를 쌓아 온 비즈니스 미팅','기업 성장을 돕는 전문 컨설팅'];
-      $(e).find('.img').first().empty().append(`<img class="sb-about-photo" src="${root}assets/subpages/company/about-${names[i]}.jpg" alt="${labels[i]}" width="1600" height="1200" loading="lazy">`);
+      $(e).find('.img').first().empty().append(`<img class="sb-about-photo" src="${root}assets/subpages/company/about-${names[i]}.jpg" alt="${labels[i]}" width="1448" height="1086" loading="lazy">`);
     });
   }
   if (page === '/company/headquarters.asp') {
