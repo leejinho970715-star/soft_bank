@@ -101,27 +101,27 @@ function applyProducts($,file,root){
  });
 }
 function applyHome($,root){
+ $('link[href*="home-device-mockups/layout.css"]').remove();
+ $('head').append('<link rel="stylesheet" href="'+root+'assets/home-device-mockups/layout.css?v=20261021-1">');
  $('.products .product').each((i,e)=>{
   const article=$(e),link=article.children('a').first();
   const isAmaranth=(link.attr('href')||'').includes('amaranth10/brand');
   if(!isAmaranth&&!(link.attr('href')||'').includes('wehago/smart_A10'))return;
   const family=isAmaranth?'amaranth':'wehago',display=isAmaranth?'아마란스 10 · Amaranth 10':'위하고 · WEHAGO';
   article.removeClass('reveal');article.find('.title>span').first().text(display);
-  const pair=$('<span class="sb-home-product-screens"></span>');
-  for(const [suffix,kind] of [['portal','desktop'],['mobile','mobile']]){
-   const asset=assets.get(family+'-'+suffix);
-   pair.append($('<img loading="lazy">').attr({class:'sb-home-screen-'+kind,src:root+asset.file,width:asset.width,height:asset.height,alt:display+' 실제 '+(kind==='desktop'?'메인포털':'모바일')+' 화면'}));
-  }
+  const pair=$('<span class="sb-home-product-screens sb-home-device-mockup"></span>');
+  pair.append($('<img loading="lazy">').attr({src:root+'assets/home-device-mockups/'+family+'-pc-mobile.svg',width:1800,height:isAmaranth?1180:1000,alt:display+' 실제 화면을 담은 PC·모바일 전체 프레임 목업'}));
   link.empty().append(pair);
  });
  const popover=$('.quick-popover');
  if(popover.length){
   popover.addClass('open').attr('aria-hidden','false');
   const items=[['.phone','phone'],['.online','headset'],['.kakao','kakao'],['.chat-link','chat']];
-  items.forEach(([selector,icon])=>popover.find(selector+' img').attr('src',root+'assets/quick-flat/'+icon+'.svg'));
+  items.forEach(([selector,icon])=>popover.find(selector+' img').attr('src',root+'assets/quick-flat/'+icon+'.svg?v=20261021-1'));
+  popover.find('.anonymous img').attr('src',root+'assets/quick-flat/anonymous.svg?v=20261021-1');
   if(!popover.find('.anonymous').length){
    // Temporary working destination. Replace only this href with the future Google/Naver form URL.
-   popover.append('<a class="right-quick-item anonymous" href="'+root+'subpages/purchase/inquiry.html?source=anonymous-quick-menu"><img src="'+root+'assets/quick-flat/anonymous.svg" alt="익명 구매문의"><span class="quick-detail">익명 구매문의</span></a>');
+   popover.append('<a class="right-quick-item anonymous" href="'+root+'subpages/purchase/inquiry.html?source=anonymous-quick-menu"><img src="'+root+'assets/quick-flat/anonymous.svg?v=20261021-1" alt="익명 구매문의"><span class="quick-detail">익명 구매문의</span></a>');
   }
   $('.quick-fab').attr({'aria-expanded':'true','aria-label':'퀵메뉴 닫기'}).find('b').text('×');
  }

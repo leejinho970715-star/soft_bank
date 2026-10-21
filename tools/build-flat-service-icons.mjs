@@ -11,7 +11,9 @@ const colors={phone:'#1265ee',headset:'#292929',kakao:'#ffe000',chat:'#27bd77',a
 await fs.mkdir('assets/quick-flat',{recursive:true});
 for(const [name,content] of Object.entries(paths)){
  const fill=['phone','kakao','chat','anonymous'].includes(name)?'#fff':'none';
- await fs.writeFile('assets/quick-flat/'+name+'.svg','<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="32" cy="32" r="31" fill="'+colors[name]+'"/><g fill="'+fill+'" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">'+content+'</g></svg>\n');
+ // Scale the symbol independently of its circle, including its stroke and speech tail.
+ const offset=name==='phone'?'9.4 7.04':name==='headset'?'7.04 7.04':'7.04 5.04';
+ await fs.writeFile('assets/quick-flat/'+name+'.svg','<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="32" cy="32" r="31" fill="'+colors[name]+'"/><g transform="translate('+offset+') scale(.78)" fill="'+fill+'" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">'+content+'</g></svg>\n');
 }
 const icons={
  clock:['#168fe5','<circle cx="32" cy="32" r="17"/><path d="M32 21v12l9 5"/>'],
