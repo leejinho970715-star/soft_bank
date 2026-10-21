@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {load} from 'cheerio';
 
-const version='20261020-2';
+const version='20261021-1';
 const productVersion='20261020-2';
 const native=JSON.parse(await fs.readFile('assets/proposal-native-20261020/manifest.json','utf8'));
 const assets=new Map(native.map(asset=>[path.basename(asset.file,'.png'),asset]));
@@ -106,7 +106,7 @@ function applyProducts($,file,root){
 }
 function applyHome($,root){
  $('link[href*="home-device-mockups/layout.css"]').remove();
- $('head').append('<link rel="stylesheet" href="'+root+'assets/home-device-mockups/layout.css?v=20261021-3">');
+ $('head').append('<link rel="stylesheet" href="'+root+'assets/home-device-mockups/layout.css?v=20261021-4">');
  $('.products .product').each((i,e)=>{
   const article=$(e),link=article.children('a').first();
   const isAmaranth=(link.attr('href')||'').includes('amaranth10/brand');

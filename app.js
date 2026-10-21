@@ -507,3 +507,31 @@ for (const [key, id] of [['privacy', 'privacy-modal'], ['terms', 'terms-modal']]
   panel.textContent = '문서를 불러오는 중입니다.';
   fetch(new URL('renewal/' + key + '.html', document.currentScript?.src || location.href)).then(r => { if (!r.ok) throw new Error('Document unavailable'); return r.text(); }).then(html => { panel.innerHTML = html; }).catch(() => { panel.textContent = '문서를 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.'; });
 }
+
+// Magnify the home product mockups under the cursor so small UI text stays readable.
+(() => {
+  const images = document.querySelectorAll('#soft-bank-renewal .sb-home-device-mockup>img');
+  if (!images.length || !matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+  const zoom = 2.5;
+  images.forEach(image => {
+    const holder = image.parentElement;
+    const lens = document.createElement('span');
+    lens.className = 'sb-mockup-lens';
+    lens.setAttribute('aria-hidden', 'true');
+    holder.append(lens);
+    const move = event => {
+      const box = image.getBoundingClientRect();
+      const x = event.clientX - box.left, y = event.clientY - box.top;
+      if (x < 0 || y < 0 || x > box.width || y > box.height) { holder.classList.remove('is-magnifying'); return; }
+      const size = lens.offsetWidth;
+      lens.style.backgroundImage = 'url("' + image.currentSrc + '")';
+      lens.style.backgroundSize = box.width * zoom + 'px ' + box.height * zoom + 'px';
+      lens.style.backgroundPosition = (size / 2 - x * zoom) + 'px ' + (size / 2 - y * zoom) + 'px';
+      lens.style.transform = 'translate(' + (x - size / 2) + 'px,' + (y - size / 2) + 'px)';
+      holder.classList.add('is-magnifying');
+    };
+    image.addEventListener('pointermove', move);
+    image.addEventListener('pointerenter', move);
+    image.addEventListener('pointerleave', () => holder.classList.remove('is-magnifying'));
+  });
+})();
