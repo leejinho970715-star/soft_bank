@@ -627,3 +627,16 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
  .sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .section.sb-zigzag-feature:not(.omni-dual-section)[data-screen-layout=visual-left]{grid-template-columns:minmax(0,1.18fr) minmax(0,.82fr)!important}
  .sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .section.sb-zigzag-feature:not(.omni-dual-section)>.sec-text{max-width:none!important;width:100%}
 }
+/* OmniEsol MES (two screens): copy and screens split the full width; each screen fills the right column with its 화면 크게보기 button underneath. */
+@media(min-width:761px){
+ .sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .section.omni-dual-section{max-width:none!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;gap:56px!important;align-items:center!important}
+ .sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .section.omni-dual-section>.sec-text{max-width:none!important;width:100%}
+ .sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .omni-dual-section>.omni-dual-visual{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:0!important;width:100%}
+ .sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .omni-dual-visual>figure{width:100%!important;max-width:none!important;margin:0!important}
+ .sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .omni-dual-visual>figure img{width:100%!important;height:auto!important;max-height:none!important;object-fit:contain}
+ .sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .omni-dual-visual>figure:nth-of-type(1){order:1}
+ .sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .omni-dual-visual>.sb-screen-actions:nth-of-type(1){order:2}
+ .sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .omni-dual-visual>figure:nth-of-type(2){order:3;margin-top:28px!important}
+ .sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .omni-dual-visual>.sb-screen-actions:nth-of-type(2){order:4}
+ .sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .omni-dual-visual>.sb-screen-actions{display:flex!important;justify-content:flex-end!important;width:100%!important;margin:12px 0 0!important}
+}
