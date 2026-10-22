@@ -3,7 +3,7 @@ import path from 'node:path';
 import {load} from 'cheerio';
 
 const version='20261021-2';
-const productVersion='20261022-16';
+const productVersion='20261022-17';
 const native=JSON.parse(await fs.readFile('assets/proposal-native-20261020/manifest.json','utf8'));
 const assets=new Map(native.map(asset=>[path.basename(asset.file,'.png'),asset]));
 const normalize=text=>text.replace(/\s+/g,' ').trim();
@@ -99,6 +99,13 @@ function applyProducts($,file,root){
   $('.omniesol .section').filter((i,e)=>$(e).find('img[src*="omniesol-custom/group"],img[src*="omniesol-custom/chatbot"]').length).each((i,e)=>{
    $(e).children('.sec-visual').remove();$(e).addClass('sb-omni-text-band');
   });
+  // Hashtag finder shown under every tab, just above the contact banner.
+  if(!$('.sb-omni-hashtags').length){
+   const words=['ERP','CRM','MES','통합관리','연결결산','회계','재고','보건','환경','영업','구매','생산','프로젝트','관리회계','안전','건설','가맹','AI','설비','경비청구','전자구매','고객관리','문서관리','그룹웨어','인공지능','데이터','경영분석','내부통제','기술','인프라','인사'];
+   const section=$('<section class="sb-omni-hashtags" aria-labelledby="sb-omni-hashtags-title"><h2 id="sb-omni-hashtags-title">나에게 가장 필요한 OmniEsol 기능은?</h2><ul></ul></section>');
+   words.forEach(word=>section.children('ul').append($('<li></li>').text('#'+word)));
+   $('.omniesol .sb-contact-banner').first().before(section);
+  }
   // Banner chips and every tag read as hashtags.
   $('.omniesol .band .chips>.chip,.omniesol .tag-row>.tag').each((i,e)=>{const text=normalize($(e).text());if(!text.startsWith('#'))$(e).text('#'+text);});
  }
