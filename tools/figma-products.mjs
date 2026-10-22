@@ -223,6 +223,10 @@ export function applyProductDesign($,page,root){
    list.after(headingWrap,rowWrap);
   }
  }
+ // Every WEHAGO page opens its 특장점 section with the divider and connector heading style.
+ if(page.startsWith('/product/wehago/'))$('.wehago_04>.cont_txt').parent().addClass('sb-wehago-features-heading');
+ // An empty leftover list in the intro slide only adds spacing below the title connector.
+ if(page.startsWith('/product/wehago/'))$('.wehago_01 .wehago_slide .txt>ul').filter((i,e)=>!$(e).text().trim()).remove();
  $('.sb-feature,.sb-design-row').addClass('sb-centered-feature');
  $('main p br').before(' ');
  $('.sb-design-mockup').each((i,e)=>{

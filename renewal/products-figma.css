@@ -601,3 +601,9 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
 .sb-page-product-omniesol #soft-bank-renewal .omniesol #panel-erp>.industry{max-width:none;width:100%;gap:14px}
 .sb-page-product-omniesol #soft-bank-renewal .omniesol #panel-erp>.industry>span{min-height:56px;padding:12px 8px;font-size:15px;border-radius:8px;background:#fff;border:1px solid #2b61d6;color:#2b61d6}
 @media(max-width:600px){.sb-page-product-omniesol #soft-bank-renewal .omniesol #panel-erp>.industry{gap:8px}.sb-page-product-omniesol #soft-bank-renewal .omniesol #panel-erp>.industry>span{min-height:46px;font-size:14px}}
+/* WEHAGO pages: short vertical connectors lead from section titles into the content that follows. */
+.sb-figma-product #soft-bank-renewal .sb-content .contWrap.wehago .wehago_01>.cont_txt{margin-bottom:0!important}
+.sb-figma-product #soft-bank-renewal .sb-content .contWrap.wehago .wehago_01>.cont_txt::after{content:"";display:block;width:1px;height:56px;margin:28px auto 0;background:#ccc}
+.sb-figma-product #soft-bank-renewal .sb-content .contWrap.wehago .wehago_01>.wehago_slide .swiper-slide{padding-top:24px!important}
+.sb-figma-product #soft-bank-renewal .sb-content .wehago_04.sb-wehago-features-heading>.wehago_slide .swiper-slide{padding-top:24px!important}
+@media(max-width:760px){.sb-figma-product #soft-bank-renewal .sb-content .contWrap.wehago .wehago_01>.cont_txt::after{height:40px;margin-top:20px}.sb-figma-product #soft-bank-renewal .sb-content .contWrap.wehago .wehago_01>.wehago_slide .swiper-slide,.sb-figma-product #soft-bank-renewal .sb-content .wehago_04.sb-wehago-features-heading>.wehago_slide .swiper-slide{padding-top:20px!important}}
