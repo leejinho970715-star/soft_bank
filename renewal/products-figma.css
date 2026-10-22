@@ -650,3 +650,5 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
 @media(max-width:760px){.sb-page-product-omniesol #soft-bank-renewal .sb-content .sb-omni-hashtags{margin-top:56px!important;padding:64px 20px 72px}.sb-page-product-omniesol #soft-bank-renewal .sb-content .sb-omni-hashtags h2{margin-bottom:40px;font-size:28px}.sb-page-product-omniesol #soft-bank-renewal .sb-content .sb-omni-hashtags ul{gap:10px 8px}.sb-page-product-omniesol #soft-bank-renewal .sb-content .sb-omni-hashtags li{min-width:0;padding:5px 16px;font-size:15px}}
 /* Product hashtag labels match the OmniEsol navy label exactly (15px, 7px 13px, 6px radius, 1.65 line height). */
 #soft-bank-renewal .sb-content .sb-area-tags .tag,.sb-figma-product #soft-bank-renewal .sb-content .sb-feature-keywords li{line-height:1.65!important}
+/* The contact banner follows the hashtag band directly, without a white gap. */
+.sb-page-product-omniesol #soft-bank-renewal .sb-content .sb-omni-hashtags+.sb-contact-banner{margin-top:0!important}
