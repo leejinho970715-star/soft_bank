@@ -3,7 +3,7 @@ import path from 'node:path';
 import {load} from 'cheerio';
 
 const version='20261021-2';
-const productVersion='20261021-6';
+const productVersion='20261022-1';
 const native=JSON.parse(await fs.readFile('assets/proposal-native-20261020/manifest.json','utf8'));
 const assets=new Map(native.map(asset=>[path.basename(asset.file,'.png'),asset]));
 const normalize=text=>text.replace(/\s+/g,' ').trim();
@@ -62,6 +62,7 @@ function applyProducts($,file,root){
  if(file.includes('/product/amaranth10/')){korean='아마란스 10';english='Amaranth 10';}
  if(file.includes('/product/nonprofit/')){korean='아마란스 10 비영리';english='Amaranth 10';}
  if(file.includes('/product/wehago/')){korean='위하고';english='WEHAGO';}
+ if(file.endsWith('/product/omniesol.html')){korean='옴니솔';english='OmniEsol';}
  if(korean){
   $('.sb-hero h1').text(korean+' ('+english+')');$('.sb-product-heading h2').text(korean);
   if(!$('title').text().includes(korean))$('title').text(korean+' | '+$('title').text());

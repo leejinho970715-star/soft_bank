@@ -582,3 +582,9 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
 /* Thin divider under the WEHAGO 특장점 heading, as wide as the section banners. */
 .sb-figma-product .sb-content .sb-wehago-features-heading{padding-bottom:36px;border-bottom:1px solid #ccc}
 @media(max-width:760px){.sb-figma-product .sb-content .sb-wehago-features-heading{padding-bottom:24px}}
+/* Product tabs fill the content grid in equal columns, with larger touch targets. */
+.sb-figma-product #soft-bank-renewal .sb-content .sb-product-tabs{flex-wrap:nowrap;justify-content:stretch;gap:16px;width:100%}
+.sb-figma-product #soft-bank-renewal .sb-content .sb-product-tabs li{flex:1 1 0;min-width:0}
+.sb-figma-product #soft-bank-renewal .sb-content .sb-product-tabs a{width:100%;min-width:0;min-height:60px;padding:14px 16px;font-size:17px;font-weight:600}
+@media(max-width:1000px){.sb-figma-product #soft-bank-renewal .sb-content .sb-product-tabs{gap:12px}.sb-figma-product #soft-bank-renewal .sb-content .sb-product-tabs a{min-height:54px;font-size:15px}}
+@media(max-width:760px){.sb-figma-product #soft-bank-renewal .sb-content .sb-product-tabs{flex-wrap:wrap;gap:8px}.sb-figma-product #soft-bank-renewal .sb-content .sb-product-tabs li{flex:1 1 calc(50% - 4px)}.sb-figma-product #soft-bank-renewal .sb-content .sb-product-tabs a{min-height:46px;padding:10px 8px;font-size:13px}}
