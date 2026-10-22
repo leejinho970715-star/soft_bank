@@ -3,7 +3,7 @@ import path from 'node:path';
 import {load} from 'cheerio';
 
 const version='20261021-2';
-const productVersion='20261022-8';
+const productVersion='20261022-9';
 const native=JSON.parse(await fs.readFile('assets/proposal-native-20261020/manifest.json','utf8'));
 const assets=new Map(native.map(asset=>[path.basename(asset.file,'.png'),asset]));
 const normalize=text=>text.replace(/\s+/g,' ').trim();
@@ -20,14 +20,12 @@ const areaTags={
  '회계관리':['지출결의','결산','부가가치세관리','금융서비스연동(CMS)','그룹재무제표','자동전표처리','반제처리','자금수지계획','법인세관리','자금일보'],
  '그룹웨어':['경비청구','업무용승용차','공유문서','대표메일','게시판','문서중앙화','업무관리','프로젝트현황','보안관리']
 };
-// On the Amaranth 10 회계관리 and 그룹웨어 pages (and the same rows on the nonprofit page) the hashtags go under each matching feature; a tag may repeat where it fits.
+// On the Amaranth 10 회계관리 and 그룹웨어 pages (and the same rows on the nonprofit page) each hashtag goes under the one feature it best represents.
 const rowTags={
- '자동전표처리':['자동전표처리','지출결의'],'전표/장부관리':['반제처리','자동전표처리'],'결산/재무제표관리':['결산','그룹재무제표'],
- '사용자정의 재무제표관리':['그룹재무제표','결산'],'고정자산관리':['결산'],'자금관리':['자금수지계획','자금일보','금융서비스연동(CMS)'],
- '금융서비스 연동':['금융서비스연동(CMS)','자금일보'],'세무신고자동화':['부가가치세관리','법인세관리'],'예산관리':['지출결의','자금수지계획'],
- '메인포털':['업무관리','보안관리'],'통합검색':['공유문서','문서중앙화'],'일정관리':['업무관리','프로젝트현황'],
- '전자결재':['경비청구','업무용승용차','지출결의'],'전자메일':['대표메일','보안관리'],'게시판':['게시판','공유문서'],
- '업무관리(KISS)':['업무관리','프로젝트현황'],'KEEP':['공유문서','문서중앙화','보안관리']
+ '자동전표처리':['자동전표처리'],'전표/장부관리':['반제처리'],'결산/재무제표관리':['결산'],'사용자정의 재무제표관리':['그룹재무제표'],
+ '자금관리':['자금수지계획','자금일보'],'금융서비스 연동':['금융서비스연동(CMS)'],'세무신고자동화':['부가가치세관리','법인세관리'],'예산관리':['지출결의'],
+ '메인포털':['보안관리'],'전자결재':['경비청구','업무용승용차'],'전자메일':['대표메일'],'게시판':['게시판'],
+ '업무관리(KISS)':['업무관리','프로젝트현황'],'KEEP':['공유문서','문서중앙화']
 };
 const tagRow=($,label,words)=>{const row=$('<div class="tag-row sb-area-tags"></div>').attr('aria-label',label+' 관련 키워드');words.forEach(word=>row.append($('<span class="tag"></span>').text('#'+word)));return row;};
 const areaTagRow=($,area)=>{const row=$('<div class="tag-row sb-area-tags"></div>').attr('aria-label',area+' 관련 키워드');areaTags[area].forEach(word=>row.append($('<span class="tag"></span>').text('#'+word)));return row;};

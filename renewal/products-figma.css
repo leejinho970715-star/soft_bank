@@ -140,7 +140,7 @@
 }
 .sb-page-product-omniesol .omniesol .tag-row{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:24px}
 .sb-page-product-omniesol #soft-bank-renewal .omniesol .section>.sec-text.sb-feature-copy .tag-row{justify-content:flex-start;text-align:left}
-.sb-page-product-omniesol .omniesol .tag{font-size:14px;background:#2874ed;color:#fff;padding:5px 12px;border-radius:3px}
+.sb-page-product-omniesol .omniesol .tag{font-size:15px;background:#1746b4;color:#fff;padding:7px 13px;border-radius:6px}
 .sb-page-product-omniesol .omniesol .mod-title{text-align:center;margin:100px 0 35px}
 .sb-page-product-omniesol .omniesol .mod-title h3{margin:8px 0 18px;font-size:30px}
 .sb-page-product-omniesol .omniesol .mod-title p{font-size:14px;color:#7b818a}
@@ -554,7 +554,7 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
 /* October client revisions: readable product tabs and native proposal content. */
 .sb-figma-product #soft-bank-renewal .sb-hero .sb-hero-products a{font-size:16px;gap:8px;padding-inline:8px}
 .sb-figma-product #soft-bank-renewal .sb-content .sb-feature-keywords{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:8px;list-style:none;padding:0;margin:22px 0}
-.sb-figma-product #soft-bank-renewal .sb-content .sb-feature-keywords li{margin:0;padding:6px 10px;border-radius:6px;background:#1746b4;color:#fff;font-size:14px!important;line-height:1.5!important;word-break:keep-all}
+.sb-figma-product #soft-bank-renewal .sb-content .sb-feature-keywords li{margin:0;padding:7px 13px;border-radius:6px;background:#1746b4;color:#fff;font-size:15px!important;line-height:1.5!important;word-break:keep-all}
 .sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-text-overview{display:block;text-align:center;padding:30px 20px}
 .sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-text-overview .txt{width:100%;max-width:1050px;margin:auto}
 .sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-service-directory{display:block;width:100%;padding:72px 0 24px;text-align:left}
@@ -567,9 +567,9 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
 @media(max-width:1000px){.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-service-group>ul{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:760px){.sb-figma-product #soft-bank-renewal .sb-hero .sb-hero-products a{font-size:14px}.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-service-directory{padding-top:48px}.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-service-directory>h2{font-size:28px}}
 @media(max-width:600px){.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-service-group>ul{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 12px;padding:22px 18px}.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-service-group>h3{padding:14px 18px}.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-service-group li{font-size:14px!important;gap:8px}}
-/* Area hashtags for Amaranth 10 and its nonprofit edition, matching the OmniEsol tag style. */
+/* Area hashtags for Amaranth 10 and its nonprofit edition, in the shared navy hashtag style. */
 #soft-bank-renewal .sb-content .sb-area-tags{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:8px;margin:24px 0 0}
-#soft-bank-renewal .sb-content .sb-area-tags .tag{font-size:14px;line-height:1.5;background:#2874ed;color:#fff;padding:5px 12px;border-radius:3px;white-space:nowrap}
+#soft-bank-renewal .sb-content .sb-area-tags .tag{font-size:15px;line-height:1.5;background:#1746b4;color:#fff;padding:7px 13px;border-radius:6px;white-space:nowrap}
 /* WEHAGO 특장점 heading now opens the section above the connected-services row. */
 .sb-figma-product .sb-content .sb-wehago-features-heading{margin-top:80px}
 .sb-figma-product .sb-content .sb-wehago-features-heading>.cont_txt{text-align:center!important;margin-bottom:0!important}
