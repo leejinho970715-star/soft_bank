@@ -1,9 +1,8 @@
 export function applyCompanyDesign($, page, root) {
   if (!['/company/about.asp','/company/location.asp','/company/headquarters.asp'].includes(page)) return;
-  $('head').append(`<link rel="stylesheet" href="${root}renewal/company-design.css?v=20261022-1">`);
-  // Company pages keep the sub visual background and text only; the location page shows its map pin asset there.
+  $('head').append(`<link rel="stylesheet" href="${root}renewal/company-design.css?v=20261022-2">`);
+  // Company pages keep the sub visual background and text only.
   $('.sb-hero .sb-hero-asset').remove();
-  if (page === '/company/location.asp') $('.sb-hero>div').prepend(`<img class="sb-hero-asset" src="${root}assets/point-color/subpages/features/company/visit.png" alt="">`);
   const asset = name => `${root}assets/subpages/features/company/${name}.png`;
   const picture = (name, alt) => `<img class="sb-company-art" src="${asset(name)}" alt="${alt}" width="512" height="512" loading="lazy">`;
   if (page === '/company/about.asp') {
@@ -28,6 +27,7 @@ export function applyCompanyDesign($, page, root) {
     section.addClass('sb-visit');
     const intro=$('<div class="sb-visit-intro"></div>');
     intro.append(section.children('.top'));
+    intro.append(picture('visit','사무실 방문과 위치 안내'));
     section.prepend(intro);
     if (page === '/company/location.asp') {
       // Kakao Map "지도 퍼가기" embed for the Guro office, as on the original site; it needs no app key.
@@ -37,7 +37,6 @@ export function applyCompanyDesign($, page, root) {
     } else {
       // Keep the real map link beside the address instead of an empty map-shaped space.
       section.children('.mapWrap').remove();
-      intro.append(picture('visit','사무실 방문과 위치 안내'));
     }
     section.children('ul').addClass('sb-visit-details');
     section.find('.sb-visit-details .img').remove();
