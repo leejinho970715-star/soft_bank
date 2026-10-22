@@ -595,3 +595,7 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
 @media(max-width:760px){.sb-figma-product #soft-bank-renewal .sb-content .sb-inline-screen-tabs{gap:8px}.sb-figma-product #soft-bank-renewal .sb-content .sb-inline-screen-tabs button{min-height:42px;padding:8px 16px;font-size:14px}}
 /* Hashtag labels never show the checklist tick, even when they also carry sb-check-item. */
 #soft-bank-renewal .sb-content .sb-feature-keywords .sb-check-item::before{content:none;display:none}
+/* Industry labels span the full content grid with larger cells. */
+.sb-page-product-omniesol #soft-bank-renewal .omniesol #panel-erp>.industry{max-width:none;width:100%;gap:14px}
+.sb-page-product-omniesol #soft-bank-renewal .omniesol #panel-erp>.industry>span{min-height:56px;padding:12px 8px;font-size:15px;border-radius:8px}
+@media(max-width:600px){.sb-page-product-omniesol #soft-bank-renewal .omniesol #panel-erp>.industry{gap:8px}.sb-page-product-omniesol #soft-bank-renewal .omniesol #panel-erp>.industry>span{min-height:46px;font-size:14px}}
