@@ -578,9 +578,11 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
 /* 올인원 플랫폼 overview as a light blue content box, like the other section banners. */
 .sb-page-product-wehago-smart_a10 #soft-bank-renewal .sb-content .sb-wehago-text-overview{max-width:none!important;margin-left:0!important;margin-right:0!important;padding:72px 48px!important;border-radius:20px;overflow:hidden;background:#eaf3ff;background-image:linear-gradient(100deg,rgba(238,246,255,.86),rgba(226,238,255,.86)),url('../assets/products-bg.png');background-position:center;background-size:cover;background-repeat:no-repeat}
 @media(max-width:760px){.sb-page-product-wehago-smart_a10 #soft-bank-renewal .sb-content .sb-wehago-text-overview{padding:44px 20px!important}}
-/* Thin divider under the WEHAGO 특장점 heading, as wide as the section banners. */
-.sb-figma-product .sb-content .sb-wehago-features-heading{padding-bottom:36px;border-bottom:1px solid #ccc}
-@media(max-width:760px){.sb-figma-product .sb-content .sb-wehago-features-heading{padding-bottom:24px}}
+/* Thin divider above the WEHAGO 특장점 heading, as wide as the section banners, and a short vertical line leading into the next title. */
+.sb-figma-product .sb-content .sb-wehago-features-heading{padding-top:72px;border-top:1px solid #ccc}
+.sb-figma-product .sb-content .sb-wehago-features-heading>.cont_txt::after{content:"";display:block;width:1px;height:56px;margin:28px auto 0;background:#ccc}
+.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-connected-row>ul>li>.inner{padding-top:24px!important}
+@media(max-width:760px){.sb-figma-product .sb-content .sb-wehago-features-heading{padding-top:48px}.sb-figma-product .sb-content .sb-wehago-features-heading>.cont_txt::after{height:40px;margin-top:20px}.sb-figma-product #soft-bank-renewal .sb-content .sb-wehago-connected-row>ul>li>.inner{padding-top:20px!important}}
 /* Product tabs fill the content grid in equal columns, with larger touch targets. */
 .sb-figma-product #soft-bank-renewal .sb-content .sb-product-tabs{flex-wrap:nowrap;justify-content:stretch;gap:16px;width:100%}
 .sb-figma-product #soft-bank-renewal .sb-content .sb-product-tabs li{flex:1 1 0;min-width:0}
