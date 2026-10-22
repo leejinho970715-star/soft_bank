@@ -621,3 +621,9 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
 .sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol :is(.industry,.chips)>span:not(.chip){background:#fff;border:1px solid #2b61d6;color:#2b61d6;font-size:16px;line-height:1.5;padding:12px 22px;border-radius:8px}
 .sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol #panel-erp>.industry>span{padding:12px 8px}
 @media(max-width:760px){.sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol :is(.industry,.chips)>span:not(.chip){font-size:14px;padding:10px 14px}.sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol #panel-erp>.industry>span{padding:10px 6px}}
+/* OmniEsol features: full content width, wider copy column so text does not run into a tall narrow strip. */
+@media(min-width:761px){
+ .sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .section.sb-zigzag-feature:not(.omni-dual-section){max-width:none!important;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr)!important;gap:56px!important}
+ .sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .section.sb-zigzag-feature:not(.omni-dual-section)[data-screen-layout=visual-left]{grid-template-columns:minmax(0,1.18fr) minmax(0,.82fr)!important}
+ .sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .section.sb-zigzag-feature:not(.omni-dual-section)>.sec-text{max-width:none!important;width:100%}
+}
