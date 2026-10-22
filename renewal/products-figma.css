@@ -599,7 +599,7 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
 #soft-bank-renewal .sb-content .sb-feature-keywords .sb-check-item::before{content:none;display:none}
 /* Industry labels span the full content grid with larger blue-outlined cells. */
 .sb-page-product-omniesol #soft-bank-renewal .omniesol #panel-erp>.industry{max-width:none;width:100%;gap:14px}
-.sb-page-product-omniesol #soft-bank-renewal .omniesol #panel-erp>.industry>span{min-height:56px;padding:12px 8px;font-size:15px;border-radius:8px;background:#fff;border:1px solid #2b61d6;color:#2b61d6}
+.sb-page-product-omniesol #soft-bank-renewal .omniesol #panel-erp>.industry>span{min-height:56px;padding:12px 8px;font-size:16px;border-radius:8px;background:#fff;border:1px solid #2b61d6;color:#2b61d6}
 @media(max-width:600px){.sb-page-product-omniesol #soft-bank-renewal .omniesol #panel-erp>.industry{gap:8px}.sb-page-product-omniesol #soft-bank-renewal .omniesol #panel-erp>.industry>span{min-height:46px;font-size:14px}}
 /* WEHAGO pages: short vertical connectors lead from section titles into the content that follows. */
 .sb-figma-product #soft-bank-renewal .sb-content .contWrap.wehago .wehago_01>.cont_txt{margin-bottom:0!important}
@@ -611,9 +611,13 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
 .sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .section.sb-omni-text-band{display:block!important;max-width:none!important;width:100%;margin:40px 0!important;padding:72px 48px!important;border-radius:20px;text-align:center;background:linear-gradient(100deg,rgba(238,247,255,.78),rgba(248,239,255,.78)),url('../assets/subpages/omniesol-ax-bg.png') center/cover no-repeat}
 .sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .section.sb-omni-text-band>.sec-text{max-width:980px;margin:0 auto;text-align:center}
 .sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .section.sb-omni-text-band .tag-row{justify-content:center}
-/* OmniEsol banner chips as navy hashtags; gray industry labels larger. */
+/* OmniEsol banner chips as navy hashtags; solution labels larger. */
 .sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .band .chips{gap:10px}
 .sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .band .chip{background:#1746b4;color:#fff;font-size:15px;padding:8px 15px;border-radius:6px}
 .sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .panel:not(#panel-erp) .industry{gap:12px}
-.sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .panel:not(#panel-erp) .industry>span{font-size:15px;padding:12px 20px;border-radius:8px}
+.sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .panel:not(#panel-erp) .industry>span{font-size:16px;padding:12px 22px;border-radius:8px}
 @media(max-width:760px){.sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .section.sb-omni-text-band{padding:44px 20px!important}.sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .band .chip{font-size:14px;padding:7px 12px}.sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .panel:not(#panel-erp) .industry>span{font-size:14px;padding:10px 14px}}
+/* OmniEsol: every remaining gray label is a larger blue outline label. */
+.sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol :is(.industry,.chips)>span:not(.chip){background:#fff;border:1px solid #2b61d6;color:#2b61d6;font-size:16px;line-height:1.5;padding:12px 22px;border-radius:8px}
+.sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol #panel-erp>.industry>span{padding:12px 8px}
+@media(max-width:760px){.sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol :is(.industry,.chips)>span:not(.chip){font-size:14px;padding:10px 14px}.sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol #panel-erp>.industry>span{padding:10px 6px}}
