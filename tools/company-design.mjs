@@ -1,6 +1,6 @@
 export function applyCompanyDesign($, page, root) {
   if (!['/company/about.asp','/company/location.asp','/company/headquarters.asp'].includes(page)) return;
-  $('head').append(`<link rel="stylesheet" href="${root}renewal/company-design.css?v=20261022-3">`);
+  $('head').append(`<link rel="stylesheet" href="${root}renewal/company-design.css?v=20261022-4">`);
   // Company pages keep the sub visual background and text only.
   $('.sb-hero .sb-hero-asset').remove();
   const asset = name => `${root}assets/subpages/features/company/${name}.png`;
@@ -18,9 +18,8 @@ export function applyCompanyDesign($, page, root) {
   }
   if (page === '/company/headquarters.asp') {
     $('.headquarters>ul').addClass('sb-company-values');
-    $('.headquarters>ul>li').each((i,e) => {
-      $(e).find('.img').first().empty().append(picture(['platform','consulting','platform','network'][i],['기업 정보화 솔루션','신뢰와 전문성','통합 경영 플랫폼','글로벌 네트워크'][i]));
-    });
+    // The four value cards are text only.
+    $('.headquarters>ul>li>.img').remove();
   }
   $('.location').each((i,e) => {
     const section=$(e);
@@ -29,13 +28,14 @@ export function applyCompanyDesign($, page, root) {
     intro.append(section.children('.top'));
     intro.append(picture('visit','사무실 방문과 위치 안내'));
     section.prepend(intro);
-    if (page === '/company/location.asp') {
-      // Kakao Map "지도 퍼가기" embed for the Guro office, as on the original site; it needs no app key.
-      section.children('.mapWrap').replaceWith('<div class="sb-visit-map"><div id="daumRoughmapContainer1715045574181" class="root_daum_roughmap root_daum_roughmap_landing"></div></div>');
+    // Kakao Map "지도 퍼가기" embeds the original site used for each address (Guro office, Gangchon campus); they need no app key.
+    const map = {'/company/location.asp': ['1715045574181','2j99b'], '/company/headquarters.asp': ['1715144057497','2j9rx']}[page];
+    if (map) {
+      const [timestamp, key] = map;
+      section.children('.mapWrap').replaceWith(`<div class="sb-visit-map"><div id="daumRoughmapContainer${timestamp}" class="root_daum_roughmap root_daum_roughmap_landing"></div></div>`);
       section.find('.top>a').remove();
-      $('body').append('<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script><script charset="UTF-8">new daum.roughmap.Lander({"timestamp":"1715045574181","key":"2j99b","mapHeight":"440"}).render();</script>');
+      $('body').append(`<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script><script charset="UTF-8">new daum.roughmap.Lander({"timestamp":"${timestamp}","key":"${key}","mapHeight":"440"}).render();</script>`);
     } else {
-      // Keep the real map link beside the address instead of an empty map-shaped space.
       section.children('.mapWrap').remove();
     }
     section.children('ul').addClass('sb-visit-details');

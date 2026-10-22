@@ -5,7 +5,6 @@
 .sb-company .sb-content .headquarters>.top_txt p{line-height:1.9;color:#52637b}
 .sb-company .sb-content .sb-company-values{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;padding:0;margin:0 0 80px;list-style:none}
 .sb-company .sb-content .sb-company-values>li{padding:32px;border:1px solid #e2eafb;border-radius:24px;background:#f5f8ff;min-width:0}
-.sb-company .sb-content .sb-company-values .img{width:180px;margin:0 auto 24px;padding:0;background:none}
 .sb-company .sb-content .sb-company-values .txt>b{display:block;color:#2b61d6;font-size:24px;line-height:1.45;margin-bottom:24px}
 .sb-company .sb-content .sb-company-values .txt>div+div{border-top:1px solid #dce6f6;margin-top:20px;padding-top:16px}
 .sb-company .sb-content .sb-company-values p{font-size:16px;line-height:1.8;color:#52637b;margin:8px 0}
