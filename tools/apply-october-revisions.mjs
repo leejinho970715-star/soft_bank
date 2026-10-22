@@ -3,7 +3,7 @@ import path from 'node:path';
 import {load} from 'cheerio';
 
 const version='20261021-2';
-const productVersion='20261022-10';
+const productVersion='20261022-11';
 const native=JSON.parse(await fs.readFile('assets/proposal-native-20261020/manifest.json','utf8'));
 const assets=new Map(native.map(asset=>[path.basename(asset.file,'.png'),asset]));
 const normalize=text=>text.replace(/\s+/g,' ').trim();
@@ -94,6 +94,14 @@ function applyProducts($,file,root){
   if(!words||copy.children('.sb-area-tags').length)return;
   const action=copy.children('a,button,.sb-screen-actions').first();action.length?action.before(tagRow($,label,words)):copy.append(tagRow($,label,words));
  });
+ if(file.endsWith('/product/omniesol.html')){
+  // GSP and GEN AI DEWS drop their large illustrations and show the copy in a lavender content box.
+  $('.omniesol .section').filter((i,e)=>$(e).find('img[src*="omniesol-custom/group"],img[src*="omniesol-custom/chatbot"]').length).each((i,e)=>{
+   $(e).children('.sec-visual').remove();$(e).addClass('sb-omni-text-band');
+  });
+  // Banner chips and every tag read as hashtags.
+  $('.omniesol .band .chips>.chip,.omniesol .tag-row>.tag').each((i,e)=>{const text=normalize($(e).text());if(!text.startsWith('#'))$(e).text('#'+text);});
+ }
  if(!file.includes('/product/wehago/'))return;
  const first=$('.wehago_01 figure').first();
  if(first.length){
