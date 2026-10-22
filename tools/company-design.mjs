@@ -1,6 +1,6 @@
 export function applyCompanyDesign($, page, root) {
   if (!['/company/about.asp','/company/location.asp','/company/headquarters.asp'].includes(page)) return;
-  $('head').append(`<link rel="stylesheet" href="${root}renewal/company-design.css?v=20261022-4">`);
+  $('head').append(`<link rel="stylesheet" href="${root}renewal/company-design.css?v=20261022-5">`);
   // Company pages keep the sub visual background and text only.
   $('.sb-hero .sb-hero-asset').remove();
   const asset = name => `${root}assets/subpages/features/company/${name}.png`;
