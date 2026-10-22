@@ -45,3 +45,6 @@
 .sb-page-product-ifrs18 #soft-bank-renewal .ifrs-content .ifrs-actions a.ifrs-pdf-guide{background:#fff!important;border:1px solid #2b61d6!important;color:#2b61d6}
 .sb-page-product-ifrs18 #soft-bank-renewal .ifrs-content .ifrs-actions a.ifrs-pdf-guide:hover{background:#f2f7ff!important}
 .sb-page-product-ifrs18 #soft-bank-renewal .ifrs-content .ifrs-actions a.ifrs-outline:not(.ifrs-pdf-guide){color:#fff}
+/* Keyword chips use the blue hashtag label style of the other product pages. */
+.sb-page-product-ifrs18 #soft-bank-renewal .ifrs-content .ifrs-tags{gap:8px}
+.sb-page-product-ifrs18 #soft-bank-renewal .ifrs-content .ifrs-tags span{padding:5px 12px;font-size:14px;line-height:1.5;background:#2874ed;border-radius:3px;color:#fff;white-space:nowrap}

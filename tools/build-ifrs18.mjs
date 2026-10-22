@@ -13,7 +13,7 @@ async function writePage(path,content){
 // Build from the shared product shell so navigation, footer and contact UI stay consistent.
 const $=load(await fs.readFile('subpages/product/omniesol.html','utf8'));
 $('title').text('IFRS18 | Amaranth 10 | 아이원소프트뱅크');
-$('head').append('<meta name="description" content="기존 전표는 그대로, IFRS18 기준 재무제표 전환은 간편하게. Amaranth 10의 재무제표 양식설정, 계정별 범주설정, 현금흐름표 기능을 만나보세요."><link rel="stylesheet" href="../../renewal/ifrs18.css?v=20261022-3">');
+$('head').append('<meta name="description" content="기존 전표는 그대로, IFRS18 기준 재무제표 전환은 간편하게. Amaranth 10의 재무제표 양식설정, 계정별 범주설정, 현금흐름표 기능을 만나보세요."><link rel="stylesheet" href="../../renewal/ifrs18.css?v=20261022-4">');
 $('body').removeClass('sb-page-product-omniesol').addClass('sb-page-product-ifrs18');
 $('.sb-hero-asset').attr({src:'../../assets/subpages/ifrs18/hero.png',alt:'Amaranth 10 IFRS18 재무관리 3D 비주얼',width:'1536',height:'1024'});
 $('.sb-hero h1').text('Amaranth 10 IFRS18');
@@ -54,6 +54,8 @@ $('main').attr('class','sb-content ifrs-content').html(`
 <section id="ifrs-resources" class="ifrs-resources"><span class="ifrs-eyebrow">RESOURCES</span><h2>더 자세한 내용이 궁금하다면</h2><p>서비스 소개와 실제 설정 방법을 확인하세요.</p><div class="ifrs-downloads"><a href="../../assets/documents/ifrs18-intro.pdf" download><span>서비스 소개서</span><strong>Amaranth 10 IFRS18</strong><span>PDF 다운로드 ↓</span></a><a href="../../assets/documents/ifrs18-manual.pdf" download><span>사용자 매뉴얼</span><strong>K-IFRS18 대응 가이드</strong><span>PDF 다운로드 ↓</span></a></div></section>
 <section class="ifrs-contact"><h2>IFRS18 전환,<br>Amaranth 10과 함께 준비하세요</h2><p>우리 회사에 맞는 도입 범위와 준비 과정을 안내해 드립니다.</p><a class="cta dark" href="../purchase/inquiry.html">도입 상담 신청</a></section>`);
 applyUnframedProductScreens($,'../../');
+// Keyword chips read as hashtags, styled like the other product hashtag labels.
+$('.ifrs-tags>span').each((i,e)=>{const text=$(e).text().trim();if(!text.startsWith('#'))$(e).text('#'+text);});
 await writePage('subpages/product/ifrs18.html',$.html());
 const catalog=load(await fs.readFile('subpages/index.html','utf8'));
 catalog('.sb-catalog section').filter((i,e)=>catalog(e).find('h2').text().includes('제품')).first().children('div').append('<a href="product/ifrs18.html"><span>IFRS18</span><small>Amaranth 10 IFRS18</small><b>↗</b></a>');
