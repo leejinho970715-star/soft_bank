@@ -38,10 +38,10 @@
 /* Extend image banners to the viewport while keeping their content aligned. */
 .sb-page-product-ifrs18 #soft-bank-renewal .ifrs-content :is(.ifrs-change,.ifrs-ready,.ifrs-contact){box-sizing:border-box;width:var(--product-viewport,100vw);max-width:none;margin-left:calc((100% - var(--product-viewport,100vw))/2);margin-right:calc((100% - var(--product-viewport,100vw))/2);border-radius:0;padding-left:max(40px,calc((var(--product-viewport,100vw) - 1240px)/2));padding-right:max(40px,calc((var(--product-viewport,100vw) - 1240px)/2))}
 @media(max-width:760px){.sb-page-product-ifrs18 #soft-bank-renewal .ifrs-content :is(.ifrs-change,.ifrs-ready,.ifrs-contact){padding-left:20px;padding-right:20px}}
-/* Button hierarchy: primary solid blue, secondary sky blue (white text, no border), tertiary outlined. */
+/* Button hierarchy: primary solid blue, secondary sky blue (white text, no border), tertiary blue outline. */
 .sb-page-product-ifrs18 #soft-bank-renewal .ifrs-content .ifrs-actions a.cta.dark{background:#2b61d6!important;border:1px solid #2b61d6!important;color:#fff}
 .sb-page-product-ifrs18 #soft-bank-renewal .ifrs-content .ifrs-actions a.ifrs-outline:not(.ifrs-pdf-guide){background:#4b91e9!important;border:0!important;color:#fff}
 .sb-page-product-ifrs18 #soft-bank-renewal .ifrs-content .ifrs-actions a.ifrs-outline:not(.ifrs-pdf-guide):hover{background:#3d84df!important}
-.sb-page-product-ifrs18 #soft-bank-renewal .ifrs-content .ifrs-actions a.ifrs-pdf-guide{background:#fff!important;border:1px solid #c9d5ea!important;color:#3a4a66}
-.sb-page-product-ifrs18 #soft-bank-renewal .ifrs-content .ifrs-actions a.ifrs-pdf-guide:hover{border-color:#2b61d6!important;color:#2b61d6}
+.sb-page-product-ifrs18 #soft-bank-renewal .ifrs-content .ifrs-actions a.ifrs-pdf-guide{background:#fff!important;border:1px solid #2b61d6!important;color:#2b61d6}
+.sb-page-product-ifrs18 #soft-bank-renewal .ifrs-content .ifrs-actions a.ifrs-pdf-guide:hover{background:#f2f7ff!important}
 .sb-page-product-ifrs18 #soft-bank-renewal .ifrs-content .ifrs-actions a.ifrs-outline:not(.ifrs-pdf-guide){color:#fff}
