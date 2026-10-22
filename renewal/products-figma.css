@@ -640,3 +640,5 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
  .sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .omni-dual-visual>.sb-screen-actions:nth-of-type(2){order:4}
  .sb-page-product-omniesol #soft-bank-renewal .sb-content .omniesol .omni-dual-visual>.sb-screen-actions{display:flex!important;justify-content:flex-end!important;width:100%!important;margin:12px 0 0!important}
 }
+/* Feature hashtags follow their left-aligned copy instead of centering. */
+#soft-bank-renewal .sb-content .sb-feature-copy .sb-feature-keywords{justify-content:flex-start!important;margin-left:0!important;margin-right:0!important;text-align:left}
