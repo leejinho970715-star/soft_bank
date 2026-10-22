@@ -1,8 +1,9 @@
 export function applyCompanyDesign($, page, root) {
   if (!['/company/about.asp','/company/location.asp','/company/headquarters.asp'].includes(page)) return;
-  $('head').append(`<link rel="stylesheet" href="${root}renewal/company-design.css?v=20261021-3">`);
-  // Company pages keep the sub visual background and text only, without the 3D asset.
+  $('head').append(`<link rel="stylesheet" href="${root}renewal/company-design.css?v=20261022-1">`);
+  // Company pages keep the sub visual background and text only; the location page shows its map pin asset there.
   $('.sb-hero .sb-hero-asset').remove();
+  if (page === '/company/location.asp') $('.sb-hero>div').prepend(`<img class="sb-hero-asset" src="${root}assets/point-color/subpages/features/company/visit.png" alt="">`);
   const asset = name => `${root}assets/subpages/features/company/${name}.png`;
   const picture = (name, alt) => `<img class="sb-company-art" src="${asset(name)}" alt="${alt}" width="512" height="512" loading="lazy">`;
   if (page === '/company/about.asp') {
@@ -27,11 +28,17 @@ export function applyCompanyDesign($, page, root) {
     section.addClass('sb-visit');
     const intro=$('<div class="sb-visit-intro"></div>');
     intro.append(section.children('.top'));
-    intro.append(picture('visit','사무실 방문과 위치 안내'));
     section.prepend(intro);
-    // The original map container has no map runtime. Keep the real map link
-    // beside the address instead of leaving an empty map-shaped space.
-    section.children('.mapWrap').remove();
+    if (page === '/company/location.asp') {
+      // Kakao Map "지도 퍼가기" embed for the Guro office, as on the original site; it needs no app key.
+      section.children('.mapWrap').replaceWith('<div class="sb-visit-map"><div id="daumRoughmapContainer1715045574181" class="root_daum_roughmap root_daum_roughmap_landing"></div></div>');
+      section.find('.top>a').remove();
+      $('body').append('<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script><script charset="UTF-8">new daum.roughmap.Lander({"timestamp":"1715045574181","key":"2j99b","mapHeight":"440"}).render();</script>');
+    } else {
+      // Keep the real map link beside the address instead of an empty map-shaped space.
+      section.children('.mapWrap').remove();
+      intro.append(picture('visit','사무실 방문과 위치 안내'));
+    }
     section.children('ul').addClass('sb-visit-details');
     section.find('.sb-visit-details .img').remove();
     section.find('.top>a').addClass('sb-map-link');

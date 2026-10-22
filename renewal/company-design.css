@@ -43,3 +43,9 @@
 .sb-company .sb-content .sb-about-list p{color:#52637b}
 @media(max-width:900px){.sb-company .sb-content .about .sb-about-greeting{padding:64px 44px}.sb-company .sb-content .sb-about-greeting>h3{font-size:32px}.sb-company .sb-content .sb-about-list>li{gap:28px!important;padding:32px 0}}
 @media(max-width:600px){.sb-company .sb-content .about .sb-about-greeting{padding:44px 26px;border-radius:22px}.sb-company .sb-content .sb-about-greeting>h3{font-size:25px}.sb-company .sb-content .sb-about-list strong{font-size:23px!important}}
+/* Location: embedded Kakao map below the intro, stretched to the content width. */
+.sb-company .sb-content .sb-visit-intro:not(:has(.sb-company-art)){display:block}
+.sb-company .sb-content .sb-visit-map{margin:0 0 28px;border-radius:20px;overflow:hidden;border:1px solid #e1e9f5}
+.sb-company .sb-content .sb-visit-map .root_daum_roughmap{width:100%!important;padding:0!important;border:0!important;border-radius:0!important}
+.sb-company .sb-content .sb-visit-map .root_daum_roughmap .wrap_map{height:440px!important}
+@media(max-width:600px){.sb-company .sb-content .sb-visit-map .root_daum_roughmap .wrap_map{height:320px!important}}
