@@ -593,3 +593,5 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
 .sb-figma-product #soft-bank-renewal .sb-content .sb-inline-screen-tabs button:hover{border-color:#2b61d6!important;color:#2b61d6!important}
 .sb-figma-product #soft-bank-renewal .sb-content .sb-inline-screen-tabs button[aria-selected=true]{border-color:#2b61d6!important;background:#2b61d6!important;color:#fff!important}
 @media(max-width:760px){.sb-figma-product #soft-bank-renewal .sb-content .sb-inline-screen-tabs{gap:8px}.sb-figma-product #soft-bank-renewal .sb-content .sb-inline-screen-tabs button{min-height:42px;padding:8px 16px;font-size:14px}}
+/* Hashtag labels never show the checklist tick, even when they also carry sb-check-item. */
+#soft-bank-renewal .sb-content .sb-feature-keywords .sb-check-item::before{content:none;display:none}
