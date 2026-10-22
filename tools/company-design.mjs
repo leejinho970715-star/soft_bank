@@ -1,12 +1,12 @@
 export function applyCompanyDesign($, page, root) {
   if (!['/company/about.asp','/company/location.asp','/company/headquarters.asp'].includes(page)) return;
-  $('head').append(`<link rel="stylesheet" href="${root}renewal/company-design.css?v=20261022-2">`);
+  $('head').append(`<link rel="stylesheet" href="${root}renewal/company-design.css?v=20261022-3">`);
   // Company pages keep the sub visual background and text only.
   $('.sb-hero .sb-hero-asset').remove();
   const asset = name => `${root}assets/subpages/features/company/${name}.png`;
   const picture = (name, alt) => `<img class="sb-company-art" src="${asset(name)}" alt="${alt}" width="512" height="512" loading="lazy">`;
   if (page === '/company/about.asp') {
-    // Simple greeting box on a lavender wave background, followed by photo-led introductions.
+    // Simple greeting box on a brightened headquarters photo, followed by photo-led introductions.
     $('.about .bgBox').addClass('sb-about-greeting').empty()
       .append('<b>ABOUT US</b><h3>안녕하십니까<br>더존을 항상 성원해 주시고 아껴주시는<br>고객님들께 항상 진심으로 감사드립니다.</h3>');
     $('.about__list').addClass('sb-about-list');
