@@ -125,14 +125,14 @@ function applyProducts($,file,root){
   }
  }
  if(file.endsWith('/product/wehago/smart_A10.html')){
-  // HR row: the real NAHAGO capture (tools/prepare-nahago-original.py) instead of the AI-redrawn ui-080 screen.
+  // HR row: the supplied high-resolution NAHAGO PC + mobile screen instead of the AI-redrawn ui-080 screen.
   const img=$('img[src*="flat-screens/ui-080-full.png"]').first();
   if(img.length){
-   const src=root+'assets/subpages/flat-screens/nahago-original-3x.png';
-   img.attr({src,width:1770,height:1278,alt:'WEHAGO NAHAGO 인사·급여관리 실제 PC·모바일 화면'});
+   const src=root+'assets/subpages/flat-screens/nahago-supplied.png';
+   img.attr({src,width:1765,height:891,alt:'WEHAGO NAHAGO 인사·급여관리 실제 PC·모바일 화면'});
    img.closest('a').attr({href:src,'aria-label':'WEHAGO NAHAGO 인사·급여관리 실제 화면 크게 보기'});
    const figure=img.closest('figure');
-   figure.attr('style',(figure.attr('style')||'').replace(/--sb-(screen|preview)-ratio:[\d.]+/g,(m,k)=>'--sb-'+k+'-ratio:1.384977')).attr('data-original-screen','assets/subpages/original/4624fdc5bf6c51.png');
+   figure.attr('style',(figure.attr('style')||'').replace(/--sb-(screen|preview)-ratio:[\d.]+/g,(m,k)=>'--sb-'+k+'-ratio:1.980920')).attr('data-original-screen','assets/subpages/flat-screens/nahago-supplied.png');
   }
  }
  if(!file.includes('/product/wehago/'))return;
