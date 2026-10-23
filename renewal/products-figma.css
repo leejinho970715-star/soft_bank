@@ -680,3 +680,10 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
 .sb-page-product-oneai #soft-bank-renewal .sb-content .sb-oneai-headline-pill-soft span{padding:6px 18px;border:2px solid #9db6ef;border-radius:12px;background:#eaf0fd}
 .sb-page-product-oneai #soft-bank-renewal .sb-content .sb-oneai-headline-plain{gap:2px;font-size:clamp(17px,1.7vw,24px)}
 @media(max-width:760px){.sb-page-product-oneai #soft-bank-renewal .sb-content .sb-oneai-headline{gap:6px;margin-bottom:12px;font-size:14px}.sb-page-product-oneai #soft-bank-renewal .sb-content :is(.sb-oneai-headline-pill,.sb-oneai-headline-pill-soft) span{padding:4px 12px;border-width:1.5px}.sb-page-product-oneai #soft-bank-renewal .sb-content .sb-oneai-headline-plain{font-size:16px}}
+/* PMS 기능구성도 / 생산·출하 업무 흐름: a light divider above each title and a short vertical line leading into its content. */
+.sb-page-product-pms #soft-bank-renewal .sb-content .contWrap.pms>.pms_ftrs_diagram{border-top:1px solid #ccc;padding-top:72px!important;margin-top:24px}
+.sb-page-product-pms #soft-bank-renewal .sb-content .pms_ftrs_diagram>.cont_txt::after,.sb-page-product-pms #soft-bank-renewal .sb-content .sb-manufacturing-workflow>h3::after{content:"";display:block;width:1px;height:48px;margin:24px auto 0;background:#ccc}
+.sb-page-product-pms #soft-bank-renewal .sb-content .pms_ftrs_diagram>.cont_txt{margin-bottom:24px!important}
+.sb-page-product-pms #soft-bank-renewal .sb-content .sb-manufacturing-workflow{margin-top:56px!important;padding-top:64px;border-top:1px solid #ccc}
+.sb-page-product-pms #soft-bank-renewal .sb-content .sb-manufacturing-workflow>h3{margin-bottom:24px}
+@media(max-width:760px){.sb-page-product-pms #soft-bank-renewal .sb-content .contWrap.pms>.pms_ftrs_diagram{padding-top:48px!important}.sb-page-product-pms #soft-bank-renewal .sb-content .pms_ftrs_diagram>.cont_txt::after,.sb-page-product-pms #soft-bank-renewal .sb-content .sb-manufacturing-workflow>h3::after{height:36px;margin-top:18px}.sb-page-product-pms #soft-bank-renewal .sb-content .sb-manufacturing-workflow{margin-top:40px!important;padding-top:48px}}
