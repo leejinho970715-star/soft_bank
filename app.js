@@ -512,7 +512,7 @@ for (const [key, id] of [['privacy', 'privacy-modal'], ['terms', 'terms-modal']]
 // The row's own layout (alignment, wrapping) is left as it is.
 (() => {
   const selector = '#soft-bank-renewal .sb-content .sb-screen-actions, #soft-bank-renewal .hero .actions, #soft-bank-renewal .ifrs-actions, .sb-page-product-oneai #soft-bank-renewal .sb-content .flex.gap-3, #soft-bank-renewal .member-actions, .sb-page-product-omniesol #soft-bank-renewal .btns';
-  const fit = () => document.querySelectorAll(selector).forEach(row => {
+  const fitRow = row => {
     const buttons = [...row.children].filter(child => child.matches('a,button'));
     if (buttons.length < 2) return;
     row.classList.add('sb-equal-buttons');
@@ -521,10 +521,9 @@ for (const [key, id] of [['privacy', 'privacy-modal'], ['terms', 'terms-modal']]
     let widest = Math.ceil(Math.max(...boxes.map(box => box.width)));
     const tallest = Math.ceil(Math.max(...boxes.map(box => box.height)));
     if (!widest) return;
-    // When equal buttons would no longer fit on one line, tighten the side padding (down to 12px) before letting them wrap.
+    // When equal buttons do not fit on one line, tighten the side padding (down to 12px) so they sit side by side; only if that is not enough do they wrap.
     const style = getComputedStyle(row), gap = parseFloat(style.columnGap) || 0, room = row.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight);
-    const oneLine = boxes.every(box => Math.abs(box.top - boxes[0].top) < 4);
-    if (oneLine && widest * buttons.length + gap * (buttons.length - 1) > room) {
+    if (widest * buttons.length + gap * (buttons.length - 1) > room) {
       const share = Math.floor((room - gap * (buttons.length - 1)) / buttons.length);
       const content = Math.max(...buttons.map((button, i) => { const s = getComputedStyle(button); return boxes[i].width - parseFloat(s.paddingLeft) - parseFloat(s.paddingRight); }));
       if (content + 24 <= share) {
@@ -534,8 +533,12 @@ for (const [key, id] of [['privacy', 'privacy-modal'], ['terms', 'terms-modal']]
       }
     }
     buttons.forEach(button => { button.style.setProperty('min-width', widest + 'px', 'important'); button.style.setProperty('min-height', tallest + 'px', 'important'); });
-  });
-  addEventListener('load', fit);
+    row.dataset.sbFitWidth = Math.round(row.clientWidth);
+  };
+  const fit = () => document.querySelectorAll(selector).forEach(fitRow);
+  // Rows inside tabs that open later (the nonprofit page) are sized again when they become visible.
+  const watch = 'ResizeObserver' in window ? new ResizeObserver(entries => entries.forEach(entry => { if (entry.target.clientWidth && entry.target.dataset.sbFitWidth !== String(Math.round(entry.target.clientWidth))) fitRow(entry.target); })) : null;
+  addEventListener('load', () => { fit(); if (watch) document.querySelectorAll(selector).forEach(row => watch.observe(row)); });
   addEventListener('resize', fit, {passive: true});
   document.fonts?.ready.then(fit);
 })();

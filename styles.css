@@ -368,3 +368,9 @@ html body #soft-bank-renewal .sb-equal-buttons>:is(a,button){box-sizing:border-b
 html body #soft-bank-renewal .member-actions>button.cta{font-size:18px;font-weight:600}
 html body.sb-page-product-oneai #soft-bank-renewal .sb-content .flex.gap-3{gap:12px}
 html body #soft-bank-renewal .member-actions>a.cta{color:#fff}
+/* Feature rows with a pair of buttons under the copy use the regular copy column (.56fr, as on the WEHAGO pages)
+   even when the screen is a clarity-restored one, so the two buttons fit side by side. */
+@media(min-width:761px){
+ html body.sb-figma-product #soft-bank-renewal .sb-content .sb-zigzag-feature:has(.sb-clarity-restored):has(.sb-screen-actions>:is(a,button)+:is(a,button)){grid-template-columns:minmax(0,.56fr) minmax(0,1.44fr)!important}
+ html body.sb-figma-product #soft-bank-renewal .sb-content .sb-zigzag-feature[data-screen-layout=visual-left]:has(.sb-clarity-restored):has(.sb-screen-actions>:is(a,button)+:is(a,button)){grid-template-columns:minmax(0,1.44fr) minmax(0,.56fr)!important}
+}
