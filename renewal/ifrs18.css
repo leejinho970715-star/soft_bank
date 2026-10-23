@@ -53,3 +53,6 @@
 .ifrs-content section.ifrs-process{padding-bottom:48px;margin-bottom:0}
 .ifrs-content section.ifrs-features{padding-top:64px}
 @media(max-width:760px){.ifrs-content section.ifrs-process{padding-bottom:24px}.ifrs-content section.ifrs-features{padding-top:48px}}
+/* The contact band sits directly on the footer, like the Amaranth 10 closing banner. */
+.sb-page-product-ifrs18 #soft-bank-renewal main.ifrs-content{padding-bottom:0!important}
+.ifrs-content section.ifrs-contact{margin-bottom:0}
