@@ -19,6 +19,7 @@ const everywhere=[
  [/메신저,화상회의/g,'메신저, 화상회의'],
  [/한 눈에/g,'한눈에'],
  [/구애 받지/g,'구애받지'],
+ [/보호방침’이 작용됩니다/g,'보호방침’이 적용됩니다'],
  // Footer contact lines and copyright.
  [/iCUBE \/ G20 : 1877-0840(?! · 블루멤버십)/g,'iCUBE / G20 : 1877-0840 · 블루멤버십 : 1600-4208 · 테스트 계정 신청 : 070-4497-3388'],
  [/COPYRIGHT © 2024 DOUZONE BIZON\./g,'COPYRIGHT © 2026 아이원소프트뱅크㈜.']
@@ -52,14 +53,57 @@ const shared={
 pages['subpages/product/nonprofit/intro.html'].push(...shared.groupware);
 for(const [page,rules] of Object.entries(pages))if(typeof rules==='string')pages[page]=shared[rules];
 
+// 개인정보처리방침 (약관 팝업, 회원가입, 구매상담, 제휴문의): fix the errors carried over from the original policy text.
+// Applied to the HTML source because some sentences span inline tags.
+const privacyPages=new Set(['renewal/privacy.html','subpages/member/yak.html','subpages/purchase/inquiry.html','subpages/purchase/bsnss_inquiry.html']);
+const privacy=[
+ [/\(" 회사 " 또는 "아이원소프트뱅크"라 함\)은/g,'("회사" 또는 "아이원소프트뱅크"라 함)는'],
+ [/정보통신망 이용촉진 및 정보 보호 등에/g,'정보통신망 이용촉진 및 정보보호 등에'],
+ [/고 충을/g,'고충을'],
+ [/두고 있습니다 있습니다\./g,'두고 있습니다.'],
+ [/게시함을 게시함을 알려드립니다 알려드립니다\./g,'게시함을 알려드립니다.'],
+ [/목적이외의/g,'목적 이외의'],
+ [/참여기회 제공,인구통계학적/g,'참여기회 제공, 인구통계학적'],
+ [/개인정보를 수집시에/g,'개인정보를 수집 시에'],
+ [/동의일로부터 지체 없이 파기까지/g,'동의일로부터 파기 시까지'],
+ [/보존기간 :/g,'보존 기간 :'],
+ [/아이원소프트뱅크 정보주체의 동의/g,'아이원소프트뱅크는 정보주체의 동의'],
+ [/개인정보처리 위탁\(확인필요\)/g,'개인정보처리 위탁'],
+ [/위탁받는자의/g,'위탁받는 자의'],
+ [/제공받는 자의 보유·이용기간\s*:\s*지체\s*없이 파기/g,'위탁받는 자의 보유·이용기간 : 지체 없이 파기'],
+ [/위탁계약 종료시 까지/g,'위탁계약 종료 시까지'],
+ [/위탁계약 체결시/g,'위탁계약 체결 시'],
+ [/기술적\?관리적/g,'기술적·관리적'],
+ [/관리\?감독/g,'관리·감독'],
+ [/신원이노베이션은/g,'아이원소프트뱅크는'],
+ [/(^|>|\s)키란 웹사이트/g,'$1쿠키란 웹사이트'],
+ [/회사은\(는\)/g,'회사는'],
+ [/방문 회수/g,'방문 횟수'],
+ [/개인 맞춤 서비스 제공 귀하는/g,'개인 맞춤 서비스 제공. 귀하는'],
+ [/설정방법 : 예\(인터넷 익스플로어의 경우\) =&gt; 웹 브라우저 상단의 도구 &gt; 인터넷 옵션 &gt; 개인정보/g,'설정방법 : 예(Chrome의 경우) =&gt; 웹 브라우저 우측 상단의 더보기(⋮) &gt; 설정 &gt; 개인정보 보호 및 보안 &gt; 서드 파티 쿠키'],
+ [/개인정보의 파기 아이원소프트뱅크 주식회사은/g,'아이원소프트뱅크 주식회사는'],
+ [/이용자가 입력한 입력한 정보는 정보는 보유기간이 보유기간이 경과했거나 경과했거나 처리목적이 처리목적이 달성된 달성된 후\s+내부 방침 및 관련 법령에 법령에 따라 파기합니다 파기합니다\s*\./g,'이용자가 입력한 정보는 보유기간이 경과했거나 처리목적이 달성된 후 내부 방침 및 관련 법령에 따라 파기합니다.'],
+ [/아이원소프트뱅크 주식회사은/g,'아이원소프트뱅크 주식회사는'],
+ [/아이원소프트뱅크은/g,'아이원소프트뱅크는'],
+ [/최소화 하여/g,'최소화하여'],
+ [/이용자의 개인정보는 비밀번호는 암호화 되어/g,'이용자의 개인정보 중 비밀번호는 암호화되어'],
+ [/암호화 하거나/g,'암호화하거나'],
+ [/별도 보안기능을 사용하고 있습니(?!다)/g,'별도 보안기능을 사용하고 있습니다.'],
+ [/아이원소프트뱅크 주식회사 별개의 기관으로서/g,'아이원소프트뱅크 주식회사와는 별개의 기관으로서'],
+ // Current contact details of the relief agencies.
+ [/▶ 개인정보 분쟁조정위원회 \(한국인터넷진흥원 운영\)(\s*<\/span>[\s\S]*?- 홈페이지 : )privacy\.kisa\.or\.kr(\s*<br>\s*- 전화 : \(국번없이\) )118/g,'▶ 개인정보 분쟁조정위원회$1www.kopico.go.kr$21833-6972'],
+ [/▶ 대검찰청 사이버범죄수사단 : 02-3480-3573 \(www\.spo\.go\.kr\)/g,'▶ 대검찰청 사이버수사과 : (국번없이) 1301 (www.spo.go.kr)'],
+ [/▶ 경찰청 사이버범죄수사단 : 1566-0112 \(www\.netan\.go\.kr\)/g,'▶ 경찰청 사이버수사국 : (국번없이) 182 (ecrm.police.go.kr)']
+];
+
 const fix=(text,rules)=>rules.reduce((value,[pattern,replacement])=>value.replace(pattern,replacement),text);
 async function walk(dir){const files=[];for(const entry of await fs.readdir(dir,{withFileTypes:true})){const file=path.join(dir,entry.name);if(entry.isDirectory())files.push(...await walk(file));else if(file.endsWith('.html'))files.push(file);}return files;}
 
 let changed=0;
 for(const file of ['index.html',...await walk('subpages'),...await walk('renewal')]){
  const normalized=file.replaceAll('\\','/'),rules=[...everywhere,...(pages[normalized]||[])];
- const source=await fs.readFile(file,'utf8');
- if(!rules.some(([pattern])=>{pattern.lastIndex=0;return pattern.test(source);})&&!normalized.endsWith('company/location.html')&&!normalized.endsWith('member/join.html')&&!normalized.endsWith('member/yak.html'))continue;
+ const original=await fs.readFile(file,'utf8'),source=privacyPages.has(normalized)?fix(original,privacy):original;
+ if(source===original&&!rules.some(([pattern])=>{pattern.lastIndex=0;return pattern.test(source);})&&!normalized.endsWith('company/location.html')&&!normalized.endsWith('member/join.html')&&!normalized.endsWith('member/yak.html'))continue;
  const $=load(source);let edits=0;
  const visit=node=>{for(const child of node.children||[]){
   if(child.type==='text'){const next=fix(child.data,rules);if(next!==child.data){child.data=next;edits++;}}
@@ -71,7 +115,7 @@ for(const file of ['index.html',...await walk('subpages'),...await walk('renewal
  $('#join-field-8').each((i,e)=>{for(const attr of ['title','aria-label'])if($(e).attr(attr)==='연락처 가운데 자리 입력'){$(e).attr(attr,'연락처 마지막 자리 입력');edits++;}});
  // 오시는 길: list the real contact lines instead of a single 대표전화.
  $('.sub_location b, b').filter((i,e)=>normalized.endsWith('company/location.html')&&$(e).text().trim()==='연락처').each((i,e)=>{const p=$(e).nextAll('p').first();if(p.text().trim()==='대표전화 1600-4208'){p.html('구매상담문의 1877-0256<br>고객센터 1877-1859<br>iCUBE / G20 1877-0840<br>블루멤버십 1600-4208<br>테스트 계정 신청 070-4497-3388');edits++;}});
- if(!edits)continue;
+ if(!edits&&source===original)continue;
  await fs.writeFile(file,$.html());changed++;
 }
 console.log(`Text corrections applied to ${changed} pages`);
