@@ -507,3 +507,21 @@ for (const [key, id] of [['privacy', 'privacy-modal'], ['terms', 'terms-modal']]
   panel.textContent = '문서를 불러오는 중입니다.';
   fetch(new URL('renewal/' + key + '.html', document.currentScript?.src || location.href)).then(r => { if (!r.ok) throw new Error('Document unavailable'); return r.text(); }).then(html => { panel.innerHTML = html; }).catch(() => { panel.textContent = '문서를 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.'; });
 }
+
+// Side-by-side buttons share one width (styles.css); a row that cannot fit its column stacks instead of squeezing the labels.
+(() => {
+  const selector = '#soft-bank-renewal .sb-content .sb-screen-actions, #soft-bank-renewal .hero .actions, #soft-bank-renewal .ifrs-actions, .sb-page-product-oneai #soft-bank-renewal .sb-content .flex.gap-3';
+  const fit = () => document.querySelectorAll(selector).forEach(row => {
+    if (row.children.length < 2) return;
+    row.classList.remove('sb-actions-stacked');
+    // Measure each button at its natural width; text spilling into padding does not show up in scrollWidth.
+    row.classList.add('sb-actions-measure');
+    const widest = Math.max(...[...row.children].map(button => button.getBoundingClientRect().width));
+    row.classList.remove('sb-actions-measure');
+    const gap = parseFloat(getComputedStyle(row).columnGap) || 0;
+    if (widest * row.children.length + gap * (row.children.length - 1) > row.parentElement.clientWidth + 1) row.classList.add('sb-actions-stacked');
+  });
+  addEventListener('load', fit);
+  addEventListener('resize', fit, {passive: true});
+  document.fonts?.ready.then(fit);
+})();

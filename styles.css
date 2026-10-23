@@ -361,3 +361,25 @@ body.sb-cardnews-open{overflow:hidden}
 .sb-company .sb-content .sb-visit>.box:last-child{margin-bottom:0!important}
 #soft-bank-renewal .sb-content section.sb-join{margin-bottom:0!important}
 @media(max-width:760px){body:not(.sb-figma-product) #soft-bank-renewal main#main-content.sb-content{padding-bottom:56px!important}}
+/* Buttons placed side by side share one size: every button in a row is as wide as the widest one and as tall as the others. */
+html body.sb-product #soft-bank-renewal .sb-content .sb-screen-actions,
+html body #soft-bank-renewal .hero .actions,
+html body.sb-page-product-ifrs18 #soft-bank-renewal .ifrs-content .ifrs-actions,
+html body.sb-page-product-oneai #soft-bank-renewal .sb-content .flex.gap-3:has(>.cta+.cta){display:grid!important;grid-auto-flow:column;grid-auto-columns:1fr;column-gap:12px;row-gap:10px;width:fit-content;max-width:100%}
+html body.sb-product #soft-bank-renewal .sb-content .sb-screen-actions.sb-screen-actions>:is(a,button){width:100%!important;height:48px;min-height:48px!important;padding:0 24px!important;font-size:15px!important;line-height:1.2;white-space:nowrap;box-sizing:border-box}
+html body #soft-bank-renewal .hero .actions>a,
+html body.sb-page-product-ifrs18 #soft-bank-renewal .ifrs-content .ifrs-actions>a,
+html body.sb-page-product-oneai #soft-bank-renewal .sb-content .flex.gap-3:has(>.cta+.cta)>.cta{width:100%!important;box-sizing:border-box;justify-content:center;text-align:center}
+@media(max-width:560px){
+ html body.sb-product #soft-bank-renewal .sb-content .sb-screen-actions,
+ html body #soft-bank-renewal .hero .actions,
+ html body.sb-page-product-ifrs18 #soft-bank-renewal .ifrs-content .ifrs-actions,
+ html body.sb-page-product-oneai #soft-bank-renewal .sb-content .flex.gap-3:has(>.cta+.cta){grid-auto-flow:row;grid-auto-columns:auto;width:fit-content}
+ html body.sb-product #soft-bank-renewal .sb-content .sb-screen-actions.sb-screen-actions>:is(a,button){white-space:normal}
+}
+html body.sb-page-product-ifrs18 #soft-bank-renewal .ifrs-content .ifrs-actions{margin-left:auto;margin-right:auto}
+html body #soft-bank-renewal .sb-actions-measure.sb-actions-measure{display:flex!important;width:max-content!important;max-width:none!important}
+html body #soft-bank-renewal .sb-actions-measure.sb-actions-measure>*{width:auto!important;flex:none!important}
+/* Rows too wide for their column stack their buttons, still at one shared width (set by app.js). */
+html body #soft-bank-renewal .sb-actions-stacked.sb-actions-stacked{grid-auto-flow:row!important;grid-auto-columns:auto!important}
+html body.sb-product #soft-bank-renewal .sb-content .sb-actions-stacked.sb-screen-actions>:is(a,button){white-space:normal}
