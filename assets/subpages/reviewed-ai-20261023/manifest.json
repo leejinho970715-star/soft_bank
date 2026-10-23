@@ -211,11 +211,13 @@
       ],
       "outputSize": [
         1748,
-        899
+        900
       ],
       "previewWidth": 960,
-      "sha256": "337e317b8615ddae3740f36984939095b28305d1e56b62b31c9ab3516e08ac37",
-      "knownDifferences": "계약 목록의 금액·기간과 우측 상세 표의 데이터 및 필드 구성이 달라졌습니다. 원본 상품 화면으로 사용할 수 없습니다."
+      "sha256": "fc9a1b1e6c93cf1a1dfdac032115566e5b69b6d584c3b53448a89ed5f5796d4c",
+      "knownDifferences": "계약 목록의 금액·기간과 우측 상세 표의 데이터 및 필드 구성이 달라졌습니다. 원본 상품 화면으로 사용할 수 없습니다.",
+      "version": "20261023-pms-text-fix-1",
+      "correction": "프로젝트 리스트 표기 확인 및 파란 계약현황 제목 뒤 검정 아이콘 제거. AI 편집본으로 기타 작은 데이터의 완전 일치는 인증되지 않음."
     },
     {
       "key": "nahago-mobile",
@@ -426,6 +428,23 @@
       "previewWidth": 1578,
       "sha256": "c90b81e9f46ee55172665bc5aeaa1de202187530ff652735338b1c5e78bb76c1",
       "knownDifferences": "상단 매출(전사)는 복구됐지만 우측 하단 원형 차트의 연령/경력 분류가 다른 근속기간/연령 범주로 바뀌었습니다."
+    },
+    {
+      "key": "calendar-corrected",
+      "file": "assets/subpages/reviewed-ai-20261023/calendar-corrected.png",
+      "originalFile": "assets/subpages/flat-screens/ui-058-full.png",
+      "pages": [
+        "subpages/product/wehago/cooperation.html"
+      ],
+      "outputSize": [
+        1518,
+        1036
+      ],
+      "previewWidth": 1519,
+      "sha256": "91ec6a36e27a9f756f0965b1b27bb23d14be79da1a16a06ad77c86a54ca27728",
+      "version": "20261023-calendar-text-fix-1",
+      "correction": "좌측 파란 버튼 일정 동록 오탈자를 일정 등록으로 수정",
+      "knownDifferences": "기존 캘린더 날짜 및 작은 글자의 원본 완전 일치는 인증되지 않음."
     }
   ],
   "enabled": true

@@ -23,7 +23,7 @@ for(const entry of manifest.entries){
   const images=$('img[src]').filter((i,e)=>[entry.originalFile,entry.file].some(p=>($(e).attr('src')||'').split('?')[0].endsWith(p)));
   if(!images.length)throw new Error(`Missing ${entry.key} in ${file}`);
   for(const element of images.toArray()){
-  const img=$(element),src=root+(enabled?entry.file:entry.originalFile)+'?v='+manifest.version,figure=img.closest('figure');
+  const img=$(element),src=root+(enabled?entry.file:entry.originalFile)+'?v='+(entry.version||manifest.version),figure=img.closest('figure');
   const ratio=(width/height).toFixed(6);
   img.attr({src,width,height}).removeAttr('srcset');
   img.closest('a.sb-screen-zoom,a.sb-image-trigger').attr('href',src);
