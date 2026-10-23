@@ -1,0 +1,225 @@
+[
+  {
+    "key": "smart-a10-modules",
+    "file": "assets/subpages/verified-screens-20261023/smart-a10-modules.png",
+    "scope": "wehago/smart_A10.html",
+    "oldPaths": [
+      "quality-screens/smart-a10-modules-complete-v4.png"
+    ],
+    "sourceFile": "assets/subpages/official-corrected/sources/smart-a10-modules.png",
+    "sourceDocument": null,
+    "sourcePage": null,
+    "crop": null,
+    "nativeSize": [
+      830,
+      480
+    ],
+    "outputSize": [
+      1660,
+      960
+    ],
+    "nativePixelSha256": "fad1ba664fef1dc0ac1a921d27822b528397b90ebb70deecb595b1daff213e32",
+    "method": "Original capture pixels; deterministic sampling only where enlarged; no OCR, generated text, sharpening or learned restoration."
+  },
+  {
+    "key": "smart-a10-income-tax",
+    "file": "assets/subpages/verified-screens-20261023/smart-a10-income-tax.png",
+    "scope": "wehago/smart_A10.html",
+    "oldPaths": [
+      "flat-screens/income-tax-full.png"
+    ],
+    "sourceFile": "assets/subpages/official-corrected/sources/income-tax.png",
+    "sourceDocument": null,
+    "sourcePage": null,
+    "crop": [
+      486,
+      114,
+      1656,
+      844
+    ],
+    "nativeSize": [
+      1170,
+      730
+    ],
+    "outputSize": [
+      2340,
+      1460
+    ],
+    "nativePixelSha256": "900039f1989baf6e1bd0a72862d2b679acc00b4a71e0f35549e0d00ce6ccfab5",
+    "method": "Original capture pixels; deterministic sampling only where enlarged; no OCR, generated text, sharpening or learned restoration."
+  },
+  {
+    "key": "wehago-fax",
+    "file": "assets/subpages/verified-screens-20261023/wehago-fax.png",
+    "scope": "wehago/cooperation.html",
+    "oldPaths": [
+      "flat-screens/ui-061-full.png"
+    ],
+    "sourceFile": "output/nahago-quality-20261023/fax-leaflet51.png",
+    "sourceDocument": "WEHAGO 제품소개서.pdf",
+    "sourcePage": 51,
+    "crop": [
+      82,
+      1008,
+      1108,
+      1466
+    ],
+    "nativeSize": [
+      1026,
+      458
+    ],
+    "outputSize": [
+      2052,
+      916
+    ],
+    "nativePixelSha256": "0f3adbe2108fd90e6e8411d7f176ca93fca3e5d5665d75c6d1454579b2d04e2f",
+    "method": "Original capture pixels; deterministic sampling only where enlarged; no OCR, generated text, sharpening or learned restoration."
+  },
+  {
+    "key": "one-news",
+    "file": "assets/subpages/verified-screens-20261023/one-news.png",
+    "scope": "oneai.html",
+    "oldPaths": [
+      "quality-screens/ui-092-proofread-restored-v3-body.png",
+      "quality-screens/ui-092-proofread-restored-v3.png"
+    ],
+    "sourceFile": "assets/subpages/oneai-hq/reference-4.png",
+    "sourceDocument": null,
+    "sourcePage": null,
+    "crop": [
+      0,
+      110,
+      967,
+      653
+    ],
+    "nativeSize": [
+      967,
+      543
+    ],
+    "outputSize": [
+      1934,
+      1086
+    ],
+    "nativePixelSha256": "2266325be9617b6b08f4c7019f490cd2156b753fdd1e27ff08221f80b2536979",
+    "method": "Original capture pixels; deterministic sampling only where enlarged; no OCR, generated text, sharpening or learned restoration."
+  },
+  {
+    "key": "one-studio",
+    "file": "assets/subpages/verified-screens-20261023/one-studio.png",
+    "scope": "oneai.html",
+    "oldPaths": [
+      "quality-screens/ui-093-proofread-restored-v3-body.png",
+      "quality-screens/ui-093-proofread-restored-v3.png"
+    ],
+    "sourceFile": "assets/subpages/oneai-hq/reference-5.png",
+    "sourceDocument": null,
+    "sourcePage": null,
+    "crop": [
+      0,
+      110,
+      966,
+      651
+    ],
+    "nativeSize": [
+      966,
+      541
+    ],
+    "outputSize": [
+      1932,
+      1082
+    ],
+    "nativePixelSha256": "729de4bf47ad158e239e2904a558d72fe4986cbeec9a396751d4f78cd79aff2b",
+    "method": "Original capture pixels; deterministic sampling only where enlarged; no OCR, generated text, sharpening or learned restoration."
+  },
+  {
+    "key": "pms-contracts",
+    "file": "assets/subpages/verified-screens-20261023/pms-contracts.png",
+    "scope": "pms.html",
+    "oldPaths": [
+      "regenerated/ui-095.png"
+    ],
+    "sourceFile": "assets/subpages/original/d04779dd94eecf.png",
+    "sourceDocument": null,
+    "sourcePage": null,
+    "crop": null,
+    "nativeSize": [
+      960,
+      494
+    ],
+    "outputSize": [
+      1920,
+      988
+    ],
+    "nativePixelSha256": "c752a1ca3a5dc3295f4111b315e4d5c727b2b26eaf6040a08accb907dd178070",
+    "method": "Original capture pixels; deterministic sampling only where enlarged; no OCR, generated text, sharpening or learned restoration."
+  },
+  {
+    "key": "omni-ui-004",
+    "file": "assets/subpages/verified-screens-20261023/omni-ui-004.png",
+    "scope": "omniesol.html",
+    "oldPaths": [
+      "regenerated/ui-004.png",
+      "quality-screens/ui-004-restored-v3.png"
+    ],
+    "sourceFile": "assets/subpages/embedded/4c58da776c67fcba.jpg",
+    "sourceDocument": null,
+    "sourcePage": null,
+    "crop": null,
+    "nativeSize": [
+      1464,
+      1098
+    ],
+    "outputSize": [
+      1464,
+      1098
+    ],
+    "nativePixelSha256": "3f4f687ae3b71e0a5e3f7ac847404afefb1d3d9f25b049279e13415b3cfd8157",
+    "method": "Original capture pixels; deterministic sampling only where enlarged; no OCR, generated text, sharpening or learned restoration."
+  },
+  {
+    "key": "omni-ui-005",
+    "file": "assets/subpages/verified-screens-20261023/omni-ui-005.png",
+    "scope": "omniesol.html",
+    "oldPaths": [
+      "regenerated/ui-005.png",
+      "quality-screens/ui-005-restored-v3.png"
+    ],
+    "sourceFile": "assets/subpages/embedded/503efe83441f3d81.jpg",
+    "sourceDocument": null,
+    "sourcePage": null,
+    "crop": null,
+    "nativeSize": [
+      1422,
+      1112
+    ],
+    "outputSize": [
+      1422,
+      1112
+    ],
+    "nativePixelSha256": "5be2fe6fbc8e5e80de7b8e907204fcc4a593f35c8171d05e63dbff615b8767c9",
+    "method": "Original capture pixels; deterministic sampling only where enlarged; no OCR, generated text, sharpening or learned restoration."
+  },
+  {
+    "key": "omni-ui-006",
+    "file": "assets/subpages/verified-screens-20261023/omni-ui-006.png",
+    "scope": "omniesol.html",
+    "oldPaths": [
+      "regenerated/ui-006.png",
+      "quality-screens/ui-006-restored-v3.png"
+    ],
+    "sourceFile": "assets/subpages/embedded/b3e7f9078dde21b5.jpg",
+    "sourceDocument": null,
+    "sourcePage": null,
+    "crop": null,
+    "nativeSize": [
+      1430,
+      1452
+    ],
+    "outputSize": [
+      1430,
+      1452
+    ],
+    "nativePixelSha256": "096f02087b84e7697a1e53888ec713b0fe5a62f0b35c86522b79bd00d3d911ef",
+    "method": "Original capture pixels; deterministic sampling only where enlarged; no OCR, generated text, sharpening or learned restoration."
+  }
+]

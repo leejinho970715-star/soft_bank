@@ -126,9 +126,9 @@ function applyProducts($,file,root){
  }
  if(file.endsWith('/product/wehago/smart_A10.html')){
   // HR row: NAHAGO mobile home and detail screens from the WEHAGO leaflet (tools/prepare-nahago-mobile.py) instead of the AI-redrawn ui-080 screen.
-  const img=$('img[src*="flat-screens/ui-080-full.png"]').first();
+  const img=$('img[src*="flat-screens/ui-080-full.png"],img[src*="flat-screens/nahago-mobile.png"]').first();
   if(img.length){
-   const src=root+'assets/subpages/flat-screens/nahago-mobile.png';
+   const src=root+'assets/subpages/flat-screens/nahago-mobile.png?v=20261023-native-1';
    img.attr({src,width:2046,height:922,alt:'NAHAGO 모바일 홈, 급여명세서, 근무통계, 연말정산 화면'});
    img.closest('a').attr({href:src,'aria-label':'NAHAGO 모바일 화면 크게 보기'});
    const figure=img.closest('figure');

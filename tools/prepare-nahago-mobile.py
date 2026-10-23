@@ -3,7 +3,7 @@
 Phones are cropped from the WEHAGO service leaflet (NAHAGO pages, the A2 leaflet holds
 them at the highest resolution of the supplied PDFs) into nahago-sources/. They are laid
 out side by side on a transparent canvas with rounded corners and a soft shadow, then
-enlarged 2x with Lanczos plus a light unsharp mask. No generative or learned upscaler is
+enlarged 2x with Lanczos without sharpening. No generative or learned upscaler is
 used, so the screen text is never redrawn.
 """
 from pathlib import Path
@@ -32,6 +32,5 @@ for phone in phones:
 shadow = shadow.filter(ImageFilter.GaussianBlur(8))
 shadow.alpha_composite(canvas)
 out = shadow.resize((shadow.width * 2, shadow.height * 2), Image.LANCZOS)
-out = out.filter(ImageFilter.UnsharpMask(radius=1.6, percent=110, threshold=2))
 out.save(folder / 'nahago-mobile.png', optimize=True)
 print(f'nahago-mobile.png: {out.width}x{out.height}')

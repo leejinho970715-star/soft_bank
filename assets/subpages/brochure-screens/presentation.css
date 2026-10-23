@@ -1,0 +1,3 @@
+/* Normal previews stay within the original capture width; full exports remain available. */
+.sb-figma-product #soft-bank-renewal .sb-zigzag-feature .sb-feature-visual figure[data-quality-screen="pdf-native"]{width:min(100%,var(--sb-native-width))!important;max-width:100%}
+.sb-figma-product #soft-bank-renewal .sb-content figure[data-quality-screen="verified-native"]{width:min(100%,var(--sb-native-width))!important;max-width:100%}
