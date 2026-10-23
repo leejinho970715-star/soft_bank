@@ -374,6 +374,6 @@ html body #soft-bank-renewal .member-actions>a.cta{color:#fff}
  html body.sb-figma-product #soft-bank-renewal .sb-content .sb-zigzag-feature:has(.sb-clarity-restored):has(.sb-screen-actions>:is(a,button)+:is(a,button)){grid-template-columns:minmax(0,.56fr) minmax(0,1.44fr)!important}
  html body.sb-figma-product #soft-bank-renewal .sb-content .sb-zigzag-feature[data-screen-layout=visual-left]:has(.sb-clarity-restored):has(.sb-screen-actions>:is(a,button)+:is(a,button)){grid-template-columns:minmax(0,1.44fr) minmax(0,.56fr)!important}
 }
-/* The trailing '›' appears only on 영상으로 확인하기 and 리플릿 자세히 보기 (marked .sb-cta-arrow by tools/cta-arrows.mjs). */
+/* The trailing '›' appears only on 영상으로 확인하기, 리플릿 자세히 보기 and '… 체험하기' (marked .sb-cta-arrow by tools/cta-arrows.mjs). */
 html body #soft-bank-renewal .sb-content .sb-product-cta:not(.sb-cta-arrow)::after{content:none!important;display:none!important}
 html body #soft-bank-renewal .sb-content .sb-cta-arrow::after{content:'›'!important;display:inline-block!important;font-size:18px;line-height:1;margin-left:15px}
