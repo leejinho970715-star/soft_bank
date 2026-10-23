@@ -13,6 +13,7 @@ const screens={
  'quality-screens/mps-clear-v1.png':'mps',
  'quality-screens/funds-clear-v1.png':'funds'
 };
+const version='2';
 const size=file=>fs.readFile(file).then(data=>({width:data.readUInt32BE(16),height:data.readUInt32BE(20)}));
 const sizes={};
 for(const name of Object.values(screens))sizes[name]=await size(`assets/subpages/brochure-screens/${name}.png`);
@@ -27,7 +28,7 @@ for(const file of await walk('subpages/product')){
  for(const [old,name] of Object.entries(screens)){
   const {width,height}=sizes[name],ratio=(width/height).toFixed(6);
   $(`img[src$="${old}"]`).each((i,e)=>{
-   const img=$(e),src=img.attr('src').replace(old,`brochure-screens/${name}.png`);
+   const img=$(e),src=img.attr('src').replace(old,`brochure-screens/${name}.png?v=${version}`);
    img.attr({src,width:String(width),height:String(height)}).removeAttr('data-quality-source').removeAttr('srcset');
    img.closest('a.sb-screen-zoom').attr('href',src);
    const figure=img.closest('figure');
