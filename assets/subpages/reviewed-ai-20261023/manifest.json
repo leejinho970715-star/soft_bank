@@ -1,0 +1,37 @@
+{
+  "version": "20261023-reviewed-ai-1",
+  "approval": "User accepted minor numeric differences on 2026-10-23 after seeing QA findings. Not certified text-identical.",
+  "entries": [
+    {
+      "key": "annual-leave",
+      "file": "assets/subpages/reviewed-ai-20261023/annual-leave.png",
+      "originalFile": "assets/subpages/brochure-screens/annual-leave.png",
+      "pages": [
+        "subpages/product/amaranth10/hr.html",
+        "subpages/product/nonprofit/intro.html"
+      ],
+      "outputSize": [
+        1555,
+        1012
+      ],
+      "previewWidth": 1097,
+      "sha256": "cf159aa56ab749ff91445eb3e3f22f3bdb6255f41d79e3b470d6b3dc691aa95d",
+      "knownDifferences": "하단 녹색 일정의 '이사원 대리 (2일)'이 '(7일)'로 바뀌었습니다. 배너 인물·배경 도형도 재구성됐습니다."
+    },
+    {
+      "key": "omni-ui-000",
+      "file": "assets/subpages/reviewed-ai-20261023/omni-ui-000.png",
+      "originalFile": "assets/subpages/verified-screens-20261023/omni-ui-000.png",
+      "pages": [
+        "subpages/product/omniesol.html"
+      ],
+      "outputSize": [
+        1535,
+        1025
+      ],
+      "previewWidth": 1432,
+      "sha256": "21784666425398f6f112b3410db5c061f3e5c55f25f0ac3dfc68958856f0287e",
+      "knownDifferences": "우측 상단 라벨은 고쳐졌지만 표의 '210,600'이 '210,000'으로 바뀌었습니다. 기타 계정명도 일부 다른 글자로 재구성됐습니다."
+    }
+  ]
+}
