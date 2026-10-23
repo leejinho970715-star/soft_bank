@@ -673,3 +673,10 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
  .sb-page-product-pms #soft-bank-renewal .sb-content .contWrap.pms>.pms_ftrs_diagram+.revers_wrap{padding-top:16px!important}
  .sb-page-product-pms #soft-bank-renewal .sb-content .contWrap.pms>.pms_ftrs_diagram{padding-bottom:16px!important}
 }
+/* ONE AI: proposal headlines as live text (the image versions had a baked-in glow). */
+.sb-page-product-oneai #soft-bank-renewal .sb-content .sb-oneai-headline{display:flex;flex-direction:column;align-items:center;gap:8px;margin:0 0 18px;text-align:center;color:#1c1f8f;font-weight:800;font-size:clamp(16px,1.45vw,21px);line-height:1.45;letter-spacing:-.02em;word-break:keep-all}
+.sb-page-product-oneai #soft-bank-renewal .sb-content .sb-oneai-headline span{display:inline-block;max-width:100%}
+.sb-page-product-oneai #soft-bank-renewal .sb-content .sb-oneai-headline-pill span{padding:6px 18px;border:2px solid #5a5cf2;border-radius:16px;background:#e6e4fb}
+.sb-page-product-oneai #soft-bank-renewal .sb-content .sb-oneai-headline-pill-soft span{padding:6px 18px;border:2px solid #9db6ef;border-radius:12px;background:#eaf0fd}
+.sb-page-product-oneai #soft-bank-renewal .sb-content .sb-oneai-headline-plain{gap:2px;font-size:clamp(17px,1.7vw,24px)}
+@media(max-width:760px){.sb-page-product-oneai #soft-bank-renewal .sb-content .sb-oneai-headline{gap:6px;margin-bottom:12px;font-size:14px}.sb-page-product-oneai #soft-bank-renewal .sb-content :is(.sb-oneai-headline-pill,.sb-oneai-headline-pill-soft) span{padding:4px 12px;border-width:1.5px}.sb-page-product-oneai #soft-bank-renewal .sb-content .sb-oneai-headline-plain{font-size:16px}}

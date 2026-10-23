@@ -3,7 +3,7 @@ import path from 'node:path';
 import {load} from 'cheerio';
 
 const version='20261023-1';
-const productVersion='20261023-1';
+const productVersion='20261023-2';
 const native=JSON.parse(await fs.readFile('assets/proposal-native-20261020/manifest.json','utf8'));
 const assets=new Map(native.map(asset=>[path.basename(asset.file,'.png'),asset]));
 const normalize=text=>text.replace(/\s+/g,' ').trim();
@@ -108,6 +108,21 @@ function applyProducts($,file,root){
   }
   // Banner chips and every tag read as hashtags.
   $('.omniesol .band .chips>.chip,.omniesol .tag-row>.tag').each((i,e)=>{const text=normalize($(e).text());if(!text.startsWith('#'))$(e).text('#'+text);});
+ }
+ if(file.endsWith('/product/oneai.html')){
+  // The proposal headlines carry a baked-in glow; show them as live text above the cropped screens (tools/crop-oneai-titles.py).
+  const headlines={'ui-091':['pill-soft','법령부터 예규, 판례까지 꼼꼼하게!','실무 중 발생하는 궁금증부터 복잡한 법령 해석까지 스마트하게 해결하는 AI 세법 도우미'],
+   'ui-092':['plain','AI 기사 작성부터 탈고 그리고 송고까지 한 번에!','디지털 기사 제작 환경에 최적화된 AI 기사 편집기'],
+   'ui-093':['pill','복잡한 편집 프로그램 없이도 클릭 몇 번으로','뉴스, 홍보, 교육 영상은 물론 숏폼 콘텐츠까지 손쉽게 제작 가능']};
+  for(const [key,[style,first,second]] of Object.entries(headlines)){
+   const img=$(`img[src*="${key}-proofread-restored-v3.png"]`).first();if(!img.length)continue;
+   const body=root+'assets/subpages/quality-screens/'+key+'-proofread-restored-v3-body.png';
+   const height={'ui-091':1730,'ui-092':1725,'ui-093':1681}[key];
+   img.attr({src:body,width:3024,height});img.closest('a').attr('href',body);
+   const figure=img.closest('figure');
+   figure.attr('style',(figure.attr('style')||'').replace(/--sb-(screen|preview)-ratio:[\d.]+/g,(m,k)=>'--sb-'+k+'-ratio:'+(3024/height).toFixed(6)));
+   if(!figure.prev('.sb-oneai-headline').length)figure.before($(`<p class="sb-oneai-headline sb-oneai-headline-${style}"></p>`).append($('<span></span>').text(first)).append($('<span></span>').text(second)));
+  }
  }
  if(!file.includes('/product/wehago/'))return;
  const first=$('.wehago_01 figure').first();
