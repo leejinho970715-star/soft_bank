@@ -154,6 +154,98 @@
     "method": "Original capture pixels; deterministic sampling only where enlarged; no OCR, generated text, sharpening or learned restoration."
   },
   {
+    "key": "omni-ui-000",
+    "file": "assets/subpages/verified-screens-20261023/omni-ui-000.png",
+    "scope": "omniesol.html",
+    "oldPaths": [
+      "regenerated/ui-000.png",
+      "quality-screens/ui-000-restored-v3.png"
+    ],
+    "sourceFile": "assets/subpages/embedded/fcca33168ca2edea.jpg",
+    "sourceDocument": null,
+    "sourcePage": null,
+    "crop": null,
+    "nativeSize": [
+      1432,
+      956
+    ],
+    "outputSize": [
+      1432,
+      956
+    ],
+    "nativePixelSha256": "bf4965ea1c32013f68c80d5761f86c8a117f8f2d9fd222a4c3f9f3674b499c3f",
+    "method": "Original capture pixels; deterministic sampling only where enlarged; no OCR, generated text, sharpening or learned restoration."
+  },
+  {
+    "key": "omni-ui-001",
+    "file": "assets/subpages/verified-screens-20261023/omni-ui-001.png",
+    "scope": "omniesol.html",
+    "oldPaths": [
+      "regenerated/ui-001.png",
+      "quality-screens/ui-001-restored-v3.png"
+    ],
+    "sourceFile": "assets/subpages/embedded/0df298eb80fa74d5.jpg",
+    "sourceDocument": null,
+    "sourcePage": null,
+    "crop": null,
+    "nativeSize": [
+      1432,
+      956
+    ],
+    "outputSize": [
+      1432,
+      956
+    ],
+    "nativePixelSha256": "c1c05bc06e80896e6aa9e3e8f9cad334d844ce22c4fcefffbbc6cac65cc2f759",
+    "method": "Original capture pixels; deterministic sampling only where enlarged; no OCR, generated text, sharpening or learned restoration."
+  },
+  {
+    "key": "omni-ui-002",
+    "file": "assets/subpages/verified-screens-20261023/omni-ui-002.png",
+    "scope": "omniesol.html",
+    "oldPaths": [
+      "regenerated/ui-002.png",
+      "quality-screens/ui-002-restored-v3.png"
+    ],
+    "sourceFile": "assets/subpages/embedded/4b24c7905acdccbf.jpg",
+    "sourceDocument": null,
+    "sourcePage": null,
+    "crop": null,
+    "nativeSize": [
+      1430,
+      1674
+    ],
+    "outputSize": [
+      1430,
+      1674
+    ],
+    "nativePixelSha256": "52b4a6090f405aac1fc953a57e0bb2d442c19cb24f2c18259e9534b6a4c0f8cb",
+    "method": "Original capture pixels; deterministic sampling only where enlarged; no OCR, generated text, sharpening or learned restoration."
+  },
+  {
+    "key": "omni-ui-003",
+    "file": "assets/subpages/verified-screens-20261023/omni-ui-003.png",
+    "scope": "omniesol.html",
+    "oldPaths": [
+      "regenerated/ui-003.png",
+      "quality-screens/ui-003-restored-v3.png"
+    ],
+    "sourceFile": "assets/subpages/embedded/059e887d79718a8c.jpg",
+    "sourceDocument": null,
+    "sourcePage": null,
+    "crop": null,
+    "nativeSize": [
+      2032,
+      954
+    ],
+    "outputSize": [
+      2032,
+      954
+    ],
+    "nativePixelSha256": "09cf23999c043bed7b55018f957c29bdf47308564e61f8b1396cc5c701d45ade",
+    "method": "Original capture pixels; deterministic sampling only where enlarged; no OCR, generated text, sharpening or learned restoration."
+  },
+  {
     "key": "omni-ui-004",
     "file": "assets/subpages/verified-screens-20261023/omni-ui-004.png",
     "scope": "omniesol.html",
@@ -220,6 +312,167 @@
       1452
     ],
     "nativePixelSha256": "096f02087b84e7697a1e53888ec713b0fe5a62f0b35c86522b79bd00d3d911ef",
+    "method": "Original capture pixels; deterministic sampling only where enlarged; no OCR, generated text, sharpening or learned restoration."
+  },
+  {
+    "key": "omni-ui-007",
+    "file": "assets/subpages/verified-screens-20261023/omni-ui-007.png",
+    "scope": "omniesol.html",
+    "oldPaths": [
+      "regenerated/ui-007.png",
+      "quality-screens/ui-007-restored-v3.png"
+    ],
+    "sourceFile": "assets/subpages/embedded/f3f6c3f6fd590304.jpg",
+    "sourceDocument": null,
+    "sourcePage": null,
+    "crop": null,
+    "nativeSize": [
+      1432,
+      956
+    ],
+    "outputSize": [
+      1432,
+      956
+    ],
+    "nativePixelSha256": "026558656e85b22c1fa3ac8562dd0bfeab7fe78b92832e23b80615bc00a54e8a",
+    "method": "Original capture pixels; deterministic sampling only where enlarged; no OCR, generated text, sharpening or learned restoration."
+  },
+  {
+    "key": "omni-ui-008",
+    "file": "assets/subpages/verified-screens-20261023/omni-ui-008.png",
+    "scope": "omniesol.html",
+    "oldPaths": [
+      "regenerated/ui-008.png",
+      "quality-screens/ui-008-restored-v3.png"
+    ],
+    "sourceFile": "assets/subpages/embedded/fec2a236c39964fe.jpg",
+    "sourceDocument": null,
+    "sourcePage": null,
+    "crop": null,
+    "nativeSize": [
+      1432,
+      956
+    ],
+    "outputSize": [
+      1432,
+      956
+    ],
+    "nativePixelSha256": "75aaeae289919aeca82b322ee0c5b09ab162641b7d98cab48f6d450566bb9499",
+    "method": "Original capture pixels; deterministic sampling only where enlarged; no OCR, generated text, sharpening or learned restoration."
+  },
+  {
+    "key": "omni-ui-009",
+    "file": "assets/subpages/verified-screens-20261023/omni-ui-009.png",
+    "scope": "omniesol.html",
+    "oldPaths": [
+      "regenerated/ui-009.png",
+      "quality-screens/ui-009-restored-v3.png"
+    ],
+    "sourceFile": "assets/subpages/embedded/32663a23a2ee4f8b.jpg",
+    "sourceDocument": null,
+    "sourcePage": null,
+    "crop": null,
+    "nativeSize": [
+      1804,
+      846
+    ],
+    "outputSize": [
+      1804,
+      846
+    ],
+    "nativePixelSha256": "879600d574fe191b2a0a872df462e3175b837d67774d0751936c19fee7dd218b",
+    "method": "Original capture pixels; deterministic sampling only where enlarged; no OCR, generated text, sharpening or learned restoration."
+  },
+  {
+    "key": "omni-ui-010",
+    "file": "assets/subpages/verified-screens-20261023/omni-ui-010.png",
+    "scope": "omniesol.html",
+    "oldPaths": [
+      "regenerated/ui-010.png",
+      "quality-screens/ui-010-restored-v3.png"
+    ],
+    "sourceFile": "assets/subpages/embedded/aa0431a08f2e2baf.jpg",
+    "sourceDocument": null,
+    "sourcePage": null,
+    "crop": null,
+    "nativeSize": [
+      1852,
+      926
+    ],
+    "outputSize": [
+      1852,
+      926
+    ],
+    "nativePixelSha256": "0e890ab639e4098ea0c06006dc466d50b7822dc541ef7c75d3f51b750ff177d0",
+    "method": "Original capture pixels; deterministic sampling only where enlarged; no OCR, generated text, sharpening or learned restoration."
+  },
+  {
+    "key": "omni-ui-011",
+    "file": "assets/subpages/verified-screens-20261023/omni-ui-011.png",
+    "scope": "omniesol.html",
+    "oldPaths": [
+      "regenerated/ui-011.png",
+      "quality-screens/ui-011-restored-v3.png"
+    ],
+    "sourceFile": "assets/subpages/embedded/b3ac3aa33857b471.jpg",
+    "sourceDocument": null,
+    "sourcePage": null,
+    "crop": null,
+    "nativeSize": [
+      1434,
+      956
+    ],
+    "outputSize": [
+      1434,
+      956
+    ],
+    "nativePixelSha256": "6ae4d216441183ebf78c82854e0590338d62405fd180b18184769862ea12b007",
+    "method": "Original capture pixels; deterministic sampling only where enlarged; no OCR, generated text, sharpening or learned restoration."
+  },
+  {
+    "key": "omni-ui-012",
+    "file": "assets/subpages/verified-screens-20261023/omni-ui-012.png",
+    "scope": "omniesol.html",
+    "oldPaths": [
+      "regenerated/ui-012.png",
+      "quality-screens/ui-012-restored-v3.png"
+    ],
+    "sourceFile": "assets/subpages/embedded/c051731f2a4086ad.jpg",
+    "sourceDocument": null,
+    "sourcePage": null,
+    "crop": null,
+    "nativeSize": [
+      1430,
+      952
+    ],
+    "outputSize": [
+      1430,
+      952
+    ],
+    "nativePixelSha256": "aafb99f1fa78c1bc719e208491aa17c89f12a7c3a3eaccba1fd53b4515525b2c",
+    "method": "Original capture pixels; deterministic sampling only where enlarged; no OCR, generated text, sharpening or learned restoration."
+  },
+  {
+    "key": "omni-ui-013",
+    "file": "assets/subpages/verified-screens-20261023/omni-ui-013.png",
+    "scope": "omniesol.html",
+    "oldPaths": [
+      "regenerated/ui-013.png",
+      "quality-screens/ui-013-restored-v3.png"
+    ],
+    "sourceFile": "assets/subpages/embedded/e44a910ec1912e04.jpg",
+    "sourceDocument": null,
+    "sourcePage": null,
+    "crop": null,
+    "nativeSize": [
+      1578,
+      874
+    ],
+    "outputSize": [
+      1578,
+      874
+    ],
+    "nativePixelSha256": "afd2be649696251ef6be5107375747d58c133e9bade2fa52ba44038cf078c05b",
     "method": "Original capture pixels; deterministic sampling only where enlarged; no OCR, generated text, sharpening or learned restoration."
   }
 ]

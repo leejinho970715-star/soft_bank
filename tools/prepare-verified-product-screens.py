@@ -38,10 +38,10 @@ export('one-studio','assets/subpages/oneai-hq/reference-5.png',
 export('pms-contracts','assets/subpages/original/d04779dd94eecf.png',
  ['regenerated/ui-095.png'],'pms.html')
 
-# The three shared-document/workspace captures contain the flagged meeting-room and
-# building labels. Keep the actual native reference image instead of redrawing it.
+# Keep the entire OmniEsol product-screen set consistent with the original captures,
+# including the three flagged examples; illustrations and hero assets are not included.
 m=json.loads((ROOT/'assets/subpages/regenerated/manifest.json').read_text(encoding='utf-8'))
-for number in [4,5,6]:
+for number in range(14):
     token=f'ui-{number:03d}'
     source=next(source for source,value in m.items() if Path(value.get('file','')).name==token+'.png')
     export('omni-'+token,source,[f'regenerated/{token}.png',f'quality-screens/{token}-restored-v3.png'],'omniesol.html')

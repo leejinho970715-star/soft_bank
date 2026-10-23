@@ -9,7 +9,7 @@ These assets replace the additionally flagged generated screenshots. `manifest.j
 | WEHAGO fax | Supplied `WEHAGO 제품소개서.pdf`, PDF page 51 (printed page 52), full device panel |
 | ONE News / ONE Studio | Retained original official `oneai-hq/reference-4.png` and `reference-5.png`; only the headline area already represented as HTML is omitted |
 | PMS contract status | Retained official `original/d04779dd94eecf.png` |
-| OmniEsol Groupware / ONECHAMBER / ONEFFICE | Original embedded captures retained before generated variants, as mapped in `regenerated/manifest.json` |
+| OmniEsol ERP / Groupware / ONECHAMBER / ONEFFICE / purchasing / expenses / MES / CRM / DEWS / MLOps | Original embedded captures retained before generated variants, as mapped in `regenerated/manifest.json`; the full product-screen set is kept consistent |
 
 The supplied PDFs do not contain an identical ONE News, ONE Studio, or standalone PMS contract screen. Those placements therefore use the matching original captures rather than an unrelated product interface. See `brochure-screens/README.md` for the seven Amaranth 10 PDF captures and the NAHAGO source selection.
 
