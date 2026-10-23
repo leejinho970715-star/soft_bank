@@ -359,3 +359,9 @@ img.sb-magnifiable{cursor:zoom-in}
  #soft-bank-renewal .news-slider{padding-top:88px}
  #soft-bank-renewal .products{padding-top:48px}
 }
+/* Sub page endings follow the main page: about 120px from the last content to the footer (about 70px on phones). */
+#soft-bank-renewal .sb-content iframe.disNone,#soft-bank-renewal .sb-content iframe[height="0"]{display:none!important}
+.sb-company .sb-content .sb-about-list>li:last-child{padding-bottom:0!important}
+.sb-company .sb-content .sb-visit>.box:last-child{margin-bottom:0!important}
+#soft-bank-renewal .sb-content section.sb-join{margin-bottom:0!important}
+@media(max-width:760px){body:not(.sb-figma-product) #soft-bank-renewal main#main-content.sb-content{padding-bottom:56px!important}}
