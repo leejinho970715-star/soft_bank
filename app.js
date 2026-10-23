@@ -508,18 +508,32 @@ for (const [key, id] of [['privacy', 'privacy-modal'], ['terms', 'terms-modal']]
   fetch(new URL('renewal/' + key + '.html', document.currentScript?.src || location.href)).then(r => { if (!r.ok) throw new Error('Document unavailable'); return r.text(); }).then(html => { panel.innerHTML = html; }).catch(() => { panel.textContent = '문서를 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.'; });
 }
 
-// Side-by-side buttons share one width (styles.css); a row that cannot fit its column stacks instead of squeezing the labels.
+// Side-by-side buttons share one size: each button in a row gets the largest button's width and height as its minimum.
+// The row's own layout (alignment, wrapping) is left as it is.
 (() => {
-  const selector = '#soft-bank-renewal .sb-content .sb-screen-actions, #soft-bank-renewal .hero .actions, #soft-bank-renewal .ifrs-actions, .sb-page-product-oneai #soft-bank-renewal .sb-content .flex.gap-3';
+  const selector = '#soft-bank-renewal .sb-content .sb-screen-actions, #soft-bank-renewal .hero .actions, #soft-bank-renewal .ifrs-actions, .sb-page-product-oneai #soft-bank-renewal .sb-content .flex.gap-3, #soft-bank-renewal .member-actions, .sb-page-product-omniesol #soft-bank-renewal .btns';
   const fit = () => document.querySelectorAll(selector).forEach(row => {
-    if (row.children.length < 2) return;
-    row.classList.remove('sb-actions-stacked');
-    // Measure each button at its natural width; text spilling into padding does not show up in scrollWidth.
-    row.classList.add('sb-actions-measure');
-    const widest = Math.max(...[...row.children].map(button => button.getBoundingClientRect().width));
-    row.classList.remove('sb-actions-measure');
-    const gap = parseFloat(getComputedStyle(row).columnGap) || 0;
-    if (widest * row.children.length + gap * (row.children.length - 1) > row.parentElement.clientWidth + 1) row.classList.add('sb-actions-stacked');
+    const buttons = [...row.children].filter(child => child.matches('a,button'));
+    if (buttons.length < 2) return;
+    row.classList.add('sb-equal-buttons');
+    buttons.forEach(button => ['min-width', 'min-height', 'padding-left', 'padding-right'].forEach(name => button.style.removeProperty(name)));
+    const boxes = buttons.map(button => button.getBoundingClientRect());
+    let widest = Math.ceil(Math.max(...boxes.map(box => box.width)));
+    const tallest = Math.ceil(Math.max(...boxes.map(box => box.height)));
+    if (!widest) return;
+    // When equal buttons would no longer fit on one line, tighten the side padding (down to 12px) before letting them wrap.
+    const style = getComputedStyle(row), gap = parseFloat(style.columnGap) || 0, room = row.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight);
+    const oneLine = boxes.every(box => Math.abs(box.top - boxes[0].top) < 4);
+    if (oneLine && widest * buttons.length + gap * (buttons.length - 1) > room) {
+      const share = Math.floor((room - gap * (buttons.length - 1)) / buttons.length);
+      const content = Math.max(...buttons.map((button, i) => { const s = getComputedStyle(button); return boxes[i].width - parseFloat(s.paddingLeft) - parseFloat(s.paddingRight); }));
+      if (content + 24 <= share) {
+        const pad = Math.floor((share - content) / 2) + 'px';
+        buttons.forEach(button => { button.style.setProperty('padding-left', pad, 'important'); button.style.setProperty('padding-right', pad, 'important'); });
+        widest = share;
+      }
+    }
+    buttons.forEach(button => { button.style.setProperty('min-width', widest + 'px', 'important'); button.style.setProperty('min-height', tallest + 'px', 'important'); });
   });
   addEventListener('load', fit);
   addEventListener('resize', fit, {passive: true});
