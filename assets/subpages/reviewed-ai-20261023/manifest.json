@@ -1,0 +1,451 @@
+{
+  "version": "20261023-reviewed-ai-2",
+  "approval": "User explicitly requested all remaining 26 regenerated variants on 2026-10-23, with originals preserved for rollback. QA differences remain recorded; not certified text-identical.",
+  "entries": [
+    {
+      "key": "annual-leave",
+      "file": "assets/subpages/reviewed-ai-20261023/annual-leave.png",
+      "originalFile": "assets/subpages/brochure-screens/annual-leave.png",
+      "pages": [
+        "subpages/product/amaranth10/hr.html",
+        "subpages/product/nonprofit/intro.html"
+      ],
+      "outputSize": [
+        1555,
+        1012
+      ],
+      "previewWidth": 1097,
+      "sha256": "cf159aa56ab749ff91445eb3e3f22f3bdb6255f41d79e3b470d6b3dc691aa95d",
+      "knownDifferences": "하단 녹색 일정의 '이사원 대리 (2일)'이 '(7일)'로 바뀌었습니다. 배너 인물·배경 도형도 재구성됐습니다."
+    },
+    {
+      "key": "omni-ui-000",
+      "file": "assets/subpages/reviewed-ai-20261023/omni-ui-000.png",
+      "originalFile": "assets/subpages/verified-screens-20261023/omni-ui-000.png",
+      "pages": [
+        "subpages/product/omniesol.html"
+      ],
+      "outputSize": [
+        1535,
+        1025
+      ],
+      "previewWidth": 1432,
+      "sha256": "21784666425398f6f112b3410db5c061f3e5c55f25f0ac3dfc68958856f0287e",
+      "knownDifferences": "우측 상단 라벨은 고쳐졌지만 표의 '210,600'이 '210,000'으로 바뀌었습니다. 기타 계정명도 일부 다른 글자로 재구성됐습니다."
+    },
+    {
+      "key": "automatic-journals",
+      "file": "assets/subpages/reviewed-ai-20261023/automatic-journals.png",
+      "originalFile": "assets/subpages/brochure-screens/automatic-journals.png",
+      "pages": [
+        "subpages/product/amaranth10/overview.html",
+        "subpages/product/nonprofit/intro.html"
+      ],
+      "outputSize": [
+        1555,
+        1012
+      ],
+      "previewWidth": 919,
+      "sha256": "824819c4b8d98c43b6fc9edd9eaaedcab3c17fef6b6ef9444a6e45a43e99d3a6",
+      "knownDifferences": "재생성 후에도 카드·TAX·사이드바 아이콘의 내부 도형이 원본과 다르게 그려졌습니다. 상단 단색 바도 그라데이션으로 바뀌었습니다."
+    },
+    {
+      "key": "tax-filing",
+      "file": "assets/subpages/reviewed-ai-20261023/tax-filing.png",
+      "originalFile": "assets/subpages/brochure-screens/tax-filing.png",
+      "pages": [
+        "subpages/product/amaranth10/overview.html",
+        "subpages/product/nonprofit/intro.html"
+      ],
+      "outputSize": [
+        1554,
+        1012
+      ],
+      "previewWidth": 779,
+      "sha256": "33aab94fd84e875da0b4a0e9e7ae6197464a355f15d7180e73848b9d217a1551",
+      "knownDifferences": "알림 숫자는 12로 복구됐지만 합계 행 세율 칸의 원본 기호가 '야'로 변형됐습니다. 사이드바에 원본과 다른 스크롤 표시도 생겼습니다."
+    },
+    {
+      "key": "funds",
+      "file": "assets/subpages/reviewed-ai-20261023/funds.png",
+      "originalFile": "assets/subpages/brochure-screens/funds.png",
+      "pages": [
+        "subpages/product/amaranth10/overview.html",
+        "subpages/product/nonprofit/intro.html"
+      ],
+      "outputSize": [
+        1554,
+        1012
+      ],
+      "previewWidth": 728,
+      "sha256": "7d1e76c2f2d03df424da68bf2511a26a64e588ae421f1e792b9d323cc6e6e82f",
+      "knownDifferences": "알림 숫자는 복구됐지만 지출진행상태 순서 문구가 재구성됐고 일부 거래처·적요의 글자와 아이콘이 달라졌습니다."
+    },
+    {
+      "key": "payroll",
+      "file": "assets/subpages/reviewed-ai-20261023/payroll.png",
+      "originalFile": "assets/subpages/brochure-screens/payroll.png",
+      "pages": [
+        "subpages/product/amaranth10/hr.html",
+        "subpages/product/nonprofit/intro.html"
+      ],
+      "outputSize": [
+        1553,
+        1013
+      ],
+      "previewWidth": 789,
+      "sha256": "a309999a1c95d809e690d7e7feb4cb33ce40055fd420676e1f6c2e3b87338946",
+      "knownDifferences": "주요 금액은 유지됐지만 사이드바 KISS 로고가 다른 글자·문양으로 변형됐습니다. 원본 UI 일치 기준을 통과하지 못했습니다."
+    },
+    {
+      "key": "domestic-overseas-sales",
+      "file": "assets/subpages/reviewed-ai-20261023/domestic-overseas-sales.png",
+      "originalFile": "assets/subpages/brochure-screens/domestic-overseas-sales.png",
+      "pages": [
+        "subpages/product/amaranth10/lm.html"
+      ],
+      "outputSize": [
+        1597,
+        985
+      ],
+      "previewWidth": 774,
+      "sha256": "55606c828003381006c0dda604243c3c8e1ab60530d2c08253dc5159434e7dc1",
+      "knownDifferences": "상단 사원명 '신사원'의 마지막 글자가 변형됐고 달력·툴바 아이콘도 다시 그려졌습니다. 작은 주문·담당자 글자의 완전한 일치는 확인되지 않았습니다."
+    },
+    {
+      "key": "mps",
+      "file": "assets/subpages/reviewed-ai-20261023/mps.png",
+      "originalFile": "assets/subpages/brochure-screens/mps.png",
+      "pages": [
+        "subpages/product/amaranth10/lm.html"
+      ],
+      "outputSize": [
+        1596,
+        986
+      ],
+      "previewWidth": 732,
+      "sha256": "cc22c46338ef8e7f674e75d89d14bddffefb941e9de11c98912338faea7f3ced",
+      "knownDifferences": "상단 MPS 버튼 문구와 아이콘이 이전 후보와도 달라졌습니다. 원본의 작은 버튼 글자를 명확히 대조하기 어려워 무오류 판정을 보류했습니다."
+    },
+    {
+      "key": "smart-a10-modules",
+      "file": "assets/subpages/reviewed-ai-20261023/smart-a10-modules.png",
+      "originalFile": "assets/subpages/verified-screens-20261023/smart-a10-modules.png",
+      "pages": [
+        "subpages/product/wehago/smart_A10.html"
+      ],
+      "outputSize": [
+        1648,
+        954
+      ],
+      "previewWidth": 830,
+      "sha256": "d0f6d968d01eb046fd652f7b626926bd9e349f04a01238ec8e9825e9f869cfbd",
+      "knownDifferences": "작은 표·메뉴 글자가 재구성됐으며 중앙 원에 원본에 없는 입체 측면이 생겼습니다. 패널 주변 투명 경계에도 색 번짐이 남았습니다."
+    },
+    {
+      "key": "smart-a10-income-tax",
+      "file": "assets/subpages/reviewed-ai-20261023/smart-a10-income-tax.png",
+      "originalFile": "assets/subpages/verified-screens-20261023/smart-a10-income-tax.png",
+      "pages": [
+        "subpages/product/wehago/smart_A10.html"
+      ],
+      "outputSize": [
+        1588,
+        991
+      ],
+      "previewWidth": 1170,
+      "sha256": "b87f202ee9b0c98344d7a158ca2d7c6a38d6e25ed3a94230cff28adce675fce3",
+      "knownDifferences": "대표자명·회사명·주소·서식명·시간이 바뀌었습니다. 예: 원본 20~21행 시간 14:35가 재생성본 14:26으로 달라졌습니다."
+    },
+    {
+      "key": "wehago-fax",
+      "file": "assets/subpages/reviewed-ai-20261023/wehago-fax.png",
+      "originalFile": "assets/subpages/verified-screens-20261023/wehago-fax.png",
+      "pages": [
+        "subpages/product/wehago/cooperation.html"
+      ],
+      "outputSize": [
+        1877,
+        838
+      ],
+      "previewWidth": 1026,
+      "sha256": "f66bed9d9d2c36f4ec2c01c2fdb46c8dac6973170c7cef3ea63a63f3d064dc66",
+      "knownDifferences": "팩스 수신자 목록의 이름·전화번호와 하단 버튼 문구가 재구성됐습니다. 원본 문서와 일치하지 않는 정보가 남았습니다."
+    },
+    {
+      "key": "one-news",
+      "file": "assets/subpages/reviewed-ai-20261023/one-news.png",
+      "originalFile": "assets/subpages/verified-screens-20261023/one-news.png",
+      "pages": [
+        "subpages/product/oneai.html"
+      ],
+      "outputSize": [
+        1674,
+        940
+      ],
+      "previewWidth": 967,
+      "sha256": "60e6bfaca052f702fb98620e80e2babd2bdf578ff4ce0b900dea02e2681cd6c9",
+      "knownDifferences": "검사 탭은 수정됐지만 본문·작은 메뉴·추천 키워드의 글자가 일부 재구성됐습니다. 기사 본문까지 동일하다는 판정이 불가능합니다."
+    },
+    {
+      "key": "one-studio",
+      "file": "assets/subpages/reviewed-ai-20261023/one-studio.png",
+      "originalFile": "assets/subpages/verified-screens-20261023/one-studio.png",
+      "pages": [
+        "subpages/product/oneai.html"
+      ],
+      "outputSize": [
+        1676,
+        938
+      ],
+      "previewWidth": 966,
+      "sha256": "25c071afaefb0136048c47cf2ce99694b25b146537b433bbb6abfbbf0df85b56",
+      "knownDifferences": "로고는 원래 표기에 가까워졌지만 스크립트 본문과 영상·인물·썸네일 내부 정보가 재구성됐습니다. 원본과 전부 일치하는지 확인되지 않았습니다."
+    },
+    {
+      "key": "pms-contracts",
+      "file": "assets/subpages/reviewed-ai-20261023/pms-contracts.png",
+      "originalFile": "assets/subpages/verified-screens-20261023/pms-contracts.png",
+      "pages": [
+        "subpages/product/pms.html"
+      ],
+      "outputSize": [
+        1748,
+        900
+      ],
+      "previewWidth": 960,
+      "sha256": "fc9a1b1e6c93cf1a1dfdac032115566e5b69b6d584c3b53448a89ed5f5796d4c",
+      "knownDifferences": "계약 목록의 금액·기간과 우측 상세 표의 데이터 및 필드 구성이 달라졌습니다. 원본 상품 화면으로 사용할 수 없습니다.",
+      "version": "20261023-pms-text-fix-1",
+      "correction": "프로젝트 리스트 표기 확인 및 파란 계약현황 제목 뒤 검정 아이콘 제거. AI 편집본으로 기타 작은 데이터의 완전 일치는 인증되지 않음."
+    },
+    {
+      "key": "nahago-mobile",
+      "file": "assets/subpages/reviewed-ai-20261023/nahago-mobile.png",
+      "originalFile": "assets/subpages/flat-screens/nahago-mobile.png",
+      "pages": [
+        "subpages/product/wehago/smart_A10.html"
+      ],
+      "outputSize": [
+        1868,
+        842
+      ],
+      "previewWidth": 2046,
+      "sha256": "ac6591d9df16704fd3ef44fc5c0a9422c9a44ebf43a610dec14922d5112a59ac",
+      "knownDifferences": "지정한 큰 금액은 복구됐지만 급여명세서 버튼 '미열람'이 다른 문구로 바뀌었고 소규모 시간·인적정보가 달라졌습니다. 투명 테두리도 거칠어졌습니다."
+    },
+    {
+      "key": "omni-ui-001",
+      "file": "assets/subpages/reviewed-ai-20261023/omni-ui-001.png",
+      "originalFile": "assets/subpages/verified-screens-20261023/omni-ui-001.png",
+      "pages": [
+        "subpages/product/omniesol.html"
+      ],
+      "outputSize": [
+        1535,
+        1025
+      ],
+      "previewWidth": 1432,
+      "sha256": "167cd69bae547f6b0797e8efd3a056677df5a4a18092d4891b9688ac7074e782",
+      "knownDifferences": "연도 범례는 수정됐지만 왼쪽 메뉴의 '매출등록'이 '매출동향' 등으로 변형됐고 하단 메뉴도 다른 항목으로 재구성됐습니다."
+    },
+    {
+      "key": "omni-ui-002",
+      "file": "assets/subpages/reviewed-ai-20261023/omni-ui-002.png",
+      "originalFile": "assets/subpages/verified-screens-20261023/omni-ui-002.png",
+      "pages": [
+        "subpages/product/omniesol.html"
+      ],
+      "outputSize": [
+        1159,
+        1357
+      ],
+      "previewWidth": 1430,
+      "sha256": "c70e5f3f157ee6aa62ebb84f0950f708870867e0b9e762b1e215bdc907efb1e6",
+      "knownDifferences": "상단 연장근무시간 '2시간 30분'이 '24시간 30분'으로 바뀌었습니다. 하단 집계 열 제목도 일부 변형됐습니다."
+    },
+    {
+      "key": "omni-ui-003",
+      "file": "assets/subpages/reviewed-ai-20261023/omni-ui-003.png",
+      "originalFile": "assets/subpages/verified-screens-20261023/omni-ui-003.png",
+      "pages": [
+        "subpages/product/omniesol.html"
+      ],
+      "outputSize": [
+        1829,
+        860
+      ],
+      "previewWidth": 2032,
+      "sha256": "7538b7886c2814a45cae5fee6559cc14683024e4c294b9cc067969e846dbd4c6",
+      "knownDifferences": "유통경로·영업조직·매출유형 등 표의 일부 값이 원본과 다르게 재구성됐습니다. 예: '핵심영업' 행이 '분사영업'으로 바뀐 부분이 있습니다."
+    },
+    {
+      "key": "omni-ui-004",
+      "file": "assets/subpages/reviewed-ai-20261023/omni-ui-004.png",
+      "originalFile": "assets/subpages/verified-screens-20261023/omni-ui-004.png",
+      "pages": [
+        "subpages/product/omniesol.html"
+      ],
+      "outputSize": [
+        1448,
+        1086
+      ],
+      "previewWidth": 1464,
+      "sha256": "77e4302745065b86e1bc236852fc75ab847ae2808c73cf8e5f9e8ae4cdd44253",
+      "knownDifferences": "알파멘션 표기는 복구됐지만 알림 본문과 프로필 인물·중앙 배경이 재구성됐습니다. 원본 사진/UI와 일치하지 않습니다."
+    },
+    {
+      "key": "omni-ui-005",
+      "file": "assets/subpages/reviewed-ai-20261023/omni-ui-005.png",
+      "originalFile": "assets/subpages/verified-screens-20261023/omni-ui-005.png",
+      "pages": [
+        "subpages/product/omniesol.html"
+      ],
+      "outputSize": [
+        1418,
+        1109
+      ],
+      "previewWidth": 1422,
+      "sha256": "22394983a67ce80f880c1f1990a5a2b545f0db47c37080ff72bfbeb19d4ae627",
+      "knownDifferences": "날짜는 복구됐지만 좌측 버튼 'ONEFFICE 바로가기'가 'ONFACE 바로가기'로 변형됐습니다. 파일명에도 원본과 다른 글자가 남았습니다."
+    },
+    {
+      "key": "omni-ui-006",
+      "file": "assets/subpages/reviewed-ai-20261023/omni-ui-006.png",
+      "originalFile": "assets/subpages/verified-screens-20261023/omni-ui-006.png",
+      "pages": [
+        "subpages/product/omniesol.html"
+      ],
+      "outputSize": [
+        1244,
+        1264
+      ],
+      "previewWidth": 1430,
+      "sha256": "63b1500733bd4fe6e913857b772db0dfe720ba65959c99fc7696169d975f24e8",
+      "knownDifferences": "사용자명·알림 숫자는 복구됐지만 문서 제목과 썸네일의 글자가 일부 달라졌습니다. 예: 원본 '포스트 메시지'가 '테스트 메시지'로 재구성됐습니다."
+    },
+    {
+      "key": "omni-ui-007",
+      "file": "assets/subpages/reviewed-ai-20261023/omni-ui-007.png",
+      "originalFile": "assets/subpages/verified-screens-20261023/omni-ui-007.png",
+      "pages": [
+        "subpages/product/omniesol.html"
+      ],
+      "outputSize": [
+        1535,
+        1025
+      ],
+      "previewWidth": 1432,
+      "sha256": "0e68a51827c670578942661c5cff025379b896721d65d9600700b823983d5b84",
+      "knownDifferences": "주소의 건물명 일부가 원본과 다른 글자로 재구성됐습니다. 왼쪽 메뉴·툴바의 아이콘도 원본과 다르게 그려졌습니다."
+    },
+    {
+      "key": "omni-ui-008",
+      "file": "assets/subpages/reviewed-ai-20261023/omni-ui-008.png",
+      "originalFile": "assets/subpages/verified-screens-20261023/omni-ui-008.png",
+      "pages": [
+        "subpages/product/omniesol.html"
+      ],
+      "outputSize": [
+        1535,
+        1025
+      ],
+      "previewWidth": 1432,
+      "sha256": "3cc9311061e43b3a2071fd94bd21b33987bf4e7fbcd60ac6f1eeaccb15db47b7",
+      "knownDifferences": "총계정원장 표기는 복구됐지만 경비그룹 값과 메뉴·사용처 등의 작은 글자가 바뀌었습니다. 원본의 FY개발1Cell 값이 다른 문자열로 재구성됐습니다."
+    },
+    {
+      "key": "omni-ui-009",
+      "file": "assets/subpages/reviewed-ai-20261023/omni-ui-009.png",
+      "originalFile": "assets/subpages/verified-screens-20261023/omni-ui-009.png",
+      "pages": [
+        "subpages/product/omniesol.html"
+      ],
+      "outputSize": [
+        1832,
+        859
+      ],
+      "previewWidth": 1804,
+      "sha256": "90ad757b69e31036740ee5083e0c2e6982c420790832a5066caf5ae58ffa9d73",
+      "knownDifferences": "탭명은 복구됐지만 표 하단 거래처·사업자번호·영업명과 진행상태 값이 원본과 다르게 바뀌었습니다."
+    },
+    {
+      "key": "omni-ui-010",
+      "file": "assets/subpages/reviewed-ai-20261023/omni-ui-010.png",
+      "originalFile": "assets/subpages/verified-screens-20261023/omni-ui-010.png",
+      "pages": [
+        "subpages/product/omniesol.html"
+      ],
+      "outputSize": [
+        1774,
+        887
+      ],
+      "previewWidth": 1852,
+      "sha256": "d920599ab79e891a087c8383c2265d81ea77bf78d59ebf7ca4693c657b652472",
+      "knownDifferences": "배경의 흐림은 유지됐지만 상단 탭·서비스 라벨과 근무시간·달력 등의 글자·숫자가 달라졌습니다."
+    },
+    {
+      "key": "omni-ui-011",
+      "file": "assets/subpages/reviewed-ai-20261023/omni-ui-011.png",
+      "originalFile": "assets/subpages/verified-screens-20261023/omni-ui-011.png",
+      "pages": [
+        "subpages/product/omniesol.html"
+      ],
+      "outputSize": [
+        1536,
+        1024
+      ],
+      "previewWidth": 1434,
+      "sha256": "2b4c1d6cdad35ce4e73722abbf01062fe2968033f8047ad58edd281785f316f1",
+      "knownDifferences": "원본 47.9%가 47.5%로 바뀌었고 '청소(세척)' 등 범례와 게이지 상태 문구가 변형됐습니다."
+    },
+    {
+      "key": "omni-ui-012",
+      "file": "assets/subpages/reviewed-ai-20261023/omni-ui-012.png",
+      "originalFile": "assets/subpages/verified-screens-20261023/omni-ui-012.png",
+      "pages": [
+        "subpages/product/omniesol.html"
+      ],
+      "outputSize": [
+        1537,
+        1023
+      ],
+      "previewWidth": 1430,
+      "sha256": "49ccdcad80452546bb17d0ebde4171d72ab1ebb9ed42c96c2fe129b57dc4ee0b",
+      "knownDifferences": "하단 콘솔 메시지와 경로가 원본과 다르게 재구성됐습니다. 좌측 트리의 폴더명·속성 항목도 달라졌습니다."
+    },
+    {
+      "key": "omni-ui-013",
+      "file": "assets/subpages/reviewed-ai-20261023/omni-ui-013.png",
+      "originalFile": "assets/subpages/verified-screens-20261023/omni-ui-013.png",
+      "pages": [
+        "subpages/product/omniesol.html"
+      ],
+      "outputSize": [
+        1685,
+        933
+      ],
+      "previewWidth": 1578,
+      "sha256": "c90b81e9f46ee55172665bc5aeaa1de202187530ff652735338b1c5e78bb76c1",
+      "knownDifferences": "상단 매출(전사)는 복구됐지만 우측 하단 원형 차트의 연령/경력 분류가 다른 근속기간/연령 범주로 바뀌었습니다."
+    },
+    {
+      "key": "calendar-corrected",
+      "file": "assets/subpages/reviewed-ai-20261023/calendar-corrected.png",
+      "originalFile": "assets/subpages/flat-screens/ui-058-full.png",
+      "pages": [
+        "subpages/product/wehago/cooperation.html"
+      ],
+      "outputSize": [
+        1518,
+        1036
+      ],
+      "previewWidth": 1519,
+      "sha256": "91ec6a36e27a9f756f0965b1b27bb23d14be79da1a16a06ad77c86a54ca27728",
+      "version": "20261023-calendar-text-fix-1",
+      "correction": "좌측 파란 버튼 일정 동록 오탈자를 일정 등록으로 수정",
+      "knownDifferences": "기존 캘린더 날짜 및 작은 글자의 원본 완전 일치는 인증되지 않음."
+    }
+  ],
+  "enabled": true
+}

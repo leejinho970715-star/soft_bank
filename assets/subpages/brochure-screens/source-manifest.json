@@ -1,0 +1,121 @@
+[
+  {
+    "name": "automatic-journals",
+    "sourceDocument": "Amaranth10 제품 소개서.pdf",
+    "sourcePage": 18,
+    "embeddedImageIndex": 9,
+    "nativeSize": [
+      919,
+      598
+    ],
+    "outputSize": [
+      1838,
+      1196
+    ],
+    "nativePixelSha256": "167bf819ff578e8d91806987a3e03b09f2e442f5874ed525ee475504a2315b19",
+    "outputSha256": "6c77eb68609fcc8ac4107538d906433c2e5106bd6b7ca0d6dc37889f62248fe4",
+    "method": "Lossless PDF image extraction; deterministic 2x Lanczos; no learned restoration or text redraw."
+  },
+  {
+    "name": "tax-filing",
+    "sourceDocument": "Amaranth10 제품 소개서.pdf",
+    "sourcePage": 19,
+    "embeddedImageIndex": 3,
+    "nativeSize": [
+      779,
+      507
+    ],
+    "outputSize": [
+      1558,
+      1014
+    ],
+    "nativePixelSha256": "42300b52e7c5f849c0a86b947839c3d6d05c98f7b89924b6238af5e6cd53b99d",
+    "outputSha256": "389bf032a7dce3d3134b3f6f7be3b239eef789e8b48e572e2634132136ade924",
+    "method": "Lossless PDF image extraction; deterministic 2x Lanczos; no learned restoration or text redraw."
+  },
+  {
+    "name": "funds",
+    "sourceDocument": "Amaranth10 제품 소개서.pdf",
+    "sourcePage": 19,
+    "embeddedImageIndex": 2,
+    "nativeSize": [
+      728,
+      474
+    ],
+    "outputSize": [
+      1456,
+      948
+    ],
+    "nativePixelSha256": "a9f57a8129b2c71a669947c1c2d16ceca06cc96634f74fd870d540023d0e4be7",
+    "outputSha256": "4fae5d1058034d0684ddb3a9465dd4368e8f1784777d02248ad29b6235ecfa11",
+    "method": "Lossless PDF image extraction; deterministic 2x Lanczos; no learned restoration or text redraw."
+  },
+  {
+    "name": "annual-leave",
+    "sourceDocument": "Amaranth10 제품 소개서.pdf",
+    "sourcePage": 20,
+    "embeddedImageIndex": 3,
+    "nativeSize": [
+      1097,
+      714
+    ],
+    "outputSize": [
+      2194,
+      1428
+    ],
+    "nativePixelSha256": "ed0382d559a30821fdb4e8492497e601fb5cdcf0575c35f6ccc429e9c1929469",
+    "outputSha256": "944b942dac20a0dcb6aeea64651807759729ee9895f0837d23cb60a564462d6b",
+    "method": "Lossless PDF image extraction; deterministic 2x Lanczos; no learned restoration or text redraw."
+  },
+  {
+    "name": "payroll",
+    "sourceDocument": "Amaranth10 제품 소개서.pdf",
+    "sourcePage": 21,
+    "embeddedImageIndex": 5,
+    "nativeSize": [
+      789,
+      514
+    ],
+    "outputSize": [
+      1578,
+      1028
+    ],
+    "nativePixelSha256": "46c8a65565aaadfb64179605110c1655776d6304bdff123ceb730675ff8c21f7",
+    "outputSha256": "dcbc84ce391f5773574c5fd5707aa930fcebf45861b117df3bd9a63a88d5c3e9",
+    "method": "Lossless PDF image extraction; deterministic 2x Lanczos; no learned restoration or text redraw."
+  },
+  {
+    "name": "domestic-overseas-sales",
+    "sourceDocument": "Amaranth10 제품 소개서.pdf",
+    "sourcePage": 22,
+    "embeddedImageIndex": 1,
+    "nativeSize": [
+      774,
+      477
+    ],
+    "outputSize": [
+      1548,
+      954
+    ],
+    "nativePixelSha256": "f6694f35d27e3b0891108e6376188e18243a941836c53745482b9757a13e3b00",
+    "outputSha256": "85a6c24109a9a16e04a58f1eb757a75c748d878fd7c582b3e285fb3d8870d2d9",
+    "method": "Lossless PDF image extraction; deterministic 2x Lanczos; no learned restoration or text redraw."
+  },
+  {
+    "name": "mps",
+    "sourceDocument": "Amaranth10 제품 소개서.pdf",
+    "sourcePage": 23,
+    "embeddedImageIndex": 3,
+    "nativeSize": [
+      732,
+      452
+    ],
+    "outputSize": [
+      1464,
+      904
+    ],
+    "nativePixelSha256": "68ef99a26753c3893b7475804c5532219efa45e8e7c05f2a28f8e0d7d5895322",
+    "outputSha256": "4854e42809e7b2980cfabfad2a5626677555e1de938c58efd7fe88e42ad0f835",
+    "method": "Lossless PDF image extraction; deterministic 2x Lanczos; no learned restoration or text redraw."
+  }
+]
