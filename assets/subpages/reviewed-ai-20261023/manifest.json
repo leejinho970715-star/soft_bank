@@ -90,12 +90,15 @@
         "subpages/product/nonprofit/intro.html"
       ],
       "outputSize": [
-        1553,
+        1552,
         1013
       ],
       "previewWidth": 789,
-      "sha256": "a309999a1c95d809e690d7e7feb4cb33ce40055fd420676e1f6c2e3b87338946",
-      "knownDifferences": "주요 금액은 유지됐지만 사이드바 KISS 로고가 다른 글자·문양으로 변형됐습니다. 원본 UI 일치 기준을 통과하지 못했습니다."
+      "sha256": "7c57201165cb2018d7200f7c1cd4bd89b93d3ea738425bd334747d32712ce16b",
+      "knownDifferences": "지정한 표기를 수정한 AI 편집본입니다. 그 외 전체 텍스트·숫자·UI가 원본과 완전히 동일하다고 인증된 것은 아닙니다.",
+      "version": "20261023-text-fix-2",
+      "previousKnownDifferences": "주요 금액은 유지됐지만 사이드바 KISS 로고가 다른 글자·문양으로 변형됐습니다. 원본 UI 일치 기준을 통과하지 못했습니다.",
+      "correction": "사이드바 아이콘 KISS 표기 선명화"
     },
     {
       "key": "domestic-overseas-sales",
@@ -150,12 +153,15 @@
         "subpages/product/wehago/smart_A10.html"
       ],
       "outputSize": [
-        1588,
-        991
+        1586,
+        992
       ],
       "previewWidth": 1170,
-      "sha256": "b87f202ee9b0c98344d7a158ca2d7c6a38d6e25ed3a94230cff28adce675fce3",
-      "knownDifferences": "대표자명·회사명·주소·서식명·시간이 바뀌었습니다. 예: 원본 20~21행 시간 14:35가 재생성본 14:26으로 달라졌습니다."
+      "sha256": "463a5134c19c4a58d1d458f038dc3164656d297b212589e4f6f3dc716a7aac0e",
+      "knownDifferences": "지정한 표기를 수정한 AI 편집본입니다. 그 외 전체 텍스트·숫자·UI가 원본과 완전히 동일하다고 인증된 것은 아닙니다.",
+      "version": "20261023-text-fix-2",
+      "previousKnownDifferences": "대표자명·회사명·주소·서식명·시간이 바뀌었습니다. 예: 원본 20~21행 시간 14:35가 재생성본 14:26으로 달라졌습니다.",
+      "correction": "소득자별조정검토표 제목·서식명·날짜 텍스트 선명화 및 첫 행 중복 서식명 수정"
     },
     {
       "key": "wehago-fax",
@@ -242,12 +248,15 @@
         "subpages/product/omniesol.html"
       ],
       "outputSize": [
-        1535,
+        1534,
         1025
       ],
       "previewWidth": 1432,
-      "sha256": "167cd69bae547f6b0797e8efd3a056677df5a4a18092d4891b9688ac7074e782",
-      "knownDifferences": "연도 범례는 수정됐지만 왼쪽 메뉴의 '매출등록'이 '매출동향' 등으로 변형됐고 하단 메뉴도 다른 항목으로 재구성됐습니다."
+      "sha256": "2618ce6eda92a0e81a59a6517196b108500c8d1da70bd772f53959da5b370c4d",
+      "knownDifferences": "지정한 표기를 수정한 AI 편집본입니다. 그 외 전체 텍스트·숫자·UI가 원본과 완전히 동일하다고 인증된 것은 아닙니다.",
+      "version": "20261023-text-fix-2",
+      "previousKnownDifferences": "연도 범례는 수정됐지만 왼쪽 메뉴의 '매출등록'이 '매출동향' 등으로 변형됐고 하단 메뉴도 다른 항목으로 재구성됐습니다.",
+      "correction": "사용자가 지정한 클네임 관리 표기로 수정"
     },
     {
       "key": "omni-ui-002",
@@ -258,11 +267,14 @@
       ],
       "outputSize": [
         1159,
-        1357
+        1358
       ],
       "previewWidth": 1430,
-      "sha256": "c70e5f3f157ee6aa62ebb84f0950f708870867e0b9e762b1e215bdc907efb1e6",
-      "knownDifferences": "상단 연장근무시간 '2시간 30분'이 '24시간 30분'으로 바뀌었습니다. 하단 집계 열 제목도 일부 변형됐습니다."
+      "sha256": "c5006eecccc126dfac61a960aa1cb83c6dd14ea89c4e4154428ed5853a8eea8a",
+      "knownDifferences": "지정한 표기를 수정한 AI 편집본입니다. 그 외 전체 텍스트·숫자·UI가 원본과 완전히 동일하다고 인증된 것은 아닙니다.",
+      "version": "20261023-text-fix-2",
+      "previousKnownDifferences": "상단 연장근무시간 '2시간 30분'이 '24시간 30분'으로 바뀌었습니다. 하단 집계 열 제목도 일부 변형됐습니다.",
+      "correction": "퇴직금 시뮬레이션, 개인출퇴근시간등록현황, 주근태현황 메뉴 표기 수정"
     },
     {
       "key": "omni-ui-003",
@@ -306,8 +318,11 @@
         1109
       ],
       "previewWidth": 1422,
-      "sha256": "22394983a67ce80f880c1f1990a5a2b545f0db47c37080ff72bfbeb19d4ae627",
-      "knownDifferences": "날짜는 복구됐지만 좌측 버튼 'ONEFFICE 바로가기'가 'ONFACE 바로가기'로 변형됐습니다. 파일명에도 원본과 다른 글자가 남았습니다."
+      "sha256": "027cc452655585c43754a0bf26206f34c48395dcd91250c6205f0bd8acdef153",
+      "knownDifferences": "지정한 표기를 수정한 AI 편집본입니다. 그 외 전체 텍스트·숫자·UI가 원본과 완전히 동일하다고 인증된 것은 아닙니다.",
+      "version": "20261023-text-fix-2",
+      "previousKnownDifferences": "날짜는 복구됐지만 좌측 버튼 'ONEFFICE 바로가기'가 'ONFACE 바로가기'로 변형됐습니다. 파일명에도 원본과 다른 글자가 남았습니다.",
+      "correction": "ONEFFICE 바로가기 버튼 표기 수정"
     },
     {
       "key": "omni-ui-006",
