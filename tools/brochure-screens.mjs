@@ -13,7 +13,7 @@ const screens={
  'quality-screens/mps-clear-v1.png':'mps',
  'quality-screens/funds-clear-v1.png':'funds'
 };
-const version='2';
+const version='3';
 const size=file=>fs.readFile(file).then(data=>({width:data.readUInt32BE(16),height:data.readUInt32BE(20)}));
 const sizes={};
 for(const name of Object.values(screens))sizes[name]=await size(`assets/subpages/brochure-screens/${name}.png`);
