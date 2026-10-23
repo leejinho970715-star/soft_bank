@@ -507,37 +507,3 @@ for (const [key, id] of [['privacy', 'privacy-modal'], ['terms', 'terms-modal']]
   panel.textContent = '문서를 불러오는 중입니다.';
   fetch(new URL('renewal/' + key + '.html', document.currentScript?.src || location.href)).then(r => { if (!r.ok) throw new Error('Document unavailable'); return r.text(); }).then(html => { panel.innerHTML = html; }).catch(() => { panel.textContent = '문서를 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.'; });
 }
-
-// Magnify product screens under the cursor (home mockups and subpage product screens) so small UI text stays readable.
-(() => {
-  const selector = '#soft-bank-renewal .sb-home-device-mockup>img, #soft-bank-renewal .sb-content img.sb-flat-screen, #soft-bank-renewal .sb-content img.sb-inline-screen-image';
-  if (!document.querySelector(selector) || !matchMedia('(hover: hover) and (pointer: fine)').matches) return;
-  const zoom = 2.5;
-  // One fixed lens on the body, so it is never clipped by a figure's overflow or shifted by its transforms.
-  const lens = document.createElement('span');
-  lens.className = 'sb-mockup-lens';
-  lens.setAttribute('aria-hidden', 'true');
-  document.body.append(lens);
-  let active = null;
-  const hide = () => { active = null; lens.classList.remove('is-visible'); };
-  const move = event => {
-    const image = event.currentTarget, box = image.getBoundingClientRect();
-    const x = event.clientX - box.left, y = event.clientY - box.top;
-    if (!image.currentSrc || x < 0 || y < 0 || x > box.width || y > box.height) { hide(); return; }
-    const size = lens.offsetWidth;
-    if (active !== image) { active = image; lens.style.backgroundImage = 'url("' + image.currentSrc + '")'; }
-    // Raster screens stop at their native pixels; SVG mockups embed higher-resolution screens than their nominal size.
-    const scale = /\.svg(\?|$)/.test(image.currentSrc) ? zoom : Math.min(zoom, Math.max(1.5, image.naturalWidth / box.width));
-    lens.style.backgroundSize = box.width * scale + 'px ' + box.height * scale + 'px';
-    lens.style.backgroundPosition = (size / 2 - x * scale) + 'px ' + (size / 2 - y * scale) + 'px';
-    lens.style.transform = 'translate(' + (event.clientX - size / 2) + 'px,' + (event.clientY - size / 2) + 'px)';
-    lens.classList.add('is-visible');
-  };
-  document.querySelectorAll(selector).forEach(image => {
-    image.classList.add('sb-magnifiable');
-    image.addEventListener('pointermove', move);
-    image.addEventListener('pointerenter', move);
-    image.addEventListener('pointerleave', hide);
-  });
-  window.addEventListener('scroll', hide, {passive: true});
-})();
