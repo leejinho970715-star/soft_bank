@@ -8,7 +8,7 @@ const native=JSON.parse(await fs.readFile('assets/proposal-native-20261020/manif
 const assets=new Map(native.map(asset=>[path.basename(asset.file,'.png'),asset]));
 const normalize=text=>text.replace(/\s+/g,' ').trim();
 // Product menu names match the English product tabs on the product pages.
-const name=text=>({'위하고':'WEHAGO','아마란스 10':'Amaranth10','Amaranth 10':'Amaranth10','아마란스 10 비영리':'Amaranth10 비영리','아마란스 10(비영리)':'Amaranth10 비영리','Amaranth 10 비영리':'Amaranth10 비영리','Amaranth 10(비영리)':'Amaranth10 비영리'})[normalize(text)];
+const name=text=>({'위하고':'WEHAGO','아마란스 10':'Amaranth 10','Amaranth10':'Amaranth 10','아마란스 10 비영리':'Amaranth 10 비영리','아마란스 10(비영리)':'Amaranth 10 비영리','Amaranth10 비영리':'Amaranth 10 비영리','Amaranth 10(비영리)':'Amaranth 10 비영리'})[normalize(text)];
 const keywordGroups={
  '근태관리':['근태리더기 연동','교대근무','유연근무','모바일출퇴근'],
  'BOM관리':['생산관리','생산계획','공정수불관리','외주관리'],
@@ -63,7 +63,7 @@ function serviceDirectory($,root){
 function applyProducts($,file,root){
  $('.sb-hero-products a').each((i,e)=>{
   const link=$(e),href=link.attr('href')||'';
-  const text=href.includes('/amaranth10/')?'Amaranth10':href.includes('/wehago/')?'WEHAGO':href.includes('/nonprofit/')?'Amaranth10 비영리':null;
+  const text=href.includes('/amaranth10/')?'Amaranth 10':href.includes('/wehago/')?'WEHAGO':href.includes('/nonprofit/')?'Amaranth 10 비영리':null;
   if(text)link.children('span').length?link.children('span').text(text):link.text(text);
  });
  let korean='',english='';
