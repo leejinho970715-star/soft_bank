@@ -652,3 +652,24 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
 #soft-bank-renewal .sb-content .sb-area-tags .tag,.sb-figma-product #soft-bank-renewal .sb-content .sb-feature-keywords li{line-height:1.65!important}
 /* The contact banner follows the hashtag band directly, without a white gap. */
 .sb-page-product-omniesol #soft-bank-renewal .sb-content .sb-omni-hashtags+.sb-contact-banner{margin-top:0!important}
+/* Section gaps brought in line with the other product pages (about 110px desktop, 70px phones). */
+#soft-bank-renewal .sb-content .contWrap.wehago .wehago_01{padding-bottom:0!important}
+#soft-bank-renewal .sb-content .contWrap.wehago .wehago_01>.wehago_slide .swiper-slide{padding-bottom:0!important}
+.sb-page-product-oneai #soft-bank-renewal .alt-section>div{padding:48px 0!important}
+.sb-page-product-pms #soft-bank-renewal .sb-content .sb-pms-feature-chart{margin-bottom:0!important}
+.sb-page-product-pms #soft-bank-renewal .sb-content .pms_ftrs_diagram{padding-top:0!important;padding-bottom:40px!important}
+.sb-page-product-pms #soft-bank-renewal .sb-content .sb-pms-workflow-3d{margin-bottom:0!important}
+.sb-page-product-pms #soft-bank-renewal .sb-content .sb-pms-workflow-3d figcaption>section:last-child{margin-bottom:0!important}
+.sb-page-product-pms #soft-bank-renewal .sb-content .pms_ftrs_diagram+.revers_wrap{padding-top:24px!important}
+.sb-page-product-pms #soft-bank-renewal .sb-content .sb-pms-gw{margin-top:0!important;margin-bottom:0!important}
+@media(min-width:761px){.sb-page-product-pms #soft-bank-renewal .sb-content .sb-pms-workflow-3d figcaption>section{margin-bottom:0!important}}
+@media(max-width:760px){
+ #soft-bank-renewal .sb-content .contWrap.wehago .wehago_02{padding-top:40px!important}
+ .sb-page-product-oneai #soft-bank-renewal .alt-section>div{padding:32px 0!important}
+}
+@media(max-width:760px){
+ .sb-page-product-pms #soft-bank-renewal .sb-content .contWrap.pms>div:not(.pms_ftrs_diagram){padding-top:32px!important;padding-bottom:32px!important}
+ .sb-page-product-pms #soft-bank-renewal .sb-content .sb-pms-feature-chart>.sb-pms-chart-card:last-child{margin-bottom:0!important}
+ .sb-page-product-pms #soft-bank-renewal .sb-content .contWrap.pms>.pms_ftrs_diagram+.revers_wrap{padding-top:16px!important}
+ .sb-page-product-pms #soft-bank-renewal .sb-content .contWrap.pms>.pms_ftrs_diagram{padding-bottom:16px!important}
+}

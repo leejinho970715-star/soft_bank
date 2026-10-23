@@ -49,3 +49,7 @@
 .sb-page-product-ifrs18 #soft-bank-renewal .ifrs-content .ifrs-tags{gap:8px}
 .sb-page-product-ifrs18 #soft-bank-renewal .ifrs-content .ifrs-tags span{padding:7px 13px;font-size:15px;line-height:1.5;background:#1746b4;border-radius:6px;color:#fff;white-space:nowrap}
 .sb-page-product-ifrs18 #soft-bank-renewal .ifrs-content .ifrs-tags span{line-height:1.65}
+/* Process steps flow into core features with the site's usual section gap. */
+.ifrs-content section.ifrs-process{padding-bottom:48px;margin-bottom:0}
+.ifrs-content section.ifrs-features{padding-top:64px}
+@media(max-width:760px){.ifrs-content section.ifrs-process{padding-bottom:24px}.ifrs-content section.ifrs-features{padding-top:48px}}
