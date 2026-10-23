@@ -180,9 +180,10 @@ function applyHome($,root){
   items.forEach(([selector,icon])=>popover.find(selector+' img').attr('src',root+'assets/quick-flat/'+icon+'.svg?v=20261021-1'));
   popover.find('.anonymous img').attr('src',root+'assets/quick-flat/anonymous.svg?v=20261021-1');
   if(!popover.find('.anonymous').length){
-   // Temporary working destination. Replace only this href with the future Google/Naver form URL.
-   popover.append('<a class="right-quick-item anonymous" href="'+root+'subpages/purchase/inquiry.html?source=anonymous-quick-menu"><img src="'+root+'assets/quick-flat/anonymous.svg?v=20261021-1" alt="익명 구매문의"><span class="quick-detail">익명 구매문의</span></a>');
+   popover.append('<a class="right-quick-item anonymous"><img src="'+root+'assets/quick-flat/anonymous.svg?v=20261021-1" alt="익명 구매문의"><span class="quick-detail">익명 구매문의</span></a>');
   }
+  // Anonymous purchase inquiries go to the existing duzon119 inquiry form.
+  popover.find('.anonymous').attr({href:'https://www.duzon119.co.kr/purchase/inquiry.asp',target:'_blank',rel:'noopener noreferrer'});
   $('.quick-fab').attr({'aria-expanded':'true','aria-label':'퀵메뉴 닫기'}).find('b').text('×');
  }
 }
