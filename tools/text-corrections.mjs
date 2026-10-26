@@ -81,7 +81,7 @@ const more={
  'subpages/articles/bizbox__pds__93.html':[[/클릭후 운영체제 맞게/g,'클릭 후 운영체제에 맞게'],[/2\.다운받은파일을/g,'2. 다운받은 파일을'],[/4\.설치완료후/g,'4. 설치 완료 후'],[/로그인후/g,'로그인 후']],
  'renewal/privacy.html':[[/수집 시에(\s+)동의 받은/g,'수집 시에$1동의받은'],[/운영하는데 이용되는/g,'운영하는 데 이용되는']],
  'renewal/terms.html':[
-  [/라 한다\)가/g,'라 한다)이'],[new RegExp('이용자'+W+'와 회사','g'),'이용자와 회사'],[/동의 하는 것으로/g,'동의하는 것으로'],[/소재 지를/g,'소재지를'],
+  [new RegExp('이용자'+W+'와 회사','g'),'이용자와 회사'],[/동의 하는 것으로/g,'동의하는 것으로'],[/소재 지를/g,'소재지를'],
   [new RegExp('더존고객회원'+W+'은','g'),'더존고객회원은'],[/적은후/g,'적은 후'],[/등록 되어 있는/g,'등록되어 있는'],[/지적 재산권에 의해 보호(\s*)$/g,'지적 재산권에 의해 보호됩니다.$1'],
   [new RegExp('서비스로'+W+'의 교체','g'),'서비스로의 교체'],[/고 의\/과실/g,'고의/과실'],[/제8조에 규정한 이용자 의무/g,'제9조에 규정한 이용자 의무'],[/상실 시키기로/g,'상실시키기로'],
   [/부여 합니다/g,'부여합니다'],[/서비 스 이용의사/g,'서비스 이용의사'],[/있습니 다/g,'있습니다'],[/탈퇴시까지로/g,'탈퇴 시까지로'],[/안정성확보에/g,'안전성 확보에'],[/요금정산등/g,'요금정산 등'],
@@ -135,13 +135,26 @@ const privacy=[
  [/▶ 경찰청 사이버범죄수사단 : 1566-0112 \(www\.netan\.go\.kr\)/g,'▶ 경찰청 사이버수사국 : (국번없이) 182 (ecrm.police.go.kr)']
 ];
 
+// 이용약관 (약관 팝업, 회원가입 약관 동의): the terms were written for 더존비즈온's site; they name 아이원소프트뱅크 and its site.
+const termsPages=new Set(['renewal/terms.html','subpages/member/yak.html']);
+const S='\\s+';
+const terms=[
+ [/더존비즈온의 웹서비스 이용약관은/g,'아이원소프트뱅크의 웹서비스 이용약관은'],
+ [/\(주\)더존비즈온\(이하 “회사”라 한다\)(이|가)/g,'아이원소프트뱅크(주)(이하 “회사”라 한다)가'],
+ [new RegExp('서비스제공 웹사이트는'+S+'더존ICT그룹 홈페이지'+S+'\\(www\\.douzone\\.com\\)와'+S+'더존고객센터 홈페이지\\(http://help\\.douzone\\.com\\)를 포함합니다\\.','g'),'서비스제공 웹사이트는 아이원소프트뱅크 홈페이지(www.duzon119.co.kr)를 포함합니다.'],
+ [new RegExp('이용자는'+S+'더존고객센터 홈페이지\\(http://help\\.douzone\\.com\\)에서'+S+'회원가입 후 서비스를 이용하는'+S+'더존고객'+S+'회원과','g'),'이용자는 아이원소프트뱅크 홈페이지(www.duzon119.co.kr)에서 회원가입 후 서비스를 이용하는 회원과'],
+ [/더존고객회원\s*은/g,'회원은'],
+ [/더존비즈온 자체개발 콘텐츠 : 더존비즈온 저작권 소유/g,'아이원소프트뱅크 자체개발 콘텐츠 : 아이원소프트뱅크 저작권 소유'],
+ [/더존비즈온에서 서비스 하는/g,'아이원소프트뱅크에서 서비스하는'],
+ [/더존비즈온 ‘개인정보 보호방침’이/g,'아이원소프트뱅크 ‘개인정보 처리방침’이']
+];
 const fix=(text,rules)=>rules.reduce((value,[pattern,replacement])=>value.replace(pattern,replacement),text);
 async function walk(dir){const files=[];for(const entry of await fs.readdir(dir,{withFileTypes:true})){const file=path.join(dir,entry.name);if(entry.isDirectory())files.push(...await walk(file));else if(file.endsWith('.html'))files.push(file);}return files;}
 
 let changed=0;
 for(const file of ['index.html',...await walk('subpages'),...await walk('renewal')]){
  const normalized=file.replaceAll('\\','/'),rules=[...everywhere,...(pages[normalized]||[])];
- const original=await fs.readFile(file,'utf8'),source=privacyPages.has(normalized)?fix(original,privacy):original;
+ const original=await fs.readFile(file,'utf8'),source=fix(fix(original,privacyPages.has(normalized)?privacy:[]),termsPages.has(normalized)?terms:[]);
  if(source===original&&!rules.some(([pattern])=>{pattern.lastIndex=0;return pattern.test(source);})&&!normalized.endsWith('company/location.html')&&!normalized.endsWith('member/join.html')&&!normalized.endsWith('member/yak.html'))continue;
  const $=load(source);let edits=0;
  const visit=node=>{for(const child of node.children||[]){
@@ -152,6 +165,8 @@ for(const file of ['index.html',...await walk('subpages'),...await walk('renewal
  $('[alt],[title],[aria-label],[placeholder],[data-image-caption],meta[name=description],meta[property="og:title"],meta[property="og:description"]').each((i,e)=>{for(const attr of ['alt','title','aria-label','placeholder','content','data-image-caption']){const value=$(e).attr(attr);if(value==null||(attr==='content'&&e.name!=='meta'))continue;const next=fix(value,rules);if(next!==value){$(e).attr(attr,next);edits++;}}});
  // A closing parenthesis was captured inside a link (government notice 865): keep it as text after the link.
  $('a[href="https://www.mssmiv.com)/"]').each((i,e)=>{const a=$(e);a.attr('href','https://www.mssmiv.com/');a.find('u').text('http://www.mssmiv.com');a.after(')');edits++;});
+ // FAQ 1:1 문의하기: the old /board/bbs_inquiry.asp answers with a server error; use the existing site's 구매상담 page for now.
+ $('a[href="https://www.duzon119.co.kr/board/bbs_inquiry.asp"]').each((i,e)=>{$(e).attr('href','https://www.duzon119.co.kr/purchase/inquiry.asp');edits++;});
  // The third phone box is the last four digits, not the middle ones.
  $('#join-field-8').each((i,e)=>{for(const attr of ['title','aria-label'])if($(e).attr(attr)==='연락처 가운데 자리 입력'){$(e).attr(attr,'연락처 마지막 자리 입력');edits++;}});
  // 오시는 길: list the real contact lines instead of a single 대표전화.
