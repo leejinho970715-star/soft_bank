@@ -167,6 +167,8 @@ for(const file of ['index.html',...await walk('subpages'),...await walk('renewal
  $('a[href="https://www.mssmiv.com)/"]').each((i,e)=>{const a=$(e);a.attr('href','https://www.mssmiv.com/');a.find('u').text('http://www.mssmiv.com');a.after(')');edits++;});
  // FAQ 1:1 문의하기: the old /board/bbs_inquiry.asp answers with a server error; use the existing site's 구매상담 page for now.
  $('a[href="https://www.duzon119.co.kr/board/bbs_inquiry.asp"]').each((i,e)=>{$(e).attr('href','https://www.duzon119.co.kr/purchase/inquiry.asp');edits++;});
+ // 제품/서비스 제안서: the WEHAGO proposal PDF is served from this site (copied from the old board) and downloads under its own name.
+ $('a[href*="downfile=WEHAGO%EC%84%9C%EB%B9%84%EC%8A%A4%EC%A0%9C%EC%95%88%EC%84%9C0%2Epdf"]').each((i,e)=>{const root='../'.repeat(normalized.split('/').length-1);$(e).attr({href:root+'assets/documents/wehago-service-proposal.pdf',download:'WEHAGO 서비스제안서.pdf'}).text('WEHAGO 서비스제안서.pdf');edits++;});
  // The third phone box is the last four digits, not the middle ones.
  $('#join-field-8').each((i,e)=>{for(const attr of ['title','aria-label'])if($(e).attr(attr)==='연락처 가운데 자리 입력'){$(e).attr(attr,'연락처 마지막 자리 입력');edits++;}});
  // 오시는 길: list the real contact lines instead of a single 대표전화.
