@@ -144,7 +144,7 @@ export function applyProductDesign($,page,root){
    const frame=img.closest('.sb-laptop-mockup');if(frame.length)frame.replaceWith(img.toString());
   });
   $('.alt-section>div').each((i,e)=>{const row=$(e);row.children().first().addClass('sb-ai-visual');row.children().last().addClass('sb-ai-copy')});
-  $('#intro').prepend('<img class="sb-ai-brand" src="'+root+'assets/subpages/oneai-hq/brand-visual.png" alt="ONE AI와 업무 서비스 연결">');
+  $('#intro').prepend('<img class="sb-ai-brand" src="'+root+'assets/subpages/oneai-hq/brand-visual.png?v=20261026-2" alt="ONE AI와 업무 서비스 연결" width="768" height="614" loading="lazy">');
   $('.alt-section').first().parent('section').addClass('sb-ai-values');
   $('#downloads>.grid>div').each((i,e)=>{const card=$(e),icon=['chat','tasks','portal','mail'][i];card.addClass('sb-resource-card');card.children().first().empty().addClass('sb-resource-visual').append('<img src="'+root+'assets/subpages/features/'+icon+'.png" alt="" loading="lazy">')});
  }
