@@ -37,6 +37,11 @@ const rewrite=value=>{
  }
  return value;
 };
+// Titles and descriptions follow the site's product-name spelling (Amaranth 10, IFRS 18); keywords keep the search terms as captured.
+// The old site left the last breadcrumb of some product titles empty ("Amaranth 10 > |"); those are filled in.
+const spell=text=>text.replace(/Amaranth10(?![\w%.])/g,'Amaranth 10').replace(/IFRS18(?![\w%.])/g,'IFRS 18');
+const titleFixes={'subpages/product/amaranth10/brand.html':'그룹웨어','subpages/product/amaranth10/overview.html':'회계관리','subpages/product/amaranth10/hr.html':'인사관리','subpages/product/amaranth10/lm.html':'물류관리'};
+const fixTitle=(page,title)=>{title=spell(title);if(page==='subpages/product/pms.html')return title.replace('Amaranth 10 > |','PMS |');return titleFixes[page]?title.replace('Amaranth 10 > |',`Amaranth 10 > ${titleFixes[page]} |`):title;};
 const metaValue=(head,kind,name)=>head.meta.find(([k,n])=>k===kind&&n===name)?.[2];
 const common=captured['index.html'];
 const siteNames=['HandheldFriendly','format-detection','naver-site-verification','google-site-verification','theme-color','apple-mobile-web-app-capable','apple-mobile-web-app-status-bar-style','apple-mobile-web-app-title','referrer','robots'];
@@ -51,9 +56,9 @@ for(const page of ['index.html',...await walk('subpages')]){
  const url=newUrl(page);
  let tags;
  if(head){
-  tags={title:head.title,meta:head.meta.filter(([kind,name])=>name!=='viewport').map(([kind,name,content])=>[kind,name,
-   /^(og|twitter):url$/.test(name)?url:/^(og|twitter):image$/.test(name)?rewrite(content):content]),
-   jsonld:head.jsonld.map(text=>{try{return JSON.stringify(rewrite(JSON.parse(text)));}catch{return null;}}).filter(Boolean)};
+  tags={title:fixTitle(page,head.title),meta:head.meta.filter(([kind,name])=>name!=='viewport').map(([kind,name,content])=>[kind,name,
+   /^(og|twitter):url$/.test(name)?url:/^(og|twitter):image$/.test(name)?rewrite(content):name==='keywords'?content:spell(content)]),
+   jsonld:head.jsonld.map(text=>{try{return spell(JSON.stringify(rewrite(JSON.parse(text)))).replace(/업로드 할 수/g,'업로드할 수');}catch{return null;}}).filter(Boolean)};
  }else{
   // Pages new to the renewal (IFRS 18) keep their own title and description, with the site-wide tags around them.
   const title=$('title').text(),description=$('meta[name=description]').attr('content')||metaValue(common,'name','description');

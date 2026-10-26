@@ -6,6 +6,7 @@ import {load} from 'cheerio';
 // Runs on visible text and accessible labels only, so URLs and file names stay as they are.
 // Every rule must be safe to run again on already corrected pages.
 const everywhere=[
+ [/검색어를 입력 하세요/g,'검색어를 입력하세요'],
  // Product names use the spaced spelling; file names such as "Amaranth10_..." are left alone.
  [/Amaranth10(?![\w%.])/g,'Amaranth 10'],
  [/K-IFRS18 대응 가이드/g,'K-IFRS 제1118호 대응 가이드'],
@@ -52,6 +53,44 @@ const shared={
 };
 pages['subpages/product/nonprofit/intro.html'].push(...shared.groupware);
 for(const [page,rules] of Object.entries(pages))if(typeof rules==='string')pages[page]=shared[rules];
+// Second proofreading pass (2026-10-26).
+const W='\\s+';
+const more={
+ 'subpages/product/amaranth10/brand.html':[[/사용중인 모든 화면/g,'사용 중인 모든 화면']],
+ 'subpages/product/pms.html':[[/핵심 지표를 시각적 확인/g,'핵심 지표를 시각적으로 확인'],[/확장가능한 기능/g,'확장 가능한 기능']],
+ 'subpages/product/wehago/cooperation.html':[[/팀간 캘린더/g,'팀 간 캘린더'],[/참조중인 업무/g,'참조 중인 업무'],[/직원간 지식/g,'직원 간 지식'],[/주고 받을 수/g,'주고받을 수'],[/원격접속 할 PC/g,'원격접속할 PC'],[/제한없이/g,'제한 없이']],
+ 'subpages/product/wehago/extraservice.html':[[/우리회사/g,'우리 회사'],[/도 한번에/g,'도 한 번에']],
+ 'subpages/product/wehago/linkedservice.html':[[/우리회사/g,'우리 회사'],[/확인하고 바로처리/g,'확인하고 바로 처리'],[/절차없는/g,'절차 없는']],
+ 'subpages/company/headquarters.html':[[/\[우24465\] 강원도 춘천시/g,'[우24465] 강원특별자치도 춘천시']],
+ 'subpages/customer/faq.html':[[/업로드 할 수/g,'업로드할 수']],
+ 'subpages/member/join.html':[[/만들어 주세요, 첫글자는/g,'만들어 주세요. 첫 글자는'],[/첫번째 자리/g,'첫 번째 자리']],
+ 'subpages/member/yak.html':[[/만들어 주세요, 첫글자는/g,'만들어 주세요. 첫 글자는'],[/첫번째 자리/g,'첫 번째 자리']],
+ 'subpages/amaranth10/notice.html':[[/계정과목[ \u00a0]별([ \u00a0])분개/g,'계정과목별$1분개'],[/분개[ \u00a0]별([ \u00a0])증빙/g,'분개별$1증빙']],
+ 'subpages/articles/amaranth10__notice__541.html':[[/계정과목[ \u00a0]별([ \u00a0])분개/g,'계정과목별$1분개']],
+ 'subpages/articles/amaranth10__notice__539.html':[[/분개[ \u00a0]별([ \u00a0])증빙/g,'분개별$1증빙']],
+ 'subpages/articles/government__promotion__5498.html':[[/컨텍센터/g,'컨택센터']],
+ 'subpages/articles/government__promotion__5204.html':[[/아마란스10/g,'아마란스 10'],[/\(회계,인사,예산\)/g,'(회계, 인사, 예산)']],
+ 'subpages/articles/government__promotion__5201.html':[[/더존프로모션게시글입니다/g,'더존프로모션 게시글입니다']],
+ 'subpages/articles/government__notice__865.html':[[/접수 메뉴얼/g,'접수 매뉴얼']],
+ 'subpages/articles/government__notice__4207.html':[[/2026년 3월 18\(수\)/g,'2026년 3월 18일(수)'],[/비즈오케이\(biz\.incheon\.go\.kr\)을/g,'비즈오케이(biz.incheon.go.kr)를']],
+ 'subpages/articles/government__notice__4304.html':[[/더존 아이원소프트뱅크 입니다/g,'더존 아이원소프트뱅크입니다'],[/별도 신청시/g,'별도 신청 시']],
+ 'subpages/articles/customer__notice__2820.html':[[/Window OS와/g,'Windows OS와'],[/OS 구분없이/g,'OS 구분 없이']],
+ 'subpages/articles/customer__notice__4226.html':[[/"douzone\.com"도메인/g,'"douzone.com" 도메인']],
+ 'subpages/articles/customer__notice__4519.html':[[/스팸 메일을 클릭으로 인해/g,'스팸 메일 클릭으로 인해']],
+ 'subpages/articles/customer__notice__5502.html':[[/오후 18시/g,'오후 6시']],
+ 'subpages/articles/bizbox__pds__93.html':[[/클릭후 운영체제 맞게/g,'클릭 후 운영체제에 맞게'],[/2\.다운받은파일을/g,'2. 다운받은 파일을'],[/4\.설치완료후/g,'4. 설치 완료 후'],[/로그인후/g,'로그인 후']],
+ 'renewal/privacy.html':[[/수집 시에(\s+)동의 받은/g,'수집 시에$1동의받은'],[/운영하는데 이용되는/g,'운영하는 데 이용되는']],
+ 'renewal/terms.html':[
+  [/라 한다\)가/g,'라 한다)이'],[new RegExp('이용자'+W+'와 회사','g'),'이용자와 회사'],[/동의 하는 것으로/g,'동의하는 것으로'],[/소재 지를/g,'소재지를'],
+  [new RegExp('더존고객회원'+W+'은','g'),'더존고객회원은'],[/적은후/g,'적은 후'],[/등록 되어 있는/g,'등록되어 있는'],[/지적 재산권에 의해 보호(\s*)$/g,'지적 재산권에 의해 보호됩니다.$1'],
+  [new RegExp('서비스로'+W+'의 교체','g'),'서비스로의 교체'],[/고 의\/과실/g,'고의/과실'],[/제8조에 규정한 이용자 의무/g,'제9조에 규정한 이용자 의무'],[/상실 시키기로/g,'상실시키기로'],
+  [/부여 합니다/g,'부여합니다'],[/서비 스 이용의사/g,'서비스 이용의사'],[/있습니 다/g,'있습니다'],[/탈퇴시까지로/g,'탈퇴 시까지로'],[/안정성확보에/g,'안전성 확보에'],[/요금정산등/g,'요금정산 등'],
+  [/기간동안/g,'기간 동안'],[/신용 정보집중기관/g,'신용정보집중기관'],[/4\.회사는 다음 각호에/g,'4. 회사는 다음 각 호에'],[/해서는 안됩니다/g,'해서는 안 됩니다'],[/하여서는 안됩니다/g,'하여서는 안 됩니다'],
+  [/게시 하거나/g,'게시하거나'],[/제공 받는 것에/g,'제공받는 것에'],[/제 3자의/g,'제3자의'],[/사전 통지없이/g,'사전 통지 없이'],[/제 한, 정지/g,'제한, 정지'],[/지지 아니 합니다/g,'지지 아니합니다']
+ ]
+};
+for(const [page,rules] of Object.entries(more))pages[page]=[...(pages[page]||[]),...rules];
+
 
 // 개인정보처리방침 (약관 팝업, 회원가입, 구매상담, 제휴문의): fix the errors carried over from the original policy text.
 // Applied to the HTML source because some sentences span inline tags.
@@ -110,7 +149,9 @@ for(const file of ['index.html',...await walk('subpages'),...await walk('renewal
   else if(child.type==='tag'&&!['script','style'].includes(child.name))visit(child);
  }};
  visit($.root()[0]);
- $('[alt],[title],[aria-label],[data-image-caption],meta[name=description],meta[property="og:title"],meta[property="og:description"]').each((i,e)=>{for(const attr of ['alt','title','aria-label','content','data-image-caption']){const value=$(e).attr(attr);if(value==null||(attr==='content'&&e.name!=='meta'))continue;const next=fix(value,rules);if(next!==value){$(e).attr(attr,next);edits++;}}});
+ $('[alt],[title],[aria-label],[placeholder],[data-image-caption],meta[name=description],meta[property="og:title"],meta[property="og:description"]').each((i,e)=>{for(const attr of ['alt','title','aria-label','placeholder','content','data-image-caption']){const value=$(e).attr(attr);if(value==null||(attr==='content'&&e.name!=='meta'))continue;const next=fix(value,rules);if(next!==value){$(e).attr(attr,next);edits++;}}});
+ // A closing parenthesis was captured inside a link (government notice 865): keep it as text after the link.
+ $('a[href="https://www.mssmiv.com)/"]').each((i,e)=>{const a=$(e);a.attr('href','https://www.mssmiv.com/');a.find('u').text('http://www.mssmiv.com');a.after(')');edits++;});
  // The third phone box is the last four digits, not the middle ones.
  $('#join-field-8').each((i,e)=>{for(const attr of ['title','aria-label'])if($(e).attr(attr)==='연락처 가운데 자리 입력'){$(e).attr(attr,'연락처 마지막 자리 입력');edits++;}});
  // 오시는 길: list the real contact lines instead of a single 대표전화.
