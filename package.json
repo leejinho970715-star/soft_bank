@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "node tools/build-subpages.mjs && node tools/build-ifrs18.mjs && node tools/build-board-details.mjs && node tools/build-news.mjs && node tools/same-tab-links.mjs && node tools/connect-axdx-checklist.mjs && node tools/sync-footer-brand.mjs && node tools/apply-point-colors.mjs && node tools/build-flat-service-icons.mjs && node tools/build-home-device-mockups.mjs && node tools/apply-october-revisions.mjs && node tools/text-corrections.mjs && node tools/brochure-screens.mjs && node tools/verified-product-screens.mjs && node tools/apply-reviewed-screen-variants.mjs && node tools/apply-seo-meta.mjs && node tools/cta-arrows.mjs && node tools/build-vercel.mjs",
+    "build": "node tools/build-subpages.mjs && node tools/build-ifrs18.mjs && node tools/build-board-details.mjs && node tools/build-news.mjs && node tools/same-tab-links.mjs && node tools/connect-axdx-checklist.mjs && node tools/sync-footer-brand.mjs && node tools/apply-point-colors.mjs && node tools/build-flat-service-icons.mjs && node tools/build-home-device-mockups.mjs && node tools/apply-october-revisions.mjs && node tools/text-corrections.mjs && node tools/brochure-screens.mjs && node tools/verified-product-screens.mjs && node tools/apply-reviewed-screen-variants.mjs && node tools/user-supplied-screens.mjs && node tools/apply-seo-meta.mjs && node tools/cta-arrows.mjs && node tools/build-vercel.mjs",
     "dev": "node tools/serve.mjs"
   },
   "devDependencies": {
