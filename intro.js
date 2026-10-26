@@ -5,10 +5,10 @@
  const storageKey='sb-ifrs18-notice-20261009-hidden';
  let hidden=false;try{hidden=localStorage.getItem(storageKey)===today();}catch{}
  if(hidden)return;
- const notice=document.createElement('dialog');notice.className='sb-home-notice';notice.setAttribute('aria-label','Amaranth 10 IFRS18 서비스 안내');
- const visual=document.createElement('a');visual.className='sb-notice-visual';visual.href='subpages/product/ifrs18.html';visual.setAttribute('aria-label','Amaranth 10 IFRS18 자세히 보기');
+ const notice=document.createElement('dialog');notice.className='sb-home-notice';notice.setAttribute('aria-label','Amaranth 10 IFRS 18 서비스 안내');
+ const visual=document.createElement('a');visual.className='sb-notice-visual';visual.href='subpages/product/ifrs18.html';visual.setAttribute('aria-label','Amaranth 10 IFRS 18 자세히 보기');
  const img=document.createElement('img');img.src='assets/subpages/ifrs18/home-modal-banner-20261012.png';img.width=1254;img.height=1254;
- img.alt='Amaranth 10. IFRS18 전환, 지금 준비하세요. 기존 전표는 그대로, 재무제표 전환은 간편하게. 재무제표 양식설정 · 계정별 범주설정 · 현금흐름표. 자세히 보기.';
+ img.alt='Amaranth 10. IFRS 18 전환, 지금 준비하세요. 기존 전표는 그대로, 재무제표 전환은 간편하게. 재무제표 양식설정 · 계정별 범주설정 · 현금흐름표. 자세히 보기.';
  visual.append(img);
  const actions=document.createElement('div');actions.className='sb-notice-actions';
  const hide=document.createElement('button');hide.type='button';hide.textContent='오늘 하루 동안 열지 않기';

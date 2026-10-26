@@ -29,7 +29,7 @@ for(const file of ['index.html',...await walk('subpages'),...await walk('renewal
  });
  html=html.replace(/<picture\b[^>]*>[\s\S]*?<\/picture>/g,picture=>picture.includes('assets/point-color/')?picture.replace(/<source\b[^>]*>/g,''):picture);
  html=html.replace(/products-figma\.css\?v=[^"\s]+/g,'products-figma.css?v=20261012-3');
- html=html.replace(/products-figma\.js\?v=[^"\s]+/g,'products-figma.js?v=20261012-2');
+ html=html.replace(/products-figma\.js\?v=[^"\s]+/g,'products-figma.js?v=20261026-1');
  if(source!==html){await fs.writeFile(file,html);updated++;}
 }
 const sprite=map.get('assets/support-assets.png');

@@ -242,5 +242,5 @@ export function applyProductDesign($,page,root){
  applyNativeProductScreens($,page,root);
  applyProductScreenQuality($,page,root);
  const css=$('<link rel="stylesheet">').attr('href',root+'renewal/products-figma.css?v=20261012-3');$('head').append(css);
- $('head').append($('<script defer></script>').attr('src',root+'renewal/products-figma.js?v=20261012-2'));
+ $('head').append($('<script defer></script>').attr('src',root+'renewal/products-figma.js?v=20261026-1'));
 }

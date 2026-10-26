@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded',()=>{
    if(!link)target.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open(img,target);}});
   });
   zoomImages.forEach(img=>{
-   const button=document.createElement('button');button.type='button';button.className='sb-screen-view';button.textContent='화면 크게보기';button.setAttribute('aria-haspopup','dialog');button.setAttribute('aria-label',(img.alt||'제품 이미지')+' 화면 크게보기');
+   const button=document.createElement('button');button.type='button';button.className='sb-screen-view';button.textContent='화면 크게보기';button.setAttribute('aria-haspopup','dialog');button.setAttribute('aria-label',(img.alt||'제품 이미지').replace(/\s*화면$/,'')+' 화면 크게보기');
    const gallery=img.closest('.sb-inline-screen-gallery');
    if(gallery){button.textContent='전체 화면 크게보기';button.setAttribute('aria-label',gallery.getAttribute('aria-label')+' 전체 화면 크게보기');}
    button.addEventListener('click',()=>open(img,button));
