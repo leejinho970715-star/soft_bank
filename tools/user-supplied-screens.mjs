@@ -5,7 +5,8 @@ import {load} from 'cheerio';
 // Each entry: page, the current image (matched by the end of its src), the supplied file and its size.
 const swaps=[
  {page:'subpages/product/oneai.html',match:'regenerated/ui-089.png',file:'oneai-usability.png',width:768,height:614},
- {page:'subpages/product/wehago/smart_A10.html',match:'quality-screens/wehago-flexible-work-restored-v3.png',file:'wehago-flexible-work.webp',width:1448,height:1086}
+ {page:'subpages/product/wehago/smart_A10.html',match:'quality-screens/wehago-flexible-work-restored-v3.png',file:'wehago-flexible-work.webp',width:1448,height:1086},
+ {page:'subpages/product/nonprofit/intro.html',match:'flat-screens/ui-087-full.png',file:'nonprofit-related-documents.png',width:1536,height:1024}
 ];
 const version='20261027-1';
 let changed=0;
