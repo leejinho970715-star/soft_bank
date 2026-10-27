@@ -208,6 +208,9 @@ for(const file of ['index.html',...await walk('subpages'),...await walk('renewal
  if(normalized==='index.html')applyHome($,root);
  $('link[href*="styles.css"]').each((i,e)=>$(e).attr('href',($(e).attr('href').split('?')[0])+'?v='+version));
  $('link[href*="products-figma.css"]').each((i,e)=>$(e).attr('href',($(e).attr('href').split('?')[0])+'?v='+productVersion));
+ if($('body').hasClass('sb-page-product-omniesol')){
+  $('script[src*="products-figma.js"],script[src*="subpage-motion.js"]').each((i,e)=>$(e).attr('src',$(e).attr('src').split('?')[0]+'?v=20261027-1'));
+ }
  $('script[src]').each((i,e)=>{const script=$(e),src=script.attr('src');if(/(?:^|\/)app\.js(?:\?|$)/.test(src))script.attr('src',src.split('?')[0]+'?v='+version);});
  const html=normalized.includes('subpages/product/')?$.html().replace(/[\t ]+$/gm,''):$.html();if(source!==html){await writePage(file,html);changed++;}
 }

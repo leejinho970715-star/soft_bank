@@ -62,6 +62,19 @@ document.addEventListener('DOMContentLoaded', () => {
       if (disposed || frame) return;
       frame = requestAnimationFrame(() => {frame = 0; scan(); ScrollTrigger.refresh();});
     };
+    // Same-page product tabs need the title entrance again, including return visits.
+    const replayTabTitles = event => {
+      const panel = event.detail?.panel;
+      if (!panel || panel.hidden) return;
+      const titles = [document.querySelector('.sb-content .sb-product-heading'), panel.querySelector('h2,h3')].filter(Boolean);
+      titles.forEach(el => {
+        initialized.add(el);
+        triggers.filter(trigger => trigger.trigger === el).forEach(trigger => trigger.kill());
+        gsap.killTweensOf(el);
+        tweens.push(gsap.fromTo(el, {y: distance, opacity: 0}, {y: 0, opacity: 1, duration: context.conditions.mobile ? .65 : .9, ease: 'power2.out', clearProps: 'transform,opacity'}));
+      });
+    };
+    document.addEventListener('sb:product-tab-change', replayTabTitles);
     scan();
     // Tab switches and FAQ expansion can change the document height.
     const observer = new MutationObserver(refresh);
@@ -74,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
       disposed = true;
       cancelAnimationFrame(frame);
       observer.disconnect();
+      document.removeEventListener('sb:product-tab-change', replayTabTitles);
       document.removeEventListener('toggle', refresh, true);
       document.removeEventListener('load', refresh, true);
       window.removeEventListener('pageshow', refresh);
