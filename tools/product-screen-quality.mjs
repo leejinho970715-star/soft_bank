@@ -33,6 +33,9 @@ export function applyProductScreenQuality($,page,root){
   if(asset.generationDate==='2026-10-09')figure.addClass('sb-clarity-restored');
   if(!figure.hasClass('sb-native-screen-pair'))figure.attr('style',`--sb-screen-ratio:${(asset.width/asset.height).toFixed(6)};--sb-preview-ratio:${(asset.width/asset.height).toFixed(6)};--sb-preview-height:516px;--sb-preview-padding:0px`);
   if(asset.originalRestored)figure.attr('style',figure.attr('style')+`;--sb-native-width:${asset.width}px`).removeClass('sb-clarity-restored');
+  // Hide the source capture's 1px perimeter without changing any source pixels.
+  // The src selector also covers the separate image created by the zoom dialog.
+  if(asset.originalRestored&&asset.id==='source-081'&&!$('#sb-original-budget-borderless').length)$('head').append('<style id="sb-original-budget-borderless">.sb-figma-product img[src*="/native-screens/budget.png"]{border:0!important;box-shadow:none!important;clip-path:inset(1px)}</style>');
   if(asset.inlinePanels){
    figure.addClass('sb-inline-screen-gallery').attr({'data-inline-gallery':asset.clarityReviewId,'aria-label':img.attr('alt')||'제품 화면'});
    const tabs=$('<div class="sb-inline-screen-tabs" role="tablist" aria-label="제품 화면 선택"></div>');
