@@ -29,9 +29,10 @@ export function applyProductScreenQuality($,page,root){
    .removeAttr('style data-screen-crop data-screen-size').removeClass('sb-screen-pixels sb-frontal-screen');
   link.attr('href',root+asset.file);
   if(asset.alt){img.attr('alt',asset.alt);link.attr('aria-label',asset.alt+' 크게 보기');}
-  figure.attr({'data-screen-content':'complete','data-quality-screen':'enhanced'});
+  figure.attr({'data-screen-content':'complete','data-quality-screen':asset.originalRestored?'verified-native':'enhanced'});
   if(asset.generationDate==='2026-10-09')figure.addClass('sb-clarity-restored');
   if(!figure.hasClass('sb-native-screen-pair'))figure.attr('style',`--sb-screen-ratio:${(asset.width/asset.height).toFixed(6)};--sb-preview-ratio:${(asset.width/asset.height).toFixed(6)};--sb-preview-height:516px;--sb-preview-padding:0px`);
+  if(asset.originalRestored)figure.attr('style',figure.attr('style')+`;--sb-native-width:${asset.width}px`).removeClass('sb-clarity-restored');
   if(asset.inlinePanels){
    figure.addClass('sb-inline-screen-gallery').attr({'data-inline-gallery':asset.clarityReviewId,'aria-label':img.attr('alt')||'제품 화면'});
    const tabs=$('<div class="sb-inline-screen-tabs" role="tablist" aria-label="제품 화면 선택"></div>');
