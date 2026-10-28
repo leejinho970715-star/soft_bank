@@ -548,3 +548,25 @@ for (const [key, id] of [['privacy', 'privacy-modal'], ['terms', 'terms-modal']]
   addEventListener('resize', fit, {passive: true});
   document.fonts?.ready.then(fit);
 })();
+
+// Product page titles stay on one line: a title wider than the hero shrinks its font to fit
+// (down to 20px) instead of wrapping.
+(() => {
+  const titles = [...document.querySelectorAll('.sb-product #soft-bank-renewal .sb-hero h1')];
+  if (!titles.length) return;
+  const fitTitle = title => {
+    title.style.removeProperty('font-size');
+    title.style.removeProperty('white-space');
+    const room = title.clientWidth, needed = title.scrollWidth;
+    if (!room || needed <= room) return;
+    const size = Math.floor(parseFloat(getComputedStyle(title).fontSize) * room / needed * 10) / 10;
+    title.style.setProperty('font-size', Math.max(20, size) + 'px', 'important');
+    // Too long even at 20px: let it wrap rather than run off the screen.
+    if (size < 20) title.style.setProperty('white-space', 'normal', 'important');
+  };
+  const fit = () => titles.forEach(fitTitle);
+  fit();
+  addEventListener('resize', fit, {passive: true});
+  addEventListener('load', fit);
+  document.fonts?.ready.then(fit);
+})();
