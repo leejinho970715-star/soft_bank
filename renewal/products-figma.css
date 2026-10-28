@@ -523,6 +523,8 @@ body.sb-image-open{overflow:hidden}.sb-image-trigger{cursor:zoom-in}.sb-image-tr
 .sb-figma-product #soft-bank-renewal .sb-content img.sb-flat-screen{display:block;width:100%!important;height:auto!important;max-height:none!important;object-fit:contain;margin:0!important;border:0!important;border-radius:0!important;filter:none;transform:none!important;animation:none!important}
 .sb-screen-window{position:relative;display:block;width:100%;overflow:hidden;background:#fff;isolation:isolate}
 .sb-screen-window img.sb-screen-pixels{position:absolute!important;display:block;max-width:none!important;max-height:none!important;object-fit:fill!important;transform:none!important;margin:0!important;border:0!important;border-radius:0!important}
+/* Phones cap product images at 100% wide; a cropped screen keeps its own size and offset inside its window. */
+.sb-v2.sb-product .sb-content .sb-screen-window img.sb-screen-pixels{max-width:none!important;max-height:none!important}
 .sb-image-dialog>img[hidden],.sb-image-dialog>.sb-image-crop[hidden]{display:none!important}
 .sb-image-crop{width:min(calc(96vw - 36px),calc((94dvh - 110px) * var(--sb-crop-ratio)));margin:auto}
 @media(max-width:760px){.sb-figma-product #soft-bank-renewal .sb-zigzag-feature .sb-feature-visual .sb-unframed-screen{--sb-preview-height:408px;--sb-preview-padding:0px;width:100%}}

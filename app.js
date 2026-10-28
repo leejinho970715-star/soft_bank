@@ -109,7 +109,9 @@
   const quickToggle = $('.quick-toggle');
   const quickFab = $('.quick-fab');
   const quickPopover = $('.quick-popover');
-  let quickOpen = true;
+  // Both quick menus start open, except on phones where they would cover the page; their toggles open them.
+  const quickStartsOpen = !matchMedia('(max-width: 760px)').matches;
+  let quickOpen = quickStartsOpen;
   const setQuickPopover = (open) => {
     quickPopover?.classList.toggle('open', open);
     quickPopover?.setAttribute('aria-hidden', String(!open));
@@ -119,7 +121,7 @@
     const sign = quickFab?.querySelector('b');
     if (sign) sign.textContent = open ? '×' : '+';
   };
-  setQuickPopover(true);
+  setQuickPopover(quickStartsOpen);
 
   const setQuick = (open) => {
     quickOpen = open;
@@ -132,7 +134,7 @@
     }
     if (quick) quick.querySelector('.quick-menu')?.toggleAttribute('inert', !open);
   };
-  setQuick(true);
+  setQuick(quickStartsOpen);
 
   const cardnewsLink = quick && [...quick.querySelectorAll('a')].find(a => a.textContent.includes('카드뉴스'));
   if (cardnewsLink) {

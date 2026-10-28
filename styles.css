@@ -384,3 +384,11 @@ html body #soft-bank-renewal .view_file a::before{content:'';flex:none;width:16p
 html body #soft-bank-renewal .view_file a:hover{background:#1f4fb8}
 html body #soft-bank-renewal .view_file a:focus-visible{outline:3px solid #90b8ff;outline-offset:3px}
 html body.sb-product #soft-bank-renewal .sb-hero h1{max-width:100%!important;white-space:nowrap}
+#soft-bank-renewal{word-break:keep-all;overflow-wrap:break-word}
+#soft-bank-renewal #faqTbody td:nth-child(2){white-space:nowrap}
+@media (max-width:760px){:is(.sb-page-purchase-seminar,.sb-page-purchase-service) #soft-bank-renewal .sb-content .sb-gallery-four .thumb{aspect-ratio:auto}:is(.sb-page-purchase-seminar,.sb-page-purchase-service) #soft-bank-renewal .sb-content .sb-gallery-four .thumb img{height:auto;object-fit:contain}}
+html body #soft-bank-renewal .site-header .gnb-erp>.gnb-link,html body #soft-bank-renewal footer>nav .footer-erp{color:var(--deep);font-weight:700}
+/* Seven header menus on narrow desktops: smaller menu text and gaps so the menu and buttons share one row. */
+html body .site-header .header-actions .pill{white-space:nowrap}
+@media (min-width:1101px) and (max-width:1199px){html body .site-header .gnb{gap:10px!important}html body .site-header .gnb>.gnb-item>.gnb-link,html body .site-header .gnb>.gnb-item>a{font-size:14px!important}html body .site-header .brand{width:226px!important}html body .site-header .brand img:first-child{width:96px!important}html body .site-header .brand img:last-child{width:130px!important}}
+@media (min-width:1200px) and (max-width:1365px){html body .site-header .gnb{gap:14px!important}html body .site-header .gnb>.gnb-item>.gnb-link,html body .site-header .gnb>.gnb-item>a{font-size:15px!important}}
