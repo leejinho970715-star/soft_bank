@@ -8,9 +8,10 @@ const swaps=[
  {page:'subpages/product/wehago/smart_A10.html',match:'quality-screens/wehago-flexible-work-restored-v3.png',file:'wehago-flexible-work.webp',width:1448,height:1086},
  {page:'subpages/product/nonprofit/intro.html',match:'flat-screens/ui-087-full.png',file:'nonprofit-related-documents.png',width:1536,height:1024},
  {page:'subpages/product/amaranth10/overview.html',match:'quality-screens/financial-services-restored-v2.png',file:'amaranth-financial-services.webp',width:1553,height:974},
- {page:'subpages/product/amaranth10/overview.html',match:'native-screens/budget.png',file:'amaranth-budget.webp',width:1586,height:992}
+ {page:'subpages/product/amaranth10/overview.html',match:'native-screens/budget.png',file:'amaranth-budget.webp',width:1586,height:992},
+ {page:'subpages/product/nonprofit/intro.html',match:'native-screens/budget.png',file:'amaranth-budget.webp',width:1586,height:992}
 ];
-const version='20261028-4';
+const version='20261028-6';
 let changed=0;
 for(const {page,match,file,width,height} of swaps){
  const source=await fs.readFile(page,'utf8'),$=load(source);
