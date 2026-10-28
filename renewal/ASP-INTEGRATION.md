@@ -1,5 +1,7 @@
 # Classic ASP 적용
 
+> 리뉴얼 UI 전체를 ASP 사이트에 적용하는 패키지와 순서는 `ASP-DEPLOY.md`(`npm run build:asp`)를 봅니다.
+
 이 패키지는 공개 페이지의 본문을 보존한 정적 디자인 미리보기입니다. `subpages/`의 HTML을 ASP 파일에 통째로 덮어쓰지 마세요. 로그인, 등록, 게시판 검색·페이지 이동, 첨부파일, 서버 검증은 원본 ASP에서 실행해야 합니다.
 
 1. 기존 CSS 뒤에 `/renewal/skin.css`를 로드합니다. body에 `sb-renewal` 클래스를 추가합니다. 기존 클래스와 `data-pgCode`는 유지합니다.
