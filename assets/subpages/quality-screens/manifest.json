@@ -610,9 +610,9 @@
     },
     "assets/subpages/native-screens/budget.png": {
       "id": "source-081",
-      "file": "assets/subpages/native-screens/budget-source-original.png",
-      "width": 700,
-      "height": 459,
+      "file": "assets/subpages/native-screens/budget.png",
+      "width": 660,
+      "height": 415,
       "sourceUrl": "https://www.idouzone.com/images/sub/solu-img29.png",
       "sourcePageUrl": "https://www.idouzone.com/product/pservice02_4.php",
       "pdfPage": null,
@@ -624,10 +624,16 @@
       "transparentPadding": 0,
       "scale": 1,
       "sharpen": null,
-      "sha256": "dfc11e7b9848d410ec5f487fe9ddb2106fe84d9c174d66244b72ee4287d99b72",
-      "processing": "Unmodified original source PNG. No AI generation, cropping, sharpening or upscaling.",
+      "sha256": "9bfff699cb2b8779936ad4f915f5269a8396da5a5c1c2536f9be65d5f54b6ff7",
+      "processing": "Original source pixels with exterior frame cropped only. RGB and alpha match original source crop exactly; no AI generation, sharpening, or upscaling.",
       "alt": "Amaranth 10 예산관리 제품 화면",
-      "originalRestored": true
+      "originalRestored": true,
+      "crop": [
+        20,
+        22,
+        680,
+        437
+      ]
     },
     "assets/subpages/native-screens/hr.png": {
       "id": "source-082",
