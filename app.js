@@ -314,8 +314,14 @@
     const newsTabs = $$('.news-tabs button');
     newsTabs.forEach((button) => {
       button.addEventListener('click', () => {
+        if (button.classList.contains('active')) return;
         newsTabs.forEach((tab) => tab.classList.toggle('active', tab === button));
         renderNews(button.dataset.category || 'notice');
+        // The new category's cards fade in so the switch is noticeable.
+        const slider = $('.news-slider');
+        if (slider && window.gsap && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          gsap.fromTo(slider, { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: 'power2.out', clearProps: 'transform,opacity', overwrite: true });
+        }
       });
     });
 

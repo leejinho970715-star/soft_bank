@@ -62,20 +62,84 @@ document.addEventListener('DOMContentLoaded', () => {
       if (disposed || frame) return;
       frame = requestAnimationFrame(() => {frame = 0; scan(); ScrollTrigger.refresh();});
     };
-    // Same-page product tabs need the title entrance again, including return visits.
+    // Content shown by a tab fades in again on every switch, so the change reads as a new page.
+    // Its own scroll entrances are taken over first, or they would leave it hidden or play twice.
+    const takeOver = el => [el, ...el.querySelectorAll(selector)].forEach(child => {
+      initialized.add(child);
+      triggers.filter(trigger => trigger.trigger === child).forEach(trigger => trigger.kill());
+      gsap.killTweensOf(child);
+      gsap.set(child, {clearProps: 'transform,opacity,visibility'});
+    });
+    const fadeIn = (el, delay = 0) => {
+      takeOver(el);
+      tweens.push(gsap.fromTo(el, {y: distance * .6, opacity: 0}, {y: 0, opacity: 1, duration: context.conditions.mobile ? .55 : .7, delay, ease: 'power2.out', clearProps: 'transform,opacity'}));
+    };
+    const tabBarBottom = () => document.querySelector('.sb-product-tabs')?.getBoundingClientRect().bottom || 0;
+    // The blocks of root that are on screen below the tab bar, split into rows and cards for a short stagger.
+    const visibleBlocks = root => {
+      const top = Math.max(0, tabBarBottom()), blocks = [], queue = [...root.children];
+      while (queue.length && blocks.length < 40) {
+        const el = queue.shift();
+        if (!el.getClientRects().length || el.closest('[hidden]')) continue;
+        const rect = el.getBoundingClientRect();
+        if (rect.bottom <= top || rect.top >= innerHeight) continue;
+        // A wrapper is opened up; anything carrying its own text (even with a lone <br>) stays whole.
+        const ownText = [...el.childNodes].some(node => node.nodeType === 3 && node.textContent.trim());
+        if (el.children.length && !ownText && (el.children.length === 1 || rect.height > innerHeight * .6)) queue.unshift(...el.children);
+        else blocks.push(el);
+      }
+      return blocks;
+    };
+    const revealBelowTabs = root => root && visibleBlocks(root).forEach((el, i) => fadeIn(el, Math.min(i, 6) * .06));
+    // Same-page product tabs (OmniEsol): everything on screen below the tab bar, including the
+    // intro shared by all panels, and the product title.
     const replayTabTitles = event => {
       const panel = event.detail?.panel;
       if (!panel || panel.hidden) return;
-      const titles = [document.querySelector('.sb-content .sb-product-heading'), panel.querySelector('h2,h3')].filter(Boolean);
-      titles.forEach(el => {
-        initialized.add(el);
-        triggers.filter(trigger => trigger.trigger === el).forEach(trigger => trigger.kill());
-        gsap.killTweensOf(el);
-        tweens.push(gsap.fromTo(el, {y: distance, opacity: 0}, {y: 0, opacity: 1, duration: context.conditions.mobile ? .65 : .9, ease: 'power2.out', clearProps: 'transform,opacity'}));
-      });
+      revealBelowTabs(document.querySelector('.sb-content'));
+      const heading = document.querySelector('.sb-content .sb-product-heading');
+      if (heading && !panel.contains(heading)) fadeIn(heading);
     };
     document.addEventListener('sb:product-tab-change', replayTabTitles);
+    // Product tabs that point to a section of the same page (ONE AI) jump straight to it and fade it in,
+    // like the tabs that open another page. A smooth scroll that long was cut short whenever a lazy
+    // image loaded on the way and ScrollTrigger refreshed.
+    const revealSection = event => {
+      const link = event.target.closest('.sb-product-tabs a');
+      if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      const target = new URL(link.href);
+      if (target.pathname !== location.pathname || target.search !== location.search || !target.hash) return;
+      const section = document.getElementById(decodeURIComponent(target.hash.slice(1)));
+      if (!section) return;
+      event.preventDefault();
+      if (location.hash !== target.hash) history.pushState(null, '', target.hash);
+      section.scrollIntoView({behavior: 'instant', block: 'start'});
+      const blocks = visibleBlocks(section);
+      (blocks.length ? blocks : [section]).forEach((el, i) => fadeIn(el, Math.min(i, 6) * .06));
+    };
+    document.addEventListener('click', revealSection);
+    // Tabs inside a section (screen tabs, 아이디/비밀번호 찾기, feature tabs): the panel that was switched to.
+    let lastInput = -Infinity;
+    const markInput = () => { lastInput = performance.now(); };
+    document.addEventListener('pointerdown', markInput, true);
+    document.addEventListener('keydown', markInput, true);
+    const panelShown = mutations => {
+      if (performance.now() - lastInput > 1000) return;
+      new Set(mutations.map(mutation => mutation.target)).forEach(panel => {
+        if (panel.matches('.omniesol>.panel') || panel.hidden || !panel.getClientRects().length) return;
+        if (panel.matches('[data-panel]') && !panel.classList.contains('is-active')) return;
+        const rect = panel.getBoundingClientRect();
+        if (rect.bottom > 0 && rect.top < innerHeight) fadeIn(panel);
+      });
+    };
+    const panelObserver = new MutationObserver(panelShown);
+    document.querySelectorAll('[role="tabpanel"], [data-panel]').forEach(panel => panelObserver.observe(panel, {attributes: true, attributeFilter: ['class', 'hidden']}));
     scan();
+    // Arriving from a product tab that opens another page: what sits below the tab bar.
+    if (tabPosition !== null) {
+      const arrive = () => revealBelowTabs(document.querySelector('.sb-content'));
+      if (Math.abs(window.scrollY - tabPosition) < 2) arrive(); else requestAnimationFrame(() => requestAnimationFrame(arrive));
+    }
     // Tab switches and FAQ expansion can change the document height.
     const observer = new MutationObserver(refresh);
     document.querySelectorAll('[role="tabpanel"], [data-panel]').forEach(panel => observer.observe(panel, {attributes: true, attributeFilter: ['class', 'hidden']}));
@@ -88,6 +152,10 @@ document.addEventListener('DOMContentLoaded', () => {
       cancelAnimationFrame(frame);
       observer.disconnect();
       document.removeEventListener('sb:product-tab-change', replayTabTitles);
+      document.removeEventListener('click', revealSection);
+      document.removeEventListener('pointerdown', markInput, true);
+      document.removeEventListener('keydown', markInput, true);
+      panelObserver.disconnect();
       document.removeEventListener('toggle', refresh, true);
       document.removeEventListener('load', refresh, true);
       window.removeEventListener('pageshow', refresh);
